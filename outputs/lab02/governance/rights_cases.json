@@ -1,0 +1,9550 @@
+{
+  "votes_input": {
+    "case": {
+      "schema_version": 1,
+      "entities": [
+        {
+          "eid": "P1",
+          "name": "王建国",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P2",
+          "name": "李秀英",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P3",
+          "name": "陈志强",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P4",
+          "name": "赵敏",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "C1",
+          "name": "华鑫控股集团",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 50000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C2",
+          "name": "华鑫实业有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 20000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C3",
+          "name": "恒通科技股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 80000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        },
+        {
+          "eid": "C4",
+          "name": "远航贸易有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 5000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C5",
+          "name": "盛达物流有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 3000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C6",
+          "name": "鼎丰投资有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 30000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C7",
+          "name": "鼎丰建设有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 15000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C8",
+          "name": "瑞祥建材有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 8000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C9",
+          "name": "金桥融资担保有限公司",
+          "kind": "Company",
+          "category": "担保公司",
+          "capital": 10000.0,
+          "opacity": 0.35,
+          "disclosure": 0.65
+        },
+        {
+          "eid": "C10",
+          "name": "天润商贸有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 6000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C11",
+          "name": "博远咨询有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 1000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C12",
+          "name": "星辰电子股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 60000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        }
+      ],
+      "holdings": [
+        {
+          "holder": "P1",
+          "target": "C1",
+          "ratio": 0.8,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C2",
+          "ratio": 0.65,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C2",
+          "target": "C3",
+          "ratio": 0.35,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C3",
+          "ratio": 0.2,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P1",
+          "target": "C4",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P2",
+          "target": "C4",
+          "ratio": 0.25,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C4",
+          "target": "C5",
+          "ratio": 0.9,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P3",
+          "target": "C6",
+          "ratio": 0.7,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C7",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C7",
+          "target": "C8",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C8",
+          "target": "C6",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C10",
+          "ratio": 0.51,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C11",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C9",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C9",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C12",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C12",
+          "ratio": 0.1,
+          "since": "",
+          "layered": false
+        }
+      ],
+      "guarantees": [
+        {
+          "guarantor": "C7",
+          "beneficiary": "C10",
+          "amount": 3000.0
+        },
+        {
+          "guarantor": "C10",
+          "beneficiary": "C11",
+          "amount": 2000.0
+        },
+        {
+          "guarantor": "C11",
+          "beneficiary": "C7",
+          "amount": 2500.0
+        },
+        {
+          "guarantor": "C9",
+          "beneficiary": "C12",
+          "amount": 1000.0
+        }
+      ],
+      "trades": [
+        {
+          "seller": "C4",
+          "buyer": "C3",
+          "amount": 5000.0
+        },
+        {
+          "seller": "C5",
+          "buyer": "C2",
+          "amount": 2000.0
+        },
+        {
+          "seller": "C10",
+          "buyer": "C12",
+          "amount": 800.0
+        }
+      ],
+      "kinships": [
+        {
+          "a": "P1",
+          "b": "P2",
+          "relation": "配偶",
+          "evidence": true
+        }
+      ],
+      "source": "本项目内的第一次 CSV 快照: C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\data\\raw",
+      "label": "第一次汇报同源案例"
+    },
+    "as_of": "2026-10-22",
+    "target": "C3",
+    "strict_evidence": false,
+    "strict_identity": false,
+    "documents": [
+      {
+        "id": "demo-doc",
+        "title": "教学表决权凭证",
+        "content": "虚构的人工核查文本，仅教学",
+        "sha256": "",
+        "status": "verified",
+        "reviewer": "教学核验人",
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ],
+    "identities": [],
+    "relations": [],
+    "rights": [
+      {
+        "id": "vote1",
+        "party": "P3",
+        "target": "C3",
+        "kind": "votes",
+        "share": 0.6,
+        "evidence_id": "demo-doc",
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ]
+  },
+  "conflict_input": {
+    "case": {
+      "schema_version": 1,
+      "entities": [
+        {
+          "eid": "P1",
+          "name": "王建国",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P2",
+          "name": "李秀英",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P3",
+          "name": "陈志强",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P4",
+          "name": "赵敏",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "C1",
+          "name": "华鑫控股集团",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 50000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C2",
+          "name": "华鑫实业有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 20000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C3",
+          "name": "恒通科技股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 80000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        },
+        {
+          "eid": "C4",
+          "name": "远航贸易有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 5000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C5",
+          "name": "盛达物流有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 3000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C6",
+          "name": "鼎丰投资有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 30000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C7",
+          "name": "鼎丰建设有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 15000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C8",
+          "name": "瑞祥建材有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 8000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C9",
+          "name": "金桥融资担保有限公司",
+          "kind": "Company",
+          "category": "担保公司",
+          "capital": 10000.0,
+          "opacity": 0.35,
+          "disclosure": 0.65
+        },
+        {
+          "eid": "C10",
+          "name": "天润商贸有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 6000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C11",
+          "name": "博远咨询有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 1000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C12",
+          "name": "星辰电子股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 60000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        }
+      ],
+      "holdings": [
+        {
+          "holder": "P1",
+          "target": "C1",
+          "ratio": 0.8,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C2",
+          "ratio": 0.65,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C2",
+          "target": "C3",
+          "ratio": 0.35,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C3",
+          "ratio": 0.2,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P1",
+          "target": "C4",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P2",
+          "target": "C4",
+          "ratio": 0.25,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C4",
+          "target": "C5",
+          "ratio": 0.9,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P3",
+          "target": "C6",
+          "ratio": 0.7,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C7",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C7",
+          "target": "C8",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C8",
+          "target": "C6",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C10",
+          "ratio": 0.51,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C11",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C9",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C9",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C12",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C12",
+          "ratio": 0.1,
+          "since": "",
+          "layered": false
+        }
+      ],
+      "guarantees": [
+        {
+          "guarantor": "C7",
+          "beneficiary": "C10",
+          "amount": 3000.0
+        },
+        {
+          "guarantor": "C10",
+          "beneficiary": "C11",
+          "amount": 2000.0
+        },
+        {
+          "guarantor": "C11",
+          "beneficiary": "C7",
+          "amount": 2500.0
+        },
+        {
+          "guarantor": "C9",
+          "beneficiary": "C12",
+          "amount": 1000.0
+        }
+      ],
+      "trades": [
+        {
+          "seller": "C4",
+          "buyer": "C3",
+          "amount": 5000.0
+        },
+        {
+          "seller": "C5",
+          "buyer": "C2",
+          "amount": 2000.0
+        },
+        {
+          "seller": "C10",
+          "buyer": "C12",
+          "amount": 800.0
+        }
+      ],
+      "kinships": [
+        {
+          "a": "P1",
+          "b": "P2",
+          "relation": "配偶",
+          "evidence": true
+        }
+      ],
+      "source": "本项目内的第一次 CSV 快照: C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\data\\raw",
+      "label": "第一次汇报同源案例"
+    },
+    "as_of": "2026-10-22",
+    "target": "C3",
+    "strict_evidence": false,
+    "strict_identity": false,
+    "documents": [
+      {
+        "id": "demo-doc",
+        "title": "教学表决权凭证",
+        "content": "虚构的人工核查文本，仅教学",
+        "sha256": "",
+        "status": "verified",
+        "reviewer": "教学核验人",
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ],
+    "identities": [],
+    "relations": [],
+    "rights": [
+      {
+        "id": "vote1",
+        "party": "P3",
+        "target": "C3",
+        "kind": "agreement",
+        "share": 0.6,
+        "evidence_id": "demo-doc",
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "id": "agreement2",
+        "party": "P2",
+        "target": "C3",
+        "kind": "agreement",
+        "share": 0.6,
+        "evidence_id": "demo-doc",
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ]
+  },
+  "votes": {
+    "as_of": "2026-10-22",
+    "effective_case": {
+      "schema_version": 1,
+      "entities": [
+        {
+          "eid": "P1",
+          "name": "王建国",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P2",
+          "name": "李秀英",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P3",
+          "name": "陈志强",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P4",
+          "name": "赵敏",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "C1",
+          "name": "华鑫控股集团",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 50000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C2",
+          "name": "华鑫实业有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 20000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C3",
+          "name": "恒通科技股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 80000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        },
+        {
+          "eid": "C4",
+          "name": "远航贸易有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 5000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C5",
+          "name": "盛达物流有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 3000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C6",
+          "name": "鼎丰投资有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 30000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C7",
+          "name": "鼎丰建设有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 15000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C8",
+          "name": "瑞祥建材有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 8000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C9",
+          "name": "金桥融资担保有限公司",
+          "kind": "Company",
+          "category": "担保公司",
+          "capital": 10000.0,
+          "opacity": 0.35,
+          "disclosure": 0.65
+        },
+        {
+          "eid": "C10",
+          "name": "天润商贸有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 6000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C11",
+          "name": "博远咨询有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 1000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C12",
+          "name": "星辰电子股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 60000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        }
+      ],
+      "holdings": [
+        {
+          "holder": "P1",
+          "target": "C1",
+          "ratio": 0.8,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C2",
+          "ratio": 0.65,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C2",
+          "target": "C3",
+          "ratio": 0.35,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C3",
+          "ratio": 0.2,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P1",
+          "target": "C4",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P2",
+          "target": "C4",
+          "ratio": 0.25,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C4",
+          "target": "C5",
+          "ratio": 0.9,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P3",
+          "target": "C6",
+          "ratio": 0.7,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C7",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C7",
+          "target": "C8",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C8",
+          "target": "C6",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C10",
+          "ratio": 0.51,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C11",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C9",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C9",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C12",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C12",
+          "ratio": 0.1,
+          "since": "",
+          "layered": false
+        }
+      ],
+      "guarantees": [
+        {
+          "guarantor": "C7",
+          "beneficiary": "C10",
+          "amount": 3000.0
+        },
+        {
+          "guarantor": "C10",
+          "beneficiary": "C11",
+          "amount": 2000.0
+        },
+        {
+          "guarantor": "C11",
+          "beneficiary": "C7",
+          "amount": 2500.0
+        },
+        {
+          "guarantor": "C9",
+          "beneficiary": "C12",
+          "amount": 1000.0
+        }
+      ],
+      "trades": [
+        {
+          "seller": "C4",
+          "buyer": "C3",
+          "amount": 5000.0
+        },
+        {
+          "seller": "C5",
+          "buyer": "C2",
+          "amount": 2000.0
+        },
+        {
+          "seller": "C10",
+          "buyer": "C12",
+          "amount": 800.0
+        }
+      ],
+      "kinships": [
+        {
+          "a": "P1",
+          "b": "P2",
+          "relation": "配偶",
+          "evidence": true
+        }
+      ],
+      "source": "本项目内的第一次 CSV 快照: C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\data\\raw",
+      "label": "第一次汇报同源案例"
+    },
+    "documents": [
+      {
+        "id": "demo-doc",
+        "title": "教学表决权凭证",
+        "content": "虚构的人工核查文本，仅教学",
+        "sha256": "92362eb43ba4150201695aba791da43d67a2f73834860a42a20e20a2c6ad9574",
+        "status": "verified",
+        "reviewer": "教学核验人",
+        "valid_from": "",
+        "valid_to": "",
+        "usable": true
+      }
+    ],
+    "identities": [],
+    "excluded_relations": [],
+    "retained_relations": [
+      {
+        "key": "holdings:P1:C1",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C2:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P1:C4",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P2:C4",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C4:C5",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P3:C6",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C6:C7",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C7:C8",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C8:C6",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C10",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C11",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C9",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C9",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C6:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C7:C10",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C10:C11",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C11:C7",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C9:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C4:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C5:C2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C10:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "kinships:P1:P2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ],
+    "conflicts": [],
+    "blocked_rights": [],
+    "accepted_rights": [
+      {
+        "id": "vote1",
+        "party": "P3",
+        "target": "C3",
+        "kind": "votes",
+        "share": 0.6,
+        "evidence_id": "demo-doc",
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ],
+    "claims": [
+      [
+        "ActualController",
+        "C1",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C10",
+        "P4"
+      ],
+      [
+        "ActualController",
+        "C11",
+        "P4"
+      ],
+      [
+        "ActualController",
+        "C2",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C3",
+        "P3"
+      ],
+      [
+        "ActualController",
+        "C4",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C5",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C6",
+        "P3"
+      ],
+      [
+        "ActualController",
+        "C7",
+        "P3"
+      ],
+      [
+        "Alert",
+        "C10",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C11",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C6",
+        "循环持股"
+      ],
+      [
+        "Alert",
+        "C7",
+        "循环持股"
+      ],
+      [
+        "Alert",
+        "C7",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C8",
+        "循环持股"
+      ],
+      [
+        "BeneficialOwner",
+        "C1",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C10",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C11",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C12",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C12",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C2",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C3",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C4",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C4",
+        "P2"
+      ],
+      [
+        "BeneficialOwner",
+        "C5",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C5",
+        "P2"
+      ],
+      [
+        "BeneficialOwner",
+        "C6",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C7",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C8",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C9",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C9",
+        "P4"
+      ],
+      [
+        "Controls",
+        "C1",
+        "C2"
+      ],
+      [
+        "Controls",
+        "C4",
+        "C5"
+      ],
+      [
+        "Controls",
+        "C6",
+        "C7"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C1"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C2"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C4"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C5"
+      ],
+      [
+        "Controls",
+        "P3",
+        "C3"
+      ],
+      [
+        "Controls",
+        "P3",
+        "C6"
+      ],
+      [
+        "Controls",
+        "P3",
+        "C7"
+      ],
+      [
+        "Controls",
+        "P4",
+        "C10"
+      ],
+      [
+        "Controls",
+        "P4",
+        "C11"
+      ],
+      [
+        "RiskLevel",
+        "C10",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C11",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C12",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C3",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C6",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C7",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C8",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C8",
+        "高"
+      ]
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C1,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C1) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        "lines": [
+          "• ActualController(C10,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P4,C10,0.51) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C10) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        "lines": [
+          "• ActualController(C11,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P4,C11,0.6) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C11) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C2,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C1,C2,0.65) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C2) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C3",
+          "P3"
+        ],
+        "lines": [
+          "• ActualController(C3,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P3,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P3,C3) ⇐ G01 核验投票权过半支持控制候选",
+          "            • VotingShare(P3,C3,0.6,demo-doc) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C5,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "                • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                    • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "                • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "                • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "        • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        "lines": [
+          "• ActualController(C6,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        "lines": [
+          "• ActualController(C7,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "            • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "        • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "        • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "            • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "        • Holds(C8,C6,0.3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+          "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "            • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C7,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C7,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C7,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C7,C10) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "        • Guarantee(C11,C7,2500.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+          "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "        • Holds(C7,C8,0.4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C1,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "        • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C1) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C10,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C10) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C10,0.51) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C10) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C11,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C11) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C11,0.6) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C11) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C12,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Holds(C6,C12,0.3) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C12,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C12,0.1) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C2,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C2) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C2,0.65) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C2) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C3,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C3) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C3,0.2) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C4,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+          "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        "lines": [
+          "• BeneficialOwner(C4,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+          "        • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Person(P2) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C5,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        "lines": [
+          "• BeneficialOwner(C5,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P2,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P2) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C6,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "        • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C7,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C8,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "        • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C9,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C9) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C9,0.4) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C9,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C9) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C9,0.3) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        "lines": [
+          "• Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C1,C2,0.65) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        "lines": [
+          "• Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        "lines": [
+          "• Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C1"
+        ],
+        "lines": [
+          "• Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P1,C1,0.8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C2"
+        ],
+        "lines": [
+          "• Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C1,C2,0.65) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        "lines": [
+          "• Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "        • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "            • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "        • Holds(P2,C4,0.25) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        "lines": [
+          "• Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C4,C5,0.9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C3"
+        ],
+        "lines": [
+          "• Controls(P3,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P3,C3) ⇐ G01 核验投票权过半支持控制候选",
+          "        • VotingShare(P3,C3,0.6,demo-doc) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        "lines": [
+          "• Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P3,C6,0.7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        "lines": [
+          "• Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        "lines": [
+          "• Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P4,C10,0.51) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        "lines": [
+          "• Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P4,C11,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C10",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C10,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "        • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "                • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+          "                    • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C11",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C11,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "        • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "                • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+          "                    • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C12",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C12,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(C7,C12) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(C7,C12) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C3,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(P1,C3) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(P1,C3) [输入/预处理事实]",
+          "    • Company(C3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C6",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C6,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "            • Holds(C8,C6,0.3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C7",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C7,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C8,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(P3,C8) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(P3,C8) [输入/预处理事实]",
+          "    • Company(C8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C8,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "            • Holds(C7,C8,0.4) [输入/预处理事实]"
+        ]
+      }
+    ],
+    "input_facts": [
+      {
+        "fact": [
+          "Person",
+          "P1"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P2"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P4"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C1"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C2"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Listed",
+          "C3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C4"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C5"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C6"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C7"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C8"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C9"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C10"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C11"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C12"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Listed",
+          "C12"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P1",
+          "C1",
+          0.8
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C2",
+          0.65
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C2",
+          "C3",
+          0.35
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C3",
+          0.2
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P1",
+          "C4",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P2",
+          "C4",
+          0.25
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C4",
+          "C5",
+          0.9
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P3",
+          "C6",
+          0.7
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C6",
+          "C7",
+          0.6
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C7",
+          "C8",
+          0.4
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C8",
+          "C6",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C10",
+          0.51
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C11",
+          0.6
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C9",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C9",
+          0.4
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C6",
+          "C12",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C12",
+          0.1
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C7",
+          "C10",
+          3000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C10",
+          "C11",
+          2000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C11",
+          "C7",
+          2500.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C9",
+          "C12",
+          1000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C4",
+          "C3",
+          5000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C5",
+          "C2",
+          2000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C10",
+          "C12",
+          800.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Kin",
+          "P1",
+          "P2",
+          "配偶"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Kin",
+          "P2",
+          "P1",
+          "配偶"
+        ],
+        "source": "亲属关系对称化"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "C7",
+          "C12"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "P1",
+          "C3"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "P3",
+          "C8"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      },
+      {
+        "fact": [
+          "VotingShare",
+          "P3",
+          "C3",
+          0.6,
+          "demo-doc"
+        ],
+        "source": "人工核验凭证 demo-doc；权利记录 vote1"
+      }
+    ],
+    "derivations": [
+      {
+        "fact": [
+          "DirectControls",
+          "P3",
+          "C3"
+        ],
+        "rule": "G01",
+        "premises": [
+          [
+            "VotingShare",
+            "P3",
+            "C3",
+            0.6,
+            "demo-doc"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C1"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C1",
+            0.8
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C1",
+          "C2"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C4",
+          "C5"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P3",
+          "C6"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P3",
+            "C6",
+            0.7
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C6",
+          "C7"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P4",
+          "C10"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C10",
+            0.51
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P4",
+          "C11"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C11",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Concerts",
+          "P1",
+          "P2"
+        ],
+        "rule": "R02",
+        "premises": [
+          [
+            "Kin",
+            "P1",
+            "P2",
+            "配偶"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Concerts",
+          "P2",
+          "P1"
+        ],
+        "rule": "R02",
+        "premises": [
+          [
+            "Kin",
+            "P2",
+            "P1",
+            "配偶"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C1"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C1",
+            0.8
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C2"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C2",
+          "C3"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C2",
+            "C3",
+            0.35
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C3"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C3",
+            0.2
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C4"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C4",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P2",
+          "C4"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P2",
+            "C4",
+            0.25
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C4",
+          "C5"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C6"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P3",
+            "C6",
+            0.7
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C7"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C8"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C6"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C10"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C10",
+            0.51
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C11"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C11",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C9"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C9",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C9"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C9",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C12"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C12"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C12",
+            0.1
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C10"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C11"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C7"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C9",
+          "C12"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C9",
+            "C12",
+            1000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "C7",
+          "C12"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "C7",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "P1",
+          "C3"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "P1",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "P3",
+          "C8"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "P3",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C4"
+        ],
+        "rule": "R04",
+        "premises": [
+          [
+            "Concerts",
+            "P1",
+            "P2"
+          ],
+          [
+            "Holds",
+            "P1",
+            "C4",
+            0.3
+          ],
+          [
+            "Holds",
+            "P2",
+            "C4",
+            0.25
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C2"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P3",
+          "C7"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C3"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P3",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C1"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C1",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C4",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P3",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C6",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P4",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P4",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C2"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C3"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C3",
+            0.2
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C9"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C9",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C5"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P2",
+          "C5"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C6"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C8"
+          ],
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C11"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C10"
+          ],
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C7"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C11"
+          ],
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C10"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C7"
+          ],
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C12",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "C7",
+            "C12"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "P1",
+            "C3"
+          ],
+          [
+            "Company",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "P3",
+            "C8"
+          ],
+          [
+            "Company",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C4"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C4"
+          ],
+          [
+            "Person",
+            "P2"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C10"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C11"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C9"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C9"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C12"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C5"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C2"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Controls",
+            "C1",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Controls",
+            "C6",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C3",
+          "P3"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C3"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P4",
+            "C10"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P4",
+            "C11"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C6"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C8"
+          ],
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C7"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C11"
+          ],
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C10"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C7"
+          ],
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C11"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C10"
+          ],
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C2"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C3"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C9"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C9"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C5"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C5"
+          ],
+          [
+            "Person",
+            "P2"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C7"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C12"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Controls",
+            "C4",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C2"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C7"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C3",
+          "C6"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C3",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C6",
+          "C3"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C3",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C10",
+          "C11"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C10",
+            "P4"
+          ],
+          [
+            "ActualController",
+            "C11",
+            "P4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C11",
+          "C10"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C11",
+            "P4"
+          ],
+          [
+            "ActualController",
+            "C10",
+            "P4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C8"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C5"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C7",
+          "C3"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C3",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C7",
+          "C6"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C3",
+          "C7"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C3",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C6",
+          "C7"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C6",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C6",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C7",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C7",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C8",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C10",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C10",
+            "担保圈"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C11",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C11",
+            "担保圈"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RelatedTrade",
+          "C5",
+          "C2"
+        ],
+        "rule": "R15",
+        "premises": [
+          [
+            "SharedController",
+            "C5",
+            "C2"
+          ],
+          [
+            "Trade",
+            "C5",
+            "C2",
+            2000.0
+          ]
+        ]
+      }
+    ],
+    "stats": {
+      "cycles": 7,
+      "facts": 180,
+      "derived_facts": 132,
+      "candidate_checks": 686,
+      "rule_instances": 147,
+      "elapsed_ms": 5.500199971720576,
+      "converged": true,
+      "peak_new_facts": 36
+    },
+    "equity": {
+      "target_id": "C3",
+      "companies_solved": 3,
+      "method": "partial_pivot_linear_system",
+      "formula": "u_j = d_j + sum_i H_ij*u_i",
+      "upstream_companies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "note": "教学经济权益模型；非法律受益人认定，非表决权。未登记持股计入未知股东份额。",
+      "status": "solved",
+      "owners": [
+        {
+          "entity_id": "P1",
+          "name": "王建国",
+          "share": 0.342
+        }
+      ],
+      "unknown_share": 0.6579999999999999,
+      "total_share": 1.0,
+      "residual": 0.0,
+      "minimum_pivot": 1.0,
+      "numerical_warning": false,
+      "elapsed_ms": 0.12649997370317578
+    },
+    "effective_right_targets": [
+      "C3"
+    ],
+    "missing_trade_evidence": false,
+    "note": "身份/凭证为人工声明核验状态，不做外部权威认证；有效期结束日不含当天。"
+  },
+  "conflict": {
+    "as_of": "2026-10-22",
+    "effective_case": {
+      "schema_version": 1,
+      "entities": [
+        {
+          "eid": "P1",
+          "name": "王建国",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P2",
+          "name": "李秀英",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P3",
+          "name": "陈志强",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "P4",
+          "name": "赵敏",
+          "kind": "Person",
+          "category": "",
+          "capital": 0.0,
+          "opacity": 0.0,
+          "disclosure": 1.0
+        },
+        {
+          "eid": "C1",
+          "name": "华鑫控股集团",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 50000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C2",
+          "name": "华鑫实业有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 20000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C3",
+          "name": "恒通科技股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 80000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        },
+        {
+          "eid": "C4",
+          "name": "远航贸易有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 5000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C5",
+          "name": "盛达物流有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 3000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C6",
+          "name": "鼎丰投资有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 30000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C7",
+          "name": "鼎丰建设有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 15000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C8",
+          "name": "瑞祥建材有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 8000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C9",
+          "name": "金桥融资担保有限公司",
+          "kind": "Company",
+          "category": "担保公司",
+          "capital": 10000.0,
+          "opacity": 0.35,
+          "disclosure": 0.65
+        },
+        {
+          "eid": "C10",
+          "name": "天润商贸有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 6000.0,
+          "opacity": 0.15,
+          "disclosure": 0.85
+        },
+        {
+          "eid": "C11",
+          "name": "博远咨询有限公司",
+          "kind": "Company",
+          "category": "企业",
+          "capital": 1000.0,
+          "opacity": 0.55,
+          "disclosure": 0.44999999999999996
+        },
+        {
+          "eid": "C12",
+          "name": "星辰电子股份有限公司",
+          "kind": "Company",
+          "category": "上市公司",
+          "capital": 60000.0,
+          "opacity": 0.05,
+          "disclosure": 0.95
+        }
+      ],
+      "holdings": [
+        {
+          "holder": "P1",
+          "target": "C1",
+          "ratio": 0.8,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C2",
+          "ratio": 0.65,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C2",
+          "target": "C3",
+          "ratio": 0.35,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C3",
+          "ratio": 0.2,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P1",
+          "target": "C4",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P2",
+          "target": "C4",
+          "ratio": 0.25,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C4",
+          "target": "C5",
+          "ratio": 0.9,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P3",
+          "target": "C6",
+          "ratio": 0.7,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C7",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C7",
+          "target": "C8",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C8",
+          "target": "C6",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C10",
+          "ratio": 0.51,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C11",
+          "ratio": 0.6,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C9",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C1",
+          "target": "C9",
+          "ratio": 0.4,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "C6",
+          "target": "C12",
+          "ratio": 0.3,
+          "since": "",
+          "layered": false
+        },
+        {
+          "holder": "P4",
+          "target": "C12",
+          "ratio": 0.1,
+          "since": "",
+          "layered": false
+        }
+      ],
+      "guarantees": [
+        {
+          "guarantor": "C7",
+          "beneficiary": "C10",
+          "amount": 3000.0
+        },
+        {
+          "guarantor": "C10",
+          "beneficiary": "C11",
+          "amount": 2000.0
+        },
+        {
+          "guarantor": "C11",
+          "beneficiary": "C7",
+          "amount": 2500.0
+        },
+        {
+          "guarantor": "C9",
+          "beneficiary": "C12",
+          "amount": 1000.0
+        }
+      ],
+      "trades": [
+        {
+          "seller": "C4",
+          "buyer": "C3",
+          "amount": 5000.0
+        },
+        {
+          "seller": "C5",
+          "buyer": "C2",
+          "amount": 2000.0
+        },
+        {
+          "seller": "C10",
+          "buyer": "C12",
+          "amount": 800.0
+        }
+      ],
+      "kinships": [
+        {
+          "a": "P1",
+          "b": "P2",
+          "relation": "配偶",
+          "evidence": true
+        }
+      ],
+      "source": "本项目内的第一次 CSV 快照: C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\data\\raw",
+      "label": "第一次汇报同源案例"
+    },
+    "documents": [
+      {
+        "id": "demo-doc",
+        "title": "教学表决权凭证",
+        "content": "虚构的人工核查文本，仅教学",
+        "sha256": "92362eb43ba4150201695aba791da43d67a2f73834860a42a20e20a2c6ad9574",
+        "status": "verified",
+        "reviewer": "教学核验人",
+        "valid_from": "",
+        "valid_to": "",
+        "usable": true
+      }
+    ],
+    "identities": [],
+    "excluded_relations": [],
+    "retained_relations": [
+      {
+        "key": "holdings:P1:C1",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C2:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P1:C4",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P2:C4",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C4:C5",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P3:C6",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C6:C7",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C7:C8",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C8:C6",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C10",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C11",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C9",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C1:C9",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:C6:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "holdings:P4:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C7:C10",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C10:C11",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C11:C7",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "guarantees:C9:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C4:C3",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C5:C2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "trades:C10:C12",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      },
+      {
+        "key": "kinships:P1:P2",
+        "evidence_id": "",
+        "verified": false,
+        "valid_from": "",
+        "valid_to": ""
+      }
+    ],
+    "conflicts": [
+      {
+        "target": "C3",
+        "reason": "多个互斥控制协议，需人工裁决",
+        "right_ids": [
+          "vote1",
+          "agreement2"
+        ]
+      }
+    ],
+    "blocked_rights": [],
+    "accepted_rights": [],
+    "claims": [
+      [
+        "ActualController",
+        "C1",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C10",
+        "P4"
+      ],
+      [
+        "ActualController",
+        "C11",
+        "P4"
+      ],
+      [
+        "ActualController",
+        "C2",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C4",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C5",
+        "P1"
+      ],
+      [
+        "ActualController",
+        "C6",
+        "P3"
+      ],
+      [
+        "ActualController",
+        "C7",
+        "P3"
+      ],
+      [
+        "Alert",
+        "C10",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C11",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C6",
+        "循环持股"
+      ],
+      [
+        "Alert",
+        "C7",
+        "循环持股"
+      ],
+      [
+        "Alert",
+        "C7",
+        "担保圈"
+      ],
+      [
+        "Alert",
+        "C8",
+        "循环持股"
+      ],
+      [
+        "BeneficialOwner",
+        "C1",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C10",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C11",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C12",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C12",
+        "P4"
+      ],
+      [
+        "BeneficialOwner",
+        "C2",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C3",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C4",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C4",
+        "P2"
+      ],
+      [
+        "BeneficialOwner",
+        "C5",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C5",
+        "P2"
+      ],
+      [
+        "BeneficialOwner",
+        "C6",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C7",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C8",
+        "P3"
+      ],
+      [
+        "BeneficialOwner",
+        "C9",
+        "P1"
+      ],
+      [
+        "BeneficialOwner",
+        "C9",
+        "P4"
+      ],
+      [
+        "Controls",
+        "C1",
+        "C2"
+      ],
+      [
+        "Controls",
+        "C4",
+        "C5"
+      ],
+      [
+        "Controls",
+        "C6",
+        "C7"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C1"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C2"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C4"
+      ],
+      [
+        "Controls",
+        "P1",
+        "C5"
+      ],
+      [
+        "Controls",
+        "P3",
+        "C6"
+      ],
+      [
+        "Controls",
+        "P3",
+        "C7"
+      ],
+      [
+        "Controls",
+        "P4",
+        "C10"
+      ],
+      [
+        "Controls",
+        "P4",
+        "C11"
+      ],
+      [
+        "RiskLevel",
+        "C10",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C11",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C12",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C3",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C6",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C7",
+        "高"
+      ],
+      [
+        "RiskLevel",
+        "C8",
+        "中"
+      ],
+      [
+        "RiskLevel",
+        "C8",
+        "高"
+      ]
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C1,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C1) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        "lines": [
+          "• ActualController(C10,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P4,C10,0.51) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C10) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        "lines": [
+          "• ActualController(C11,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P4,C11,0.6) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C11) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C2,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C1,C2,0.65) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C2) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        "lines": [
+          "• ActualController(C5,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "                • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                    • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "                • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "                • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "        • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        "lines": [
+          "• ActualController(C6,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        "lines": [
+          "• ActualController(C7,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+          "    • Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+          "        • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "            • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "            • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "        • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "        • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "            • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "        • Holds(C8,C6,0.3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+          "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "            • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        "lines": [
+          "• Alert(C7,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "    • GuarReach(C7,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "        • GuarReach(C7,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C7,C10) ⇐ R12 担保可达：基础边",
+          "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "        • Guarantee(C11,C7,2500.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        "lines": [
+          "• Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "    • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+          "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "        • Holds(C7,C8,0.4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C1,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "        • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C1) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C10,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C10) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C10,0.51) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C10) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C11,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C11) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C11,0.6) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C11) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C12,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Holds(C6,C12,0.3) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C12,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C12,0.1) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C2,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C2) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C2,0.65) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C2) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C3,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C3) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C3,0.2) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C4,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+          "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        "lines": [
+          "• BeneficialOwner(C4,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+          "        • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Person(P2) [输入/预处理事实]",
+          "    • Company(C4) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C5,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        "lines": [
+          "• BeneficialOwner(C5,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P2,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+          "    • Person(P2) [输入/预处理事实]",
+          "    • Company(C5) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C6,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "        • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C7,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        "lines": [
+          "• BeneficialOwner(C8,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P3,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+          "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "        • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "    • Person(P3) [输入/预处理事实]",
+          "    • Company(C8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        "lines": [
+          "• BeneficialOwner(C9,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P1,C9) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "        • Holds(C1,C9,0.4) [输入/预处理事实]",
+          "    • Person(P1) [输入/预处理事实]",
+          "    • Company(C9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        "lines": [
+          "• BeneficialOwner(C9,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+          "    • HoldReach(P4,C9) ⇐ R10 持股可达：基础边",
+          "        • Holds(P4,C9,0.3) [输入/预处理事实]",
+          "    • Person(P4) [输入/预处理事实]",
+          "    • Company(C9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        "lines": [
+          "• Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C1,C2,0.65) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        "lines": [
+          "• Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C4,C5,0.9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        "lines": [
+          "• Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C1"
+        ],
+        "lines": [
+          "• Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P1,C1,0.8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C2"
+        ],
+        "lines": [
+          "• Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+          "    • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C1,C2,0.65) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        "lines": [
+          "• Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "        • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "            • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "        • Holds(P2,C4,0.25) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        "lines": [
+          "• Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+          "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+          "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+          "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+          "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+          "    • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C4,C5,0.9) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        "lines": [
+          "• Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P3,C6,0.7) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        "lines": [
+          "• Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+          "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+          "    • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+          "        • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        "lines": [
+          "• Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P4,C10,0.51) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        "lines": [
+          "• Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+          "    • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+          "        • Holds(P4,C11,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C10",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C10,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "        • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "                • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+          "                    • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+          "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C11",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C11,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+          "        • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "            • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+          "                • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+          "                    • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+          "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+          "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C12",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C12,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(C7,C12) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(C7,C12) [输入/预处理事实]",
+          "    • Company(C12) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C3,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(P1,C3) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(P1,C3) [输入/预处理事实]",
+          "    • Company(C3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C6",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C6,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "            • Holds(C8,C6,0.3) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C7",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C7,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C7,C8,0.4) [输入/预处理事实]",
+          "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        "lines": [
+          "• RiskLevel(C8,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+          "    • OpaqueLayer(P3,C8) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+          "        • ElevatedReach(P3,C8) [输入/预处理事实]",
+          "    • Company(C8) [输入/预处理事实]"
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "高"
+        ],
+        "lines": [
+          "• RiskLevel(C8,高) ⇐ R22 有预警 → 高复核优先级",
+          "    • Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+          "        • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "            • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+          "                • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+          "                    • Holds(C8,C6,0.3) [输入/预处理事实]",
+          "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+          "            • Holds(C7,C8,0.4) [输入/预处理事实]"
+        ]
+      }
+    ],
+    "input_facts": [
+      {
+        "fact": [
+          "Person",
+          "P1"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P2"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Person",
+          "P4"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C1"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C2"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Listed",
+          "C3"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C4"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C5"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C6"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C7"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C8"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C9"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C10"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C11"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Company",
+          "C12"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Listed",
+          "C12"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P1",
+          "C1",
+          0.8
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C2",
+          0.65
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C2",
+          "C3",
+          0.35
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C3",
+          0.2
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P1",
+          "C4",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P2",
+          "C4",
+          0.25
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C4",
+          "C5",
+          0.9
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P3",
+          "C6",
+          0.7
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C6",
+          "C7",
+          0.6
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C7",
+          "C8",
+          0.4
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C8",
+          "C6",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C10",
+          0.51
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C11",
+          0.6
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C9",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C1",
+          "C9",
+          0.4
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "C6",
+          "C12",
+          0.3
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Holds",
+          "P4",
+          "C12",
+          0.1
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C7",
+          "C10",
+          3000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C10",
+          "C11",
+          2000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C11",
+          "C7",
+          2500.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Guarantee",
+          "C9",
+          "C12",
+          1000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C4",
+          "C3",
+          5000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C5",
+          "C2",
+          2000.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Trade",
+          "C10",
+          "C12",
+          800.0
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Kin",
+          "P1",
+          "P2",
+          "配偶"
+        ],
+        "source": "输入数据"
+      },
+      {
+        "fact": [
+          "Kin",
+          "P2",
+          "P1",
+          "配偶"
+        ],
+        "source": "亲属关系对称化"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "C7",
+          "C12"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "P1",
+          "C3"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      },
+      {
+        "fact": [
+          "ElevatedReach",
+          "P3",
+          "C8"
+        ],
+        "source": "路径预处理: 存在长度3的简单路径, 搜索上限8"
+      }
+    ],
+    "derivations": [
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C1"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C1",
+            0.8
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C1",
+          "C2"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C4",
+          "C5"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P3",
+          "C6"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P3",
+            "C6",
+            0.7
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "C6",
+          "C7"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P4",
+          "C10"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C10",
+            0.51
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P4",
+          "C11"
+        ],
+        "rule": "R01",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C11",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Concerts",
+          "P1",
+          "P2"
+        ],
+        "rule": "R02",
+        "premises": [
+          [
+            "Kin",
+            "P1",
+            "P2",
+            "配偶"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Concerts",
+          "P2",
+          "P1"
+        ],
+        "rule": "R02",
+        "premises": [
+          [
+            "Kin",
+            "P2",
+            "P1",
+            "配偶"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C1"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C1",
+            0.8
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C2"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C2",
+          "C3"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C2",
+            "C3",
+            0.35
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C3"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C3",
+            0.2
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C4"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P1",
+            "C4",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P2",
+          "C4"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P2",
+            "C4",
+            0.25
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C4",
+          "C5"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C6"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P3",
+            "C6",
+            0.7
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C7"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C8"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C6"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C10"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C10",
+            0.51
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C11"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C11",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C9"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C9",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C1",
+          "C9"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C1",
+            "C9",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C12"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P4",
+          "C12"
+        ],
+        "rule": "R10",
+        "premises": [
+          [
+            "Holds",
+            "P4",
+            "C12",
+            0.1
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C10"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C11"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C7"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C9",
+          "C12"
+        ],
+        "rule": "R12",
+        "premises": [
+          [
+            "Guarantee",
+            "C9",
+            "C12",
+            1000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "C7",
+          "C12"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "C7",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "P1",
+          "C3"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "P1",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "OpaqueLayer",
+          "P3",
+          "C8"
+        ],
+        "rule": "R17",
+        "premises": [
+          [
+            "ElevatedReach",
+            "P3",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C4"
+        ],
+        "rule": "R04",
+        "premises": [
+          [
+            "Concerts",
+            "P1",
+            "P2"
+          ],
+          [
+            "Holds",
+            "P1",
+            "C4",
+            0.3
+          ],
+          [
+            "Holds",
+            "P2",
+            "C4",
+            0.25
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C2"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P3",
+          "C7"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C1"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C1",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C4",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P3",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "C6",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P4",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P4",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C2"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C2",
+            0.65
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C3"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C3",
+            0.2
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C9"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Holds",
+            "C1",
+            "C9",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P1",
+          "C5"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P2",
+          "C5"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C6"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C8"
+          ],
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C11"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C10"
+          ],
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C7"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C11"
+          ],
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C10"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C7"
+          ],
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C12",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "C7",
+            "C12"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "P1",
+            "C3"
+          ],
+          [
+            "Company",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        "rule": "R23",
+        "premises": [
+          [
+            "OpaqueLayer",
+            "P3",
+            "C8"
+          ],
+          [
+            "Company",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C1"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C4"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C4"
+          ],
+          [
+            "Person",
+            "P2"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C6"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C10"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C11"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C9"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C9"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P4",
+            "C12"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "DirectControls",
+          "P1",
+          "C5"
+        ],
+        "rule": "R05b",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Holds",
+            "C4",
+            "C5",
+            0.9
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C2"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Controls",
+            "C1",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Controls",
+            "C6",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        "rule": "R08",
+        "premises": [
+          [
+            "DirectControls",
+            "P1",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C1"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C6"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P4",
+            "C10"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P4",
+            "C11"
+          ],
+          [
+            "Person",
+            "P4"
+          ],
+          [
+            "Company",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "P3",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C6",
+          "C6"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C8"
+          ],
+          [
+            "Holds",
+            "C8",
+            "C6",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C7"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C7",
+            0.6
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C7",
+          "C12"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C6"
+          ],
+          [
+            "Holds",
+            "C6",
+            "C12",
+            0.3
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "HoldReach",
+          "C8",
+          "C8"
+        ],
+        "rule": "R11",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C7"
+          ],
+          [
+            "Holds",
+            "C7",
+            "C8",
+            0.4
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C7",
+          "C7"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C11"
+          ],
+          [
+            "Guarantee",
+            "C11",
+            "C7",
+            2500.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C10",
+          "C10"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C7"
+          ],
+          [
+            "Guarantee",
+            "C7",
+            "C10",
+            3000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "GuarReach",
+          "C11",
+          "C11"
+        ],
+        "rule": "R13",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C10"
+          ],
+          [
+            "Guarantee",
+            "C10",
+            "C11",
+            2000.0
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C2"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C3"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C9"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C9"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P1",
+            "C5"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P2",
+            "C5"
+          ],
+          [
+            "Person",
+            "P2"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C7"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C12"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C12"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        "rule": "R07",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Controls",
+            "C4",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C2"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C2"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P3",
+            "C7"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C4"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C10",
+          "C11"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C10",
+            "P4"
+          ],
+          [
+            "ActualController",
+            "C11",
+            "P4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C11",
+          "C10"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C11",
+            "P4"
+          ],
+          [
+            "ActualController",
+            "C10",
+            "P4"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C6",
+            "C6"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C7",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        "rule": "R20",
+        "premises": [
+          [
+            "HoldReach",
+            "C8",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C7",
+            "C7"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C10",
+            "C10"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        "rule": "R21",
+        "premises": [
+          [
+            "GuarReach",
+            "C11",
+            "C11"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        "rule": "R24",
+        "premises": [
+          [
+            "HoldReach",
+            "P3",
+            "C8"
+          ],
+          [
+            "Person",
+            "P3"
+          ],
+          [
+            "Company",
+            "C8"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        "rule": "R09",
+        "premises": [
+          [
+            "Controls",
+            "P1",
+            "C5"
+          ],
+          [
+            "Person",
+            "P1"
+          ],
+          [
+            "Company",
+            "C5"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C7",
+          "C6"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C6",
+          "C7"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C6",
+            "P3"
+          ],
+          [
+            "ActualController",
+            "C7",
+            "P3"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C6",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C6",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C7",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C7",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C8",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C8",
+            "循环持股"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C10",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C10",
+            "担保圈"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RiskLevel",
+          "C11",
+          "高"
+        ],
+        "rule": "R22",
+        "premises": [
+          [
+            "Alert",
+            "C11",
+            "担保圈"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C1"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C2"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C5",
+          "C4"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C1",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C2",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "SharedController",
+          "C4",
+          "C5"
+        ],
+        "rule": "R14",
+        "premises": [
+          [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          [
+            "ActualController",
+            "C5",
+            "P1"
+          ]
+        ]
+      },
+      {
+        "fact": [
+          "RelatedTrade",
+          "C5",
+          "C2"
+        ],
+        "rule": "R15",
+        "premises": [
+          [
+            "SharedController",
+            "C5",
+            "C2"
+          ],
+          [
+            "Trade",
+            "C5",
+            "C2",
+            2000.0
+          ]
+        ]
+      }
+    ],
+    "stats": {
+      "cycles": 7,
+      "facts": 172,
+      "derived_facts": 125,
+      "candidate_checks": 659,
+      "rule_instances": 140,
+      "elapsed_ms": 10.549800004810095,
+      "converged": true,
+      "peak_new_facts": 35
+    },
+    "equity": {
+      "target_id": "C3",
+      "companies_solved": 3,
+      "method": "partial_pivot_linear_system",
+      "formula": "u_j = d_j + sum_i H_ij*u_i",
+      "upstream_companies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "note": "教学经济权益模型；非法律受益人认定，非表决权。未登记持股计入未知股东份额。",
+      "status": "solved",
+      "owners": [
+        {
+          "entity_id": "P1",
+          "name": "王建国",
+          "share": 0.342
+        }
+      ],
+      "unknown_share": 0.6579999999999999,
+      "total_share": 1.0,
+      "residual": 0.0,
+      "minimum_pivot": 1.0,
+      "numerical_warning": false,
+      "elapsed_ms": 0.11239998275414109
+    },
+    "effective_right_targets": [
+      "C3"
+    ],
+    "missing_trade_evidence": false,
+    "note": "身份/凭证为人工声明核验状态，不做外部权威认证；有效期结束日不含当天。"
+  }
+}

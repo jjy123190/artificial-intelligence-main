@@ -1,0 +1,35 @@
+[
+  {
+    "seed": 7,
+    "train_n": 200,
+    "validation_n": 80,
+    "unique_test_n": 120,
+    "sample_id_overlap": 0,
+    "entity_id_overlap": 0,
+    "train_positive": 68,
+    "validation_positive": 27,
+    "test_positive": 43
+  },
+  {
+    "seed": 19,
+    "train_n": 200,
+    "validation_n": 80,
+    "unique_test_n": 120,
+    "sample_id_overlap": 0,
+    "entity_id_overlap": 0,
+    "train_positive": 71,
+    "validation_positive": 31,
+    "test_positive": 44
+  },
+  {
+    "seed": 43,
+    "train_n": 200,
+    "validation_n": 80,
+    "unique_test_n": 120,
+    "sample_id_overlap": 0,
+    "entity_id_overlap": 0,
+    "train_positive": 72,
+    "validation_positive": 30,
+    "test_positive": 27
+  }
+]

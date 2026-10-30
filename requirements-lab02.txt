@@ -1,0 +1,2 @@
+# 核心推理、实验和测试仅使用 Python 标准库（Python >= 3.10）。
+# 如需绘图，请另安装 requirements-plots.txt。

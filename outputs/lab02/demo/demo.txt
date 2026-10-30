@@ -1,0 +1,94 @@
+企业股权风险推理 · 第二次课堂汇报
+================================================================
+教学数据全部虚构；控制/受益人/风险均为模型内候选或复核线索，不是法律、监管或投资结论。
+
+第二次汇报扩展案例
+本项目内的第一次 CSV 快照: C:\Users\Administrator\Desktop\artificial-intelligence-main\data\raw；追加明示的虚构扩展数据（未改变第一次记录）
+{'实体': 29, '自然人': 9, '企业': 20, '持股关系': 38, '担保关系': 12, '交易关系': 10, '亲属关系': 5, '上市公司': 2}
+规则数: 27
+
+[1] 正向闭包
+{"cycles": 9, "facts": 615, "derived_facts": 447, "candidate_checks": 2098, "rule_instances": 602, "elapsed_ms": 14.63540003169328, "converged": true, "peak_new_facts": 136}
+周期   1 触发 R01,R02,R03,R10,R12,R17,R18 新增 136 累计 304
+周期   2 触发 R04,R05,R05b,R08,R11,R13,R23,R24 新增 94 累计 398
+周期   3 触发 R05b,R07,R08,R09,R11,R13,R20,R24 新增 77 累计 475
+周期   4 触发 R07,R09,R11,R14,R20,R21,R22,R24 新增 56 累计 531
+周期   5 触发 R09,R11,R14,R15,R22,R24 新增 40 累计 571
+周期   6 触发 R11,R14,R24 新增 32 累计 603
+周期   7 触发 R11,R15,R24 新增 8 累计 611
+周期   8 触发 R11,R19,R24 新增 3 累计 614
+周期   9 触发 R22 新增 1 累计 615
+
+[2] 正反向关键查询一致性
+('Controls', 'P1', 'C3') → 可证
+('Alert', 'C3', '关联交易待核查') → 可证
+('Alert', 'C6', '循环持股') → 可证
+('Alert', 'C7', '担保圈') → 可证
+('Controls', 'P3', 'C3') → 无法证明（不等于现实为假）
+
+P1 控制 C3 的反向证明：
+• Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）
+    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls
+        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索
+            • Holds(P1,C1,0.8) [输入/预处理事实]
+    • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls
+        • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选
+            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索
+                • Holds(C1,C2,0.65) [输入/预处理事实]
+            • Holds(C2,C3,0.35) [输入/预处理事实]
+            • Holds(C1,C3,0.2) [输入/预处理事实]
+
+[3] 独立归结反演（数值守卫已转为显式算术事实）
+[1] Holds(P1,C1,0.8) ← input CSV/显式算术比较
+[2] Holds(C1,C2,0.65) ← input CSV/显式算术比较
+[3] Holds(C2,C3,0.35) ← input CSV/显式算术比较
+[4] Holds(C1,C3,0.2) ← input CSV/显式算术比较
+[5] AboveHalf(0.8) ← input CSV/显式算术比较
+[6] AboveHalf(0.65) ← input CSV/显式算术比较
+[7] SumAboveHalf(0.35,0.2) ← input CSV/显式算术比较
+[8] DirectControls(?x__2,?y__3) ∨ ¬AboveHalf(?r__1) ∨ ¬Holds(?x__2,?y__3,?r__1) ← input 股权子案例规则1
+[9] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬Holds(C1,C3,0.2) ∨ ¬Holds(C2,C3,0.35) ∨ ¬SumAboveHalf(0.35,0.2) ← input 股权子案例规则2
+[10] Controls(?x__4,?y__5) ∨ ¬DirectControls(?x__4,?y__5) ← input 股权子案例规则3
+[11] Controls(P1,C3) ∨ ¬Controls(C1,C3) ∨ ¬Controls(P1,C1) ← input 股权子案例规则4
+[12] ¬Controls(P1,C3) ← goal 否定待证目标
+[14] DirectControls(P1,C1) ∨ ¬AboveHalf(0.8) ← resolution 8,1
+[15] DirectControls(C1,C2) ∨ ¬AboveHalf(0.65) ← resolution 8,2
+[22] DirectControls(P1,C1) ← resolution 14,5
+[24] Controls(P1,C1) ← resolution 22,10
+[25] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬Holds(C1,C3,0.2) ∨ ¬SumAboveHalf(0.35,0.2) ← resolution 9,3
+[30] DirectControls(C1,C2) ← resolution 15,6
+[38] ¬Controls(C1,C3) ∨ ¬Controls(P1,C1) ← resolution 11,12
+[46] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬SumAboveHalf(0.35,0.2) ← resolution 25,4
+[59] ¬Controls(C1,C3) ← resolution 38,24
+[60] ¬DirectControls(C1,C3) ← resolution 59,10
+[89] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ← resolution 46,7
+[104] DirectControls(C1,C3) ← resolution 89,30
+[111] □ ← resolution 104,60
+
+[4] 同一企业的 Bayes / Fuzzy / Hybrid
+手工先验/CPT与固定融合权重（尚未从实验文件加载）
+ID    Bayes  Fuzzy  Hybrid  复核优先级  结构预警
+C1    0.014  0.302  0.106  低  无已知预警
+C2    0.014  0.333  0.114  低  无已知预警
+C3    0.014  0.240  0.091  高  关联交易待核查
+C4    0.860  0.648  0.806  高  循环持股
+C5    0.860  0.648  0.806  高  循环持股
+C6    0.135  0.711  0.386  高  循环持股
+C7    0.135  0.690  0.381  高  循环持股;担保圈
+C8    0.135  0.711  0.386  高  循环持股
+C9    0.014  0.406  0.132  低  无已知预警
+C10   0.135  0.658  0.373  高  担保圈
+C11   0.970  0.648  0.871  高  担保圈
+C12   0.014  0.214  0.084  中  无已知预警
+C13   0.063  0.492  0.183  低  无已知预警
+C14   0.063  0.547  0.197  低  无已知预警
+C15   0.063  0.565  0.202  中  无已知预警
+C16   0.427  0.647  0.545  高  循环持股
+C17   0.860  0.651  0.806  高  循环持股
+C18   0.135  0.648  0.370  高  循环持股;担保圈
+C19   0.794  0.651  0.766  高  循环持股;担保圈
+C20   0.794  0.711  0.782  高  循环持股;担保圈
+
+高复核优先级可以由已证结构预警触发，不与数值评分混为一谈。
+无真实风险标签，不在这29个实体上伪报分类准确率。
+完整事实、全部推理步骤和来源: C:\Users\Administrator\Desktop\artificial-intelligence-main\outputs\qa\lab02-fixes\formal-20261025T113928Z\demo\traces.json

@@ -1,0 +1,5 @@
+﻿groups,query,expected,proved,proof_nodes,rounds,new_tables,table_count,rule_attempts,cache_hits,elapsed_ms,answer_count,converged
+1,"('Controls', 'P1', 'C1_0')",False,False,0,4,8,8,34,37,3.583099984098226,7,True
+4,"('Controls', 'P4', 'C4_3')",True,True,9,12,104,104,926,1287,55.58789998758584,68,True
+8,"('Controls', 'P8', 'C8_2')",True,True,7,12,188,188,1658,2253,68.72089998796582,82,True
+16,"('Controls', 'P8', 'C8_2')",True,True,7,12,329,329,2852,3822,111.2487000063993,135,True

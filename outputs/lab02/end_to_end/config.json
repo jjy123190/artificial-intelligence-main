@@ -1,0 +1,101 @@
+{
+  "config": {
+    "seeds": [
+      7,
+      19,
+      43
+    ],
+    "train_size": 200,
+    "validation_size": 80,
+    "test_size": 120,
+    "threshold": 0.5
+  },
+  "generator": {
+    "version": 1,
+    "label_prior": 0.35,
+    "shared_control_given_label": [
+      0.3,
+      0.72
+    ],
+    "seller_trade_given_label": [
+      0.26,
+      0.78
+    ],
+    "holding_cycle_given_label": [
+      0.08,
+      0.34
+    ],
+    "guarantee_cycle_given_label": [
+      0.12,
+      0.5
+    ],
+    "label_origin": "模拟外部高复核需求标签，先采样；不调用规则引擎生成标签",
+    "dependence": "担保负荷与担保圈共享业务开关；不透明度与共同控制交易相关，指标并非条件独立",
+    "limits": "合成的3自然人/7企业业务图族，不代表真实企业总体分布，也不覆盖全部27条规则的每个前提组合"
+  },
+  "conditions": [
+    {
+      "name": "clean",
+      "holding_sd": 0.0,
+      "amount_log_sd": 0.0,
+      "opacity_sd": 0.0,
+      "edge_missing": 0.0,
+      "spurious_return": 0.0
+    },
+    {
+      "name": "value_noise",
+      "holding_sd": 0.08,
+      "amount_log_sd": 0.2,
+      "opacity_sd": 0.1,
+      "edge_missing": 0.0,
+      "spurious_return": 0.0
+    },
+    {
+      "name": "edge_missing_020",
+      "holding_sd": 0.0,
+      "amount_log_sd": 0.0,
+      "opacity_sd": 0.0,
+      "edge_missing": 0.2,
+      "spurious_return": 0.0
+    },
+    {
+      "name": "false_loop_020",
+      "holding_sd": 0.0,
+      "amount_log_sd": 0.0,
+      "opacity_sd": 0.0,
+      "edge_missing": 0.0,
+      "spurious_return": 0.2
+    },
+    {
+      "name": "combined",
+      "holding_sd": 0.08,
+      "amount_log_sd": 0.2,
+      "opacity_sd": 0.1,
+      "edge_missing": 0.2,
+      "spurious_return": 0.2
+    },
+    {
+      "name": "severe",
+      "holding_sd": 0.15,
+      "amount_log_sd": 0.35,
+      "opacity_sd": 0.2,
+      "edge_missing": 0.4,
+      "spurious_return": 0.4
+    }
+  ],
+  "methods": [
+    "rules_only",
+    "bayes_only",
+    "fuzzy_only",
+    "hybrid_fixed_unlocked",
+    "hybrid_fixed_locked",
+    "hybrid_tuned_unlocked",
+    "hybrid_tuned_locked",
+    "fuzzy_learned",
+    "hybrid_adaptive_unlocked",
+    "hybrid_adaptive_locked",
+    "hybrid_adaptive_calibrated"
+  ],
+  "label_note": "外部模拟标签先于业务图生成；风险标签不等于是否存在结构预警",
+  "decision_note": "分类指标基于最终review_required；Brier仅评价原始score，锁定不修改score"
+}

@@ -1,0 +1,7 @@
+﻿repetition,model,input_clauses,status,proof_steps,pairs,generated,retained,pruned,selected,elapsed_ms
+0,fifo_baseline,31,proved,25,104986,3842,925,2917,458,3069.0217999508604
+0,optimized,31,proved,25,457,245,126,119,73,155.2339000045322
+1,fifo_baseline,31,proved,25,104986,3842,922,2920,458,3895.919899980072
+1,optimized,31,proved,25,457,245,126,119,73,222.71699999691918
+2,fifo_baseline,31,proved,25,104986,3842,922,2920,458,3177.2784999920987
+2,optimized,31,proved,25,457,245,126,119,73,165.6115999794565

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+web/node_modules/
+web/*.tsbuildinfo
+outputs/runtime/
+outputs/qa/
+outputs/submissions/
+.state/
+.pytest_cache/
+~$*
+Thumbs.db
+.DS_Store
+*.tmp

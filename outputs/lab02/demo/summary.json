@@ -1,0 +1,5043 @@
+{
+  "case": "第二次汇报扩展案例",
+  "source": "本项目内的第一次 CSV 快照: C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\data\\raw；追加明示的虚构扩展数据（未改变第一次记录）",
+  "size": {
+    "实体": 29,
+    "自然人": 9,
+    "企业": 20,
+    "持股关系": 38,
+    "担保关系": 12,
+    "交易关系": 10,
+    "亲属关系": 5,
+    "上市公司": 2
+  },
+  "disclaimer": "教学数据全部虚构；控制/受益人/风险均为模型内候选或复核线索，不是法律、监管或投资结论。",
+  "model_source": "手工先验/CPT与固定融合权重（尚未从实验文件加载）",
+  "forward": {
+    "cycles": 9,
+    "facts": 615,
+    "derived_facts": 447,
+    "candidate_checks": 2098,
+    "rule_instances": 602,
+    "elapsed_ms": 14.63540003169328,
+    "converged": true,
+    "peak_new_facts": 136
+  },
+  "backward_checks": [
+    {
+      "goal": [
+        "Controls",
+        "P1",
+        "C3"
+      ],
+      "proved": true,
+      "equivalent": true,
+      "stats": {
+        "rounds": 15,
+        "new_tables": 218,
+        "table_count": 218,
+        "rule_attempts": 2650,
+        "cache_hits": 3756,
+        "elapsed_ms": 109.09089999040589,
+        "answer_count": 102,
+        "converged": true
+      },
+      "proof": [
+        "• Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+        "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+        "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+        "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+        "    • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+        "        • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+        "            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+        "                • Holds(C1,C2,0.65) [输入/预处理事实]",
+        "            • Holds(C2,C3,0.35) [输入/预处理事实]",
+        "            • Holds(C1,C3,0.2) [输入/预处理事实]"
+      ]
+    },
+    {
+      "goal": [
+        "Alert",
+        "C3",
+        "关联交易待核查"
+      ],
+      "proved": true,
+      "equivalent": true,
+      "stats": {
+        "rounds": 16,
+        "new_tables": 795,
+        "table_count": 1013,
+        "rule_attempts": 16189,
+        "cache_hits": 22871,
+        "elapsed_ms": 706.8419000133872,
+        "answer_count": 242,
+        "converged": true
+      },
+      "proof": [
+        "• Alert(C3,关联交易待核查) ⇐ R19 上市买方存在关联交易线索 → 待核查预警",
+        "    • RelatedTrade(C4,C3) ⇐ R16 共同控制关系反向匹配交易（等价冗余规则，用于去冗余实验）",
+        "        • SharedController(C3,C4) ⇐ R14 同一自然人控制的不同企业 → 共同控制关系",
+        "            • ActualController(C3,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+        "                • Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+        "                    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+        "                        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+        "                            • Holds(P1,C1,0.8) [输入/预处理事实]",
+        "                    • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+        "                        • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+        "                            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+        "                                • Holds(C1,C2,0.65) [输入/预处理事实]",
+        "                            • Holds(C2,C3,0.35) [输入/预处理事实]",
+        "                            • Holds(C1,C3,0.2) [输入/预处理事实]",
+        "                • Person(P1) [输入/预处理事实]",
+        "                • Company(C3) [输入/预处理事实]",
+        "            • ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+        "                • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+        "                    • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+        "                        • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+        "                            • Kin(P1,P2,配偶) [输入/预处理事实]",
+        "                        • Holds(P1,C4,0.3) [输入/预处理事实]",
+        "                        • Holds(P2,C4,0.25) [输入/预处理事实]",
+        "                • Person(P1) [输入/预处理事实]",
+        "                • Company(C4) [输入/预处理事实]",
+        "        • Trade(C4,C3,5000.0) [输入/预处理事实]",
+        "    • Listed(C3) [输入/预处理事实]"
+      ]
+    },
+    {
+      "goal": [
+        "Alert",
+        "C6",
+        "循环持股"
+      ],
+      "proved": true,
+      "equivalent": true,
+      "stats": {
+        "rounds": 8,
+        "new_tables": 9,
+        "table_count": 1022,
+        "rule_attempts": 15144,
+        "cache_hits": 21817,
+        "elapsed_ms": 629.4501999509521,
+        "answer_count": 247,
+        "converged": true
+      },
+      "proof": [
+        "• Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+        "    • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+        "        • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+        "            • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+        "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+        "            • Holds(C7,C8,0.4) [输入/预处理事实]",
+        "        • Holds(C8,C6,0.3) [输入/预处理事实]"
+      ]
+    },
+    {
+      "goal": [
+        "Alert",
+        "C7",
+        "担保圈"
+      ],
+      "proved": true,
+      "equivalent": true,
+      "stats": {
+        "rounds": 8,
+        "new_tables": 13,
+        "table_count": 1035,
+        "rule_attempts": 15240,
+        "cache_hits": 21917,
+        "elapsed_ms": 644.7026000241749,
+        "answer_count": 256,
+        "converged": true
+      },
+      "proof": [
+        "• Alert(C7,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+        "    • GuarReach(C7,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+        "        • GuarReach(C7,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+        "            • GuarReach(C7,C10) ⇐ R12 担保可达：基础边",
+        "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+        "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+        "        • Guarantee(C11,C7,2500.0) [输入/预处理事实]"
+      ]
+    },
+    {
+      "goal": [
+        "Controls",
+        "P3",
+        "C3"
+      ],
+      "proved": false,
+      "equivalent": true,
+      "stats": {
+        "rounds": 0,
+        "new_tables": 0,
+        "table_count": 1035,
+        "rule_attempts": 0,
+        "cache_hits": 1,
+        "elapsed_ms": 0.004499976057559252,
+        "answer_count": 256,
+        "converged": true
+      },
+      "proof": []
+    }
+  ],
+  "resolution": {
+    "status": "proved",
+    "stats": {
+      "pairs": 474,
+      "generated": 232,
+      "retained": 111,
+      "pruned": 121,
+      "selected": 54,
+      "elapsed_ms": 199.63249994907528
+    },
+    "proof": [
+      "[1] Holds(P1,C1,0.8) ← input CSV/显式算术比较",
+      "[2] Holds(C1,C2,0.65) ← input CSV/显式算术比较",
+      "[3] Holds(C2,C3,0.35) ← input CSV/显式算术比较",
+      "[4] Holds(C1,C3,0.2) ← input CSV/显式算术比较",
+      "[5] AboveHalf(0.8) ← input CSV/显式算术比较",
+      "[6] AboveHalf(0.65) ← input CSV/显式算术比较",
+      "[7] SumAboveHalf(0.35,0.2) ← input CSV/显式算术比较",
+      "[8] DirectControls(?x__2,?y__3) ∨ ¬AboveHalf(?r__1) ∨ ¬Holds(?x__2,?y__3,?r__1) ← input 股权子案例规则1",
+      "[9] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬Holds(C1,C3,0.2) ∨ ¬Holds(C2,C3,0.35) ∨ ¬SumAboveHalf(0.35,0.2) ← input 股权子案例规则2",
+      "[10] Controls(?x__4,?y__5) ∨ ¬DirectControls(?x__4,?y__5) ← input 股权子案例规则3",
+      "[11] Controls(P1,C3) ∨ ¬Controls(C1,C3) ∨ ¬Controls(P1,C1) ← input 股权子案例规则4",
+      "[12] ¬Controls(P1,C3) ← goal 否定待证目标",
+      "[14] DirectControls(P1,C1) ∨ ¬AboveHalf(0.8) ← resolution 8,1",
+      "[15] DirectControls(C1,C2) ∨ ¬AboveHalf(0.65) ← resolution 8,2",
+      "[22] DirectControls(P1,C1) ← resolution 14,5",
+      "[24] Controls(P1,C1) ← resolution 22,10",
+      "[25] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬Holds(C1,C3,0.2) ∨ ¬SumAboveHalf(0.35,0.2) ← resolution 9,3",
+      "[30] DirectControls(C1,C2) ← resolution 15,6",
+      "[38] ¬Controls(C1,C3) ∨ ¬Controls(P1,C1) ← resolution 11,12",
+      "[46] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ∨ ¬SumAboveHalf(0.35,0.2) ← resolution 25,4",
+      "[59] ¬Controls(C1,C3) ← resolution 38,24",
+      "[60] ¬DirectControls(C1,C3) ← resolution 59,10",
+      "[89] DirectControls(C1,C3) ∨ ¬DirectControls(C1,C2) ← resolution 46,7",
+      "[104] DirectControls(C1,C3) ← resolution 89,30",
+      "[111] □ ← resolution 104,60"
+    ]
+  },
+  "companies": [
+    {
+      "observation": {
+        "company_id": "C1",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.0,
+          "guarantee": 0.0,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "华鑫控股集团",
+      "score": 0.10625820284337854,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "低",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C1"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C1",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C1",
+          "P1"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C1"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C1",
+      "company_name": "华鑫控股集团",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3966999938711524,
+      "end_to_end_ms": 18.29199999338016,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.01396625752182727,
+        "fuzzy": 0.3015137933211287,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C1",
+            "P1"
+          ],
+          "lines": [
+            "• ActualController(C1,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C1) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C1",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C1,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+            "        • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C1) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P1",
+            "C1"
+          ],
+          "lines": [
+            "• Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P1,C1,0.8) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C2",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.1,
+          "guarantee": 0.2,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "华鑫实业有限公司",
+      "score": 0.11401969897378038,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "低",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C2"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C2",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C2",
+          "P1"
+        ],
+        [
+          "Controls",
+          "C1",
+          "C2"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C2"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C2",
+      "company_name": "华鑫实业有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.34389999927952886,
+      "end_to_end_ms": 18.239199998788536,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.01396625752182727,
+        "fuzzy": 0.33255977784273605,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C2",
+            "P1"
+          ],
+          "lines": [
+            "• ActualController(C2,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "        • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C2",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C2,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C2) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "        • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C1",
+            "C2"
+          ],
+          "lines": [
+            "• Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C1,C2,0.65) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P1",
+            "C2"
+          ],
+          "lines": [
+            "• Controls(P1,C2) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "    • Controls(C1,C2) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C1,C2,0.65) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C3",
+        "values": {
+          "opacity": 0.05,
+          "related_trade": 0.0625,
+          "guarantee": 0.075,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.95
+      },
+      "name": "恒通科技股份有限公司",
+      "score": 0.09084370830047422,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C3",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C3",
+          "关联交易待核查"
+        ],
+        [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C3",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C1",
+          "C3"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C3"
+        ],
+        [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C3",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C3",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C3",
+          "关联交易待核查"
+        ],
+        [
+          "BeneficialOwner",
+          "C3",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C3",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C1",
+          "C3"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C3"
+        ],
+        [
+          "RiskLevel",
+          "C3",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C3",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "关联交易待核查"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C3",
+      "company_name": "恒通科技股份有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3247999702580273,
+      "end_to_end_ms": 18.220099969767034,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.01396625752182727,
+        "fuzzy": 0.23985581514951146,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C3",
+            "P1"
+          ],
+          "lines": [
+            "• ActualController(C3,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "        • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "                • Holds(C2,C3,0.35) [输入/预处理事实]",
+            "                • Holds(C1,C3,0.2) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C3",
+            "关联交易待核查"
+          ],
+          "lines": [
+            "• Alert(C3,关联交易待核查) ⇐ R19 上市买方存在关联交易线索 → 待核查预警",
+            "    • RelatedTrade(C4,C3) ⇐ R15 共同控制企业之间的实际交易 → 关联交易线索",
+            "        • SharedController(C4,C3) ⇐ R14 同一自然人控制的不同企业 → 共同控制关系",
+            "            • ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                    • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "                        • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "                            • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "                        • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "                        • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "                • Person(P1) [输入/预处理事实]",
+            "                • Company(C4) [输入/预处理事实]",
+            "            • ActualController(C3,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                • Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+            "                    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "                    • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "                            • Holds(C2,C3,0.35) [输入/预处理事实]",
+            "                            • Holds(C1,C3,0.2) [输入/预处理事实]",
+            "                • Person(P1) [输入/预处理事实]",
+            "                • Company(C3) [输入/预处理事实]",
+            "        • Trade(C4,C3,5000.0) [输入/预处理事实]",
+            "    • Listed(C3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C3",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C3,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C3) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "        • Holds(C1,C3,0.2) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C3",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C3,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C3) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C15) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C14) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "                • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "            • Holds(C14,C15,0.55) [输入/预处理事实]",
+            "        • Holds(C15,C3,0.08) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C1",
+            "C3"
+          ],
+          "lines": [
+            "• Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "        • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "        • Holds(C2,C3,0.35) [输入/预处理事实]",
+            "        • Holds(C1,C3,0.2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P1",
+            "C3"
+          ],
+          "lines": [
+            "• Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "    • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "            • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "            • Holds(C2,C3,0.35) [输入/预处理事实]",
+            "            • Holds(C1,C3,0.2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C3",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C3,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C1,C3) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C1,C3) [输入/预处理事实]",
+            "    • Company(C3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C3",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C3,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C3,关联交易待核查) ⇐ R19 上市买方存在关联交易线索 → 待核查预警",
+            "        • RelatedTrade(C4,C3) ⇐ R15 共同控制企业之间的实际交易 → 关联交易线索",
+            "            • SharedController(C4,C3) ⇐ R14 同一自然人控制的不同企业 → 共同控制关系",
+            "                • ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "                            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "                                • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "                            • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "                            • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "                    • Person(P1) [输入/预处理事实]",
+            "                    • Company(C4) [输入/预处理事实]",
+            "                • ActualController(C3,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                    • Controls(P1,C3) ⇐ R07 控制传递（不输出自身控制自身）",
+            "                        • Controls(P1,C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                            • DirectControls(P1,C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "                        • Controls(C1,C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                            • DirectControls(C1,C3) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                                • DirectControls(C1,C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                    • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "                                • Holds(C2,C3,0.35) [输入/预处理事实]",
+            "                                • Holds(C1,C3,0.2) [输入/预处理事实]",
+            "                    • Person(P1) [输入/预处理事实]",
+            "                    • Company(C3) [输入/预处理事实]",
+            "            • Trade(C4,C3,5000.0) [输入/预处理事实]",
+            "        • Listed(C3) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C4",
+        "values": {
+          "opacity": 0.55,
+          "related_trade": 1.0,
+          "guarantee": 0.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.44999999999999996
+      },
+      "name": "远航贸易有限公司",
+      "score": 0.8056661183052424,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C4",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        [
+          "RiskLevel",
+          "C4",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C4",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C4",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C4",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C4",
+          "P2"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C4"
+        ],
+        [
+          "RiskLevel",
+          "C4",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C4",
+      "company_name": "远航贸易有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.42349996510893106,
+      "end_to_end_ms": 18.318799964617938,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.8602435150873479,
+        "fuzzy": 0.6480800370113348,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C4",
+            "P1"
+          ],
+          "lines": [
+            "• ActualController(C4,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C4) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C4",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C4,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C4,C4) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C4,C5) ⇐ R10 持股可达：基础边",
+            "            • Holds(C4,C5,0.9) [输入/预处理事实]",
+            "        • Holds(C5,C4,0.1) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C4",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C4,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+            "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C4) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C4",
+            "P2"
+          ],
+          "lines": [
+            "• BeneficialOwner(C4,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+            "        • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "    • Person(P2) [输入/预处理事实]",
+            "    • Company(C4) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P1",
+            "C4"
+          ],
+          "lines": [
+            "• Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "        • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "            • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "        • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "        • Holds(P2,C4,0.25) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C4",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C4,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C4,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C4,C4) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C4,C5) ⇐ R10 持股可达：基础边",
+            "                • Holds(C4,C5,0.9) [输入/预处理事实]",
+            "            • Holds(C5,C4,0.1) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C5",
+        "values": {
+          "opacity": 0.55,
+          "related_trade": 0.6666666666666666,
+          "guarantee": 0.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.44999999999999996
+      },
+      "name": "盛达物流有限公司",
+      "score": 0.8056661183052424,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C5",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        [
+          "RiskLevel",
+          "C5",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C5",
+          "P1"
+        ],
+        [
+          "Alert",
+          "C5",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C5",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C5",
+          "P2"
+        ],
+        [
+          "Controls",
+          "C4",
+          "C5"
+        ],
+        [
+          "Controls",
+          "P1",
+          "C5"
+        ],
+        [
+          "RiskLevel",
+          "C5",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C5",
+      "company_name": "盛达物流有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.7925999816507101,
+      "end_to_end_ms": 18.687899981159717,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.8602435150873479,
+        "fuzzy": 0.6480800370113348,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C5",
+            "P1"
+          ],
+          "lines": [
+            "• ActualController(C5,P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "                • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "                    • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "                • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "                • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "        • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C4,C5,0.9) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C5) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C5",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C5,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C5,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C5,C4) ⇐ R10 持股可达：基础边",
+            "            • Holds(C5,C4,0.1) [输入/预处理事实]",
+            "        • Holds(C4,C5,0.9) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C5",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C5,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P1,C4) ⇐ R10 持股可达：基础边",
+            "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C5) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C5",
+            "P2"
+          ],
+          "lines": [
+            "• BeneficialOwner(C5,P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P2,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P2,C4) ⇐ R10 持股可达：基础边",
+            "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "        • Holds(C4,C5,0.9) [输入/预处理事实]",
+            "    • Person(P2) [输入/预处理事实]",
+            "    • Company(C5) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C4",
+            "C5"
+          ],
+          "lines": [
+            "• Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C4,C5,0.9) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P1",
+            "C5"
+          ],
+          "lines": [
+            "• Controls(P1,C5) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P1,C4) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P1,C4) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "            • Concerts(P1,P2) ⇐ R02 配偶视为一致行动人（教学假设）",
+            "                • Kin(P1,P2,配偶) [输入/预处理事实]",
+            "            • Holds(P1,C4,0.3) [输入/预处理事实]",
+            "            • Holds(P2,C4,0.25) [输入/预处理事实]",
+            "    • Controls(C4,C5) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C4,C5) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C4,C5,0.9) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C5",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C5,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C5,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C5,C5) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C5,C4) ⇐ R10 持股可达：基础边",
+            "                • Holds(C5,C4,0.1) [输入/预处理事实]",
+            "            • Holds(C4,C5,0.9) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C6",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.0,
+          "guarantee": 0.06,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "鼎丰投资有限公司",
+      "score": 0.38624661111105746,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        [
+          "RiskLevel",
+          "C6",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C6",
+          "P3"
+        ],
+        [
+          "Alert",
+          "C6",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C6",
+          "P3"
+        ],
+        [
+          "Controls",
+          "P3",
+          "C6"
+        ],
+        [
+          "RiskLevel",
+          "C6",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C6",
+      "company_name": "鼎丰投资有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.42179995216429234,
+      "end_to_end_ms": 18.3170999516733,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.1348020335849638,
+        "fuzzy": 0.7114615638403168,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C6",
+            "P3"
+          ],
+          "lines": [
+            "• ActualController(C6,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C6",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+            "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "            • Holds(C7,C8,0.4) [输入/预处理事实]",
+            "        • Holds(C8,C6,0.3) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C6",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C6,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "        • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P3",
+            "C6"
+          ],
+          "lines": [
+            "• Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P3,C6,0.7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C6",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C6,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C6,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C6,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C6,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C6,C7) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+            "            • Holds(C8,C6,0.3) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C7",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.0,
+          "guarantee": 0.2,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "鼎丰建设有限公司",
+      "score": 0.38075762630846793,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        [
+          "RiskLevel",
+          "C7",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C7",
+          "P3"
+        ],
+        [
+          "Alert",
+          "C7",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C7",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C7",
+          "P3"
+        ],
+        [
+          "Controls",
+          "C6",
+          "C7"
+        ],
+        [
+          "Controls",
+          "P3",
+          "C7"
+        ],
+        [
+          "RiskLevel",
+          "C7",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股",
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C7",
+      "company_name": "鼎丰建设有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.38270000368356705,
+      "end_to_end_ms": 18.278000003192574,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.1348020335849638,
+        "fuzzy": 0.6895056246299586,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C7",
+            "P3"
+          ],
+          "lines": [
+            "• ActualController(C7,P3) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "        • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C7",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+            "                • Holds(C7,C8,0.4) [输入/预处理事实]",
+            "            • Holds(C8,C6,0.3) [输入/预处理事实]",
+            "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C7",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C7,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C7,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C7,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C7,C10) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+            "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+            "        • Guarantee(C11,C7,2500.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C7",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C7,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "        • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C6",
+            "C7"
+          ],
+          "lines": [
+            "• Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C6,C7,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P3",
+            "C7"
+          ],
+          "lines": [
+            "• Controls(P3,C7) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P3,C6) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P3,C6) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "    • Controls(C6,C7) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C6,C7) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C7",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C7,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C7,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C7,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C7,C6) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C7,C8) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C7,C8,0.4) [输入/预处理事实]",
+            "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+            "            • Holds(C6,C7,0.6) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C8",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.0,
+          "guarantee": 0.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "瑞祥建材有限公司",
+      "score": 0.38624661111105746,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C8",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "Alert",
+          "C8",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C8",
+          "P3"
+        ],
+        [
+          "RiskLevel",
+          "C8",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C8",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C8",
+      "company_name": "瑞祥建材有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.39279996417462826,
+      "end_to_end_ms": 18.288099963683635,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.1348020335849638,
+        "fuzzy": 0.7114615638403168,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "Alert",
+            "C8",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+            "                • Holds(C8,C6,0.3) [输入/预处理事实]",
+            "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "        • Holds(C7,C8,0.4) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C8",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C8,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "            • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "        • Holds(C7,C8,0.4) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C8) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C8",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C8,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(P3,C8) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(P3,C8) [输入/预处理事实]",
+            "    • Company(C8) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C8",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C8,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C8,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C8,C8) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C8,C7) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C8,C6) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C8,C6,0.3) [输入/预处理事实]",
+            "                • Holds(C6,C7,0.6) [输入/预处理事实]",
+            "            • Holds(C7,C8,0.4) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C9",
+        "values": {
+          "opacity": 0.35,
+          "related_trade": 0.0,
+          "guarantee": 0.25,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.65
+      },
+      "name": "金桥融资担保有限公司",
+      "score": 0.13243234897014122,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "低",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C9",
+          "P9"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "BeneficialOwner",
+          "C9",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C9",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C9",
+          "P9"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C9",
+      "company_name": "金桥融资担保有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3177000326104462,
+      "end_to_end_ms": 18.213000032119453,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.01396625752182727,
+        "fuzzy": 0.4062103778281794,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C9",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C9,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C9) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "        • Holds(C1,C9,0.4) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C9) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C9",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C9,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C9) ⇐ R10 持股可达：基础边",
+            "        • Holds(P4,C9,0.3) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C9) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C9",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C9,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C9) ⇐ R10 持股可达：基础边",
+            "        • Holds(P9,C9,0.15) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C9) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C10",
+        "values": {
+          "opacity": 0.15,
+          "related_trade": 0.15,
+          "guarantee": 0.3333333333333333,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.85
+      },
+      "name": "天润商贸有限公司",
+      "score": 0.3728966522497437,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        [
+          "RiskLevel",
+          "C10",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C10",
+          "P4"
+        ],
+        [
+          "Alert",
+          "C10",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C10",
+          "P4"
+        ],
+        [
+          "Controls",
+          "P4",
+          "C10"
+        ],
+        [
+          "RiskLevel",
+          "C10",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C10",
+      "company_name": "天润商贸有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.49970002146437764,
+      "end_to_end_ms": 18.395000020973384,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.1348020335849638,
+        "fuzzy": 0.6580617283950617,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C10",
+            "P4"
+          ],
+          "lines": [
+            "• ActualController(C10,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P4,C10,0.51) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C10) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C10",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+            "            • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+            "        • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C10",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C10,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C10) ⇐ R10 持股可达：基础边",
+            "        • Holds(P4,C10,0.51) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C10) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P4",
+            "C10"
+          ],
+          "lines": [
+            "• Controls(P4,C10) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P4,C10) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P4,C10,0.51) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C10",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C10,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C10,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "        • GuarReach(C10,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C10,C7) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "                • GuarReach(C10,C11) ⇐ R12 担保可达：基础边",
+            "                    • Guarantee(C10,C11,2000.0) [输入/预处理事实]",
+            "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+            "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C11",
+        "values": {
+          "opacity": 0.55,
+          "related_trade": 0.9,
+          "guarantee": 1.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.44999999999999996
+      },
+      "name": "博远咨询有限公司",
+      "score": 0.8712286641538134,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        [
+          "RiskLevel",
+          "C11",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C11",
+          "P4"
+        ],
+        [
+          "Alert",
+          "C11",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C11",
+          "P4"
+        ],
+        [
+          "Controls",
+          "P4",
+          "C11"
+        ],
+        [
+          "RiskLevel",
+          "C11",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C11",
+      "company_name": "博远咨询有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.42480003321543336,
+      "end_to_end_ms": 18.32010003272444,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.9695144248349661,
+        "fuzzy": 0.6480800370113348,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C11",
+            "P4"
+          ],
+          "lines": [
+            "• ActualController(C11,P4) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P4,C11,0.6) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C11) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C11",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+            "            • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+            "        • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C11",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C11,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C11) ⇐ R10 持股可达：基础边",
+            "        • Holds(P4,C11,0.6) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C11) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P4",
+            "C11"
+          ],
+          "lines": [
+            "• Controls(P4,C11) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P4,C11) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P4,C11,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C11",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C11,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C11,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "        • GuarReach(C11,C11) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C11,C10) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "                • GuarReach(C11,C7) ⇐ R12 担保可达：基础边",
+            "                    • Guarantee(C11,C7,2500.0) [输入/预处理事实]",
+            "                • Guarantee(C7,C10,3000.0) [输入/预处理事实]",
+            "            • Guarantee(C10,C11,2000.0) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C12",
+        "values": {
+          "opacity": 0.05,
+          "related_trade": 0.0,
+          "guarantee": 0.0,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.95
+      },
+      "name": "星辰电子股份有限公司",
+      "score": 0.0843629005805121,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "中",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "中",
+      "applied_priority_floor": "中",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C12",
+          "P6"
+        ],
+        [
+          "RiskLevel",
+          "C12",
+          "中"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "BeneficialOwner",
+          "C12",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C12",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C12",
+          "P6"
+        ],
+        [
+          "RiskLevel",
+          "C12",
+          "中"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C12",
+      "company_name": "星辰电子股份有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.46980002662166953,
+      "end_to_end_ms": 18.365100026130676,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.01396625752182727,
+        "fuzzy": 0.21393258426966294,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C12",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C12,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "            • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "        • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C12) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C12",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C12,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "        • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C12) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C12",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C12,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C12) ⇐ R10 持股可达：基础边",
+            "        • Holds(P6,C12,0.08) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C12) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C12",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C12,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C7,C12) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C7,C12) [输入/预处理事实]",
+            "    • Company(C12) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C13",
+        "values": {
+          "opacity": 0.5,
+          "related_trade": 0.0,
+          "guarantee": 0.05,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.5
+      },
+      "name": "北岸投资控股有限公司",
+      "score": 0.18343879603824478,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "低",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C13",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C13",
+          "P5"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C13"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C13",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C13",
+          "P5"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C13"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C13",
+      "company_name": "北岸投资控股有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3469999646767974,
+      "end_to_end_ms": 18.242299964185804,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.06335529650278762,
+        "fuzzy": 0.49170247254628885,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C13",
+            "P5"
+          ],
+          "lines": [
+            "• ActualController(C13,P5) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C13) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C13",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C13,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "        • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C13) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P5",
+            "C13"
+          ],
+          "lines": [
+            "• Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P5,C13,0.62) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C14",
+        "values": {
+          "opacity": 0.6,
+          "related_trade": 0.0,
+          "guarantee": 0.0,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.4
+      },
+      "name": "北岸产业基金合伙企业",
+      "score": 0.19733830543208367,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "低",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C14",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C14",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C13",
+          "C14"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C14"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C14",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C14",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C13",
+          "C14"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C14"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C14",
+      "company_name": "北岸产业基金合伙企业",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3367000026628375,
+      "end_to_end_ms": 18.232000002171844,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.06335529650278762,
+        "fuzzy": 0.5473005101216444,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C14",
+            "P5"
+          ],
+          "lines": [
+            "• ActualController(C14,P5) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P5,C14) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "        • Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C14) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C14",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C14,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C14) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "            • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "        • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C14) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C13",
+            "C14"
+          ],
+          "lines": [
+            "• Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C13,C14,0.58) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P5",
+            "C14"
+          ],
+          "lines": [
+            "• Controls(P5,C14) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "    • Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C13,C14,0.58) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C15",
+        "values": {
+          "opacity": 0.65,
+          "related_trade": 0.0,
+          "guarantee": 0.0,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.35
+      },
+      "name": "启元科技发展有限公司",
+      "score": 0.20166337152144023,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "中",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "中",
+      "applied_priority_floor": "中",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C15",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C15",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C15",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C13",
+          "C15"
+        ],
+        [
+          "Controls",
+          "C14",
+          "C15"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C15"
+        ],
+        [
+          "RiskLevel",
+          "C15",
+          "中"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C15",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C15",
+          "P1"
+        ],
+        [
+          "BeneficialOwner",
+          "C15",
+          "P5"
+        ],
+        [
+          "Controls",
+          "C13",
+          "C15"
+        ],
+        [
+          "Controls",
+          "C14",
+          "C15"
+        ],
+        [
+          "Controls",
+          "P5",
+          "C15"
+        ],
+        [
+          "RiskLevel",
+          "C15",
+          "中"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C15",
+      "company_name": "启元科技发展有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.33929996425285935,
+      "end_to_end_ms": 18.234599963761866,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.06335529650278762,
+        "fuzzy": 0.5646007744790706,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C15",
+            "P5"
+          ],
+          "lines": [
+            "• ActualController(C15,P5) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P5,C15) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P5,C14) ⇐ R07 控制传递（不输出自身控制自身）",
+            "            • Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "            • Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "        • Controls(C14,C15) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C14,C15) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C14,C15,0.55) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C15) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C15",
+            "P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(C15,P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P1,C15) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P1,C2) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P1,C1) ⇐ R10 持股可达：基础边",
+            "                • Holds(P1,C1,0.8) [输入/预处理事实]",
+            "            • Holds(C1,C2,0.65) [输入/预处理事实]",
+            "        • Holds(C2,C15,0.1) [输入/预处理事实]",
+            "    • Person(P1) [输入/预处理事实]",
+            "    • Company(C15) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C15",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C15,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C15) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C14) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "            • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "        • Holds(C14,C15,0.55) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C15) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C13",
+            "C15"
+          ],
+          "lines": [
+            "• Controls(C13,C15) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "    • Controls(C14,C15) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C14,C15) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C14,C15,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C14",
+            "C15"
+          ],
+          "lines": [
+            "• Controls(C14,C15) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C14,C15) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C14,C15,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P5",
+            "C15"
+          ],
+          "lines": [
+            "• Controls(P5,C15) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P5,C14) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P5,C13) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P5,C13) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "        • Controls(C13,C14) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C13,C14) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C13,C14,0.58) [输入/预处理事实]",
+            "    • Controls(C14,C15) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C14,C15) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C14,C15,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C15",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C15,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(P1,C15) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(P1,C15) [输入/预处理事实]",
+            "    • Company(C15) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C16",
+        "values": {
+          "opacity": 0.5,
+          "related_trade": 0.16666666666666666,
+          "guarantee": 0.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.5
+      },
+      "name": "联信置业有限公司",
+      "score": 0.5452629261307912,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C16",
+          "P6"
+        ],
+        [
+          "Alert",
+          "C16",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P9"
+        ],
+        [
+          "Controls",
+          "P6",
+          "C16"
+        ],
+        [
+          "RiskLevel",
+          "C16",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C16",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C16",
+          "P6"
+        ],
+        [
+          "Alert",
+          "C16",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C16",
+          "P9"
+        ],
+        [
+          "Controls",
+          "P6",
+          "C16"
+        ],
+        [
+          "RiskLevel",
+          "C16",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C16",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C16",
+      "company_name": "联信置业有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.9098000009544194,
+      "end_to_end_ms": 18.805100000463426,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.4266211604095563,
+        "fuzzy": 0.6471609195402298,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C16",
+            "P6"
+          ],
+          "lines": [
+            "• ActualController(C16,P6) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P6,C16) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P6,C16) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "            • Concerts(P6,P7) ⇐ R03 亲属关系具有公开佐证 → 一致行动候选",
+            "                • KinEvidenced(P6,P7) [输入/预处理事实]",
+            "            • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "            • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C16",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C16,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C16,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C16,C17) ⇐ R10 持股可达：基础边",
+            "            • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "        • Holds(C17,C16,0.35) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P3,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P3,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                        • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                            • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                                • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "                            • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "                        • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "                    • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "                • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "            • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "        • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P4,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P4,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P4,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P4,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                        • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "                            • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "                        • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "                    • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "                • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "            • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "        • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "            • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "        • Holds(C13,C16,0.1) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C16) ⇐ R10 持股可达：基础边",
+            "        • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P7"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P7) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P7,C16) ⇐ R10 持股可达：基础边",
+            "        • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "    • Person(P7) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P8"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P8) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P8,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P8,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P8,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P8,C20) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P8,C20,0.3) [输入/预处理事实]",
+            "                • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "            • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "        • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "    • Person(P8) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C16",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C16,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P9,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P9,C18) ⇐ R10 持股可达：基础边",
+            "                • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "            • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "        • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P6",
+            "C16"
+          ],
+          "lines": [
+            "• Controls(P6,C16) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P6,C16) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "        • Concerts(P6,P7) ⇐ R03 亲属关系具有公开佐证 → 一致行动候选",
+            "            • KinEvidenced(P6,P7) [输入/预处理事实]",
+            "        • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "        • Holds(P7,C16,0.22) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C16",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C16,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C12,C16) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C12,C16) [输入/预处理事实]",
+            "    • Company(C16) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C16",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C16,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C16,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C16,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C16,C17) ⇐ R10 持股可达：基础边",
+            "                • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "            • Holds(C17,C16,0.35) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C17",
+        "values": {
+          "opacity": 0.6,
+          "related_trade": 0.75,
+          "guarantee": 0.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.4
+      },
+      "name": "联信装饰工程有限公司",
+      "score": 0.8063730067421776,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C17",
+          "P6"
+        ],
+        [
+          "Alert",
+          "C17",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C16",
+          "C17"
+        ],
+        [
+          "Controls",
+          "P6",
+          "C17"
+        ],
+        [
+          "RiskLevel",
+          "C17",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C17",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C17",
+          "P6"
+        ],
+        [
+          "Alert",
+          "C17",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C17",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C16",
+          "C17"
+        ],
+        [
+          "Controls",
+          "P6",
+          "C17"
+        ],
+        [
+          "RiskLevel",
+          "C17",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C17",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C17",
+      "company_name": "联信装饰工程有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.4265999887138605,
+      "end_to_end_ms": 18.321899988222867,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.8602435150873479,
+        "fuzzy": 0.6509075907590759,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C17",
+            "P6"
+          ],
+          "lines": [
+            "• ActualController(C17,P6) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P6,C17) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P6,C16) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P6,C16) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "                • Concerts(P6,P7) ⇐ R03 亲属关系具有公开佐证 → 一致行动候选",
+            "                    • KinEvidenced(P6,P7) [输入/预处理事实]",
+            "                • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "                • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "        • Controls(C16,C17) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C16,C17) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C17",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C17,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C17,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C17,C16) ⇐ R10 持股可达：基础边",
+            "            • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "        • Holds(C16,C17,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P3,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                        • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                            • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "                        • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "                    • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "                • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "        • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P4,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P4,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P4,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "                        • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "                    • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "                • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "        • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "            • Holds(C13,C16,0.1) [输入/预处理事实]",
+            "        • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P6,C16) ⇐ R10 持股可达：基础边",
+            "            • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "        • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P7"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P7) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P7,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P7,C16) ⇐ R10 持股可达：基础边",
+            "            • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "        • Holds(C16,C17,0.55) [输入/预处理事实]",
+            "    • Person(P7) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P8"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P8) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P8,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P8,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P8,C20) ⇐ R10 持股可达：基础边",
+            "                • Holds(P8,C20,0.3) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "        • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "    • Person(P8) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C17",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C17,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P9,C18) ⇐ R10 持股可达：基础边",
+            "            • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "        • Holds(C18,C17,0.1) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C16",
+            "C17"
+          ],
+          "lines": [
+            "• Controls(C16,C17) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C16,C17) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C16,C17,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P6",
+            "C17"
+          ],
+          "lines": [
+            "• Controls(P6,C17) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P6,C16) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P6,C16) ⇐ R04 一致行动人合计超过 50% → 持股较多者控制候选",
+            "            • Concerts(P6,P7) ⇐ R03 亲属关系具有公开佐证 → 一致行动候选",
+            "                • KinEvidenced(P6,P7) [输入/预处理事实]",
+            "            • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "            • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "    • Controls(C16,C17) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C16,C17) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C16,C17,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C17",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C17,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C12,C17) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C12,C17) [输入/预处理事实]",
+            "    • Company(C17) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C17",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C17,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C17,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C17,C17) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C17,C16) ⇐ R10 持股可达：基础边",
+            "                • Holds(C17,C16,0.35) [输入/预处理事实]",
+            "            • Holds(C16,C17,0.55) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C18",
+        "values": {
+          "opacity": 0.45,
+          "related_trade": 0.0,
+          "guarantee": 0.36363636363636365,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.55
+      },
+      "name": "宏泰融资租赁有限公司",
+      "score": 0.370401229403812,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C18",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C18",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C18",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P9"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C18"
+        ],
+        [
+          "RiskLevel",
+          "C18",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C18",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C18",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C18",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C18",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C18",
+          "P9"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C18"
+        ],
+        [
+          "RiskLevel",
+          "C18",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C18",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股",
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C18",
+      "company_name": "宏泰融资租赁有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.3905000048689544,
+      "end_to_end_ms": 18.28580000437796,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.1348020335849638,
+        "fuzzy": 0.6480800370113348,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C18",
+            "P9"
+          ],
+          "lines": [
+            "• ActualController(C18,P9) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C18",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C18,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C18,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C18,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C18,C19) ⇐ R10 持股可达：基础边",
+            "                • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C18",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C18,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C18,C18) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C18,C20) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C18,C19) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C18,C19,8000.0) [输入/预处理事实]",
+            "            • Guarantee(C19,C20,5000.0) [输入/预处理事实]",
+            "        • Guarantee(C20,C18,3000.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                        • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "                    • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "                • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P4,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P4,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "                • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P5,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                    • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                        • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "                    • Holds(C13,C16,0.1) [输入/预处理事实]",
+            "                • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P6,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P6,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P6,C16) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "                • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P7"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P7) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P7,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P7,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P7,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P7,C16) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "                • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P7) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P8"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P8) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P8,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P8,C20) ⇐ R10 持股可达：基础边",
+            "            • Holds(P8,C20,0.3) [输入/预处理事实]",
+            "        • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "    • Person(P8) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C18",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C18,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C18) ⇐ R10 持股可达：基础边",
+            "        • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P9",
+            "C18"
+          ],
+          "lines": [
+            "• Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(P9,C18,0.55) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C18",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C18,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C12,C18) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C12,C18) [输入/预处理事实]",
+            "    • Company(C18) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C18",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C18,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C18,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C18,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C18,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C18,C19) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "                • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C19",
+        "values": {
+          "opacity": 0.6,
+          "related_trade": 0.0,
+          "guarantee": 1.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.4
+      },
+      "name": "宏泰供应链管理有限公司",
+      "score": 0.7663686138478685,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C19",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C19",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C19",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C18",
+          "C19"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C19"
+        ],
+        [
+          "RiskLevel",
+          "C19",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C19",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C19",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C19",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C19",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C19",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C18",
+          "C19"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C19"
+        ],
+        [
+          "RiskLevel",
+          "C19",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C19",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股",
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C19",
+      "company_name": "宏泰供应链管理有限公司",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.42449997272342443,
+      "end_to_end_ms": 18.31979997223243,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.7935695269301658,
+        "fuzzy": 0.6509075907590759,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C19",
+            "P9"
+          ],
+          "lines": [
+            "• ActualController(C19,P9) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P9,C19) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "        • Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C19",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C19,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C19,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C19,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C19,C20) ⇐ R10 持股可达：基础边",
+            "                • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "        • Holds(C18,C19,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C19",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C19,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C19,C19) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C19,C18) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C19,C20) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C19,C20,5000.0) [输入/预处理事实]",
+            "            • Guarantee(C20,C18,3000.0) [输入/预处理事实]",
+            "        • Guarantee(C18,C19,8000.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "            • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "        • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "            • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "        • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "            • Holds(C13,C16,0.1) [输入/预处理事实]",
+            "        • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P6,C16) ⇐ R10 持股可达：基础边",
+            "            • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "        • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P7"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P7) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P7,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P7,C16) ⇐ R10 持股可达：基础边",
+            "            • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "        • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "    • Person(P7) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P8"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P8) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P8,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P8,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P8,C20) ⇐ R10 持股可达：基础边",
+            "                • Holds(P8,C20,0.3) [输入/预处理事实]",
+            "            • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "        • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "    • Person(P8) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C19",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C19,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P9,C18) ⇐ R10 持股可达：基础边",
+            "            • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "        • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C18",
+            "C19"
+          ],
+          "lines": [
+            "• Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C18,C19,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P9",
+            "C19"
+          ],
+          "lines": [
+            "• Controls(P9,C19) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "    • Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C18,C19,0.6) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C19",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C19,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C18,C19) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C18,C19) [输入/预处理事实]",
+            "    • Company(C19) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C19",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C19,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C19,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C19,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C19,C18) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C19,C20) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "                • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "            • Holds(C18,C19,0.6) [输入/预处理事实]"
+          ]
+        }
+      ]
+    },
+    {
+      "observation": {
+        "company_id": "C20",
+        "values": {
+          "opacity": 0.85,
+          "related_trade": 0.0,
+          "guarantee": 1.0,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.15000000000000002
+      },
+      "name": "名义持股平台一号",
+      "score": 0.7815071071181787,
+      "risk_class": 1,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "C20",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C20",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C20",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C18",
+          "C20"
+        ],
+        [
+          "Controls",
+          "C19",
+          "C20"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C20"
+        ],
+        [
+          "RiskLevel",
+          "C20",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C20",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "C20",
+          "P9"
+        ],
+        [
+          "Alert",
+          "C20",
+          "循环持股"
+        ],
+        [
+          "Alert",
+          "C20",
+          "担保圈"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P3"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P4"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P5"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P6"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P7"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P8"
+        ],
+        [
+          "BeneficialOwner",
+          "C20",
+          "P9"
+        ],
+        [
+          "Controls",
+          "C18",
+          "C20"
+        ],
+        [
+          "Controls",
+          "C19",
+          "C20"
+        ],
+        [
+          "Controls",
+          "P9",
+          "C20"
+        ],
+        [
+          "RiskLevel",
+          "C20",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "C20",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股",
+        "担保圈"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "C20",
+      "company_name": "名义持股平台一号",
+      "method": "hybrid_locked",
+      "preparation_ms": 17.895299999509007,
+      "decision_ms": 0.4219000111334026,
+      "end_to_end_ms": 18.31720001064241,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.7935695269301658,
+        "fuzzy": 0.7114615638403168,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "C20",
+            "P9"
+          ],
+          "lines": [
+            "• ActualController(C20,P9) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(P9,C20) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P9,C19) ⇐ R07 控制传递（不输出自身控制自身）",
+            "            • Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "            • Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "        • Controls(C19,C20) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C19,C20) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C20",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(C20,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(C20,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(C20,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C20,C18) ⇐ R10 持股可达：基础边",
+            "                • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "            • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "C20",
+            "担保圈"
+          ],
+          "lines": [
+            "• Alert(C20,担保圈) ⇐ R21 担保路径回到自身 → 担保圈线索",
+            "    • GuarReach(C20,C20) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "        • GuarReach(C20,C19) ⇐ R13 担保可达：传递闭包（保留回路）",
+            "            • GuarReach(C20,C18) ⇐ R12 担保可达：基础边",
+            "                • Guarantee(C20,C18,3000.0) [输入/预处理事实]",
+            "            • Guarantee(C18,C19,8000.0) [输入/预处理事实]",
+            "        • Guarantee(C19,C20,5000.0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P3"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P3) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P3,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P3,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P3,C12) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P3,C6) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P3,C6,0.7) [输入/预处理事实]",
+            "                • Holds(C6,C12,0.3) [输入/预处理事实]",
+            "            • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P3) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P4"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P4) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P4,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P4,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P4,C12) ⇐ R10 持股可达：基础边",
+            "                • Holds(P4,C12,0.1) [输入/预处理事实]",
+            "            • Holds(C12,C19,0.05) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P4) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P5"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P5) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P5,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P5,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P5,C16) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(P5,C13) ⇐ R10 持股可达：基础边",
+            "                    • Holds(P5,C13,0.62) [输入/预处理事实]",
+            "                • Holds(C13,C16,0.1) [输入/预处理事实]",
+            "            • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P5) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P6"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P6) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P6,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P6,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P6,C16) ⇐ R10 持股可达：基础边",
+            "                • Holds(P6,C16,0.33) [输入/预处理事实]",
+            "            • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P6) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P7"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P7) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P7,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P7,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P7,C16) ⇐ R10 持股可达：基础边",
+            "                • Holds(P7,C16,0.22) [输入/预处理事实]",
+            "            • Holds(C16,C19,0.2) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P7) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P8"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P8) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P8,C20) ⇐ R10 持股可达：基础边",
+            "        • Holds(P8,C20,0.3) [输入/预处理事实]",
+            "    • Person(P8) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "C20",
+            "P9"
+          ],
+          "lines": [
+            "• BeneficialOwner(C20,P9) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(P9,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(P9,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(P9,C18) ⇐ R10 持股可达：基础边",
+            "                • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "            • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]",
+            "    • Person(P9) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C18",
+            "C20"
+          ],
+          "lines": [
+            "• Controls(C18,C20) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "    • Controls(C19,C20) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C19,C20) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "C19",
+            "C20"
+          ],
+          "lines": [
+            "• Controls(C19,C20) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(C19,C20) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(C19,C20,0.7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "P9",
+            "C20"
+          ],
+          "lines": [
+            "• Controls(P9,C20) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(P9,C19) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(P9,C18) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(P9,C18) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(P9,C18,0.55) [输入/预处理事实]",
+            "        • Controls(C18,C19) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(C18,C19) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "    • Controls(C19,C20) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(C19,C20) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C20",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(C20,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(C13,C20) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(C13,C20) [输入/预处理事实]",
+            "    • Company(C20) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "C20",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(C20,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(C20,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(C20,C20) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(C20,C19) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "                • HoldReach(C20,C18) ⇐ R10 持股可达：基础边",
+            "                    • Holds(C20,C18,0.15) [输入/预处理事实]",
+            "                • Holds(C18,C19,0.6) [输入/预处理事实]",
+            "            • Holds(C19,C20,0.7) [输入/预处理事实]"
+          ]
+        }
+      ]
+    }
+  ]
+}

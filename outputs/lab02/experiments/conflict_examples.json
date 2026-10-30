@@ -1,0 +1,20 @@
+{
+  "classic_total_conflict": "K=1（或数值上近乎1），标准 Dempster 组合未定义",
+  "robust_total_conflict": {
+    "review": 0.0,
+    "normal": 0.0,
+    "ignorance": 1.0
+  },
+  "source_order": [
+    "A",
+    "B"
+  ],
+  "source_quality_discount": [
+    0.95,
+    0.55
+  ],
+  "source_note": "A/B是独立生成的两个模拟测度来源，不是同一指标算出的Bayes/Fuzzy输出",
+  "reliability_note": "来源质量系数是预设元数据，所有冲突率相同，不读取每条样本的label或flip标志",
+  "flip_note": "flip仅保存用于审计，不作为融合模型输入；压力越大来源B越不可信",
+  "order_note": "Yager逐对组合不保证结合律，本实验固定来源顺序"
+}

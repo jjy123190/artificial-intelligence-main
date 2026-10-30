@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 7,
+    "train_n": 1000,
+    "validation_n": 300,
+    "unique_test_n": 600,
+    "id_intersections": 0,
+    "train_positive": 337,
+    "validation_positive": 91,
+    "test_positive": 208
+  },
+  {
+    "seed": 19,
+    "train_n": 1000,
+    "validation_n": 300,
+    "unique_test_n": 600,
+    "id_intersections": 0,
+    "train_positive": 356,
+    "validation_positive": 118,
+    "test_positive": 216
+  },
+  {
+    "seed": 43,
+    "train_n": 1000,
+    "validation_n": 300,
+    "unique_test_n": 600,
+    "id_intersections": 0,
+    "train_positive": 353,
+    "validation_positive": 88,
+    "test_positive": 229
+  }
+]

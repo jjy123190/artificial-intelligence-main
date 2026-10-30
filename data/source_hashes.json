@@ -1,0 +1,11 @@
+{
+  "source": "第一次课堂案例原始CSV，迁移时逐字节核对",
+  "files": {
+    "companies.csv": "b6bba337141e051957169bf41b7d623f61c7e449d27cc04ed80595fdd2319839",
+    "guarantees.csv": "c753193bf4034f74ebd80d29ebbda480e51a8884f7ae3a20f467af76504c2343",
+    "holdings.csv": "42ca7827dfd4f17b6fd6fd25005a378cc30f0707046bf48512d2fd4860a3cb1c",
+    "kinships.csv": "c031da6461502bd5fbe8319aa8eef66202fc0e1e264c868523b3e31e9951fd79",
+    "persons.csv": "dc5ab8e86605e6019ce737c570415d91f882e5d7498bffd0c142af8c7f6f2b5e",
+    "trades.csv": "16a91a981394804e64c8a2b964586e1d3f55a7edd9f397b9fe50412471d4df8b"
+  }
+}
