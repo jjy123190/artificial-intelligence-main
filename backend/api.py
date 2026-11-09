@@ -19,7 +19,7 @@ from core.kb.graph_io import case_from_dict
 from core.kb.rules import build_rules
 from core.kb.rules_dsl import guard_vars
 from core.kb.guard_display import describe_guard
-from .schemas import CaseInput, AnalyzeRequest, QueryRequest, LabOneTask, LabTwoTask, MAX_BODY_BYTES, MAX_ENTITIES, MAX_RELATIONS
+from .schemas import CaseInput, AnalyzeRequest, QueryRequest, LabOneTask, LabTwoTask, LabThreeTask, MAX_BODY_BYTES, MAX_ENTITIES, MAX_RELATIONS
 from .service import InferenceService, WebError, run_bounded
 from .worker import preset_case, model_catalog
 from .schemas import GovernanceInput, SaveGovernanceRequest, LoadGovernanceRequest
@@ -158,6 +158,25 @@ def create_app(service: InferenceService | None = None, governance_database: Pat
         except FileNotFoundError as exc:
             raise WebError("not_available", str(exc), 404) from exc
         return FileResponse(path, filename=path.name)
+
+    @app.get("/api/labs/lab03/snapshot")
+    async def lab_three_snapshot():
+        from experiments.lab03.service import snapshot
+        try:
+            return await run_in_threadpool(snapshot)
+        except (ValueError, OSError) as exc:
+            raise WebError("lab03_data_unavailable", "实验三数据无法读取。请重新生成数据后重试。", 503) from exc
+
+    @app.post("/api/labs/lab03/run")
+    async def lab_three_run(request: Request):
+        value = await _body(request, LabThreeTask)
+        if not course_slots.acquire(blocking=False):
+            raise WebError("busy", "已有实验正在运行，请稍后重试", 429)
+        try:
+            timeout = 180.0 if value.method == "hybrid_llm" and value.llm_mode == "remote" else 15.0
+            return await run_in_threadpool(run_bounded, "lab03", value.model_dump(), timeout)
+        finally:
+            course_slots.release()
 
     @app.get("/api/labs/lab01/snapshot")
     async def lab_one_snapshot():

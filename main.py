@@ -41,6 +41,9 @@ def main(argv=None):
             raise ValueError("lab01 supports --step or benchmark")
         from experiments.lab01.main import main as run
         run();return 0
+    if command=="lab03":
+        from experiments.lab03.main import main as lab03
+        return lab03(args[1:])
     from experiments.lab02.main import main as lab02
     return lab02(args[1:] if command=="lab02" else args)
 

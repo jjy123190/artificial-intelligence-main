@@ -191,3 +191,10 @@ class LabTwoTask(AnalyzeRequest):
     task: Literal["modeling", "deterministic", "resolution", "uncertain", "hybrid"]
     source: Identifier = "P1"
     target: Identifier = "C3"
+
+
+class LabThreeTask(StrictModel):
+    query_id: Annotated[StrictStr, Field(min_length=1,max_length=100)] = "shared-3"
+    method: Literal["bfs","astar_admissible","astar_fixed","astar_ga","astar_ml","mcts","hybrid","hybrid_no_expert","hybrid_llm"] = "hybrid"
+    budget: Annotated[int, Field(strict=True, ge=1, le=128)] = 16
+    llm_mode: Literal["replay","remote"] = "replay"

@@ -1,0 +1,104 @@
+{
+  "title": "实验三：大模型辅助的企业股权知识图谱多跳路径搜索",
+  "scope": "复用统一平台；新增lab03，保持lab01/lab02原始算法与正式材料。",
+  "requirements": [
+    {
+      "id": 1,
+      "requirement": "2—4跳知识图谱问答；BFS、A*、MCTS三套搜索内核",
+      "implementation": "domain.py / dataset.py / search.py",
+      "evidence": "405题图级隔离数据；逐步搜索树与路径证据"
+    },
+    {
+      "id": 2,
+      "requirement": "GA优化h(n)，以验证成功率与搜索步数为适应度",
+      "implementation": "genetic.py",
+      "evidence": "14个体、10代、3种子；固定启发式与GA配对比较、OOD检验"
+    },
+    {
+      "id": 3,
+      "requirement": "LLM检验行动、给出reward、解释路径；不能直接回答",
+      "implementation": "llm.py / service.py",
+      "evidence": "Qwen2.5-0.5B真实本地前向推断；A/B/C与Y/N受限评分；解释在搜索后生成"
+    },
+    {
+      "id": 4,
+      "requirement": "成功/失败路径训练分类器，并加入专家规则",
+      "implementation": "learning.py / domain.py",
+      "evidence": "6维逻辑回归、训练图穷举标签；有效性/来源/置信度约束；消融"
+    },
+    {
+      "id": 5,
+      "requirement": "准确率、节点扩展、路径跳数、冗余路径、失效分析",
+      "implementation": "evaluate.py",
+      "evidence": "3888次基准；图级bootstrap；LLM小样本配对；错误评分注入"
+    },
+    {
+      "id": 6,
+      "requirement": "代码、报告、搜索树可视化、失败案例",
+      "implementation": "LabThree.tsx / report.py",
+      "evidence": "统一网站入口、Word报告、PPT、实验记录与复现命令"
+    }
+  ],
+  "stages": [
+    "明确状态与指标口径",
+    "构造图级隔离数据与验证oracle",
+    "实现BFS/A*/MCTS",
+    "训练价值分类器与GA优化",
+    "真实LLM评估与受控错误注入",
+    "网站集成与回归验证",
+    "由冻结结果生成报告/PPT/演示"
+  ],
+  "scoring": {
+    "A": 95,
+    "B": 90,
+    "C": 85,
+    "D": 80,
+    "E": 75,
+    "dimensions": [
+      "创新度",
+      "完成度",
+      "产业/行业结合度",
+      "优化迭代度"
+    ],
+    "recommendation": "以B档90分作为有证据的自评目标；最终由组员核实、教师评定。小模型仅9题，不据此宣称SOTA或95分必得。",
+    "presentation": "截图规定自评90分及以上可直接进入争优演示；85/80档需自行报名并经教师核实。课堂奖励由教师按展示表现决定。"
+  },
+  "references": [
+    {
+      "id": 1,
+      "title": "Hart, Nilsson, Raphael. A Formal Basis for the Heuristic Determination of Minimum Cost Paths. IEEE TSSC, 1968.",
+      "url": "https://doi.org/10.1109/TSSC.1968.300136"
+    },
+    {
+      "id": 2,
+      "title": "Kocsis, Szepesvari. Bandit Based Monte-Carlo Planning. ECML, 2006.",
+      "url": "https://www.cs.utexas.edu/~shivaram/readings/b2hd-KocsisSzepesvari2006.html"
+    },
+    {
+      "id": 3,
+      "title": "Zhou et al. Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models. ICML, 2024.",
+      "url": "https://arxiv.org/abs/2310.04406"
+    },
+    {
+      "id": 4,
+      "title": "Sun et al. Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph. ICLR, 2024.",
+      "url": "https://arxiv.org/abs/2307.07697"
+    },
+    {
+      "id": 5,
+      "title": "Qwen Team. Qwen2.5-0.5B-Instruct model card; pinned revision 7ae557604adf67be50417f59c2c2f167def9a775.",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct"
+    },
+    {
+      "id": 6,
+      "title": "ICIJ. About the Offshore Leaks Database.",
+      "url": "https://offshoreleaks.icij.org/pages/about"
+    },
+    {
+      "id": 7,
+      "title": "OpenAI. Structured model outputs / Responses API.",
+      "url": "https://developers.openai.com/api/docs/guides/structured-outputs"
+    }
+  ],
+  "data_policy": "共享场景来自项目CSV；扩展评估为全新教学合成图，不导入真实企业敏感资料。模型权重保存在用户缓存，密钥只读环境变量，不进入项目。"
+}

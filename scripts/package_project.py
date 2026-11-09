@@ -9,7 +9,7 @@ from pathlib import Path
 import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 EXCLUDED={'.git','.state','.venv','venv','node_modules','__pycache__','.pytest_cache','人工智能作业一','人工智能作业二'}
-ALLOWED={'.py','.ps1','.cmd','.md','.txt','.json','.csv','.html','.css','.ts','.tsx','.mjs','.js','.svg','.png','.jpg','.jpeg','.webp','.docx','.pptx','.pdf','.mp4','.mp3','.srt','.toml'}
+ALLOWED={'.py','.ps1','.cmd','.md','.txt','.json','.jsonl','.csv','.html','.css','.ts','.tsx','.mjs','.js','.svg','.png','.jpg','.jpeg','.webp','.docx','.pptx','.pdf','.mp4','.mp3','.srt','.toml'}
 
 def project_files(root:Path=ROOT):
     root=root.resolve()
@@ -33,7 +33,7 @@ def project_files(root:Path=ROOT):
 
 def build_package(experiment:str,root:Path=ROOT):
     root=root.resolve()
-    if experiment not in ('lab01','lab02'):raise ValueError('Unknown experiment')
+    if experiment not in ('lab01','lab02','lab03'):raise ValueError('Unknown experiment')
     directory=root/'outputs'/'submissions';directory.mkdir(parents=True,exist_ok=True)
     destination=directory/('course-project-'+experiment+'-'+datetime.now().strftime('%Y%m%d-%H%M%S')+'.zip')
     temporary=destination.with_suffix('.zip.tmp')
@@ -59,7 +59,7 @@ def build_package(experiment:str,root:Path=ROOT):
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description='提交完整项目，附上本次实验入口；不打包私人状态与依赖。')
-    parser.add_argument('--experiment',choices=['lab01','lab02'],required=True)
+    parser.add_argument('--experiment',choices=['lab01','lab02','lab03'],required=True)
     args=parser.parse_args(argv)
     print(json.dumps(build_package(args.experiment),ensure_ascii=False,indent=2))
     return 0

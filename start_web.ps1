@@ -1,4 +1,4 @@
-﻿param([int]$Port = 8765, [switch]$NoBrowser, [string]$PythonPath, [ValidateSet("home", "lab01", "lab02")][string]$Entry = "home")
+﻿param([int]$Port = 8765, [switch]$NoBrowser, [string]$PythonPath, [ValidateSet("home", "lab01", "lab02", "lab03")][string]$Entry = "home")
 $ErrorActionPreference = 'Stop'
 $env:PYTHONUTF8 = '1'
 $env:PYTHONDONTWRITEBYTECODE = '1'

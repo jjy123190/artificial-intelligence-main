@@ -36,6 +36,12 @@ const lab2 = (page, moduleId, entityId) => ({
   ...(entityId === undefined ? {} : { entityId }),
 });
 const cases = [
+  ["#/labs/lab03", { page: "lab", labId: "lab03" }],
+  ["#/labs/lab03/search", { page: "task", labId: "lab03", moduleId: "search" }],
+  [
+    "#/labs/lab03/assistant",
+    { page: "task", labId: "lab03", moduleId: "assistant" },
+  ],
   ["", { page: "home" }],
   ["#/home", { page: "home" }],
   ["#/workbench", { page: "overview" }],

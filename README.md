@@ -1,11 +1,11 @@
 # 企业股权知识表示与风险推理
 
-包含实验一、实验二的完整算法、后端、网页、测试及辅助工具。最终提交材料仅保留在 `deliverables/lab01`、`deliverables/lab02`。
+包含实验一、实验二、实验三的完整算法、后端、网页、测试及辅助工具。各次最终材料分别位于 `deliverables/lab01`、`deliverables/lab02`、`deliverables/lab03`。
 
 ## 运行网站
 
-- 双击根目录 **打开网站.cmd**，在页面中选择实验一或实验二。
-- 也可双击 `experiments/lab01/打开网站.cmd`、`experiments/lab02/打开网站.cmd` 直达对应实验。
+- 双击根目录 **打开网站.cmd**，在页面中选择实验一、实验二或实验三。
+- 也可双击 `experiments/lab01/打开网站.cmd`、`experiments/lab02/打开网站.cmd`、`experiments/lab03/打开网站.cmd` 直达对应实验。
 - 关闭服务：双击 **停止网站.cmd**。
 - 默认网址：`http://127.0.0.1:8765`；端口被占用时启动脚本自动选择后续可用端口。
 
@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 python main.py web --port 8765
 ```
 
-## 最终提交材料（9份）
+## 实验一、二最终材料（9份，保留原件）
 
 ### 实验一：`deliverables/lab01`
 
@@ -43,6 +43,7 @@ python main.py web --port 8765
 | `core/`、`backend/` | 共享知识表示、推理能力与API |
 | `experiments/lab01/` | 图谱、产生式、框架、穿透查询等完整实现 |
 | `experiments/lab02/` | 确定性、不确定性、混合推理、优化与评估实现 |
+| `experiments/lab03/` | BFS / A* / MCTS、GA、路径学习、LLM辅助与评估 |
 | `web/src/`、`web/public/`、`web/dist/` | 网页源码、资源与可直接运行的构建结果 |
 | `tests/`、`scripts/` | 测试、运行、打包和录制等工具代码 |
 | `scripts/retained_tools/` | 从临时目录中提取并去重的辅助/历史实现；只保留源码，不保留录屏帧和核验报告 |
@@ -51,7 +52,7 @@ python main.py web --port 8765
 | `outputs/lab02/` | 网站读取的模型、数值结果、图表及其封存配套文件；不是中间核验目录 |
 | `requirements*.txt`、`web/package*.json` | Python/前端依赖与锁定配置 |
 
-`outputs/qa`、`outputs/submissions`、缓存和旧版材料已清理。运行测试、重新录制、重新打包会再次生成相应产物；`outputs/runtime` 和 `.state` 由网站运行时自动生成，不需要提交。
+旧版材料已清理；`outputs/qa` 是可删除的临时验收/录制目录，`outputs/submissions` 用于导出完整提交包。运行测试、重新录制、重新打包会再次生成相应产物；`outputs/runtime` 和 `.state` 由网站运行时自动生成，不需要提交。
 
 ## 测试、复现与开发
 
@@ -81,3 +82,55 @@ npm run build
 ## 使用边界
 
 所有实体、数据和风险标签均为教学构造。控制关系、经济权益、风险评分与复核建议含义不同，不构成法律或监管认定。实验一、实验二各自使用独立方法版本，不用实验二结果替换实验一。
+
+
+## 实验三：多跳路径搜索与智能优化
+
+已接入实验三，双击 `experiments/lab03/打开网站.cmd`，或在统一首页选择实验三。
+
+- 四个模块：多跳搜索工作台、遗传优化与路径学习、LLM辅助与证据约束、对比实验与失败分析。
+- 实现：`experiments/lab03/`；数据：`data/lab03/`；真实运行结果：`outputs/lab03/`；报告和PPT：`deliverables/lab03/`。
+- 搜索：BFS、A*、UCT/MCTS；遗传算法只在验证图选择启发式参数；逻辑回归只使用训练图路径前缀。
+- 基准：3种子、45张互不重叠图、405道2—4跳题、3,888次算法运行。
+- LLM：真实Qwen2.5-0.5B-Instruct小模型，9题、72条候选边双任务评估。网页默认重放实测评分，明确标注本次没有再次调用模型。
+- 模型解释存在失真风险，界面标注实体核对结果；答案始终由图中的有效证据路径产生。
+
+```powershell
+python -B -X utf8 main.py lab03 demo
+python -B -X utf8 main.py lab03 benchmark
+python -m pip install -r requirements-lab03.txt
+python -B -X utf8 scripts/prepare_lab03_model.py
+python -B -X utf8 main.py lab03 llm
+python -B -X utf8 main.py lab03 report
+```
+
+网页展示和实测重放不需要下载模型；重跑LLM才需要约0.99GB模型，下载到用户缓存。远程Responses接口可用 `LAB03_LLM_BASE_URL`、`LAB03_LLM_API_KEY`、`LAB03_LLM_MODEL` 配置，不读取或导出开发工具凭据。网页实际处理时间包括服务开销，实验表的核心搜索计时不包含模型加载或LLM前向推断。
+
+GA/学习启发式不保证可采纳性；MCTS需计入额外模拟；所有扩展标签均为教学构造。评分建议和要求映射见 `deliverables/lab03/实验三_实施计划与验收.md`，不能将建议自评当成教师成绩。
+
+## 实验三交互与可靠性检查
+
+- 搜索完成后可逐步前进、后退、调整速度；搜索树可缩放、定位当前节点，也可切换为完整名称的步骤列表。
+- 预算耗尽、候选穷尽、证据不合格是三种不同状态。无专家消融可能返回无效路径，界面不会把它当成答案。
+- GA/路径模型缺失、参数无效或种子不匹配时明确报错，不会用默认值冒充已训练模型。BFS、固定A*、下界A*和MCTS不依赖这些可选模型。
+- LLM实测重放须匹配当前图和问题；尚未配置远程接口时，页面会在运行前提示。实时远程模式只评分起点前6条边，离线实验为前两层最多8条边，二者不作直接性能比较。
+- “停止等待”取消网页等待和旧响应写回；后台隔离任务可能仍在结束，不能将其视为撤销已发出的远程请求。
+- 图与学习结果是教学数据，不是对真实企业的法律判断。重跑基准后应重新生成报告并核对提交材料。
+
+前端回归（位于 `web/`）：
+
+```powershell
+npm ci
+npm run build
+npm run test:routes
+npm run test:notation
+npm run test:api
+npm run test:lab03
+# 网站服务运行后，安装浏览器并执行完整页面/无障碍/竞态检查
+npx playwright install chromium
+npm run test:browser
+# 已安装 Chrome 时可使用：$env:PLAYWRIGHT_CHANNEL='chrome'
+# 自定义测试网址：$env:LAB03_TEST_URL='http://127.0.0.1:8766'
+```
+
+浏览器检查覆盖四个实验三模块的手机、平板、笔记本布局，错误重试、停止等待、取消后的旧响应隔离、模型缺失状态与键盘操作。验收截图和新版视频的临时录制帧写入系统临时目录，不进入提交包。依赖目录不是运行网站所必需，修改网页后需重新构建 `web/dist`。

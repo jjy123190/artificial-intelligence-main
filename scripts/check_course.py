@@ -86,7 +86,7 @@ def run(url):
             assert page.locator('#main-content').is_visible()
         page.goto(url)
         expect(page.get_by_role('heading',name='股权知识与智能推理实验平台',exact=True)).to_be_visible(timeout=30000)
-        expect(page.locator('.lab-entry')).to_have_count(2)
+        expect(page.locator('.lab-entry')).to_have_count(3)
         assert page.locator('.directory,.inspector,.graph-canvas').count()==0
         assert page.locator('.app-footer').count()==0
         no_overflow();capture('home-desktop.png')

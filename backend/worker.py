@@ -179,6 +179,9 @@ def worker_entry(operation: str, payload: dict, pipe):
         if operation == "lab01":
             from experiments.lab01.service import run_task
             value = run_task(payload)
+        elif operation == "lab03":
+            from experiments.lab03.service import run_task
+            value = run_task(payload)
         elif operation == "lab02":
             from experiments.lab02.service import run_task
             value = run_task(payload)

@@ -24,6 +24,7 @@ export type Address = {
   moduleId?: string;
 };
 export const modules: Record<LabId, string[]> = {
+  lab03: ["search", "optimization", "assistant", "evaluation"],
   lab01: ["representation", "industry", "demo", "limitations"],
   lab02: ["modeling", "deterministic", "uncertain", "optimization", "hybrid"],
 };

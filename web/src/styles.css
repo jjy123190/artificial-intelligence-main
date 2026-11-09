@@ -6001,3 +6001,619 @@
     }
   }
 }
+
+/* Experiment three: reuse the course interface and give search evidence space. */
+/* Experiment three: task-first controls, evidence states, and readable playback. */
+.lab3-page {
+  padding-bottom: 48px;
+}
+.lab3-page .course-header {
+  margin-bottom: 20px;
+}
+.lab3-module-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 28px;
+}
+.lab3-module-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  min-height: 44px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--muted);
+  transition:
+    background-color 180ms ease-out,
+    color 180ms ease-out;
+}
+.lab3-module-nav a:hover {
+  color: var(--ink);
+  background: var(--surface);
+}
+.lab3-module-nav a[aria-current="page"] {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border-color: var(--border);
+  font-weight: 650;
+}
+.lab3-page .task-section {
+  margin-bottom: 24px;
+}
+.lab3-search-form {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-top: 24px;
+}
+.lab3-search-form label,
+.lab3-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--ink);
+  flex: 1;
+  min-width: 160px;
+}
+.lab3-search-form .lab3-query-field {
+  flex-basis: 100%;
+  min-width: 0;
+}
+.lab3-search-form select {
+  width: 100%;
+  max-width: 100%;
+  color: var(--ink);
+}
+.lab3-run-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.lab3-query-summary {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.lab3-query-summary p {
+  font-size: 0.9375rem;
+  line-height: 1.85;
+  max-width: 75ch;
+}
+.lab3-query-summary span {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.lab3-page .lab3-budget-note {
+  font-size: 0.8125rem;
+  margin: 10px 0 0;
+}
+.lab3-result-heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.lab3-result-heading svg {
+  flex: none;
+  color: var(--primary);
+}
+.lab3-result-heading:focus {
+  outline: none;
+}
+.lab3-result-meta {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  margin: -8px 0 16px;
+  overflow-wrap: anywhere;
+}
+.lab3-path-answer {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: var(--primary);
+  overflow-wrap: anywhere;
+  margin-bottom: 16px;
+}
+.lab3-result-explanation {
+  line-height: 1.85;
+  margin-bottom: 16px;
+  max-width: 75ch;
+}
+.lab3-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-block: 1px solid var(--border);
+  margin: 24px 0;
+  padding: 20px 0;
+  gap: 20px;
+}
+.lab3-metrics strong {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.lab3-metrics span {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.lab3-playback {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.lab3-playback h3 {
+  margin: 0;
+}
+.lab3-play-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.lab3-page .icon-button {
+  min-width: 40px;
+  min-height: 40px;
+}
+.lab3-page .compact {
+  padding: 8px 12px;
+  min-height: 40px;
+}
+.lab3-speed {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.lab3-speed select {
+  min-height: 40px;
+}
+.lab3-timeline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+.lab3-timeline input {
+  flex: 1;
+  accent-color: var(--primary);
+  min-width: 0;
+  min-height: 36px;
+}
+.lab3-timeline output {
+  font-size: 0.8125rem;
+  min-width: 76px;
+  text-align: right;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.lab3-current-step {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  min-height: 54px;
+  margin: 8px 0 16px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border-radius: 6px;
+}
+.lab3-current-step span {
+  font-size: 0.8125rem;
+  color: var(--primary);
+}
+.lab3-current-step strong {
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+.lab3-current-step small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+.lab3-current-step p {
+  flex-basis: 100%;
+  font-size: 0.8125rem;
+}
+.lab3-tree-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.lab3-tree-toolbar .segmented button {
+  font-size: 0.8125rem;
+  min-height: 38px;
+  padding-inline: 12px;
+}
+.lab3-tree-toolbar .segmented button[aria-pressed="true"] {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 650;
+}
+.lab3-zoom {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.lab3-zoom span {
+  min-width: 36px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.lab3-page .lab3-pan-hint {
+  margin: 10px 0;
+  font-size: 0.8125rem;
+}
+.lab3-tree-scroll {
+  max-height: 500px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.lab3-tree-scroll svg {
+  display: block;
+  max-width: none;
+}
+.lab3-tree-scroll:focus-visible,
+.lab3-page .table-scroll:focus-visible,
+.lab3-step-list:focus-visible {
+  outline-offset: -3px;
+}
+.lab3-tree-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.lab3-tree-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.lab3-tree-legend i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--paper);
+}
+.lab3-tree-legend .current {
+  border: 2px solid var(--primary);
+  background: var(--primary-soft);
+}
+.lab3-tree-legend .rejected {
+  border: 1px dashed var(--danger);
+  background: var(--danger-soft);
+}
+.lab3-step-list {
+  max-height: 480px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 16px 0 24px;
+}
+.lab3-step-list ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.lab3-step-list li {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.lab3-step-list li:last-child {
+  border-bottom: 0;
+}
+.lab3-step-list li[aria-current="step"] {
+  background: var(--primary-soft);
+}
+.lab3-step-number {
+  min-width: 32px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+.lab3-step-list li > div {
+  min-width: 0;
+}
+.lab3-step-list strong {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.lab3-step-list p {
+  font-size: 0.8125rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+  margin: 4px 0;
+}
+.lab3-step-list small {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.lab3-method-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 22px 0;
+}
+.lab3-method-notes h3 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+.lab3-method-notes p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.85;
+}
+.lab3-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-block: 16px;
+  font-size: 0.875rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.lab3-notice.warning {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.lab3-notice svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.lab3-notice p {
+  margin: 0;
+}
+.lab3-notice ul {
+  padding-left: 20px;
+  margin: 6px 0;
+}
+.lab3-notice .text-button {
+  margin-top: 8px;
+}
+.lab3-rejection {
+  color: var(--danger);
+  font-size: 0.875rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.lab3-evidence-ok {
+  color: var(--ink);
+}
+.lab3-curve {
+  width: 100%;
+  max-height: 300px;
+  margin: 20px 0;
+}
+.lab3-weights {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  gap: 16px;
+}
+.lab3-weights span {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.lab3-weights strong {
+  font-variant-numeric: tabular-nums;
+}
+.lab3-filters {
+  display: flex;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+.lab3-bars {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0;
+}
+.lab3-bars > div {
+  display: grid;
+  grid-template-columns: minmax(160px, 190px) 1fr 64px;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.lab3-bars > div > div {
+  height: 10px;
+  background: var(--surface-deep);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.lab3-bars i {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+}
+.lab3-bars strong {
+  text-align: right;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+.lab3-result-skeleton {
+  min-height: 220px;
+  margin-top: 24px;
+}
+.lab3-page table caption {
+  text-align: left;
+  padding: 14px 16px;
+  color: var(--muted);
+  background: var(--paper);
+  font-size: 0.8125rem;
+  border-bottom: 1px solid var(--border);
+}
+.lab3-page table td,
+.lab3-page table th {
+  font-size: 0.8125rem;
+}
+.lab3-page .task-details > p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 760px) {
+  .lab3-module-nav {
+    gap: 6px;
+    margin-block: 16px 22px;
+  }
+  .lab3-module-nav a {
+    flex: 1 1 calc(50% - 6px);
+    justify-content: center;
+    font-size: 0.8125rem;
+    padding: 9px 8px;
+    text-align: center;
+    border-color: var(--border);
+  }
+  .lab3-method-notes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .lab3-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .lab3-weights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lab3-bars > div {
+    grid-template-columns: minmax(108px, 135px) minmax(0, 1fr) 54px;
+    gap: 10px;
+    font-size: 0.8125rem;
+  }
+  .lab3-search-form .button {
+    width: 100%;
+  }
+  .lab3-run-actions {
+    width: 100%;
+  }
+  .lab3-filters {
+    flex-wrap: wrap;
+  }
+  .lab3-page .task-section {
+    padding: 20px 16px;
+  }
+  .lab3-speed {
+    margin-left: 0;
+  }
+  .lab3-playback {
+    gap: 12px;
+  }
+  .lab3-playback h3 {
+    flex-basis: 100%;
+  }
+  .lab3-play-controls {
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+  .lab3-zoom {
+    flex-wrap: wrap;
+  }
+  .lab3-tree-toolbar {
+    gap: 10px;
+  }
+  .lab3-tree-scroll {
+    max-height: 380px;
+  }
+  .lab3-tree-legend {
+    gap: 8px 12px;
+  }
+  .lab3-page .icon-button {
+    min-width: 42px;
+    min-height: 42px;
+  }
+  .lab3-page .task-result-title > button {
+    width: auto;
+  }
+  .lab3-current-step small {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .lab3-page .task-section {
+    padding-inline: 12px;
+  }
+  .lab3-page .icon-button {
+    min-width: 36px;
+    min-height: 40px;
+  }
+  .lab3-play-controls .compact {
+    padding-inline: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lab3-module-nav a {
+    transition: none;
+  }
+  .lab3-result-skeleton {
+    animation: none;
+  }
+}
+
+/* Four experiment links need a second row on small tablets as well as phones. */
+@layer responsive {
+  @media (min-width: 761px) and (max-width: 920px) {
+    .course-app-header {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 16px 24px;
+      gap: 12px;
+    }
+    .course-app-header .brand {
+      width: 100%;
+      min-width: 0;
+    }
+    .course-app-header .course-navigation {
+      width: 100%;
+      gap: 6px;
+      justify-content: space-between;
+    }
+    .course-app-header .course-navigation > a {
+      flex: 1;
+      justify-content: center;
+      padding-inline: 10px;
+    }
+  }
+}
+
+.lab3-curve-scroll {
+  overflow: auto;
+  margin: 16px 0;
+}
+.lab3-curve-scroll .lab3-curve {
+  min-width: 600px;
+  margin: 0;
+}
+.lab3-curve-scroll:focus-visible {
+  outline-offset: -3px;
+}

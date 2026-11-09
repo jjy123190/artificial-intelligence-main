@@ -7,47 +7,82 @@ export class ApiError extends Error {
     super(message);
   }
 }
+export type RequestOptions = RequestInit & { timeoutMs?: number };
+
 export async function request<T>(
   path: string,
-  options: RequestInit = {},
+  options: RequestOptions = {},
 ): Promise<T> {
-  let response: Response;
+  const { timeoutMs = 30_000, signal, ...init } = options;
+  const controller = new AbortController();
+  let timedOut = false;
+  const abort = () => controller.abort(signal?.reason);
+  if (signal?.aborted) abort();
+  else signal?.addEventListener("abort", abort, { once: true });
+  const timer = setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, timeoutMs);
   try {
-    response = await fetch(path, {
-      ...options,
-      headers: {
-        ...(options.body ? { "Content-Type": "application/json" } : {}),
-        ...options.headers,
-      },
-    });
+    const headers = new Headers(init.headers);
+    if (init.body && !headers.has("Content-Type"))
+      headers.set("Content-Type", "application/json");
+    let response: Response;
+    try {
+      response = await fetch(path, {
+        ...init,
+        headers,
+        signal: controller.signal,
+      });
+    } catch (error) {
+      if (controller.signal.aborted) throw error;
+      throw new ApiError(
+        "无法连接本地引擎，请确认网站服务仍在运行。",
+        "network",
+        0,
+      );
+    }
+    let data: unknown;
+    try {
+      data = await response.json();
+    } catch (error) {
+      if (controller.signal.aborted) throw error;
+      throw new ApiError(
+        "服务器没有返回有效数据，请重试。",
+        "invalid_response",
+        response.status,
+      );
+    }
+    // A response may finish parsing after its caller has left the page.
+    if (controller.signal.aborted) throw controller.signal.reason;
+    if (!response.ok) {
+      const value =
+        data && typeof data === "object"
+          ? (data as { error?: { message?: unknown; code?: unknown } }).error
+          : undefined;
+      throw new ApiError(
+        typeof value?.message === "string"
+          ? value.message
+          : "操作未完成，请重试。",
+        typeof value?.code === "string" ? value.code : "request_failed",
+        response.status,
+      );
+    }
+    return data as T;
   } catch (error) {
-    if (error instanceof DOMException && error.name === "AbortError")
-      throw error;
-    throw new ApiError(
-      "无法连接本地引擎，请确认网站服务仍在运行。",
-      "network",
-      0,
-    );
+    if (signal?.aborted)
+      throw signal.reason ?? new DOMException("请求已取消", "AbortError");
+    if (timedOut)
+      throw new ApiError(
+        "等待结果超时。可以重试，或先检查本地引擎是否正常运行。",
+        "timeout",
+        408,
+      );
+    throw error;
+  } finally {
+    clearTimeout(timer);
+    signal?.removeEventListener("abort", abort);
   }
-  let data: unknown;
-  try {
-    data = await response.json();
-  } catch {
-    throw new ApiError(
-      "服务器没有返回有效数据，请重试。",
-      "invalid_response",
-      response.status,
-    );
-  }
-  if (!response.ok) {
-    const value = data as { error?: { message?: string; code?: string } };
-    throw new ApiError(
-      value.error?.message || "操作未完成，请重试。",
-      value.error?.code || "request_failed",
-      response.status,
-    );
-  }
-  return data as T;
 }
 export function canonical(value: unknown): string {
   const normalize = (item: unknown): unknown =>

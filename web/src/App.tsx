@@ -67,6 +67,7 @@ const RulesPage = lazy(() => import("./components/RulesPage"));
 const Governance = lazy(() => import("./components/Governance"));
 const CoursePortal = lazy(() => import("./components/CoursePortal"));
 const LabOne = lazy(() => import("./components/LabOne"));
+const LabThree = lazy(() => import("./components/LabThree"));
 const LabTwo = lazy(() => import("./components/LabTwo"));
 const initialParameters: Parameters = {
   method: "hybrid_locked",
@@ -831,7 +832,12 @@ export default function App() {
             ?.modules.find((m) => m.id === address.moduleId)?.title ||
           "实验任务"
         : address.page === "lab"
-          ? "实验" + (address.labId === "lab01" ? "一" : "二")
+          ? "实验" +
+            (address.labId === "lab01"
+              ? "一"
+              : address.labId === "lab03"
+                ? "三"
+                : "二")
           : names[route]) +
       (address.labId === "lab02" ? " · 实验二" : "") +
       " · 股权推理";
@@ -903,6 +909,14 @@ export default function App() {
             <TreeStructure size={18} />
             <span>实验二</span>
           </a>
+          <a
+            href={labHref("lab03")}
+            className={address.labId === "lab03" ? "active" : ""}
+            aria-current={address.labId === "lab03" ? "location" : undefined}
+          >
+            <TreeStructure size={18} />
+            <span>实验三</span>
+          </a>
           <ActionMenu
             label="公共工具"
             icon={<SlidersHorizontal size={18} />}
@@ -944,7 +958,7 @@ export default function App() {
       <input
         ref={inputRef}
         type="file"
-        className="sr-only"
+        hidden
         accept=".json,application/json"
         aria-label="导入股权图JSON"
         onChange={(e) => {
@@ -1013,6 +1027,8 @@ export default function App() {
               >
                 {labId === "lab01" ? (
                   <LabOne lab={lab} moduleId={moduleId} active={active} />
+                ) : labId === "lab03" ? (
+                  <LabThree lab={lab} moduleId={moduleId} active={active} />
                 ) : (
                   <LabTwo
                     lab={lab}

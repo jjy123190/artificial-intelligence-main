@@ -1,0 +1,107 @@
+{
+  "7": {
+    "kind": "logistic_regression",
+    "coef": [
+      0.48435591839676045,
+      1.701269747072029,
+      1.3181473381956492,
+      -0.28759920364427016,
+      0.3811318933722252,
+      -1.020909886265679
+    ],
+    "intercept": -1.2242676028984067,
+    "features": [
+      "剩余跳数",
+      "主题相关度",
+      "下一步可选性",
+      "路径证据可信度",
+      "终点类型匹配",
+      "死路提示"
+    ],
+    "seed": 7,
+    "train_graph_ids": [
+      "train-7-0",
+      "train-7-1",
+      "train-7-2",
+      "train-7-3",
+      "train-7-4",
+      "train-7-5"
+    ],
+    "samples": 1395,
+    "positive": 437,
+    "negative": 958,
+    "train_brier": 0.15826822417324846,
+    "label": "state has at least one valid goal continuation in training graph",
+    "note": "训练图穷举产生正负路径前缀；不使用节点编号、目标答案或测试标签作为特征。"
+  },
+  "19": {
+    "kind": "logistic_regression",
+    "coef": [
+      0.3390053657530274,
+      1.8328061816519143,
+      1.2349608802976495,
+      -0.28590461616806767,
+      0.26788530894787016,
+      -1.2079619877397079
+    ],
+    "intercept": -1.1803802133843702,
+    "features": [
+      "剩余跳数",
+      "主题相关度",
+      "下一步可选性",
+      "路径证据可信度",
+      "终点类型匹配",
+      "死路提示"
+    ],
+    "seed": 19,
+    "train_graph_ids": [
+      "train-19-0",
+      "train-19-1",
+      "train-19-2",
+      "train-19-3",
+      "train-19-4",
+      "train-19-5"
+    ],
+    "samples": 1337,
+    "positive": 435,
+    "negative": 902,
+    "train_brier": 0.1508068107328176,
+    "label": "state has at least one valid goal continuation in training graph",
+    "note": "训练图穷举产生正负路径前缀；不使用节点编号、目标答案或测试标签作为特征。"
+  },
+  "43": {
+    "kind": "logistic_regression",
+    "coef": [
+      0.2193173444832341,
+      1.7919583377882358,
+      1.2931609427157815,
+      -0.36307768099008536,
+      0.41719814684317014,
+      -1.1437479193345075
+    ],
+    "intercept": -1.2037895277746609,
+    "features": [
+      "剩余跳数",
+      "主题相关度",
+      "下一步可选性",
+      "路径证据可信度",
+      "终点类型匹配",
+      "死路提示"
+    ],
+    "seed": 43,
+    "train_graph_ids": [
+      "train-43-0",
+      "train-43-1",
+      "train-43-2",
+      "train-43-3",
+      "train-43-4",
+      "train-43-5"
+    ],
+    "samples": 1293,
+    "positive": 409,
+    "negative": 884,
+    "train_brier": 0.1536834464218439,
+    "label": "state has at least one valid goal continuation in training graph",
+    "note": "训练图穷举产生正负路径前缀；不使用节点编号、目标答案或测试标签作为特征。"
+  }
+}

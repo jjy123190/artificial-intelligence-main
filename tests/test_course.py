@@ -26,8 +26,8 @@ class CourseTests(unittest.TestCase):
 
     def test_catalog_has_requirement_entries_and_code_positions(self):
         value=self.client.get('/api/course').json()
-        self.assertEqual([l['id'] for l in value['labs']],['lab01','lab02'])
-        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5])
+        self.assertEqual([l['id'] for l in value['labs']],['lab01','lab02','lab03'])
+        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5,4])
         for lab in value['labs']:
             self.assertTrue((ROOT/lab['code']).is_dir())
             self.assertTrue(all(m['requirement'] and m['description'] for m in lab['modules']))
@@ -37,6 +37,7 @@ class CourseTests(unittest.TestCase):
         expected={
             'lab01':['representation','industry','demo','limitations'],
             'lab02':['modeling','deterministic','uncertain','optimization','hybrid'],
+            'lab03':['search','optimization','assistant','evaluation'],
         }
         for lab in value['labs']:
             self.assertEqual([module['id'] for module in lab['modules']],expected[lab['id']])
@@ -234,7 +235,7 @@ class CourseTests(unittest.TestCase):
         for lab, files in FILES.items():
             for _, relative, _ in files.values():
                 self.assertTrue(relative.startswith('deliverables/'+lab+'/'))
-                self.assertIn(Path(relative).suffix,{'.docx','.pptx','.mp4'})
+                self.assertIn(Path(relative).suffix,{'.docx','.pptx','.mp4','.md'})
 
     def test_real_bounded_lab01_endpoint(self):
         response=self.client.post('/api/labs/lab01/run',json={'task':'rules','source':'P1','target':'C3'})
