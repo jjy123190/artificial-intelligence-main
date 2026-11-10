@@ -2,6 +2,10 @@ export type QueryInfo = {
   id: string;
   text: string;
   hops: number;
+  start_name?: string;
+  relations?: string[];
+  sector?: string;
+  listed?: boolean;
   graph_id: string;
   split: string;
   seed: number;

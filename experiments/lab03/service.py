@@ -124,6 +124,8 @@ def snapshot():
             if method in ML_METHODS and not valid_model(models.get(str(seed)), seed):
                 unavailable[method] = "缺少对应种子的路径分类器"
         queries.append({"id": q.id, "text": q.text, "hops": q.hops, "graph_id": graph.id,
+                        "start_name": graph.nodes[q.start].name, "relations": list(q.relations),
+                        "sector": q.sector, "listed": q.listed,
                         "split": graph.split, "seed": seed, "nodes": len(graph.nodes),
                         "edges": len(graph.edges), "llm_cached": not reason,
                         "llm_reason": reason, "unavailable_methods": unavailable})

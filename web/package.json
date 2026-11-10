@@ -13,7 +13,8 @@
     "test:notation": "node scripts/check-rule-notation.mjs",
     "test:api": "node scripts/check-api.mjs",
     "test:lab03": "node scripts/check-lab03.mjs",
-    "test:browser": "node scripts/check-lab03-browser.mjs"
+    "test:browser": "node scripts/check-lab03-browser.mjs",
+    "test:workbench": "node scripts/check-workbench-browser.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

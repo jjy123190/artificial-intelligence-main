@@ -228,6 +228,15 @@ class LabThreeAPITests(unittest.TestCase):
         self.assertIsInstance(value["remote_available"], bool)
         self.assertEqual(len(value["queries"]), 12)
         self.assertTrue(all("unavailable_methods" in q for q in value["queries"]))
+        for query in value["queries"]:
+            graph, original, _ = service.tasks()[query["id"]]
+            self.assertEqual(query["start_name"], graph.nodes[original.start].name)
+            self.assertEqual(query["relations"], list(original.relations))
+            self.assertEqual(len(query["relations"]), query["hops"])
+            self.assertEqual(query["sector"], original.sector)
+            self.assertEqual(query["listed"], original.listed)
+            self.assertNotIn("answer", query)
+            self.assertNotIn("path", query)
         self.assertIn("no-store", response.headers["cache-control"])
 
     def test_unreadable_snapshot_is_actionable_json_not_server_crash(self):

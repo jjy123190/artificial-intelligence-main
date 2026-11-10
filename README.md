@@ -88,6 +88,42 @@ npm run build
 
 已接入实验三，双击 `experiments/lab03/打开网站.cmd`，或在统一首页选择实验三。
 
+### 实验三工作台更新
+
+- 石墨黑图形工作台：窄工具栏、中心搜索画布、右侧参数检查器和底部回放时间轴。桌面分隔条支持拖拽或方向键调宽；手机切换为纵向布局，窄平板保留紧凑双栏。
+- 2 / 3 / 4 跳示例快捷选择，直接展示起点、关系序列、终点属性，以及状态、动作、转移与终止条件。问题配置不提供答案或标准路径。
+- 搜索事件时间线支持跳转；搜索树节点支持鼠标、Enter / 空格回看对应事件，空白画布支持拖拽平移、缩放和定位当前节点。橙色标记返回分支，节点显示深度与启发评分；完整名称与过程可在步骤列表中阅读。
+- 同题对比 BFS、固定 A*、GA A*、MCTS，使用同一问题与扩展预算依次调用真实搜索接口。总工作量包含 MCTS 模拟步数，避免将扩展节点数误认为相同计算成本。单题结果用于演示，整体性能结论仍以独立测试集统计为准。
+- 对比可取消、重试和导出；切换问题、预算或离开模块会丢弃过期对比响应。取消仅停止网页等待及后续调用，正在执行的后端任务可能仍在结束。
+- “对比实验与失败分析”可按场景、预算导出当前指标与配对收益区间。导出格式为 JSON，保留原始数值；缺失值和失败结果不以零替代。
+
+布局参考 [21st.dev](https://21st.dev/) 上的 [Interactive Workflow Blueprint](https://21st.dev/@automate_flows/components/interactive-workflow-blueprint)、[Rail Panel Sidebar](https://21st.dev/@dhxwhy/components/rail-panel-sidebar) 和 [Resizable](https://21st.dev/@wensity/components/resizable)：借鉴节点画布、窄工具轨道和可调整分区，在本项目中独立实现。配色采用石墨黑与橙色，圆角与留白按专业图形工具处理；没有复制组件源码或引入额外运行依赖。
+
+本次界面更新沿用仓库中的基准与 LLM 实测记录，没有重新训练或伪造新基准结果；远程 LLM 仍需服务端配置，默认重放已有评分。
+
+新增交互回归（先启动本地服务，可直接使用已安装的 Edge）：
+
+```powershell
+cd web
+$env:PLAYWRIGHT_CHANNEL = "msedge"
+$env:LAB03_TEST_URL = "http://127.0.0.1:8766"
+npm run test:browser
+npm run test:workbench
+```
+
+需要下载依赖时可使用本地代理，端口按实际配置调整；以下只影响当前终端：
+
+```powershell
+$env:HTTP_PROXY = "http://127.0.0.1:7890"
+$env:HTTPS_PROXY = "http://127.0.0.1:7890"
+$env:NO_PROXY = "localhost,127.0.0.1"
+python -m pip install --proxy http://127.0.0.1:7890 -r requirements.txt
+# 在 web 目录运行
+npm ci --proxy=http://127.0.0.1:7890 --https-proxy=http://127.0.0.1:7890
+```
+
+### 算法与已有实验数据
+
 - 四个模块：多跳搜索工作台、遗传优化与路径学习、LLM辅助与证据约束、对比实验与失败分析。
 - 实现：`experiments/lab03/`；数据：`data/lab03/`；真实运行结果：`outputs/lab03/`；报告和PPT：`deliverables/lab03/`。
 - 搜索：BFS、A*、UCT/MCTS；遗传算法只在验证图选择启发式参数；逻辑回归只使用训练图路径前缀。
