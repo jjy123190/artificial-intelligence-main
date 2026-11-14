@@ -2,6 +2,10 @@
 from __future__ import annotations
 
 import codecs
+import io
+import json
+from contextlib import redirect_stdout
+from unittest.mock import patch
 import os
 from pathlib import Path
 import subprocess
@@ -15,6 +19,20 @@ def powershell_sources() -> list[Path]:
 
 
 class WindowsWebsiteLauncherTests(TestCase):
+    def test_launcher_rejects_environment_missing_numpy_for_lab03_replay(self):
+        script = (ROOT / "scripts/web_python.ps1").read_text(encoding="utf-8-sig")
+        line = next(line.strip() for line in script.splitlines() if line.strip().startswith("$probe = "))
+        probe = line.split("=", 1)[1].strip()[1:-1].replace('\\"', '"')
+        import importlib.util
+        original = importlib.util.find_spec
+        with patch("importlib.util.find_spec", side_effect=lambda name: None if name == "numpy" else original(name)):
+            output = io.StringIO()
+            with redirect_stdout(output):
+                exec(probe, {"__name__": "__main__"})
+        self.assertFalse(json.loads(output.getvalue())["ready"])
+        requirements = (ROOT / "requirements-web.txt").read_text(encoding="utf-8-sig")
+        self.assertTrue(any(line.strip().startswith("numpy") for line in requirements.splitlines()))
+
     def test_non_ascii_powershell_sources_have_utf8_bom(self):
         # Windows PowerShell 5.1 otherwise reads UTF-8 as the system ANSI codepage.
         # Setting chcp or Console.OutputEncoding cannot fix -File source decoding.

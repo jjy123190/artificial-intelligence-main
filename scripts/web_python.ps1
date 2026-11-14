@@ -3,7 +3,7 @@ function Test-WebPython {
     param([string]$Path)
     if (-not $Path -or -not (Test-Path -LiteralPath $Path -PathType Leaf)) { return $null }
     if ($Path -match '\\Microsoft\\WindowsApps\\') { return $null }
-    $probe = 'import sys,importlib.util,json; ok=sys.version_info>=(3,11); names=(\"fastapi\",\"uvicorn\",\"pydantic\",\"httpx\",\"networkx\"); modules=all(importlib.util.find_spec(m) for m in names); ready=False; exec(\"if ok and modules:\n import fastapi,uvicorn,pydantic,httpx,networkx\n ready=int(pydantic.__version__.split(chr(46))[0])>=2\"); print(json.dumps(dict(executable=sys.executable,supported=ok,ready=ready)))'
+    $probe = 'import sys,importlib.util,json; ok=sys.version_info>=(3,11); names=(\"fastapi\",\"uvicorn\",\"pydantic\",\"httpx\",\"networkx\",\"numpy\"); modules=all(importlib.util.find_spec(m) for m in names); ready=False; exec(\"if ok and modules:\n import fastapi,uvicorn,pydantic,httpx,networkx,numpy\n ready=int(pydantic.__version__.split(chr(46))[0])>=2\"); print(json.dumps(dict(executable=sys.executable,supported=ok,ready=ready)))'
     $info = New-Object System.Diagnostics.ProcessStartInfo
     $info.FileName = $Path
     $info.Arguments = '-B -X utf8 -c "' + $probe + '"'
