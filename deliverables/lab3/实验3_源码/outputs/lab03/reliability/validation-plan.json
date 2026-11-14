@@ -1,0 +1,20 @@
+{
+  "name": "model-numeric-evidence-and-frontier-validation-v1",
+  "selection": "Only original train/validation graphs; all previous test/OOD and both historical confirmation seed sets are seen. Preserve outcomes and costs for rejected variants.",
+  "llm_candidates": [
+    "current True/False facts",
+    "compact JSON fields with A/B decisions",
+    "literal comparison expression A/B",
+    "label-symmetric numeric ordering",
+    "natural yes/no threshold check"
+  ],
+  "llm_development_set": "72 original validation prefixes plus explicit confidence-boundary fixtures (development, not held-out). Use raw model outputs, not computed rule labels as inputs.",
+  "search_candidates": [
+    "baseline",
+    "terminal predicate mismatch pruned before queue admission",
+    "already observed one/two-hop impossibility pruned (no extra lookahead)"
+  ],
+  "selection_metric": "No eligible-recall or search-success regression, then unsafe recall/cost; retain previous coefficients where tied. Fresh confirmation generated only after source freeze.",
+  "search_selection": "Safe local proofs only; must retain incomplete/capped branches and pay all evidence scans. Root and successful goal still pay a queue pop. Preserve BFS/h0/MCTS baselines.",
+  "additional_calibration": "Investigate a frozen-Qwen last-hidden-state logistic readout trained ONLY on train prefixes; report separately from raw next-token model legality. Reject if held-out validation or numeric boundary calibration degrades. No computed-rule facts in runtime input."
+}

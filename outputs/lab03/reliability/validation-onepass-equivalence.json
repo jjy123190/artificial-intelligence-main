@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "readout_fit_exact": true,
+  "raw_argmax_unchanged": true,
+  "rows": [
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.771\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9915931063888721
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.992\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9996321284220101
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.976\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9975622923307297
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.795\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9930946873275639
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.776\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9882397931482282
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.963\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9907113241771671
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.75\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9998232412106414
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.746\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9767260548915642
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.858\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9955545293276643
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=True; minimum_confidence=0.75\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.0035887977313266784
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.7\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9998007771713163
+    },
+    {
+      "prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.79\nReturn True if all three conditions hold, otherwise False. Result:",
+      "raw_max_probability_difference": 0.0,
+      "calibrated_probability": 0.9939942924356276
+    }
+  ],
+  "max_difference": 0.0
+}

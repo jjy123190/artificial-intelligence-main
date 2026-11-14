@@ -1,0 +1,631 @@
+{
+  "video": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\PPT_video_20261114_131608\\第31组_实验三_PPT演讲_4分钟_配音字幕版.mp4",
+  "bytes": 12934563,
+  "sha256": "d848576083b9555ab15c67915f15055f91228425604990b3d24470a5991f4970",
+  "duration_seconds": 240.0,
+  "width": 2560,
+  "height": 1440,
+  "fps": 30.0,
+  "frames": 7200,
+  "audio_codec": "AAC",
+  "audio_sample_rate": 48000,
+  "audio_channels": 1,
+  "full_decode": "passed",
+  "source_ppt_sha256": "0b3fbf9bdf669afa6a3cfc995ed0404b876caf6241fd9215a8235cea99e7d574",
+  "source_slides": 17,
+  "used_latest_saved_ppt": true,
+  "protected_file_changes": [],
+  "caption_count": 85,
+  "subtitles_burned_in": true,
+  "external_subtitle_file_required": false,
+  "added_black_bars": false,
+  "slides_and_transition_checks": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "expected_slide": 1,
+      "detected_slide": 1,
+      "body_mean_absolute_error": 0.7608
+    },
+    {
+      "frame": 323,
+      "seconds": 10.766666666666667,
+      "expected_slide": 1,
+      "detected_slide": 1,
+      "body_mean_absolute_error": 0.7534
+    },
+    {
+      "frame": 370,
+      "seconds": 12.333333333333334,
+      "expected_slide": 1,
+      "detected_slide": 1,
+      "body_mean_absolute_error": 0.7534
+    },
+    {
+      "frame": 371,
+      "seconds": 12.366666666666667,
+      "expected_slide": 2,
+      "detected_slide": 2,
+      "body_mean_absolute_error": 0.9231
+    },
+    {
+      "frame": 438,
+      "seconds": 14.6,
+      "expected_slide": 2,
+      "detected_slide": 2,
+      "body_mean_absolute_error": 0.9227
+    },
+    {
+      "frame": 804,
+      "seconds": 26.8,
+      "expected_slide": 2,
+      "detected_slide": 2,
+      "body_mean_absolute_error": 0.9225
+    },
+    {
+      "frame": 805,
+      "seconds": 26.833333333333332,
+      "expected_slide": 3,
+      "detected_slide": 3,
+      "body_mean_absolute_error": 0.8192
+    },
+    {
+      "frame": 1185,
+      "seconds": 39.5,
+      "expected_slide": 3,
+      "detected_slide": 3,
+      "body_mean_absolute_error": 0.8191
+    },
+    {
+      "frame": 1243,
+      "seconds": 41.43333333333333,
+      "expected_slide": 3,
+      "detected_slide": 3,
+      "body_mean_absolute_error": 0.8191
+    },
+    {
+      "frame": 1244,
+      "seconds": 41.46666666666667,
+      "expected_slide": 4,
+      "detected_slide": 4,
+      "body_mean_absolute_error": 1.0279
+    },
+    {
+      "frame": 1558,
+      "seconds": 51.93333333333333,
+      "expected_slide": 4,
+      "detected_slide": 4,
+      "body_mean_absolute_error": 1.0277
+    },
+    {
+      "frame": 1704,
+      "seconds": 56.8,
+      "expected_slide": 4,
+      "detected_slide": 4,
+      "body_mean_absolute_error": 1.0275
+    },
+    {
+      "frame": 1705,
+      "seconds": 56.833333333333336,
+      "expected_slide": 5,
+      "detected_slide": 5,
+      "body_mean_absolute_error": 0.7768
+    },
+    {
+      "frame": 1758,
+      "seconds": 58.6,
+      "expected_slide": 5,
+      "detected_slide": 5,
+      "body_mean_absolute_error": 0.7765
+    },
+    {
+      "frame": 2191,
+      "seconds": 73.03333333333333,
+      "expected_slide": 5,
+      "detected_slide": 5,
+      "body_mean_absolute_error": 0.7762
+    },
+    {
+      "frame": 2192,
+      "seconds": 73.06666666666666,
+      "expected_slide": 6,
+      "detected_slide": 6,
+      "body_mean_absolute_error": 0.8315
+    },
+    {
+      "frame": 2455,
+      "seconds": 81.83333333333333,
+      "expected_slide": 6,
+      "detected_slide": 6,
+      "body_mean_absolute_error": 0.8313
+    },
+    {
+      "frame": 2641,
+      "seconds": 88.03333333333333,
+      "expected_slide": 6,
+      "detected_slide": 6,
+      "body_mean_absolute_error": 0.8312
+    },
+    {
+      "frame": 2642,
+      "seconds": 88.06666666666666,
+      "expected_slide": 7,
+      "detected_slide": 7,
+      "body_mean_absolute_error": 0.7952
+    },
+    {
+      "frame": 3056,
+      "seconds": 101.86666666666666,
+      "expected_slide": 7,
+      "detected_slide": 7,
+      "body_mean_absolute_error": 0.7951
+    },
+    {
+      "frame": 3120,
+      "seconds": 104.0,
+      "expected_slide": 7,
+      "detected_slide": 7,
+      "body_mean_absolute_error": 0.795
+    },
+    {
+      "frame": 3121,
+      "seconds": 104.03333333333333,
+      "expected_slide": 8,
+      "detected_slide": 8,
+      "body_mean_absolute_error": 0.8603
+    },
+    {
+      "frame": 3440,
+      "seconds": 114.66666666666667,
+      "expected_slide": 8,
+      "detected_slide": 8,
+      "body_mean_absolute_error": 0.8601
+    },
+    {
+      "frame": 3571,
+      "seconds": 119.03333333333333,
+      "expected_slide": 8,
+      "detected_slide": 8,
+      "body_mean_absolute_error": 0.8602
+    },
+    {
+      "frame": 3572,
+      "seconds": 119.06666666666666,
+      "expected_slide": 9,
+      "detected_slide": 9,
+      "body_mean_absolute_error": 0.7625
+    },
+    {
+      "frame": 3772,
+      "seconds": 125.73333333333333,
+      "expected_slide": 9,
+      "detected_slide": 9,
+      "body_mean_absolute_error": 0.7624
+    },
+    {
+      "frame": 3998,
+      "seconds": 133.26666666666668,
+      "expected_slide": 9,
+      "detected_slide": 9,
+      "body_mean_absolute_error": 0.7622
+    },
+    {
+      "frame": 3999,
+      "seconds": 133.3,
+      "expected_slide": 10,
+      "detected_slide": 10,
+      "body_mean_absolute_error": 0.7348
+    },
+    {
+      "frame": 4096,
+      "seconds": 136.53333333333333,
+      "expected_slide": 10,
+      "detected_slide": 10,
+      "body_mean_absolute_error": 0.7346
+    },
+    {
+      "frame": 4412,
+      "seconds": 147.06666666666666,
+      "expected_slide": 10,
+      "detected_slide": 10,
+      "body_mean_absolute_error": 0.7344
+    },
+    {
+      "frame": 4413,
+      "seconds": 147.1,
+      "expected_slide": 11,
+      "detected_slide": 11,
+      "body_mean_absolute_error": 1.0381
+    },
+    {
+      "frame": 4532,
+      "seconds": 151.06666666666666,
+      "expected_slide": 11,
+      "detected_slide": 11,
+      "body_mean_absolute_error": 1.0379
+    },
+    {
+      "frame": 4848,
+      "seconds": 161.6,
+      "expected_slide": 11,
+      "detected_slide": 11,
+      "body_mean_absolute_error": 1.0381
+    },
+    {
+      "frame": 4849,
+      "seconds": 161.63333333333333,
+      "expected_slide": 12,
+      "detected_slide": 12,
+      "body_mean_absolute_error": 0.7838
+    },
+    {
+      "frame": 4917,
+      "seconds": 163.9,
+      "expected_slide": 12,
+      "detected_slide": 12,
+      "body_mean_absolute_error": 0.7836
+    },
+    {
+      "frame": 5399,
+      "seconds": 179.96666666666667,
+      "expected_slide": 12,
+      "detected_slide": 12,
+      "body_mean_absolute_error": 0.7834
+    },
+    {
+      "frame": 5400,
+      "seconds": 180.0,
+      "expected_slide": 13,
+      "detected_slide": 13,
+      "body_mean_absolute_error": 0.7919
+    },
+    {
+      "frame": 5523,
+      "seconds": 184.1,
+      "expected_slide": 13,
+      "detected_slide": 13,
+      "body_mean_absolute_error": 0.7917
+    },
+    {
+      "frame": 5809,
+      "seconds": 193.63333333333333,
+      "expected_slide": 13,
+      "detected_slide": 13,
+      "body_mean_absolute_error": 0.7916
+    },
+    {
+      "frame": 5810,
+      "seconds": 193.66666666666666,
+      "expected_slide": 14,
+      "detected_slide": 14,
+      "body_mean_absolute_error": 0.763
+    },
+    {
+      "frame": 6063,
+      "seconds": 202.1,
+      "expected_slide": 14,
+      "detected_slide": 14,
+      "body_mean_absolute_error": 0.7628
+    },
+    {
+      "frame": 6261,
+      "seconds": 208.7,
+      "expected_slide": 14,
+      "detected_slide": 14,
+      "body_mean_absolute_error": 0.7628
+    },
+    {
+      "frame": 6262,
+      "seconds": 208.73333333333332,
+      "expected_slide": 15,
+      "detected_slide": 15,
+      "body_mean_absolute_error": 0.6788
+    },
+    {
+      "frame": 6333,
+      "seconds": 211.1,
+      "expected_slide": 15,
+      "detected_slide": 15,
+      "body_mean_absolute_error": 0.6785
+    },
+    {
+      "frame": 6657,
+      "seconds": 221.9,
+      "expected_slide": 15,
+      "detected_slide": 15,
+      "body_mean_absolute_error": 0.6785
+    },
+    {
+      "frame": 6658,
+      "seconds": 221.93333333333334,
+      "expected_slide": 16,
+      "detected_slide": 16,
+      "body_mean_absolute_error": 0.7398
+    },
+    {
+      "frame": 6713,
+      "seconds": 223.76666666666668,
+      "expected_slide": 16,
+      "detected_slide": 16,
+      "body_mean_absolute_error": 0.7396
+    },
+    {
+      "frame": 7049,
+      "seconds": 234.96666666666667,
+      "expected_slide": 16,
+      "detected_slide": 16,
+      "body_mean_absolute_error": 0.7396
+    },
+    {
+      "frame": 7050,
+      "seconds": 235.0,
+      "expected_slide": 17,
+      "detected_slide": 17,
+      "body_mean_absolute_error": 0.6958
+    },
+    {
+      "frame": 7078,
+      "seconds": 235.93333333333334,
+      "expected_slide": 17,
+      "detected_slide": 17,
+      "body_mean_absolute_error": 0.6958
+    },
+    {
+      "frame": 7199,
+      "seconds": 239.96666666666667,
+      "expected_slide": 17,
+      "detected_slide": 17,
+      "body_mean_absolute_error": 0.6958
+    }
+  ],
+  "audio_sync_checks": [
+    {
+      "slide": 1,
+      "zero_lag_correlation": 0.999994,
+      "rms_dbfs": -18.98,
+      "aac_vs_master_snr_db": 49.03,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 2,
+      "zero_lag_correlation": 0.999992,
+      "rms_dbfs": -18.36,
+      "aac_vs_master_snr_db": 48.16,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 3,
+      "zero_lag_correlation": 0.99999,
+      "rms_dbfs": -18.59,
+      "aac_vs_master_snr_db": 47.04,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 4,
+      "zero_lag_correlation": 0.999991,
+      "rms_dbfs": -18.81,
+      "aac_vs_master_snr_db": 47.49,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 5,
+      "zero_lag_correlation": 0.999994,
+      "rms_dbfs": -18.38,
+      "aac_vs_master_snr_db": 48.87,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 6,
+      "zero_lag_correlation": 0.999984,
+      "rms_dbfs": -18.53,
+      "aac_vs_master_snr_db": 44.97,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 7,
+      "zero_lag_correlation": 0.999991,
+      "rms_dbfs": -18.97,
+      "aac_vs_master_snr_db": 47.6,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 8,
+      "zero_lag_correlation": 0.999989,
+      "rms_dbfs": -18.43,
+      "aac_vs_master_snr_db": 46.66,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 9,
+      "zero_lag_correlation": 0.999988,
+      "rms_dbfs": -18.76,
+      "aac_vs_master_snr_db": 46.03,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 10,
+      "zero_lag_correlation": 0.999994,
+      "rms_dbfs": -18.3,
+      "aac_vs_master_snr_db": 48.93,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 11,
+      "zero_lag_correlation": 0.999992,
+      "rms_dbfs": -18.7,
+      "aac_vs_master_snr_db": 47.68,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 12,
+      "zero_lag_correlation": 0.999992,
+      "rms_dbfs": -18.56,
+      "aac_vs_master_snr_db": 47.89,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 13,
+      "zero_lag_correlation": 0.999992,
+      "rms_dbfs": -18.15,
+      "aac_vs_master_snr_db": 47.87,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 14,
+      "zero_lag_correlation": 0.99999,
+      "rms_dbfs": -17.91,
+      "aac_vs_master_snr_db": 46.98,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 15,
+      "zero_lag_correlation": 0.999995,
+      "rms_dbfs": -18.21,
+      "aac_vs_master_snr_db": 49.76,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 16,
+      "zero_lag_correlation": 0.999992,
+      "rms_dbfs": -18.47,
+      "aac_vs_master_snr_db": 47.76,
+      "last_word_before_next_slide": true
+    },
+    {
+      "slide": 17,
+      "zero_lag_correlation": 0.999994,
+      "rms_dbfs": -18.21,
+      "aac_vs_master_snr_db": 49.51,
+      "last_word_before_next_slide": true
+    }
+  ],
+  "samples": [
+    {
+      "slide": 1,
+      "file": "qa/verified-frames/slide-01-0323.png",
+      "frame": 323,
+      "caption": "让搜索返回有证据、可核验的答案。",
+      "caption_pixel_error": 2.8005
+    },
+    {
+      "slide": 2,
+      "file": "qa/verified-frames/slide-02-0438.png",
+      "frame": 438,
+      "caption": "本次任务给定起点、关系顺序和终点条件。",
+      "caption_pixel_error": 2.556
+    },
+    {
+      "slide": 3,
+      "file": "qa/verified-frames/slide-03-1185.png",
+      "frame": 1185,
+      "caption": "预算耗尽只能保留未知，不能当作无解。",
+      "caption_pixel_error": 2.6225
+    },
+    {
+      "slide": 4,
+      "file": "qa/verified-frames/slide-04-1558.png",
+      "frame": 1558,
+      "caption": "蒙特卡洛树搜索执行选择、扩展、模拟和回传，",
+      "caption_pixel_error": 2.3612
+    },
+    {
+      "slide": 5,
+      "file": "qa/verified-frames/slide-05-1758.png",
+      "frame": 1758,
+      "caption": "混合架构用遗传算法、路径分类器",
+      "caption_pixel_error": 2.7415
+    },
+    {
+      "slide": 6,
+      "file": "qa/verified-frames/slide-06-2455.png",
+      "frame": 2455,
+      "caption": "八十一道验证题仅减少四次总扩展，",
+      "caption_pixel_error": 2.2381
+    },
+    {
+      "slide": 7,
+      "file": "qa/verified-frames/slide-07-3056.png",
+      "frame": 3056,
+      "caption": "测试集已经迭代查看，结果按同题回归解释。",
+      "caption_pixel_error": 2.6889
+    },
+    {
+      "slide": 8,
+      "file": "qa/verified-frames/slide-08-3440.png",
+      "frame": 3440,
+      "caption": "固定版全部成功，遗传优化版少答对一题，",
+      "caption_pixel_error": 2.5335
+    },
+    {
+      "slide": 9,
+      "file": "qa/verified-frames/slide-09-3772.png",
+      "frame": 3772,
+      "caption": "蒙特卡洛树搜索还有模拟开销。",
+      "caption_pixel_error": 2.8685
+    },
+    {
+      "slide": 10,
+      "file": "qa/verified-frames/slide-10-4096.png",
+      "frame": 4096,
+      "caption": "混合方法四次扩展就找到有效路径。",
+      "caption_pixel_error": 2.7245
+    },
+    {
+      "slide": 11,
+      "file": "qa/verified-frames/slide-11-4532.png",
+      "frame": 4532,
+      "caption": "预算不足、遗传排序退化，以及专家规则关闭。",
+      "caption_pixel_error": 2.5861
+    },
+    {
+      "slide": 12,
+      "file": "qa/verified-frames/slide-12-4917.png",
+      "frame": 4917,
+      "caption": "大模型负责合法性辅助、路径评分与核验后解释。",
+      "caption_pixel_error": 2.6347
+    },
+    {
+      "slide": 13,
+      "file": "qa/verified-frames/slide-13-5523.png",
+      "frame": 5523,
+      "caption": "必须重新定义状态、动作、终止和成本。",
+      "caption_pixel_error": 2.4662
+    },
+    {
+      "slide": 14,
+      "file": "qa/verified-frames/slide-14-6063.png",
+      "frame": 6063,
+      "caption": "两个正例通过，八个错误分支被拒绝。",
+      "caption_pixel_error": 2.2105
+    },
+    {
+      "slide": 15,
+      "file": "qa/verified-frames/slide-15-6333.png",
+      "frame": 6333,
+      "caption": "后续评估关注完成率、总成本、解质量和泛化，",
+      "caption_pixel_error": 2.5075
+    },
+    {
+      "slide": 16,
+      "file": "qa/verified-frames/slide-16-6713.png",
+      "frame": 6713,
+      "caption": "最后总结：启发排序改善预算内搜索，",
+      "caption_pixel_error": 2.8759
+    },
+    {
+      "slide": 17,
+      "file": "qa/verified-frames/slide-17-7078.png",
+      "frame": 7078,
+      "caption": "我们的汇报到此结束，",
+      "caption_pixel_error": 2.8049
+    }
+  ],
+  "visual_review": "passed",
+  "visual_review_date": "2026-11-14T13:43:56.594810+08:00",
+  "visual_review_notes": [
+    "审看17页成片接触表、封面和结束页高清抽帧，以及各页最长字幕的实际渲染位置。",
+    "字幕直接叠加在幻灯片底部中央，与用户示例位置一致；深色页浅字、浅色页深字，没有额外黑边或字幕条。",
+    "首尾成员姓名、页码与正文未被字幕覆盖；结束页采用用户最新删除副标题后的版本。",
+    "17页均保留原有图表和版式，翻页未截断语音；最后2秒停留在无字幕的谢谢聆听结束页。"
+  ]
+}

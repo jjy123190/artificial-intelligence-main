@@ -1,0 +1,120 @@
+<!doctype html><html lang="zh-CN" id="top"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第31组 · 实验三图片与案例索引</title>
+<style>body{max-width:1080px;margin:40px auto;padding:0 22px;font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;color:#263746;background:#fff}h1,h2{line-height:1.4}a{color:#16638c}header{border-bottom:2px solid #d8e3eb;padding-bottom:20px}nav{columns:2;column-gap:38px}nav a{display:block;margin:5px 0}section{margin:44px 0;border-top:1px solid #dce5eb;padding-top:14px}img{display:block;width:auto;max-width:100%;max-height:850px;margin:16px auto;border:1px solid #e2e8ef}code{background:#edf2f6;padding:2px 5px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #d6e0e8;padding:8px;text-align:left;overflow-wrap:anywhere}th{background:#edf2f6}.note{color:#586978}.links a{margin-right:20px}@media(max-width:650px){nav{columns:1}table{font-size:12px}body{margin-top:20px}}@media print{nav{display:none}section{break-inside:avoid}img{max-height:650px}}</style></head><body>
+<header><h1>实验三 · 图片与案例索引</h1><p>第31组 · 2026年11月13日</p><p>本页离线可用，不启动、不修改项目网站。图片来自冻结指标与完整搜索轨迹；点击SVG可无损放大，点击JSON可核对原始记录。</p>
+<p class="links"><a href="%E7%AC%AC31%E7%BB%84_%E5%AE%9E%E9%AA%8C%E4%B8%89_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf">阅读报告 PDF（26页）</a><a href="%E7%AC%AC31%E7%BB%84_%E5%AE%9E%E9%AA%8C%E4%B8%89_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.docx">编辑 Word</a><a href="%E9%99%84%E4%BB%B6%E8%AF%B4%E6%98%8E.md">附件说明</a></p></header>
+<h2>图片导航</h2><nav>
+<a href="#01_architecture">01 · 混合搜索系统架构</a>
+<a href="#02_ga_validation">02 · GA验证适应度：保留近乎平坦的真实结果</a>
+<a href="#03_accuracy_budget8">03 · 测试与OOD的有效答案率</a>
+<a href="#04_budget_sensitivity">04 · 扩展预算敏感性</a>
+<a href="#05_cost_breakdown">05 · 扩展、模拟及证据检查成本</a>
+<a href="#06_llm_numeric_confusion">06 · 真实LLM数值挑战混淆矩阵</a>
+<a href="#07_negative_confirmation">07 · 派生不可答题的正确穷尽率</a>
+<a href="#08_tree_two_hop">08 · 两跳成功路径</a>
+<a href="#09_tree_three_hop">09 · 三跳搜索完整状态树</a>
+<a href="#10_tree_four_hop">10 · 四跳搜索完整状态树</a>
+<a href="#11_tree_mcts">11 · MCTS：真实树扩展与rollout</a>
+<a href="#12_tree_bfs_budget">12 · BFS预算耗尽：生成目标不等于出队</a>
+<a href="#13_tree_no_expert">13 · 无专家：返回路径证据无效</a>
+<a href="#14_tree_ood_ga">14 · OOD上GA排序退化</a>
+<a href="#15_tree_no_answer">15 · 派生不可答题：证明穷尽</a>
+<a href="#16_tree_controlled_neutral">16 · 受控中性评分：预算内成功</a>
+<a href="#17_tree_controlled_wrong">17 · 受控错误评分：预算耗尽</a>
+<a href="#18_ood_expansion_order">18 · 同题固定A*与GA扩展顺序</a>
+</nav>
+<section id="01_architecture"><h2>01 · 混合搜索系统架构</h2>
+<p class="links"><a href="figures/01_architecture.png">高清PNG</a><a href="figures/01_architecture.svg">SVG无损放大</a></p>
+<a href="figures/01_architecture.svg"><img src="figures/01_architecture.png" loading="lazy" alt="混合搜索系统架构"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="02_ga_validation"><h2>02 · GA验证适应度：保留近乎平坦的真实结果</h2>
+<p class="links"><a href="figures/02_ga_validation.png">高清PNG</a><a href="figures/02_ga_validation.svg">SVG无损放大</a></p>
+<a href="figures/02_ga_validation.svg"><img src="figures/02_ga_validation.png" loading="lazy" alt="GA验证适应度：保留近乎平坦的真实结果"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="03_accuracy_budget8"><h2>03 · 测试与OOD的有效答案率</h2>
+<p class="links"><a href="figures/03_accuracy_budget8.png">高清PNG</a><a href="figures/03_accuracy_budget8.svg">SVG无损放大</a></p>
+<a href="figures/03_accuracy_budget8.svg"><img src="figures/03_accuracy_budget8.png" loading="lazy" alt="测试与OOD的有效答案率"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="04_budget_sensitivity"><h2>04 · 扩展预算敏感性</h2>
+<p class="links"><a href="figures/04_budget_sensitivity.png">高清PNG</a><a href="figures/04_budget_sensitivity.svg">SVG无损放大</a></p>
+<a href="figures/04_budget_sensitivity.svg"><img src="figures/04_budget_sensitivity.png" loading="lazy" alt="扩展预算敏感性"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="05_cost_breakdown"><h2>05 · 扩展、模拟及证据检查成本</h2>
+<p class="links"><a href="figures/05_cost_breakdown.png">高清PNG</a><a href="figures/05_cost_breakdown.svg">SVG无损放大</a></p>
+<a href="figures/05_cost_breakdown.svg"><img src="figures/05_cost_breakdown.png" loading="lazy" alt="扩展、模拟及证据检查成本"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="06_llm_numeric_confusion"><h2>06 · 真实LLM数值挑战混淆矩阵</h2>
+<p class="links"><a href="figures/06_llm_numeric_confusion.png">高清PNG</a><a href="figures/06_llm_numeric_confusion.svg">SVG无损放大</a></p>
+<a href="figures/06_llm_numeric_confusion.svg"><img src="figures/06_llm_numeric_confusion.png" loading="lazy" alt="真实LLM数值挑战混淆矩阵"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="07_negative_confirmation"><h2>07 · 派生不可答题的正确穷尽率</h2>
+<p class="links"><a href="figures/07_negative_confirmation.png">高清PNG</a><a href="figures/07_negative_confirmation.svg">SVG无损放大</a></p>
+<a href="figures/07_negative_confirmation.svg"><img src="figures/07_negative_confirmation.png" loading="lazy" alt="派生不可答题的正确穷尽率"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="08_tree_two_hop"><h2>08 · 两跳成功路径</h2>
+<p class="links"><a href="figures/08_tree_two_hop.png">高清PNG</a><a href="figures/08_tree_two_hop.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/S01_two_hop.json">S01_two_hop · 完整JSON</a>｜hybrid｜预算8｜found｜valid=True｜扩展3</p>
+<p class="note">全部11个完整前缀状态，15个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/08_tree_two_hop.svg"><img src="figures/08_tree_two_hop.png" loading="lazy" alt="两跳成功路径"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="09_tree_three_hop"><h2>09 · 三跳搜索完整状态树</h2>
+<p class="links"><a href="figures/09_tree_three_hop.png">高清PNG</a><a href="figures/09_tree_three_hop.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/S02_three_hop.json">S02_three_hop · 完整JSON</a>｜hybrid｜预算8｜found｜valid=True｜扩展4</p>
+<p class="note">全部12个完整前缀状态，17个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/09_tree_three_hop.svg"><img src="figures/09_tree_three_hop.png" loading="lazy" alt="三跳搜索完整状态树"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="10_tree_four_hop"><h2>10 · 四跳搜索完整状态树</h2>
+<p class="links"><a href="figures/10_tree_four_hop.png">高清PNG</a><a href="figures/10_tree_four_hop.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/S03_four_hop.json">S03_four_hop · 完整JSON</a>｜hybrid｜预算8｜found｜valid=True｜扩展5</p>
+<p class="note">全部10个完整前缀状态，16个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/10_tree_four_hop.svg"><img src="figures/10_tree_four_hop.png" loading="lazy" alt="四跳搜索完整状态树"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="11_tree_mcts"><h2>11 · MCTS：真实树扩展与rollout</h2>
+<p class="links"><a href="figures/11_tree_mcts.png">高清PNG</a><a href="figures/11_tree_mcts.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/S04_mcts_four_hop.json">S04_mcts_four_hop · 完整JSON</a>｜mcts｜预算8｜found｜valid=True｜扩展2</p>
+<p class="note">全部12个完整前缀状态，17个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/11_tree_mcts.svg"><img src="figures/11_tree_mcts.png" loading="lazy" alt="MCTS：真实树扩展与rollout"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="12_tree_bfs_budget"><h2>12 · BFS预算耗尽：生成目标不等于出队</h2>
+<p class="links"><a href="figures/12_tree_bfs_budget.png">高清PNG</a><a href="figures/12_tree_bfs_budget.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F01_bfs_budget.json">F01_bfs_budget · 完整JSON</a>｜bfs｜预算8｜budget_exhausted｜valid=False｜扩展8</p>
+<p class="note">全部16个完整前缀状态，24个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/12_tree_bfs_budget.svg"><img src="figures/12_tree_bfs_budget.png" loading="lazy" alt="BFS预算耗尽：生成目标不等于出队"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="13_tree_no_expert"><h2>13 · 无专家：返回路径证据无效</h2>
+<p class="links"><a href="figures/13_tree_no_expert.png">高清PNG</a><a href="figures/13_tree_no_expert.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F03_no_expert.json">F03_no_expert · 完整JSON</a>｜hybrid_no_expert｜预算8｜found｜valid=False｜扩展3</p>
+<p class="note">全部8个完整前缀状态，12个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/13_tree_no_expert.svg"><img src="figures/13_tree_no_expert.png" loading="lazy" alt="无专家：返回路径证据无效"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="14_tree_ood_ga"><h2>14 · OOD上GA排序退化</h2>
+<p class="links"><a href="figures/14_tree_ood_ga.png">高清PNG</a><a href="figures/14_tree_ood_ga.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F05_ood_ga.json">F05_ood_ga · 完整JSON</a>｜astar_ga｜预算8｜budget_exhausted｜valid=False｜扩展8</p>
+<p class="note">全部20个完整前缀状态，28个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/14_tree_ood_ga.svg"><img src="figures/14_tree_ood_ga.png" loading="lazy" alt="OOD上GA排序退化"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="15_tree_no_answer"><h2>15 · 派生不可答题：证明穷尽</h2>
+<p class="links"><a href="figures/15_tree_no_answer.png">高清PNG</a><a href="figures/15_tree_no_answer.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F09_proved_no_answer.json">F09_proved_no_answer · 完整JSON</a>｜hybrid｜预算8｜exhausted｜valid=False｜扩展1</p>
+<p class="note">全部7个完整前缀状态，8个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<a href="figures/15_tree_no_answer.svg"><img src="figures/15_tree_no_answer.png" loading="lazy" alt="派生不可答题：证明穷尽"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="16_tree_controlled_neutral"><h2>16 · 受控中性评分：预算内成功</h2>
+<p class="links"><a href="figures/16_tree_controlled_neutral.png">高清PNG</a><a href="figures/16_tree_controlled_neutral.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F10_controlled_neutral.json">F10_controlled_neutral · 完整JSON</a>｜hybrid_llm｜预算5｜found｜valid=True｜扩展5</p>
+<p class="note">全部6个完整前缀状态，12个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<p><strong>人为注入评分的机制反例，不是真实LLM预测，不用于计算模型幻觉发生率。</strong></p>
+<a href="figures/16_tree_controlled_neutral.svg"><img src="figures/16_tree_controlled_neutral.png" loading="lazy" alt="受控中性评分：预算内成功"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="17_tree_controlled_wrong"><h2>17 · 受控错误评分：预算耗尽</h2>
+<p class="links"><a href="figures/17_tree_controlled_wrong.png">高清PNG</a><a href="figures/17_tree_controlled_wrong.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F11_controlled_wrong.json">F11_controlled_wrong · 完整JSON</a>｜hybrid_llm｜预算5｜budget_exhausted｜valid=False｜扩展5</p>
+<p class="note">全部7个完整前缀状态，12个事件；未截取子树。多事件在图中合并显示，JSON仍保留全部事件。</p>
+<p><strong>人为注入评分的机制反例，不是真实LLM预测，不用于计算模型幻觉发生率。</strong></p>
+<a href="figures/17_tree_controlled_wrong.svg"><img src="figures/17_tree_controlled_wrong.png" loading="lazy" alt="受控错误评分：预算耗尽"></a><p><a href="#top">返回顶部</a></p></section>
+<section id="18_ood_expansion_order"><h2>18 · 同题固定A*与GA扩展顺序</h2>
+<p class="links"><a href="figures/18_ood_expansion_order.png">高清PNG</a><a href="figures/18_ood_expansion_order.svg">SVG无损放大</a></p>
+<p><a href="evidence/cases/F04_ood_fixed.json">F04_ood_fixed · 完整JSON</a>｜astar_fixed｜预算8｜found｜valid=True｜扩展8</p>
+<p><a href="evidence/cases/F05_ood_ga.json">F05_ood_ga · 完整JSON</a>｜astar_ga｜预算8｜budget_exhausted｜valid=False｜扩展8</p>
+<a href="figures/18_ood_expansion_order.svg"><img src="figures/18_ood_expansion_order.png" loading="lazy" alt="同题固定A*与GA扩展顺序"></a><p><a href="#top">返回顶部</a></p></section>
+<section><h2>全部15个运行案例</h2><table><thead><tr><th>案例JSON</th><th>方法/预算</th><th>结果</th><th>选例用途</th></tr></thead><tbody>
+<tr><td><a href="evidence/cases/S01_two_hop.json">S01_two_hop</a></td><td>hybrid / 8</td><td>found<br>valid=True, 扩展=3</td><td>固定选择第一个测试图的2跳题，展示安全证据路径。</td></tr>
+<tr><td><a href="evidence/cases/S02_three_hop.json">S02_three_hop</a></td><td>hybrid / 8</td><td>found<br>valid=True, 扩展=4</td><td>沿用归档搜索树问题，展示成功、专家拒绝、确定性剪枝与未扩展分支。</td></tr>
+<tr><td><a href="evidence/cases/S03_four_hop.json">S03_four_hop</a></td><td>hybrid / 8</td><td>found<br>valid=True, 扩展=5</td><td>固定选择同图首个4跳题，覆盖要求的最高跳数。</td></tr>
+<tr><td><a href="evidence/cases/S04_mcts_four_hop.json">S04_mcts_four_hop</a></td><td>mcts / 8</td><td>found<br>valid=True, 扩展=2</td><td>同题展示真实均匀rollout；不把模拟步数混入树节点扩展。</td></tr>
+<tr><td><a href="evidence/cases/F01_bfs_budget.json">F01_bfs_budget</a></td><td>bfs / 8</td><td>budget_exhausted<br>valid=False, 扩展=8</td><td>与S02同图同题同预算，只更换搜索方法。</td></tr>
+<tr><td><a href="evidence/cases/F02_minimum_budget.json">F02_minimum_budget</a></td><td>hybrid / 4</td><td>budget_exhausted<br>valid=False, 扩展=4</td><td>与S03同题，仅将预算由8降为4，展示目标生成但尚未出队。</td></tr>
+<tr><td><a href="evidence/cases/F03_no_expert.json">F03_no_expert</a></td><td>hybrid_no_expert / 8</td><td>found<br>valid=False, 扩展=3</td><td>与S01同题，去掉专家约束后返回未经核验且已失效的边。</td></tr>
+<tr><td><a href="evidence/cases/F04_ood_fixed.json">F04_ood_fixed</a></td><td>astar_fixed / 8</td><td>found<br>valid=True, 扩展=8</td><td>原OOD预算8中GA相对固定A*的唯一失题；预算16用于机制复核，不重新调参。</td></tr>
+<tr><td><a href="evidence/cases/F05_ood_ga.json">F05_ood_ga</a></td><td>astar_ga / 8</td><td>budget_exhausted<br>valid=False, 扩展=8</td><td>原OOD预算8中GA相对固定A*的唯一失题；预算16用于机制复核，不重新调参。</td></tr>
+<tr><td><a href="evidence/cases/F06_ood_ga_recovery.json">F06_ood_ga_recovery</a></td><td>astar_ga / 16</td><td>found<br>valid=True, 扩展=9</td><td>原OOD预算8中GA相对固定A*的唯一失题；预算16用于机制复核，不重新调参。</td></tr>
+<tr><td><a href="evidence/cases/F07_fresh_shift.json">F07_fresh_shift</a></td><td>astar_ga / 8</td><td>budget_exhausted<br>valid=False, 扩展=8</td><td>冻结后的新图确认仍存在预算失败；保留预算扩大后的对照。</td></tr>
+<tr><td><a href="evidence/cases/F08_fresh_shift_recovery.json">F08_fresh_shift_recovery</a></td><td>astar_ga / 16</td><td>found<br>valid=True, 扩展=10</td><td>冻结后的新图确认仍存在预算失败；保留预算扩大后的对照。</td></tr>
+<tr><td><a href="evidence/cases/F09_proved_no_answer.json">F09_proved_no_answer</a></td><td>hybrid / 8</td><td>exhausted<br>valid=False, 扩展=1</td><td>按冻结协议将目标行业改为图中不存在的行业，展示exhausted而非budget_exhausted。</td></tr>
+<tr><td><a href="evidence/cases/F10_controlled_neutral.json">F10_controlled_neutral</a></td><td>hybrid_llm / 5</td><td>found<br>valid=True, 扩展=5</td><td>精确复现固定微型反例，隔离错误评分对有限预算排序的影响。</td></tr>
+<tr><td><a href="evidence/cases/F11_controlled_wrong.json">F11_controlled_wrong</a></td><td>hybrid_llm / 5</td><td>budget_exhausted<br>valid=False, 扩展=5</td><td>精确复现固定微型反例，隔离错误评分对有限预算排序的影响。</td></tr>
+</tbody></table><p class="note">全组统计而非个例发生率：见evidence/raw/runs.csv与summary.json。真实LLM误判及数值挑战见evidence/raw/reliability/llm_confirmation.json。</p></section></body></html>

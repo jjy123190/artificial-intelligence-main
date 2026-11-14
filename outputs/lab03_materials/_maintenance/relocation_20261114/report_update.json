@@ -1,0 +1,89 @@
+{
+  "scope": "Only directory references and material/attachment wording; no experimental content or numeric tables changed.",
+  "before_sha256": "fac893732800580e8cf788cd7254db5538e5dd37ab99a0f86079b0c240e4afc1",
+  "staged_sha256": "34a16a8bf45dc48cfdd54e99a254ba8d9441d483903541670fdc5d96dba46fa1",
+  "paragraph_updates": {
+    "12": {
+      "before": "本报告已整合搜索树可视化样例与失败案例分析。\n配套附件包括 PNG、SVG、完整搜索轨迹 JSON、冻结结果及复核脚本。",
+      "after": "本报告已整合搜索树可视化样例与失败案例分析。\nPNG、SVG、完整轨迹及核验脚本另存为制作资料。"
+    },
+    "16": {
+      "before": "报告同时展示2、3、4跳与MCTS真实搜索树，并用预算耗尽、无专家无效路径、OOD排序退化、真实LLM误判和受控错误评分分析失效机制。全部图表可追溯到附件JSON。主实验仅汇编冻结结果和重放典型案例，没有重新训练、改变基准问题或增加LLM调用。第14章另给出跨领域迁移设计与两个自构造核验样例。",
+      "after": "报告同时展示2、3、4跳与MCTS真实搜索树，并用预算耗尽、无专家无效路径、OOD排序退化、真实LLM误判和受控错误评分分析失效机制。全部图表可追溯到归档JSON。主实验仅汇编冻结结果和重放典型案例，没有重新训练、改变基准问题或增加LLM调用。第14章另给出跨领域迁移设计与两个自构造核验样例。"
+    },
+    "19": {
+      "before": "阅读提示：第7—9章看总体结果，第10—11章用轨迹解释结果，第14章为可选迁移设计与样例核验。源码、训练/验证来源、原始模型输出和受控注入相互区分。正文的evidence/、figures/、reproduce/均相对配套deliverables/lab3_备份目录。",
+      "after": "阅读提示：第7—9章看总体结果，第10—11章用轨迹解释结果，第14章为可选迁移设计与样例核验。源码、训练/验证来源、原始模型输出和受控注入相互区分。正文的evidence/、figures/、reproduce/均相对制作资料目录outputs/lab03_materials。"
+    },
+    "30": {
+      "before": "来源：data/raw/*.csv；data/lab03/benchmark.json；experiments/lab03/dataset.py。附件report_metrics.json保存本表原始计数，source_manifest.json保存数据SHA-256。",
+      "after": "来源：data/raw/*.csv；data/lab03/benchmark.json；experiments/lab03/dataset.py。归档report_metrics.json保存本表原始计数，source_manifest.json保存数据SHA-256。"
+    },
+    "121": {
+      "before": "来源：reliability/protocol.json、confirmation.json、failure_analysis.json；报告附件复制冻结结果，未根据确认集再次选择权重。",
+      "after": "来源：reliability/protocol.json、confirmation.json、failure_analysis.json；制作资料保留冻结结果，未根据确认集再次选择权重。"
+    },
+    "128": {
+      "before": "附件：S02_three_hop.json保存完整图、查询、模型/权重、trace及离线oracle的2条有效路径；图文件09_tree_three_hop.svg/.png。",
+      "after": "归档记录：S02_three_hop.json保存完整图、查询、模型/权重、trace及离线oracle的2条有效路径；图文件09_tree_three_hop.svg/.png。"
+    },
+    "131": {
+      "before": "两跳示例的R0087、R0084置信度分别为0.926和0.922，终点N37为新能源上市公司。完整两跳树较高，另附08_tree_two_hop.svg/.png；报告以表和完整JSON呈现，不压缩成不可读缩略图。四跳例展示短程前瞻之外仍需逐步扩展。",
+      "after": "两跳示例的R0087、R0084置信度分别为0.926和0.922，终点N37为新能源上市公司。完整两跳树较高，另存08_tree_two_hop.svg/.png；报告以表和完整JSON呈现，不压缩成不可读缩略图。四跳例展示短程前瞻之外仍需逐步扩展。"
+    },
+    "149": {
+      "before": "原因是FIFO对同层候选不区分潜力，先扩展N23、N22、N11、N35等分支。它遵守BFS语义，并非漏接图边。可采取提高预算或选择带局部证据的启发搜索；不能为美化结果把生成目标改成不计费返回。附件F01_bfs_budget.json与S02_three_hop.json同图同题同预算。",
+      "after": "原因是FIFO对同层候选不区分潜力，先扩展N23、N22、N11、N35等分支。它遵守BFS语义，并非漏接图边。可采取提高预算或选择带局部证据的启发搜索；不能为美化结果把生成目标改成不计费返回。归档F01_bfs_budget.json与S02_three_hop.json同图同题同预算。"
+    },
+    "162": {
+      "before": "此例支持分布变化下的排序退化：验证适应度奖励的局部特征组合未能在更大、行业同配更弱的图上保持最优次序。证据规则和终点验证未出错；需要的是更稳健的参数选择、扩大验证分布或在预算耗尽时明确不确定，而不是删掉失败题。完整GA树另附14_tree_ood_ga.svg/.png。",
+      "after": "此例支持分布变化下的排序退化：验证适应度奖励的局部特征组合未能在更大、行业同配更弱的图上保持最优次序。证据规则和终点验证未出错；需要的是更稳健的参数选择、扩大验证分布或在预算耗尽时明确不确定，而不是删掉失败题。完整GA树另存14_tree_ood_ga.svg/.png。"
+    },
+    "172": {
+      "before": "在固定微型4跳图、预算5、专家开启、零系数中性分类器和0.1弱主题权重下，中性评分沿p→a→c→d→z在5次扩展成功；把有效首边评分置0、干扰首边置1后，先扩展b，最终z待出队而预算耗尽。中性树另附16_tree_controlled_neutral文件。原9题受控评分试验中，专家开启无效答案0/9，关闭3/9；这些仅说明机制，不能当真实模型幻觉发生率。",
+      "after": "在固定微型4跳图、预算5、专家开启、零系数中性分类器和0.1弱主题权重下，中性评分沿p→a→c→d→z在5次扩展成功；把有效首边评分置0、干扰首边置1后，先扩展b，最终z待出队而预算耗尽。中性树另存16_tree_controlled_neutral文件。原9题受控评分试验中，专家开启无效答案0/9，关闭3/9；这些仅说明机制，不能当真实模型幻觉发生率。"
+    },
+    "180": {
+      "before": "以上数字来自同日已保存的代码审查验收JSON，报告附其原件，而非本轮生成报告时重新宣称全部完成一次审查。本轮另核对图表数据、典型轨迹、DOCX/PDF版式与保护文件指纹；相应材料验收结果写入delivery_validation.json。测试通过证明检查条件成立，不表示所有题都能在任意预算下答对。",
+      "after": "以上数字来自同日已保存的代码审查验收JSON，制作资料保留原件，而非本轮生成报告时重新宣称全部完成一次审查。本轮另核对图表数据、典型轨迹、DOCX/PDF版式与保护文件指纹；相应材料验收结果写入delivery_validation.json。测试通过证明检查条件成立，不表示所有题都能在任意预算下答对。"
+    },
+    "221": {
+      "before": "复核入口：配套目录lab3_备份/可选拓展_20261113中的verify_examples.py与example_verification.json；运行方法及最新版报告检查见附录A。",
+      "after": "样例核验：可选拓展_20261113中的verify_examples.py与example_verification.json，位于outputs/lab03_materials；运行方法见附录A。"
+    },
+    "232": {
+      "before": "表28路径以deliverables/lab3_备份/evidence为根，raw文件逐字节保留。模型权重清单见原项目data/lab03/llm_model_manifest.json；原保护文件指纹见备份内reproduce/qa/protected_before.json。第14章样例及新版报告验收另存于可选拓展_20261113，不与原26页报告的验收清单混用。",
+      "after": "表28路径以outputs/lab03_materials/evidence为根，raw文件逐字节保留。模型权重清单见原项目data/lab03/llm_model_manifest.json；制作时的文件指纹见reproduce/qa/protected_before.json。第14章样例及历史验收另存于可选拓展_20261113；原验收记录保留，不代表本次重跑。"
+    },
+    "233": {
+      "before": "附录 A 复现与附件使用说明",
+      "after": "附录 A 复现与资料使用说明"
+    },
+    "235": {
+      "before": "在项目根目录打开PowerShell。下列命令只核验给定样例、最新版报告清单与原证据指纹，不重建主实验、不训练、不调用LLM；verify_report.py不等同于重新执行完整算法验收。",
+      "after": "在项目根目录打开PowerShell。下列命令检查当前制作资料及报告文件，并重放两个给定样例；不重建主实验、不训练、不调用LLM。历史验收清单保留原样，不作为当前版本重跑结果。"
+    },
+    "236": {
+      "before": "Set-Location 'deliverables/lab3_备份/可选拓展_20261113'\npython -B -X utf8 verify_examples.py\npython -B -X utf8 verify_report.py\nSet-Location ../../..",
+      "after": "Set-Location 'outputs/lab03_materials'\npython -B -X utf8 verify_materials.py\npython -B -X utf8 可选拓展_20261113/verify_examples.py\nSet-Location ../.."
+    },
+    "239": {
+      "before": "本次未执行上述重建命令。重跑算法后应整套更新证据，不能混用新模型/权重与旧指标。备份内旧reproduce/build_report.py仅对应原版报告；本次增补源和核验材料在可选拓展_20261113。不要用旧生成器或lab03 report/all入口覆盖当前报告。",
+      "after": "本次未执行上述重建命令。重跑算法后应整套更新证据，不能混用新模型/权重与旧指标。reproduce/build_report.py仅对应旧版报告；可选拓展_20261113保留当时的增补源与核验材料。不要用历史生成器或lab03 report/all入口覆盖当前报告。"
+    },
+    "241": {
+      "before": "表29 重点附件定位",
+      "after": "表29 重点资料定位"
+    },
+    "242": {
+      "before": "表29中figures/与evidence/均相对lab3_备份，cases/指evidence/cases/，完整文件名见其中的图片与案例索引.html。F09仅扩展根1次、证明剪枝6个候选后返回exhausted，oracle为0条解；它使用图中不存在的目标行业，不同于F01的budget_exhausted，也不计入可答题准确率。",
+      "after": "表29中figures/与evidence/均相对outputs/lab03_materials，cases/指evidence/cases/，完整文件名见其中的图片与案例索引.html。F09仅扩展根1次、证明剪枝6个候选后返回exhausted，oracle为0条解；它使用图中不存在的目标行业，不同于F01的budget_exhausted，也不计入可答题准确率。"
+    },
+    "243": {
+      "before": "正式lab3目录只保留报告DOCX/PDF，图片、冻结证据及复核脚本归档在lab3_备份。本次未生成PPT或视频。成员职责见附录B；课程平台项目、组员关联与管理员提交仍由小组自行确认。",
+      "after": "正式提交文件集中在deliverables/lab3；制作源、图片、冻结证据与核验脚本独立存放于outputs/lab03_materials，不是另一套提交材料。成员职责见附录B；课程平台项目、组员关联与管理员提交仍由小组自行确认。"
+    }
+  },
+  "unchanged_tables": 30,
+  "unchanged_embedded_figures": 14
+}

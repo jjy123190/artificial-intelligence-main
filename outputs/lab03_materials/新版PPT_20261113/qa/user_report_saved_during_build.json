@@ -1,0 +1,20 @@
+{
+  "detected_at": "2026-11-13T22:06:39.119767+08:00",
+  "original_source_sha256": "48e98b75d0d48d6c81dc6fe98e5c6f11ccbda24ca1493e6ee8425168e30adf60",
+  "latest_source_sha256": "fac893732800580e8cf788cd7254db5538e5dd37ab99a0f86079b0c240e4afc1",
+  "changed_relative_path": "deliverables/lab3/第31组_实验三_实验报告.docx",
+  "changes": [
+    {
+      "paragraph": 7,
+      "before": "软件工程5班 · 第31组",
+      "after": "软件工程5班 "
+    },
+    {
+      "paragraph": 12,
+      "before": "本报告已整合搜索树可视化样例与失败案例分析。\n配套附件包括高清 PNG、SVG、完整搜索轨迹 JSON、冻结结果及复核脚本。",
+      "after": "本报告已整合搜索树可视化样例与失败案例分析。\n配套附件包括 PNG、SVG、完整搜索轨迹 JSON、冻结结果及复核脚本。"
+    }
+  ],
+  "origin": "Report was saved independently during deck creation; deck builder/exporter never opens or writes this report.",
+  "handling": "Keep both report snapshots; rebuild deck with latest saved cover; all other report text, tables and figures are equal."
+}

@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-11-13T19:31:48.223188+08:00",
+  "version": "30-page-report-with-chapter-14",
+  "algorithm": "sha256",
+  "report_files": {
+    "deliverables/lab3/第31组_实验三_实验报告.docx": "48e98b75d0d48d6c81dc6fe98e5c6f11ccbda24ca1493e6ee8425168e30adf60",
+    "deliverables/lab3/第31组_实验三_实验报告.pdf": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99"
+  },
+  "support_files": {
+    "README_本次增补.md": "35bf90c04278bc5cf35443bf51f8876d4ed3bb1c1826124c20b0accb49ee5478",
+    "verify_examples.py": "d435b78df33c9ac5a0f961eaeed3015d4d40071b1b725a9a60fffc8d5c07b053",
+    "example_verification.json": "ba2eed0765e172d8dacfd8f0772cfba1913a35ffc990583290e3bac3b1093e4b",
+    "verify_report.py": "5bf2d2709dcafdde8733ff0c313e387b3c3612dd0e72399f36b55df0770f04e9",
+    "build_extension.py": "0cd509efb018c72e627262bcaee1f1ce264099268a5bd4fb334ac041388406dc",
+    "export_staged.py": "eda29f80658019c6852ffffb45b160f2dca00b345986c67950995849433dab95",
+    "publish_report.py": "df07305821c992f5d2bc5b43b00dee375e59da599e96d07d4b0165606e24362b",
+    "extension_content.json": "2483d80a1748d0c19af69b0139b32ffe16e84a2a2bdaf89697914e7c71ff93b5",
+    "第14章_可选迁移拓展.md": "41cb562c5b9ec795a3b0481302c52aee4a4c1f7696129b96ce34e1388b03f151",
+    "reference_checks.json": "23efbc41beeb8cb1f1efcd4291964ded2453355af83a9ba66a80aa6b3c7a923d",
+    "before/第31组_实验三_实验报告.docx": "c5de09cc9deca95b5adfe70b299a631f86878f5cf4b1d04760c4c2006e52c5a5",
+    "before/第31组_实验三_实验报告.pdf": "d5b4c81c27368f25dc9e3a7e7b2c5b62376685f04612fec31e00f306a88553d2",
+    "draft/第31组_实验三_实验报告.docx": "48e98b75d0d48d6c81dc6fe98e5c6f11ccbda24ca1493e6ee8425168e30adf60",
+    "draft/第31组_实验三_实验报告.pdf": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99",
+    "qa/protected_before.json": "018a39c33fb0c3a5ad43b07d643c8560eb85342d038244f0fcb386ab0ecf084d",
+    "qa/document_before.json": "ad77da918f0987d572dfc76c464ddfdf8288ac7d3dd380622950e718a2ac087b",
+    "qa/update_spec.json": "1e5b48eee1a2e90aeef05fd5d3497527eb101dd56e2dab2460acf5501572fe7f",
+    "qa/before_userdoc.pdf": "83b6ea0c8cf0fcccdf9c69ecb2fd6b2afe51eb7c605daf298c42a217850b722d",
+    "qa/pdf_pages.json": "40c7bce06f0c79ac39e47ca6f93123ef7a474b3f7e9bacc24e70a6ceea17b49e",
+    "qa/staged_validation.json": "bf86be0f123bd25588dcdb639e3332afbc1addc744a7ed1c7391ba458ba88bf6",
+    "qa/visual_review.json": "8d399dba1697aca79eb60a73239e40922c4744a8980bc1616c5a7352eb2a659a"
+  },
+  "exclusions": "Manifest itself, mutable QA release/publish records, and generated PNG previews. Old backup files are separately protected by qa/protected_before.json.",
+  "scope": "Only report DOCX/PDF published; original code/data/output and pre-existing backup kept intact."
+}

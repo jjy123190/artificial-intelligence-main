@@ -1,0 +1,6704 @@
+{
+  "date": "2026-11-14T11:54:40.476857+08:00",
+  "base_url": "http://127.0.0.1:8766",
+  "expected_workspace_id": "c6c4b4f3de9772d4",
+  "viewport": {
+    "width": 2560,
+    "height": 1440
+  },
+  "presentation_zoom": 1.6,
+  "start": "/#/labs/lab03/search; shared-3, hybrid, budget 16, no previous run",
+  "scope": "Lab03 search, comparison, GA/ML, LLM assistance and evaluation; not labs 1/2.",
+  "operations": [
+    {
+      "name": "01 原始三跳工作台：尚未运行",
+      "seconds": 0.0,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换二跳问题建模",
+      "seconds": 1.724,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换四跳问题建模",
+      "seconds": 2.437,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看状态/动作/终止与专家约束",
+      "seconds": 3.817,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "三跳混合搜索返回真实可核验路径",
+      "seconds": 5.647,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "2倍速逐步播放搜索树",
+      "seconds": 6.62,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "点击节点检查已证无解分支",
+      "seconds": 10.618,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换步骤列表",
+      "seconds": 11.879,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "导出真实搜索结果JSON",
+      "seconds": 13.419,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看路径解释、成本与逐边证据",
+      "seconds": 14.62,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "同题实测BFS/固定A*/GA A*/MCTS",
+      "seconds": 17.83,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "导出四算法对比",
+      "seconds": 19.848,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "02 GA验证适应度曲线与种子切换",
+      "seconds": 21.057,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "查看逐代真实适应度与验证结果",
+      "seconds": 23.522,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "03 路径分类器指标与专家规则",
+      "seconds": 24.937,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "04 LLM三项职责与同题配对结果",
+      "seconds": 26.915,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "新图确认与数值挑战：如实展示局限",
+      "seconds": 30.298,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "对比模型幻觉解释与程序证据",
+      "seconds": 32.483,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "展示可选远程模型接入说明，不调用接口",
+      "seconds": 34.966,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "混合+LLM：真实历史评分重放（不是现场推断）",
+      "seconds": 37.724,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看重放标识、专家拦截与答案证据",
+      "seconds": 39.012,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "05 全量3888次实验：成功率与搜索成本",
+      "seconds": 40.89,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "切换分布变化图，检视泛化",
+      "seconds": 43.378,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "切换扩展预算",
+      "seconds": 45.217,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "四项指标、边检查与无效答案率",
+      "seconds": 47.413,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "配对收益区间与过拟合边界",
+      "seconds": 49.365,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "查看无解确认与证明剪枝",
+      "seconds": 51.71,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "06 失败案例：证据无效与预算耗尽",
+      "seconds": 54.354,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "导出当前评估数据",
+      "seconds": 57.899,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "回到全量测试结果完成演示",
+      "seconds": 58.416,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    }
+  ],
+  "shots": [
+    {
+      "name": "01-start",
+      "seconds": 0.308,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "02-search-tree",
+      "seconds": 10.057,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "03-evidence",
+      "seconds": 14.746,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "04-comparison",
+      "seconds": 18.077,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "05-ga",
+      "seconds": 21.244,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "06-learning",
+      "seconds": 25.168,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "07-llm-overview",
+      "seconds": 27.212,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "08-llm-failure",
+      "seconds": 32.618,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "09-llm-replay",
+      "seconds": 39.012,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "10-test",
+      "seconds": 41.011,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "11-failures",
+      "seconds": 54.513,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "12-finish",
+      "seconds": 58.516,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    }
+  ],
+  "runs": [
+    {
+      "at": 5.531599400012055,
+      "status": 200,
+      "request": {
+        "query_id": "shared-3",
+        "method": "hybrid",
+        "budget": 16,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "shared-3",
+          "start": "P1",
+          "relations": [
+            "HOLDS",
+            "HOLDS",
+            "HOLDS"
+          ],
+          "sector": "综合",
+          "listed": true,
+          "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+        },
+        "graph": {
+          "id": "shared-lab01",
+          "split": "shared",
+          "nodes": [
+            {
+              "id": "P1",
+              "name": "王建国",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P2",
+              "name": "李秀英",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P3",
+              "name": "陈志强",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P4",
+              "name": "赵敏",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C1",
+              "name": "华鑫控股集团",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C2",
+              "name": "华鑫实业有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C3",
+              "name": "恒通科技股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            },
+            {
+              "id": "C4",
+              "name": "远航贸易有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C5",
+              "name": "盛达物流有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C6",
+              "name": "鼎丰投资有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C7",
+              "name": "鼎丰建设有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C8",
+              "name": "瑞祥建材有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C9",
+              "name": "金桥融资担保有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C10",
+              "name": "天润商贸有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C11",
+              "name": "博远咨询有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C12",
+              "name": "星辰电子股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "S0",
+              "source": "P1",
+              "target": "C1",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "S1",
+              "source": "C1",
+              "target": "C2",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.65
+            },
+            {
+              "id": "S2",
+              "source": "C2",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "S3",
+              "source": "C1",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "S4",
+              "source": "P1",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S5",
+              "source": "P2",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "S6",
+              "source": "C4",
+              "target": "C5",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.9
+            },
+            {
+              "id": "S7",
+              "source": "P3",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "S8",
+              "source": "C6",
+              "target": "C7",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S9",
+              "source": "C7",
+              "target": "C8",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S10",
+              "source": "C8",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S11",
+              "source": "P4",
+              "target": "C10",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "S12",
+              "source": "P4",
+              "target": "C11",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S13",
+              "source": "P4",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S14",
+              "source": "C1",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S15",
+              "source": "C6",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S16",
+              "source": "P4",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.1
+            },
+            {
+              "id": "S17",
+              "source": "C7",
+              "target": "C10",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 3000.0
+            },
+            {
+              "id": "S18",
+              "source": "C10",
+              "target": "C11",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S19",
+              "source": "C11",
+              "target": "C7",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2500.0
+            },
+            {
+              "id": "S20",
+              "source": "C9",
+              "target": "C12",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 1000.0
+            },
+            {
+              "id": "S21",
+              "source": "C4",
+              "target": "C3",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 5000.0
+            },
+            {
+              "id": "S22",
+              "source": "C5",
+              "target": "C2",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S23",
+              "source": "C10",
+              "target": "C12",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 800.0
+            }
+          ]
+        },
+        "result": {
+          "method": "hybrid",
+          "label": "GA + 学习 + 专家",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "C3",
+          "path": [
+            "P1",
+            "C1",
+            "C2",
+            "C3"
+          ],
+          "edge_ids": [
+            "S0",
+            "S1",
+            "S2"
+          ],
+          "expanded": 4,
+          "generated": 7,
+          "successor_checks": 0,
+          "expert_rejections": 0,
+          "rollout_steps": 0,
+          "simulations": 0,
+          "total_work": 4,
+          "repeated_states": 0,
+          "heuristic_evaluations": 6,
+          "heuristic_edge_checks": 7,
+          "heuristic_probe_states": 2,
+          "adjacency_edge_scans": 10,
+          "proof_pruned": 3,
+          "proof_checks": 6,
+          "peak_frontier": 1,
+          "total_edge_checks": 7,
+          "successor_cache_hits": 4,
+          "successor_cache_entries": 7,
+          "completed_paths": 1,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 3,
+          "elapsed_ms": 0.2966000174637884,
+          "budget": 16,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": 3.44131,
+              "f": 3.44131,
+              "p": 0.83475
+            },
+            {
+              "id": 1,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": 3.44131,
+              "f": 3.44131,
+              "p": 0.83475
+            },
+            {
+              "id": 2,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": 0.89931
+            },
+            {
+              "id": 3,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "proof_pruned",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": 0.03842,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 4,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": 0.89931
+            },
+            {
+              "id": 5,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": 0.8557
+            },
+            {
+              "id": 6,
+              "node": "C9",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C9"
+              ],
+              "edge_ids": [
+                "S0",
+                "S14"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": 0.02962,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 7,
+              "node": "C3",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S3"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": 0.02962,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 8,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": 0.8557
+            },
+            {
+              "id": 9,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "generated",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 10,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "expanded",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 11,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "solution",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            }
+          ],
+          "trace_events": 12,
+          "trace_truncated": false,
+          "classifier_used": true,
+          "heuristic_used": true,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "mode": "off"
+        },
+        "path_evidence": [
+          {
+            "id": "S0",
+            "source": "P1",
+            "target": "C1",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.8,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S1",
+            "source": "C1",
+            "target": "C2",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.65,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S2",
+            "source": "C2",
+            "target": "C3",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.35,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    },
+    {
+      "at": 16.529287500015926,
+      "status": 200,
+      "request": {
+        "query_id": "shared-3",
+        "method": "bfs",
+        "budget": 16,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "shared-3",
+          "start": "P1",
+          "relations": [
+            "HOLDS",
+            "HOLDS",
+            "HOLDS"
+          ],
+          "sector": "综合",
+          "listed": true,
+          "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+        },
+        "graph": {
+          "id": "shared-lab01",
+          "split": "shared",
+          "nodes": [
+            {
+              "id": "P1",
+              "name": "王建国",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P2",
+              "name": "李秀英",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P3",
+              "name": "陈志强",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P4",
+              "name": "赵敏",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C1",
+              "name": "华鑫控股集团",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C2",
+              "name": "华鑫实业有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C3",
+              "name": "恒通科技股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            },
+            {
+              "id": "C4",
+              "name": "远航贸易有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C5",
+              "name": "盛达物流有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C6",
+              "name": "鼎丰投资有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C7",
+              "name": "鼎丰建设有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C8",
+              "name": "瑞祥建材有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C9",
+              "name": "金桥融资担保有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C10",
+              "name": "天润商贸有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C11",
+              "name": "博远咨询有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C12",
+              "name": "星辰电子股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "S0",
+              "source": "P1",
+              "target": "C1",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "S1",
+              "source": "C1",
+              "target": "C2",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.65
+            },
+            {
+              "id": "S2",
+              "source": "C2",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "S3",
+              "source": "C1",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "S4",
+              "source": "P1",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S5",
+              "source": "P2",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "S6",
+              "source": "C4",
+              "target": "C5",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.9
+            },
+            {
+              "id": "S7",
+              "source": "P3",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "S8",
+              "source": "C6",
+              "target": "C7",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S9",
+              "source": "C7",
+              "target": "C8",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S10",
+              "source": "C8",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S11",
+              "source": "P4",
+              "target": "C10",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "S12",
+              "source": "P4",
+              "target": "C11",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S13",
+              "source": "P4",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S14",
+              "source": "C1",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S15",
+              "source": "C6",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S16",
+              "source": "P4",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.1
+            },
+            {
+              "id": "S17",
+              "source": "C7",
+              "target": "C10",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 3000.0
+            },
+            {
+              "id": "S18",
+              "source": "C10",
+              "target": "C11",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S19",
+              "source": "C11",
+              "target": "C7",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2500.0
+            },
+            {
+              "id": "S20",
+              "source": "C9",
+              "target": "C12",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 1000.0
+            },
+            {
+              "id": "S21",
+              "source": "C4",
+              "target": "C3",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 5000.0
+            },
+            {
+              "id": "S22",
+              "source": "C5",
+              "target": "C2",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S23",
+              "source": "C10",
+              "target": "C12",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 800.0
+            }
+          ]
+        },
+        "result": {
+          "method": "bfs",
+          "label": "BFS",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "C3",
+          "path": [
+            "P1",
+            "C1",
+            "C2",
+            "C3"
+          ],
+          "edge_ids": [
+            "S0",
+            "S1",
+            "S2"
+          ],
+          "expanded": 8,
+          "generated": 8,
+          "successor_checks": 7,
+          "expert_rejections": 0,
+          "rollout_steps": 0,
+          "simulations": 0,
+          "total_work": 8,
+          "repeated_states": 0,
+          "heuristic_evaluations": 0,
+          "heuristic_edge_checks": 0,
+          "heuristic_probe_states": 0,
+          "adjacency_edge_scans": 10,
+          "proof_pruned": 0,
+          "proof_checks": 0,
+          "peak_frontier": 4,
+          "total_edge_checks": 7,
+          "successor_cache_hits": 0,
+          "successor_cache_entries": 7,
+          "completed_paths": 1,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 3,
+          "elapsed_ms": 0.2530000056140125,
+          "budget": 16,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 1,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 2,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 3,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 4,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 5,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 6,
+              "node": "C9",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C9"
+              ],
+              "edge_ids": [
+                "S0",
+                "S14"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 7,
+              "node": "C3",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S3"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 8,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 9,
+              "node": "C5",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C4",
+                "C5"
+              ],
+              "edge_ids": [
+                "S4",
+                "S6"
+              ],
+              "parent_path": [
+                "S4"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 10,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 11,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "generated",
+              "g": 3,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 12,
+              "node": "C9",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C9"
+              ],
+              "edge_ids": [
+                "S0",
+                "S14"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 13,
+              "node": "C3",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S3"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 14,
+              "node": "C5",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C4",
+                "C5"
+              ],
+              "edge_ids": [
+                "S4",
+                "S6"
+              ],
+              "parent_path": [
+                "S4"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 15,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "expanded",
+              "g": 3,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 16,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "solution",
+              "g": 3,
+              "h": null,
+              "f": null,
+              "p": null
+            }
+          ],
+          "trace_events": 17,
+          "trace_truncated": false,
+          "classifier_used": false,
+          "heuristic_used": false,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "mode": "off"
+        },
+        "path_evidence": [
+          {
+            "id": "S0",
+            "source": "P1",
+            "target": "C1",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.8,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S1",
+            "source": "C1",
+            "target": "C2",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.65,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S2",
+            "source": "C2",
+            "target": "C3",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.35,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    },
+    {
+      "at": 16.831033700000262,
+      "status": 200,
+      "request": {
+        "query_id": "shared-3",
+        "method": "astar_fixed",
+        "budget": 16,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "shared-3",
+          "start": "P1",
+          "relations": [
+            "HOLDS",
+            "HOLDS",
+            "HOLDS"
+          ],
+          "sector": "综合",
+          "listed": true,
+          "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+        },
+        "graph": {
+          "id": "shared-lab01",
+          "split": "shared",
+          "nodes": [
+            {
+              "id": "P1",
+              "name": "王建国",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P2",
+              "name": "李秀英",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P3",
+              "name": "陈志强",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P4",
+              "name": "赵敏",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C1",
+              "name": "华鑫控股集团",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C2",
+              "name": "华鑫实业有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C3",
+              "name": "恒通科技股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            },
+            {
+              "id": "C4",
+              "name": "远航贸易有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C5",
+              "name": "盛达物流有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C6",
+              "name": "鼎丰投资有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C7",
+              "name": "鼎丰建设有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C8",
+              "name": "瑞祥建材有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C9",
+              "name": "金桥融资担保有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C10",
+              "name": "天润商贸有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C11",
+              "name": "博远咨询有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C12",
+              "name": "星辰电子股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "S0",
+              "source": "P1",
+              "target": "C1",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "S1",
+              "source": "C1",
+              "target": "C2",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.65
+            },
+            {
+              "id": "S2",
+              "source": "C2",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "S3",
+              "source": "C1",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "S4",
+              "source": "P1",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S5",
+              "source": "P2",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "S6",
+              "source": "C4",
+              "target": "C5",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.9
+            },
+            {
+              "id": "S7",
+              "source": "P3",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "S8",
+              "source": "C6",
+              "target": "C7",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S9",
+              "source": "C7",
+              "target": "C8",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S10",
+              "source": "C8",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S11",
+              "source": "P4",
+              "target": "C10",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "S12",
+              "source": "P4",
+              "target": "C11",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S13",
+              "source": "P4",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S14",
+              "source": "C1",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S15",
+              "source": "C6",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S16",
+              "source": "P4",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.1
+            },
+            {
+              "id": "S17",
+              "source": "C7",
+              "target": "C10",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 3000.0
+            },
+            {
+              "id": "S18",
+              "source": "C10",
+              "target": "C11",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S19",
+              "source": "C11",
+              "target": "C7",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2500.0
+            },
+            {
+              "id": "S20",
+              "source": "C9",
+              "target": "C12",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 1000.0
+            },
+            {
+              "id": "S21",
+              "source": "C4",
+              "target": "C3",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 5000.0
+            },
+            {
+              "id": "S22",
+              "source": "C5",
+              "target": "C2",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S23",
+              "source": "C10",
+              "target": "C12",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 800.0
+            }
+          ]
+        },
+        "result": {
+          "method": "astar_fixed",
+          "label": "A* 固定启发式",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "C3",
+          "path": [
+            "P1",
+            "C1",
+            "C2",
+            "C3"
+          ],
+          "edge_ids": [
+            "S0",
+            "S1",
+            "S2"
+          ],
+          "expanded": 4,
+          "generated": 7,
+          "successor_checks": 0,
+          "expert_rejections": 0,
+          "rollout_steps": 0,
+          "simulations": 0,
+          "total_work": 4,
+          "repeated_states": 0,
+          "heuristic_evaluations": 6,
+          "heuristic_edge_checks": 7,
+          "heuristic_probe_states": 2,
+          "adjacency_edge_scans": 10,
+          "proof_pruned": 3,
+          "proof_checks": 6,
+          "peak_frontier": 1,
+          "total_edge_checks": 7,
+          "successor_cache_hits": 4,
+          "successor_cache_entries": 7,
+          "completed_paths": 1,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 3,
+          "elapsed_ms": 0.329299975419417,
+          "budget": 16,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": 3.4,
+              "f": 3.4,
+              "p": null
+            },
+            {
+              "id": 1,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": 3.4,
+              "f": 3.4,
+              "p": null
+            },
+            {
+              "id": 2,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 3,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "proof_pruned",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 4,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 5,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 6,
+              "node": "C9",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C9"
+              ],
+              "edge_ids": [
+                "S0",
+                "S14"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 7,
+              "node": "C3",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S3"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 8,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 9,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "generated",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 10,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "expanded",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 11,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "solution",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            }
+          ],
+          "trace_events": 12,
+          "trace_truncated": false,
+          "classifier_used": false,
+          "heuristic_used": true,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "mode": "off"
+        },
+        "path_evidence": [
+          {
+            "id": "S0",
+            "source": "P1",
+            "target": "C1",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.8,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S1",
+            "source": "C1",
+            "target": "C2",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.65,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S2",
+            "source": "C2",
+            "target": "C3",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.35,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    },
+    {
+      "at": 17.066426600009436,
+      "status": 200,
+      "request": {
+        "query_id": "shared-3",
+        "method": "astar_ga",
+        "budget": 16,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "shared-3",
+          "start": "P1",
+          "relations": [
+            "HOLDS",
+            "HOLDS",
+            "HOLDS"
+          ],
+          "sector": "综合",
+          "listed": true,
+          "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+        },
+        "graph": {
+          "id": "shared-lab01",
+          "split": "shared",
+          "nodes": [
+            {
+              "id": "P1",
+              "name": "王建国",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P2",
+              "name": "李秀英",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P3",
+              "name": "陈志强",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P4",
+              "name": "赵敏",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C1",
+              "name": "华鑫控股集团",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C2",
+              "name": "华鑫实业有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C3",
+              "name": "恒通科技股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            },
+            {
+              "id": "C4",
+              "name": "远航贸易有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C5",
+              "name": "盛达物流有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C6",
+              "name": "鼎丰投资有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C7",
+              "name": "鼎丰建设有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C8",
+              "name": "瑞祥建材有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C9",
+              "name": "金桥融资担保有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C10",
+              "name": "天润商贸有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C11",
+              "name": "博远咨询有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C12",
+              "name": "星辰电子股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "S0",
+              "source": "P1",
+              "target": "C1",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "S1",
+              "source": "C1",
+              "target": "C2",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.65
+            },
+            {
+              "id": "S2",
+              "source": "C2",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "S3",
+              "source": "C1",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "S4",
+              "source": "P1",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S5",
+              "source": "P2",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "S6",
+              "source": "C4",
+              "target": "C5",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.9
+            },
+            {
+              "id": "S7",
+              "source": "P3",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "S8",
+              "source": "C6",
+              "target": "C7",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S9",
+              "source": "C7",
+              "target": "C8",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S10",
+              "source": "C8",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S11",
+              "source": "P4",
+              "target": "C10",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "S12",
+              "source": "P4",
+              "target": "C11",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S13",
+              "source": "P4",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S14",
+              "source": "C1",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S15",
+              "source": "C6",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S16",
+              "source": "P4",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.1
+            },
+            {
+              "id": "S17",
+              "source": "C7",
+              "target": "C10",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 3000.0
+            },
+            {
+              "id": "S18",
+              "source": "C10",
+              "target": "C11",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S19",
+              "source": "C11",
+              "target": "C7",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2500.0
+            },
+            {
+              "id": "S20",
+              "source": "C9",
+              "target": "C12",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 1000.0
+            },
+            {
+              "id": "S21",
+              "source": "C4",
+              "target": "C3",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 5000.0
+            },
+            {
+              "id": "S22",
+              "source": "C5",
+              "target": "C2",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S23",
+              "source": "C10",
+              "target": "C12",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 800.0
+            }
+          ]
+        },
+        "result": {
+          "method": "astar_ga",
+          "label": "A* 遗传优化",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "C3",
+          "path": [
+            "P1",
+            "C1",
+            "C2",
+            "C3"
+          ],
+          "edge_ids": [
+            "S0",
+            "S1",
+            "S2"
+          ],
+          "expanded": 4,
+          "generated": 7,
+          "successor_checks": 0,
+          "expert_rejections": 0,
+          "rollout_steps": 0,
+          "simulations": 0,
+          "total_work": 4,
+          "repeated_states": 0,
+          "heuristic_evaluations": 6,
+          "heuristic_edge_checks": 7,
+          "heuristic_probe_states": 2,
+          "adjacency_edge_scans": 10,
+          "proof_pruned": 3,
+          "proof_checks": 6,
+          "peak_frontier": 1,
+          "total_edge_checks": 7,
+          "successor_cache_hits": 4,
+          "successor_cache_entries": 7,
+          "completed_paths": 1,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 3,
+          "elapsed_ms": 0.2772999869193882,
+          "budget": 16,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": 3.4,
+              "f": 3.4,
+              "p": null
+            },
+            {
+              "id": 1,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": 3.4,
+              "f": 3.4,
+              "p": null
+            },
+            {
+              "id": 2,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 3,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "proof_pruned",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 4,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": 2.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 5,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 6,
+              "node": "C9",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C9"
+              ],
+              "edge_ids": [
+                "S0",
+                "S14"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 7,
+              "node": "C3",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S3"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 8,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": 1.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 9,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "generated",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 10,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "expanded",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            },
+            {
+              "id": 11,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "solution",
+              "g": 3,
+              "h": 0.0,
+              "f": 3.0,
+              "p": null
+            }
+          ],
+          "trace_events": 12,
+          "trace_truncated": false,
+          "classifier_used": false,
+          "heuristic_used": true,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "mode": "off"
+        },
+        "path_evidence": [
+          {
+            "id": "S0",
+            "source": "P1",
+            "target": "C1",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.8,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S1",
+            "source": "C1",
+            "target": "C2",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.65,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S2",
+            "source": "C2",
+            "target": "C3",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.35,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    },
+    {
+      "at": 17.384813900018344,
+      "status": 200,
+      "request": {
+        "query_id": "shared-3",
+        "method": "mcts",
+        "budget": 16,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "shared-3",
+          "start": "P1",
+          "relations": [
+            "HOLDS",
+            "HOLDS",
+            "HOLDS"
+          ],
+          "sector": "综合",
+          "listed": true,
+          "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+        },
+        "graph": {
+          "id": "shared-lab01",
+          "split": "shared",
+          "nodes": [
+            {
+              "id": "P1",
+              "name": "王建国",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P2",
+              "name": "李秀英",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P3",
+              "name": "陈志强",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "P4",
+              "name": "赵敏",
+              "kind": "Person",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C1",
+              "name": "华鑫控股集团",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C2",
+              "name": "华鑫实业有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C3",
+              "name": "恒通科技股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            },
+            {
+              "id": "C4",
+              "name": "远航贸易有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C5",
+              "name": "盛达物流有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C6",
+              "name": "鼎丰投资有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C7",
+              "name": "鼎丰建设有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C8",
+              "name": "瑞祥建材有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C9",
+              "name": "金桥融资担保有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C10",
+              "name": "天润商贸有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C11",
+              "name": "博远咨询有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": false
+            },
+            {
+              "id": "C12",
+              "name": "星辰电子股份有限公司",
+              "kind": "Company",
+              "sector": "综合",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "S0",
+              "source": "P1",
+              "target": "C1",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "S1",
+              "source": "C1",
+              "target": "C2",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.65
+            },
+            {
+              "id": "S2",
+              "source": "C2",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "S3",
+              "source": "C1",
+              "target": "C3",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "S4",
+              "source": "P1",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S5",
+              "source": "P2",
+              "target": "C4",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "S6",
+              "source": "C4",
+              "target": "C5",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.9
+            },
+            {
+              "id": "S7",
+              "source": "P3",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "S8",
+              "source": "C6",
+              "target": "C7",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S9",
+              "source": "C7",
+              "target": "C8",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S10",
+              "source": "C8",
+              "target": "C6",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S11",
+              "source": "P4",
+              "target": "C10",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "S12",
+              "source": "P4",
+              "target": "C11",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "S13",
+              "source": "P4",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S14",
+              "source": "C1",
+              "target": "C9",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "S15",
+              "source": "C6",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "S16",
+              "source": "P4",
+              "target": "C12",
+              "relation": "HOLDS",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 0.1
+            },
+            {
+              "id": "S17",
+              "source": "C7",
+              "target": "C10",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 3000.0
+            },
+            {
+              "id": "S18",
+              "source": "C10",
+              "target": "C11",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S19",
+              "source": "C11",
+              "target": "C7",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2500.0
+            },
+            {
+              "id": "S20",
+              "source": "C9",
+              "target": "C12",
+              "relation": "GUARANTEES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 1000.0
+            },
+            {
+              "id": "S21",
+              "source": "C4",
+              "target": "C3",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 5000.0
+            },
+            {
+              "id": "S22",
+              "source": "C5",
+              "target": "C2",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 2000.0
+            },
+            {
+              "id": "S23",
+              "source": "C10",
+              "target": "C12",
+              "relation": "TRADES",
+              "confidence": 1.0,
+              "verified": true,
+              "active": true,
+              "value": 800.0
+            }
+          ]
+        },
+        "result": {
+          "method": "mcts",
+          "label": "MCTS / UCT",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "C3",
+          "path": [
+            "P1",
+            "C1",
+            "C2",
+            "C3"
+          ],
+          "edge_ids": [
+            "S0",
+            "S1",
+            "S2"
+          ],
+          "expanded": 1,
+          "generated": 3,
+          "successor_checks": 6,
+          "expert_rejections": 0,
+          "rollout_steps": 3,
+          "simulations": 1,
+          "total_work": 4,
+          "repeated_states": 0,
+          "heuristic_evaluations": 0,
+          "heuristic_edge_checks": 0,
+          "heuristic_probe_states": 0,
+          "adjacency_edge_scans": 6,
+          "proof_pruned": 0,
+          "proof_checks": 0,
+          "peak_frontier": null,
+          "total_edge_checks": 6,
+          "successor_cache_hits": 1,
+          "successor_cache_entries": 3,
+          "completed_paths": 1,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 3,
+          "elapsed_ms": 0.20830001449212432,
+          "budget": 16,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 1,
+              "node": "P1",
+              "depth": 0,
+              "path": [
+                "P1"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 2,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 3,
+              "node": "C4",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C4"
+              ],
+              "edge_ids": [
+                "S4"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 4,
+              "node": "C1",
+              "depth": 1,
+              "path": [
+                "P1",
+                "C1"
+              ],
+              "edge_ids": [
+                "S0"
+              ],
+              "parent_path": [],
+              "status": "rollout",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 5,
+              "node": "C2",
+              "depth": 2,
+              "path": [
+                "P1",
+                "C1",
+                "C2"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1"
+              ],
+              "parent_path": [
+                "S0"
+              ],
+              "status": "rollout",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 6,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "rollout",
+              "g": 3,
+              "h": null,
+              "f": null,
+              "p": null
+            },
+            {
+              "id": 7,
+              "node": "C3",
+              "depth": 3,
+              "path": [
+                "P1",
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "edge_ids": [
+                "S0",
+                "S1",
+                "S2"
+              ],
+              "parent_path": [
+                "S0",
+                "S1"
+              ],
+              "status": "solution",
+              "g": 3,
+              "h": null,
+              "f": null,
+              "p": null
+            }
+          ],
+          "trace_events": 8,
+          "trace_truncated": false,
+          "classifier_used": false,
+          "heuristic_used": false,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "mode": "off"
+        },
+        "path_evidence": [
+          {
+            "id": "S0",
+            "source": "P1",
+            "target": "C1",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.8,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S1",
+            "source": "C1",
+            "target": "C2",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.65,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "S2",
+            "source": "C2",
+            "target": "C3",
+            "relation": "HOLDS",
+            "confidence": 1.0,
+            "verified": true,
+            "active": true,
+            "value": 0.35,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    },
+    {
+      "at": 37.6942199000041,
+      "status": 200,
+      "request": {
+        "query_id": "test-7-0-Q0",
+        "method": "hybrid_llm",
+        "budget": 8,
+        "llm_mode": "replay"
+      },
+      "body": {
+        "query": {
+          "id": "test-7-0-Q0",
+          "start": "test-7-0-N0",
+          "relations": [
+            "HOLDS",
+            "TRADES"
+          ],
+          "sector": "新能源",
+          "listed": true,
+          "text": "从教学投资人1出发，依次经过持股 → 交易，可到达哪些新能源上市企业？请给出一条有效证据路径。"
+        },
+        "graph": {
+          "id": "test-7-0",
+          "split": "test",
+          "nodes": [
+            {
+              "id": "test-7-0-N0",
+              "name": "教学投资人1",
+              "kind": "Person",
+              "sector": "新能源",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N1",
+              "name": "教学投资人2",
+              "kind": "Person",
+              "sector": "制造",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N2",
+              "name": "教学投资人3",
+              "kind": "Person",
+              "sector": "物流",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N3",
+              "name": "教学投资人4",
+              "kind": "Person",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N4",
+              "name": "新能源企业04",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N5",
+              "name": "制造企业05",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N6",
+              "name": "新能源企业06",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N7",
+              "name": "金融企业07",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N8",
+              "name": "物流企业08",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N9",
+              "name": "制造企业09",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N10",
+              "name": "物流企业10",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N11",
+              "name": "金融企业11",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N12",
+              "name": "新能源企业12",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N13",
+              "name": "制造企业13",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N14",
+              "name": "物流企业14",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N15",
+              "name": "金融企业15",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N16",
+              "name": "制造企业16",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N17",
+              "name": "制造企业17",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N18",
+              "name": "新能源企业18",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N19",
+              "name": "金融企业19",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N20",
+              "name": "金融企业20",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N21",
+              "name": "新能源企业21",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N22",
+              "name": "金融企业22",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N23",
+              "name": "金融企业23",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N24",
+              "name": "物流企业24",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N25",
+              "name": "制造企业25",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N26",
+              "name": "物流企业26",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N27",
+              "name": "金融企业27",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N28",
+              "name": "新能源企业28",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N29",
+              "name": "制造企业29",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N30",
+              "name": "物流企业30",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N31",
+              "name": "金融企业31",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N32",
+              "name": "新能源企业32",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N33",
+              "name": "制造企业33",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N34",
+              "name": "物流企业34",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N35",
+              "name": "金融企业35",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N36",
+              "name": "新能源企业36",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N37",
+              "name": "新能源企业37",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N38",
+              "name": "物流企业38",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": false
+            },
+            {
+              "id": "test-7-0-N39",
+              "name": "新能源企业39",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N40",
+              "name": "制造企业40",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N41",
+              "name": "物流企业41",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N42",
+              "name": "金融企业42",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N43",
+              "name": "新能源企业43",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N44",
+              "name": "制造企业44",
+              "kind": "Company",
+              "sector": "制造",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N45",
+              "name": "物流企业45",
+              "kind": "Company",
+              "sector": "物流",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N46",
+              "name": "金融企业46",
+              "kind": "Company",
+              "sector": "金融",
+              "listed": true
+            },
+            {
+              "id": "test-7-0-N47",
+              "name": "新能源企业47",
+              "kind": "Company",
+              "sector": "新能源",
+              "listed": true
+            }
+          ],
+          "edges": [
+            {
+              "id": "test-7-0-R0000",
+              "source": "test-7-0-N31",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.849,
+              "verified": true,
+              "active": true,
+              "value": 0.54
+            },
+            {
+              "id": "test-7-0-R0001",
+              "source": "test-7-0-N10",
+              "target": "test-7-0-N46",
+              "relation": "TRADES",
+              "confidence": 0.682,
+              "verified": true,
+              "active": true,
+              "value": 0.27
+            },
+            {
+              "id": "test-7-0-R0002",
+              "source": "test-7-0-N13",
+              "target": "test-7-0-N5",
+              "relation": "HOLDS",
+              "confidence": 0.727,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "test-7-0-R0003",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N29",
+              "relation": "HOLDS",
+              "confidence": 0.844,
+              "verified": true,
+              "active": true,
+              "value": 0.5
+            },
+            {
+              "id": "test-7-0-R0004",
+              "source": "test-7-0-N24",
+              "target": "test-7-0-N20",
+              "relation": "GUARANTEES",
+              "confidence": 0.499,
+              "verified": false,
+              "active": false,
+              "value": 0.38
+            },
+            {
+              "id": "test-7-0-R0005",
+              "source": "test-7-0-N43",
+              "target": "test-7-0-N31",
+              "relation": "GUARANTEES",
+              "confidence": 0.696,
+              "verified": true,
+              "active": true,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0006",
+              "source": "test-7-0-N6",
+              "target": "test-7-0-N23",
+              "relation": "HOLDS",
+              "confidence": 0.895,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "test-7-0-R0007",
+              "source": "test-7-0-N45",
+              "target": "test-7-0-N17",
+              "relation": "GUARANTEES",
+              "confidence": 0.885,
+              "verified": true,
+              "active": true,
+              "value": 0.76
+            },
+            {
+              "id": "test-7-0-R0008",
+              "source": "test-7-0-N17",
+              "target": "test-7-0-N25",
+              "relation": "TRADES",
+              "confidence": 0.292,
+              "verified": false,
+              "active": true,
+              "value": 0.16
+            },
+            {
+              "id": "test-7-0-R0009",
+              "source": "test-7-0-N20",
+              "target": "test-7-0-N41",
+              "relation": "HOLDS",
+              "confidence": 0.716,
+              "verified": true,
+              "active": true,
+              "value": 0.32
+            },
+            {
+              "id": "test-7-0-R0010",
+              "source": "test-7-0-N20",
+              "target": "test-7-0-N40",
+              "relation": "HOLDS",
+              "confidence": 0.944,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "test-7-0-R0011",
+              "source": "test-7-0-N10",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.782,
+              "verified": true,
+              "active": true,
+              "value": 0.42
+            },
+            {
+              "id": "test-7-0-R0012",
+              "source": "test-7-0-N42",
+              "target": "test-7-0-N9",
+              "relation": "HOLDS",
+              "confidence": 0.319,
+              "verified": true,
+              "active": true,
+              "value": 0.26
+            },
+            {
+              "id": "test-7-0-R0013",
+              "source": "test-7-0-N36",
+              "target": "test-7-0-N32",
+              "relation": "GUARANTEES",
+              "confidence": 0.863,
+              "verified": false,
+              "active": false,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0014",
+              "source": "test-7-0-N27",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.468,
+              "verified": true,
+              "active": false,
+              "value": 0.44
+            },
+            {
+              "id": "test-7-0-R0015",
+              "source": "test-7-0-N14",
+              "target": "test-7-0-N38",
+              "relation": "GUARANTEES",
+              "confidence": 0.801,
+              "verified": true,
+              "active": true,
+              "value": 0.26
+            },
+            {
+              "id": "test-7-0-R0016",
+              "source": "test-7-0-N11",
+              "target": "test-7-0-N43",
+              "relation": "GUARANTEES",
+              "confidence": 0.966,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0017",
+              "source": "test-7-0-N44",
+              "target": "test-7-0-N28",
+              "relation": "TRADES",
+              "confidence": 0.419,
+              "verified": true,
+              "active": true,
+              "value": 0.81
+            },
+            {
+              "id": "test-7-0-R0018",
+              "source": "test-7-0-N37",
+              "target": "test-7-0-N14",
+              "relation": "TRADES",
+              "confidence": 0.922,
+              "verified": true,
+              "active": false,
+              "value": 0.56
+            },
+            {
+              "id": "test-7-0-R0019",
+              "source": "test-7-0-N23",
+              "target": "test-7-0-N45",
+              "relation": "GUARANTEES",
+              "confidence": 0.894,
+              "verified": true,
+              "active": true,
+              "value": 0.46
+            },
+            {
+              "id": "test-7-0-R0020",
+              "source": "test-7-0-N41",
+              "target": "test-7-0-N7",
+              "relation": "HOLDS",
+              "confidence": 0.697,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "test-7-0-R0021",
+              "source": "test-7-0-N17",
+              "target": "test-7-0-N36",
+              "relation": "GUARANTEES",
+              "confidence": 0.677,
+              "verified": true,
+              "active": true,
+              "value": 0.53
+            },
+            {
+              "id": "test-7-0-R0022",
+              "source": "test-7-0-N4",
+              "target": "test-7-0-N20",
+              "relation": "TRADES",
+              "confidence": 0.733,
+              "verified": true,
+              "active": true,
+              "value": 0.79
+            },
+            {
+              "id": "test-7-0-R0023",
+              "source": "test-7-0-N34",
+              "target": "test-7-0-N10",
+              "relation": "HOLDS",
+              "confidence": 0.759,
+              "verified": true,
+              "active": true,
+              "value": 0.58
+            },
+            {
+              "id": "test-7-0-R0024",
+              "source": "test-7-0-N11",
+              "target": "test-7-0-N43",
+              "relation": "HOLDS",
+              "confidence": 0.876,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "test-7-0-R0025",
+              "source": "test-7-0-N26",
+              "target": "test-7-0-N42",
+              "relation": "GUARANTEES",
+              "confidence": 0.919,
+              "verified": true,
+              "active": true,
+              "value": 0.68
+            },
+            {
+              "id": "test-7-0-R0026",
+              "source": "test-7-0-N37",
+              "target": "test-7-0-N21",
+              "relation": "HOLDS",
+              "confidence": 0.755,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "test-7-0-R0027",
+              "source": "test-7-0-N33",
+              "target": "test-7-0-N5",
+              "relation": "GUARANTEES",
+              "confidence": 0.91,
+              "verified": true,
+              "active": true,
+              "value": 0.37
+            },
+            {
+              "id": "test-7-0-R0028",
+              "source": "test-7-0-N6",
+              "target": "test-7-0-N47",
+              "relation": "HOLDS",
+              "confidence": 0.819,
+              "verified": true,
+              "active": true,
+              "value": 0.49
+            },
+            {
+              "id": "test-7-0-R0029",
+              "source": "test-7-0-N39",
+              "target": "test-7-0-N11",
+              "relation": "TRADES",
+              "confidence": 0.805,
+              "verified": true,
+              "active": true,
+              "value": 0.24
+            },
+            {
+              "id": "test-7-0-R0030",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N6",
+              "relation": "HOLDS",
+              "confidence": 0.867,
+              "verified": true,
+              "active": true,
+              "value": 0.45
+            },
+            {
+              "id": "test-7-0-R0031",
+              "source": "test-7-0-N28",
+              "target": "test-7-0-N12",
+              "relation": "TRADES",
+              "confidence": 0.973,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0032",
+              "source": "test-7-0-N37",
+              "target": "test-7-0-N15",
+              "relation": "HOLDS",
+              "confidence": 0.735,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0033",
+              "source": "test-7-0-N8",
+              "target": "test-7-0-N37",
+              "relation": "GUARANTEES",
+              "confidence": 0.258,
+              "verified": false,
+              "active": false,
+              "value": 0.46
+            },
+            {
+              "id": "test-7-0-R0034",
+              "source": "test-7-0-N15",
+              "target": "test-7-0-N19",
+              "relation": "TRADES",
+              "confidence": 0.848,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0035",
+              "source": "test-7-0-N14",
+              "target": "test-7-0-N34",
+              "relation": "TRADES",
+              "confidence": 0.682,
+              "verified": true,
+              "active": true,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0036",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N20",
+              "relation": "HOLDS",
+              "confidence": 0.741,
+              "verified": true,
+              "active": true,
+              "value": 0.47
+            },
+            {
+              "id": "test-7-0-R0037",
+              "source": "test-7-0-N7",
+              "target": "test-7-0-N18",
+              "relation": "GUARANTEES",
+              "confidence": 0.991,
+              "verified": true,
+              "active": true,
+              "value": 0.34
+            },
+            {
+              "id": "test-7-0-R0038",
+              "source": "test-7-0-N22",
+              "target": "test-7-0-N44",
+              "relation": "GUARANTEES",
+              "confidence": 0.879,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0039",
+              "source": "test-7-0-N0",
+              "target": "test-7-0-N43",
+              "relation": "HOLDS",
+              "confidence": 0.936,
+              "verified": false,
+              "active": false,
+              "value": 0.69
+            },
+            {
+              "id": "test-7-0-R0040",
+              "source": "test-7-0-N5",
+              "target": "test-7-0-N27",
+              "relation": "TRADES",
+              "confidence": 0.789,
+              "verified": true,
+              "active": true,
+              "value": 0.61
+            },
+            {
+              "id": "test-7-0-R0041",
+              "source": "test-7-0-N8",
+              "target": "test-7-0-N38",
+              "relation": "GUARANTEES",
+              "confidence": 0.768,
+              "verified": true,
+              "active": true,
+              "value": 0.69
+            },
+            {
+              "id": "test-7-0-R0042",
+              "source": "test-7-0-N29",
+              "target": "test-7-0-N30",
+              "relation": "TRADES",
+              "confidence": 0.826,
+              "verified": true,
+              "active": true,
+              "value": 0.24
+            },
+            {
+              "id": "test-7-0-R0043",
+              "source": "test-7-0-N32",
+              "target": "test-7-0-N18",
+              "relation": "TRADES",
+              "confidence": 0.841,
+              "verified": true,
+              "active": true,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0044",
+              "source": "test-7-0-N22",
+              "target": "test-7-0-N40",
+              "relation": "TRADES",
+              "confidence": 0.857,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "test-7-0-R0045",
+              "source": "test-7-0-N36",
+              "target": "test-7-0-N32",
+              "relation": "TRADES",
+              "confidence": 0.957,
+              "verified": true,
+              "active": true,
+              "value": 0.23
+            },
+            {
+              "id": "test-7-0-R0046",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N13",
+              "relation": "TRADES",
+              "confidence": 0.976,
+              "verified": true,
+              "active": true,
+              "value": 0.67
+            },
+            {
+              "id": "test-7-0-R0047",
+              "source": "test-7-0-N5",
+              "target": "test-7-0-N29",
+              "relation": "GUARANTEES",
+              "confidence": 0.889,
+              "verified": true,
+              "active": true,
+              "value": 0.17
+            },
+            {
+              "id": "test-7-0-R0048",
+              "source": "test-7-0-N42",
+              "target": "test-7-0-N26",
+              "relation": "GUARANTEES",
+              "confidence": 0.863,
+              "verified": true,
+              "active": true,
+              "value": 0.22
+            },
+            {
+              "id": "test-7-0-R0049",
+              "source": "test-7-0-N4",
+              "target": "test-7-0-N6",
+              "relation": "GUARANTEES",
+              "confidence": 0.751,
+              "verified": true,
+              "active": true,
+              "value": 0.26
+            },
+            {
+              "id": "test-7-0-R0050",
+              "source": "test-7-0-N38",
+              "target": "test-7-0-N10",
+              "relation": "GUARANTEES",
+              "confidence": 0.884,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0051",
+              "source": "test-7-0-N10",
+              "target": "test-7-0-N6",
+              "relation": "HOLDS",
+              "confidence": 0.94,
+              "verified": true,
+              "active": true,
+              "value": 0.79
+            },
+            {
+              "id": "test-7-0-R0052",
+              "source": "test-7-0-N8",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.426,
+              "verified": false,
+              "active": false,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0053",
+              "source": "test-7-0-N18",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.755,
+              "verified": true,
+              "active": true,
+              "value": 0.22
+            },
+            {
+              "id": "test-7-0-R0054",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N23",
+              "relation": "HOLDS",
+              "confidence": 0.696,
+              "verified": true,
+              "active": true,
+              "value": 0.49
+            },
+            {
+              "id": "test-7-0-R0055",
+              "source": "test-7-0-N25",
+              "target": "test-7-0-N33",
+              "relation": "GUARANTEES",
+              "confidence": 0.857,
+              "verified": true,
+              "active": true,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0056",
+              "source": "test-7-0-N24",
+              "target": "test-7-0-N8",
+              "relation": "HOLDS",
+              "confidence": 0.752,
+              "verified": true,
+              "active": true,
+              "value": 0.49
+            },
+            {
+              "id": "test-7-0-R0057",
+              "source": "test-7-0-N40",
+              "target": "test-7-0-N15",
+              "relation": "TRADES",
+              "confidence": 0.95,
+              "verified": true,
+              "active": true,
+              "value": 0.46
+            },
+            {
+              "id": "test-7-0-R0058",
+              "source": "test-7-0-N12",
+              "target": "test-7-0-N24",
+              "relation": "GUARANTEES",
+              "confidence": 0.704,
+              "verified": true,
+              "active": true,
+              "value": 0.53
+            },
+            {
+              "id": "test-7-0-R0059",
+              "source": "test-7-0-N46",
+              "target": "test-7-0-N23",
+              "relation": "HOLDS",
+              "confidence": 0.675,
+              "verified": true,
+              "active": false,
+              "value": 0.5
+            },
+            {
+              "id": "test-7-0-R0060",
+              "source": "test-7-0-N20",
+              "target": "test-7-0-N42",
+              "relation": "TRADES",
+              "confidence": 0.787,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "test-7-0-R0061",
+              "source": "test-7-0-N44",
+              "target": "test-7-0-N8",
+              "relation": "HOLDS",
+              "confidence": 0.994,
+              "verified": true,
+              "active": true,
+              "value": 0.27
+            },
+            {
+              "id": "test-7-0-R0062",
+              "source": "test-7-0-N38",
+              "target": "test-7-0-N40",
+              "relation": "HOLDS",
+              "confidence": 0.764,
+              "verified": true,
+              "active": true,
+              "value": 0.82
+            },
+            {
+              "id": "test-7-0-R0063",
+              "source": "test-7-0-N45",
+              "target": "test-7-0-N29",
+              "relation": "GUARANTEES",
+              "confidence": 0.744,
+              "verified": true,
+              "active": true,
+              "value": 0.76
+            },
+            {
+              "id": "test-7-0-R0064",
+              "source": "test-7-0-N37",
+              "target": "test-7-0-N45",
+              "relation": "TRADES",
+              "confidence": 0.74,
+              "verified": true,
+              "active": true,
+              "value": 0.8
+            },
+            {
+              "id": "test-7-0-R0065",
+              "source": "test-7-0-N39",
+              "target": "test-7-0-N7",
+              "relation": "TRADES",
+              "confidence": 0.349,
+              "verified": true,
+              "active": false,
+              "value": 0.35
+            },
+            {
+              "id": "test-7-0-R0066",
+              "source": "test-7-0-N32",
+              "target": "test-7-0-N16",
+              "relation": "HOLDS",
+              "confidence": 0.783,
+              "verified": true,
+              "active": true,
+              "value": 0.58
+            },
+            {
+              "id": "test-7-0-R0067",
+              "source": "test-7-0-N46",
+              "target": "test-7-0-N10",
+              "relation": "GUARANTEES",
+              "confidence": 0.952,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "test-7-0-R0068",
+              "source": "test-7-0-N2",
+              "target": "test-7-0-N30",
+              "relation": "HOLDS",
+              "confidence": 0.838,
+              "verified": true,
+              "active": true,
+              "value": 0.66
+            },
+            {
+              "id": "test-7-0-R0069",
+              "source": "test-7-0-N29",
+              "target": "test-7-0-N9",
+              "relation": "GUARANTEES",
+              "confidence": 0.717,
+              "verified": true,
+              "active": true,
+              "value": 0.4
+            },
+            {
+              "id": "test-7-0-R0070",
+              "source": "test-7-0-N6",
+              "target": "test-7-0-N22",
+              "relation": "TRADES",
+              "confidence": 0.87,
+              "verified": true,
+              "active": true,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0071",
+              "source": "test-7-0-N18",
+              "target": "test-7-0-N31",
+              "relation": "TRADES",
+              "confidence": 0.783,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "test-7-0-R0072",
+              "source": "test-7-0-N44",
+              "target": "test-7-0-N4",
+              "relation": "TRADES",
+              "confidence": 0.827,
+              "verified": true,
+              "active": true,
+              "value": 0.68
+            },
+            {
+              "id": "test-7-0-R0073",
+              "source": "test-7-0-N28",
+              "target": "test-7-0-N24",
+              "relation": "TRADES",
+              "confidence": 0.892,
+              "verified": true,
+              "active": true,
+              "value": 0.27
+            },
+            {
+              "id": "test-7-0-R0074",
+              "source": "test-7-0-N19",
+              "target": "test-7-0-N15",
+              "relation": "GUARANTEES",
+              "confidence": 0.473,
+              "verified": false,
+              "active": false,
+              "value": 0.61
+            },
+            {
+              "id": "test-7-0-R0075",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N33",
+              "relation": "HOLDS",
+              "confidence": 0.994,
+              "verified": true,
+              "active": true,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0076",
+              "source": "test-7-0-N37",
+              "target": "test-7-0-N6",
+              "relation": "TRADES",
+              "confidence": 0.683,
+              "verified": true,
+              "active": true,
+              "value": 0.19
+            },
+            {
+              "id": "test-7-0-R0077",
+              "source": "test-7-0-N47",
+              "target": "test-7-0-N10",
+              "relation": "TRADES",
+              "confidence": 0.716,
+              "verified": true,
+              "active": true,
+              "value": 0.31
+            },
+            {
+              "id": "test-7-0-R0078",
+              "source": "test-7-0-N40",
+              "target": "test-7-0-N7",
+              "relation": "GUARANTEES",
+              "confidence": 0.935,
+              "verified": true,
+              "active": false,
+              "value": 0.34
+            },
+            {
+              "id": "test-7-0-R0079",
+              "source": "test-7-0-N25",
+              "target": "test-7-0-N17",
+              "relation": "TRADES",
+              "confidence": 0.961,
+              "verified": true,
+              "active": true,
+              "value": 0.54
+            },
+            {
+              "id": "test-7-0-R0080",
+              "source": "test-7-0-N16",
+              "target": "test-7-0-N28",
+              "relation": "HOLDS",
+              "confidence": 0.823,
+              "verified": true,
+              "active": true,
+              "value": 0.32
+            },
+            {
+              "id": "test-7-0-R0081",
+              "source": "test-7-0-N22",
+              "target": "test-7-0-N10",
+              "relation": "TRADES",
+              "confidence": 0.832,
+              "verified": true,
+              "active": true,
+              "value": 0.25
+            },
+            {
+              "id": "test-7-0-R0082",
+              "source": "test-7-0-N19",
+              "target": "test-7-0-N35",
+              "relation": "GUARANTEES",
+              "confidence": 0.927,
+              "verified": true,
+              "active": true,
+              "value": 0.15
+            },
+            {
+              "id": "test-7-0-R0083",
+              "source": "test-7-0-N15",
+              "target": "test-7-0-N27",
+              "relation": "GUARANTEES",
+              "confidence": 0.696,
+              "verified": true,
+              "active": true,
+              "value": 0.43
+            },
+            {
+              "id": "test-7-0-R0084",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N37",
+              "relation": "TRADES",
+              "confidence": 0.922,
+              "verified": true,
+              "active": true,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0085",
+              "source": "test-7-0-N23",
+              "target": "test-7-0-N42",
+              "relation": "HOLDS",
+              "confidence": 0.821,
+              "verified": true,
+              "active": true,
+              "value": 0.77
+            },
+            {
+              "id": "test-7-0-R0086",
+              "source": "test-7-0-N24",
+              "target": "test-7-0-N32",
+              "relation": "HOLDS",
+              "confidence": 0.719,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0087",
+              "source": "test-7-0-N0",
+              "target": "test-7-0-N21",
+              "relation": "HOLDS",
+              "confidence": 0.926,
+              "verified": true,
+              "active": true,
+              "value": 0.55
+            },
+            {
+              "id": "test-7-0-R0088",
+              "source": "test-7-0-N36",
+              "target": "test-7-0-N28",
+              "relation": "GUARANTEES",
+              "confidence": 0.715,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "test-7-0-R0089",
+              "source": "test-7-0-N9",
+              "target": "test-7-0-N25",
+              "relation": "GUARANTEES",
+              "confidence": 0.914,
+              "verified": true,
+              "active": true,
+              "value": 0.67
+            },
+            {
+              "id": "test-7-0-R0090",
+              "source": "test-7-0-N16",
+              "target": "test-7-0-N12",
+              "relation": "GUARANTEES",
+              "confidence": 0.693,
+              "verified": true,
+              "active": true,
+              "value": 0.74
+            },
+            {
+              "id": "test-7-0-R0091",
+              "source": "test-7-0-N45",
+              "target": "test-7-0-N37",
+              "relation": "TRADES",
+              "confidence": 0.695,
+              "verified": true,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0092",
+              "source": "test-7-0-N0",
+              "target": "test-7-0-N8",
+              "relation": "HOLDS",
+              "confidence": 0.697,
+              "verified": true,
+              "active": true,
+              "value": 0.74
+            },
+            {
+              "id": "test-7-0-R0093",
+              "source": "test-7-0-N0",
+              "target": "test-7-0-N4",
+              "relation": "HOLDS",
+              "confidence": 0.733,
+              "verified": true,
+              "active": true,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0094",
+              "source": "test-7-0-N13",
+              "target": "test-7-0-N41",
+              "relation": "GUARANTEES",
+              "confidence": 0.974,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "test-7-0-R0095",
+              "source": "test-7-0-N18",
+              "target": "test-7-0-N38",
+              "relation": "GUARANTEES",
+              "confidence": 0.585,
+              "verified": true,
+              "active": false,
+              "value": 0.16
+            },
+            {
+              "id": "test-7-0-R0096",
+              "source": "test-7-0-N26",
+              "target": "test-7-0-N46",
+              "relation": "TRADES",
+              "confidence": 0.76,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "test-7-0-R0097",
+              "source": "test-7-0-N43",
+              "target": "test-7-0-N31",
+              "relation": "TRADES",
+              "confidence": 0.306,
+              "verified": false,
+              "active": false,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0098",
+              "source": "test-7-0-N47",
+              "target": "test-7-0-N15",
+              "relation": "HOLDS",
+              "confidence": 0.904,
+              "verified": true,
+              "active": true,
+              "value": 0.17
+            },
+            {
+              "id": "test-7-0-R0099",
+              "source": "test-7-0-N30",
+              "target": "test-7-0-N46",
+              "relation": "GUARANTEES",
+              "confidence": 0.846,
+              "verified": true,
+              "active": true,
+              "value": 0.44
+            },
+            {
+              "id": "test-7-0-R0100",
+              "source": "test-7-0-N19",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.925,
+              "verified": true,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0101",
+              "source": "test-7-0-N23",
+              "target": "test-7-0-N22",
+              "relation": "HOLDS",
+              "confidence": 0.913,
+              "verified": true,
+              "active": true,
+              "value": 0.51
+            },
+            {
+              "id": "test-7-0-R0102",
+              "source": "test-7-0-N29",
+              "target": "test-7-0-N9",
+              "relation": "HOLDS",
+              "confidence": 0.747,
+              "verified": true,
+              "active": true,
+              "value": 0.44
+            },
+            {
+              "id": "test-7-0-R0103",
+              "source": "test-7-0-N13",
+              "target": "test-7-0-N17",
+              "relation": "TRADES",
+              "confidence": 0.744,
+              "verified": true,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0104",
+              "source": "test-7-0-N17",
+              "target": "test-7-0-N21",
+              "relation": "TRADES",
+              "confidence": 0.934,
+              "verified": true,
+              "active": true,
+              "value": 0.64
+            },
+            {
+              "id": "test-7-0-R0105",
+              "source": "test-7-0-N24",
+              "target": "test-7-0-N4",
+              "relation": "TRADES",
+              "confidence": 0.845,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0106",
+              "source": "test-7-0-N18",
+              "target": "test-7-0-N6",
+              "relation": "HOLDS",
+              "confidence": 0.873,
+              "verified": true,
+              "active": true,
+              "value": 0.71
+            },
+            {
+              "id": "test-7-0-R0107",
+              "source": "test-7-0-N40",
+              "target": "test-7-0-N20",
+              "relation": "TRADES",
+              "confidence": 0.734,
+              "verified": true,
+              "active": true,
+              "value": 0.31
+            },
+            {
+              "id": "test-7-0-R0108",
+              "source": "test-7-0-N15",
+              "target": "test-7-0-N31",
+              "relation": "TRADES",
+              "confidence": 0.7,
+              "verified": true,
+              "active": true,
+              "value": 0.47
+            },
+            {
+              "id": "test-7-0-R0109",
+              "source": "test-7-0-N13",
+              "target": "test-7-0-N5",
+              "relation": "TRADES",
+              "confidence": 0.973,
+              "verified": true,
+              "active": true,
+              "value": 0.74
+            },
+            {
+              "id": "test-7-0-R0110",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N45",
+              "relation": "HOLDS",
+              "confidence": 0.919,
+              "verified": true,
+              "active": true,
+              "value": 0.72
+            },
+            {
+              "id": "test-7-0-R0111",
+              "source": "test-7-0-N31",
+              "target": "test-7-0-N19",
+              "relation": "HOLDS",
+              "confidence": 0.743,
+              "verified": true,
+              "active": true,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0112",
+              "source": "test-7-0-N22",
+              "target": "test-7-0-N46",
+              "relation": "TRADES",
+              "confidence": 0.684,
+              "verified": true,
+              "active": true,
+              "value": 0.66
+            },
+            {
+              "id": "test-7-0-R0113",
+              "source": "test-7-0-N12",
+              "target": "test-7-0-N36",
+              "relation": "TRADES",
+              "confidence": 0.909,
+              "verified": true,
+              "active": true,
+              "value": 0.64
+            },
+            {
+              "id": "test-7-0-R0114",
+              "source": "test-7-0-N22",
+              "target": "test-7-0-N14",
+              "relation": "TRADES",
+              "confidence": 0.727,
+              "verified": true,
+              "active": true,
+              "value": 0.53
+            },
+            {
+              "id": "test-7-0-R0115",
+              "source": "test-7-0-N8",
+              "target": "test-7-0-N24",
+              "relation": "GUARANTEES",
+              "confidence": 0.752,
+              "verified": true,
+              "active": true,
+              "value": 0.48
+            },
+            {
+              "id": "test-7-0-R0116",
+              "source": "test-7-0-N33",
+              "target": "test-7-0-N16",
+              "relation": "GUARANTEES",
+              "confidence": 0.726,
+              "verified": true,
+              "active": true,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0117",
+              "source": "test-7-0-N39",
+              "target": "test-7-0-N43",
+              "relation": "HOLDS",
+              "confidence": 0.889,
+              "verified": true,
+              "active": true,
+              "value": 0.61
+            },
+            {
+              "id": "test-7-0-R0118",
+              "source": "test-7-0-N30",
+              "target": "test-7-0-N6",
+              "relation": "TRADES",
+              "confidence": 0.955,
+              "verified": true,
+              "active": true,
+              "value": 0.67
+            },
+            {
+              "id": "test-7-0-R0119",
+              "source": "test-7-0-N7",
+              "target": "test-7-0-N11",
+              "relation": "GUARANTEES",
+              "confidence": 0.781,
+              "verified": true,
+              "active": true,
+              "value": 0.33
+            },
+            {
+              "id": "test-7-0-R0120",
+              "source": "test-7-0-N12",
+              "target": "test-7-0-N16",
+              "relation": "GUARANTEES",
+              "confidence": 0.74,
+              "verified": true,
+              "active": true,
+              "value": 0.67
+            },
+            {
+              "id": "test-7-0-R0121",
+              "source": "test-7-0-N23",
+              "target": "test-7-0-N22",
+              "relation": "GUARANTEES",
+              "confidence": 0.862,
+              "verified": true,
+              "active": true,
+              "value": 0.46
+            },
+            {
+              "id": "test-7-0-R0122",
+              "source": "test-7-0-N16",
+              "target": "test-7-0-N28",
+              "relation": "GUARANTEES",
+              "confidence": 0.873,
+              "verified": true,
+              "active": true,
+              "value": 0.28
+            },
+            {
+              "id": "test-7-0-R0123",
+              "source": "test-7-0-N42",
+              "target": "test-7-0-N30",
+              "relation": "TRADES",
+              "confidence": 0.991,
+              "verified": true,
+              "active": true,
+              "value": 0.7
+            },
+            {
+              "id": "test-7-0-R0124",
+              "source": "test-7-0-N47",
+              "target": "test-7-0-N19",
+              "relation": "HOLDS",
+              "confidence": 0.808,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0125",
+              "source": "test-7-0-N39",
+              "target": "test-7-0-N31",
+              "relation": "GUARANTEES",
+              "confidence": 0.254,
+              "verified": false,
+              "active": false,
+              "value": 0.53
+            },
+            {
+              "id": "test-7-0-R0126",
+              "source": "test-7-0-N27",
+              "target": "test-7-0-N31",
+              "relation": "HOLDS",
+              "confidence": 0.974,
+              "verified": true,
+              "active": true,
+              "value": 0.56
+            },
+            {
+              "id": "test-7-0-R0127",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N37",
+              "relation": "HOLDS",
+              "confidence": 0.803,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0128",
+              "source": "test-7-0-N38",
+              "target": "test-7-0-N46",
+              "relation": "GUARANTEES",
+              "confidence": 0.787,
+              "verified": true,
+              "active": true,
+              "value": 0.55
+            },
+            {
+              "id": "test-7-0-R0129",
+              "source": "test-7-0-N10",
+              "target": "test-7-0-N26",
+              "relation": "GUARANTEES",
+              "confidence": 0.953,
+              "verified": true,
+              "active": true,
+              "value": 0.77
+            },
+            {
+              "id": "test-7-0-R0130",
+              "source": "test-7-0-N36",
+              "target": "test-7-0-N8",
+              "relation": "TRADES",
+              "confidence": 0.955,
+              "verified": true,
+              "active": true,
+              "value": 0.84
+            },
+            {
+              "id": "test-7-0-R0131",
+              "source": "test-7-0-N46",
+              "target": "test-7-0-N42",
+              "relation": "HOLDS",
+              "confidence": 0.73,
+              "verified": true,
+              "active": true,
+              "value": 0.59
+            },
+            {
+              "id": "test-7-0-R0132",
+              "source": "test-7-0-N46",
+              "target": "test-7-0-N18",
+              "relation": "TRADES",
+              "confidence": 0.792,
+              "verified": true,
+              "active": true,
+              "value": 0.75
+            },
+            {
+              "id": "test-7-0-R0133",
+              "source": "test-7-0-N25",
+              "target": "test-7-0-N15",
+              "relation": "GUARANTEES",
+              "confidence": 0.902,
+              "verified": true,
+              "active": true,
+              "value": 0.15
+            },
+            {
+              "id": "test-7-0-R0134",
+              "source": "test-7-0-N41",
+              "target": "test-7-0-N17",
+              "relation": "HOLDS",
+              "confidence": 0.763,
+              "verified": true,
+              "active": true,
+              "value": 0.57
+            },
+            {
+              "id": "test-7-0-R0135",
+              "source": "test-7-0-N31",
+              "target": "test-7-0-N16",
+              "relation": "GUARANTEES",
+              "confidence": 0.878,
+              "verified": true,
+              "active": true,
+              "value": 0.59
+            },
+            {
+              "id": "test-7-0-R0136",
+              "source": "test-7-0-N7",
+              "target": "test-7-0-N43",
+              "relation": "TRADES",
+              "confidence": 0.723,
+              "verified": true,
+              "active": true,
+              "value": 0.74
+            },
+            {
+              "id": "test-7-0-R0137",
+              "source": "test-7-0-N38",
+              "target": "test-7-0-N6",
+              "relation": "HOLDS",
+              "confidence": 0.927,
+              "verified": true,
+              "active": false,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0138",
+              "source": "test-7-0-N41",
+              "target": "test-7-0-N36",
+              "relation": "HOLDS",
+              "confidence": 0.74,
+              "verified": false,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0139",
+              "source": "test-7-0-N12",
+              "target": "test-7-0-N36",
+              "relation": "HOLDS",
+              "confidence": 0.996,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0140",
+              "source": "test-7-0-N35",
+              "target": "test-7-0-N27",
+              "relation": "TRADES",
+              "confidence": 0.868,
+              "verified": true,
+              "active": true,
+              "value": 0.66
+            },
+            {
+              "id": "test-7-0-R0141",
+              "source": "test-7-0-N35",
+              "target": "test-7-0-N23",
+              "relation": "TRADES",
+              "confidence": 0.974,
+              "verified": true,
+              "active": true,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0142",
+              "source": "test-7-0-N9",
+              "target": "test-7-0-N41",
+              "relation": "HOLDS",
+              "confidence": 0.896,
+              "verified": true,
+              "active": true,
+              "value": 0.47
+            },
+            {
+              "id": "test-7-0-R0143",
+              "source": "test-7-0-N28",
+              "target": "test-7-0-N32",
+              "relation": "HOLDS",
+              "confidence": 0.863,
+              "verified": true,
+              "active": true,
+              "value": 0.72
+            },
+            {
+              "id": "test-7-0-R0144",
+              "source": "test-7-0-N32",
+              "target": "test-7-0-N9",
+              "relation": "TRADES",
+              "confidence": 0.742,
+              "verified": true,
+              "active": true,
+              "value": 0.31
+            },
+            {
+              "id": "test-7-0-R0145",
+              "source": "test-7-0-N9",
+              "target": "test-7-0-N8",
+              "relation": "HOLDS",
+              "confidence": 0.819,
+              "verified": true,
+              "active": true,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0146",
+              "source": "test-7-0-N6",
+              "target": "test-7-0-N38",
+              "relation": "HOLDS",
+              "confidence": 0.891,
+              "verified": true,
+              "active": true,
+              "value": 0.45
+            },
+            {
+              "id": "test-7-0-R0147",
+              "source": "test-7-0-N29",
+              "target": "test-7-0-N27",
+              "relation": "TRADES",
+              "confidence": 0.967,
+              "verified": true,
+              "active": true,
+              "value": 0.16
+            },
+            {
+              "id": "test-7-0-R0148",
+              "source": "test-7-0-N4",
+              "target": "test-7-0-N39",
+              "relation": "TRADES",
+              "confidence": 0.716,
+              "verified": true,
+              "active": true,
+              "value": 0.2
+            },
+            {
+              "id": "test-7-0-R0149",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N22",
+              "relation": "HOLDS",
+              "confidence": 0.855,
+              "verified": true,
+              "active": true,
+              "value": 0.57
+            },
+            {
+              "id": "test-7-0-R0150",
+              "source": "test-7-0-N43",
+              "target": "test-7-0-N47",
+              "relation": "TRADES",
+              "confidence": 0.874,
+              "verified": true,
+              "active": true,
+              "value": 0.17
+            },
+            {
+              "id": "test-7-0-R0151",
+              "source": "test-7-0-N30",
+              "target": "test-7-0-N22",
+              "relation": "TRADES",
+              "confidence": 0.883,
+              "verified": true,
+              "active": true,
+              "value": 0.28
+            },
+            {
+              "id": "test-7-0-R0152",
+              "source": "test-7-0-N31",
+              "target": "test-7-0-N43",
+              "relation": "HOLDS",
+              "confidence": 0.872,
+              "verified": true,
+              "active": true,
+              "value": 0.21
+            },
+            {
+              "id": "test-7-0-R0153",
+              "source": "test-7-0-N41",
+              "target": "test-7-0-N29",
+              "relation": "TRADES",
+              "confidence": 0.943,
+              "verified": true,
+              "active": true,
+              "value": 0.19
+            },
+            {
+              "id": "test-7-0-R0154",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N28",
+              "relation": "HOLDS",
+              "confidence": 0.989,
+              "verified": true,
+              "active": true,
+              "value": 0.53
+            },
+            {
+              "id": "test-7-0-R0155",
+              "source": "test-7-0-N30",
+              "target": "test-7-0-N14",
+              "relation": "HOLDS",
+              "confidence": 0.821,
+              "verified": true,
+              "active": true,
+              "value": 0.74
+            },
+            {
+              "id": "test-7-0-R0156",
+              "source": "test-7-0-N44",
+              "target": "test-7-0-N36",
+              "relation": "GUARANTEES",
+              "confidence": 0.744,
+              "verified": true,
+              "active": true,
+              "value": 0.75
+            },
+            {
+              "id": "test-7-0-R0157",
+              "source": "test-7-0-N0",
+              "target": "test-7-0-N32",
+              "relation": "HOLDS",
+              "confidence": 0.935,
+              "verified": true,
+              "active": true,
+              "value": 0.15
+            },
+            {
+              "id": "test-7-0-R0158",
+              "source": "test-7-0-N34",
+              "target": "test-7-0-N16",
+              "relation": "HOLDS",
+              "confidence": 0.92,
+              "verified": true,
+              "active": true,
+              "value": 0.44
+            },
+            {
+              "id": "test-7-0-R0159",
+              "source": "test-7-0-N34",
+              "target": "test-7-0-N14",
+              "relation": "HOLDS",
+              "confidence": 0.704,
+              "verified": false,
+              "active": true,
+              "value": 0.66
+            },
+            {
+              "id": "test-7-0-R0160",
+              "source": "test-7-0-N7",
+              "target": "test-7-0-N15",
+              "relation": "HOLDS",
+              "confidence": 0.954,
+              "verified": true,
+              "active": true,
+              "value": 0.17
+            },
+            {
+              "id": "test-7-0-R0161",
+              "source": "test-7-0-N35",
+              "target": "test-7-0-N43",
+              "relation": "GUARANTEES",
+              "confidence": 0.986,
+              "verified": true,
+              "active": true,
+              "value": 0.3
+            },
+            {
+              "id": "test-7-0-R0162",
+              "source": "test-7-0-N24",
+              "target": "test-7-0-N36",
+              "relation": "GUARANTEES",
+              "confidence": 0.842,
+              "verified": true,
+              "active": true,
+              "value": 0.78
+            },
+            {
+              "id": "test-7-0-R0163",
+              "source": "test-7-0-N26",
+              "target": "test-7-0-N14",
+              "relation": "TRADES",
+              "confidence": 0.696,
+              "verified": true,
+              "active": true,
+              "value": 0.31
+            },
+            {
+              "id": "test-7-0-R0164",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N11",
+              "relation": "HOLDS",
+              "confidence": 0.8,
+              "verified": true,
+              "active": true,
+              "value": 0.35
+            },
+            {
+              "id": "test-7-0-R0165",
+              "source": "test-7-0-N40",
+              "target": "test-7-0-N32",
+              "relation": "TRADES",
+              "confidence": 0.923,
+              "verified": true,
+              "active": true,
+              "value": 0.37
+            },
+            {
+              "id": "test-7-0-R0166",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N45",
+              "relation": "TRADES",
+              "confidence": 0.948,
+              "verified": true,
+              "active": true,
+              "value": 0.55
+            },
+            {
+              "id": "test-7-0-R0167",
+              "source": "test-7-0-N2",
+              "target": "test-7-0-N21",
+              "relation": "HOLDS",
+              "confidence": 0.918,
+              "verified": true,
+              "active": true,
+              "value": 0.67
+            },
+            {
+              "id": "test-7-0-R0168",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N35",
+              "relation": "HOLDS",
+              "confidence": 0.941,
+              "verified": true,
+              "active": true,
+              "value": 0.52
+            },
+            {
+              "id": "test-7-0-R0169",
+              "source": "test-7-0-N43",
+              "target": "test-7-0-N7",
+              "relation": "HOLDS",
+              "confidence": 0.714,
+              "verified": true,
+              "active": true,
+              "value": 0.5
+            },
+            {
+              "id": "test-7-0-R0170",
+              "source": "test-7-0-N35",
+              "target": "test-7-0-N39",
+              "relation": "GUARANTEES",
+              "confidence": 0.89,
+              "verified": true,
+              "active": true,
+              "value": 0.81
+            },
+            {
+              "id": "test-7-0-R0171",
+              "source": "test-7-0-N2",
+              "target": "test-7-0-N11",
+              "relation": "HOLDS",
+              "confidence": 0.942,
+              "verified": true,
+              "active": true,
+              "value": 0.82
+            },
+            {
+              "id": "test-7-0-R0172",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N22",
+              "relation": "TRADES",
+              "confidence": 0.886,
+              "verified": true,
+              "active": true,
+              "value": 0.23
+            },
+            {
+              "id": "test-7-0-R0173",
+              "source": "test-7-0-N19",
+              "target": "test-7-0-N27",
+              "relation": "HOLDS",
+              "confidence": 0.682,
+              "verified": true,
+              "active": true,
+              "value": 0.38
+            },
+            {
+              "id": "test-7-0-R0174",
+              "source": "test-7-0-N32",
+              "target": "test-7-0-N45",
+              "relation": "GUARANTEES",
+              "confidence": 0.876,
+              "verified": true,
+              "active": true,
+              "value": 0.23
+            },
+            {
+              "id": "test-7-0-R0175",
+              "source": "test-7-0-N16",
+              "target": "test-7-0-N40",
+              "relation": "GUARANTEES",
+              "confidence": 0.758,
+              "verified": true,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0176",
+              "source": "test-7-0-N16",
+              "target": "test-7-0-N8",
+              "relation": "TRADES",
+              "confidence": 0.374,
+              "verified": false,
+              "active": false,
+              "value": 0.76
+            },
+            {
+              "id": "test-7-0-R0177",
+              "source": "test-7-0-N18",
+              "target": "test-7-0-N6",
+              "relation": "GUARANTEES",
+              "confidence": 0.792,
+              "verified": true,
+              "active": true,
+              "value": 0.29
+            },
+            {
+              "id": "test-7-0-R0178",
+              "source": "test-7-0-N2",
+              "target": "test-7-0-N24",
+              "relation": "HOLDS",
+              "confidence": 0.793,
+              "verified": true,
+              "active": true,
+              "value": 0.76
+            },
+            {
+              "id": "test-7-0-R0179",
+              "source": "test-7-0-N20",
+              "target": "test-7-0-N7",
+              "relation": "HOLDS",
+              "confidence": 0.779,
+              "verified": true,
+              "active": true,
+              "value": 0.79
+            },
+            {
+              "id": "test-7-0-R0180",
+              "source": "test-7-0-N21",
+              "target": "test-7-0-N33",
+              "relation": "TRADES",
+              "confidence": 0.837,
+              "verified": true,
+              "active": true,
+              "value": 0.28
+            },
+            {
+              "id": "test-7-0-R0181",
+              "source": "test-7-0-N45",
+              "target": "test-7-0-N37",
+              "relation": "HOLDS",
+              "confidence": 0.691,
+              "verified": true,
+              "active": true,
+              "value": 0.77
+            },
+            {
+              "id": "test-7-0-R0182",
+              "source": "test-7-0-N27",
+              "target": "test-7-0-N35",
+              "relation": "HOLDS",
+              "confidence": 0.757,
+              "verified": true,
+              "active": true,
+              "value": 0.31
+            },
+            {
+              "id": "test-7-0-R0183",
+              "source": "test-7-0-N14",
+              "target": "test-7-0-N6",
+              "relation": "HOLDS",
+              "confidence": 0.76,
+              "verified": true,
+              "active": true,
+              "value": 0.24
+            },
+            {
+              "id": "test-7-0-R0184",
+              "source": "test-7-0-N42",
+              "target": "test-7-0-N10",
+              "relation": "GUARANTEES",
+              "confidence": 0.869,
+              "verified": true,
+              "active": true,
+              "value": 0.18
+            },
+            {
+              "id": "test-7-0-R0185",
+              "source": "test-7-0-N15",
+              "target": "test-7-0-N22",
+              "relation": "HOLDS",
+              "confidence": 0.927,
+              "verified": true,
+              "active": true,
+              "value": 0.59
+            },
+            {
+              "id": "test-7-0-R0186",
+              "source": "test-7-0-N28",
+              "target": "test-7-0-N40",
+              "relation": "HOLDS",
+              "confidence": 0.888,
+              "verified": true,
+              "active": true,
+              "value": 0.39
+            },
+            {
+              "id": "test-7-0-R0187",
+              "source": "test-7-0-N25",
+              "target": "test-7-0-N16",
+              "relation": "GUARANTEES",
+              "confidence": 0.963,
+              "verified": true,
+              "active": true,
+              "value": 0.41
+            },
+            {
+              "id": "test-7-0-R0188",
+              "source": "test-7-0-N38",
+              "target": "test-7-0-N41",
+              "relation": "TRADES",
+              "confidence": 0.703,
+              "verified": true,
+              "active": true,
+              "value": 0.82
+            },
+            {
+              "id": "test-7-0-R0189",
+              "source": "test-7-0-N20",
+              "target": "test-7-0-N24",
+              "relation": "TRADES",
+              "confidence": 0.692,
+              "verified": true,
+              "active": true,
+              "value": 0.44
+            },
+            {
+              "id": "test-7-0-R0190",
+              "source": "test-7-0-N11",
+              "target": "test-7-0-N15",
+              "relation": "GUARANTEES",
+              "confidence": 0.966,
+              "verified": true,
+              "active": true,
+              "value": 0.66
+            },
+            {
+              "id": "test-7-0-R0191",
+              "source": "test-7-0-N1",
+              "target": "test-7-0-N17",
+              "relation": "HOLDS",
+              "confidence": 0.896,
+              "verified": true,
+              "active": true,
+              "value": 0.75
+            },
+            {
+              "id": "test-7-0-R0192",
+              "source": "test-7-0-N3",
+              "target": "test-7-0-N7",
+              "relation": "HOLDS",
+              "confidence": 0.295,
+              "verified": false,
+              "active": true,
+              "value": 0.73
+            },
+            {
+              "id": "test-7-0-R0193",
+              "source": "test-7-0-N14",
+              "target": "test-7-0-N6",
+              "relation": "GUARANTEES",
+              "confidence": 0.955,
+              "verified": true,
+              "active": true,
+              "value": 0.33
+            },
+            {
+              "id": "test-7-0-R0194",
+              "source": "test-7-0-N17",
+              "target": "test-7-0-N9",
+              "relation": "HOLDS",
+              "confidence": 0.717,
+              "verified": true,
+              "active": true,
+              "value": 0.82
+            },
+            {
+              "id": "test-7-0-R0195",
+              "source": "test-7-0-N4",
+              "target": "test-7-0-N10",
+              "relation": "GUARANTEES",
+              "confidence": 0.716,
+              "verified": true,
+              "active": true,
+              "value": 0.71
+            },
+            {
+              "id": "test-7-0-R0196",
+              "source": "test-7-0-N23",
+              "target": "test-7-0-N10",
+              "relation": "TRADES",
+              "confidence": 0.872,
+              "verified": true,
+              "active": true,
+              "value": 0.63
+            },
+            {
+              "id": "test-7-0-R0197",
+              "source": "test-7-0-N9",
+              "target": "test-7-0-N5",
+              "relation": "TRADES",
+              "confidence": 0.98,
+              "verified": true,
+              "active": true,
+              "value": 0.6
+            },
+            {
+              "id": "test-7-0-R0198",
+              "source": "test-7-0-N2",
+              "target": "test-7-0-N34",
+              "relation": "HOLDS",
+              "confidence": 0.693,
+              "verified": true,
+              "active": true,
+              "value": 0.19
+            },
+            {
+              "id": "test-7-0-R0199",
+              "source": "test-7-0-N27",
+              "target": "test-7-0-N11",
+              "relation": "HOLDS",
+              "confidence": 0.806,
+              "verified": true,
+              "active": true,
+              "value": 0.34
+            }
+          ]
+        },
+        "result": {
+          "method": "hybrid_llm",
+          "label": "混合 + LLM",
+          "status": "found",
+          "found": true,
+          "valid": true,
+          "answer": "test-7-0-N37",
+          "path": [
+            "test-7-0-N0",
+            "test-7-0-N21",
+            "test-7-0-N37"
+          ],
+          "edge_ids": [
+            "test-7-0-R0087",
+            "test-7-0-R0084"
+          ],
+          "expanded": 3,
+          "generated": 10,
+          "successor_checks": 0,
+          "expert_rejections": 1,
+          "rollout_steps": 0,
+          "simulations": 0,
+          "total_work": 3,
+          "repeated_states": 0,
+          "heuristic_evaluations": 5,
+          "heuristic_edge_checks": 15,
+          "heuristic_probe_states": 1,
+          "adjacency_edge_scans": 23,
+          "proof_pruned": 6,
+          "proof_checks": 9,
+          "peak_frontier": 2,
+          "total_edge_checks": 15,
+          "successor_cache_hits": 3,
+          "successor_cache_entries": 5,
+          "completed_paths": 5,
+          "redundant_paths": 0,
+          "redundant_path_ratio": 0.0,
+          "redundancy_ratio": 0.0,
+          "hops": 2,
+          "elapsed_ms": 0.3958999877795577,
+          "budget": 8,
+          "expert_enabled": true,
+          "trace": [
+            {
+              "id": 0,
+              "node": "test-7-0-N0",
+              "depth": 0,
+              "path": [
+                "test-7-0-N0"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "start",
+              "g": 0,
+              "h": 2.0,
+              "f": 2.0,
+              "p": 0.91134
+            },
+            {
+              "id": 1,
+              "node": "test-7-0-N0",
+              "depth": 0,
+              "path": [
+                "test-7-0-N0"
+              ],
+              "edge_ids": [],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 0,
+              "h": 2.0,
+              "f": 2.0,
+              "p": 0.91134
+            },
+            {
+              "id": 2,
+              "node": "test-7-0-N43",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N43"
+              ],
+              "edge_ids": [
+                "test-7-0-R0039"
+              ],
+              "parent_path": [],
+              "status": "rejected",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "未经核验；已失效"
+            },
+            {
+              "id": 3,
+              "node": "test-7-0-N21",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": 1.0,
+              "f": 2.0,
+              "p": 0.91631
+            },
+            {
+              "id": 4,
+              "node": "test-7-0-N8",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N8"
+              ],
+              "edge_ids": [
+                "test-7-0-R0092"
+              ],
+              "parent_path": [],
+              "status": "proof_pruned",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": 0.0363,
+              "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+            },
+            {
+              "id": 5,
+              "node": "test-7-0-N4",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N4"
+              ],
+              "edge_ids": [
+                "test-7-0-R0093"
+              ],
+              "parent_path": [],
+              "status": "generated",
+              "g": 1,
+              "h": 1.0,
+              "f": 2.0,
+              "p": 0.89146
+            },
+            {
+              "id": 6,
+              "node": "test-7-0-N32",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N32"
+              ],
+              "edge_ids": [
+                "test-7-0-R0157"
+              ],
+              "parent_path": [],
+              "status": "proof_pruned",
+              "g": 1,
+              "h": null,
+              "f": null,
+              "p": 0.08328,
+              "reason": "全部一步后继均不满足终点谓词"
+            },
+            {
+              "id": 7,
+              "node": "test-7-0-N21",
+              "depth": 1,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087"
+              ],
+              "parent_path": [],
+              "status": "expanded",
+              "g": 1,
+              "h": 1.0,
+              "f": 2.0,
+              "p": 0.91631
+            },
+            {
+              "id": 8,
+              "node": "test-7-0-N13",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N13"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0046"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "完整路径的终点不满足问题属性"
+            },
+            {
+              "id": 9,
+              "node": "test-7-0-N37",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N37"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0084"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "generated",
+              "g": 2,
+              "h": 0.0,
+              "f": 2.0,
+              "p": null
+            },
+            {
+              "id": 10,
+              "node": "test-7-0-N45",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N45"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0166"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "完整路径的终点不满足问题属性"
+            },
+            {
+              "id": 11,
+              "node": "test-7-0-N22",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N22"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0172"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "完整路径的终点不满足问题属性"
+            },
+            {
+              "id": 12,
+              "node": "test-7-0-N33",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N33"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0180"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "proof_pruned",
+              "g": 2,
+              "h": null,
+              "f": null,
+              "p": null,
+              "reason": "完整路径的终点不满足问题属性"
+            },
+            {
+              "id": 13,
+              "node": "test-7-0-N37",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N37"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0084"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "expanded",
+              "g": 2,
+              "h": 0.0,
+              "f": 2.0,
+              "p": null
+            },
+            {
+              "id": 14,
+              "node": "test-7-0-N37",
+              "depth": 2,
+              "path": [
+                "test-7-0-N0",
+                "test-7-0-N21",
+                "test-7-0-N37"
+              ],
+              "edge_ids": [
+                "test-7-0-R0087",
+                "test-7-0-R0084"
+              ],
+              "parent_path": [
+                "test-7-0-R0087"
+              ],
+              "status": "solution",
+              "g": 2,
+              "h": 0.0,
+              "f": 2.0,
+              "p": null
+            }
+          ],
+          "trace_events": 15,
+          "trace_truncated": false,
+          "classifier_used": true,
+          "heuristic_used": true,
+          "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+        },
+        "llm": {
+          "model": "Qwen/Qwen2.5-0.5B-Instruct",
+          "scored_edges": 8,
+          "llm_ms": 12116.027100000792,
+          "graph_sha256": "5947796bdaba7b883aec219e9e8f2bb82580fddcfca93c850f3083f7be39c3bd",
+          "query_sha256": "68f1688b312ba126b9cc0d7e0b74c4ab7b24da15fa069e627e17364b690006de",
+          "preparation_edge_scans": 15,
+          "preparation_states": 3,
+          "mode": "replay",
+          "note": "重放真实Qwen评分与训练图拟合的证据分类头；本次未调用LLM。",
+          "scores": {
+            "[\"test-7-0-R0039\"]": 0.16987590864300728,
+            "[\"test-7-0-R0087\"]": 0.6882019639015198,
+            "[\"test-7-0-R0092\"]": 0.6823986917734146,
+            "[\"test-7-0-R0093\"]": 0.6939806342124939,
+            "[\"test-7-0-R0157\"]": 0.6878640353679657,
+            "[\"test-7-0-R0039\",\"test-7-0-R0097\"]": 0.13549590483307838,
+            "[\"test-7-0-R0039\",\"test-7-0-R0150\"]": 0.1440792828798294,
+            "[\"test-7-0-R0087\",\"test-7-0-R0046\"]": 0.6015959680080414
+          }
+        },
+        "path_evidence": [
+          {
+            "id": "test-7-0-R0087",
+            "source": "test-7-0-N0",
+            "target": "test-7-0-N21",
+            "relation": "HOLDS",
+            "confidence": 0.926,
+            "verified": true,
+            "active": true,
+            "value": 0.55,
+            "eligible": true,
+            "rejection_reason": ""
+          },
+          {
+            "id": "test-7-0-R0084",
+            "source": "test-7-0-N21",
+            "target": "test-7-0-N37",
+            "relation": "TRADES",
+            "confidence": 0.922,
+            "verified": true,
+            "active": true,
+            "value": 0.41,
+            "eligible": true,
+            "rejection_reason": ""
+          }
+        ],
+        "explanation": "第1跳：教学投资人1通过持股关系连接新能源企业21。第2跳：新能源企业21通过交易关系连接新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "button": "导出本次结果",
+      "file": "downloads/lab03-shared-3-hybrid-16.json",
+      "seconds": 13.419014900020557,
+      "sha256": "0c602dada2783b4ef2f1e3aad48aad565551de165dbc9ec8044af375d3d86ef0",
+      "keys": [
+        "query",
+        "graph",
+        "result",
+        "llm",
+        "path_evidence",
+        "explanation"
+      ]
+    },
+    {
+      "button": "导出算法对比",
+      "file": "downloads/lab03-comparison-shared-3-16.json",
+      "seconds": 19.842785100016044,
+      "sha256": "eeda86d82b65b8efda7cf6fb02a3678484ea91670da9cb214779aefd300e9e90",
+      "keys": [
+        "query",
+        "budget",
+        "methods",
+        "attempted",
+        "successful",
+        "failed",
+        "complete",
+        "note",
+        "rows"
+      ]
+    },
+    {
+      "button": "导出当前评估",
+      "file": "downloads/lab03-metrics-ood-8.json",
+      "seconds": 57.898832900013076,
+      "sha256": "c472b1f1c513c1ae1c041256b30c531dd4625c9bf6c36090b877f57339189076",
+      "keys": [
+        "split",
+        "budget",
+        "metrics",
+        "paired",
+        "notes",
+        "data_note"
+      ]
+    }
+  ],
+  "errors": [],
+  "http_errors": [],
+  "health": {
+    "status": "ok",
+    "app": "equity-reasoning-web",
+    "workspace_id": "c6c4b4f3de9772d4"
+  },
+  "served_index_sha256": "166aa500fa6eca45377b8c9e5ce3f09b3d1d9c4ca1d6329e24717096315bed59",
+  "prewarmed_modules": [
+    "遗传优化与路径学习",
+    "LLM辅助与证据约束",
+    "对比实验与失败分析"
+  ],
+  "started_epoch": 1794628489.4710035,
+  "recorded_seconds": 60.98882980001508,
+  "completed": true
+}

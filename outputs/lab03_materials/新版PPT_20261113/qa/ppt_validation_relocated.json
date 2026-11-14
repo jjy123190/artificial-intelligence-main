@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-14T11:11:49.714344+08:00",
+  "checks": [
+    {
+      "check": "18_slides_16x9_with_speaker_notes",
+      "passed": true,
+      "main_slides": 16,
+      "appendix_slides": 2
+    },
+    {
+      "check": "native_charts_tables_diagrams_and_embedded_image",
+      "passed": true,
+      "charts": 4,
+      "chart_workbooks": 4
+    },
+    {
+      "check": "real_ga_success_and_cost_charts_match_report_and_csv",
+      "passed": true,
+      "raw_rows": 3888
+    },
+    {
+      "check": "success_chart_percent_labels_rendered",
+      "passed": true
+    },
+    {
+      "check": "llm_migration_and_team_text_consistent",
+      "passed": true
+    },
+    {
+      "check": "ppt_pdf_all_text_and_table_cells_consistent",
+      "passed": true,
+      "items": 423
+    },
+    {
+      "check": "powerpoint_text_boxes_and_cells_fit",
+      "passed": true,
+      "overflow": 0
+    },
+    {
+      "check": "historical_evidence_preserved_and_current_material_inventory_verified",
+      "passed": true,
+      "files": 529,
+      "independent_user_save": [
+        {
+          "paragraph": 7,
+          "before": "软件工程5班 · 第31组",
+          "after": "软件工程5班 "
+        },
+        {
+          "paragraph": 12,
+          "before": "本报告已整合搜索树可视化样例与失败案例分析。\n配套附件包括高清 PNG、SVG、完整搜索轨迹 JSON、冻结结果及复核脚本。",
+          "after": "本报告已整合搜索树可视化样例与失败案例分析。\n配套附件包括 PNG、SVG、完整搜索轨迹 JSON、冻结结果及复核脚本。"
+        }
+      ]
+    }
+  ],
+  "pptx_sha256": "253a62900d55de14cc20e364b8b1eaf199301469c58d42a5f64f248b3cfd6c54",
+  "pdf_sha256": "6eb56ae2e5cac922618d8653d6a33c0d29870b1add948a22309f4aef04408cbc",
+  "slides": 18,
+  "main_slides": 16,
+  "appendix_slides": 2,
+  "scope": "Deck package, existing Office rendering, real numeric observations, preserved source snapshots and current relocated files; no Office export, algorithm test or benchmark rerun."
+}

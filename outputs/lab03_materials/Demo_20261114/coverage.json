@@ -1,0 +1,249 @@
+{
+  "scope": "实验三的四个功能模块；不含实验一、实验二和公共工具。",
+  "duration_seconds": 60,
+  "timeline": [
+    {
+      "start": 0,
+      "end": 5.7,
+      "module": "多跳搜索工作台",
+      "features": [
+        "指定三跳初始界面",
+        "二/三/四跳示例切换",
+        "状态动作终止条件",
+        "真实混合搜索"
+      ]
+    },
+    {
+      "start": 5.7,
+      "end": 14.9,
+      "module": "搜索轨迹与证据",
+      "features": [
+        "2倍速播放搜索树",
+        "节点分支回看",
+        "步骤列表",
+        "搜索结果JSON导出",
+        "路径解释与逐边证据"
+      ]
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "module": "算法对比",
+      "features": [
+        "BFS/固定A*/GA A*/MCTS同题实测",
+        "扩展量与工作量",
+        "算法对比JSON导出"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 26.3,
+      "module": "遗传优化与路径学习",
+      "features": [
+        "随机种子切换",
+        "GA适应度曲线",
+        "逐代真实测量",
+        "分类器指标",
+        "专家约束"
+      ]
+    },
+    {
+      "start": 26.3,
+      "end": 35.2,
+      "module": "LLM辅助与证据约束",
+      "features": [
+        "合法性辅助/路径价值/路径解释",
+        "配对评测",
+        "新图与数值挑战",
+        "模型幻觉与程序证据比较",
+        "远程模型配置说明"
+      ]
+    },
+    {
+      "start": 35.2,
+      "end": 40.4,
+      "module": "混合+LLM搜索",
+      "features": [
+        "测试图问题与预算切换",
+        "重放真实评分",
+        "专家拦截",
+        "答案证据"
+      ]
+    },
+    {
+      "start": 40.4,
+      "end": 60,
+      "module": "对比实验与失败分析",
+      "features": [
+        "3888次实验概览",
+        "测试/OOD切换",
+        "扩展预算切换",
+        "多指标对比",
+        "配对收益区间",
+        "无解与证明剪枝",
+        "失败案例",
+        "评估JSON导出"
+      ]
+    }
+  ],
+  "actual_operations": [
+    {
+      "name": "01 原始三跳工作台：尚未运行",
+      "seconds": 0.0,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换二跳问题建模",
+      "seconds": 1.724,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换四跳问题建模",
+      "seconds": 2.437,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看状态/动作/终止与专家约束",
+      "seconds": 3.817,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "三跳混合搜索返回真实可核验路径",
+      "seconds": 5.647,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "2倍速逐步播放搜索树",
+      "seconds": 6.62,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "点击节点检查已证无解分支",
+      "seconds": 10.618,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "切换步骤列表",
+      "seconds": 11.879,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "导出真实搜索结果JSON",
+      "seconds": 13.419,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看路径解释、成本与逐边证据",
+      "seconds": 14.62,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "同题实测BFS/固定A*/GA A*/MCTS",
+      "seconds": 17.83,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "导出四算法对比",
+      "seconds": 19.848,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "02 GA验证适应度曲线与种子切换",
+      "seconds": 21.057,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "查看逐代真实适应度与验证结果",
+      "seconds": 23.522,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "03 路径分类器指标与专家规则",
+      "seconds": 24.937,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/optimization"
+    },
+    {
+      "name": "04 LLM三项职责与同题配对结果",
+      "seconds": 26.915,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "新图确认与数值挑战：如实展示局限",
+      "seconds": 30.298,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "对比模型幻觉解释与程序证据",
+      "seconds": 32.483,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "展示可选远程模型接入说明，不调用接口",
+      "seconds": 34.966,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/assistant"
+    },
+    {
+      "name": "混合+LLM：真实历史评分重放（不是现场推断）",
+      "seconds": 37.724,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "查看重放标识、专家拦截与答案证据",
+      "seconds": 39.012,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/search"
+    },
+    {
+      "name": "05 全量3888次实验：成功率与搜索成本",
+      "seconds": 40.89,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "切换分布变化图，检视泛化",
+      "seconds": 43.378,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "切换扩展预算",
+      "seconds": 45.217,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "四项指标、边检查与无效答案率",
+      "seconds": 47.413,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "配对收益区间与过拟合边界",
+      "seconds": 49.365,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "查看无解确认与证明剪枝",
+      "seconds": 51.71,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "06 失败案例：证据无效与预算耗尽",
+      "seconds": 54.354,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "导出当前评估数据",
+      "seconds": 57.899,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    },
+    {
+      "name": "回到全量测试结果完成演示",
+      "seconds": 58.416,
+      "url": "http://127.0.0.1:8766/#/labs/lab03/evaluation"
+    }
+  ],
+  "disclosures": {
+    "audio": false,
+    "remote_llm_called": false,
+    "llm_mode": "replay",
+    "application_responses_modified": false,
+    "source_data_reports_ppt_modified": false,
+    "browser_only_presentation": "1.6倍显示缩放、白色指针与点击环，无标题或字幕叠加"
+  }
+}

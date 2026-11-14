@@ -1,0 +1,141 @@
+[
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q0",
+    "path": [
+      "test-7-0-N0",
+      "test-7-0-N21",
+      "test-7-0-N37"
+    ],
+    "text": "教学投资人1 - 购买新能源企业21 - 交易新能源企业37",
+    "generated": true,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "prompt": "请只用中文解释下面已经由程序找到并核验的图谱路径，不新增实体或关系，不作法律判断。两句话以内。已核验路径：教学投资人1 --HOLDS--> 新能源企业21; 新能源企业21 --TRADES--> 新能源企业37。说明它满足指定的关系顺序，且只是教学证据线索。",
+    "inference_ms": 3330.9700999998313,
+    "grounded": false,
+    "verified_text": "第1跳：教学投资人1通过持股关系连接新能源企业21。第2跳：新能源企业21通过交易关系连接新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "verification": "exact evidence-rendered text only; free-form prose is not certified",
+    "missing_path_entities": [],
+    "graph_sha256": "5947796bdaba7b883aec219e9e8f2bb82580fddcfca93c850f3083f7be39c3bd",
+    "query_sha256": "68f1688b312ba126b9cc0d7e0b74c4ab7b24da15fa069e627e17364b690006de",
+    "edge_ids": [
+      "test-7-0-R0087",
+      "test-7-0-R0084"
+    ],
+    "controlled_text": "第1跳：教学投资人1通过持股关系连接新能源企业21。第2跳：新能源企业21通过交易关系连接新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "controlled_grounded": true,
+    "controlled_generated": true,
+    "controlled_choice": "A",
+    "controlled_probabilities": {
+      "A": 0.44715771079063416,
+      "B": 0.2911609411239624,
+      "C": 0.26168134808540344
+    },
+    "controlled_prompt": "下面三段中文只是在复述搜索程序已经找到的同一条证据链，不允许产生新答案或新事实。请选择表述最清晰的一段，只输出A、B或C。\nA: 第1跳：教学投资人1通过持股关系连接新能源企业21。第2跳：新能源企业21通过交易关系连接新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nB: 第1条证据：从教学投资人1沿持股关系到达新能源企业21。第2条证据：从新能源企业21沿交易关系到达新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nC: 第1跳为教学投资人1—持股→新能源企业21。第2跳为新能源企业21—交易→新能源企业37。该证据链满足2跳关系顺序，终点为新能源行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\n选择：",
+    "controlled_prompt_sha256": "18823ffd9b892306ded6da060c508fe6f28ef756eaf4d6688135ef943ef63402",
+    "controlled_inference_ms": 1929.0053000004264,
+    "controlled_prediction_cache_hit": false,
+    "controlled_prompt_tokens": 275,
+    "controlled_protocol": "model-selected-evidence-wording-v1",
+    "controlled_note": "真实LLM只选择已核验事实的表达方式；文字来自有限证据模板，不是自由生成事实，也不参与搜索答案。",
+    "note": "模型解释可能不准确；有效答案及路径由搜索程序确定，以原始关系为准。"
+  },
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q1",
+    "path": [
+      "test-7-0-N1",
+      "test-7-0-N33",
+      "test-7-0-N5",
+      "test-7-0-N29"
+    ],
+    "text": "教学投资人2 -> 教育机构1 -> 学校33 -> 学生45",
+    "generated": true,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "prompt": "请只用中文解释下面已经由程序找到并核验的图谱路径，不新增实体或关系，不作法律判断。两句话以内。已核验路径：教学投资人2 --HOLDS--> 制造企业33; 制造企业33 --GUARANTEES--> 制造企业05; 制造企业05 --GUARANTEES--> 制造企业29。说明它满足指定的关系顺序，且只是教学证据线索。",
+    "inference_ms": 4014.177600001858,
+    "grounded": false,
+    "verified_text": "第1跳：教学投资人2通过持股关系连接制造企业33。第2跳：制造企业33通过担保关系连接制造企业05。第3跳：制造企业05通过担保关系连接制造企业29。该证据链满足3跳关系顺序，终点为制造行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "verification": "exact evidence-rendered text only; free-form prose is not certified",
+    "missing_path_entities": [
+      "制造企业33",
+      "制造企业05",
+      "制造企业29"
+    ],
+    "graph_sha256": "5947796bdaba7b883aec219e9e8f2bb82580fddcfca93c850f3083f7be39c3bd",
+    "query_sha256": "a0f22d424a373c9819b02e382ede21ce96a22014ea6656d9e08a9550aff3ae38",
+    "edge_ids": [
+      "test-7-0-R0075",
+      "test-7-0-R0027",
+      "test-7-0-R0047"
+    ],
+    "controlled_text": "第1跳：教学投资人2通过持股关系连接制造企业33。第2跳：制造企业33通过担保关系连接制造企业05。第3跳：制造企业05通过担保关系连接制造企业29。该证据链满足3跳关系顺序，终点为制造行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "controlled_grounded": true,
+    "controlled_generated": true,
+    "controlled_choice": "A",
+    "controlled_probabilities": {
+      "A": 0.45425131916999817,
+      "B": 0.308796763420105,
+      "C": 0.23695197701454163
+    },
+    "controlled_prompt": "下面三段中文只是在复述搜索程序已经找到的同一条证据链，不允许产生新答案或新事实。请选择表述最清晰的一段，只输出A、B或C。\nA: 第1跳：教学投资人2通过持股关系连接制造企业33。第2跳：制造企业33通过担保关系连接制造企业05。第3跳：制造企业05通过担保关系连接制造企业29。该证据链满足3跳关系顺序，终点为制造行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nB: 第1条证据：从教学投资人2沿持股关系到达制造企业33。第2条证据：从制造企业33沿担保关系到达制造企业05。第3条证据：从制造企业05沿担保关系到达制造企业29。该证据链满足3跳关系顺序，终点为制造行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nC: 第1跳为教学投资人2—持股→制造企业33。第2跳为制造企业33—担保→制造企业05。第3跳为制造企业05—担保→制造企业29。该证据链满足3跳关系顺序，终点为制造行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\n选择：",
+    "controlled_prompt_sha256": "2832086eaeb178c93a8db7b52be244e9daaf11ee3dcb52b36152b1fb26404da2",
+    "controlled_inference_ms": 2279.52870000081,
+    "controlled_prediction_cache_hit": false,
+    "controlled_prompt_tokens": 327,
+    "controlled_protocol": "model-selected-evidence-wording-v1",
+    "controlled_note": "真实LLM只选择已核验事实的表达方式；文字来自有限证据模板，不是自由生成事实，也不参与搜索答案。",
+    "note": "模型解释可能不准确；有效答案及路径由搜索程序确定，以原始关系为准。"
+  },
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q2",
+    "path": [
+      "test-7-0-N2",
+      "test-7-0-N30",
+      "test-7-0-N14",
+      "test-7-0-N38",
+      "test-7-0-N41"
+    ],
+    "text": "教学投资人3 - HOLDS -> 物流企业30 -> 物流企业14 -> 物流企业38 -> 物流企业41",
+    "generated": true,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "prompt": "请只用中文解释下面已经由程序找到并核验的图谱路径，不新增实体或关系，不作法律判断。两句话以内。已核验路径：教学投资人3 --HOLDS--> 物流企业30; 物流企业30 --HOLDS--> 物流企业14; 物流企业14 --GUARANTEES--> 物流企业38; 物流企业38 --TRADES--> 物流企业41。说明它满足指定的关系顺序，且只是教学证据线索。",
+    "inference_ms": 5977.8323999998975,
+    "grounded": false,
+    "verified_text": "第1跳：教学投资人3通过持股关系连接物流企业30。第2跳：物流企业30通过持股关系连接物流企业14。第3跳：物流企业14通过担保关系连接物流企业38。第4跳：物流企业38通过交易关系连接物流企业41。该证据链满足4跳关系顺序，终点为物流行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "verification": "exact evidence-rendered text only; free-form prose is not certified",
+    "missing_path_entities": [],
+    "graph_sha256": "5947796bdaba7b883aec219e9e8f2bb82580fddcfca93c850f3083f7be39c3bd",
+    "query_sha256": "e8cc90ba77e6e02c89bca4938096c999d08fc22fe1258638b384e902d5a1e06f",
+    "edge_ids": [
+      "test-7-0-R0068",
+      "test-7-0-R0155",
+      "test-7-0-R0015",
+      "test-7-0-R0188"
+    ],
+    "controlled_text": "第1跳：教学投资人3通过持股关系连接物流企业30。第2跳：物流企业30通过持股关系连接物流企业14。第3跳：物流企业14通过担保关系连接物流企业38。第4跳：物流企业38通过交易关系连接物流企业41。该证据链满足4跳关系顺序，终点为物流行业的上市公司；全部边均已核验、有效且置信度不低于0.55。",
+    "controlled_grounded": true,
+    "controlled_generated": true,
+    "controlled_choice": "A",
+    "controlled_probabilities": {
+      "A": 0.4141726791858673,
+      "B": 0.3075675368309021,
+      "C": 0.2782597541809082
+    },
+    "controlled_prompt": "下面三段中文只是在复述搜索程序已经找到的同一条证据链，不允许产生新答案或新事实。请选择表述最清晰的一段，只输出A、B或C。\nA: 第1跳：教学投资人3通过持股关系连接物流企业30。第2跳：物流企业30通过持股关系连接物流企业14。第3跳：物流企业14通过担保关系连接物流企业38。第4跳：物流企业38通过交易关系连接物流企业41。该证据链满足4跳关系顺序，终点为物流行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nB: 第1条证据：从教学投资人3沿持股关系到达物流企业30。第2条证据：从物流企业30沿持股关系到达物流企业14。第3条证据：从物流企业14沿担保关系到达物流企业38。第4条证据：从物流企业38沿交易关系到达物流企业41。该证据链满足4跳关系顺序，终点为物流行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\nC: 第1跳为教学投资人3—持股→物流企业30。第2跳为物流企业30—持股→物流企业14。第3跳为物流企业14—担保→物流企业38。第4跳为物流企业38—交易→物流企业41。该证据链满足4跳关系顺序，终点为物流行业的上市公司；全部边均已核验、有效且置信度不低于0.55。\n选择：",
+    "controlled_prompt_sha256": "7992734f9ce0442cb01a0149ddea75cb49269b94a66ec037bfeee6c44bf4395c",
+    "controlled_inference_ms": 2554.028999998991,
+    "controlled_prediction_cache_hit": false,
+    "controlled_prompt_tokens": 358,
+    "controlled_protocol": "model-selected-evidence-wording-v1",
+    "controlled_note": "真实LLM只选择已核验事实的表达方式；文字来自有限证据模板，不是自由生成事实，也不参与搜索答案。",
+    "note": "模型解释可能不准确；有效答案及路径由搜索程序确定，以原始关系为准。"
+  }
+]

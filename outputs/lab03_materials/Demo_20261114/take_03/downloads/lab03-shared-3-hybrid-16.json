@@ -1,0 +1,718 @@
+{
+  "query": {
+    "id": "shared-3",
+    "start": "P1",
+    "relations": [
+      "HOLDS",
+      "HOLDS",
+      "HOLDS"
+    ],
+    "sector": "综合",
+    "listed": true,
+    "text": "从王建国出发，经过三层持股关系，可以到达哪家上市企业？"
+  },
+  "graph": {
+    "id": "shared-lab01",
+    "split": "shared",
+    "nodes": [
+      {
+        "id": "P1",
+        "name": "王建国",
+        "kind": "Person",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "P2",
+        "name": "李秀英",
+        "kind": "Person",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "P3",
+        "name": "陈志强",
+        "kind": "Person",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "P4",
+        "name": "赵敏",
+        "kind": "Person",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C1",
+        "name": "华鑫控股集团",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C2",
+        "name": "华鑫实业有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C3",
+        "name": "恒通科技股份有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": true
+      },
+      {
+        "id": "C4",
+        "name": "远航贸易有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C5",
+        "name": "盛达物流有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C6",
+        "name": "鼎丰投资有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C7",
+        "name": "鼎丰建设有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C8",
+        "name": "瑞祥建材有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C9",
+        "name": "金桥融资担保有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C10",
+        "name": "天润商贸有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C11",
+        "name": "博远咨询有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "C12",
+        "name": "星辰电子股份有限公司",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": true
+      }
+    ],
+    "edges": [
+      {
+        "id": "S0",
+        "source": "P1",
+        "target": "C1",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.8
+      },
+      {
+        "id": "S1",
+        "source": "C1",
+        "target": "C2",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.65
+      },
+      {
+        "id": "S2",
+        "source": "C2",
+        "target": "C3",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.35
+      },
+      {
+        "id": "S3",
+        "source": "C1",
+        "target": "C3",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.2
+      },
+      {
+        "id": "S4",
+        "source": "P1",
+        "target": "C4",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "S5",
+        "source": "P2",
+        "target": "C4",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.25
+      },
+      {
+        "id": "S6",
+        "source": "C4",
+        "target": "C5",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.9
+      },
+      {
+        "id": "S7",
+        "source": "P3",
+        "target": "C6",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.7
+      },
+      {
+        "id": "S8",
+        "source": "C6",
+        "target": "C7",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.6
+      },
+      {
+        "id": "S9",
+        "source": "C7",
+        "target": "C8",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.4
+      },
+      {
+        "id": "S10",
+        "source": "C8",
+        "target": "C6",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "S11",
+        "source": "P4",
+        "target": "C10",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.51
+      },
+      {
+        "id": "S12",
+        "source": "P4",
+        "target": "C11",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.6
+      },
+      {
+        "id": "S13",
+        "source": "P4",
+        "target": "C9",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "S14",
+        "source": "C1",
+        "target": "C9",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.4
+      },
+      {
+        "id": "S15",
+        "source": "C6",
+        "target": "C12",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "S16",
+        "source": "P4",
+        "target": "C12",
+        "relation": "HOLDS",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 0.1
+      },
+      {
+        "id": "S17",
+        "source": "C7",
+        "target": "C10",
+        "relation": "GUARANTEES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 3000
+      },
+      {
+        "id": "S18",
+        "source": "C10",
+        "target": "C11",
+        "relation": "GUARANTEES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 2000
+      },
+      {
+        "id": "S19",
+        "source": "C11",
+        "target": "C7",
+        "relation": "GUARANTEES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 2500
+      },
+      {
+        "id": "S20",
+        "source": "C9",
+        "target": "C12",
+        "relation": "GUARANTEES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 1000
+      },
+      {
+        "id": "S21",
+        "source": "C4",
+        "target": "C3",
+        "relation": "TRADES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 5000
+      },
+      {
+        "id": "S22",
+        "source": "C5",
+        "target": "C2",
+        "relation": "TRADES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 2000
+      },
+      {
+        "id": "S23",
+        "source": "C10",
+        "target": "C12",
+        "relation": "TRADES",
+        "confidence": 1,
+        "verified": true,
+        "active": true,
+        "value": 800
+      }
+    ]
+  },
+  "result": {
+    "method": "hybrid",
+    "label": "GA + 学习 + 专家",
+    "status": "found",
+    "found": true,
+    "valid": true,
+    "answer": "C3",
+    "path": [
+      "P1",
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "edge_ids": [
+      "S0",
+      "S1",
+      "S2"
+    ],
+    "expanded": 4,
+    "generated": 7,
+    "successor_checks": 0,
+    "expert_rejections": 0,
+    "rollout_steps": 0,
+    "simulations": 0,
+    "total_work": 4,
+    "repeated_states": 0,
+    "heuristic_evaluations": 6,
+    "heuristic_edge_checks": 7,
+    "heuristic_probe_states": 2,
+    "adjacency_edge_scans": 10,
+    "proof_pruned": 3,
+    "proof_checks": 6,
+    "peak_frontier": 1,
+    "total_edge_checks": 7,
+    "successor_cache_hits": 4,
+    "successor_cache_entries": 7,
+    "completed_paths": 1,
+    "redundant_paths": 0,
+    "redundant_path_ratio": 0,
+    "redundancy_ratio": 0,
+    "hops": 3,
+    "elapsed_ms": 0.28780000866390765,
+    "budget": 16,
+    "expert_enabled": true,
+    "trace": [
+      {
+        "id": 0,
+        "node": "P1",
+        "depth": 0,
+        "path": [
+          "P1"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "start",
+        "g": 0,
+        "h": 3.44131,
+        "f": 3.44131,
+        "p": 0.83475
+      },
+      {
+        "id": 1,
+        "node": "P1",
+        "depth": 0,
+        "path": [
+          "P1"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 0,
+        "h": 3.44131,
+        "f": 3.44131,
+        "p": 0.83475
+      },
+      {
+        "id": 2,
+        "node": "C1",
+        "depth": 1,
+        "path": [
+          "P1",
+          "C1"
+        ],
+        "edge_ids": [
+          "S0"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 2,
+        "f": 3,
+        "p": 0.89931
+      },
+      {
+        "id": 3,
+        "node": "C4",
+        "depth": 1,
+        "path": [
+          "P1",
+          "C4"
+        ],
+        "edge_ids": [
+          "S4"
+        ],
+        "parent_path": [],
+        "status": "proof_pruned",
+        "g": 1,
+        "h": null,
+        "f": null,
+        "p": 0.03842,
+        "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+      },
+      {
+        "id": 4,
+        "node": "C1",
+        "depth": 1,
+        "path": [
+          "P1",
+          "C1"
+        ],
+        "edge_ids": [
+          "S0"
+        ],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 1,
+        "h": 2,
+        "f": 3,
+        "p": 0.89931
+      },
+      {
+        "id": 5,
+        "node": "C2",
+        "depth": 2,
+        "path": [
+          "P1",
+          "C1",
+          "C2"
+        ],
+        "edge_ids": [
+          "S0",
+          "S1"
+        ],
+        "parent_path": [
+          "S0"
+        ],
+        "status": "generated",
+        "g": 2,
+        "h": 1,
+        "f": 3,
+        "p": 0.8557
+      },
+      {
+        "id": 6,
+        "node": "C9",
+        "depth": 2,
+        "path": [
+          "P1",
+          "C1",
+          "C9"
+        ],
+        "edge_ids": [
+          "S0",
+          "S14"
+        ],
+        "parent_path": [
+          "S0"
+        ],
+        "status": "proof_pruned",
+        "g": 2,
+        "h": null,
+        "f": null,
+        "p": 0.02962,
+        "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+      },
+      {
+        "id": 7,
+        "node": "C3",
+        "depth": 2,
+        "path": [
+          "P1",
+          "C1",
+          "C3"
+        ],
+        "edge_ids": [
+          "S0",
+          "S3"
+        ],
+        "parent_path": [
+          "S0"
+        ],
+        "status": "proof_pruned",
+        "g": 2,
+        "h": null,
+        "f": null,
+        "p": 0.02962,
+        "reason": "当前无合法后继，或有界后缀已完整核验且无法满足目标"
+      },
+      {
+        "id": 8,
+        "node": "C2",
+        "depth": 2,
+        "path": [
+          "P1",
+          "C1",
+          "C2"
+        ],
+        "edge_ids": [
+          "S0",
+          "S1"
+        ],
+        "parent_path": [
+          "S0"
+        ],
+        "status": "expanded",
+        "g": 2,
+        "h": 1,
+        "f": 3,
+        "p": 0.8557
+      },
+      {
+        "id": 9,
+        "node": "C3",
+        "depth": 3,
+        "path": [
+          "P1",
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "edge_ids": [
+          "S0",
+          "S1",
+          "S2"
+        ],
+        "parent_path": [
+          "S0",
+          "S1"
+        ],
+        "status": "generated",
+        "g": 3,
+        "h": 0,
+        "f": 3,
+        "p": null
+      },
+      {
+        "id": 10,
+        "node": "C3",
+        "depth": 3,
+        "path": [
+          "P1",
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "edge_ids": [
+          "S0",
+          "S1",
+          "S2"
+        ],
+        "parent_path": [
+          "S0",
+          "S1"
+        ],
+        "status": "expanded",
+        "g": 3,
+        "h": 0,
+        "f": 3,
+        "p": null
+      },
+      {
+        "id": 11,
+        "node": "C3",
+        "depth": 3,
+        "path": [
+          "P1",
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "edge_ids": [
+          "S0",
+          "S1",
+          "S2"
+        ],
+        "parent_path": [
+          "S0",
+          "S1"
+        ],
+        "status": "solution",
+        "g": 3,
+        "h": 0,
+        "f": 3,
+        "p": null
+      }
+    ],
+    "trace_events": 12,
+    "trace_truncated": false,
+    "classifier_used": true,
+    "heuristic_used": true,
+    "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+  },
+  "llm": {
+    "mode": "off"
+  },
+  "path_evidence": [
+    {
+      "id": "S0",
+      "source": "P1",
+      "target": "C1",
+      "relation": "HOLDS",
+      "confidence": 1,
+      "verified": true,
+      "active": true,
+      "value": 0.8,
+      "eligible": true,
+      "rejection_reason": ""
+    },
+    {
+      "id": "S1",
+      "source": "C1",
+      "target": "C2",
+      "relation": "HOLDS",
+      "confidence": 1,
+      "verified": true,
+      "active": true,
+      "value": 0.65,
+      "eligible": true,
+      "rejection_reason": ""
+    },
+    {
+      "id": "S2",
+      "source": "C2",
+      "target": "C3",
+      "relation": "HOLDS",
+      "confidence": 1,
+      "verified": true,
+      "active": true,
+      "value": 0.35,
+      "eligible": true,
+      "rejection_reason": ""
+    }
+  ],
+  "explanation": "第1跳：王建国通过持股关系连接华鑫控股集团。第2跳：华鑫控股集团通过持股关系连接华鑫实业有限公司。第3跳：华鑫实业有限公司通过持股关系连接恒通科技股份有限公司。该证据链满足3跳关系顺序，终点为综合行业的上市公司；全部边均已核验、有效且置信度不低于0.55。"
+}

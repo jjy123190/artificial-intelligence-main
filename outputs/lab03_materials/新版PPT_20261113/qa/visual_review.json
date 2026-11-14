@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-13T23:45:06.710429+08:00",
+  "slides_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "method": "Both final contact sheets inspected; cover, algorithm-cycle, GA, percent chart, trace and migration sample inspected at full slide resolution.",
+  "pptx_sha256": "253a62900d55de14cc20e364b8b1eaf199301469c58d42a5f64f248b3cfd6c54",
+  "pdf_sha256": "6eb56ae2e5cac922618d8653d6a33c0d29870b1add948a22309f4aef04408cbc",
+  "findings": {
+    "no_visible_overlap_or_clipping": true,
+    "ga_axis_and_legend_clear": true,
+    "success_labels_percentage_format_and_contrast": true,
+    "mcts_cycle_direction_correct": true,
+    "current_report_cover_sync": true,
+    "member_table_without_workload_weights": true
+  },
+  "powerpoint_text_overflow_count": 0
+}

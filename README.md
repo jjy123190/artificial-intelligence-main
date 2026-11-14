@@ -1,8 +1,18 @@
-# 人工智能课程项目 · 源码工作区
+# 人工智能课程项目 · 源码与完整成果
 
-GitHub 仓库维护实验一、实验二、实验三的源码、测试、依赖配置、运行脚本和必要输入数据。
-本地工作区还可包含报告、PPT、视频、运行结果和制作资料；这些生成文件按 `.gitignore` 排除，不随源码提交。
-`README.md` 是运行说明，不是实验报告。`.git/` 仅用于版本管理，不参与源码交付。
+本仓库完整保存实验一、实验二、实验三的当前源码、测试、运行脚本、输入数据、实验结果、正式报告、PPT、视频和制作核验资料。
+2026年11月14日起，GitHub不再仅维护源码；`deliverables/`、实验运行数据和 `web/dist/` 均随项目版本保存。
+仅排除密钥、模型权重、已安装依赖、缓存、本机案例数据库和服务运行状态。课程提交材料与制作资料仍分开存放，完整上传不表示全部文件都必须交给老师。
+
+## 最新成果入口
+
+- 实验三正式材料：`deliverables/lab3/`，包含30页报告Word/PDF、17页PPT、1分钟Demo、4分钟配音字幕演讲视频。
+- 已核查的可运行代码目录：`deliverables/lab3/实验3_源码/`；用户自行压缩的提交文件：`deliverables/lab3/实验3_源码.zip`。两者原样保存，不因仓库说明调整而改写内部文件或校验清单。
+- 实验一、二正式材料：`deliverables/lab1/`、`deliverables/lab2/`。
+- 网站运行数据：`outputs/lab01/`、`outputs/lab02/`、`outputs/lab03/`。
+- 实验三制作与核验资料：`outputs/lab03_materials/`，包含冻结证据、图表、视频制作源及历史版本；不是另一套正式提交材料。
+
+本README是项目运行说明，不是实验报告。提交目录内部的README和Git基线描述属于交付当时的冻结说明，以各目录用途区分，不把旧材料快照当作当前正式成果。
 
 ## 文件结构
 
@@ -39,7 +49,7 @@ artificial-intelligence-main/
 
 ## 基础运行
 
-建议 Python 3.11+；首次构建网页需要 Node.js 18+。
+建议 Python 3.11+；修改源码后重新构建网页需要 Node.js 18+。仓库已带 `web/dist/`，普通启动无需先安装前端依赖。
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -50,7 +60,13 @@ python -B -X utf8 main.py lab03 demo
 实验三默认 demo 明确使用 `astar_fixed`，不冒充已经训练的混合模型。
 基础 BFS、下界 A*、固定 A*、MCTS 不依赖历史实验结果。
 
-构建并运行网页：
+直接运行随仓库保存的已构建网页：
+
+```powershell
+python -B -X utf8 main.py web --port 8765
+```
+
+修改前端源码后再构建并运行：
 
 ```powershell
 cd web
@@ -64,12 +80,13 @@ python -B -X utf8 main.py web --port 8765
 三次实验也可以使用 `experiments/lab01/打开网站.cmd`、`experiments/lab02/打开网站.cmd`、
 `experiments/lab03/打开网站.cmd` 直达。关闭网站使用 `停止网站.cmd`。
 
-**首次运行时没有历史结果是正常状态。** 页面会显示“未生成 / 不可用”及操作说明，
-不会用零、固定参数或中性分数冒充真实实验记录。启动脚本不隐式执行完整实验或生成报告。
+完整克隆包含当前实验结果，可直接查看统计和真实LLM评分回放。若自行导出纯源码或删去运行数据，页面会如实显示“未生成 / 不可用”，不会用固定数字冒充实验记录。启动脚本不隐式执行完整实验或生成报告。
+
+LLM评分回放不等于现场再次调用模型；普通网页使用基础依赖即可，不要求下载大模型权重。
 
 ## 从源码初始化实验结果
 
-以下命令仅在主动运行时创建 `outputs/`；纯源码整理完成时不预先保留它。
+以下命令用于主动重新计算结果，可能改写 `outputs/`。仓库已有冻结结果，普通展示无需重跑；完整重算前请复制项目，以免新结果与正式报告不一致。已有有效结果时初始化脚本会复用，明确重算需要添加 `--force`。
 
 ```powershell
 # 实验一基准
@@ -105,11 +122,10 @@ python -B -X utf8 scripts/prepare_lab03.py --llm
 ## 测试与源码导出
 
 ```powershell
-# 不生成实验结果；缺少历史实测文件的核验会明确 skipped
+# 验证源码和已有实验证据；完整验证需要安装实验计算依赖
 python -B -X utf8 -m unittest discover -s tests -t . -v
 
-# 检查目录只有列入白名单的源码/输入/配置；不写任何结果
-python -B -X utf8 scripts/check_source.py
+# 本仓库包含完整成果，不适用“纯源码目录”检查；该检查仅用于下面导出的目录
 
 # 导出所有三次实验；目标必须是项目外、尚不存在的新目录
 python -B -X utf8 scripts/export_source.py --destination C:\path\to\new-source
@@ -122,24 +138,20 @@ python -B -X utf8 scripts/export_source.py --destination C:\path\to\new-source
 前端安装依赖后可运行 `npm run test:routes`、`test:notation`、`test:api`、`test:lab03`。
 浏览器检查还需要实际运行的网页与 Playwright 浏览器。
 
-## 生成文件与提交边界
+## 完整版本保存与课程提交边界
 
-主动安装/构建/实验会产生 `web/node_modules/`、`web/dist/`、`outputs/`、虚拟环境和运行状态；
-这些目录已在 `.gitignore` 中排除，**不是纯源码的一部分**。
-导出源码时使用 `scripts/export_source.py`，不要把生成结果改名放入 `data/`。
-
-GitHub 源码与可运行课程提交目录用途不同：
-
-- GitHub 不跟踪 `outputs/`、`deliverables/`、`web/dist/` 或本机运行状态；已有本地文件不因取消跟踪而被删除。
-- 全新克隆可按前述命令构建前端并生成当前实验结果。没有历史结果时，网页会如实显示缺项。
-- 课程提交目录可额外携带已构建前端和经核验的运行数据，便于直接查看现有实验、GA/路径学习结果和真实 LLM 评分回放。
-- 回放不等于现场调用模型；实时模型推断另需安装可选依赖并准备固定模型权重。
-- 历史实验核验存在相互校验的基线归档，恢复时应保留完整依赖，不改写记录指纹，也不以重跑结果冒充原报告数据。
-- 课程平台的项目创建、成员关联与管理员正式提交仍由小组自行确认，GitHub 推送不能代替课程提交。
+- `deliverables/`、`outputs/lab01/`、`outputs/lab02/`、`outputs/lab03/`、`outputs/lab03_materials/` 和 `web/dist/` 现已纳入版本管理。
+- `.gitignore` 只排除不适合提交的安装依赖、缓存、凭证、本机 `.state/` 与 `outputs/runtime/` 等运行状态；不会再整体忽略课程成果。
+- 代码交付目录中的原始 `.gitignore` 按冻结文件保留，相关运行数据已经显式加入Git；克隆仍会获得已跟踪文件。若以后往该目录新增原规则忽略的文件，应先核查再显式添加，不要误认为普通 `git add` 已包括全部内容。
+- `outputs/lab03/runtime/` 是实验运行时优化的冻结证据，**不是**本机服务目录 `outputs/runtime/`，前者需要保留。
+- 原始基线ZIP是证据核验的输入，内含历史材料也不能随意删改；它们不替代当前正式报告和视频。
+- 制作源、日志和历史版本用于完整保存与追溯，不代表老师要求把它们全部作为课程附件提交。
+- 纯源码导出功能保留：使用 `scripts/export_source.py` 到外部新目录，不要手工挪动或改写原始数据。
+- 课程平台的项目创建、成员关联与管理员提交仍由小组自行完成，GitHub上传不能代替课程平台提交。
 
 ## 实验三材料位置（当前）
 
 - 正式提交文件：`deliverables/lab3/`（30页报告、17页PPT、1分钟Demo及4分钟配音字幕演讲视频）。
-- 制作与核验资料：`outputs/lab03_materials/`（图表、冻结证据、制作源和历史版本；不是另一套提交材料）。该目录仅在本地保存，使用方法见其中的 `README.md`。
+- 制作与核验资料：`outputs/lab03_materials/`（图表、冻结证据、制作源和历史版本；不是另一套提交材料）。该目录随GitHub完整版本保存，使用方法见其中的 `README.md`。
 - 网站运行数据仍在 `outputs/lab03/`，不依赖上述制作资料目录。
 - 报告、图片及验收记录的历史快照不作为当前正式交付版本；当前核验入口是 `python -B -X utf8 outputs/lab03_materials/verify_materials.py`。

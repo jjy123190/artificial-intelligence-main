@@ -1,0 +1,40 @@
+{
+  "search": "known_suffix",
+  "search_reason": "Answerable validation is identical for all measured methods; choose exact known-negative pruning for smaller live frontier and validation-derived unanswerable termination (79/81 within8 vs0/81). It uses only already requested local evidence, not added lookahead or labels. Unknown truncated suffixes are never removed.",
+  "llm_readout": {
+    "kind": "frozen_qwen_hidden_logistic",
+    "l2": 0.1,
+    "trained_on": "301 unique prompt facts from 1296 real train prefixes across all18 train graphs",
+    "selection": "0.001 over-rejects eligible boundary;0.01 and0.1 tie on validation and boundary, choose stronger regularization0.1;1.0 loses more validation negatives.",
+    "validation": {
+      "prefixes": 648,
+      "eligible": 568,
+      "ineligible": 80,
+      "false_accept": 2,
+      "false_reject": 0
+    },
+    "unseen_validation_prompt_subset": {
+      "prefixes": 225,
+      "unique_prompts": 79,
+      "ineligible": 80,
+      "false_accept": 2,
+      "false_reject": 0
+    },
+    "development_boundaries": {
+      "total": 33,
+      "eligible": 6,
+      "ineligible": 27,
+      "false_accept": 4,
+      "false_reject": 0
+    },
+    "raw_model_output_retained": true,
+    "claim": "Calibrated LLM representation is a separate supervised evaluator, not improved zero-shot Qwen or deterministic expert output."
+  },
+  "unadopted": [
+    "terminal-only pruning did not affect answerable validation",
+    "all seven pure prompt variants failed to improve the numeric boundary check",
+    "free generation diagnostic remained numerically unreliable",
+    "weakly regularized .001 linear readout traded unsafe recall for a new false rejection"
+  ],
+  "freeze_note": "No current-stage test/OOD or new confirmation has been evaluated for these changes."
+}

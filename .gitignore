@@ -1,21 +1,27 @@
-# Installed dependencies and local state
+# Installed dependencies, caches and machine-local state (at any depth).
 __pycache__/
 *.pyc
 .venv/
 venv/
-web/node_modules/
-web/*.tsbuildinfo
+node_modules/
+*.tsbuildinfo
 .state/
 .pytest_cache/
-# Every result/build/material is generated or restored separately.
-outputs/
-deliverables/
-web/dist/
-# Local credentials and editor/OS transient files
+.mypy_cache/
+.ruff_cache/
+**/outputs/runtime/
+
+# Credentials, model weights and editor/OS transient files.
 .env
 .env.*
 !.env.example
+*.safetensors
 ~$*
 Thumbs.db
 .DS_Store
 *.tmp
+
+# Deliberately versioned: deliverables/, experiment outputs/, web/dist/,
+# and outputs/lab03_materials/ including evidence and production sources.
+# Reviewed submission folders may contain their original .gitignore files;
+# their frozen payload is explicitly added without changing submitted bytes.

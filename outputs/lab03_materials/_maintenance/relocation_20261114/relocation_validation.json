@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-14T11:11:44.405586+08:00",
+  "moved_originals": 244,
+  "report": {
+    "pages": 30,
+    "unchanged_tables": 30,
+    "unchanged_embedded_figures": 14,
+    "matched_text_items": 903,
+    "reviewed_paragraph_updates": 20
+  },
+  "gallery": {
+    "references": 138,
+    "local_files": 54
+  },
+  "examples": {
+    "positive_examples": 2,
+    "negative_checks": 8,
+    "llm_calls": 0
+  },
+  "visual_review": [
+    "preview/contact_1.png",
+    "preview/contact_3.png",
+    "preview/page_29.png"
+  ],
+  "formal_ppt_unchanged": true,
+  "pdf_source_note": "PDF re-exported from current saved DOCX. The pre-existing PDF contained old cover and header text no longer in the saved DOCX; current export follows the saved DOCX without changing its header/footer parts.",
+  "formal_files": {
+    "deliverables/lab3/第31组_实验三_实验报告.docx": "34a16a8bf45dc48cfdd54e99a254ba8d9441d483903541670fdc5d96dba46fa1",
+    "deliverables/lab3/第31组_实验三_实验报告.pdf": "47eee476a5cdd771dba6552f8fd6209b9632d095743ed47941f4fc04e58dec82",
+    "deliverables/lab3/第31组_实验三_汇报.pptx": "253a62900d55de14cc20e364b8b1eaf199301469c58d42a5f64f248b3cfd6c54"
+  }
+}

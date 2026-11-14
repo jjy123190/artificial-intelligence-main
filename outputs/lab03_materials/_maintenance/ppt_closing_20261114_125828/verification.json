@@ -1,0 +1,99 @@
+{
+  "source": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\deliverables\\lab3\\第31组_实验三_汇报.pptx",
+  "backup": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\_maintenance\\ppt_closing_20261114_125828\\第31组_实验三_汇报_追加结束页前.pptx",
+  "candidate": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\_maintenance\\ppt_closing_20261114_125828\\第31组_实验三_汇报_含结束页.pptx",
+  "slides_before": 16,
+  "slides_after": 17,
+  "before_sha256": "e0bc08a8cf46971b1ca9b707e5f86d04a2f1785d1d4af9af87c891353796729d",
+  "candidate_sha256": "da6af2c4b1d7bd2686111c2a06dace60e53da1fdb0442eefb78970092630ae58",
+  "changed_existing_package_parts": [
+    "[Content_Types].xml",
+    "docProps/app.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "ppt/presentation.xml"
+  ],
+  "added_parts": [
+    "ppt/slides/slide17.xml",
+    "ppt/slides/_rels/slide17.xml.rels"
+  ],
+  "unchanged_original_content_parts": 116,
+  "original_slides_byte_identical": true,
+  "editable_closing_slide": true,
+  "closing_text": [
+    "",
+    "人工智能导论  /  实验三",
+    "THANK YOU",
+    "谢谢聆听",
+    "",
+    "敬请老师批评指正",
+    "软件工程5班",
+    "梁镇贤（组长）  陈宗波  温文辉  陈宇冲  刘亦达",
+    "17"
+  ],
+  "visual_review": "passed",
+  "PowerPoint_render": "passed",
+  "unchanged_render_checks": [
+    {
+      "slide": 1,
+      "pixel_identical": true
+    },
+    {
+      "slide": 16,
+      "pixel_identical": true
+    }
+  ],
+  "closing_text_bounds": [
+    {
+      "text": "人工智能导论  /  实验三",
+      "height_pt": 31.68000030517578,
+      "text_bound_height_pt": 24.450000762939453,
+      "width_pt": 604.7999877929688,
+      "text_bound_width_pt": 181.25
+    },
+    {
+      "text": "THANK YOU",
+      "height_pt": 30.239999771118164,
+      "text_bound_height_pt": 21.600000381469727,
+      "width_pt": 504.0,
+      "text_bound_width_pt": 131.9499969482422
+    },
+    {
+      "text": "谢谢聆听",
+      "height_pt": 93.5999984741211,
+      "text_bound_height_pt": 81.5999984741211,
+      "width_pt": 792.0,
+      "text_bound_width_pt": 272.0
+    },
+    {
+      "text": "敬请老师批评指正",
+      "height_pt": 44.63999938964844,
+      "text_bound_height_pt": 31.200000762939453,
+      "width_pt": 720.0,
+      "text_bound_width_pt": 208.0
+    },
+    {
+      "text": "软件工程5班",
+      "height_pt": 23.760000228881836,
+      "text_bound_height_pt": 24.450000762939453,
+      "width_pt": 475.20001220703125,
+      "text_bound_width_pt": 95.5
+    },
+    {
+      "text": "梁镇贤（组长）  陈宗波  温文辉  陈宇冲  刘亦达",
+      "height_pt": 23.040000915527344,
+      "text_bound_height_pt": 18.0,
+      "width_pt": 900.0,
+      "text_bound_width_pt": 320.6000061035156
+    },
+    {
+      "text": "17",
+      "height_pt": 25.200000762939453,
+      "text_bound_height_pt": 16.799999237060547,
+      "width_pt": 36.0,
+      "text_bound_width_pt": 16.399999618530273
+    }
+  ],
+  "visual_review_notes": "结束页与封面/结论页同色系，标题及副标题清晰、居中、无重叠；所有元素原生可编辑。前16页XML完全一致，封面和第16页渲染逐像素一致。",
+  "published_at": "2026-11-14T13:04:30.125207+08:00",
+  "delivered_sha256": "da6af2c4b1d7bd2686111c2a06dace60e53da1fdb0442eefb78970092630ae58"
+}

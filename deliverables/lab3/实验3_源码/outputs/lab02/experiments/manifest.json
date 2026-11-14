@@ -1,0 +1,256 @@
+{
+  "created_utc": "2026-10-25T11:40:02.644282+00:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "__init__.py": "b7995f33544e881f94797bc3289a3cd07ca1eb0658e16d25328ed774ebebd5d6",
+    "backend/__init__.py": "aad7d75b540e253d5af8ef4400d7b5b79e604657dc85721b3ddef3f5733f3cce",
+    "backend/api.py": "703775bb27aac4d5808f1d5ae6fb4cb94874a146122a4a1f2d4a07ed83ba8cf9",
+    "backend/course.py": "bc4b3d1d553eb169ca18b73163e862e2ed769133c5615228c6636686c39e01b6",
+    "backend/schemas.py": "a77f1c331a58e8d6995e19dda23b152936a96f99f3e4959206a8e89ecfd1bec5",
+    "backend/serve.py": "cafe927231b8cbd4819dd29806c9daa77fa94a281ed02980e6696eece8d03ca0",
+    "backend/service.py": "c9eb958cc197daf9e5224c480a241856e45fdec764b780719ae7aafc959f40f1",
+    "backend/worker.py": "3babe1ec776efb4e0d3bec95a2599d3fd78872833ffdefcf4916cb173161a21f",
+    "core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core/kb/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core/kb/domain.py": "10beda38404c8276204bf3da6a36bffc3412e469eb00d1f9bf7278acb8c4363e",
+    "core/kb/equity.py": "ccffb26812c31e0a0a0d07b71824c39df3fce76bd85ce36e183fba0f6a09176e",
+    "core/kb/facts.py": "5aad2e8314f4cb6f8423d9feb4455d938d47ef8bf15e3db3a274e41bfa470fb6",
+    "core/kb/features.py": "6b26acf3f9d8fc520a581dc1537bbde853e6d8369e4d7366df6c64e5a0e5efb3",
+    "core/kb/fol.py": "405667f655dc5fb997610533aca0cf857558c7c2195ec9780cd3882ae4e8d648",
+    "core/kb/governance.py": "742e2d9e15fef4782bdbe32fb6dabc0eddfd0ee104de0410287ddf41ae3d1364",
+    "core/kb/governance_examples.py": "e4103bf3a34e7ff9ee2b6b8e61476c6a9a58f6727e4334879ff52eeb93b4bba2",
+    "core/kb/graph_io.py": "fe589920cc1bd2f44566f6dff9e86beffa6036ea5d5c58c29caf1d563bfe520e",
+    "core/kb/guard_display.py": "3ab30b70e647c71500f33434faefafb7d0541deae8dbbcfc4098e5d80dc1e693",
+    "core/kb/history.py": "2352eaae20e0c7c021ab97143ec7f2feb21d546fdb829c9465777a581775fce6",
+    "core/kb/rules.py": "a796d9845ec3ce39312f01a3cc7499cdf8d4161f0f1521114cab5045c0f7d4d4",
+    "core/kb/rules_dsl.py": "fb76f3c84eb0e6df6b51ef32c995c030671c19100cbef3da916df4a8e781e2bc",
+    "core/kb/screening.py": "1993ec0f2edb90169389afa973bfd336fe054893149792cd29e577e95ba93deb",
+    "core/kb/unify.py": "7539c14f7cb40326153116db71fb979dc2403446e814cb674d98dbd3a80330d8",
+    "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab01/audit_deliverables.py": "ce65bf7013667753fabb7bd26d14aef8e95379869b240d812a32f6c4d53ca928",
+    "experiments/lab01/benchmark.py": "db6b89be2c9f16888a082615689af199d4b514585cb8d1e147ef753ef1233823",
+    "experiments/lab01/caption_live_recording.py": "fb5a333c6594f38a3b63c8202cb99747a83811f35040267aeaf3b9ae671977b4",
+    "experiments/lab01/dataset.py": "bf9889203851abffa8b9d22e42d42f3efd9f6542d67f39c5ea51bf67937b7d84",
+    "experiments/lab01/kr/__init__.py": "c545c94d84a8c983c461f9c8a5e083589067cac78698d3169f1a5b67fb9038f7",
+    "experiments/lab01/kr/frames.py": "aca43eb076c21aa336af5fba6287c86691a6dbaae95a2cd22f9a20cd5eb885a2",
+    "experiments/lab01/kr/knowledge_graph.py": "981a3cac2c673d94aaf411e73fea7c8be91c9281c1506865af3f72726d79c6ef",
+    "experiments/lab01/kr/production.py": "f9356f2a398f9d3f730b5e683bb2015cb4b3f62938d58ebe3ea606abb131e0b5",
+    "experiments/lab01/kr/relational.py": "b346abf7ccd315d5a35de4f6ce1c7ac859bbc3d710380e32b780448f4fd4bca5",
+    "experiments/lab01/main.py": "bdcf03ba824771250daf78c6d9bac6b7a4b4afd021c4b3080af4ab81406cb7f7",
+    "experiments/lab01/package_current_submission.py": "3db64fee8b69ffd8cb02e9f5f1d386b01154dc9476e4ca028987ca0fa977ef7f",
+    "experiments/lab01/reasoning/__init__.py": "07db6ba6d6a4952161da67e2488490f83506e6d5dfc4f70f644b008c2ea5a74e",
+    "experiments/lab01/reasoning/graph_reasoning.py": "cbc8056cc3fe4ab4f081cb1f6a5d920d80394204206fcae2b682776d8e5e6d68",
+    "experiments/lab01/reasoning/rules.py": "5477b4af85a1eafeb35e66c1dbcde087990ddbc9057a0f9994d521174f358c6e",
+    "experiments/lab01/record_live_demo.py": "f6406ee5392f836ce3241335ef6f42db74f8d438d4bd7ea236a24de5f0b99ccd",
+    "experiments/lab01/service.py": "e4b4ed73cf68104b6c5e41185372dab07abbe7a89a9d245cbc1d91132854ca6f",
+    "experiments/lab01/viz.py": "fabc4d50bce082121b8b3868b32421e65ce6c6894e19ea8017f286f0c2f499af",
+    "experiments/lab02/__init__.py": "e8bc61b1f29d40f533414295ffaef66ce3b3f7fe4d53caab6bbb905a56b02390",
+    "experiments/lab02/deterministic/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab02/deterministic/backward.py": "1cf0ae4f9f37572d36b56b3f6015808371cbeb69e3edc885986c4b81fe4620c5",
+    "experiments/lab02/deterministic/forward.py": "12dfecf65a888cb4f7789015b3b46f4e0f3294f40d980a5212f168f17a183a93",
+    "experiments/lab02/deterministic/resolution.py": "3953887899a72c43b8d3c6ba90aaf834508b3726129105e6480c28b12aa0cca9",
+    "experiments/lab02/eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab02/eval/artifacts.py": "0aeed6565230f253889cc78ba35189d4f5284399876f4aa9b6571db4faebf7dc",
+    "experiments/lab02/eval/benchmark.py": "b9ff0197044487734d7b3d94f3e811e8c51fa89c7c202fc5a1c8e0ce2fa856a1",
+    "experiments/lab02/eval/e2e_plots.py": "e0ea6adafedbfce282a11f6023c5a5c245279bf1f5c1a4f4f411c1f445961dd0",
+    "experiments/lab02/eval/end_to_end.py": "4fb215ed9d27991453e07855a67cef04db8558b32676b34dd19d81d0f82ba00f",
+    "experiments/lab02/eval/experiments.py": "a8d39870d7079736afbf3d117346a1bf2fe49d515384191a4e3e36408dab0088",
+    "experiments/lab02/eval/governance_experiments.py": "a60bd1084491e4e63554f4192256cadcd2067d6f05e6bad7b56e2278c382693c",
+    "experiments/lab02/eval/graph_data.py": "9e64d0988d74ad112a0de74c8aabec3e59e357b9a9e2808efb4c972e906ec213",
+    "experiments/lab02/eval/metrics.py": "ff8abbc360df4cab95dae490d79fbd5f017ac636bb680075dc87151832460b64",
+    "experiments/lab02/eval/plots.py": "466d6c1fb7a686ff88d6c988c4fb7527ee99c511682d7ca77619da38a9d44755",
+    "experiments/lab02/eval/synthetic.py": "a4f0a18c16d93f899ecb811c30e770c874fbdbca9d538deebf3eec83e25ca538",
+    "experiments/lab02/eval/verification.py": "4c963fdcfac0539d7db6cb3b6f879a8fdae8b89aea7ae9e9e5a2ec14d041b1f8",
+    "experiments/lab02/hybrid/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab02/hybrid/calibration.py": "86a65e16f13b2295f9d43838f3770272a26493315db7170e8f41a316790ae787",
+    "experiments/lab02/hybrid/decision.py": "4fe399f6a828f7c217820cec3ac2a14d8017c0b19d5e9fa40c0eace426de1726",
+    "experiments/lab02/hybrid/model.py": "132821dc837e6714e2ef6db41277e9d37d2fa2a35e5b50fb54cc2a6bc37abdbd",
+    "experiments/lab02/hybrid/pipeline.py": "75ab5205fab16992385662731a7a9ffab0e2a6c68d69bf061b6f559f81c24e33",
+    "experiments/lab02/main.py": "a7337f9f0f72b41b13c958e445c503c52ba2552cbd07f91f512eec7d36525a62",
+    "experiments/lab02/optimize/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab02/optimize/search.py": "11d2ff14ae7468a7f593728ab1c0553388c615cf603bc1a351fd7f922cfd3c63",
+    "experiments/lab02/service.py": "df6d71dee7a03ca10ad15a34d2a43a3fb04b37dd54dfc52bef1d0c631ec2ffcc",
+    "experiments/lab02/uncertain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/lab02/uncertain/bayes.py": "bb3b4b6cb8842a5d4d8d5fd0320a7ff03da4fa1b5681603132532ee640a08a8f",
+    "experiments/lab02/uncertain/dempster_shafer.py": "956febc72cde6ee2f6d1c8f82c1c97e4f33e48e3568c478cc4fd5817d33425b9",
+    "experiments/lab02/uncertain/fuzzy.py": "e4f7e86f86648c00b363eb397c2047243f7e94c3fc2510a98fc953def1434bc9",
+    "main.py": "2832f61b9624dd73bcd353d58f29f15dc9f2cf639374fd478f1b7c56373621f4",
+    "scripts/__init__.py": "3147be949bcbde12d3866619ae29fe404ed40ac38008f1d574f60ce6383dfa85",
+    "scripts/check_course.py": "1f8ca589adb0669a9f2db09d42670f2eddc0d37cb1cf572a7b1caf15ef3d298c",
+    "scripts/check_evidence_navigation.py": "39894c6fa7391689cde98d2a4128ca4a37821552e2beadee5df56a27edc7683d",
+    "scripts/check_hardening.py": "8aa0e5ab191a01e792b8bc81103e0b75d95b95f95a54f4871d6406ce6c3afcff",
+    "scripts/check_kb.py": "304dbb5e08d3a42d119fb826c4fbf076f5042dbde9481799ab33d5f95cdefd98",
+    "scripts/check_rule_notation.py": "2b46ba1cf7da067722c749f20ee5090422655447365e788ba3e88236b943c289",
+    "scripts/check_shared_case.py": "a1d758726137a9092c493e92c4710d076cbce0d139cc0a1ff5d48921f0d4c99c",
+    "scripts/check_task_inputs.py": "468dd256e90d70b45b90aec1c1f5fa8257a4e3966d01a07446d94f411f78a19e",
+    "scripts/check_task_journeys.py": "da13d94e7caf529eecbb4594a2efab5e4252b63966709b2fd09f26d10ab4ef3f",
+    "scripts/check_web.py": "414969c4f7fd4cfd71d0741d10a97f002d48910b1742ab7d54347298fcf029f6",
+    "scripts/package_project.py": "ba6ee557464c230c5c0fa37fda2aa74a2890503407af19c1cec3b5506a5b73ec",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/lab01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/lab01/test_project.py": "86ede743bc276b6b6cbc7a6b8a95aa6839d6e87d416848db148a79fe862a718b",
+    "tests/lab02/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/lab02/test_adaptive.py": "cc7540eaa4804dad6496449a6960b40b4717944657a8a49ea4b489f6f8b1eec9",
+    "tests/lab02/test_deterministic.py": "5a3f74c7ee57ffb7991a2aecd29139dfb21de296050955d06d76458c7c0bcbfc",
+    "tests/lab02/test_end_to_end.py": "d3834edd6c32ebf705d3936fd0972a48a4d95c98acc02234058a4649e0b9ec89",
+    "tests/lab02/test_governance.py": "ff064d817cd639e918c3695a5d3da84508d00f5a77f039d3e8743cd172ebe39a",
+    "tests/lab02/test_guard_display.py": "e5abe33a93191b0c0a1cb9e5a8bc31ddc5b2de431a1abd23a9a6aa2f80fcb1a5",
+    "tests/lab02/test_logic.py": "1a6b7d68c8a62db307e7e74c9bd8759f478363ca6abbe046549bcb8dc67d0527",
+    "tests/lab02/test_pipeline.py": "441d56a60dd8908d5a5a6a93e16bf5d518cfd5274fa8cb749dcff1244d7d1c70",
+    "tests/lab02/test_uncertain.py": "1a213a9e92137fcb57bcade8a8f5c41919c875368c533d0361f9e3315a31630d",
+    "tests/lab02/test_verification.py": "d424af579e406f25ce2b37ad84cd82330bef2125e40df7447cc9db5bdb9d5985",
+    "tests/lab02/test_web.py": "6b3254db35c7e0ed7f4f100228915b6d53decc0a64c40ed57df0f7ecb4fed5c5",
+    "tests/test_course.py": "84e500e87438ab54ad6412d8a112b81ea22a88b222dc764f3eab0864f4f124bc",
+    "tests/test_packaging.py": "6e56b59acec578d6369a69eabeaae3d4738a4d043d73732f6f3d9e217dd7e341"
+  },
+  "snapshot_sha256": {
+    "companies.csv": "b6bba337141e051957169bf41b7d623f61c7e449d27cc04ed80595fdd2319839",
+    "guarantees.csv": "c753193bf4034f74ebd80d29ebbda480e51a8884f7ae3a20f467af76504c2343",
+    "holdings.csv": "42ca7827dfd4f17b6fd6fd25005a378cc30f0707046bf48512d2fd4860a3cb1c",
+    "kinships.csv": "c031da6461502bd5fbe8319aa8eef66202fc0e1e264c868523b3e31e9951fd79",
+    "persons.csv": "dc5ab8e86605e6019ce737c570415d91f882e5d7498bffd0c142af8c7f6f2b5e",
+    "trades.csv": "16a91a981394804e64c8a2b964586e1d3f55a7edd9f397b9fe50412471d4df8b"
+  },
+  "runtime_note": "壁钟时间是本机实测；与硬件、系统负载、解释器有关，不能保证跨机器逐值一致",
+  "config": {
+    "seeds": [
+      7,
+      19,
+      43
+    ],
+    "train_size": 1000,
+    "validation_size": 300,
+    "test_size": 600
+  },
+  "generator": {
+    "label_prior": 0.34,
+    "indicator_p_high_given_label": {
+      "opacity": [
+        0.2,
+        0.8
+      ],
+      "related_trade": [
+        0.14,
+        0.77
+      ],
+      "guarantee": [
+        0.16,
+        0.7
+      ],
+      "cycle": [
+        0.09,
+        0.5
+      ]
+    },
+    "measurement_beta_low": [
+      2.0,
+      8.0
+    ],
+    "measurement_beta_high": [
+      8.0,
+      2.0
+    ],
+    "label_meaning": "合成的高复核需求潜在状态，不是真实违法、违约或监管标签"
+  },
+  "scenarios": [
+    [
+      "clean",
+      0.0,
+      0.0
+    ],
+    [
+      "noise_010",
+      0.1,
+      0.0
+    ],
+    [
+      "noise_020",
+      0.2,
+      0.0
+    ],
+    [
+      "noise_030",
+      0.3,
+      0.0
+    ],
+    [
+      "missing_010",
+      0.0,
+      0.1
+    ],
+    [
+      "missing_030",
+      0.0,
+      0.3
+    ],
+    [
+      "mixed",
+      0.2,
+      0.2
+    ],
+    [
+      "severe",
+      0.35,
+      0.4
+    ]
+  ],
+  "models": [
+    "rules",
+    "bayes_manual",
+    "bayes_learned",
+    "fuzzy",
+    "hybrid_fixed",
+    "hybrid_tuned",
+    "hybrid_no_rule",
+    "hybrid_no_fuzzy",
+    "hybrid_no_bayes",
+    "fuzzy_learned",
+    "hybrid_adaptive",
+    "adaptive_no_rule",
+    "adaptive_no_fuzzy",
+    "adaptive_no_bayes"
+  ],
+  "classification_threshold": 0.5,
+  "mean_sd_unit": "独立随机种子间的均值/样本标准差；各压力场景使用同一批配对测试样本",
+  "timing_scope": "各方法逐样本 predict 全过程；不含训练/验证调参及文件I/O，无人为延时",
+  "scoring_note": "Brier 在此也作为归一化风险评分的平方损失；模糊/规则/融合评分未经概率校准",
+  "ablation_policy": {
+    "strict_default": true,
+    "records": "ablations.csv",
+    "fallback_if_empty": {
+      "hybrid_no_rule": "bayes",
+      "hybrid_no_fuzzy": "bayes",
+      "hybrid_no_bayes": "fuzzy",
+      "adaptive_no_rule": "bayes",
+      "adaptive_no_fuzzy": "bayes",
+      "adaptive_no_bayes": "fuzzy"
+    },
+    "note": "剩余权重非零时只删除并归一化；全零时显式回退为预先指定的单模型基线，非组件边际贡献"
+  },
+  "limitations": [
+    "全部实验样本与标签均合成，不是来自29实体教学案例的真实标签",
+    "生成分布接近朴素贝叶斯假设，可能有利于贝叶斯模型",
+    "指标压力实验不等同于对全部一阶逻辑事实随机加噪",
+    "移除后剩余权重非零才归一化；全零时的显式回退单列标注，不当作严格消融",
+    "零权重组件被移除时结果相同是有效实验结果"
+  ],
+  "artifact_sha256": {
+    "ablations.csv": "a2a11d9fe83e431546955898dfa4033b34920a6c9d1a1d2a9f8ea9f1b1dbade7",
+    "calibration.csv": "ba1f1b548196ac6b7d17938a182ea456d0a60d86b7388e29c410b3bec0aae056",
+    "conflict_examples.json": "bff4d8418e3312ba7490a2a2574e12c192ecd854ba134651efc57be4b0a2ffc1",
+    "conflict_metrics.csv": "384c24b9b818bc4bf4bc45d2b5561e26319c3fc9089e85a3a3714bd802e5c9ed",
+    "conflict_predictions.csv": "2303fc431affa23d408b981b4b258985cbeb9ec80bb04e2b250448bf490e187e",
+    "conflict_summary.csv": "49de31a00d4fecde3f721f770a483f908470b74029f0c2dace0761889aea3e66",
+    "metrics.csv": "dada0b2a2ca349f1636569172dd51e1f11a2c5d0d6755c4c513567cfa2694786",
+    "models.json": "3cf0b4ff3e71a97622e455965dcbd90435629ab956f7db4c8aa48d5ad7cbca9b",
+    "predictions.csv": "f10e0ba4deb56394e92cb054d07b08eb8e8f1ed658029c13a4ff350fa7570344",
+    "results.md": "509f069a9225bd6da58f7fbc44dde33138eba3cb16da231eeeff0edf2865abdb",
+    "samples.csv": "bb9d62c01f9d52b0a182b6a70d6eda12e40cae8aac26238b5962b335feb7937c",
+    "sensitivity.csv": "1b885fa2b0c5732739ca5dd2eb32913dfd5a96eb2b20025e2f1b83c600560f2c",
+    "split_audit.json": "d61c6a2a26acd5cb69b88b8115d2601cd8cf96025d91fa4d27f53050fee78cb0",
+    "summary.csv": "3904da3b40e2ff30070dcb329892ceeea7b6ec0998fe58a24dc1c69ddef8592d"
+  },
+  "artifact_scope": "本次生成的文本、模型、原始输入与数值结果；不含独立重绘PNG或manifest自身"
+}

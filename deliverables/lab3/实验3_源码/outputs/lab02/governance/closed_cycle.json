@@ -1,0 +1,17 @@
+{
+  "target_id": "A",
+  "companies_solved": 2,
+  "method": "partial_pivot_linear_system",
+  "formula": "u_j = d_j + sum_i H_ij*u_i",
+  "upstream_companies": [
+    "A",
+    "B"
+  ],
+  "note": "教学经济权益模型；非法律受益人认定，非表决权。未登记持股计入未知股东份额。",
+  "status": "indeterminate",
+  "reason": "封闭或近乎100%交叉持股导致方程奇异，无法给出唯一权益",
+  "owners": [],
+  "unknown_share": null,
+  "residual": null,
+  "elapsed_ms": 0.0344999716617167
+}

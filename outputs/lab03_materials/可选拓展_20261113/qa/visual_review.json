@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-13T19:28:32.327753+08:00",
+  "reviewed_pages": [
+    2,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "method": "Rendered PDF pages viewed directly; final new headings and captions match saved user styling.",
+  "findings": {
+    "new_tables_complete_on_pages": true,
+    "no_visible_clipping_or_overlaps": true,
+    "equations_and_state_sets_readable": true,
+    "no_workload_percentages_in_member_appendix": true,
+    "footers_numbered_to_30": true
+  },
+  "pdf_sha256": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99",
+  "note": "Untouched pages 1 and 3–22 are additionally pixel-identical to the export of the saved user DOCX."
+}

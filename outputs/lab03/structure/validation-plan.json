@@ -1,0 +1,20 @@
+{
+  "name": "bounded-suffix-evidence-validation-v1",
+  "dataset": "unchanged original benchmark, train+validation only",
+  "candidates": [
+    "baseline",
+    "suffix2-cap2",
+    "suffix2-cap4",
+    "suffix2-cap8",
+    "suffix2-cap4-neutral",
+    "suffix2-cap8-neutral"
+  ],
+  "selection": "Choose a non-regressing validation valid-answer rate candidate; then compare expansions AND actual evidence edge checks (no free oracle). Prefer smaller probe bound on statistically tied outcomes. All rejected alternatives retained. GA uses the same 14/10/8 configuration and archived validation warm start; classifier refits train only.",
+  "metrics": [
+    "valid_answers",
+    "expanded",
+    "total_edge_checks",
+    "elapsed_ms"
+  ],
+  "llm": "unchanged during search selection; evaluate calibration independently from validation raw probabilities"
+}

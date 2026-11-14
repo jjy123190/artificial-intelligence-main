@@ -1,0 +1,25 @@
+{
+  "scope": "isolated temporary copy; original delivery untouched",
+  "tests": [
+    {
+      "case": "modified_report",
+      "exit_code": 1,
+      "rejected": true
+    },
+    {
+      "case": "unexpected_file",
+      "exit_code": 1,
+      "rejected": true
+    },
+    {
+      "case": "missing_manifest",
+      "exit_code": 1,
+      "rejected": true
+    },
+    {
+      "case": "implicit_reseal",
+      "exit_code": 2,
+      "rejected": true
+    }
+  ]
+}

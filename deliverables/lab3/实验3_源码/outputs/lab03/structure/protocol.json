@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "name": "bounded-two-hop-evidence-v1",
+  "selection": "Train/validation only; first two stages including original test/OOD and confirmation-101/307/911 are seen regression. No current-stage test or confirmation evaluated before this freeze.",
+  "chosen": {
+    "search_candidate": "suffix2-cap2",
+    "reason": "All capped variants reach 81/81 on validation. cap2 adds the fewest actual edge checks, while lowering GA/hybrid mean expansions from 4.44/4.46 to 4.11; extra cap4 benefit is only two expansions over all 81 queries at additional evidence reads. Retain earlier-stage weak sector proxy outside a measured suffix rather than neutralising it, which did not help validation.",
+    "llm_fusion": "Retain raw scores and weight 2.0; fix unscored neutral 0.5 to mean zero adjustment. Center at 0.5 and bound signed adjustment to +/-1.0; do not clamp negative evidence preference away for the zero-weight ablation. Neutral/no-score invariance is a correctness requirement, not a claimed model accuracy gain. Validation shows tied success/work across 0.25–2.0, so no weight increase or test-driven selection.",
+    "llm_legality": "Do not tune a threshold: validation illegal examples at pTrue 0.79 overlap eligible 0.75–0.82. Rules remain an independent evidence firewall; raw model misses are retained.",
+    "ga_weights": {
+      "7": [
+        1.7,
+        0.5,
+        0.6,
+        0.2,
+        1.5,
+        0.0
+      ],
+      "19": [
+        1.7338704950401418,
+        3.667511707146203,
+        1.6851483017828404,
+        2.2499763286722225,
+        1.4906399625997435,
+        0.0
+      ],
+      "43": [
+        2.085950418700526,
+        2.7247825080469403,
+        4.03242944353339,
+        1.5460650237597833,
+        2.398449664002703,
+        0.0
+      ]
+    },
+    "hybrid_ml_weight": 0.25,
+    "lookahead_cap": 2,
+    "freeze_note": "Protocol and sources will be hashed before any current test/OOD/new-seed run."
+  },
+  "dataset_sha256": "e6e4e9f48808c17efa98f4af1ddd08955172e2afe1174e6e6c99f2e7a0982c40",
+  "source_sha256": {
+    "experiments/lab03/artifacts.py": "7eb9040e1f612f2dc91a11b7ca1cf5949ce42245d0cd653d36b7dea4d449d5c6",
+    "experiments/lab03/domain.py": "69f738fffcff6a0296738ec585e85eb0e8ce520e74e056cb1bf220d52c315cc0",
+    "experiments/lab03/dataset.py": "a0a1d3391919b38aa8662e191485a67b3a826b1ec480efb7d601540726ae845b",
+    "experiments/lab03/search.py": "0c37db763b5f4d82c9ba111b5bb206f910712dfb0ad8099bbe5a7a87ad1f69ff",
+    "experiments/lab03/learning.py": "18162416415b7267fc393af5c18302e81965ea4e7aea319c287f38a0e2380c99",
+    "experiments/lab03/genetic.py": "4be097babe2ad96defe08aeb2789e69c28fdfcb13072f4778e4ada8ad39cd4b8",
+    "experiments/lab03/evaluate.py": "4104043f17e1befd71959730c9fc407ba19845326744ba683fe61d40dc492a62",
+    "experiments/lab03/llm.py": "ca1ac3b3244d5d7fada99cfeced0c99ecda1e0a2842f9864f4c7063ed4d45d51",
+    "experiments/lab03/diagnostics.py": "d4edd67c1da21cf09845bbfd0c8a3b0399606ec7b5c6231520521044055cf504",
+    "data/lab03/ga_warm_start.json": "d0950b1b18cdb1ab8fd271c85289c85b1b6b481326f6ebd19c9819ffa1358d1e",
+    "data/lab03/llm_model_manifest.json": "494ed01240f8887c941700ef7bcbbe7f09f09db0169815791c223e7beaef2c34"
+  },
+  "evaluation_source_sha256": {
+    "experiments/lab03/structure.py": "b1d33b76a69a2d060719480dba174ad2483895fe45b6cd0a915f62a55eaa5e60",
+    "experiments/lab03/history.py": "5cb41ca0a709e104a6caf26e6c173e7550952ea263c6970753411dc5fbe10819"
+  },
+  "validation_sha256": {
+    "validation-final.json": "fb72ef2093847e667e141d150383f6987e5bf86687cf6669839f2c02271070f4",
+    "validation-llm-fusion.json": "69a6987b2ee150aaee46ad975256ef0db20b1a1647918c0089d5d12b8abadf2c",
+    "validation-plan.json": "7798b9a08aadeb9678ad69c2d6b8ff07b385a90e69f9adcbe4e5f927ed8da7fb",
+    "validation-search-variants.json": "31e8d6b0ee390ee78e4b9a8d5949aec6d17303784dae155c97081c366856e9b8",
+    "validation-selection.json": "4cbef668528ddfbbdf462d21a1171dbda37b159b997af2bd39f4246bb6e14b99"
+  },
+  "script_sha256": {
+    "final_validation.py": "4bc155e87ae3591dd5a074a1cbe5ee5736eacdea29a8812cf0b21b695137089a",
+    "llm_fusion.py": "6ede9425a249cf507801bb45cad5c54b174874ab011cd3b3efae53ada14b0f70",
+    "structure_variants.py": "95da54a3435e8b0dfd1ef4347796da2d609005f24640c7c802eda85129b5d994"
+  },
+  "confirmation_plan": {
+    "seeds": [
+      1201,
+      2027,
+      4051
+    ],
+    "model_seeds": [
+      7,
+      19,
+      43
+    ],
+    "graphs_per_seed_per_split": 4,
+    "queries_per_graph": 9,
+    "splits": [
+      "structure_confirmation",
+      "structure_confirmation_shift"
+    ],
+    "budgets": [
+      4,
+      8,
+      16
+    ],
+    "parameters_frozen_before_generation": true
+  },
+  "limits": "Bounded extra evidence improves branch ranking at additional probe and edge-scan cost. Does not promise any finite-budget completeness. Synthetic fixed-relation retrieval; repeated validation can overfit. Tiny 0.5B LLM is fallible; measured legality, raw explanation failures and search regressions must be retained. New seed confirmation is one-shot; later use is regression only."
+}

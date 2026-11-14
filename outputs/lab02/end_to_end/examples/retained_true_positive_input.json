@@ -1,0 +1,203 @@
+{
+  "case": {
+    "schema_version": 1,
+    "entities": [
+      {
+        "eid": "g7-test-000048_P0",
+        "name": "教学自然人0",
+        "kind": "Person",
+        "category": "",
+        "capital": 0.0,
+        "opacity": 0.0,
+        "disclosure": 1.0
+      },
+      {
+        "eid": "g7-test-000048_P1",
+        "name": "教学自然人1",
+        "kind": "Person",
+        "category": "",
+        "capital": 0.0,
+        "opacity": 0.0,
+        "disclosure": 1.0
+      },
+      {
+        "eid": "g7-test-000048_P2",
+        "name": "教学自然人2",
+        "kind": "Person",
+        "category": "",
+        "capital": 0.0,
+        "opacity": 0.0,
+        "disclosure": 1.0
+      },
+      {
+        "eid": "g7-test-000048_C0",
+        "name": "教学企业0",
+        "kind": "Company",
+        "category": "上市公司",
+        "capital": 104000.0,
+        "opacity": 0.7430095309201027,
+        "disclosure": 0.2569904690798973
+      },
+      {
+        "eid": "g7-test-000048_C1",
+        "name": "教学企业1",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 34000.0,
+        "opacity": 0.3011257737188435,
+        "disclosure": 0.6988742262811565
+      },
+      {
+        "eid": "g7-test-000048_C2",
+        "name": "教学企业2",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 71000.0,
+        "opacity": 0.27230489595786705,
+        "disclosure": 0.7276951040421329
+      },
+      {
+        "eid": "g7-test-000048_C3",
+        "name": "教学企业3",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 32000.0,
+        "opacity": 0.6018305798643905,
+        "disclosure": 0.3981694201356095
+      },
+      {
+        "eid": "g7-test-000048_C4",
+        "name": "教学企业4",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 12000.0,
+        "opacity": 0.19852972644597905,
+        "disclosure": 0.8014702735540209
+      },
+      {
+        "eid": "g7-test-000048_C5",
+        "name": "教学企业5",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 7000.0,
+        "opacity": 0.19956756992168387,
+        "disclosure": 0.8004324300783161
+      },
+      {
+        "eid": "g7-test-000048_C6",
+        "name": "教学企业6",
+        "kind": "Company",
+        "category": "企业",
+        "capital": 76000.0,
+        "opacity": 0.26576759956882995,
+        "disclosure": 0.73423240043117
+      }
+    ],
+    "holdings": [
+      {
+        "holder": "g7-test-000048_P0",
+        "target": "g7-test-000048_C1",
+        "ratio": 0.8,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_C1",
+        "target": "g7-test-000048_C2",
+        "ratio": 0.65,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_P0",
+        "target": "g7-test-000048_C3",
+        "ratio": 0.7,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_C2",
+        "target": "g7-test-000048_C0",
+        "ratio": 0.35,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_C1",
+        "target": "g7-test-000048_C0",
+        "ratio": 0.2,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_P1",
+        "target": "g7-test-000048_C0",
+        "ratio": 0.2,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_P2",
+        "target": "g7-test-000048_C4",
+        "ratio": 0.6,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_C0",
+        "target": "g7-test-000048_C4",
+        "ratio": 0.25,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_P1",
+        "target": "g7-test-000048_C5",
+        "ratio": 0.65,
+        "since": "",
+        "layered": false
+      },
+      {
+        "holder": "g7-test-000048_P2",
+        "target": "g7-test-000048_C6",
+        "ratio": 0.7,
+        "since": "",
+        "layered": false
+      }
+    ],
+    "guarantees": [
+      {
+        "guarantor": "g7-test-000048_C0",
+        "beneficiary": "g7-test-000048_C5",
+        "amount": 16219.78
+      },
+      {
+        "guarantor": "g7-test-000048_C5",
+        "beneficiary": "g7-test-000048_C6",
+        "amount": 4513.49
+      }
+    ],
+    "trades": [
+      {
+        "seller": "g7-test-000048_C3",
+        "buyer": "g7-test-000048_C0",
+        "amount": 27813.26
+      },
+      {
+        "seller": "g7-test-000048_C6",
+        "buyer": "g7-test-000048_C0",
+        "amount": 6047.82
+      }
+    ],
+    "kinships": [],
+    "source": "合成股权图 v1；seed=7；split=test；观测条件=clean（不含标签或干净图真值）",
+    "label": "g7-test-000048"
+  },
+  "target_id": "g7-test-000048_C0",
+  "completeness": {
+    "holdings": true,
+    "trades": true,
+    "guarantees": true,
+    "registry": true
+  }
+}

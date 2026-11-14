@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-11-13T20:36:47.498335+08:00",
+  "url": "http://127.0.0.1:8766/#/labs/lab03",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "workspace_id": "c6c4b4f3de9772d4",
+  "javascript_errors": [],
+  "screenshot_sha256": "df58e23d8820c07bda883e97378adba8240ec8b62bbccc3e7baf523411173a83",
+  "source": "current workspace verified by /api/health and served bundle identity"
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "mode": "tie_only",
+    "fixed_weights_from_previous_validation": true,
+    "results": {
+      "astar_fixed": {
+        "4": {
+          "n": 81,
+          "solved": 44,
+          "expansions": 297,
+          "checks": 2449
+        },
+        "8": {
+          "n": 81,
+          "solved": 79,
+          "expansions": 376,
+          "checks": 2618
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 379,
+          "checks": 2621
+        }
+      },
+      "astar_ga": {
+        "4": {
+          "n": 81,
+          "solved": 46,
+          "expansions": 297,
+          "checks": 2466
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 368,
+          "checks": 2599
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 368,
+          "checks": 2599
+        }
+      },
+      "astar_ml": {
+        "4": {
+          "n": 81,
+          "solved": 45,
+          "expansions": 297,
+          "checks": 2427
+        },
+        "8": {
+          "n": 81,
+          "solved": 78,
+          "expansions": 370,
+          "checks": 2584
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 374,
+          "checks": 2587
+        }
+      },
+      "hybrid": {
+        "4": {
+          "n": 81,
+          "solved": 46,
+          "expansions": 297,
+          "checks": 2452
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 369,
+          "checks": 2592
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 369,
+          "checks": 2592
+        }
+      }
+    }
+  },
+  {
+    "mode": "proof_priority",
+    "fixed_weights_from_previous_validation": true,
+    "results": {
+      "astar_fixed": {
+        "4": {
+          "n": 81,
+          "solved": 49,
+          "expansions": 297,
+          "checks": 2416
+        },
+        "8": {
+          "n": 81,
+          "solved": 80,
+          "expansions": 365,
+          "checks": 2563
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 366,
+          "checks": 2563
+        }
+      },
+      "astar_ga": {
+        "4": {
+          "n": 81,
+          "solved": 50,
+          "expansions": 297,
+          "checks": 2438
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 362,
+          "checks": 2569
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 362,
+          "checks": 2569
+        }
+      },
+      "astar_ml": {
+        "4": {
+          "n": 81,
+          "solved": 47,
+          "expansions": 297,
+          "checks": 2410
+        },
+        "8": {
+          "n": 81,
+          "solved": 78,
+          "expansions": 365,
+          "checks": 2561
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 369,
+          "checks": 2564
+        }
+      },
+      "hybrid": {
+        "4": {
+          "n": 81,
+          "solved": 50,
+          "expansions": 297,
+          "checks": 2426
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 363,
+          "checks": 2564
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 363,
+          "checks": 2564
+        }
+      }
+    }
+  },
+  {
+    "mode": "proof_and_dead",
+    "fixed_weights_from_previous_validation": true,
+    "results": {
+      "astar_fixed": {
+        "4": {
+          "n": 81,
+          "solved": 49,
+          "expansions": 297,
+          "checks": 2416
+        },
+        "8": {
+          "n": 81,
+          "solved": 80,
+          "expansions": 365,
+          "checks": 2563
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 366,
+          "checks": 2563
+        }
+      },
+      "astar_ga": {
+        "4": {
+          "n": 81,
+          "solved": 50,
+          "expansions": 297,
+          "checks": 2438
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 362,
+          "checks": 2569
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 362,
+          "checks": 2569
+        }
+      },
+      "astar_ml": {
+        "4": {
+          "n": 81,
+          "solved": 47,
+          "expansions": 297,
+          "checks": 2410
+        },
+        "8": {
+          "n": 81,
+          "solved": 78,
+          "expansions": 365,
+          "checks": 2561
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 369,
+          "checks": 2564
+        }
+      },
+      "hybrid": {
+        "4": {
+          "n": 81,
+          "solved": 50,
+          "expansions": 297,
+          "checks": 2426
+        },
+        "8": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 363,
+          "checks": 2564
+        },
+        "16": {
+          "n": 81,
+          "solved": 81,
+          "expansions": 363,
+          "checks": 2564
+        }
+      }
+    }
+  }
+]

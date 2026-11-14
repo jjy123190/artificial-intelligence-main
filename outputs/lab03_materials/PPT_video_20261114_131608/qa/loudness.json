@@ -1,0 +1,27 @@
+{
+  "input": {
+    "input_i": "-23.93",
+    "input_tp": "-2.34",
+    "input_lra": "3.70",
+    "input_thresh": "-34.49",
+    "output_i": "-18.68",
+    "output_tp": "-1.50",
+    "output_lra": "3.00",
+    "output_thresh": "-29.24",
+    "normalization_type": "dynamic",
+    "target_offset": "0.68"
+  },
+  "normalized": {
+    "input_i": "-23.93",
+    "input_tp": "-2.34",
+    "input_lra": "3.70",
+    "input_thresh": "-34.49",
+    "output_i": "-18.19",
+    "output_tp": "-1.50",
+    "output_lra": "2.90",
+    "output_thresh": "-28.73",
+    "normalization_type": "dynamic",
+    "target_offset": "0.19"
+  },
+  "filter": "loudnorm=I=-18:TP=-1.5:LRA=7:linear=true:print_format=json:measured_I=-23.93:measured_TP=-2.34:measured_LRA=3.70:measured_thresh=-34.49:offset=0.68"
+}

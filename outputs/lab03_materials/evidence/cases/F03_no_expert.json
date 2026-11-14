@@ -1,0 +1,2761 @@
+{
+  "case_id": "F03_no_expert",
+  "kind": "benchmark_replay",
+  "selection_reason": "与S01同题，去掉专家约束后返回未经核验且已失效的边。",
+  "source": "data/lab03/benchmark.json",
+  "graph_sha256": "5947796bdaba7b883aec219e9e8f2bb82580fddcfca93c850f3083f7be39c3bd",
+  "query_sha256": "68f1688b312ba126b9cc0d7e0b74c4ab7b24da15fa069e627e17364b690006de",
+  "parameters": {
+    "method": "hybrid_no_expert",
+    "budget": 8,
+    "seed": 7,
+    "weights": [
+      1.7,
+      0.5,
+      0.6,
+      0.2,
+      1.5,
+      0.25
+    ],
+    "model": {
+      "provenance": {
+        "dataset_sha256": "e6e4e9f48808c17efa98f4af1ddd08955172e2afe1174e6e6c99f2e7a0982c40",
+        "source_sha256": {
+          "experiments/lab03/artifacts.py": "a333da9e4ab421b4bd12c51fa9f2fa14337fcd6b117ee73bff9d7483ea46a4d0",
+          "experiments/lab03/domain.py": "69f738fffcff6a0296738ec585e85eb0e8ce520e74e056cb1bf220d52c315cc0",
+          "experiments/lab03/dataset.py": "a0a1d3391919b38aa8662e191485a67b3a826b1ec480efb7d601540726ae845b",
+          "experiments/lab03/search.py": "f4f9010defbac12c7444a833f373e8bf96661e11e7b6b4fda30e2ff80c427ec6",
+          "experiments/lab03/learning.py": "18162416415b7267fc393af5c18302e81965ea4e7aea319c287f38a0e2380c99",
+          "experiments/lab03/genetic.py": "4be097babe2ad96defe08aeb2789e69c28fdfcb13072f4778e4ada8ad39cd4b8",
+          "data/lab03/ga_warm_start.json": "d0950b1b18cdb1ab8fd271c85289c85b1b6b481326f6ebd19c9819ffa1358d1e",
+          "data/lab03/llm_model_manifest.json": "494ed01240f8887c941700ef7bcbbe7f09f09db0169815791c223e7beaef2c34"
+        }
+      },
+      "kind": "logistic_regression",
+      "coef": [
+        0.5147462235210286,
+        2.68968312453818,
+        0.8427020954182987,
+        -0.6938490946355189,
+        1.674490735128823,
+        -0.7646130691639289
+      ],
+      "intercept": -2.15941753631929,
+      "features": [
+        "剩余跳数",
+        "局部后缀潜力",
+        "有效后继可选性",
+        "路径证据可信度",
+        "阶段化终点匹配",
+        "有限后缀死路"
+      ],
+      "seed": 7,
+      "train_graph_ids": [
+        "train-7-0",
+        "train-7-1",
+        "train-7-2",
+        "train-7-3",
+        "train-7-4",
+        "train-7-5"
+      ],
+      "samples": 1395,
+      "positive": 437,
+      "negative": 958,
+      "train_brier": 0.04738910170063841,
+      "label": "state has at least one valid goal continuation in training graph",
+      "note": "训练图穷举产生正负路径前缀；特征使用与搜索一致的一跳/有界两跳证据；不使用节点编号、目标答案或测试标签作为特征。"
+    },
+    "expert": true,
+    "llm_scores": null
+  },
+  "graph": {
+    "id": "test-7-0",
+    "split": "test",
+    "nodes": [
+      {
+        "id": "test-7-0-N0",
+        "name": "教学投资人1",
+        "kind": "Person",
+        "sector": "新能源",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N1",
+        "name": "教学投资人2",
+        "kind": "Person",
+        "sector": "制造",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N2",
+        "name": "教学投资人3",
+        "kind": "Person",
+        "sector": "物流",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N3",
+        "name": "教学投资人4",
+        "kind": "Person",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N4",
+        "name": "新能源企业04",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N5",
+        "name": "制造企业05",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N6",
+        "name": "新能源企业06",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N7",
+        "name": "金融企业07",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N8",
+        "name": "物流企业08",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N9",
+        "name": "制造企业09",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N10",
+        "name": "物流企业10",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N11",
+        "name": "金融企业11",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N12",
+        "name": "新能源企业12",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N13",
+        "name": "制造企业13",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N14",
+        "name": "物流企业14",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N15",
+        "name": "金融企业15",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N16",
+        "name": "制造企业16",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N17",
+        "name": "制造企业17",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N18",
+        "name": "新能源企业18",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N19",
+        "name": "金融企业19",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N20",
+        "name": "金融企业20",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N21",
+        "name": "新能源企业21",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N22",
+        "name": "金融企业22",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N23",
+        "name": "金融企业23",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N24",
+        "name": "物流企业24",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N25",
+        "name": "制造企业25",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N26",
+        "name": "物流企业26",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N27",
+        "name": "金融企业27",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N28",
+        "name": "新能源企业28",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N29",
+        "name": "制造企业29",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N30",
+        "name": "物流企业30",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N31",
+        "name": "金融企业31",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N32",
+        "name": "新能源企业32",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N33",
+        "name": "制造企业33",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N34",
+        "name": "物流企业34",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N35",
+        "name": "金融企业35",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N36",
+        "name": "新能源企业36",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N37",
+        "name": "新能源企业37",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N38",
+        "name": "物流企业38",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": false
+      },
+      {
+        "id": "test-7-0-N39",
+        "name": "新能源企业39",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N40",
+        "name": "制造企业40",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N41",
+        "name": "物流企业41",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N42",
+        "name": "金融企业42",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N43",
+        "name": "新能源企业43",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N44",
+        "name": "制造企业44",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N45",
+        "name": "物流企业45",
+        "kind": "Company",
+        "sector": "物流",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N46",
+        "name": "金融企业46",
+        "kind": "Company",
+        "sector": "金融",
+        "listed": true
+      },
+      {
+        "id": "test-7-0-N47",
+        "name": "新能源企业47",
+        "kind": "Company",
+        "sector": "新能源",
+        "listed": true
+      }
+    ],
+    "edges": [
+      {
+        "id": "test-7-0-R0000",
+        "source": "test-7-0-N31",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.849,
+        "verified": true,
+        "active": true,
+        "value": 0.54
+      },
+      {
+        "id": "test-7-0-R0001",
+        "source": "test-7-0-N10",
+        "target": "test-7-0-N46",
+        "relation": "TRADES",
+        "confidence": 0.682,
+        "verified": true,
+        "active": true,
+        "value": 0.27
+      },
+      {
+        "id": "test-7-0-R0002",
+        "source": "test-7-0-N13",
+        "target": "test-7-0-N5",
+        "relation": "HOLDS",
+        "confidence": 0.727,
+        "verified": true,
+        "active": true,
+        "value": 0.25
+      },
+      {
+        "id": "test-7-0-R0003",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N29",
+        "relation": "HOLDS",
+        "confidence": 0.844,
+        "verified": true,
+        "active": true,
+        "value": 0.5
+      },
+      {
+        "id": "test-7-0-R0004",
+        "source": "test-7-0-N24",
+        "target": "test-7-0-N20",
+        "relation": "GUARANTEES",
+        "confidence": 0.499,
+        "verified": false,
+        "active": false,
+        "value": 0.38
+      },
+      {
+        "id": "test-7-0-R0005",
+        "source": "test-7-0-N43",
+        "target": "test-7-0-N31",
+        "relation": "GUARANTEES",
+        "confidence": 0.696,
+        "verified": true,
+        "active": true,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0006",
+        "source": "test-7-0-N6",
+        "target": "test-7-0-N23",
+        "relation": "HOLDS",
+        "confidence": 0.895,
+        "verified": true,
+        "active": true,
+        "value": 0.4
+      },
+      {
+        "id": "test-7-0-R0007",
+        "source": "test-7-0-N45",
+        "target": "test-7-0-N17",
+        "relation": "GUARANTEES",
+        "confidence": 0.885,
+        "verified": true,
+        "active": true,
+        "value": 0.76
+      },
+      {
+        "id": "test-7-0-R0008",
+        "source": "test-7-0-N17",
+        "target": "test-7-0-N25",
+        "relation": "TRADES",
+        "confidence": 0.292,
+        "verified": false,
+        "active": true,
+        "value": 0.16
+      },
+      {
+        "id": "test-7-0-R0009",
+        "source": "test-7-0-N20",
+        "target": "test-7-0-N41",
+        "relation": "HOLDS",
+        "confidence": 0.716,
+        "verified": true,
+        "active": true,
+        "value": 0.32
+      },
+      {
+        "id": "test-7-0-R0010",
+        "source": "test-7-0-N20",
+        "target": "test-7-0-N40",
+        "relation": "HOLDS",
+        "confidence": 0.944,
+        "verified": true,
+        "active": true,
+        "value": 0.8
+      },
+      {
+        "id": "test-7-0-R0011",
+        "source": "test-7-0-N10",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.782,
+        "verified": true,
+        "active": true,
+        "value": 0.42
+      },
+      {
+        "id": "test-7-0-R0012",
+        "source": "test-7-0-N42",
+        "target": "test-7-0-N9",
+        "relation": "HOLDS",
+        "confidence": 0.319,
+        "verified": true,
+        "active": true,
+        "value": 0.26
+      },
+      {
+        "id": "test-7-0-R0013",
+        "source": "test-7-0-N36",
+        "target": "test-7-0-N32",
+        "relation": "GUARANTEES",
+        "confidence": 0.863,
+        "verified": false,
+        "active": false,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0014",
+        "source": "test-7-0-N27",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.468,
+        "verified": true,
+        "active": false,
+        "value": 0.44
+      },
+      {
+        "id": "test-7-0-R0015",
+        "source": "test-7-0-N14",
+        "target": "test-7-0-N38",
+        "relation": "GUARANTEES",
+        "confidence": 0.801,
+        "verified": true,
+        "active": true,
+        "value": 0.26
+      },
+      {
+        "id": "test-7-0-R0016",
+        "source": "test-7-0-N11",
+        "target": "test-7-0-N43",
+        "relation": "GUARANTEES",
+        "confidence": 0.966,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0017",
+        "source": "test-7-0-N44",
+        "target": "test-7-0-N28",
+        "relation": "TRADES",
+        "confidence": 0.419,
+        "verified": true,
+        "active": true,
+        "value": 0.81
+      },
+      {
+        "id": "test-7-0-R0018",
+        "source": "test-7-0-N37",
+        "target": "test-7-0-N14",
+        "relation": "TRADES",
+        "confidence": 0.922,
+        "verified": true,
+        "active": false,
+        "value": 0.56
+      },
+      {
+        "id": "test-7-0-R0019",
+        "source": "test-7-0-N23",
+        "target": "test-7-0-N45",
+        "relation": "GUARANTEES",
+        "confidence": 0.894,
+        "verified": true,
+        "active": true,
+        "value": 0.46
+      },
+      {
+        "id": "test-7-0-R0020",
+        "source": "test-7-0-N41",
+        "target": "test-7-0-N7",
+        "relation": "HOLDS",
+        "confidence": 0.697,
+        "verified": true,
+        "active": true,
+        "value": 0.8
+      },
+      {
+        "id": "test-7-0-R0021",
+        "source": "test-7-0-N17",
+        "target": "test-7-0-N36",
+        "relation": "GUARANTEES",
+        "confidence": 0.677,
+        "verified": true,
+        "active": true,
+        "value": 0.53
+      },
+      {
+        "id": "test-7-0-R0022",
+        "source": "test-7-0-N4",
+        "target": "test-7-0-N20",
+        "relation": "TRADES",
+        "confidence": 0.733,
+        "verified": true,
+        "active": true,
+        "value": 0.79
+      },
+      {
+        "id": "test-7-0-R0023",
+        "source": "test-7-0-N34",
+        "target": "test-7-0-N10",
+        "relation": "HOLDS",
+        "confidence": 0.759,
+        "verified": true,
+        "active": true,
+        "value": 0.58
+      },
+      {
+        "id": "test-7-0-R0024",
+        "source": "test-7-0-N11",
+        "target": "test-7-0-N43",
+        "relation": "HOLDS",
+        "confidence": 0.876,
+        "verified": true,
+        "active": true,
+        "value": 0.2
+      },
+      {
+        "id": "test-7-0-R0025",
+        "source": "test-7-0-N26",
+        "target": "test-7-0-N42",
+        "relation": "GUARANTEES",
+        "confidence": 0.919,
+        "verified": true,
+        "active": true,
+        "value": 0.68
+      },
+      {
+        "id": "test-7-0-R0026",
+        "source": "test-7-0-N37",
+        "target": "test-7-0-N21",
+        "relation": "HOLDS",
+        "confidence": 0.755,
+        "verified": true,
+        "active": true,
+        "value": 0.8
+      },
+      {
+        "id": "test-7-0-R0027",
+        "source": "test-7-0-N33",
+        "target": "test-7-0-N5",
+        "relation": "GUARANTEES",
+        "confidence": 0.91,
+        "verified": true,
+        "active": true,
+        "value": 0.37
+      },
+      {
+        "id": "test-7-0-R0028",
+        "source": "test-7-0-N6",
+        "target": "test-7-0-N47",
+        "relation": "HOLDS",
+        "confidence": 0.819,
+        "verified": true,
+        "active": true,
+        "value": 0.49
+      },
+      {
+        "id": "test-7-0-R0029",
+        "source": "test-7-0-N39",
+        "target": "test-7-0-N11",
+        "relation": "TRADES",
+        "confidence": 0.805,
+        "verified": true,
+        "active": true,
+        "value": 0.24
+      },
+      {
+        "id": "test-7-0-R0030",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N6",
+        "relation": "HOLDS",
+        "confidence": 0.867,
+        "verified": true,
+        "active": true,
+        "value": 0.45
+      },
+      {
+        "id": "test-7-0-R0031",
+        "source": "test-7-0-N28",
+        "target": "test-7-0-N12",
+        "relation": "TRADES",
+        "confidence": 0.973,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0032",
+        "source": "test-7-0-N37",
+        "target": "test-7-0-N15",
+        "relation": "HOLDS",
+        "confidence": 0.735,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0033",
+        "source": "test-7-0-N8",
+        "target": "test-7-0-N37",
+        "relation": "GUARANTEES",
+        "confidence": 0.258,
+        "verified": false,
+        "active": false,
+        "value": 0.46
+      },
+      {
+        "id": "test-7-0-R0034",
+        "source": "test-7-0-N15",
+        "target": "test-7-0-N19",
+        "relation": "TRADES",
+        "confidence": 0.848,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0035",
+        "source": "test-7-0-N14",
+        "target": "test-7-0-N34",
+        "relation": "TRADES",
+        "confidence": 0.682,
+        "verified": true,
+        "active": true,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0036",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N20",
+        "relation": "HOLDS",
+        "confidence": 0.741,
+        "verified": true,
+        "active": true,
+        "value": 0.47
+      },
+      {
+        "id": "test-7-0-R0037",
+        "source": "test-7-0-N7",
+        "target": "test-7-0-N18",
+        "relation": "GUARANTEES",
+        "confidence": 0.991,
+        "verified": true,
+        "active": true,
+        "value": 0.34
+      },
+      {
+        "id": "test-7-0-R0038",
+        "source": "test-7-0-N22",
+        "target": "test-7-0-N44",
+        "relation": "GUARANTEES",
+        "confidence": 0.879,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0039",
+        "source": "test-7-0-N0",
+        "target": "test-7-0-N43",
+        "relation": "HOLDS",
+        "confidence": 0.936,
+        "verified": false,
+        "active": false,
+        "value": 0.69
+      },
+      {
+        "id": "test-7-0-R0040",
+        "source": "test-7-0-N5",
+        "target": "test-7-0-N27",
+        "relation": "TRADES",
+        "confidence": 0.789,
+        "verified": true,
+        "active": true,
+        "value": 0.61
+      },
+      {
+        "id": "test-7-0-R0041",
+        "source": "test-7-0-N8",
+        "target": "test-7-0-N38",
+        "relation": "GUARANTEES",
+        "confidence": 0.768,
+        "verified": true,
+        "active": true,
+        "value": 0.69
+      },
+      {
+        "id": "test-7-0-R0042",
+        "source": "test-7-0-N29",
+        "target": "test-7-0-N30",
+        "relation": "TRADES",
+        "confidence": 0.826,
+        "verified": true,
+        "active": true,
+        "value": 0.24
+      },
+      {
+        "id": "test-7-0-R0043",
+        "source": "test-7-0-N32",
+        "target": "test-7-0-N18",
+        "relation": "TRADES",
+        "confidence": 0.841,
+        "verified": true,
+        "active": true,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0044",
+        "source": "test-7-0-N22",
+        "target": "test-7-0-N40",
+        "relation": "TRADES",
+        "confidence": 0.857,
+        "verified": true,
+        "active": true,
+        "value": 0.6
+      },
+      {
+        "id": "test-7-0-R0045",
+        "source": "test-7-0-N36",
+        "target": "test-7-0-N32",
+        "relation": "TRADES",
+        "confidence": 0.957,
+        "verified": true,
+        "active": true,
+        "value": 0.23
+      },
+      {
+        "id": "test-7-0-R0046",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N13",
+        "relation": "TRADES",
+        "confidence": 0.976,
+        "verified": true,
+        "active": true,
+        "value": 0.67
+      },
+      {
+        "id": "test-7-0-R0047",
+        "source": "test-7-0-N5",
+        "target": "test-7-0-N29",
+        "relation": "GUARANTEES",
+        "confidence": 0.889,
+        "verified": true,
+        "active": true,
+        "value": 0.17
+      },
+      {
+        "id": "test-7-0-R0048",
+        "source": "test-7-0-N42",
+        "target": "test-7-0-N26",
+        "relation": "GUARANTEES",
+        "confidence": 0.863,
+        "verified": true,
+        "active": true,
+        "value": 0.22
+      },
+      {
+        "id": "test-7-0-R0049",
+        "source": "test-7-0-N4",
+        "target": "test-7-0-N6",
+        "relation": "GUARANTEES",
+        "confidence": 0.751,
+        "verified": true,
+        "active": true,
+        "value": 0.26
+      },
+      {
+        "id": "test-7-0-R0050",
+        "source": "test-7-0-N38",
+        "target": "test-7-0-N10",
+        "relation": "GUARANTEES",
+        "confidence": 0.884,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0051",
+        "source": "test-7-0-N10",
+        "target": "test-7-0-N6",
+        "relation": "HOLDS",
+        "confidence": 0.94,
+        "verified": true,
+        "active": true,
+        "value": 0.79
+      },
+      {
+        "id": "test-7-0-R0052",
+        "source": "test-7-0-N8",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.426,
+        "verified": false,
+        "active": false,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0053",
+        "source": "test-7-0-N18",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.755,
+        "verified": true,
+        "active": true,
+        "value": 0.22
+      },
+      {
+        "id": "test-7-0-R0054",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N23",
+        "relation": "HOLDS",
+        "confidence": 0.696,
+        "verified": true,
+        "active": true,
+        "value": 0.49
+      },
+      {
+        "id": "test-7-0-R0055",
+        "source": "test-7-0-N25",
+        "target": "test-7-0-N33",
+        "relation": "GUARANTEES",
+        "confidence": 0.857,
+        "verified": true,
+        "active": true,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0056",
+        "source": "test-7-0-N24",
+        "target": "test-7-0-N8",
+        "relation": "HOLDS",
+        "confidence": 0.752,
+        "verified": true,
+        "active": true,
+        "value": 0.49
+      },
+      {
+        "id": "test-7-0-R0057",
+        "source": "test-7-0-N40",
+        "target": "test-7-0-N15",
+        "relation": "TRADES",
+        "confidence": 0.95,
+        "verified": true,
+        "active": true,
+        "value": 0.46
+      },
+      {
+        "id": "test-7-0-R0058",
+        "source": "test-7-0-N12",
+        "target": "test-7-0-N24",
+        "relation": "GUARANTEES",
+        "confidence": 0.704,
+        "verified": true,
+        "active": true,
+        "value": 0.53
+      },
+      {
+        "id": "test-7-0-R0059",
+        "source": "test-7-0-N46",
+        "target": "test-7-0-N23",
+        "relation": "HOLDS",
+        "confidence": 0.675,
+        "verified": true,
+        "active": false,
+        "value": 0.5
+      },
+      {
+        "id": "test-7-0-R0060",
+        "source": "test-7-0-N20",
+        "target": "test-7-0-N42",
+        "relation": "TRADES",
+        "confidence": 0.787,
+        "verified": true,
+        "active": true,
+        "value": 0.51
+      },
+      {
+        "id": "test-7-0-R0061",
+        "source": "test-7-0-N44",
+        "target": "test-7-0-N8",
+        "relation": "HOLDS",
+        "confidence": 0.994,
+        "verified": true,
+        "active": true,
+        "value": 0.27
+      },
+      {
+        "id": "test-7-0-R0062",
+        "source": "test-7-0-N38",
+        "target": "test-7-0-N40",
+        "relation": "HOLDS",
+        "confidence": 0.764,
+        "verified": true,
+        "active": true,
+        "value": 0.82
+      },
+      {
+        "id": "test-7-0-R0063",
+        "source": "test-7-0-N45",
+        "target": "test-7-0-N29",
+        "relation": "GUARANTEES",
+        "confidence": 0.744,
+        "verified": true,
+        "active": true,
+        "value": 0.76
+      },
+      {
+        "id": "test-7-0-R0064",
+        "source": "test-7-0-N37",
+        "target": "test-7-0-N45",
+        "relation": "TRADES",
+        "confidence": 0.74,
+        "verified": true,
+        "active": true,
+        "value": 0.8
+      },
+      {
+        "id": "test-7-0-R0065",
+        "source": "test-7-0-N39",
+        "target": "test-7-0-N7",
+        "relation": "TRADES",
+        "confidence": 0.349,
+        "verified": true,
+        "active": false,
+        "value": 0.35
+      },
+      {
+        "id": "test-7-0-R0066",
+        "source": "test-7-0-N32",
+        "target": "test-7-0-N16",
+        "relation": "HOLDS",
+        "confidence": 0.783,
+        "verified": true,
+        "active": true,
+        "value": 0.58
+      },
+      {
+        "id": "test-7-0-R0067",
+        "source": "test-7-0-N46",
+        "target": "test-7-0-N10",
+        "relation": "GUARANTEES",
+        "confidence": 0.952,
+        "verified": true,
+        "active": true,
+        "value": 0.25
+      },
+      {
+        "id": "test-7-0-R0068",
+        "source": "test-7-0-N2",
+        "target": "test-7-0-N30",
+        "relation": "HOLDS",
+        "confidence": 0.838,
+        "verified": true,
+        "active": true,
+        "value": 0.66
+      },
+      {
+        "id": "test-7-0-R0069",
+        "source": "test-7-0-N29",
+        "target": "test-7-0-N9",
+        "relation": "GUARANTEES",
+        "confidence": 0.717,
+        "verified": true,
+        "active": true,
+        "value": 0.4
+      },
+      {
+        "id": "test-7-0-R0070",
+        "source": "test-7-0-N6",
+        "target": "test-7-0-N22",
+        "relation": "TRADES",
+        "confidence": 0.87,
+        "verified": true,
+        "active": true,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0071",
+        "source": "test-7-0-N18",
+        "target": "test-7-0-N31",
+        "relation": "TRADES",
+        "confidence": 0.783,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "test-7-0-R0072",
+        "source": "test-7-0-N44",
+        "target": "test-7-0-N4",
+        "relation": "TRADES",
+        "confidence": 0.827,
+        "verified": true,
+        "active": true,
+        "value": 0.68
+      },
+      {
+        "id": "test-7-0-R0073",
+        "source": "test-7-0-N28",
+        "target": "test-7-0-N24",
+        "relation": "TRADES",
+        "confidence": 0.892,
+        "verified": true,
+        "active": true,
+        "value": 0.27
+      },
+      {
+        "id": "test-7-0-R0074",
+        "source": "test-7-0-N19",
+        "target": "test-7-0-N15",
+        "relation": "GUARANTEES",
+        "confidence": 0.473,
+        "verified": false,
+        "active": false,
+        "value": 0.61
+      },
+      {
+        "id": "test-7-0-R0075",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N33",
+        "relation": "HOLDS",
+        "confidence": 0.994,
+        "verified": true,
+        "active": true,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0076",
+        "source": "test-7-0-N37",
+        "target": "test-7-0-N6",
+        "relation": "TRADES",
+        "confidence": 0.683,
+        "verified": true,
+        "active": true,
+        "value": 0.19
+      },
+      {
+        "id": "test-7-0-R0077",
+        "source": "test-7-0-N47",
+        "target": "test-7-0-N10",
+        "relation": "TRADES",
+        "confidence": 0.716,
+        "verified": true,
+        "active": true,
+        "value": 0.31
+      },
+      {
+        "id": "test-7-0-R0078",
+        "source": "test-7-0-N40",
+        "target": "test-7-0-N7",
+        "relation": "GUARANTEES",
+        "confidence": 0.935,
+        "verified": true,
+        "active": false,
+        "value": 0.34
+      },
+      {
+        "id": "test-7-0-R0079",
+        "source": "test-7-0-N25",
+        "target": "test-7-0-N17",
+        "relation": "TRADES",
+        "confidence": 0.961,
+        "verified": true,
+        "active": true,
+        "value": 0.54
+      },
+      {
+        "id": "test-7-0-R0080",
+        "source": "test-7-0-N16",
+        "target": "test-7-0-N28",
+        "relation": "HOLDS",
+        "confidence": 0.823,
+        "verified": true,
+        "active": true,
+        "value": 0.32
+      },
+      {
+        "id": "test-7-0-R0081",
+        "source": "test-7-0-N22",
+        "target": "test-7-0-N10",
+        "relation": "TRADES",
+        "confidence": 0.832,
+        "verified": true,
+        "active": true,
+        "value": 0.25
+      },
+      {
+        "id": "test-7-0-R0082",
+        "source": "test-7-0-N19",
+        "target": "test-7-0-N35",
+        "relation": "GUARANTEES",
+        "confidence": 0.927,
+        "verified": true,
+        "active": true,
+        "value": 0.15
+      },
+      {
+        "id": "test-7-0-R0083",
+        "source": "test-7-0-N15",
+        "target": "test-7-0-N27",
+        "relation": "GUARANTEES",
+        "confidence": 0.696,
+        "verified": true,
+        "active": true,
+        "value": 0.43
+      },
+      {
+        "id": "test-7-0-R0084",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N37",
+        "relation": "TRADES",
+        "confidence": 0.922,
+        "verified": true,
+        "active": true,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0085",
+        "source": "test-7-0-N23",
+        "target": "test-7-0-N42",
+        "relation": "HOLDS",
+        "confidence": 0.821,
+        "verified": true,
+        "active": true,
+        "value": 0.77
+      },
+      {
+        "id": "test-7-0-R0086",
+        "source": "test-7-0-N24",
+        "target": "test-7-0-N32",
+        "relation": "HOLDS",
+        "confidence": 0.719,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0087",
+        "source": "test-7-0-N0",
+        "target": "test-7-0-N21",
+        "relation": "HOLDS",
+        "confidence": 0.926,
+        "verified": true,
+        "active": true,
+        "value": 0.55
+      },
+      {
+        "id": "test-7-0-R0088",
+        "source": "test-7-0-N36",
+        "target": "test-7-0-N28",
+        "relation": "GUARANTEES",
+        "confidence": 0.715,
+        "verified": true,
+        "active": true,
+        "value": 0.35
+      },
+      {
+        "id": "test-7-0-R0089",
+        "source": "test-7-0-N9",
+        "target": "test-7-0-N25",
+        "relation": "GUARANTEES",
+        "confidence": 0.914,
+        "verified": true,
+        "active": true,
+        "value": 0.67
+      },
+      {
+        "id": "test-7-0-R0090",
+        "source": "test-7-0-N16",
+        "target": "test-7-0-N12",
+        "relation": "GUARANTEES",
+        "confidence": 0.693,
+        "verified": true,
+        "active": true,
+        "value": 0.74
+      },
+      {
+        "id": "test-7-0-R0091",
+        "source": "test-7-0-N45",
+        "target": "test-7-0-N37",
+        "relation": "TRADES",
+        "confidence": 0.695,
+        "verified": true,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0092",
+        "source": "test-7-0-N0",
+        "target": "test-7-0-N8",
+        "relation": "HOLDS",
+        "confidence": 0.697,
+        "verified": true,
+        "active": true,
+        "value": 0.74
+      },
+      {
+        "id": "test-7-0-R0093",
+        "source": "test-7-0-N0",
+        "target": "test-7-0-N4",
+        "relation": "HOLDS",
+        "confidence": 0.733,
+        "verified": true,
+        "active": true,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0094",
+        "source": "test-7-0-N13",
+        "target": "test-7-0-N41",
+        "relation": "GUARANTEES",
+        "confidence": 0.974,
+        "verified": true,
+        "active": true,
+        "value": 0.6
+      },
+      {
+        "id": "test-7-0-R0095",
+        "source": "test-7-0-N18",
+        "target": "test-7-0-N38",
+        "relation": "GUARANTEES",
+        "confidence": 0.585,
+        "verified": true,
+        "active": false,
+        "value": 0.16
+      },
+      {
+        "id": "test-7-0-R0096",
+        "source": "test-7-0-N26",
+        "target": "test-7-0-N46",
+        "relation": "TRADES",
+        "confidence": 0.76,
+        "verified": true,
+        "active": true,
+        "value": 0.7
+      },
+      {
+        "id": "test-7-0-R0097",
+        "source": "test-7-0-N43",
+        "target": "test-7-0-N31",
+        "relation": "TRADES",
+        "confidence": 0.306,
+        "verified": false,
+        "active": false,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0098",
+        "source": "test-7-0-N47",
+        "target": "test-7-0-N15",
+        "relation": "HOLDS",
+        "confidence": 0.904,
+        "verified": true,
+        "active": true,
+        "value": 0.17
+      },
+      {
+        "id": "test-7-0-R0099",
+        "source": "test-7-0-N30",
+        "target": "test-7-0-N46",
+        "relation": "GUARANTEES",
+        "confidence": 0.846,
+        "verified": true,
+        "active": true,
+        "value": 0.44
+      },
+      {
+        "id": "test-7-0-R0100",
+        "source": "test-7-0-N19",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.925,
+        "verified": true,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0101",
+        "source": "test-7-0-N23",
+        "target": "test-7-0-N22",
+        "relation": "HOLDS",
+        "confidence": 0.913,
+        "verified": true,
+        "active": true,
+        "value": 0.51
+      },
+      {
+        "id": "test-7-0-R0102",
+        "source": "test-7-0-N29",
+        "target": "test-7-0-N9",
+        "relation": "HOLDS",
+        "confidence": 0.747,
+        "verified": true,
+        "active": true,
+        "value": 0.44
+      },
+      {
+        "id": "test-7-0-R0103",
+        "source": "test-7-0-N13",
+        "target": "test-7-0-N17",
+        "relation": "TRADES",
+        "confidence": 0.744,
+        "verified": true,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0104",
+        "source": "test-7-0-N17",
+        "target": "test-7-0-N21",
+        "relation": "TRADES",
+        "confidence": 0.934,
+        "verified": true,
+        "active": true,
+        "value": 0.64
+      },
+      {
+        "id": "test-7-0-R0105",
+        "source": "test-7-0-N24",
+        "target": "test-7-0-N4",
+        "relation": "TRADES",
+        "confidence": 0.845,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0106",
+        "source": "test-7-0-N18",
+        "target": "test-7-0-N6",
+        "relation": "HOLDS",
+        "confidence": 0.873,
+        "verified": true,
+        "active": true,
+        "value": 0.71
+      },
+      {
+        "id": "test-7-0-R0107",
+        "source": "test-7-0-N40",
+        "target": "test-7-0-N20",
+        "relation": "TRADES",
+        "confidence": 0.734,
+        "verified": true,
+        "active": true,
+        "value": 0.31
+      },
+      {
+        "id": "test-7-0-R0108",
+        "source": "test-7-0-N15",
+        "target": "test-7-0-N31",
+        "relation": "TRADES",
+        "confidence": 0.7,
+        "verified": true,
+        "active": true,
+        "value": 0.47
+      },
+      {
+        "id": "test-7-0-R0109",
+        "source": "test-7-0-N13",
+        "target": "test-7-0-N5",
+        "relation": "TRADES",
+        "confidence": 0.973,
+        "verified": true,
+        "active": true,
+        "value": 0.74
+      },
+      {
+        "id": "test-7-0-R0110",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N45",
+        "relation": "HOLDS",
+        "confidence": 0.919,
+        "verified": true,
+        "active": true,
+        "value": 0.72
+      },
+      {
+        "id": "test-7-0-R0111",
+        "source": "test-7-0-N31",
+        "target": "test-7-0-N19",
+        "relation": "HOLDS",
+        "confidence": 0.743,
+        "verified": true,
+        "active": true,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0112",
+        "source": "test-7-0-N22",
+        "target": "test-7-0-N46",
+        "relation": "TRADES",
+        "confidence": 0.684,
+        "verified": true,
+        "active": true,
+        "value": 0.66
+      },
+      {
+        "id": "test-7-0-R0113",
+        "source": "test-7-0-N12",
+        "target": "test-7-0-N36",
+        "relation": "TRADES",
+        "confidence": 0.909,
+        "verified": true,
+        "active": true,
+        "value": 0.64
+      },
+      {
+        "id": "test-7-0-R0114",
+        "source": "test-7-0-N22",
+        "target": "test-7-0-N14",
+        "relation": "TRADES",
+        "confidence": 0.727,
+        "verified": true,
+        "active": true,
+        "value": 0.53
+      },
+      {
+        "id": "test-7-0-R0115",
+        "source": "test-7-0-N8",
+        "target": "test-7-0-N24",
+        "relation": "GUARANTEES",
+        "confidence": 0.752,
+        "verified": true,
+        "active": true,
+        "value": 0.48
+      },
+      {
+        "id": "test-7-0-R0116",
+        "source": "test-7-0-N33",
+        "target": "test-7-0-N16",
+        "relation": "GUARANTEES",
+        "confidence": 0.726,
+        "verified": true,
+        "active": true,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0117",
+        "source": "test-7-0-N39",
+        "target": "test-7-0-N43",
+        "relation": "HOLDS",
+        "confidence": 0.889,
+        "verified": true,
+        "active": true,
+        "value": 0.61
+      },
+      {
+        "id": "test-7-0-R0118",
+        "source": "test-7-0-N30",
+        "target": "test-7-0-N6",
+        "relation": "TRADES",
+        "confidence": 0.955,
+        "verified": true,
+        "active": true,
+        "value": 0.67
+      },
+      {
+        "id": "test-7-0-R0119",
+        "source": "test-7-0-N7",
+        "target": "test-7-0-N11",
+        "relation": "GUARANTEES",
+        "confidence": 0.781,
+        "verified": true,
+        "active": true,
+        "value": 0.33
+      },
+      {
+        "id": "test-7-0-R0120",
+        "source": "test-7-0-N12",
+        "target": "test-7-0-N16",
+        "relation": "GUARANTEES",
+        "confidence": 0.74,
+        "verified": true,
+        "active": true,
+        "value": 0.67
+      },
+      {
+        "id": "test-7-0-R0121",
+        "source": "test-7-0-N23",
+        "target": "test-7-0-N22",
+        "relation": "GUARANTEES",
+        "confidence": 0.862,
+        "verified": true,
+        "active": true,
+        "value": 0.46
+      },
+      {
+        "id": "test-7-0-R0122",
+        "source": "test-7-0-N16",
+        "target": "test-7-0-N28",
+        "relation": "GUARANTEES",
+        "confidence": 0.873,
+        "verified": true,
+        "active": true,
+        "value": 0.28
+      },
+      {
+        "id": "test-7-0-R0123",
+        "source": "test-7-0-N42",
+        "target": "test-7-0-N30",
+        "relation": "TRADES",
+        "confidence": 0.991,
+        "verified": true,
+        "active": true,
+        "value": 0.7
+      },
+      {
+        "id": "test-7-0-R0124",
+        "source": "test-7-0-N47",
+        "target": "test-7-0-N19",
+        "relation": "HOLDS",
+        "confidence": 0.808,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0125",
+        "source": "test-7-0-N39",
+        "target": "test-7-0-N31",
+        "relation": "GUARANTEES",
+        "confidence": 0.254,
+        "verified": false,
+        "active": false,
+        "value": 0.53
+      },
+      {
+        "id": "test-7-0-R0126",
+        "source": "test-7-0-N27",
+        "target": "test-7-0-N31",
+        "relation": "HOLDS",
+        "confidence": 0.974,
+        "verified": true,
+        "active": true,
+        "value": 0.56
+      },
+      {
+        "id": "test-7-0-R0127",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N37",
+        "relation": "HOLDS",
+        "confidence": 0.803,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0128",
+        "source": "test-7-0-N38",
+        "target": "test-7-0-N46",
+        "relation": "GUARANTEES",
+        "confidence": 0.787,
+        "verified": true,
+        "active": true,
+        "value": 0.55
+      },
+      {
+        "id": "test-7-0-R0129",
+        "source": "test-7-0-N10",
+        "target": "test-7-0-N26",
+        "relation": "GUARANTEES",
+        "confidence": 0.953,
+        "verified": true,
+        "active": true,
+        "value": 0.77
+      },
+      {
+        "id": "test-7-0-R0130",
+        "source": "test-7-0-N36",
+        "target": "test-7-0-N8",
+        "relation": "TRADES",
+        "confidence": 0.955,
+        "verified": true,
+        "active": true,
+        "value": 0.84
+      },
+      {
+        "id": "test-7-0-R0131",
+        "source": "test-7-0-N46",
+        "target": "test-7-0-N42",
+        "relation": "HOLDS",
+        "confidence": 0.73,
+        "verified": true,
+        "active": true,
+        "value": 0.59
+      },
+      {
+        "id": "test-7-0-R0132",
+        "source": "test-7-0-N46",
+        "target": "test-7-0-N18",
+        "relation": "TRADES",
+        "confidence": 0.792,
+        "verified": true,
+        "active": true,
+        "value": 0.75
+      },
+      {
+        "id": "test-7-0-R0133",
+        "source": "test-7-0-N25",
+        "target": "test-7-0-N15",
+        "relation": "GUARANTEES",
+        "confidence": 0.902,
+        "verified": true,
+        "active": true,
+        "value": 0.15
+      },
+      {
+        "id": "test-7-0-R0134",
+        "source": "test-7-0-N41",
+        "target": "test-7-0-N17",
+        "relation": "HOLDS",
+        "confidence": 0.763,
+        "verified": true,
+        "active": true,
+        "value": 0.57
+      },
+      {
+        "id": "test-7-0-R0135",
+        "source": "test-7-0-N31",
+        "target": "test-7-0-N16",
+        "relation": "GUARANTEES",
+        "confidence": 0.878,
+        "verified": true,
+        "active": true,
+        "value": 0.59
+      },
+      {
+        "id": "test-7-0-R0136",
+        "source": "test-7-0-N7",
+        "target": "test-7-0-N43",
+        "relation": "TRADES",
+        "confidence": 0.723,
+        "verified": true,
+        "active": true,
+        "value": 0.74
+      },
+      {
+        "id": "test-7-0-R0137",
+        "source": "test-7-0-N38",
+        "target": "test-7-0-N6",
+        "relation": "HOLDS",
+        "confidence": 0.927,
+        "verified": true,
+        "active": false,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0138",
+        "source": "test-7-0-N41",
+        "target": "test-7-0-N36",
+        "relation": "HOLDS",
+        "confidence": 0.74,
+        "verified": false,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0139",
+        "source": "test-7-0-N12",
+        "target": "test-7-0-N36",
+        "relation": "HOLDS",
+        "confidence": 0.996,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0140",
+        "source": "test-7-0-N35",
+        "target": "test-7-0-N27",
+        "relation": "TRADES",
+        "confidence": 0.868,
+        "verified": true,
+        "active": true,
+        "value": 0.66
+      },
+      {
+        "id": "test-7-0-R0141",
+        "source": "test-7-0-N35",
+        "target": "test-7-0-N23",
+        "relation": "TRADES",
+        "confidence": 0.974,
+        "verified": true,
+        "active": true,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0142",
+        "source": "test-7-0-N9",
+        "target": "test-7-0-N41",
+        "relation": "HOLDS",
+        "confidence": 0.896,
+        "verified": true,
+        "active": true,
+        "value": 0.47
+      },
+      {
+        "id": "test-7-0-R0143",
+        "source": "test-7-0-N28",
+        "target": "test-7-0-N32",
+        "relation": "HOLDS",
+        "confidence": 0.863,
+        "verified": true,
+        "active": true,
+        "value": 0.72
+      },
+      {
+        "id": "test-7-0-R0144",
+        "source": "test-7-0-N32",
+        "target": "test-7-0-N9",
+        "relation": "TRADES",
+        "confidence": 0.742,
+        "verified": true,
+        "active": true,
+        "value": 0.31
+      },
+      {
+        "id": "test-7-0-R0145",
+        "source": "test-7-0-N9",
+        "target": "test-7-0-N8",
+        "relation": "HOLDS",
+        "confidence": 0.819,
+        "verified": true,
+        "active": true,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0146",
+        "source": "test-7-0-N6",
+        "target": "test-7-0-N38",
+        "relation": "HOLDS",
+        "confidence": 0.891,
+        "verified": true,
+        "active": true,
+        "value": 0.45
+      },
+      {
+        "id": "test-7-0-R0147",
+        "source": "test-7-0-N29",
+        "target": "test-7-0-N27",
+        "relation": "TRADES",
+        "confidence": 0.967,
+        "verified": true,
+        "active": true,
+        "value": 0.16
+      },
+      {
+        "id": "test-7-0-R0148",
+        "source": "test-7-0-N4",
+        "target": "test-7-0-N39",
+        "relation": "TRADES",
+        "confidence": 0.716,
+        "verified": true,
+        "active": true,
+        "value": 0.2
+      },
+      {
+        "id": "test-7-0-R0149",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N22",
+        "relation": "HOLDS",
+        "confidence": 0.855,
+        "verified": true,
+        "active": true,
+        "value": 0.57
+      },
+      {
+        "id": "test-7-0-R0150",
+        "source": "test-7-0-N43",
+        "target": "test-7-0-N47",
+        "relation": "TRADES",
+        "confidence": 0.874,
+        "verified": true,
+        "active": true,
+        "value": 0.17
+      },
+      {
+        "id": "test-7-0-R0151",
+        "source": "test-7-0-N30",
+        "target": "test-7-0-N22",
+        "relation": "TRADES",
+        "confidence": 0.883,
+        "verified": true,
+        "active": true,
+        "value": 0.28
+      },
+      {
+        "id": "test-7-0-R0152",
+        "source": "test-7-0-N31",
+        "target": "test-7-0-N43",
+        "relation": "HOLDS",
+        "confidence": 0.872,
+        "verified": true,
+        "active": true,
+        "value": 0.21
+      },
+      {
+        "id": "test-7-0-R0153",
+        "source": "test-7-0-N41",
+        "target": "test-7-0-N29",
+        "relation": "TRADES",
+        "confidence": 0.943,
+        "verified": true,
+        "active": true,
+        "value": 0.19
+      },
+      {
+        "id": "test-7-0-R0154",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N28",
+        "relation": "HOLDS",
+        "confidence": 0.989,
+        "verified": true,
+        "active": true,
+        "value": 0.53
+      },
+      {
+        "id": "test-7-0-R0155",
+        "source": "test-7-0-N30",
+        "target": "test-7-0-N14",
+        "relation": "HOLDS",
+        "confidence": 0.821,
+        "verified": true,
+        "active": true,
+        "value": 0.74
+      },
+      {
+        "id": "test-7-0-R0156",
+        "source": "test-7-0-N44",
+        "target": "test-7-0-N36",
+        "relation": "GUARANTEES",
+        "confidence": 0.744,
+        "verified": true,
+        "active": true,
+        "value": 0.75
+      },
+      {
+        "id": "test-7-0-R0157",
+        "source": "test-7-0-N0",
+        "target": "test-7-0-N32",
+        "relation": "HOLDS",
+        "confidence": 0.935,
+        "verified": true,
+        "active": true,
+        "value": 0.15
+      },
+      {
+        "id": "test-7-0-R0158",
+        "source": "test-7-0-N34",
+        "target": "test-7-0-N16",
+        "relation": "HOLDS",
+        "confidence": 0.92,
+        "verified": true,
+        "active": true,
+        "value": 0.44
+      },
+      {
+        "id": "test-7-0-R0159",
+        "source": "test-7-0-N34",
+        "target": "test-7-0-N14",
+        "relation": "HOLDS",
+        "confidence": 0.704,
+        "verified": false,
+        "active": true,
+        "value": 0.66
+      },
+      {
+        "id": "test-7-0-R0160",
+        "source": "test-7-0-N7",
+        "target": "test-7-0-N15",
+        "relation": "HOLDS",
+        "confidence": 0.954,
+        "verified": true,
+        "active": true,
+        "value": 0.17
+      },
+      {
+        "id": "test-7-0-R0161",
+        "source": "test-7-0-N35",
+        "target": "test-7-0-N43",
+        "relation": "GUARANTEES",
+        "confidence": 0.986,
+        "verified": true,
+        "active": true,
+        "value": 0.3
+      },
+      {
+        "id": "test-7-0-R0162",
+        "source": "test-7-0-N24",
+        "target": "test-7-0-N36",
+        "relation": "GUARANTEES",
+        "confidence": 0.842,
+        "verified": true,
+        "active": true,
+        "value": 0.78
+      },
+      {
+        "id": "test-7-0-R0163",
+        "source": "test-7-0-N26",
+        "target": "test-7-0-N14",
+        "relation": "TRADES",
+        "confidence": 0.696,
+        "verified": true,
+        "active": true,
+        "value": 0.31
+      },
+      {
+        "id": "test-7-0-R0164",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N11",
+        "relation": "HOLDS",
+        "confidence": 0.8,
+        "verified": true,
+        "active": true,
+        "value": 0.35
+      },
+      {
+        "id": "test-7-0-R0165",
+        "source": "test-7-0-N40",
+        "target": "test-7-0-N32",
+        "relation": "TRADES",
+        "confidence": 0.923,
+        "verified": true,
+        "active": true,
+        "value": 0.37
+      },
+      {
+        "id": "test-7-0-R0166",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N45",
+        "relation": "TRADES",
+        "confidence": 0.948,
+        "verified": true,
+        "active": true,
+        "value": 0.55
+      },
+      {
+        "id": "test-7-0-R0167",
+        "source": "test-7-0-N2",
+        "target": "test-7-0-N21",
+        "relation": "HOLDS",
+        "confidence": 0.918,
+        "verified": true,
+        "active": true,
+        "value": 0.67
+      },
+      {
+        "id": "test-7-0-R0168",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N35",
+        "relation": "HOLDS",
+        "confidence": 0.941,
+        "verified": true,
+        "active": true,
+        "value": 0.52
+      },
+      {
+        "id": "test-7-0-R0169",
+        "source": "test-7-0-N43",
+        "target": "test-7-0-N7",
+        "relation": "HOLDS",
+        "confidence": 0.714,
+        "verified": true,
+        "active": true,
+        "value": 0.5
+      },
+      {
+        "id": "test-7-0-R0170",
+        "source": "test-7-0-N35",
+        "target": "test-7-0-N39",
+        "relation": "GUARANTEES",
+        "confidence": 0.89,
+        "verified": true,
+        "active": true,
+        "value": 0.81
+      },
+      {
+        "id": "test-7-0-R0171",
+        "source": "test-7-0-N2",
+        "target": "test-7-0-N11",
+        "relation": "HOLDS",
+        "confidence": 0.942,
+        "verified": true,
+        "active": true,
+        "value": 0.82
+      },
+      {
+        "id": "test-7-0-R0172",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N22",
+        "relation": "TRADES",
+        "confidence": 0.886,
+        "verified": true,
+        "active": true,
+        "value": 0.23
+      },
+      {
+        "id": "test-7-0-R0173",
+        "source": "test-7-0-N19",
+        "target": "test-7-0-N27",
+        "relation": "HOLDS",
+        "confidence": 0.682,
+        "verified": true,
+        "active": true,
+        "value": 0.38
+      },
+      {
+        "id": "test-7-0-R0174",
+        "source": "test-7-0-N32",
+        "target": "test-7-0-N45",
+        "relation": "GUARANTEES",
+        "confidence": 0.876,
+        "verified": true,
+        "active": true,
+        "value": 0.23
+      },
+      {
+        "id": "test-7-0-R0175",
+        "source": "test-7-0-N16",
+        "target": "test-7-0-N40",
+        "relation": "GUARANTEES",
+        "confidence": 0.758,
+        "verified": true,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0176",
+        "source": "test-7-0-N16",
+        "target": "test-7-0-N8",
+        "relation": "TRADES",
+        "confidence": 0.374,
+        "verified": false,
+        "active": false,
+        "value": 0.76
+      },
+      {
+        "id": "test-7-0-R0177",
+        "source": "test-7-0-N18",
+        "target": "test-7-0-N6",
+        "relation": "GUARANTEES",
+        "confidence": 0.792,
+        "verified": true,
+        "active": true,
+        "value": 0.29
+      },
+      {
+        "id": "test-7-0-R0178",
+        "source": "test-7-0-N2",
+        "target": "test-7-0-N24",
+        "relation": "HOLDS",
+        "confidence": 0.793,
+        "verified": true,
+        "active": true,
+        "value": 0.76
+      },
+      {
+        "id": "test-7-0-R0179",
+        "source": "test-7-0-N20",
+        "target": "test-7-0-N7",
+        "relation": "HOLDS",
+        "confidence": 0.779,
+        "verified": true,
+        "active": true,
+        "value": 0.79
+      },
+      {
+        "id": "test-7-0-R0180",
+        "source": "test-7-0-N21",
+        "target": "test-7-0-N33",
+        "relation": "TRADES",
+        "confidence": 0.837,
+        "verified": true,
+        "active": true,
+        "value": 0.28
+      },
+      {
+        "id": "test-7-0-R0181",
+        "source": "test-7-0-N45",
+        "target": "test-7-0-N37",
+        "relation": "HOLDS",
+        "confidence": 0.691,
+        "verified": true,
+        "active": true,
+        "value": 0.77
+      },
+      {
+        "id": "test-7-0-R0182",
+        "source": "test-7-0-N27",
+        "target": "test-7-0-N35",
+        "relation": "HOLDS",
+        "confidence": 0.757,
+        "verified": true,
+        "active": true,
+        "value": 0.31
+      },
+      {
+        "id": "test-7-0-R0183",
+        "source": "test-7-0-N14",
+        "target": "test-7-0-N6",
+        "relation": "HOLDS",
+        "confidence": 0.76,
+        "verified": true,
+        "active": true,
+        "value": 0.24
+      },
+      {
+        "id": "test-7-0-R0184",
+        "source": "test-7-0-N42",
+        "target": "test-7-0-N10",
+        "relation": "GUARANTEES",
+        "confidence": 0.869,
+        "verified": true,
+        "active": true,
+        "value": 0.18
+      },
+      {
+        "id": "test-7-0-R0185",
+        "source": "test-7-0-N15",
+        "target": "test-7-0-N22",
+        "relation": "HOLDS",
+        "confidence": 0.927,
+        "verified": true,
+        "active": true,
+        "value": 0.59
+      },
+      {
+        "id": "test-7-0-R0186",
+        "source": "test-7-0-N28",
+        "target": "test-7-0-N40",
+        "relation": "HOLDS",
+        "confidence": 0.888,
+        "verified": true,
+        "active": true,
+        "value": 0.39
+      },
+      {
+        "id": "test-7-0-R0187",
+        "source": "test-7-0-N25",
+        "target": "test-7-0-N16",
+        "relation": "GUARANTEES",
+        "confidence": 0.963,
+        "verified": true,
+        "active": true,
+        "value": 0.41
+      },
+      {
+        "id": "test-7-0-R0188",
+        "source": "test-7-0-N38",
+        "target": "test-7-0-N41",
+        "relation": "TRADES",
+        "confidence": 0.703,
+        "verified": true,
+        "active": true,
+        "value": 0.82
+      },
+      {
+        "id": "test-7-0-R0189",
+        "source": "test-7-0-N20",
+        "target": "test-7-0-N24",
+        "relation": "TRADES",
+        "confidence": 0.692,
+        "verified": true,
+        "active": true,
+        "value": 0.44
+      },
+      {
+        "id": "test-7-0-R0190",
+        "source": "test-7-0-N11",
+        "target": "test-7-0-N15",
+        "relation": "GUARANTEES",
+        "confidence": 0.966,
+        "verified": true,
+        "active": true,
+        "value": 0.66
+      },
+      {
+        "id": "test-7-0-R0191",
+        "source": "test-7-0-N1",
+        "target": "test-7-0-N17",
+        "relation": "HOLDS",
+        "confidence": 0.896,
+        "verified": true,
+        "active": true,
+        "value": 0.75
+      },
+      {
+        "id": "test-7-0-R0192",
+        "source": "test-7-0-N3",
+        "target": "test-7-0-N7",
+        "relation": "HOLDS",
+        "confidence": 0.295,
+        "verified": false,
+        "active": true,
+        "value": 0.73
+      },
+      {
+        "id": "test-7-0-R0193",
+        "source": "test-7-0-N14",
+        "target": "test-7-0-N6",
+        "relation": "GUARANTEES",
+        "confidence": 0.955,
+        "verified": true,
+        "active": true,
+        "value": 0.33
+      },
+      {
+        "id": "test-7-0-R0194",
+        "source": "test-7-0-N17",
+        "target": "test-7-0-N9",
+        "relation": "HOLDS",
+        "confidence": 0.717,
+        "verified": true,
+        "active": true,
+        "value": 0.82
+      },
+      {
+        "id": "test-7-0-R0195",
+        "source": "test-7-0-N4",
+        "target": "test-7-0-N10",
+        "relation": "GUARANTEES",
+        "confidence": 0.716,
+        "verified": true,
+        "active": true,
+        "value": 0.71
+      },
+      {
+        "id": "test-7-0-R0196",
+        "source": "test-7-0-N23",
+        "target": "test-7-0-N10",
+        "relation": "TRADES",
+        "confidence": 0.872,
+        "verified": true,
+        "active": true,
+        "value": 0.63
+      },
+      {
+        "id": "test-7-0-R0197",
+        "source": "test-7-0-N9",
+        "target": "test-7-0-N5",
+        "relation": "TRADES",
+        "confidence": 0.98,
+        "verified": true,
+        "active": true,
+        "value": 0.6
+      },
+      {
+        "id": "test-7-0-R0198",
+        "source": "test-7-0-N2",
+        "target": "test-7-0-N34",
+        "relation": "HOLDS",
+        "confidence": 0.693,
+        "verified": true,
+        "active": true,
+        "value": 0.19
+      },
+      {
+        "id": "test-7-0-R0199",
+        "source": "test-7-0-N27",
+        "target": "test-7-0-N11",
+        "relation": "HOLDS",
+        "confidence": 0.806,
+        "verified": true,
+        "active": true,
+        "value": 0.34
+      }
+    ]
+  },
+  "query": {
+    "id": "test-7-0-Q0",
+    "start": "test-7-0-N0",
+    "relations": [
+      "HOLDS",
+      "TRADES"
+    ],
+    "sector": "新能源",
+    "listed": true,
+    "text": "从教学投资人1出发，依次经过持股 → 交易，可到达哪些新能源上市企业？请给出一条有效证据路径。"
+  },
+  "result": {
+    "method": "hybrid_no_expert",
+    "label": "混合（无专家）",
+    "status": "found",
+    "found": true,
+    "valid": false,
+    "answer": "test-7-0-N47",
+    "path": [
+      "test-7-0-N0",
+      "test-7-0-N43",
+      "test-7-0-N47"
+    ],
+    "edge_ids": [
+      "test-7-0-R0039",
+      "test-7-0-R0150"
+    ],
+    "expanded": 3,
+    "generated": 8,
+    "successor_checks": 0,
+    "expert_rejections": 0,
+    "rollout_steps": 0,
+    "simulations": 0,
+    "total_work": 3,
+    "repeated_states": 0,
+    "heuristic_evaluations": 6,
+    "heuristic_edge_checks": 17,
+    "heuristic_probe_states": 1,
+    "adjacency_edge_scans": 27,
+    "proof_pruned": 2,
+    "proof_checks": 7,
+    "peak_frontier": 4,
+    "total_edge_checks": 17,
+    "successor_cache_hits": 3,
+    "successor_cache_entries": 6,
+    "completed_paths": 2,
+    "redundant_paths": 0,
+    "redundant_path_ratio": 0.0,
+    "redundancy_ratio": 0.0,
+    "hops": 2,
+    "elapsed_ms": 0.6458999996539205,
+    "budget": 8,
+    "expert_enabled": false,
+    "trace": [
+      {
+        "id": 0,
+        "node": "test-7-0-N0",
+        "depth": 0,
+        "path": [
+          "test-7-0-N0"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "start",
+        "g": 0,
+        "h": 2.0,
+        "f": 2.0,
+        "p": 0.92205
+      },
+      {
+        "id": 1,
+        "node": "test-7-0-N0",
+        "depth": 0,
+        "path": [
+          "test-7-0-N0"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 0,
+        "h": 2.0,
+        "f": 2.0,
+        "p": 0.92205
+      },
+      {
+        "id": 2,
+        "node": "test-7-0-N43",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 1.0,
+        "f": 2.0,
+        "p": 0.87706
+      },
+      {
+        "id": 3,
+        "node": "test-7-0-N21",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N21"
+        ],
+        "edge_ids": [
+          "test-7-0-R0087"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 1.0,
+        "f": 2.0,
+        "p": 0.91631
+      },
+      {
+        "id": 4,
+        "node": "test-7-0-N8",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N8"
+        ],
+        "edge_ids": [
+          "test-7-0-R0092"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 1.0,
+        "f": 2.0,
+        "p": 0.87977
+      },
+      {
+        "id": 5,
+        "node": "test-7-0-N4",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N4"
+        ],
+        "edge_ids": [
+          "test-7-0-R0093"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 1.0,
+        "f": 2.0,
+        "p": 0.89146
+      },
+      {
+        "id": 6,
+        "node": "test-7-0-N32",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N32"
+        ],
+        "edge_ids": [
+          "test-7-0-R0157"
+        ],
+        "parent_path": [],
+        "status": "proof_pruned",
+        "g": 1,
+        "h": null,
+        "f": null,
+        "p": 0.08328,
+        "reason": "全部一步后继均不满足终点谓词"
+      },
+      {
+        "id": 7,
+        "node": "test-7-0-N43",
+        "depth": 1,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039"
+        ],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 1,
+        "h": 1.0,
+        "f": 2.0,
+        "p": 0.87706
+      },
+      {
+        "id": 8,
+        "node": "test-7-0-N31",
+        "depth": 2,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43",
+          "test-7-0-N31"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039",
+          "test-7-0-R0097"
+        ],
+        "parent_path": [
+          "test-7-0-R0039"
+        ],
+        "status": "proof_pruned",
+        "g": 2,
+        "h": null,
+        "f": null,
+        "p": null,
+        "reason": "完整路径的终点不满足问题属性"
+      },
+      {
+        "id": 9,
+        "node": "test-7-0-N47",
+        "depth": 2,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43",
+          "test-7-0-N47"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039",
+          "test-7-0-R0150"
+        ],
+        "parent_path": [
+          "test-7-0-R0039"
+        ],
+        "status": "generated",
+        "g": 2,
+        "h": 0.0,
+        "f": 2.0,
+        "p": null
+      },
+      {
+        "id": 10,
+        "node": "test-7-0-N47",
+        "depth": 2,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43",
+          "test-7-0-N47"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039",
+          "test-7-0-R0150"
+        ],
+        "parent_path": [
+          "test-7-0-R0039"
+        ],
+        "status": "expanded",
+        "g": 2,
+        "h": 0.0,
+        "f": 2.0,
+        "p": null
+      },
+      {
+        "id": 11,
+        "node": "test-7-0-N47",
+        "depth": 2,
+        "path": [
+          "test-7-0-N0",
+          "test-7-0-N43",
+          "test-7-0-N47"
+        ],
+        "edge_ids": [
+          "test-7-0-R0039",
+          "test-7-0-R0150"
+        ],
+        "parent_path": [
+          "test-7-0-R0039"
+        ],
+        "status": "solution",
+        "g": 2,
+        "h": 0.0,
+        "f": 2.0,
+        "p": null
+      }
+    ],
+    "trace_events": 12,
+    "trace_truncated": false,
+    "classifier_used": true,
+    "heuristic_used": true,
+    "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+  },
+  "independent_oracle": {
+    "used_only_after_search": true,
+    "valid_path_count": 2,
+    "valid_paths": [
+      {
+        "nodes": [
+          "test-7-0-N0",
+          "test-7-0-N21",
+          "test-7-0-N37"
+        ],
+        "edge_ids": [
+          "test-7-0-R0087",
+          "test-7-0-R0084"
+        ]
+      },
+      {
+        "nodes": [
+          "test-7-0-N0",
+          "test-7-0-N4",
+          "test-7-0-N39"
+        ],
+        "edge_ids": [
+          "test-7-0-R0093",
+          "test-7-0-R0148"
+        ]
+      }
+    ]
+  },
+  "replay_validation": {
+    "all_trace_states_valid": true,
+    "trace_complete": true,
+    "matches_saved_run_fields": [
+      "method",
+      "budget",
+      "valid",
+      "found",
+      "status",
+      "expanded",
+      "total_work",
+      "successor_checks",
+      "heuristic_evaluations",
+      "heuristic_probe_states",
+      "proof_pruned",
+      "proof_checks",
+      "peak_frontier",
+      "adjacency_edge_scans",
+      "heuristic_edge_checks",
+      "total_edge_checks",
+      "successor_cache_hits",
+      "successor_cache_entries",
+      "hops",
+      "redundancy_ratio",
+      "redundant_path_ratio",
+      "expert_rejections"
+    ],
+    "elapsed_ms_not_compared": true
+  }
+}

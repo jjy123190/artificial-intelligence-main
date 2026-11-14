@@ -1,0 +1,47 @@
+{
+  "kind": "same-process alternating warm UI snapshot timing; not model or search improvement",
+  "identical_unmodified_output": true,
+  "runs": [
+    {
+      "iteration": 0,
+      "before_ms": 884.9184999999125,
+      "after_ms": 1371.93059999845
+    },
+    {
+      "iteration": 1,
+      "after_ms": 1513.7455000003683,
+      "before_ms": 931.6154999978608
+    },
+    {
+      "iteration": 2,
+      "before_ms": 937.997400003951,
+      "after_ms": 1400.8761000004597
+    },
+    {
+      "iteration": 3,
+      "after_ms": 1491.162999998778,
+      "before_ms": 1045.5575000014505
+    },
+    {
+      "iteration": 4,
+      "before_ms": 878.1708000024082,
+      "after_ms": 1299.080500000855
+    },
+    {
+      "iteration": 5,
+      "after_ms": 1069.2944999973406,
+      "before_ms": 701.6763999999966
+    },
+    {
+      "iteration": 6,
+      "before_ms": 715.1551999995718,
+      "after_ms": 1111.4575000028708
+    }
+  ],
+  "before_median_ms": 884.9184999999125,
+  "after_median_ms": 1371.93059999845,
+  "before_readout_loads": 10,
+  "after_readout_loads": 1,
+  "extra_validation": "72 original +144 fresh LLM prefix probabilities; 100 numerical cases; paired searches; 3888-row CSV/18 graph intervals; complete confirmation matrices",
+  "limitations": "Wall time is local CPU/filesystem load dependent; request scoped reuse only, no across-request stale evidence cache."
+}

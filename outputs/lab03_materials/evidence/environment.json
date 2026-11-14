@@ -1,0 +1,15 @@
+{
+  "python": "3.13.9",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13500H",
+  "packages": {
+    "numpy": "2.4.6",
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "python-docx": "1.2.0",
+    "matplotlib": "3.10.8",
+    "PyMuPDF": "1.27.2.3",
+    "playwright": "1.63.0"
+  },
+  "scope": "Current report-generation environment; historical timing retained verbatim, not freshly benchmarked."
+}

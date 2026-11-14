@@ -1,0 +1,642 @@
+[
+  {
+    "style": "uncentered",
+    "weight": 2.0,
+    "questions": 9,
+    "before_valid": 9,
+    "after_valid": 9,
+    "before_expanded": 39,
+    "after_expanded": 39,
+    "rows": [
+      {
+        "query": "validation-7-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        },
+        "after": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        }
+      },
+      {
+        "query": "validation-19-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-19-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        }
+      },
+      {
+        "query": "validation-19-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        },
+        "after": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        }
+      },
+      {
+        "query": "validation-43-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-43-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        }
+      },
+      {
+        "query": "validation-43-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        },
+        "after": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        }
+      }
+    ]
+  },
+  {
+    "style": "centered",
+    "weight": 0.25,
+    "questions": 9,
+    "before_valid": 9,
+    "after_valid": 9,
+    "before_expanded": 39,
+    "after_expanded": 39,
+    "rows": [
+      {
+        "query": "validation-7-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        },
+        "after": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        }
+      },
+      {
+        "query": "validation-19-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-19-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        }
+      },
+      {
+        "query": "validation-19-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        },
+        "after": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        }
+      },
+      {
+        "query": "validation-43-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-43-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        }
+      },
+      {
+        "query": "validation-43-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        },
+        "after": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        }
+      }
+    ]
+  },
+  {
+    "style": "centered",
+    "weight": 0.5,
+    "questions": 9,
+    "before_valid": 9,
+    "after_valid": 9,
+    "before_expanded": 39,
+    "after_expanded": 39,
+    "rows": [
+      {
+        "query": "validation-7-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        },
+        "after": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        }
+      },
+      {
+        "query": "validation-19-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-19-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        }
+      },
+      {
+        "query": "validation-19-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        },
+        "after": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        }
+      },
+      {
+        "query": "validation-43-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-43-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        }
+      },
+      {
+        "query": "validation-43-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        },
+        "after": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        }
+      }
+    ]
+  },
+  {
+    "style": "centered",
+    "weight": 1.0,
+    "questions": 9,
+    "before_valid": 9,
+    "after_valid": 9,
+    "before_expanded": 39,
+    "after_expanded": 39,
+    "rows": [
+      {
+        "query": "validation-7-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        },
+        "after": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        }
+      },
+      {
+        "query": "validation-19-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-19-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        }
+      },
+      {
+        "query": "validation-19-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        },
+        "after": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        }
+      },
+      {
+        "query": "validation-43-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-43-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        }
+      },
+      {
+        "query": "validation-43-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        },
+        "after": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        }
+      }
+    ]
+  },
+  {
+    "style": "centered",
+    "weight": 2.0,
+    "questions": 9,
+    "before_valid": 9,
+    "after_valid": 9,
+    "before_expanded": 39,
+    "after_expanded": 39,
+    "rows": [
+      {
+        "query": "validation-7-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 14
+        }
+      },
+      {
+        "query": "validation-7-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        },
+        "after": {
+          "valid": true,
+          "expanded": 7,
+          "total_edge_checks": 31
+        }
+      },
+      {
+        "query": "validation-19-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-19-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 36
+        }
+      },
+      {
+        "query": "validation-19-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        },
+        "after": {
+          "valid": true,
+          "expanded": 5,
+          "total_edge_checks": 19
+        }
+      },
+      {
+        "query": "validation-43-0-Q0",
+        "before": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        },
+        "after": {
+          "valid": true,
+          "expanded": 3,
+          "total_edge_checks": 13
+        }
+      },
+      {
+        "query": "validation-43-0-Q1",
+        "before": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        },
+        "after": {
+          "valid": true,
+          "expanded": 4,
+          "total_edge_checks": 27
+        }
+      },
+      {
+        "query": "validation-43-0-Q2",
+        "before": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        },
+        "after": {
+          "valid": true,
+          "expanded": 6,
+          "total_edge_checks": 30
+        }
+      }
+    ]
+  }
+]

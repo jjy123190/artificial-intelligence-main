@@ -1,0 +1,2498 @@
+{
+  "status": "passed",
+  "data_splits": [
+    "train",
+    "validation"
+  ],
+  "selected_candidate": "suffix2-cap2",
+  "ga_weights": {
+    "7": [
+      1.7,
+      0.5,
+      0.6,
+      0.2,
+      1.5,
+      0.0
+    ],
+    "19": [
+      1.7338704950401418,
+      3.667511707146203,
+      1.6851483017828404,
+      2.2499763286722225,
+      1.4906399625997435,
+      0.0
+    ],
+    "43": [
+      2.085950418700526,
+      2.7247825080469403,
+      4.03242944353339,
+      1.5460650237597833,
+      2.398449664002703,
+      0.0
+    ]
+  },
+  "summary": [
+    {
+      "method": "astar_fixed",
+      "valid": 81,
+      "n": 81,
+      "expanded": 4.160493827160494,
+      "total_edge_checks": 21.85185185185185,
+      "adjacency_edge_scans": 50.44444444444444,
+      "before_adjacency_edge_scans": 44.123456790123456,
+      "heuristic_probe_states": 3.8395061728395063
+    },
+    {
+      "method": "astar_ga",
+      "valid": 81,
+      "n": 81,
+      "expanded": 4.111111111111111,
+      "total_edge_checks": 21.728395061728396,
+      "adjacency_edge_scans": 49.864197530864196,
+      "before_adjacency_edge_scans": 44.03703703703704,
+      "heuristic_probe_states": 3.765432098765432
+    },
+    {
+      "method": "hybrid",
+      "valid": 81,
+      "n": 81,
+      "expanded": 4.111111111111111,
+      "total_edge_checks": 21.728395061728396,
+      "adjacency_edge_scans": 49.864197530864196,
+      "before_adjacency_edge_scans": 43.97530864197531,
+      "heuristic_probe_states": 3.765432098765432
+    }
+  ],
+  "rows": [
+    {
+      "query_id": "validation-7-0-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 64,
+      "valid": true,
+      "expanded": 7,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-7-0-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 60,
+      "valid": true,
+      "expanded": 7,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-7-0-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 60,
+      "valid": true,
+      "expanded": 7,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-7-0-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 25,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 25,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-0-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 25,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 25,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-0-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 25,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 25,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-0-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 45,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-0-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 45,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-0-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 45,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-0-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 43,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 43,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 43,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 37,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-0-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 37,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-0-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 37,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-0-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-0-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-1-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-1-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-1-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 46,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 46,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 46,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 75,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-1-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 75,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-1-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 75,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-1-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 4
+    },
+    {
+      "query_id": "validation-7-1-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 66,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 4
+    },
+    {
+      "query_id": "validation-7-1-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 66,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 4
+    },
+    {
+      "query_id": "validation-7-1-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-1-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 56,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-7-1-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 56,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-7-1-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 56,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-7-1-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-1-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 72,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-7-2-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 72,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-7-2-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 72,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-7-2-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 47,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 47,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 47,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-7-2-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 53,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 39,
+      "adjacency_edge_scans": 91,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-7-2-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 53,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 39,
+      "adjacency_edge_scans": 91,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-7-2-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 53,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 39,
+      "adjacency_edge_scans": 91,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-7-2-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 60,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-2-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 60,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-2-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 24,
+      "adjacency_edge_scans": 60,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-7-2-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-7-2-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-2-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-2-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 47,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 32,
+      "adjacency_edge_scans": 71,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-7-2-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 90,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 46,
+      "adjacency_edge_scans": 102,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-7-2-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 90,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 46,
+      "adjacency_edge_scans": 102,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-7-2-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 90,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 46,
+      "adjacency_edge_scans": 102,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-19-0-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 77,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 77,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 77,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 67,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-0-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 57,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-0-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 57,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-0-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 31,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 31,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 31,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 63,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 67,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 63,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 67,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 63,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 20,
+      "adjacency_edge_scans": 67,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-0-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 24,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 24,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 62,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 62,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 42,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 62,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-0-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 67,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-0-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-0-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 70,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 42,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 38,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 38,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 38,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 38,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 38,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 38,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 48,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 7,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 76,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 73,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 73,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-19-1-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-1-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-1-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-1-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 35,
+      "adjacency_edge_scans": 78,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-19-1-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 35,
+      "adjacency_edge_scans": 78,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-19-1-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 35,
+      "adjacency_edge_scans": 78,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-19-1-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-1-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 48,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-1-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 48,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 22,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-1-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 33,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 33,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-1-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 57,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 63,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-19-1-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 57,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 63,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-19-1-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 23,
+      "adjacency_edge_scans": 63,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-19-1-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 70,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-1-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 70,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-1-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 62,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 31,
+      "adjacency_edge_scans": 70,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 22,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 22,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 22,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 22,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 22,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 10,
+      "adjacency_edge_scans": 22,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 59,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-19-2-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 59,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-19-2-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 59,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-19-2-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 78,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 78,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 78,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 21,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 26,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 26,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-19-2-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 36,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 36,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 36,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 15,
+      "adjacency_edge_scans": 39,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 55,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 55,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 55,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-19-2-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-2-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-2-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 59,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-19-2-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 48,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 48,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-19-2-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 48,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-0-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 29,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-43-0-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 38,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-43-0-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 29,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 53,
+      "heuristic_probe_states": 7
+    },
+    {
+      "query_id": "validation-43-0-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 73,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-0-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 73,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-0-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 73,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-0-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 74,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-43-0-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 74,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-43-0-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 26,
+      "adjacency_edge_scans": 74,
+      "heuristic_probe_states": 9
+    },
+    {
+      "query_id": "validation-43-0-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 63,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 38,
+      "adjacency_edge_scans": 75,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-43-0-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 51,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 34,
+      "adjacency_edge_scans": 63,
+      "heuristic_probe_states": 4
+    },
+    {
+      "query_id": "validation-43-0-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 63,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 34,
+      "adjacency_edge_scans": 63,
+      "heuristic_probe_states": 4
+    },
+    {
+      "query_id": "validation-43-0-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-0-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-0-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 11,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-0-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 17,
+      "adjacency_edge_scans": 54,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-43-0-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 17,
+      "adjacency_edge_scans": 54,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-43-0-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 17,
+      "adjacency_edge_scans": 54,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-43-0-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 61,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 57,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 57,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-0-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 57,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 41,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 40,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 25,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 64,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 52,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-1-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 64,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 52,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-1-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 64,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 52,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-1-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 28,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 13,
+      "adjacency_edge_scans": 28,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-1-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 54,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 47,
+      "adjacency_edge_scans": 103,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-43-1-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 54,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 47,
+      "adjacency_edge_scans": 103,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-43-1-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 54,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 47,
+      "adjacency_edge_scans": 103,
+      "heuristic_probe_states": 12
+    },
+    {
+      "query_id": "validation-43-1-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 66,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-1-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 66,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-1-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 52,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 28,
+      "adjacency_edge_scans": 66,
+      "heuristic_probe_states": 5
+    },
+    {
+      "query_id": "validation-43-1-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-1-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-1-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 27,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 27,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-1-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 36,
+      "adjacency_edge_scans": 65,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-1-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 68,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 40,
+      "adjacency_edge_scans": 88,
+      "heuristic_probe_states": 6
+    },
+    {
+      "query_id": "validation-43-1-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 68,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 34,
+      "adjacency_edge_scans": 64,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-1-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 68,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 34,
+      "adjacency_edge_scans": 64,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q0",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q0",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q0",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q1",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 29,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 44,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q1",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 44,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q1",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 39,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 44,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q2",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 61,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-2-Q2",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 76,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-2-Q2",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 76,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 41,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-2-Q3",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q3",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q3",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 30,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 14,
+      "adjacency_edge_scans": 30,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q4",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 61,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-2-Q4",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 61,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-2-Q4",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 61,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 27,
+      "adjacency_edge_scans": 69,
+      "heuristic_probe_states": 8
+    },
+    {
+      "query_id": "validation-43-2-Q5",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 34,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 12,
+      "adjacency_edge_scans": 34,
+      "heuristic_probe_states": 1
+    },
+    {
+      "query_id": "validation-43-2-Q5",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q5",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 49,
+      "valid": true,
+      "expanded": 5,
+      "total_edge_checks": 18,
+      "adjacency_edge_scans": 51,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q6",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q6",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q6",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 32,
+      "valid": true,
+      "expanded": 3,
+      "total_edge_checks": 16,
+      "adjacency_edge_scans": 32,
+      "heuristic_probe_states": 2
+    },
+    {
+      "query_id": "validation-43-2-Q7",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 50,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q7",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q7",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 37,
+      "valid": true,
+      "expanded": 4,
+      "total_edge_checks": 19,
+      "adjacency_edge_scans": 45,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q8",
+      "method": "astar_fixed",
+      "before_adjacency_edge_scans": 51,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 64,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q8",
+      "method": "astar_ga",
+      "before_adjacency_edge_scans": 51,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 64,
+      "heuristic_probe_states": 3
+    },
+    {
+      "query_id": "validation-43-2-Q8",
+      "method": "hybrid",
+      "before_adjacency_edge_scans": 51,
+      "valid": true,
+      "expanded": 6,
+      "total_edge_checks": 30,
+      "adjacency_edge_scans": 64,
+      "heuristic_probe_states": 3
+    }
+  ]
+}

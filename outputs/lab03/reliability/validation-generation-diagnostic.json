@@ -1,0 +1,737 @@
+[
+  {
+    "confidence": 0.49,
+    "style": "json",
+    "prompt": "Return only JSON {\"legal\": true} or {\"legal\": false}. A record is legal if and only if verified=True and active=True and confidence >= 0.55. Record: verified=True, active=True, confidence=0.49.",
+    "top_tokens": [
+      [
+        "{\"",
+        0.8170756101608276
+      ],
+      [
+        "To",
+        0.04987940192222595
+      ],
+      [
+        "According",
+        0.044160790741443634
+      ],
+      [
+        "Here",
+        0.03098311275243759
+      ],
+      [
+        "The",
+        0.013306419365108013
+      ],
+      [
+        "For",
+        0.012245478108525276
+      ],
+      [
+        "{\n",
+        0.005596271250396967
+      ],
+      [
+        "Based",
+        0.004470834508538246
+      ],
+      [
+        "```",
+        0.0037963094655424356
+      ],
+      [
+        "JSON",
+        0.0027331851888448
+      ]
+    ],
+    "text": "{\"legal\": true}",
+    "seconds": 1.1216211000028125
+  },
+  {
+    "confidence": 0.49,
+    "style": "expression",
+    "prompt": "What is the result of (0.49 >= 0.55)? Output only True or False.",
+    "top_tokens": [
+      [
+        "To",
+        0.7943583130836487
+      ],
+      [
+        "False",
+        0.10033641010522842
+      ],
+      [
+        "True",
+        0.051207154989242554
+      ],
+      [
+        "Let",
+        0.0391213521361351
+      ],
+      [
+        "The",
+        0.008652076125144958
+      ],
+      [
+        "First",
+        0.00094795593759045
+      ],
+      [
+        "```",
+        0.0005863671540282667
+      ],
+      [
+        "In",
+        0.0005110191996209323
+      ],
+      [
+        "We",
+        0.00036639717291109264
+      ],
+      [
+        "1",
+        0.00032922407262958586
+      ]
+    ],
+    "text": "To determine whether \\(0.49 \\geq 0.55\\), we need to compare the two numbers.\n\n1. **Identify the",
+    "seconds": 2.6137301999988267
+  },
+  {
+    "confidence": 0.49,
+    "style": "simple",
+    "prompt": "Is 0.49 at least 0.55? Answer only yes or no.",
+    "top_tokens": [
+      [
+        "Yes",
+        0.7416676878929138
+      ],
+      [
+        "No",
+        0.25699344277381897
+      ],
+      [
+        "yes",
+        0.00048072554636746645
+      ],
+      [
+        "To",
+        0.00018887920305132866
+      ],
+      [
+        "no",
+        0.00011267504305578768
+      ],
+      [
+        "The",
+        8.49058706080541e-05
+      ],
+      [
+        "Answer",
+        3.4297419915674254e-05
+      ],
+      [
+        "Not",
+        3.360435948707163e-05
+      ],
+      [
+        "Sure",
+        3.328223101561889e-05
+      ],
+      [
+        "I",
+        3.131523772026412e-05
+      ]
+    ],
+    "text": "Yes.",
+    "seconds": 0.6345075999997789
+  },
+  {
+    "confidence": 0.54,
+    "style": "json",
+    "prompt": "Return only JSON {\"legal\": true} or {\"legal\": false}. A record is legal if and only if verified=True and active=True and confidence >= 0.55. Record: verified=True, active=True, confidence=0.54.",
+    "top_tokens": [
+      [
+        "{\"",
+        0.8415831327438354
+      ],
+      [
+        "To",
+        0.04266511648893356
+      ],
+      [
+        "According",
+        0.03539978712797165
+      ],
+      [
+        "Here",
+        0.029216036200523376
+      ],
+      [
+        "The",
+        0.011068848893046379
+      ],
+      [
+        "For",
+        0.008975803852081299
+      ],
+      [
+        "{\n",
+        0.005638489034026861
+      ],
+      [
+        "```",
+        0.005090337712317705
+      ],
+      [
+        "Based",
+        0.003312876680865884
+      ],
+      [
+        "JSON",
+        0.002968901302665472
+      ]
+    ],
+    "text": "{\"legal\": true}",
+    "seconds": 1.0629155000024184
+  },
+  {
+    "confidence": 0.54,
+    "style": "expression",
+    "prompt": "What is the result of (0.54 >= 0.55)? Output only True or False.",
+    "top_tokens": [
+      [
+        "To",
+        0.7547280192375183
+      ],
+      [
+        "False",
+        0.11806213110685349
+      ],
+      [
+        "True",
+        0.07407413423061371
+      ],
+      [
+        "Let",
+        0.03515129163861275
+      ],
+      [
+        "The",
+        0.010569540783762932
+      ],
+      [
+        "First",
+        0.0009076903806999326
+      ],
+      [
+        "```",
+        0.0008392218733206391
+      ],
+      [
+        "In",
+        0.0006001962465234101
+      ],
+      [
+        "It",
+        0.00035797746386379004
+      ],
+      [
+        "If",
+        0.0003323245618958026
+      ]
+    ],
+    "text": "To determine whether \\(0.54 \\geq 0.55\\), we need to compare the two numbers.\n\n1. **Identify the",
+    "seconds": 2.5642809999990277
+  },
+  {
+    "confidence": 0.54,
+    "style": "simple",
+    "prompt": "Is 0.54 at least 0.55? Answer only yes or no.",
+    "top_tokens": [
+      [
+        "Yes",
+        0.7859574556350708
+      ],
+      [
+        "No",
+        0.21293944120407104
+      ],
+      [
+        "yes",
+        0.0005118345143273473
+      ],
+      [
+        "no",
+        9.186161332763731e-05
+      ],
+      [
+        "To",
+        7.038037438178435e-05
+      ],
+      [
+        "The",
+        6.586651579709724e-05
+      ],
+      [
+        "Sure",
+        3.297025978099555e-05
+      ],
+      [
+        "Not",
+        2.5101020582951605e-05
+      ],
+      [
+        "Answer",
+        2.2735088350600563e-05
+      ],
+      [
+        "I",
+        2.0827583284699358e-05
+      ]
+    ],
+    "text": "Yes.",
+    "seconds": 0.6233382999998867
+  },
+  {
+    "confidence": 0.55,
+    "style": "json",
+    "prompt": "Return only JSON {\"legal\": true} or {\"legal\": false}. A record is legal if and only if verified=True and active=True and confidence >= 0.55. Record: verified=True, active=True, confidence=0.55.",
+    "top_tokens": [
+      [
+        "{\"",
+        0.8761033415794373
+      ],
+      [
+        "According",
+        0.03607217222452164
+      ],
+      [
+        "To",
+        0.028514813631772995
+      ],
+      [
+        "Here",
+        0.014765918254852295
+      ],
+      [
+        "The",
+        0.009531975723803043
+      ],
+      [
+        "For",
+        0.0085551543161273
+      ],
+      [
+        "{\n",
+        0.004710010718554258
+      ],
+      [
+        "```",
+        0.0038777056615799665
+      ],
+      [
+        "Based",
+        0.0031151999719440937
+      ],
+      [
+        "JSON",
+        0.0026509608142077923
+      ]
+    ],
+    "text": "{\"legal\": true}",
+    "seconds": 1.0379335999969044
+  },
+  {
+    "confidence": 0.55,
+    "style": "expression",
+    "prompt": "What is the result of (0.55 >= 0.55)? Output only True or False.",
+    "top_tokens": [
+      [
+        "To",
+        0.620315670967102
+      ],
+      [
+        "False",
+        0.16896076500415802
+      ],
+      [
+        "True",
+        0.15162542462348938
+      ],
+      [
+        "Let",
+        0.027118392288684845
+      ],
+      [
+        "The",
+        0.022035282105207443
+      ],
+      [
+        "```",
+        0.001306580496020615
+      ],
+      [
+        "In",
+        0.0010499630589038134
+      ],
+      [
+        "It",
+        0.0008340355707332492
+      ],
+      [
+        "Output",
+        0.0005979440174996853
+      ],
+      [
+        "If",
+        0.000417169532738626
+      ]
+    ],
+    "text": "To determine whether the inequality \\(0.55 \\geq 0.55\\) holds true, we need to understand what the greater than or equal",
+    "seconds": 2.569637499997043
+  },
+  {
+    "confidence": 0.55,
+    "style": "simple",
+    "prompt": "Is 0.55 at least 0.55? Answer only yes or no.",
+    "top_tokens": [
+      [
+        "Yes",
+        0.8762529492378235
+      ],
+      [
+        "No",
+        0.12258193641901016
+      ],
+      [
+        "yes",
+        0.0007288071210496128
+      ],
+      [
+        "no",
+        6.649544229730964e-05
+      ],
+      [
+        "The",
+        4.746127888211049e-05
+      ],
+      [
+        "Sure",
+        3.1301497074309736e-05
+      ],
+      [
+        "Absolutely",
+        2.2871287001180463e-05
+      ],
+      [
+        " Yes",
+        2.1573587218881585e-05
+      ],
+      [
+        "I",
+        1.6654090359224938e-05
+      ],
+      [
+        "Not",
+        1.6428855815320276e-05
+      ]
+    ],
+    "text": "Yes.",
+    "seconds": 0.6586637000000337
+  },
+  {
+    "confidence": 0.56,
+    "style": "json",
+    "prompt": "Return only JSON {\"legal\": true} or {\"legal\": false}. A record is legal if and only if verified=True and active=True and confidence >= 0.55. Record: verified=True, active=True, confidence=0.56.",
+    "top_tokens": [
+      [
+        "{\"",
+        0.8212668895721436
+      ],
+      [
+        "To",
+        0.04955220967531204
+      ],
+      [
+        "According",
+        0.03930466249585152
+      ],
+      [
+        "Here",
+        0.032041799277067184
+      ],
+      [
+        "The",
+        0.013316004537045956
+      ],
+      [
+        "For",
+        0.012177920900285244
+      ],
+      [
+        "{\n",
+        0.005620966665446758
+      ],
+      [
+        "```",
+        0.004243623930960894
+      ],
+      [
+        "Based",
+        0.0042109135538339615
+      ],
+      [
+        "JSON",
+        0.0029132948257029057
+      ]
+    ],
+    "text": "{\"legal\": true}",
+    "seconds": 1.0378670999998576
+  },
+  {
+    "confidence": 0.56,
+    "style": "expression",
+    "prompt": "What is the result of (0.56 >= 0.55)? Output only True or False.",
+    "top_tokens": [
+      [
+        "To",
+        0.7777161598205566
+      ],
+      [
+        "False",
+        0.09624136984348297
+      ],
+      [
+        "True",
+        0.07149841636419296
+      ],
+      [
+        "Let",
+        0.03661147877573967
+      ],
+      [
+        "The",
+        0.010624656453728676
+      ],
+      [
+        "```",
+        0.0009101692121475935
+      ],
+      [
+        "First",
+        0.0008679926977492869
+      ],
+      [
+        "In",
+        0.0006184220546856523
+      ],
+      [
+        "1",
+        0.0003393977240193635
+      ],
+      [
+        "It",
+        0.00030715003958903253
+      ]
+    ],
+    "text": "To determine whether \\(0.56 \\geq 0.55\\), we need to compare the two numbers.\n\n1. **Identify the",
+    "seconds": 2.5475709999991523
+  },
+  {
+    "confidence": 0.56,
+    "style": "simple",
+    "prompt": "Is 0.56 at least 0.55? Answer only yes or no.",
+    "top_tokens": [
+      [
+        "Yes",
+        0.8317769765853882
+      ],
+      [
+        "No",
+        0.16705842316150665
+      ],
+      [
+        "yes",
+        0.0005126787582412362
+      ],
+      [
+        "To",
+        9.358003444503993e-05
+      ],
+      [
+        "no",
+        8.059813262661919e-05
+      ],
+      [
+        "The",
+        6.687620771117508e-05
+      ],
+      [
+        "Sure",
+        4.270145655027591e-05
+      ],
+      [
+        "Absolutely",
+        2.572682933532633e-05
+      ],
+      [
+        "Not",
+        2.529967787268106e-05
+      ],
+      [
+        "I",
+        2.450062493153382e-05
+      ]
+    ],
+    "text": "Yes.",
+    "seconds": 0.6232221999998728
+  },
+  {
+    "confidence": 0.75,
+    "style": "json",
+    "prompt": "Return only JSON {\"legal\": true} or {\"legal\": false}. A record is legal if and only if verified=True and active=True and confidence >= 0.55. Record: verified=True, active=True, confidence=0.75.",
+    "top_tokens": [
+      [
+        "{\"",
+        0.8373714685440063
+      ],
+      [
+        "To",
+        0.043970923870801926
+      ],
+      [
+        "According",
+        0.04157734662294388
+      ],
+      [
+        "Here",
+        0.02414141222834587
+      ],
+      [
+        "The",
+        0.012093699537217617
+      ],
+      [
+        "For",
+        0.01054941862821579
+      ],
+      [
+        "{\n",
+        0.005305937025696039
+      ],
+      [
+        "Based",
+        0.004064860288053751
+      ],
+      [
+        "```",
+        0.0035455760080367327
+      ],
+      [
+        "JSON",
+        0.003057608613744378
+      ]
+    ],
+    "text": "{\"legal\": true}",
+    "seconds": 1.076961399998254
+  },
+  {
+    "confidence": 0.75,
+    "style": "expression",
+    "prompt": "What is the result of (0.75 >= 0.55)? Output only True or False.",
+    "top_tokens": [
+      [
+        "To",
+        0.7666041851043701
+      ],
+      [
+        "False",
+        0.1102428138256073
+      ],
+      [
+        "True",
+        0.07139144092798233
+      ],
+      [
+        "Let",
+        0.03842958062887192
+      ],
+      [
+        "The",
+        0.006713333539664745
+      ],
+      [
+        "First",
+        0.0009672653977759182
+      ],
+      [
+        "```",
+        0.000687390856910497
+      ],
+      [
+        "In",
+        0.00045184959890320897
+      ],
+      [
+        "We",
+        0.0003125610819552094
+      ],
+      [
+        "If",
+        0.0003122190828435123
+      ]
+    ],
+    "text": "To determine whether \\(0.75 \\geq 0.55\\), we need to compare the two numbers.\n\n1. **Identify the",
+    "seconds": 2.6028723000017635
+  },
+  {
+    "confidence": 0.75,
+    "style": "simple",
+    "prompt": "Is 0.75 at least 0.55? Answer only yes or no.",
+    "top_tokens": [
+      [
+        "Yes",
+        0.7991283535957336
+      ],
+      [
+        "No",
+        0.1997338831424713
+      ],
+      [
+        "yes",
+        0.000445409445092082
+      ],
+      [
+        "To",
+        0.00012117828009650111
+      ],
+      [
+        "no",
+        8.361177606275305e-05
+      ],
+      [
+        "The",
+        5.508500544237904e-05
+      ],
+      [
+        "Not",
+        3.468599243205972e-05
+      ],
+      [
+        "Sure",
+        3.330823528813198e-05
+      ],
+      [
+        "Answer",
+        2.7263957235845737e-05
+      ],
+      [
+        "I",
+        2.6566382075543515e-05
+      ]
+    ],
+    "text": "Yes.",
+    "seconds": 0.6040499000009731
+  }
+]

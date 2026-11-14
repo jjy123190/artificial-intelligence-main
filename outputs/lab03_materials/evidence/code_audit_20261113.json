@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "finished_at": "2026-11-13T13:56:25",
+  "scope": "实验三代码核查和容错修复；未生成报告/PPT/视频；未更改备份",
+  "changed_code_files": [
+    "experiments/lab03/learned_integrity.py",
+    "experiments/lab03/service.py",
+    "scripts/prepare_lab03.py",
+    "tests/lab03/support.py",
+    "tests/lab03/test_learned_integrity.py"
+  ],
+  "code_sha256": {
+    "experiments/lab03/learned_integrity.py": "bdebec626fae90c121266ef85cc3195b8a70f4c232a218e3a9750221d65bf760",
+    "experiments/lab03/service.py": "c66272b12521c873bbf718647105a6cabdb098004bf70aec9587967b6827763a",
+    "scripts/prepare_lab03.py": "a4cba162fbca0c7e88a4c8c980727c3c8cd760ef9459bdb3076112e0e2a29d45",
+    "tests/lab03/support.py": "56026eadedfaec63efe48d0489e445f8731dfbc957072409ca03d72311be2e23",
+    "tests/lab03/test_learned_integrity.py": "054cdb3826e5f0fba7c7a81fc5d3de1876d176219c22c19518bf10dac2aa7821"
+  },
+  "fixes": [
+    "GA完整历史、最终权重、验证集来源、适应度重放核验",
+    "训练图/正负前缀/特征和训练误差核验",
+    "分类器测试指标校验，损坏数据不再传至页面",
+    "纯代码初始化检查核验原始结果而非仅检查文件指纹"
+  ],
+  "unit_tests": {
+    "passed": 432,
+    "skipped": 0
+  },
+  "browser_suites": [
+    {
+      "log": "test-browser.log",
+      "passed": 11
+    },
+    {
+      "log": "test-workbench.log",
+      "passed": 8
+    },
+    {
+      "log": "test-wording-browser.log",
+      "passed": 32
+    }
+  ],
+  "browser_corruption_cases": 3,
+  "independent_kernel_runs": 13500,
+  "independent_kernel_failures": 0,
+  "benchmark_replayed": 3888,
+  "ga_generations_recomputed": 33,
+  "classifiers_rechecked": 3,
+  "llm_original_paired_runs_replayed": 18,
+  "llm_fresh_prefixes_verified": 144,
+  "llm_numeric_cases_verified": 100,
+  "http_checks": 40,
+  "snapshot_warnings": [],
+  "current_core_manifest_valid": true,
+  "protected_files_unchanged": 249,
+  "original_algorithm_and_result_bytes_unchanged": true,
+  "ui_css_and_source_unchanged": true,
+  "output_note": "审查日志/只读验证记录位于outputs/runtime；outputs/lab03与deliverables均未写入",
+  "requirements": [
+    {
+      "item": "知识图谱、2～4跳、BFS/A*/MCTS",
+      "code": "domain.py / dataset.py / search.py",
+      "verdict": "checked"
+    },
+    {
+      "item": "验证集GA与固定启发式对照",
+      "code": "genetic.py / learned_integrity.py",
+      "verdict": "checked_and_hardened"
+    },
+    {
+      "item": "LLM合法性/reward/搜索后解释，不能生成搜索答案",
+      "code": "llm.py / calibration.py",
+      "verdict": "checked"
+    },
+    {
+      "item": "成功/失败路径分类器+专家约束",
+      "code": "learning.py / domain.py / learned_integrity.py",
+      "verdict": "checked_and_hardened"
+    },
+    {
+      "item": "准确率/扩展/步数/冗余，对照与失效诊断",
+      "code": "evaluate.py / diagnostics.py / reliability.py",
+      "verdict": "checked"
+    },
+    {
+      "item": "搜索树回放/JSON导出/失败案例的代码支持",
+      "code": "web/src/lab-three/ / posthoc.py / verification.py",
+      "verdict": "checked_no_materials_generated"
+    }
+  ],
+  "limitations": [
+    "代码核验不等于教师评分承诺",
+    "加权/学习A*不保证可采纳；GA/LLM不保证逐题优于基线",
+    "本次复核已存真实LLM证据，没有新远程收费推断",
+    "报告/PPT/演示材料和平台提交不在本轮范围"
+  ]
+}

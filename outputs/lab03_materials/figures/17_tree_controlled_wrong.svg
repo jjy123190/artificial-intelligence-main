@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1144 347" role="img" aria-label="受控反例：错误评分导致预算失败">
+<defs><style>text{font-family:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;fill:#e2e8f0}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+<marker id="arr-solution" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#34d399"/></marker>
+<marker id="arr-expanded" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#22d3ee"/></marker>
+<marker id="arr-frontier" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#94a3b8"/></marker>
+<marker id="arr-rejected" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+<marker id="arr-proof_pruned" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fbbf24"/></marker>
+<marker id="arr-rollout" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#a78bfa"/></marker>
+<marker id="arr-invalid" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+</defs>
+<rect width="1144" height="347" fill="#0f172a"/><rect width="1144" height="347" fill="url(#grid)"/>
+<text x="30" y="38" font-size="23" fill="#f8fafc" style="fill:#f8fafc" text-anchor="start" font-weight="700">受控反例：错误评分导致预算失败</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">controlled-budget  |  hybrid_llm  |  预算 5  |  全部 7 个路径状态 / 12 个事件</text>
+<path d="M178,190.0 C219.5,190.0 219.5,144.5 261,144.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="137.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">a-live</text>
+<path d="M178,190.0 C219.5,190.0 219.5,235.5 261,235.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="228.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">z-dead</text>
+<path d="M412,235.5 C453.5,235.5 453.5,235.5 495,235.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="228.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">bad-next</text>
+<path d="M412,144.5 C453.5,144.5 453.5,144.5 495,144.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="455.0" y="137.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">middle</text>
+<path d="M646,144.5 C687.5,144.5 687.5,144.5 729,144.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="689.0" y="137.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">next</text>
+<path d="M880,144.5 C921.5,144.5 921.5,144.5 963,144.5" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-frontier)"/>
+<text x="923.0" y="137.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="middle" font-weight="400">end</text>
+<rect x="30" y="155.5" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="30" y="155.5" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="42" y="178.5" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">p   #1</text>
+<text x="42" y="199.5" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=0</text>
+<text x="42" y="215.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=4.100  f=4.100</text>
+<rect x="264" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="133.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">a   #3</text>
+<text x="276" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=4.050  f=5.050</text>
+<rect x="264" y="201.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="201.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="224.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">b   #2</text>
+<text x="276" y="245.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="261.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=2.050  f=3.050</text>
+<rect x="498" y="201" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="201" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="224" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">z</text>
+<text x="510" y="245" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="261" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 5 / 前缀状态</text>
+<rect x="498" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="510" y="133.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">c   #4</text>
+<text x="510" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=2</text>
+<text x="510" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=2.000  f=4.000</text>
+<rect x="732" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="732" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="744" y="133.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">d   #5</text>
+<text x="744" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=3</text>
+<text x="744" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=1.000  f=4.000</text>
+<rect x="966" y="110" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="966" y="110" width="148" height="69" rx="7" fill="#122535" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="978" y="133" font-size="18" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="700">z</text>
+<text x="978" y="154" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">待扩展 · d=4</text>
+<text x="978" y="170" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=0.000  f=4.000</text>
+<circle cx="30.0" cy="318" r="5" fill="#34d399"/>
+<text x="41.0" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">解路径</text>
+<circle cx="210.66666666666666" cy="318" r="5" fill="#22d3ee"/>
+<text x="221.66666666666666" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已扩展 #序号</text>
+<circle cx="391.3333333333333" cy="318" r="5" fill="#94a3b8"/>
+<text x="402.3333333333333" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">待扩展</text>
+<circle cx="572.0" cy="318" r="5" fill="#fbbf24"/>
+<text x="583.0" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已证无解</text>
+<circle cx="752.6666666666666" cy="318" r="5" fill="#fb7185"/>
+<text x="763.6666666666666" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">拒绝 / 无效</text>
+<circle cx="933.3333333333333" cy="318" r="5" fill="#a78bfa"/>
+<text x="944.3333333333333" y="323" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">模拟</text>
+</svg>

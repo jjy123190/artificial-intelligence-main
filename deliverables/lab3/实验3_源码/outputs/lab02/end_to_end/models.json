@@ -1,0 +1,1130 @@
+{
+  "version": 1,
+  "models_by_seed": {
+    "7": {
+      "model": {
+        "weights": {
+          "bayes": 1.0,
+          "fuzzy": 0.0,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.10712167533251302,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3415841584158416,
+          "cpt": {
+            "opacity": [
+              0.22388059701492538,
+              0.6714285714285714
+            ],
+            "related_trade": [
+              0.007462686567164179,
+              0.38571428571428573
+            ],
+            "guarantee": [
+              0.2462686567164179,
+              0.5714285714285714
+            ],
+            "cycle": [
+              0.20149253731343283,
+              0.7142857142857143
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fixed_model": {
+        "weights": {
+          "bayes": 0.6,
+          "fuzzy": 0.25,
+          "rule": 0.15
+        },
+        "validation_count": 0,
+        "validation_brier": null,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3415841584158416,
+          "cpt": {
+            "opacity": [
+              0.22388059701492538,
+              0.6714285714285714
+            ],
+            "related_trade": [
+              0.007462686567164179,
+              0.38571428571428573
+            ],
+            "guarantee": [
+              0.2462686567164179,
+              0.5714285714285714
+            ],
+            "cycle": [
+              0.20149253731343283,
+              0.7142857142857143
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "adaptive_model": {
+        "weights": {
+          "bayes": 1.0,
+          "fuzzy": 0.0,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.10712167533251302,
+        "fuzzy_high_start": 0.3,
+        "fuzzy": {
+          "high_start": 0.3,
+          "grid_points": 101,
+          "medium_weight": 0.35,
+          "training_count": 200,
+          "training_brier": 0.20752653315244507,
+          "fit_history": [
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.35,
+              "training_brier": 0.20840700973891213
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.65,
+              "training_brier": 0.209670955135978
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 1.0,
+              "training_brier": 0.2113272197881464
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.35,
+              "training_brier": 0.20752653315244507
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.65,
+              "training_brier": 0.20838326361613072
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 1.0,
+              "training_brier": 0.2100934040017096
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.35,
+              "training_brier": 0.2092747086262424
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.65,
+              "training_brier": 0.21048307556520046
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 1.0,
+              "training_brier": 0.21234535848444963
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.35,
+              "training_brier": 0.21589361206910854
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.65,
+              "training_brier": 0.21746958185491674
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 1.0,
+              "training_brier": 0.21918553497734072
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.35,
+              "training_brier": 0.23015132560026633
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.65,
+              "training_brier": 0.23027475768064926
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 1.0,
+              "training_brier": 0.23089475930648537
+            }
+          ]
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 320,
+          "selection_history": [
+            {
+              "minimum_support": 0.0,
+              "fp": 70,
+              "fn": 8,
+              "cost": 0.26875
+            },
+            {
+              "minimum_support": 0.15,
+              "fp": 68,
+              "fn": 9,
+              "cost": 0.26875
+            },
+            {
+              "minimum_support": 0.25,
+              "fp": 48,
+              "fn": 13,
+              "cost": 0.23125
+            },
+            {
+              "minimum_support": 0.35,
+              "fp": 48,
+              "fn": 13,
+              "cost": 0.23125
+            },
+            {
+              "minimum_support": 0.45,
+              "fp": 39,
+              "fn": 24,
+              "cost": 0.271875
+            },
+            {
+              "minimum_support": 0.5,
+              "fp": 39,
+              "fn": 24,
+              "cost": 0.271875
+            }
+          ]
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3415841584158416,
+          "cpt": {
+            "opacity": [
+              0.22388059701492538,
+              0.6714285714285714
+            ],
+            "related_trade": [
+              0.007462686567164179,
+              0.38571428571428573
+            ],
+            "guarantee": [
+              0.2462686567164179,
+              0.5714285714285714
+            ],
+            "cycle": [
+              0.20149253731343283,
+              0.7142857142857143
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fuzzy_model": {
+        "high_start": 0.3,
+        "grid_points": 101,
+        "medium_weight": 0.35,
+        "training_count": 200,
+        "training_brier": 0.20752653315244507,
+        "fit_history": [
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.35,
+            "training_brier": 0.20840700973891213
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.65,
+            "training_brier": 0.209670955135978
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 1.0,
+            "training_brier": 0.2113272197881464
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.35,
+            "training_brier": 0.20752653315244507
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.65,
+            "training_brier": 0.20838326361613072
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 1.0,
+            "training_brier": 0.2100934040017096
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.35,
+            "training_brier": 0.2092747086262424
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.65,
+            "training_brier": 0.21048307556520046
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 1.0,
+            "training_brier": 0.21234535848444963
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.35,
+            "training_brier": 0.21589361206910854
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.65,
+            "training_brier": 0.21746958185491674
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 1.0,
+            "training_brier": 0.21918553497734072
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.35,
+            "training_brier": 0.23015132560026633
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.65,
+            "training_brier": 0.23027475768064926
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 1.0,
+            "training_brier": 0.23089475930648537
+          }
+        ]
+      },
+      "policy_fit_conditions": [
+        "clean",
+        "value_noise",
+        "edge_missing_020",
+        "false_loop_020"
+      ],
+      "policy_fit_scope": "验证图固定扰动，FP+2FN；不读取测试标签或oracle",
+      "fit_scope": "完整训练图派生的指标；权重仅用验证图，不查看压力测试标签"
+    },
+    "19": {
+      "model": {
+        "weights": {
+          "bayes": 1.0,
+          "fuzzy": 0.0,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.1470453100067065,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3564356435643564,
+          "cpt": {
+            "opacity": [
+              0.22137404580152673,
+              0.589041095890411
+            ],
+            "related_trade": [
+              0.030534351145038167,
+              0.3561643835616438
+            ],
+            "guarantee": [
+              0.16030534351145037,
+              0.4657534246575342
+            ],
+            "cycle": [
+              0.16030534351145037,
+              0.6301369863013698
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fixed_model": {
+        "weights": {
+          "bayes": 0.6,
+          "fuzzy": 0.25,
+          "rule": 0.15
+        },
+        "validation_count": 0,
+        "validation_brier": null,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3564356435643564,
+          "cpt": {
+            "opacity": [
+              0.22137404580152673,
+              0.589041095890411
+            ],
+            "related_trade": [
+              0.030534351145038167,
+              0.3561643835616438
+            ],
+            "guarantee": [
+              0.16030534351145037,
+              0.4657534246575342
+            ],
+            "cycle": [
+              0.16030534351145037,
+              0.6301369863013698
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "adaptive_model": {
+        "weights": {
+          "bayes": 1.0,
+          "fuzzy": 0.0,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.1470453100067065,
+        "fuzzy_high_start": 0.15,
+        "fuzzy": {
+          "high_start": 0.15,
+          "grid_points": 101,
+          "medium_weight": 0.35,
+          "training_count": 200,
+          "training_brier": 0.1920766342213721,
+          "fit_history": [
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.35,
+              "training_brier": 0.1920766342213721
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.65,
+              "training_brier": 0.1959217380605872
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 1.0,
+              "training_brier": 0.19953942898935115
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.35,
+              "training_brier": 0.19396637163264088
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.65,
+              "training_brier": 0.19647653006426727
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 1.0,
+              "training_brier": 0.1997055693590174
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.35,
+              "training_brier": 0.1941535208269877
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.65,
+              "training_brier": 0.19718118806227963
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 1.0,
+              "training_brier": 0.20068798202793833
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.35,
+              "training_brier": 0.1969099770540694
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.65,
+              "training_brier": 0.20121977119163087
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 1.0,
+              "training_brier": 0.2051508939629851
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.35,
+              "training_brier": 0.21085615208748099
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.65,
+              "training_brier": 0.21559005789148092
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 1.0,
+              "training_brier": 0.21882427894051484
+            }
+          ]
+        },
+        "review_policy": {
+          "minimum_support": 0.15,
+          "false_negative_cost": 2.0,
+          "validation_count": 320,
+          "selection_history": [
+            {
+              "minimum_support": 0.0,
+              "fp": 76,
+              "fn": 10,
+              "cost": 0.3
+            },
+            {
+              "minimum_support": 0.15,
+              "fp": 71,
+              "fn": 10,
+              "cost": 0.284375
+            },
+            {
+              "minimum_support": 0.25,
+              "fp": 67,
+              "fn": 14,
+              "cost": 0.296875
+            },
+            {
+              "minimum_support": 0.35,
+              "fp": 58,
+              "fn": 24,
+              "cost": 0.33125
+            },
+            {
+              "minimum_support": 0.45,
+              "fp": 58,
+              "fn": 24,
+              "cost": 0.33125
+            },
+            {
+              "minimum_support": 0.5,
+              "fp": 58,
+              "fn": 24,
+              "cost": 0.33125
+            }
+          ]
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3564356435643564,
+          "cpt": {
+            "opacity": [
+              0.22137404580152673,
+              0.589041095890411
+            ],
+            "related_trade": [
+              0.030534351145038167,
+              0.3561643835616438
+            ],
+            "guarantee": [
+              0.16030534351145037,
+              0.4657534246575342
+            ],
+            "cycle": [
+              0.16030534351145037,
+              0.6301369863013698
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fuzzy_model": {
+        "high_start": 0.15,
+        "grid_points": 101,
+        "medium_weight": 0.35,
+        "training_count": 200,
+        "training_brier": 0.1920766342213721,
+        "fit_history": [
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.35,
+            "training_brier": 0.1920766342213721
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.65,
+            "training_brier": 0.1959217380605872
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 1.0,
+            "training_brier": 0.19953942898935115
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.35,
+            "training_brier": 0.19396637163264088
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.65,
+            "training_brier": 0.19647653006426727
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 1.0,
+            "training_brier": 0.1997055693590174
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.35,
+            "training_brier": 0.1941535208269877
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.65,
+            "training_brier": 0.19718118806227963
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 1.0,
+            "training_brier": 0.20068798202793833
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.35,
+            "training_brier": 0.1969099770540694
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.65,
+            "training_brier": 0.20121977119163087
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 1.0,
+            "training_brier": 0.2051508939629851
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.35,
+            "training_brier": 0.21085615208748099
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.65,
+            "training_brier": 0.21559005789148092
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 1.0,
+            "training_brier": 0.21882427894051484
+          }
+        ]
+      },
+      "policy_fit_conditions": [
+        "clean",
+        "value_noise",
+        "edge_missing_020",
+        "false_loop_020"
+      ],
+      "policy_fit_scope": "验证图固定扰动，FP+2FN；不读取测试标签或oracle",
+      "fit_scope": "完整训练图派生的指标；权重仅用验证图，不查看压力测试标签"
+    },
+    "43": {
+      "model": {
+        "weights": {
+          "bayes": 0.5,
+          "fuzzy": 0.5,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.20576147806580375,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3613861386138614,
+          "cpt": {
+            "opacity": [
+              0.15384615384615385,
+              0.6486486486486487
+            ],
+            "related_trade": [
+              0.03076923076923077,
+              0.25675675675675674
+            ],
+            "guarantee": [
+              0.2076923076923077,
+              0.6486486486486487
+            ],
+            "cycle": [
+              0.2153846153846154,
+              0.6891891891891891
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fixed_model": {
+        "weights": {
+          "bayes": 0.6,
+          "fuzzy": 0.25,
+          "rule": 0.15
+        },
+        "validation_count": 0,
+        "validation_brier": null,
+        "fuzzy_high_start": 0.45,
+        "fuzzy": {
+          "high_start": 0.45,
+          "grid_points": 101,
+          "medium_weight": 1.0,
+          "training_count": 0,
+          "training_brier": null,
+          "fit_history": []
+        },
+        "review_policy": {
+          "minimum_support": 0.25,
+          "false_negative_cost": 2.0,
+          "validation_count": 0,
+          "selection_history": []
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3613861386138614,
+          "cpt": {
+            "opacity": [
+              0.15384615384615385,
+              0.6486486486486487
+            ],
+            "related_trade": [
+              0.03076923076923077,
+              0.25675675675675674
+            ],
+            "guarantee": [
+              0.2076923076923077,
+              0.6486486486486487
+            ],
+            "cycle": [
+              0.2153846153846154,
+              0.6891891891891891
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "adaptive_model": {
+        "weights": {
+          "bayes": 0.75,
+          "fuzzy": 0.25,
+          "rule": 0.0
+        },
+        "validation_count": 80,
+        "validation_brier": 0.21208641020956037,
+        "fuzzy_high_start": 0.3,
+        "fuzzy": {
+          "high_start": 0.3,
+          "grid_points": 101,
+          "medium_weight": 0.35,
+          "training_count": 200,
+          "training_brier": 0.20292355080443084,
+          "fit_history": [
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.35,
+              "training_brier": 0.20406198255096783
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 0.65,
+              "training_brier": 0.20569269351955127
+            },
+            {
+              "high_start": 0.15,
+              "medium_weight": 1.0,
+              "training_brier": 0.207448631170153
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.35,
+              "training_brier": 0.20292355080443084
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 0.65,
+              "training_brier": 0.20419226002736882
+            },
+            {
+              "high_start": 0.3,
+              "medium_weight": 1.0,
+              "training_brier": 0.20595490213899809
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.35,
+              "training_brier": 0.20352106511995052
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 0.65,
+              "training_brier": 0.2054191800678615
+            },
+            {
+              "high_start": 0.45,
+              "medium_weight": 1.0,
+              "training_brier": 0.20746224470217065
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.35,
+              "training_brier": 0.21014103305826382
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 0.65,
+              "training_brier": 0.21216668098760022
+            },
+            {
+              "high_start": 0.6,
+              "medium_weight": 1.0,
+              "training_brier": 0.21407152323484946
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.35,
+              "training_brier": 0.22482307714055072
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 0.65,
+              "training_brier": 0.22541412365785454
+            },
+            {
+              "high_start": 0.75,
+              "medium_weight": 1.0,
+              "training_brier": 0.22629062959181087
+            }
+          ]
+        },
+        "review_policy": {
+          "minimum_support": 0.0,
+          "false_negative_cost": 2.0,
+          "validation_count": 320,
+          "selection_history": [
+            {
+              "minimum_support": 0.0,
+              "fp": 83,
+              "fn": 30,
+              "cost": 0.446875
+            },
+            {
+              "minimum_support": 0.15,
+              "fp": 77,
+              "fn": 35,
+              "cost": 0.459375
+            },
+            {
+              "minimum_support": 0.25,
+              "fp": 76,
+              "fn": 35,
+              "cost": 0.45625
+            },
+            {
+              "minimum_support": 0.35,
+              "fp": 66,
+              "fn": 43,
+              "cost": 0.475
+            },
+            {
+              "minimum_support": 0.45,
+              "fp": 61,
+              "fn": 43,
+              "cost": 0.459375
+            },
+            {
+              "minimum_support": 0.5,
+              "fp": 57,
+              "fn": 46,
+              "cost": 0.465625
+            }
+          ]
+        },
+        "ablation": null,
+        "screening_thresholds": {
+          "opacity": 0.7,
+          "related_trade": 0.6,
+          "guarantee": 0.65,
+          "cycle": 0.5
+        },
+        "bayes": {
+          "kind": "binary_star_bayes",
+          "prior": 0.3613861386138614,
+          "cpt": {
+            "opacity": [
+              0.15384615384615385,
+              0.6486486486486487
+            ],
+            "related_trade": [
+              0.03076923076923077,
+              0.25675675675675674
+            ],
+            "guarantee": [
+              0.2076923076923077,
+              0.6486486486486487
+            ],
+            "cycle": [
+              0.2153846153846154,
+              0.6891891891891891
+            ]
+          },
+          "threshold": 0.5,
+          "training_count": 200,
+          "assumption": "features conditionally independent given Risk"
+        }
+      },
+      "fuzzy_model": {
+        "high_start": 0.3,
+        "grid_points": 101,
+        "medium_weight": 0.35,
+        "training_count": 200,
+        "training_brier": 0.20292355080443084,
+        "fit_history": [
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.35,
+            "training_brier": 0.20406198255096783
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 0.65,
+            "training_brier": 0.20569269351955127
+          },
+          {
+            "high_start": 0.15,
+            "medium_weight": 1.0,
+            "training_brier": 0.207448631170153
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.35,
+            "training_brier": 0.20292355080443084
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 0.65,
+            "training_brier": 0.20419226002736882
+          },
+          {
+            "high_start": 0.3,
+            "medium_weight": 1.0,
+            "training_brier": 0.20595490213899809
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.35,
+            "training_brier": 0.20352106511995052
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 0.65,
+            "training_brier": 0.2054191800678615
+          },
+          {
+            "high_start": 0.45,
+            "medium_weight": 1.0,
+            "training_brier": 0.20746224470217065
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.35,
+            "training_brier": 0.21014103305826382
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 0.65,
+            "training_brier": 0.21216668098760022
+          },
+          {
+            "high_start": 0.6,
+            "medium_weight": 1.0,
+            "training_brier": 0.21407152323484946
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.35,
+            "training_brier": 0.22482307714055072
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 0.65,
+            "training_brier": 0.22541412365785454
+          },
+          {
+            "high_start": 0.75,
+            "medium_weight": 1.0,
+            "training_brier": 0.22629062959181087
+          }
+        ]
+      },
+      "policy_fit_conditions": [
+        "clean",
+        "value_noise",
+        "edge_missing_020",
+        "false_loop_020"
+      ],
+      "policy_fit_scope": "验证图固定扰动，FP+2FN；不读取测试标签或oracle",
+      "fit_scope": "完整训练图派生的指标；权重仅用验证图，不查看压力测试标签"
+    }
+  }
+}

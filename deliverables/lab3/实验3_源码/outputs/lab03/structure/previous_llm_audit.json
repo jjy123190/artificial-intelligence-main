@@ -1,0 +1,3053 @@
+[
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q0",
+    "query": {
+      "id": "test-7-0-Q0",
+      "start": "test-7-0-N0",
+      "relations": [
+        "HOLDS",
+        "TRADES"
+      ],
+      "sector": "新能源",
+      "listed": true,
+      "text": "从教学投资人1出发，依次经过持股 → 交易，可到达哪些新能源上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-7-0-R0039",
+        "path_edges": [
+          "test-7-0-R0039"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0039\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.936, \"verified\": false, \"active\": false}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.936; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.936.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "12f8488ca2bf20a243c43a276ae080ad845a79ee27e65663849e29853950945f",
+        "expert_legal": false,
+        "score": 0.6795036345720291,
+        "legal_confidence": 0.09597103297710419,
+        "legal": false,
+        "probabilities": {
+          "A": 0.4917376637458801,
+          "B": 0.375531941652298,
+          "C": 0.1327303647994995
+        },
+        "legality_probabilities": {
+          "True": 0.09597103297710419,
+          "False": 0.9040290117263794
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.936\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2478.007499998057,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0087",
+        "path_edges": [
+          "test-7-0-R0087"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0087\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.926, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.926; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.926.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "1eae7f16ed9e0a0d958032ed6fbca4ba5195079b0f5841e5cc8e083870dbd022",
+        "expert_legal": true,
+        "score": 0.6882019639015198,
+        "legal_confidence": 0.8239938020706177,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5129140615463257,
+          "B": 0.3505758047103882,
+          "C": 0.13651013374328613
+        },
+        "legality_probabilities": {
+          "True": 0.8239938020706177,
+          "False": 0.17600616812705994
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.926\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2406.8423000026087,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0092",
+        "path_edges": [
+          "test-7-0-R0092"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0092\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.697, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (物流); target listed=True; confidence=0.697; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.697.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "9e7fd59d39256d81346a917ec17c3667a5926407fa9d527de41a04cd40f8cc53",
+        "expert_legal": true,
+        "score": 0.6823986917734146,
+        "legal_confidence": 0.8070822358131409,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5016971826553345,
+          "B": 0.3614030182361603,
+          "C": 0.13689972460269928
+        },
+        "legality_probabilities": {
+          "True": 0.8070822358131409,
+          "False": 0.19291770458221436
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.697\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2350.828200000251,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0093",
+        "path_edges": [
+          "test-7-0-R0093"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0093\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.733, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.733; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.733.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "545199e0bce1bce230e83f93632423d0bcba6d550ce7cb2a86b1043639638809",
+        "expert_legal": true,
+        "score": 0.6939806342124939,
+        "legal_confidence": 0.8164069056510925,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5204381942749023,
+          "B": 0.3470848798751831,
+          "C": 0.13247685134410858
+        },
+        "legality_probabilities": {
+          "True": 0.8164069056510925,
+          "False": 0.1835930496454239
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.733\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2385.5200999969384,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0157",
+        "path_edges": [
+          "test-7-0-R0157"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0157\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.935, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.935; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.935.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "08133389a8d4b3897cb962a0821707fb623e8321a61dc879caedac9762b2721d",
+        "expert_legal": true,
+        "score": 0.6878640353679657,
+        "legal_confidence": 0.8156535625457764,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5124022960662842,
+          "B": 0.35092347860336304,
+          "C": 0.136674165725708
+        },
+        "legality_probabilities": {
+          "True": 0.8156535625457764,
+          "False": 0.18434640765190125
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.935\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2374.5086999988416,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0097",
+        "path_edges": [
+          "test-7-0-R0039",
+          "test-7-0-R0097"
+        ],
+        "parent_edges": [
+          "test-7-0-R0039"
+        ],
+        "path_key": "[\"test-7-0-R0039\",\"test-7-0-R0097\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.936, \"verified\": false, \"active\": false}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": false, \"confidence\": 0.306, \"verified\": false, \"active\": false}].\nCandidate: Company (新能源) --TRADES--> Company (金融); target listed=False; confidence=0.306; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.306.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b3470129a0a75135e12105bfb56640fcaee7b0b6411d4069ea94bbd9320e5eab",
+        "expert_legal": false,
+        "score": 0.5419836193323135,
+        "legal_confidence": 0.10410244762897491,
+        "legal": false,
+        "probabilities": {
+          "A": 0.21634410321712494,
+          "B": 0.6512790322303772,
+          "C": 0.13237695395946503
+        },
+        "legality_probabilities": {
+          "True": 0.10410244762897491,
+          "False": 0.8958975672721863
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.306\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 407,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 407,
+        "inference_ms": 2857.2051000010106,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0150",
+        "path_edges": [
+          "test-7-0-R0039",
+          "test-7-0-R0150"
+        ],
+        "parent_edges": [
+          "test-7-0-R0039"
+        ],
+        "path_key": "[\"test-7-0-R0039\",\"test-7-0-R0150\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.936, \"verified\": false, \"active\": false}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.874, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --TRADES--> Company (新能源); target listed=True; confidence=0.874; verified=True; active=True. Prefix verified=False; active=False; minimum confidence=0.874.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "425dc6fa2ce9c81a4b1e610b62330eef12a9f4aff45ee259ccd1b30a76c93350",
+        "expert_legal": false,
+        "score": 0.5763171315193176,
+        "legal_confidence": 0.08920975029468536,
+        "legal": false,
+        "probabilities": {
+          "A": 0.2781273424625397,
+          "B": 0.5963795781135559,
+          "C": 0.1254931539297104
+        },
+        "legality_probabilities": {
+          "True": 0.08920975029468536,
+          "False": 0.9107902646064758
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.874\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 407,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 407,
+        "inference_ms": 2843.7575999996625,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0046",
+        "path_edges": [
+          "test-7-0-R0087",
+          "test-7-0-R0046"
+        ],
+        "parent_edges": [
+          "test-7-0-R0087"
+        ],
+        "path_key": "[\"test-7-0-R0087\",\"test-7-0-R0046\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.926, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.976, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --TRADES--> Company (制造); target listed=False; confidence=0.976; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.926.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b85bcab4003899f2d0647acd495e9992a2ca117adab11fde0552771522273ff5",
+        "expert_legal": true,
+        "score": 0.6015959680080414,
+        "legal_confidence": 0.8239938020706177,
+        "legal": true,
+        "probabilities": {
+          "A": 0.34735414385795593,
+          "B": 0.5084836483001709,
+          "C": 0.1441621631383896
+        },
+        "legality_probabilities": {
+          "True": 0.8239938020706177,
+          "False": 0.17600616812705994
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.926\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 407,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 321,
+        "inference_ms": 2255.4110000019136,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-7-0-R0039\"]": 0.16987590864300728,
+      "[\"test-7-0-R0087\"]": 0.6882019639015198,
+      "[\"test-7-0-R0092\"]": 0.6823986917734146,
+      "[\"test-7-0-R0093\"]": 0.6939806342124939,
+      "[\"test-7-0-R0157\"]": 0.6878640353679657,
+      "[\"test-7-0-R0039\",\"test-7-0-R0097\"]": 0.13549590483307838,
+      "[\"test-7-0-R0039\",\"test-7-0-R0150\"]": 0.1440792828798294,
+      "[\"test-7-0-R0087\",\"test-7-0-R0046\"]": 0.6015959680080414
+    }
+  },
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q1",
+    "query": {
+      "id": "test-7-0-Q1",
+      "start": "test-7-0-N1",
+      "relations": [
+        "HOLDS",
+        "GUARANTEES",
+        "GUARANTEES"
+      ],
+      "sector": "制造",
+      "listed": true,
+      "text": "从教学投资人2出发，依次经过持股 → 担保 → 担保，可到达哪些制造上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-7-0-R0030",
+        "path_edges": [
+          "test-7-0-R0030"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0030\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.867, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (新能源); target listed=False; confidence=0.867; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.867.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "ce7a019254bfb681d071accf80c066e721e59d2f0fbd94ac6b4cf754dc414cba",
+        "expert_legal": true,
+        "score": 0.6354586482048035,
+        "legal_confidence": 0.791067361831665,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45687705278396606,
+          "B": 0.3571631908416748,
+          "C": 0.1859598010778427
+        },
+        "legality_probabilities": {
+          "True": 0.791067361831665,
+          "False": 0.20893262326717377
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.867\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2547.8283999982523,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0075",
+        "path_edges": [
+          "test-7-0-R0075"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0075\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.994, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=False; confidence=0.994; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.994.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "7d5d97be0d2895173256cd2e6de7b2c06190f7c77620c964212f91edb0ee9914",
+        "expert_legal": true,
+        "score": 0.6334718614816666,
+        "legal_confidence": 0.7969401478767395,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45541515946388245,
+          "B": 0.35611340403556824,
+          "C": 0.18847139179706573
+        },
+        "legality_probabilities": {
+          "True": 0.7969401478767395,
+          "False": 0.20305979251861572
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.994\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2560.619800002314,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0110",
+        "path_edges": [
+          "test-7-0-R0110"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0110\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.919, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (物流); target listed=True; confidence=0.919; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.919.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "a7bb17da604cc073f37f344a980e8cf1c9c398c0246e1e5c547bdaf0a92a93e1",
+        "expert_legal": true,
+        "score": 0.6501770466566086,
+        "legal_confidence": 0.8253511786460876,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4788248836994171,
+          "B": 0.34270432591438293,
+          "C": 0.17847080528736115
+        },
+        "legality_probabilities": {
+          "True": 0.8253511786460876,
+          "False": 0.17464879155158997
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.919\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2672.169400000712,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0127",
+        "path_edges": [
+          "test-7-0-R0127"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0127\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.803, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (新能源); target listed=True; confidence=0.803; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.803.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "8cc5dd32756c8d38c9d769d5ac3ec441cc2601861d46e4a8284e1b55a05feac4",
+        "expert_legal": true,
+        "score": 0.6386698782444,
+        "legal_confidence": 0.8057737350463867,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4636874198913574,
+          "B": 0.3499649167060852,
+          "C": 0.18634770810604095
+        },
+        "legality_probabilities": {
+          "True": 0.8057737350463867,
+          "False": 0.19422629475593567
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.803\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2624.6704000004684,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0154",
+        "path_edges": [
+          "test-7-0-R0154"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0154\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.989, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (新能源); target listed=True; confidence=0.989; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.989.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "a51836f4645eb2012ef87961601009534ba2edc5f3863a871a20f3dca46e2a9c",
+        "expert_legal": true,
+        "score": 0.6353481858968735,
+        "legal_confidence": 0.7908103466033936,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4604393243789673,
+          "B": 0.3498177230358124,
+          "C": 0.18974295258522034
+        },
+        "legality_probabilities": {
+          "True": 0.7908103466033936,
+          "False": 0.20918966829776764
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.989\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2606.6269999973883,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0191",
+        "path_edges": [
+          "test-7-0-R0191"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0191\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.896, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=True; confidence=0.896; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.896.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "7f98a672f52895c10c011aa565ba857f9968cf058b3009400b6b606ce661dcfd",
+        "expert_legal": true,
+        "score": 0.6469781845808029,
+        "legal_confidence": 0.7992257475852966,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4770033657550812,
+          "B": 0.3399496376514435,
+          "C": 0.18304695188999176
+        },
+        "legality_probabilities": {
+          "True": 0.7992257475852966,
+          "False": 0.20077428221702576
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.896\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2596.6525000003458,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0027",
+        "path_edges": [
+          "test-7-0-R0075",
+          "test-7-0-R0027"
+        ],
+        "parent_edges": [
+          "test-7-0-R0075"
+        ],
+        "path_key": "[\"test-7-0-R0075\",\"test-7-0-R0027\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.994, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.91, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --GUARANTEES--> Company (制造); target listed=True; confidence=0.91; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.91.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "f7715aa9eafb7f8dcfd95804d383258a48494a2285fbe4854f909d5672b99cb3",
+        "expert_legal": true,
+        "score": 0.5732533931732178,
+        "legal_confidence": 0.8169412016868591,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3460356295108795,
+          "B": 0.4544355273246765,
+          "C": 0.19952885806560516
+        },
+        "legality_probabilities": {
+          "True": 0.8169412016868591,
+          "False": 0.1830587536096573
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.91\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 420,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 420,
+        "inference_ms": 3022.541499998624,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0116",
+        "path_edges": [
+          "test-7-0-R0075",
+          "test-7-0-R0116"
+        ],
+        "parent_edges": [
+          "test-7-0-R0075"
+        ],
+        "path_key": "[\"test-7-0-R0075\",\"test-7-0-R0116\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.994, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.726, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --GUARANTEES--> Company (制造); target listed=True; confidence=0.726; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.726.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "c86b39d50b396cae895b7edce0a1cfd0f081d0584b4d5a96c63e74eca39a53cf",
+        "expert_legal": true,
+        "score": 0.5819086283445358,
+        "legal_confidence": 0.8157433867454529,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3400093615055084,
+          "B": 0.4837985336780548,
+          "C": 0.17619210481643677
+        },
+        "legality_probabilities": {
+          "True": 0.8157433867454529,
+          "False": 0.1842566728591919
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.726\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 424,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 424,
+        "inference_ms": 3095.5920000014885,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-7-0-R0030\"]": 0.6354586482048035,
+      "[\"test-7-0-R0075\"]": 0.6334718614816666,
+      "[\"test-7-0-R0110\"]": 0.6501770466566086,
+      "[\"test-7-0-R0127\"]": 0.6386698782444,
+      "[\"test-7-0-R0154\"]": 0.6353481858968735,
+      "[\"test-7-0-R0191\"]": 0.6469781845808029,
+      "[\"test-7-0-R0075\",\"test-7-0-R0027\"]": 0.5732533931732178,
+      "[\"test-7-0-R0075\",\"test-7-0-R0116\"]": 0.5819086283445358
+    }
+  },
+  {
+    "graph_id": "test-7-0",
+    "query_id": "test-7-0-Q2",
+    "query": {
+      "id": "test-7-0-Q2",
+      "start": "test-7-0-N2",
+      "relations": [
+        "HOLDS",
+        "HOLDS",
+        "GUARANTEES",
+        "TRADES"
+      ],
+      "sector": "物流",
+      "listed": true,
+      "text": "从教学投资人3出发，依次经过持股 → 持股 → 担保 → 交易，可到达哪些物流上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-7-0-R0068",
+        "path_edges": [
+          "test-7-0-R0068"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0068\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['HOLDS', 'GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.838, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.838; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.838.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "95b796a718c146a9547b6536fcb3be9106d8f2b134ed297cea54b5bb4944e078",
+        "expert_legal": true,
+        "score": 0.6468484401702881,
+        "legal_confidence": 0.7966647148132324,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47489386796951294,
+          "B": 0.3439091444015503,
+          "C": 0.18119695782661438
+        },
+        "legality_probabilities": {
+          "True": 0.7966647148132324,
+          "False": 0.20333528518676758
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.838\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 363,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 363,
+        "inference_ms": 2546.6669000015827,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0167",
+        "path_edges": [
+          "test-7-0-R0167"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0167\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['HOLDS', 'GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.918, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (新能源); target listed=False; confidence=0.918; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.918.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "a9030f65f6a6f5c7e56989226ae829262c16ba27aae37a4516e912401f73e581",
+        "expert_legal": true,
+        "score": 0.6280345320701599,
+        "legal_confidence": 0.8216325044631958,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4465044140815735,
+          "B": 0.36306023597717285,
+          "C": 0.19043533504009247
+        },
+        "legality_probabilities": {
+          "True": 0.8216325044631958,
+          "False": 0.17836757004261017
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.918\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 363,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 363,
+        "inference_ms": 2597.0076999983576,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0171",
+        "path_edges": [
+          "test-7-0-R0171"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0171\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['HOLDS', 'GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.942, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (金融); target listed=True; confidence=0.942; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.942.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b99884afd17dfaedc23b6f74699ab6ef6743a73a13430365196889834036f028",
+        "expert_legal": true,
+        "score": 0.632601261138916,
+        "legal_confidence": 0.8050667643547058,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4502337872982025,
+          "B": 0.364734947681427,
+          "C": 0.18503126502037048
+        },
+        "legality_probabilities": {
+          "True": 0.8050667643547058,
+          "False": 0.1949332058429718
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.942\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 363,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 363,
+        "inference_ms": 2560.8336000004783,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0178",
+        "path_edges": [
+          "test-7-0-R0178"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0178\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['HOLDS', 'GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.793, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=False; confidence=0.793; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.793.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "ded1f1369ea40854d16f40eac10c5c2ae3cf2c99adde7e5ac60e325a131a2288",
+        "expert_legal": true,
+        "score": 0.6362859457731247,
+        "legal_confidence": 0.7861133813858032,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45328646898269653,
+          "B": 0.3659989535808563,
+          "C": 0.18071462213993073
+        },
+        "legality_probabilities": {
+          "True": 0.7861133813858032,
+          "False": 0.21388664841651917
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.793\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 363,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 363,
+        "inference_ms": 2513.589400001365,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0198",
+        "path_edges": [
+          "test-7-0-R0198"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-7-0-R0198\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['HOLDS', 'GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.693, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=False; confidence=0.693; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.693.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b7357d41b425caaa579bfe489f19d126cc9bb01c7f18b9d97ccdd85ecf1d56c8",
+        "expert_legal": true,
+        "score": 0.6286818981170654,
+        "legal_confidence": 0.8005303144454956,
+        "legal": true,
+        "probabilities": {
+          "A": 0.444001168012619,
+          "B": 0.3693614602088928,
+          "C": 0.18663746118545532
+        },
+        "legality_probabilities": {
+          "True": 0.8005303144454956,
+          "False": 0.1994696706533432
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.693\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 363,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 363,
+        "inference_ms": 2562.880099998438,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0155",
+        "path_edges": [
+          "test-7-0-R0068",
+          "test-7-0-R0155"
+        ],
+        "parent_edges": [
+          "test-7-0-R0068"
+        ],
+        "path_key": "[\"test-7-0-R0068\",\"test-7-0-R0155\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.838, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.821, \"verified\": true, \"active\": true}].\nCandidate: Company (物流) --HOLDS--> Company (物流); target listed=False; confidence=0.821; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.821.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b0450e2b20e7e431278facf5cec4d1068cb707d8b4b119fe3ee0b185acefec55",
+        "expert_legal": true,
+        "score": 0.5813731551170349,
+        "legal_confidence": 0.8061832189559937,
+        "legal": true,
+        "probabilities": {
+          "A": 0.34519001841545105,
+          "B": 0.4723662734031677,
+          "C": 0.18244370818138123
+        },
+        "legality_probabilities": {
+          "True": 0.8061832189559937,
+          "False": 0.19381675124168396
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.821\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 427,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 427,
+        "inference_ms": 3022.7790999997524,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0003",
+        "path_edges": [
+          "test-7-0-R0167",
+          "test-7-0-R0003"
+        ],
+        "parent_edges": [
+          "test-7-0-R0167"
+        ],
+        "path_key": "[\"test-7-0-R0167\",\"test-7-0-R0003\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.918, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.844, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --HOLDS--> Company (制造); target listed=True; confidence=0.844; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.844.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "f21f6d8e68f904efa537366790c852c25811df0a94fe75433689d638fcb894de",
+        "expert_legal": true,
+        "score": 0.5918521732091904,
+        "legal_confidence": 0.7966066598892212,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3590352237224579,
+          "B": 0.46563389897346497,
+          "C": 0.17533090710639954
+        },
+        "legality_probabilities": {
+          "True": 0.7966066598892212,
+          "False": 0.2033933699131012
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.844\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 427,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 427,
+        "inference_ms": 3062.0500999975775,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-7-0-R0024",
+        "path_edges": [
+          "test-7-0-R0171",
+          "test-7-0-R0024"
+        ],
+        "parent_edges": [
+          "test-7-0-R0171"
+        ],
+        "path_key": "[\"test-7-0-R0171\",\"test-7-0-R0024\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS then GUARANTEES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['GUARANTEES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.942, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"金融\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.876, \"verified\": true, \"active\": true}].\nCandidate: Company (金融) --HOLDS--> Company (新能源); target listed=True; confidence=0.876; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.876.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "163b9dd72d0a1b52f64ff1d9d22b81f9e1169d40c366e630fcda336174a9fcaf",
+        "expert_legal": true,
+        "score": 0.5873531550168991,
+        "legal_confidence": 0.7649430632591248,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3378387987613678,
+          "B": 0.4990287125110626,
+          "C": 0.1631324589252472
+        },
+        "legality_probabilities": {
+          "True": 0.7649430632591248,
+          "False": 0.23505695164203644
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.876\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 427,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 427,
+        "inference_ms": 3010.5394999991404,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-7-0-R0068\"]": 0.6468484401702881,
+      "[\"test-7-0-R0167\"]": 0.6280345320701599,
+      "[\"test-7-0-R0171\"]": 0.632601261138916,
+      "[\"test-7-0-R0178\"]": 0.6362859457731247,
+      "[\"test-7-0-R0198\"]": 0.6286818981170654,
+      "[\"test-7-0-R0068\",\"test-7-0-R0155\"]": 0.5813731551170349,
+      "[\"test-7-0-R0167\",\"test-7-0-R0003\"]": 0.5918521732091904,
+      "[\"test-7-0-R0171\",\"test-7-0-R0024\"]": 0.5873531550168991
+    }
+  },
+  {
+    "graph_id": "test-19-0",
+    "query_id": "test-19-0-Q0",
+    "query": {
+      "id": "test-19-0-Q0",
+      "start": "test-19-0-N0",
+      "relations": [
+        "HOLDS",
+        "HOLDS"
+      ],
+      "sector": "新能源",
+      "listed": true,
+      "text": "从教学投资人1出发，依次经过持股 → 持股，可到达哪些新能源上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-19-0-R0008",
+        "path_edges": [
+          "test-19-0-R0008"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0008\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.74, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.74; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.74.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "dd8257a7a21866655d1f65e9f97981d9a7405c2d28fa997def72cef7a27743b2",
+        "expert_legal": true,
+        "score": 0.7202891558408737,
+        "legal_confidence": 0.8049784302711487,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5718321800231934,
+          "B": 0.2969139516353607,
+          "C": 0.13125388324260712
+        },
+        "legality_probabilities": {
+          "True": 0.8049784302711487,
+          "False": 0.19502152502536774
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.74\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 340,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 340,
+        "inference_ms": 2364.0857999998843,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0032",
+        "path_edges": [
+          "test-19-0-R0032"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0032\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.866, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (金融); target listed=True; confidence=0.866; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.866.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "c9b381ed0568e1e51e2c81af37d4645637ec57793bbb76c0155b9f8a89b3f066",
+        "expert_legal": true,
+        "score": 0.7220170646905899,
+        "legal_confidence": 0.794789731502533,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5685932040214539,
+          "B": 0.3068477213382721,
+          "C": 0.12455910444259644
+        },
+        "legality_probabilities": {
+          "True": 0.794789731502533,
+          "False": 0.205210343003273
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.866\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 344,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 344,
+        "inference_ms": 2438.3964000007836,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0093",
+        "path_edges": [
+          "test-19-0-R0093"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0093\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.952, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.952; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.952.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "879acce528a467f46852931d53528fc30e578f5d4b1b5866d70fdfc735b87a4f",
+        "expert_legal": true,
+        "score": 0.7135816365480423,
+        "legal_confidence": 0.7841283082962036,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5556588768959045,
+          "B": 0.3158455193042755,
+          "C": 0.12849557399749756
+        },
+        "legality_probabilities": {
+          "True": 0.7841283082962036,
+          "False": 0.21587170660495758
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.952\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 344,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 344,
+        "inference_ms": 2418.2270000019344,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0127",
+        "path_edges": [
+          "test-19-0-R0127"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0127\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.918, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.918; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.918.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "555284e17d15df122edec8cce9c512e630fc09ddda51861983e0831a808f894e",
+        "expert_legal": true,
+        "score": 0.726481631398201,
+        "legal_confidence": 0.8216325044631958,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5750937461853027,
+          "B": 0.3027757704257965,
+          "C": 0.12213057279586792
+        },
+        "legality_probabilities": {
+          "True": 0.8216325044631958,
+          "False": 0.17836757004261017
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.918\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 344,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 258,
+        "inference_ms": 1771.3495999996667,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0188",
+        "path_edges": [
+          "test-19-0-R0188"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0188\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.941, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.941; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.941.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "8481bf7a20165b6602310b48a6419ac0164cd3a66abc19dec6748ea0781beb06",
+        "expert_legal": true,
+        "score": 0.7334587126970291,
+        "legal_confidence": 0.79936283826828,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5861154794692993,
+          "B": 0.2946864664554596,
+          "C": 0.11919815093278885
+        },
+        "legality_probabilities": {
+          "True": 0.79936283826828,
+          "False": 0.20063720643520355
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.941\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 344,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 344,
+        "inference_ms": 2442.5713999989966,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0197",
+        "path_edges": [
+          "test-19-0-R0197"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0197\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.77, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.77; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.77.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "0f1b7075e2e9f9f77926e28933a1256ed641c2f9425f53664169f455f4a49d50",
+        "expert_legal": true,
+        "score": 0.7098293155431747,
+        "legal_confidence": 0.7743914723396301,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5541377663612366,
+          "B": 0.31138309836387634,
+          "C": 0.13447915017604828
+        },
+        "legality_probabilities": {
+          "True": 0.7743914723396301,
+          "False": 0.2256084829568863
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.77\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 340,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 340,
+        "inference_ms": 2462.350500001776,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0128",
+        "path_edges": [
+          "test-19-0-R0008",
+          "test-19-0-R0128"
+        ],
+        "parent_edges": [
+          "test-19-0-R0008"
+        ],
+        "path_key": "[\"test-19-0-R0008\",\"test-19-0-R0128\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.74, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.719, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --HOLDS--> Company (物流); target listed=True; confidence=0.719; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.719.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "3a881fde9b12fe102c7e8461e11518eb7aecaa709217a8f475a752192994eb18",
+        "expert_legal": true,
+        "score": 0.5649052858352661,
+        "legal_confidence": 0.8097034096717834,
+        "legal": true,
+        "probabilities": {
+          "A": 0.31190821528434753,
+          "B": 0.5059941411018372,
+          "C": 0.18209761381149292
+        },
+        "legality_probabilities": {
+          "True": 0.8097034096717834,
+          "False": 0.19029664993286133
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.719\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 408,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 408,
+        "inference_ms": 2896.9344000033743,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0149",
+        "path_edges": [
+          "test-19-0-R0008",
+          "test-19-0-R0149"
+        ],
+        "parent_edges": [
+          "test-19-0-R0008"
+        ],
+        "path_key": "[\"test-19-0-R0008\",\"test-19-0-R0149\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then HOLDS. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.74, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": false, \"confidence\": 0.706, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --HOLDS--> Company (金融); target listed=False; confidence=0.706; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.706.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "6f43dd1c025d05ebef3c2959de912dd69d0072d34eabcc02864f2cfc9f20e08d",
+        "expert_legal": true,
+        "score": 0.5512746870517731,
+        "legal_confidence": 0.8189430236816406,
+        "legal": true,
+        "probabilities": {
+          "A": 0.2941523492336273,
+          "B": 0.5142446756362915,
+          "C": 0.1916029006242752
+        },
+        "legality_probabilities": {
+          "True": 0.8189430236816406,
+          "False": 0.1810569316148758
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.706\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 408,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 408,
+        "inference_ms": 2895.451899999898,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-19-0-R0008\"]": 0.7202891558408737,
+      "[\"test-19-0-R0032\"]": 0.7220170646905899,
+      "[\"test-19-0-R0093\"]": 0.7135816365480423,
+      "[\"test-19-0-R0127\"]": 0.726481631398201,
+      "[\"test-19-0-R0188\"]": 0.7334587126970291,
+      "[\"test-19-0-R0197\"]": 0.7098293155431747,
+      "[\"test-19-0-R0008\",\"test-19-0-R0128\"]": 0.5649052858352661,
+      "[\"test-19-0-R0008\",\"test-19-0-R0149\"]": 0.5512746870517731
+    }
+  },
+  {
+    "graph_id": "test-19-0",
+    "query_id": "test-19-0-Q1",
+    "query": {
+      "id": "test-19-0-Q1",
+      "start": "test-19-0-N1",
+      "relations": [
+        "HOLDS",
+        "GUARANTEES",
+        "GUARANTEES"
+      ],
+      "sector": "制造",
+      "listed": true,
+      "text": "从教学投资人2出发，依次经过持股 → 担保 → 担保，可到达哪些制造上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-19-0-R0011",
+        "path_edges": [
+          "test-19-0-R0011"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0011\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": false, \"confidence\": 0.779, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (金融); target listed=False; confidence=0.779; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.779.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "3f9eb5909debe7071da7cfc6d6a5626dbda6867e297369d86172b70b742e6729",
+        "expert_legal": true,
+        "score": 0.6393248587846756,
+        "legal_confidence": 0.7873454093933105,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4596289098262787,
+          "B": 0.3593918979167938,
+          "C": 0.1809791922569275
+        },
+        "legality_probabilities": {
+          "True": 0.7873454093933105,
+          "False": 0.21265453100204468
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.779\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2520.2310999993642,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0079",
+        "path_edges": [
+          "test-19-0-R0079"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0079\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.993, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=False; confidence=0.993; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.993.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "6e9725f4c9b755ae3a95ca76733651602b5356433e18f4e56dd5ccff96d07bad",
+        "expert_legal": true,
+        "score": 0.6326039880514145,
+        "legal_confidence": 0.7956525087356567,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45390334725379944,
+          "B": 0.3574012815952301,
+          "C": 0.18869537115097046
+        },
+        "legality_probabilities": {
+          "True": 0.7956525087356567,
+          "False": 0.20434749126434326
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.993\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2582.33200000177,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0097",
+        "path_edges": [
+          "test-19-0-R0097"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0097\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.536, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (新能源); target listed=True; confidence=0.536; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.536.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "03ac2f0d5c5535b33020daad780ad93610fb5989939a5b60ae4f8e929c10af82",
+        "expert_legal": false,
+        "score": 0.6391382366418839,
+        "legal_confidence": 0.814854085445404,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4608192443847656,
+          "B": 0.35663798451423645,
+          "C": 0.18254272639751434
+        },
+        "legality_probabilities": {
+          "True": 0.814854085445404,
+          "False": 0.18514589965343475
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.536\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2544.235099998332,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0134",
+        "path_edges": [
+          "test-19-0-R0134"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0134\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.91, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (新能源); target listed=False; confidence=0.91; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.91.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "9c78abea4163697fd647df4fa0f7139f2c87c2b63b8e0b806231d13b19ba9c26",
+        "expert_legal": true,
+        "score": 0.64897421002388,
+        "legal_confidence": 0.8169412016868591,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45806166529655457,
+          "B": 0.3818250894546509,
+          "C": 0.16011321544647217
+        },
+        "legality_probabilities": {
+          "True": 0.8169412016868591,
+          "False": 0.1830587536096573
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.91\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 355,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 270,
+        "inference_ms": 1854.7784000002139,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0165",
+        "path_edges": [
+          "test-19-0-R0165"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0165\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.734, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=True; confidence=0.734; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.734.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "c447e1905d283ec61cd9ca8b0a6017393d02a4635a8919b36b6a145e454b490c",
+        "expert_legal": true,
+        "score": 0.6467339843511581,
+        "legal_confidence": 0.8181827068328857,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47273948788642883,
+          "B": 0.3479889929294586,
+          "C": 0.17927156388759613
+        },
+        "legality_probabilities": {
+          "True": 0.8181827068328857,
+          "False": 0.18181724846363068
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.734\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2557.043500000873,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0183",
+        "path_edges": [
+          "test-19-0-R0183"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0183\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['GUARANTEES', 'GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.977, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=True; confidence=0.977; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.977.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "c298e6ed4e8001abd0c343b57d2d27ef405cc397ee5c5d91989ef492b6ad8b8a",
+        "expert_legal": true,
+        "score": 0.6408153623342514,
+        "legal_confidence": 0.7999675273895264,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4686584770679474,
+          "B": 0.34431377053260803,
+          "C": 0.18702775239944458
+        },
+        "legality_probabilities": {
+          "True": 0.7999675273895264,
+          "False": 0.20003250241279602
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.977\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 359,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 359,
+        "inference_ms": 2540.605599999253,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0033",
+        "path_edges": [
+          "test-19-0-R0079",
+          "test-19-0-R0033"
+        ],
+        "parent_edges": [
+          "test-19-0-R0079"
+        ],
+        "path_key": "[\"test-19-0-R0079\",\"test-19-0-R0033\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.993, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.93, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --GUARANTEES--> Company (新能源); target listed=True; confidence=0.93; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.93.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "37d30e93714df5c88aca03e7386c87c2182d26758561512c024fdb8e138d5e7f",
+        "expert_legal": true,
+        "score": 0.5660166144371033,
+        "legal_confidence": 0.8116623163223267,
+        "legal": true,
+        "probabilities": {
+          "A": 0.329721599817276,
+          "B": 0.47259002923965454,
+          "C": 0.19768840074539185
+        },
+        "legality_probabilities": {
+          "True": 0.8116623163223267,
+          "False": 0.18833768367767334
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.93\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 420,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 420,
+        "inference_ms": 2935.5922999966424,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0114",
+        "path_edges": [
+          "test-19-0-R0079",
+          "test-19-0-R0114"
+        ],
+        "parent_edges": [
+          "test-19-0-R0079"
+        ],
+        "path_key": "[\"test-19-0-R0079\",\"test-19-0-R0114\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then GUARANTEES. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['GUARANTEES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.993, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.367, \"verified\": false, \"active\": false}].\nCandidate: Company (制造) --GUARANTEES--> Company (新能源); target listed=True; confidence=0.367; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.367.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "3803399c79f44e2cf4ab85b68112e2b4fdc8a4d12e014ebbae45d8bbed7972b4",
+        "expert_legal": false,
+        "score": 0.531334713101387,
+        "legal_confidence": 0.10351651161909103,
+        "legal": false,
+        "probabilities": {
+          "A": 0.24700693786144257,
+          "B": 0.5686555504798889,
+          "C": 0.18433745205402374
+        },
+        "legality_probabilities": {
+          "True": 0.10351651161909103,
+          "False": 0.8964834213256836
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.367\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 424,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 424,
+        "inference_ms": 2972.3193000027095,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-19-0-R0011\"]": 0.6393248587846756,
+      "[\"test-19-0-R0079\"]": 0.6326039880514145,
+      "[\"test-19-0-R0097\"]": 0.6391382366418839,
+      "[\"test-19-0-R0134\"]": 0.64897421002388,
+      "[\"test-19-0-R0165\"]": 0.6467339843511581,
+      "[\"test-19-0-R0183\"]": 0.6408153623342514,
+      "[\"test-19-0-R0079\",\"test-19-0-R0033\"]": 0.5660166144371033,
+      "[\"test-19-0-R0079\",\"test-19-0-R0114\"]": 0.13283367827534676
+    }
+  },
+  {
+    "graph_id": "test-19-0",
+    "query_id": "test-19-0-Q2",
+    "query": {
+      "id": "test-19-0-Q2",
+      "start": "test-19-0-N2",
+      "relations": [
+        "HOLDS",
+        "TRADES",
+        "HOLDS",
+        "HOLDS"
+      ],
+      "sector": "物流",
+      "listed": true,
+      "text": "从教学投资人3出发，依次经过持股 → 交易 → 持股 → 持股，可到达哪些物流上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-19-0-R0030",
+        "path_edges": [
+          "test-19-0-R0030"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0030\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.688, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (新能源); target listed=True; confidence=0.688; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.688.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "7e62ca720326ef77405174f3d10709de020378ccd9d09ada3917c76c0a033aac",
+        "expert_legal": true,
+        "score": 0.6328471302986145,
+        "legal_confidence": 0.8073274493217468,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4409027695655823,
+          "B": 0.38388872146606445,
+          "C": 0.17520849406719208
+        },
+        "legality_probabilities": {
+          "True": 0.8073274493217468,
+          "False": 0.19267253577709198
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.688\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2624.869800001761,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0091",
+        "path_edges": [
+          "test-19-0-R0091"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0091\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.819, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=False; confidence=0.819; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.819.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "be8d597e679bfe31f8d4d4bd331a8c9dc66ebeae46d8314c3580bd5657adadb3",
+        "expert_legal": true,
+        "score": 0.6524816453456879,
+        "legal_confidence": 0.8061003684997559,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47460559010505676,
+          "B": 0.3557521104812622,
+          "C": 0.1696424037218094
+        },
+        "legality_probabilities": {
+          "True": 0.8061003684997559,
+          "False": 0.19389961659908295
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.819\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2504.8208000007435,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0136",
+        "path_edges": [
+          "test-19-0-R0136"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0136\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.889, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (金融); target listed=True; confidence=0.889; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.889.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "5ef385037256cb7fc354cee02859b34314f938432615c3059e29106ba35be59e",
+        "expert_legal": true,
+        "score": 0.6407164484262466,
+        "legal_confidence": 0.8017979264259338,
+        "legal": true,
+        "probabilities": {
+          "A": 0.45637813210487366,
+          "B": 0.36867663264274597,
+          "C": 0.1749451905488968
+        },
+        "legality_probabilities": {
+          "True": 0.8017979264259338,
+          "False": 0.19820204377174377
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.889\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2581.8757000015466,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0171",
+        "path_edges": [
+          "test-19-0-R0171"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0171\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.904, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.904; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.904.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "28ea783ff26e3a21f9eee4505a0ca0746bff63089a1a53fe3a2f6de55650b79a",
+        "expert_legal": true,
+        "score": 0.6586990803480148,
+        "legal_confidence": 0.8051856160163879,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4842500686645508,
+          "B": 0.3488980233669281,
+          "C": 0.1668519526720047
+        },
+        "legality_probabilities": {
+          "True": 0.8051856160163879,
+          "False": 0.19481442868709564
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.904\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2632.360999999946,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0187",
+        "path_edges": [
+          "test-19-0-R0187"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0187\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.639, \"verified\": false, \"active\": false}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.639; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.639.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "e9a8b522593a60c2c107d4c589fe59ee29ed0d5f8b5f7c1dbfc7de3ffe6ab6fb",
+        "expert_legal": false,
+        "score": 0.6324218064546585,
+        "legal_confidence": 0.10071093589067459,
+        "legal": false,
+        "probabilities": {
+          "A": 0.43756103515625,
+          "B": 0.389721542596817,
+          "C": 0.1727173626422882
+        },
+        "legality_probabilities": {
+          "True": 0.10071093589067459,
+          "False": 0.899289071559906
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.639\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2559.734700000263,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0195",
+        "path_edges": [
+          "test-19-0-R0195"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-19-0-R0195\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['TRADES', 'HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.907, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.907; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.907.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "be3ac22ccfc53e0c2f14c0d4954edf7d9a439ed44eafe22e9bbf3c2e29525b58",
+        "expert_legal": true,
+        "score": 0.6546425223350525,
+        "legal_confidence": 0.7977273464202881,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47789496183395386,
+          "B": 0.35349512100219727,
+          "C": 0.1686098724603653
+        },
+        "legality_probabilities": {
+          "True": 0.7977273464202881,
+          "False": 0.20227262377738953
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.907\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 360,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 360,
+        "inference_ms": 2547.886299998936,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0159",
+        "path_edges": [
+          "test-19-0-R0030",
+          "test-19-0-R0159"
+        ],
+        "parent_edges": [
+          "test-19-0-R0030"
+        ],
+        "path_key": "[\"test-19-0-R0030\",\"test-19-0-R0159\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.688, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.877, \"verified\": false, \"active\": true}].\nCandidate: Company (新能源) --TRADES--> Company (金融); target listed=True; confidence=0.877; verified=False; active=True. Prefix verified=False; active=True; minimum confidence=0.688.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "2215a62a12a4a2e7e1f794d3b9c13c3c33489d27b41a73b3aed49875fd5d46e4",
+        "expert_legal": false,
+        "score": 0.5329144597053528,
+        "legal_confidence": 0.1972583532333374,
+        "legal": false,
+        "probabilities": {
+          "A": 0.25687867403030396,
+          "B": 0.5520715713500977,
+          "C": 0.1910497397184372
+        },
+        "legality_probabilities": {
+          "True": 0.1972583532333374,
+          "False": 0.8027417063713074
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=True; minimum_confidence=0.688\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 423,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 423,
+        "inference_ms": 2996.493599999667,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-19-0-R0181",
+        "path_edges": [
+          "test-19-0-R0091",
+          "test-19-0-R0181"
+        ],
+        "parent_edges": [
+          "test-19-0-R0091"
+        ],
+        "path_key": "[\"test-19-0-R0091\",\"test-19-0-R0181\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS then HOLDS. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['HOLDS', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.819, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"物流\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.903, \"verified\": true, \"active\": true}].\nCandidate: Company (物流) --TRADES--> Company (物流); target listed=True; confidence=0.903; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.819.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b6f4fca16521364310de5d094284e3068703e2bc011cad7453a1da7063f8ab48",
+        "expert_legal": true,
+        "score": 0.5776414573192596,
+        "legal_confidence": 0.8061003684997559,
+        "legal": true,
+        "probabilities": {
+          "A": 0.32965752482414246,
+          "B": 0.4959678649902344,
+          "C": 0.17437461018562317
+        },
+        "legality_probabilities": {
+          "True": 0.8061003684997559,
+          "False": 0.19389961659908295
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.819\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 423,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 337,
+        "inference_ms": 2349.46409999975,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-19-0-R0030\"]": 0.6328471302986145,
+      "[\"test-19-0-R0091\"]": 0.6524816453456879,
+      "[\"test-19-0-R0136\"]": 0.6407164484262466,
+      "[\"test-19-0-R0171\"]": 0.6586990803480148,
+      "[\"test-19-0-R0187\"]": 0.15810545161366463,
+      "[\"test-19-0-R0195\"]": 0.6546425223350525,
+      "[\"test-19-0-R0030\",\"test-19-0-R0159\"]": 0.1332286149263382,
+      "[\"test-19-0-R0091\",\"test-19-0-R0181\"]": 0.5776414573192596
+    }
+  },
+  {
+    "graph_id": "test-43-0",
+    "query_id": "test-43-0-Q0",
+    "query": {
+      "id": "test-43-0-Q0",
+      "start": "test-43-0-N0",
+      "relations": [
+        "HOLDS",
+        "TRADES"
+      ],
+      "sector": "新能源",
+      "listed": true,
+      "text": "从教学投资人1出发，依次经过持股 → 交易，可到达哪些新能源上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-43-0-R0052",
+        "path_edges": [
+          "test-43-0-R0052"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0052\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.897, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (制造); target listed=False; confidence=0.897; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.897.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b50ad49469e83d3a46a5cea71c0c049c023e3ecb28e956e02600789e061b12aa",
+        "expert_legal": true,
+        "score": 0.6832391768693924,
+        "legal_confidence": 0.789417028427124,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5072672367095947,
+          "B": 0.35194388031959534,
+          "C": 0.14078888297080994
+        },
+        "legality_probabilities": {
+          "True": 0.789417028427124,
+          "False": 0.21058297157287598
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.897\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2415.666199998668,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0081",
+        "path_edges": [
+          "test-43-0-R0081"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0081\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.75, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=False; confidence=0.75; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.75.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "f1fe4cd81c476caa38197fccda718743149039d3ad2b7920df3bdafc403d1996",
+        "expert_legal": true,
+        "score": 0.6561368107795715,
+        "legal_confidence": 0.8016843199729919,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47244974970817566,
+          "B": 0.36737412214279175,
+          "C": 0.1601761132478714
+        },
+        "legality_probabilities": {
+          "True": 0.8016843199729919,
+          "False": 0.19831575453281403
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.75\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 339,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 339,
+        "inference_ms": 2389.0572000018437,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0085",
+        "path_edges": [
+          "test-43-0-R0085"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0085\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.72, \"verified\": false, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.72; verified=False; active=True. Prefix verified=False; active=True; minimum confidence=0.72.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "e7cf313411f9615a7439e704c7713a2e7e9a179285bd624791bfbb3dc8157c67",
+        "expert_legal": false,
+        "score": 0.6602402031421661,
+        "legal_confidence": 0.17792801558971405,
+        "legal": false,
+        "probabilities": {
+          "A": 0.479120135307312,
+          "B": 0.36224013566970825,
+          "C": 0.15863963961601257
+        },
+        "legality_probabilities": {
+          "True": 0.17792801558971405,
+          "False": 0.8220719695091248
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=True; minimum_confidence=0.72\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 339,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 339,
+        "inference_ms": 2366.244699998788,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0155",
+        "path_edges": [
+          "test-43-0-R0155"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0155\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.723, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.723; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.723.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "b34f7f9ae5600aeb1b0277d6431efc496f350c1d7af03d59dc0fcf36c396628a",
+        "expert_legal": true,
+        "score": 0.6926058083772659,
+        "legal_confidence": 0.8091167211532593,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5197809934616089,
+          "B": 0.3456496298313141,
+          "C": 0.13456934690475464
+        },
+        "legality_probabilities": {
+          "True": 0.8091167211532593,
+          "False": 0.1908833533525467
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.723\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2401.000899997598,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0161",
+        "path_edges": [
+          "test-43-0-R0161"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0161\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.704, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (新能源); target listed=True; confidence=0.704; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.704.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "72221e0adbecb7b735ec612fa0c7ac4c35e8ca2559eb7b21d79b82b82f503cf0",
+        "expert_legal": true,
+        "score": 0.6911295354366302,
+        "legal_confidence": 0.8024134039878845,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5182461738586426,
+          "B": 0.34576672315597534,
+          "C": 0.1359870582818985
+        },
+        "legality_probabilities": {
+          "True": 0.8024134039878845,
+          "False": 0.1975865364074707
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.704\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2462.872600000992,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0176",
+        "path_edges": [
+          "test-43-0-R0176"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0176\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 1/2; remaining relations: ['TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.812, \"verified\": true, \"active\": true}].\nCandidate: Person (新能源) --HOLDS--> Company (金融); target listed=True; confidence=0.812; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.812.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "54a6effb640d0aefacb5fe8b1438d627f7d14b77a0e7194dd46e4de821d75fcb",
+        "expert_legal": true,
+        "score": 0.6893706321716309,
+        "legal_confidence": 0.7949457764625549,
+        "legal": true,
+        "probabilities": {
+          "A": 0.5161123275756836,
+          "B": 0.34651660919189453,
+          "C": 0.1373710334300995
+        },
+        "legality_probabilities": {
+          "True": 0.7949457764625549,
+          "False": 0.20505420863628387
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.812\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 343,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 343,
+        "inference_ms": 2505.518600002688,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0114",
+        "path_edges": [
+          "test-43-0-R0052",
+          "test-43-0-R0114"
+        ],
+        "parent_edges": [
+          "test-43-0-R0052"
+        ],
+        "path_key": "[\"test-43-0-R0052\",\"test-43-0-R0114\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.897, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.96, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --TRADES--> Company (新能源); target listed=False; confidence=0.96; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.897.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "bcfb42c77e90d833b911b684f7328d25d152f763734493eedc303faec35fde90",
+        "expert_legal": true,
+        "score": 0.5938647985458374,
+        "legal_confidence": 0.789417028427124,
+        "legal": true,
+        "probabilities": {
+          "A": 0.32516083121299744,
+          "B": 0.5374079346656799,
+          "C": 0.13743118941783905
+        },
+        "legality_probabilities": {
+          "True": 0.789417028427124,
+          "False": 0.21058297157287598
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.897\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 405,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 319,
+        "inference_ms": 2472.6805000027525,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0151",
+        "path_edges": [
+          "test-43-0-R0081",
+          "test-43-0-R0151"
+        ],
+        "parent_edges": [
+          "test-43-0-R0081"
+        ],
+        "path_key": "[\"test-43-0-R0081\",\"test-43-0-R0151\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES. Desired endpoint: Company in sector 新能源, listed=True.\nCompleted steps after action: 2/2; remaining relations: [].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"新能源\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.75, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"新能源\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.985, \"verified\": true, \"active\": true}].\nCandidate: Company (新能源) --TRADES--> Company (新能源); target listed=False; confidence=0.985; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.75.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "1c933a9142dff36ffde53da87fa6d358a0b317c4a4c7cec0b4663117eae0a0b8",
+        "expert_legal": true,
+        "score": 0.5784378945827484,
+        "legal_confidence": 0.8016843199729919,
+        "legal": true,
+        "probabilities": {
+          "A": 0.30741140246391296,
+          "B": 0.5420529842376709,
+          "C": 0.15053559839725494
+        },
+        "legality_probabilities": {
+          "True": 0.8016843199729919,
+          "False": 0.19831575453281403
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.75\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 404,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 319,
+        "inference_ms": 2204.393299998628,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-43-0-R0052\"]": 0.6832391768693924,
+      "[\"test-43-0-R0081\"]": 0.6561368107795715,
+      "[\"test-43-0-R0085\"]": 0.16506005078554153,
+      "[\"test-43-0-R0155\"]": 0.6926058083772659,
+      "[\"test-43-0-R0161\"]": 0.6911295354366302,
+      "[\"test-43-0-R0176\"]": 0.6893706321716309,
+      "[\"test-43-0-R0052\",\"test-43-0-R0114\"]": 0.5938647985458374,
+      "[\"test-43-0-R0081\",\"test-43-0-R0151\"]": 0.5784378945827484
+    }
+  },
+  {
+    "graph_id": "test-43-0",
+    "query_id": "test-43-0-Q1",
+    "query": {
+      "id": "test-43-0-Q1",
+      "start": "test-43-0-N1",
+      "relations": [
+        "HOLDS",
+        "TRADES",
+        "HOLDS"
+      ],
+      "sector": "制造",
+      "listed": true,
+      "text": "从教学投资人2出发，依次经过持股 → 交易 → 持股，可到达哪些制造上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-43-0-R0012",
+        "path_edges": [
+          "test-43-0-R0012"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0012\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['TRADES', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.807, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=False; confidence=0.807; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.807.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "d01ba69e9b4141aa6463732ae1a21ad34cac50a4519b12d731ec042e01e80032",
+        "expert_legal": true,
+        "score": 0.6628072112798691,
+        "legal_confidence": 0.7829601764678955,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47654756903648376,
+          "B": 0.37251928448677063,
+          "C": 0.1509331315755844
+        },
+        "legality_probabilities": {
+          "True": 0.7829601764678955,
+          "False": 0.21703983843326569
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.807\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 352,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 352,
+        "inference_ms": 2465.847700001177,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0028",
+        "path_edges": [
+          "test-43-0-R0028"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0028\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['TRADES', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.752, \"verified\": false, \"active\": false}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=False; confidence=0.752; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.752.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "61f0b77ffb492259d24b45ff87983c73fc707abb83a8e83dab7a4fbc96bc59cf",
+        "expert_legal": false,
+        "score": 0.6233736127614975,
+        "legal_confidence": 0.0913042202591896,
+        "legal": false,
+        "probabilities": {
+          "A": 0.40981626510620117,
+          "B": 0.42711469531059265,
+          "C": 0.1630690097808838
+        },
+        "legality_probabilities": {
+          "True": 0.0913042202591896,
+          "False": 0.9086958169937134
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.752\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 352,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 352,
+        "inference_ms": 2505.0179999998363,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0061",
+        "path_edges": [
+          "test-43-0-R0061"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0061\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['TRADES', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.741, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=True; confidence=0.741; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.741.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "e4f170e7369ac6dccb84597df47f5034d0e3f8c22df2244454da00e8a26c72bb",
+        "expert_legal": true,
+        "score": 0.6662687659263611,
+        "legal_confidence": 0.8000569343566895,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4799708425998688,
+          "B": 0.3725958466529846,
+          "C": 0.1474333107471466
+        },
+        "legality_probabilities": {
+          "True": 0.8000569343566895,
+          "False": 0.19994309544563293
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.741\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 352,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 352,
+        "inference_ms": 2493.471199999476,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0098",
+        "path_edges": [
+          "test-43-0-R0098"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0098\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['TRADES', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.98, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=True; confidence=0.98; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.98.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "47bce474b272f3272d7fdc42c3268f7f8652c13e22b08090f3957486874388c6",
+        "expert_legal": true,
+        "score": 0.6641896963119507,
+        "legal_confidence": 0.8000670075416565,
+        "legal": true,
+        "probabilities": {
+          "A": 0.47560426592826843,
+          "B": 0.3771708607673645,
+          "C": 0.14722491800785065
+        },
+        "legality_probabilities": {
+          "True": 0.8000670075416565,
+          "False": 0.1999330222606659
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.98\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 348,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 348,
+        "inference_ms": 2469.155300001148,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0122",
+        "path_edges": [
+          "test-43-0-R0122"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0122\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 1/3; remaining relations: ['TRADES', 'HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.992, \"verified\": true, \"active\": true}].\nCandidate: Person (制造) --HOLDS--> Company (制造); target listed=False; confidence=0.992; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.992.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "6710fe5bc779d7cf2c332fe8276508c2275679a2bb6523d004376959c45942cb",
+        "expert_legal": true,
+        "score": 0.657835066318512,
+        "legal_confidence": 0.7881134748458862,
+        "legal": true,
+        "probabilities": {
+          "A": 0.46776989102363586,
+          "B": 0.3801303505897522,
+          "C": 0.15209977328777313
+        },
+        "legality_probabilities": {
+          "True": 0.7881134748458862,
+          "False": 0.21188655495643616
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.992\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 352,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 352,
+        "inference_ms": 2451.773400000093,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0010",
+        "path_edges": [
+          "test-43-0-R0012",
+          "test-43-0-R0010"
+        ],
+        "parent_edges": [
+          "test-43-0-R0012"
+        ],
+        "path_key": "[\"test-43-0-R0012\",\"test-43-0-R0010\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.807, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": true, \"confidence\": 0.571, \"verified\": false, \"active\": false}].\nCandidate: Company (制造) --TRADES--> Company (新能源); target listed=True; confidence=0.571; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.571.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "ad0560e74c61eb9ba2673342284d27c26a3ebe569f1b3287f7307ab275b3b4d9",
+        "expert_legal": false,
+        "score": 0.5274853110313416,
+        "legal_confidence": 0.09772490710020065,
+        "legal": false,
+        "probabilities": {
+          "A": 0.24508002400398254,
+          "B": 0.564810574054718,
+          "C": 0.190109521150589
+        },
+        "legality_probabilities": {
+          "True": 0.09772490710020065,
+          "False": 0.9022751450538635
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.571\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 415,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 415,
+        "inference_ms": 2967.9327000012563,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0007",
+        "path_edges": [
+          "test-43-0-R0061",
+          "test-43-0-R0007"
+        ],
+        "parent_edges": [
+          "test-43-0-R0061"
+        ],
+        "path_key": "[\"test-43-0-R0061\",\"test-43-0-R0007\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.741, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.75, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --TRADES--> Company (制造); target listed=True; confidence=0.75; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.741.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "0379ed2e422dbfd5f96b8cd8df4c90e908dd4750a9a2acc6072ad9a86f916e69",
+        "expert_legal": true,
+        "score": 0.5879773050546646,
+        "legal_confidence": 0.8000569343566895,
+        "legal": true,
+        "probabilities": {
+          "A": 0.353394478559494,
+          "B": 0.4691656529903412,
+          "C": 0.1774398237466812
+        },
+        "legality_probabilities": {
+          "True": 0.8000569343566895,
+          "False": 0.19994309544563293
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.741\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 413,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 327,
+        "inference_ms": 2331.270000002405,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0013",
+        "path_edges": [
+          "test-43-0-R0061",
+          "test-43-0-R0013"
+        ],
+        "parent_edges": [
+          "test-43-0-R0061"
+        ],
+        "path_key": "[\"test-43-0-R0061\",\"test-43-0-R0013\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then TRADES then HOLDS. Desired endpoint: Company in sector 制造, listed=True.\nCompleted steps after action: 2/3; remaining relations: ['HOLDS'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"制造\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": true, \"confidence\": 0.741, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"TRADES\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.996, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --TRADES--> Company (物流); target listed=True; confidence=0.996; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.741.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "1a3cd00c879182b796611edeee29636e6560e8ae6754c5c8a907cb2265142e1c",
+        "expert_legal": true,
+        "score": 0.5722245275974274,
+        "legal_confidence": 0.8000569343566895,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3244117498397827,
+          "B": 0.4956255555152893,
+          "C": 0.17996269464492798
+        },
+        "legality_probabilities": {
+          "True": 0.8000569343566895,
+          "False": 0.19994309544563293
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.741\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 415,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 329,
+        "inference_ms": 2325.8893999991415,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-43-0-R0012\"]": 0.6628072112798691,
+      "[\"test-43-0-R0028\"]": 0.15584340319037437,
+      "[\"test-43-0-R0061\"]": 0.6662687659263611,
+      "[\"test-43-0-R0098\"]": 0.6641896963119507,
+      "[\"test-43-0-R0122\"]": 0.657835066318512,
+      "[\"test-43-0-R0012\",\"test-43-0-R0010\"]": 0.1318713277578354,
+      "[\"test-43-0-R0061\",\"test-43-0-R0007\"]": 0.5879773050546646,
+      "[\"test-43-0-R0061\",\"test-43-0-R0013\"]": 0.5722245275974274
+    }
+  },
+  {
+    "graph_id": "test-43-0",
+    "query_id": "test-43-0-Q2",
+    "query": {
+      "id": "test-43-0-Q2",
+      "start": "test-43-0-N2",
+      "relations": [
+        "HOLDS",
+        "GUARANTEES",
+        "TRADES",
+        "TRADES"
+      ],
+      "sector": "物流",
+      "listed": true,
+      "text": "从教学投资人3出发，依次经过持股 → 担保 → 交易 → 交易，可到达哪些物流上市企业？请给出一条有效证据路径。"
+    },
+    "evaluations": [
+      {
+        "edge_id": "test-43-0-R0018",
+        "path_edges": [
+          "test-43-0-R0018"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0018\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.796, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (制造); target listed=False; confidence=0.796; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.796.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "cae43681e06c162f3b2c509247ab6f31080a9dcf8a1f21d45aa8bd77e6dac45b",
+        "expert_legal": true,
+        "score": 0.6269754320383072,
+        "legal_confidence": 0.7819781303405762,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4326132535934448,
+          "B": 0.38872435688972473,
+          "C": 0.17866243422031403
+        },
+        "legality_probabilities": {
+          "True": 0.7819781303405762,
+          "False": 0.21802189946174622
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.796\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 362,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 362,
+        "inference_ms": 2535.638299999846,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0026",
+        "path_edges": [
+          "test-43-0-R0026"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0026\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.7, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.7; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.7.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "6c68fba42c122e94bce23fdb574cb9fbbbffb98095fb2dff42429a6d2450c7d5",
+        "expert_legal": true,
+        "score": 0.6509313583374023,
+        "legal_confidence": 0.8141347765922546,
+        "legal": true,
+        "probabilities": {
+          "A": 0.44850173592567444,
+          "B": 0.4048592448234558,
+          "C": 0.14663897454738617
+        },
+        "legality_probabilities": {
+          "True": 0.8141347765922546,
+          "False": 0.18586520850658417
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.7\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 354,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 354,
+        "inference_ms": 2507.7902999983053,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0030",
+        "path_edges": [
+          "test-43-0-R0030"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0030\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.682, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=True; confidence=0.682; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.682.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "4161bafc622e3fcbc1fded40912ffdb9e0375b11c300f8f0f7f60baf546383e0",
+        "expert_legal": true,
+        "score": 0.6314676702022552,
+        "legal_confidence": 0.7989451885223389,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4391479790210724,
+          "B": 0.3846393823623657,
+          "C": 0.1762126237154007
+        },
+        "legality_probabilities": {
+          "True": 0.7989451885223389,
+          "False": 0.20105478167533875
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.682\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 362,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 362,
+        "inference_ms": 2557.751800002734,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0099",
+        "path_edges": [
+          "test-43-0-R0099"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0099\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.842, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (新能源); target listed=False; confidence=0.842; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.842.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "1231c04e379d195d67124c28c05c47e7ed2d927473ff1199b0ad50b30a7f291f",
+        "expert_legal": true,
+        "score": 0.625869557261467,
+        "legal_confidence": 0.7827763557434082,
+        "legal": true,
+        "probabilities": {
+          "A": 0.43161213397979736,
+          "B": 0.38851484656333923,
+          "C": 0.17987294495105743
+        },
+        "legality_probabilities": {
+          "True": 0.7827763557434082,
+          "False": 0.217223659157753
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.842\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 362,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 362,
+        "inference_ms": 2560.467300001619,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0101",
+        "path_edges": [
+          "test-43-0-R0101"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0101\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"新能源\", \"target_listed\": false, \"confidence\": 0.916, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (新能源); target listed=False; confidence=0.916; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.916.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "050999dda0ebf83b32e32295af3061a6bf208102ec3ef799a935ae70a199ea21",
+        "expert_legal": true,
+        "score": 0.6246534138917923,
+        "legal_confidence": 0.8070600628852844,
+        "legal": true,
+        "probabilities": {
+          "A": 0.4311853349208832,
+          "B": 0.38693615794181824,
+          "C": 0.1818784773349762
+        },
+        "legality_probabilities": {
+          "True": 0.8070600628852844,
+          "False": 0.19293999671936035
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.916\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 362,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 362,
+        "inference_ms": 2527.911799999856,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0179",
+        "path_edges": [
+          "test-43-0-R0179"
+        ],
+        "parent_edges": [],
+        "path_key": "[\"test-43-0-R0179\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 1/4; remaining relations: ['GUARANTEES', 'TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": false, \"confidence\": 0.768, \"verified\": true, \"active\": true}].\nCandidate: Person (物流) --HOLDS--> Company (物流); target listed=False; confidence=0.768; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.768.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "655598c94eb320508ae3e0284292024f3f646fef7731ae8488a4e59eca4aa919",
+        "expert_legal": true,
+        "score": 0.6258335411548615,
+        "legal_confidence": 0.772087574005127,
+        "legal": true,
+        "probabilities": {
+          "A": 0.42967742681503296,
+          "B": 0.392312228679657,
+          "C": 0.17801032960414886
+        },
+        "legality_probabilities": {
+          "True": 0.772087574005127,
+          "False": 0.22791239619255066
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.768\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "A",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 362,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 362,
+        "inference_ms": 2711.3994999999704,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0008",
+        "path_edges": [
+          "test-43-0-R0018",
+          "test-43-0-R0008"
+        ],
+        "parent_edges": [
+          "test-43-0-R0018"
+        ],
+        "path_key": "[\"test-43-0-R0018\",\"test-43-0-R0008\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.796, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"金融\", \"target_listed\": true, \"confidence\": 0.413, \"verified\": false, \"active\": false}].\nCandidate: Company (制造) --GUARANTEES--> Company (金融); target listed=True; confidence=0.413; verified=False; active=False. Prefix verified=False; active=False; minimum confidence=0.413.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "5ecec576857dc0aed3e39543f9e96ae88c1b0d2a2a1c43505fde44fc3f31488a",
+        "expert_legal": false,
+        "score": 0.5469457805156708,
+        "legal_confidence": 0.09255233407020569,
+        "legal": false,
+        "probabilities": {
+          "A": 0.2688901424407959,
+          "B": 0.5561112761497498,
+          "C": 0.17499852180480957
+        },
+        "legality_probabilities": {
+          "True": 0.09255233407020569,
+          "False": 0.9074476957321167
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=False; active=False; minimum_confidence=0.413\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 427,
+        "prediction_cache_hits": 0,
+        "processed_prompt_tokens": 427,
+        "inference_ms": 3443.4971999980917,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      },
+      {
+        "edge_id": "test-43-0-R0072",
+        "path_edges": [
+          "test-43-0-R0018",
+          "test-43-0-R0072"
+        ],
+        "parent_edges": [
+          "test-43-0-R0018"
+        ],
+        "path_key": "[\"test-43-0-R0018\",\"test-43-0-R0072\"]",
+        "prompt": "You evaluate one candidate PATH PREFIX in a synthetic corporate knowledge graph. Do NOT answer the question or name any answer entity. Only rate the potential reward of continuing this path. A = promising and evidenced; B = uncertain; C = unsafe or poor.\nRequired relation sequence: HOLDS then GUARANTEES then TRADES then TRADES. Desired endpoint: Company in sector 物流, listed=True.\nCompleted steps after action: 2/4; remaining relations: ['TRADES', 'TRADES'].\nPath prefix facts (not a proposed answer): [{\"step\": 1, \"source_kind\": \"Person\", \"source_sector\": \"物流\", \"relation\": \"HOLDS\", \"target_kind\": \"Company\", \"target_sector\": \"制造\", \"target_listed\": false, \"confidence\": 0.796, \"verified\": true, \"active\": true}, {\"step\": 2, \"source_kind\": \"Company\", \"source_sector\": \"制造\", \"relation\": \"GUARANTEES\", \"target_kind\": \"Company\", \"target_sector\": \"物流\", \"target_listed\": true, \"confidence\": 0.995, \"verified\": true, \"active\": true}].\nCandidate: Company (制造) --GUARANTEES--> Company (物流); target listed=True; confidence=0.995; verified=True; active=True. Prefix verified=True; active=True; minimum confidence=0.796.\nChoose only A, B or C. Rating:",
+        "prompt_sha256": "e79d5b6f4473ca39bbed2aa7bb01735ae69aee36d343db479c65d62f5bb163b9",
+        "expert_legal": true,
+        "score": 0.5958570241928101,
+        "legal_confidence": 0.7819781303405762,
+        "legal": true,
+        "probabilities": {
+          "A": 0.3708828091621399,
+          "B": 0.44994843006134033,
+          "C": 0.1791687309741974
+        },
+        "legality_probabilities": {
+          "True": 0.7819781303405762,
+          "False": 0.21802189946174622
+        },
+        "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.796\nReturn True if all three conditions hold, otherwise False. Result:",
+        "legality_tokens": [
+          "True",
+          "False"
+        ],
+        "label": "B",
+        "backend": "local",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+        "prompt_tokens": 427,
+        "prediction_cache_hits": 1,
+        "processed_prompt_tokens": 341,
+        "inference_ms": 2633.654799999931,
+        "protocol": "path-prefix-value-and-evidence-v5"
+      }
+    ],
+    "scores": {
+      "[\"test-43-0-R0018\"]": 0.6269754320383072,
+      "[\"test-43-0-R0026\"]": 0.6509313583374023,
+      "[\"test-43-0-R0030\"]": 0.6314676702022552,
+      "[\"test-43-0-R0099\"]": 0.625869557261467,
+      "[\"test-43-0-R0101\"]": 0.6246534138917923,
+      "[\"test-43-0-R0179\"]": 0.6258335411548615,
+      "[\"test-43-0-R0018\",\"test-43-0-R0008\"]": 0.1367364451289177,
+      "[\"test-43-0-R0018\",\"test-43-0-R0072\"]": 0.5958570241928101
+    }
+  }
+]

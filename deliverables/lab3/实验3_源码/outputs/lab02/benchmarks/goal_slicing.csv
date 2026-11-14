@@ -1,0 +1,13 @@
+﻿groups,repetition,target,input_rules,retained_rules,target_answers,target_equal,cycles,facts,derived_facts,candidate_checks,rule_instances,elapsed_ms,converged,peak_new_facts
+1,0,Controls,27,8,0,True,0,17,0,24,0,0.44739997247233987,True,0
+1,1,Controls,27,8,0,True,0,17,0,24,0,0.5531999631784856,True,0
+1,2,Controls,27,8,0,True,0,17,0,24,0,0.44929998693987727,True,0
+4,0,Controls,27,8,16,True,4,117,32,229,44,1.9475999870337546,True,13
+4,1,Controls,27,8,16,True,4,117,32,229,44,3.1196000054478645,True,13
+4,2,Controls,27,8,16,True,4,117,32,229,44,4.501500050537288,True,13
+8,0,Controls,27,8,37,True,4,339,74,501,99,4.53670002752915,True,31
+8,1,Controls,27,8,37,True,4,339,74,501,99,6.85550004709512,True,31
+8,2,Controls,27,8,37,True,4,339,74,501,99,4.446200036909431,True,31
+16,0,Controls,27,8,64,True,4,827,128,938,171,7.159399974625558,True,53
+16,1,Controls,27,8,64,True,4,827,128,938,171,18.32010003272444,True,53
+16,2,Controls,27,8,64,True,4,827,128,938,171,7.338499999605119,True,53

@@ -1,0 +1,455 @@
+{
+  "source": "deterministic logic fixtures, not extra benchmark/LLM observations",
+  "cases": [
+    {
+      "case": "valid",
+      "method": "bfs",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "astar_admissible",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "astar_fixed",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "astar_ga",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "astar_ml",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "hybrid",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "hybrid_llm",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "valid",
+      "method": "mcts",
+      "answerable": true,
+      "valid": true,
+      "status": "found",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "unverified",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "inactive",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "low_confidence",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "wrong_relation",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "cycle_only",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "bfs",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "astar_admissible",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "astar_fixed",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "astar_ga",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "astar_ml",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "hybrid",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "hybrid_llm",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    },
+    {
+      "case": "missing_endpoint",
+      "method": "mcts",
+      "answerable": false,
+      "valid": false,
+      "status": "exhausted",
+      "correct": true
+    }
+  ],
+  "passed": 56,
+  "total": 56
+}

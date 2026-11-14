@@ -1,0 +1,1447 @@
+[
+  {
+    "index": 1,
+    "slide": 1,
+    "start": 0.363322,
+    "end": 1.403223,
+    "text": "各位老师好。",
+    "estimated_width_px": 336.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 0.1,
+    "source_tts_end": 1.0
+  },
+  {
+    "index": 2,
+    "slide": 1,
+    "start": 1.801285,
+    "end": 2.902637,
+    "text": "我们汇报的是，",
+    "estimated_width_px": 392.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 1.5625,
+    "source_tts_end": 2.525
+  },
+  {
+    "index": 3,
+    "slide": 1,
+    "start": 3.116345,
+    "end": 5.581692,
+    "text": "大模型辅助企业股权知识图谱的",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 2.9,
+    "source_tts_end": 5.3875
+  },
+  {
+    "index": 4,
+    "slide": 1,
+    "start": 5.586692,
+    "end": 7.757298,
+    "text": "多跳路径搜索与智能优化。",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 5.4125,
+    "source_tts_end": 7.4625
+  },
+  {
+    "index": 5,
+    "slide": 1,
+    "start": 8.167651,
+    "end": 9.281293,
+    "text": "核心目标是，",
+    "estimated_width_px": 336.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 8.0375,
+    "source_tts_end": 9.0125
+  },
+  {
+    "index": 6,
+    "slide": 1,
+    "start": 9.347518,
+    "end": 12.1818,
+    "text": "让搜索返回有证据、可核验的答案。",
+    "estimated_width_px": 896.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 9.2375,
+    "source_tts_end": 11.9625
+  },
+  {
+    "index": 7,
+    "slide": 2,
+    "start": 12.549989,
+    "end": 16.637879,
+    "text": "本次任务给定起点、关系顺序和终点条件。",
+    "estimated_width_px": 1064.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 4.1
+  },
+  {
+    "index": 8,
+    "slide": 2,
+    "start": 17.048232,
+    "end": 19.476934,
+    "text": "例如，从投资人四出发，",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 4.675,
+    "source_tts_end": 6.9875
+  },
+  {
+    "index": 9,
+    "slide": 2,
+    "start": 19.616901,
+    "end": 22.180796,
+    "text": "经过持股、持股、交易，",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 7.2875,
+    "source_tts_end": 9.7375
+  },
+  {
+    "index": 10,
+    "slide": 2,
+    "start": 22.283892,
+    "end": 23.926016,
+    "text": "找到金融上市企业，",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.0,
+    "source_tts_end": 11.5125
+  },
+  {
+    "index": 11,
+    "slide": 2,
+    "start": 24.029112,
+    "end": 26.666749,
+    "text": "并返回完整路径和逐边证据。",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.775,
+    "source_tts_end": 14.3
+  },
+  {
+    "index": 12,
+    "slide": 3,
+    "start": 27.016656,
+    "end": 30.244226,
+    "text": "完整实体路径和边序列构成搜索状态，",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.225
+  },
+  {
+    "index": 13,
+    "slide": 3,
+    "start": 30.470225,
+    "end": 32.677702,
+    "text": "每追加一条边，代价加一。",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 3.6125,
+    "source_tts_end": 5.7
+  },
+  {
+    "index": 14,
+    "slide": 3,
+    "start": 33.075765,
+    "end": 34.275439,
+    "text": "找到候选后，",
+    "estimated_width_px": 336.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 6.2625,
+    "source_tts_end": 7.325
+  },
+  {
+    "index": 15,
+    "slide": 3,
+    "start": 34.378534,
+    "end": 37.335719,
+    "text": "还要独立核查关系、终点和证据。",
+    "estimated_width_px": 840.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 7.5875,
+    "source_tts_end": 10.4375
+  },
+  {
+    "index": 16,
+    "slide": 3,
+    "start": 37.746072,
+    "end": 41.280899,
+    "text": "预算耗尽只能保留未知，不能当作无解。",
+    "estimated_width_px": 1008.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.0125,
+    "source_tts_end": 14.45
+  },
+  {
+    "index": 17,
+    "slide": 4,
+    "start": 41.649989,
+    "end": 43.869756,
+    "text": "三套内核共享验证标准。",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 2.2
+  },
+  {
+    "index": 18,
+    "slide": 4,
+    "start": 44.280109,
+    "end": 45.946814,
+    "text": "广度优先逐层搜索；",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 2.775,
+    "source_tts_end": 4.3125
+  },
+  {
+    "index": 19,
+    "slide": 4,
+    "start": 46.197393,
+    "end": 49.535576,
+    "text": "A星按累计代价与启发估值之和排序；",
+    "estimated_width_px": 935.41,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 4.725,
+    "source_tts_end": 7.9625
+  },
+  {
+    "index": 20,
+    "slide": 4,
+    "start": 49.736994,
+    "end": 54.144432,
+    "text": "蒙特卡洛树搜索执行选择、扩展、模拟和回传，",
+    "estimated_width_px": 1176.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.325,
+    "source_tts_end": 12.65
+  },
+  {
+    "index": 21,
+    "slide": 4,
+    "start": 54.308979,
+    "end": 56.66394,
+    "text": "其中模拟成本必须单独记录。",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 12.975,
+    "source_tts_end": 15.2125
+  },
+  {
+    "index": 22,
+    "slide": 5,
+    "start": 57.016656,
+    "end": 60.207129,
+    "text": "混合架构用遗传算法、路径分类器",
+    "estimated_width_px": 840.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.2375
+  },
+  {
+    "index": 23,
+    "slide": 5,
+    "start": 60.212129,
+    "end": 62.001736,
+    "text": "和大模型优化排序。",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 3.35,
+    "source_tts_end": 5.0125
+  },
+  {
+    "index": 24,
+    "slide": 5,
+    "start": 62.412089,
+    "end": 65.172629,
+    "text": "专家规则要求边已核验、有效，",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 5.5875,
+    "source_tts_end": 8.2375
+  },
+  {
+    "index": 25,
+    "slide": 5,
+    "start": 65.398628,
+    "end": 67.274267,
+    "text": "置信度至少零点五五。",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.625,
+    "source_tts_end": 10.375
+  },
+  {
+    "index": 26,
+    "slide": 5,
+    "start": 67.68462,
+    "end": 70.051871,
+    "text": "低模型分数不能单独剪枝，",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.95,
+    "source_tts_end": 13.2
+  },
+  {
+    "index": 27,
+    "slide": 5,
+    "start": 70.204128,
+    "end": 72.890926,
+    "text": "已完整核验的无解后缀才可排除。",
+    "estimated_width_px": 840.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 13.5125,
+    "source_tts_end": 16.0875
+  },
+  {
+    "index": 28,
+    "slide": 6,
+    "start": 73.249989,
+    "end": 75.494337,
+    "text": "遗传算法优化五个参数，",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 2.225
+  },
+  {
+    "index": 29,
+    "slide": 6,
+    "start": 75.658884,
+    "end": 78.284231,
+    "text": "种群规模为十四，进化十代，",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 2.55,
+    "source_tts_end": 5.0625
+  },
+  {
+    "index": 30,
+    "slide": 6,
+    "start": 78.313585,
+    "end": 79.906548,
+    "text": "采用三个随机种子。",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 5.25,
+    "source_tts_end": 6.7125
+  },
+  {
+    "index": 31,
+    "slide": 6,
+    "start": 80.316901,
+    "end": 83.323246,
+    "text": "八十一道验证题仅减少四次总扩展，",
+    "estimated_width_px": 896.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 7.2875,
+    "source_tts_end": 10.1875
+  },
+  {
+    "index": 32,
+    "slide": 6,
+    "start": 83.561535,
+    "end": 84.970144,
+    "text": "约百分之一点一九。",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.5875,
+    "source_tts_end": 11.8625
+  },
+  {
+    "index": 33,
+    "slide": 6,
+    "start": 85.380497,
+    "end": 87.870651,
+    "text": "因此，验证集的改善很小。",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 12.4375,
+    "source_tts_end": 14.8125
+  },
+  {
+    "index": 34,
+    "slide": 7,
+    "start": 88.249989,
+    "end": 91.883139,
+    "text": "数据共四十五张教学合成图、四百零五题，",
+    "estimated_width_px": 1064.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.6375
+  },
+  {
+    "index": 35,
+    "slide": 7,
+    "start": 92.010815,
+    "end": 92.940103,
+    "text": "按图隔离。",
+    "estimated_width_px": 280.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 3.925,
+    "source_tts_end": 4.7125
+  },
+  {
+    "index": 36,
+    "slide": 7,
+    "start": 93.350456,
+    "end": 95.373579,
+    "text": "三档预算、八种方法，",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 5.2875,
+    "source_tts_end": 7.1875
+  },
+  {
+    "index": 37,
+    "slide": 7,
+    "start": 95.525836,
+    "end": 98.052634,
+    "text": "在测试和分布变化集上运行",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 7.5,
+    "source_tts_end": 10.05
+  },
+  {
+    "index": 38,
+    "slide": 7,
+    "start": 98.057634,
+    "end": 99.441662,
+    "text": "三千八百八十八次。",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.075,
+    "source_tts_end": 11.325
+  },
+  {
+    "index": 39,
+    "slide": 7,
+    "start": 99.839725,
+    "end": 103.866164,
+    "text": "测试集已经迭代查看，结果按同题回归解释。",
+    "estimated_width_px": 1120.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.8875,
+    "source_tts_end": 15.825
+  },
+  {
+    "index": 40,
+    "slide": 8,
+    "start": 104.216656,
+    "end": 107.530032,
+    "text": "预算为八时，固定A星与遗传优化版的",
+    "estimated_width_px": 935.41,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.4625
+  },
+  {
+    "index": 41,
+    "slide": 8,
+    "start": 107.535032,
+    "end": 110.639699,
+    "text": "测试有效率都是百分之九十九点零七。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 3.475,
+    "source_tts_end": 6.475
+  },
+  {
+    "index": 42,
+    "slide": 8,
+    "start": 111.050052,
+    "end": 112.655306,
+    "text": "但在分布变化图上，",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 7.05,
+    "source_tts_end": 8.525
+  },
+  {
+    "index": 43,
+    "slide": 8,
+    "start": 112.832143,
+    "end": 116.502164,
+    "text": "固定版全部成功，遗传优化版少答对一题，",
+    "estimated_width_px": 1064.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.8625,
+    "source_tts_end": 12.4375
+  },
+  {
+    "index": 44,
+    "slide": 8,
+    "start": 116.642131,
+    "end": 118.898769,
+    "text": "说明收益具有分布依赖。",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 12.7375,
+    "source_tts_end": 14.875
+  },
+  {
+    "index": 45,
+    "slide": 9,
+    "start": 119.249989,
+    "end": 121.408305,
+    "text": "少扩展不代表少计算。",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 2.1375
+  },
+  {
+    "index": 46,
+    "slide": 9,
+    "start": 121.818658,
+    "end": 124.271941,
+    "text": "启发方法需要额外扫描出边，",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 2.7125,
+    "source_tts_end": 5.05
+  },
+  {
+    "index": 47,
+    "slide": 9,
+    "start": 124.436488,
+    "end": 127.000383,
+    "text": "蒙特卡洛树搜索还有模拟开销。",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 5.375,
+    "source_tts_end": 7.825
+  },
+  {
+    "index": 48,
+    "slide": 9,
+    "start": 127.410736,
+    "end": 130.957628,
+    "text": "所以，需要把扩展、扫描、模拟",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.4,
+    "source_tts_end": 11.9
+  },
+  {
+    "index": 49,
+    "slide": 9,
+    "start": 130.962628,
+    "end": 133.096363,
+    "text": "和实际耗时分开评价。",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 12.0125,
+    "source_tts_end": 14.025
+  },
+  {
+    "index": 50,
+    "slide": 10,
+    "start": 133.483322,
+    "end": 134.793609,
+    "text": "同一道三跳题，",
+    "estimated_width_px": 392.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 1.275
+  },
+  {
+    "index": 51,
+    "slide": 10,
+    "start": 135.019607,
+    "end": 138.062824,
+    "text": "混合方法四次扩展就找到有效路径。",
+    "estimated_width_px": 896.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 1.6625,
+    "source_tts_end": 4.6
+  },
+  {
+    "index": 52,
+    "slide": 10,
+    "start": 138.473177,
+    "end": 141.246007,
+    "text": "广度优先搜索用完八次预算时，",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 5.175,
+    "source_tts_end": 7.8375
+  },
+  {
+    "index": 53,
+    "slide": 10,
+    "start": 141.422844,
+    "end": 143.765515,
+    "text": "目标虽已生成，却尚未出队。",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.175,
+    "source_tts_end": 10.4
+  },
+  {
+    "index": 54,
+    "slide": 10,
+    "start": 144.175868,
+    "end": 146.948698,
+    "text": "这是预算失败，不是图中无解。",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.975,
+    "source_tts_end": 13.6375
+  },
+  {
+    "index": 55,
+    "slide": 11,
+    "start": 147.283322,
+    "end": 148.876285,
+    "text": "失败可以分成三类：",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 1.5625
+  },
+  {
+    "index": 56,
+    "slide": 11,
+    "start": 149.040833,
+    "end": 153.091852,
+    "text": "预算不足、遗传排序退化，以及专家规则关闭。",
+    "estimated_width_px": 1176.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 1.8875,
+    "source_tts_end": 5.85
+  },
+  {
+    "index": 57,
+    "slide": 11,
+    "start": 153.502205,
+    "end": 155.242651,
+    "text": "有些增加预算就能恢复；",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 6.425,
+    "source_tts_end": 8.0375
+  },
+  {
+    "index": 58,
+    "slide": 11,
+    "start": 155.394908,
+    "end": 158.462705,
+    "text": "但证据未核验或已经失效的路径，",
+    "estimated_width_px": 840.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.35,
+    "source_tts_end": 11.3125
+  },
+  {
+    "index": 59,
+    "slide": 11,
+    "start": 158.639543,
+    "end": 161.436953,
+    "text": "即使到达终点，也不能作为有效答案。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.65,
+    "source_tts_end": 14.3375
+  },
+  {
+    "index": 60,
+    "slide": 12,
+    "start": 161.816656,
+    "end": 165.990578,
+    "text": "大模型负责合法性辅助、路径评分与核验后解释。",
+    "estimated_width_px": 1232.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 4.1875
+  },
+  {
+    "index": 61,
+    "slide": 12,
+    "start": 166.400931,
+    "end": 169.542469,
+    "text": "新增十八题中，三组都全部成功，",
+    "estimated_width_px": 840.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 4.7625,
+    "source_tts_end": 7.8
+  },
+  {
+    "index": 62,
+    "slide": 12,
+    "start": 169.719307,
+    "end": 172.651911,
+    "text": "总扩展均为七十八次，没有搜索增益。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.1375,
+    "source_tts_end": 10.9625
+  },
+  {
+    "index": 63,
+    "slide": 12,
+    "start": 173.062264,
+    "end": 176.289834,
+    "text": "分类头减少误放行，却增加误拒绝；",
+    "estimated_width_px": 896.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.5375,
+    "source_tts_end": 14.6625
+  },
+  {
+    "index": 64,
+    "slide": 12,
+    "start": 176.454381,
+    "end": 179.841725,
+    "text": "自由解释仍可能失真，不能替代证据核验。",
+    "estimated_width_px": 1064.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 14.9875,
+    "source_tts_end": 18.275
+  },
+  {
+    "index": 65,
+    "slide": 13,
+    "start": 180.183322,
+    "end": 182.132703,
+    "text": "迁移到证明和规划时，",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 1.925
+  },
+  {
+    "index": 66,
+    "slide": 13,
+    "start": 182.28496,
+    "end": 185.930401,
+    "text": "必须重新定义状态、动作、终止和成本。",
+    "estimated_width_px": 1008.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 2.2375,
+    "source_tts_end": 5.7875
+  },
+  {
+    "index": 67,
+    "slide": 13,
+    "start": 186.340753,
+    "end": 188.695714,
+    "text": "证明需保留所有未闭合目标，",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 6.3625,
+    "source_tts_end": 8.6
+  },
+  {
+    "index": 68,
+    "slide": 13,
+    "start": 188.872552,
+    "end": 191.239802,
+    "text": "规划需保留事实与资源；",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.9375,
+    "source_tts_end": 11.1875
+  },
+  {
+    "index": 69,
+    "slide": 13,
+    "start": 191.40435,
+    "end": 193.488924,
+    "text": "再用独立验证器核查结果。",
+    "estimated_width_px": 672.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 11.5125,
+    "source_tts_end": 13.475
+  },
+  {
+    "index": 70,
+    "slide": 14,
+    "start": 193.849989,
+    "end": 197.065269,
+    "text": "等式样例通过传递和对称完成证明；",
+    "estimated_width_px": 896.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.2125
+  },
+  {
+    "index": 71,
+    "slide": 14,
+    "start": 197.291268,
+    "end": 200.113259,
+    "text": "三积木样例用四步完成堆叠。",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 3.6,
+    "source_tts_end": 6.3125
+  },
+  {
+    "index": 72,
+    "slide": 14,
+    "start": 200.523612,
+    "end": 203.689731,
+    "text": "两个正例通过，八个错误分支被拒绝。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 6.8875,
+    "source_tts_end": 9.95
+  },
+  {
+    "index": 73,
+    "slide": 14,
+    "start": 204.087794,
+    "end": 206.110917,
+    "text": "这是有限规则下的样例核验，",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.5125,
+    "source_tts_end": 12.4125
+  },
+  {
+    "index": 74,
+    "slide": 14,
+    "start": 206.250883,
+    "end": 208.544392,
+    "text": "没有运行通用形式证明内核。",
+    "estimated_width_px": 728.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 12.7125,
+    "source_tts_end": 14.8875
+  },
+  {
+    "index": 75,
+    "slide": 15,
+    "start": 208.916656,
+    "end": 213.299513,
+    "text": "后续评估关注完成率、总成本、解质量和泛化，",
+    "estimated_width_px": 1176.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 0.1,
+    "source_tts_end": 4.4
+  },
+  {
+    "index": 76,
+    "slide": 15,
+    "start": 213.525511,
+    "end": 216.888275,
+    "text": "同时保留未知、非法结果和工具错误。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 4.7875,
+    "source_tts_end": 8.05
+  },
+  {
+    "index": 77,
+    "slide": 15,
+    "start": 217.298628,
+    "end": 219.039074,
+    "text": "先接入可信验证器，",
+    "estimated_width_px": 504.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 8.625,
+    "source_tts_end": 10.2375
+  },
+  {
+    "index": 78,
+    "slide": 15,
+    "start": 219.179041,
+    "end": 221.767517,
+    "text": "再用隔离任务集检验迁移收益。",
+    "estimated_width_px": 784.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Light",
+    "source_tts_start": 10.5375,
+    "source_tts_end": 13.0125
+  },
+  {
+    "index": 79,
+    "slide": 16,
+    "start": 222.116656,
+    "end": 225.442548,
+    "text": "最后总结：启发排序改善预算内搜索，",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 0.1,
+    "source_tts_end": 3.325
+  },
+  {
+    "index": 80,
+    "slide": 16,
+    "start": 225.631676,
+    "end": 228.822376,
+    "text": "但遗传优化和大模型不保证普遍收益。",
+    "estimated_width_px": 952.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 3.675,
+    "source_tts_end": 6.7625
+  },
+  {
+    "index": 81,
+    "slide": 16,
+    "start": 229.232729,
+    "end": 230.837982,
+    "text": "系统始终坚持，",
+    "estimated_width_px": 392.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 7.3375,
+    "source_tts_end": 8.8125
+  },
+  {
+    "index": 82,
+    "slide": 16,
+    "start": 230.904207,
+    "end": 232.829008,
+    "text": "用真实关系生成路径，",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 9.0375,
+    "source_tts_end": 10.8375
+  },
+  {
+    "index": 83,
+    "slide": 16,
+    "start": 232.907523,
+    "end": 234.807743,
+    "text": "用可核验证据解释结果。",
+    "estimated_width_px": 616.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 11.075,
+    "source_tts_end": 12.85
+  },
+  {
+    "index": 84,
+    "slide": 17,
+    "start": 235.215,
+    "end": 236.62,
+    "text": "我们的汇报到此结束，",
+    "estimated_width_px": 560.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 0.1,
+    "source_tts_end": 1.35
+  },
+  {
+    "index": 85,
+    "slide": 17,
+    "start": 236.865,
+    "end": 237.9075,
+    "text": "谢谢各位老师。",
+    "estimated_width_px": 392.0,
+    "position": [
+      1280,
+      1354
+    ],
+    "font": "Microsoft YaHei",
+    "font_size": 56,
+    "style": "Dark",
+    "source_tts_start": 1.75,
+    "source_tts_end": 2.6375
+  }
+]

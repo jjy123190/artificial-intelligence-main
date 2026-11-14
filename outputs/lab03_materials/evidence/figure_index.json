@@ -1,0 +1,1309 @@
+[
+  {
+    "name": "08_tree_two_hop",
+    "viewBox": [
+      900,
+      984
+    ],
+    "case_id": "S01_two_hop",
+    "full_trace": true,
+    "states": 11,
+    "events": 15,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 546.8,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0039"
+        ],
+        "x": 280,
+        "y": 110,
+        "w": 164,
+        "h": 69,
+        "status": "rejected"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087"
+        ],
+        "x": 280,
+        "y": 383.0,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0092"
+        ],
+        "x": 280,
+        "y": 656,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0093"
+        ],
+        "x": 280,
+        "y": 747,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0157"
+        ],
+        "x": 280,
+        "y": 838,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087",
+          "test-7-0-R0046"
+        ],
+        "x": 530,
+        "y": 201,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087",
+          "test-7-0-R0084"
+        ],
+        "x": 530,
+        "y": 292,
+        "w": 164,
+        "h": 69,
+        "status": "solution"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087",
+          "test-7-0-R0166"
+        ],
+        "x": 530,
+        "y": 383,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087",
+          "test-7-0-R0172"
+        ],
+        "x": 530,
+        "y": 474,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087",
+          "test-7-0-R0180"
+        ],
+        "x": 530,
+        "y": 565,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      }
+    ]
+  },
+  {
+    "name": "09_tree_three_hop",
+    "viewBox": [
+      974,
+      984
+    ],
+    "case_id": "S02_three_hop",
+    "full_trace": true,
+    "states": 12,
+    "events": 17,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 542.25,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0192"
+        ],
+        "x": 280,
+        "y": 110,
+        "w": 164,
+        "h": 69,
+        "status": "rejected"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036"
+        ],
+        "x": 280,
+        "y": 337.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0054"
+        ],
+        "x": 280,
+        "y": 565,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0149"
+        ],
+        "x": 280,
+        "y": 656,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0164"
+        ],
+        "x": 280,
+        "y": 747,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0168"
+        ],
+        "x": 280,
+        "y": 838,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0009"
+        ],
+        "x": 530,
+        "y": 201,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010"
+        ],
+        "x": 530,
+        "y": 337.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0179"
+        ],
+        "x": 530,
+        "y": 474,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010",
+          "test-7-0-R0057"
+        ],
+        "x": 780,
+        "y": 292,
+        "w": 164,
+        "h": 69,
+        "status": "solution"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010",
+          "test-7-0-R0165"
+        ],
+        "x": 780,
+        "y": 383,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      }
+    ]
+  },
+  {
+    "name": "10_tree_four_hop",
+    "viewBox": [
+      1144,
+      711
+    ],
+    "case_id": "S03_four_hop",
+    "full_trace": true,
+    "states": 10,
+    "events": 16,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 373.9,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068"
+        ],
+        "x": 264,
+        "y": 155.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0167"
+        ],
+        "x": 264,
+        "y": 292,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0171"
+        ],
+        "x": 264,
+        "y": 383,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0178"
+        ],
+        "x": 264,
+        "y": 474,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0198"
+        ],
+        "x": 264,
+        "y": 565,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155"
+        ],
+        "x": 498,
+        "y": 155.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155",
+          "test-7-0-R0015"
+        ],
+        "x": 732,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155",
+          "test-7-0-R0193"
+        ],
+        "x": 732,
+        "y": 201,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155",
+          "test-7-0-R0015",
+          "test-7-0-R0188"
+        ],
+        "x": 966,
+        "y": 110,
+        "w": 148,
+        "h": 69,
+        "status": "solution"
+      }
+    ]
+  },
+  {
+    "name": "11_tree_mcts",
+    "viewBox": [
+      1144,
+      620
+    ],
+    "case_id": "S04_mcts_four_hop",
+    "full_trace": true,
+    "states": 12,
+    "events": 17,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 292.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068"
+        ],
+        "x": 264,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0167"
+        ],
+        "x": 264,
+        "y": 201.0,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0171"
+        ],
+        "x": 264,
+        "y": 292,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0178"
+        ],
+        "x": 264,
+        "y": 383,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0198"
+        ],
+        "x": 264,
+        "y": 474,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0167",
+          "test-7-0-R0003"
+        ],
+        "x": 498,
+        "y": 201.0,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0167",
+          "test-7-0-R0003",
+          "test-7-0-R0069"
+        ],
+        "x": 732,
+        "y": 201.0,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0167",
+          "test-7-0-R0003",
+          "test-7-0-R0069",
+          "test-7-0-R0197"
+        ],
+        "x": 966,
+        "y": 201,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155"
+        ],
+        "x": 498,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155",
+          "test-7-0-R0015"
+        ],
+        "x": 732,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "rollout"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0068",
+          "test-7-0-R0155",
+          "test-7-0-R0015",
+          "test-7-0-R0188"
+        ],
+        "x": 966,
+        "y": 110,
+        "w": 148,
+        "h": 69,
+        "status": "solution"
+      }
+    ]
+  },
+  {
+    "name": "12_tree_bfs_budget",
+    "viewBox": [
+      974,
+      1075
+    ],
+    "case_id": "F01_bfs_budget",
+    "full_trace": true,
+    "states": 16,
+    "events": 24,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 595.3333333333333,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0192"
+        ],
+        "x": 280,
+        "y": 110,
+        "w": 164,
+        "h": 69,
+        "status": "rejected"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036"
+        ],
+        "x": 280,
+        "y": 337.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0054"
+        ],
+        "x": 280,
+        "y": 610.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0149"
+        ],
+        "x": 280,
+        "y": 747,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0164"
+        ],
+        "x": 280,
+        "y": 838.0,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0168"
+        ],
+        "x": 280,
+        "y": 929,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0009"
+        ],
+        "x": 530,
+        "y": 201.0,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010"
+        ],
+        "x": 530,
+        "y": 337.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0179"
+        ],
+        "x": 530,
+        "y": 474,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0054",
+          "test-7-0-R0085"
+        ],
+        "x": 530,
+        "y": 565,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0054",
+          "test-7-0-R0101"
+        ],
+        "x": 530,
+        "y": 656,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0164",
+          "test-7-0-R0024"
+        ],
+        "x": 530,
+        "y": 838,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0009",
+          "test-7-0-R0153"
+        ],
+        "x": 780,
+        "y": 201,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010",
+          "test-7-0-R0057"
+        ],
+        "x": 780,
+        "y": 292,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0036",
+          "test-7-0-R0010",
+          "test-7-0-R0165"
+        ],
+        "x": 780,
+        "y": 383,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      }
+    ]
+  },
+  {
+    "name": "13_tree_no_expert",
+    "viewBox": [
+      900,
+      711
+    ],
+    "case_id": "F03_no_expert",
+    "full_trace": true,
+    "states": 8,
+    "events": 12,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 373.9,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0039"
+        ],
+        "x": 280,
+        "y": 155.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0087"
+        ],
+        "x": 280,
+        "y": 292,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0092"
+        ],
+        "x": 280,
+        "y": 383,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0093"
+        ],
+        "x": 280,
+        "y": 474,
+        "w": 164,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0157"
+        ],
+        "x": 280,
+        "y": 565,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0039",
+          "test-7-0-R0097"
+        ],
+        "x": 530,
+        "y": 110,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "test-7-0-R0039",
+          "test-7-0-R0150"
+        ],
+        "x": 530,
+        "y": 201,
+        "w": 164,
+        "h": 69,
+        "status": "invalid"
+      }
+    ]
+  },
+  {
+    "name": "14_tree_ood_ga",
+    "viewBox": [
+      1144,
+      1257
+    ],
+    "case_id": "F05_ood_ga",
+    "full_trace": true,
+    "states": 20,
+    "events": 28,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 550.375,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0047"
+        ],
+        "x": 264,
+        "y": 110,
+        "w": 148,
+        "h": 69,
+        "status": "rejected"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0009"
+        ],
+        "x": 264,
+        "y": 246.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0018"
+        ],
+        "x": 264,
+        "y": 383,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0048"
+        ],
+        "x": 264,
+        "y": 519.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0057"
+        ],
+        "x": 264,
+        "y": 656.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116"
+        ],
+        "x": 264,
+        "y": 826.625,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0254"
+        ],
+        "x": 264,
+        "y": 1111.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0048",
+          "ood-19-0-R0035"
+        ],
+        "x": 498,
+        "y": 474,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0048",
+          "ood-19-0-R0290"
+        ],
+        "x": 498,
+        "y": 565,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0009",
+          "ood-19-0-R0039"
+        ],
+        "x": 498,
+        "y": 201,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0009",
+          "ood-19-0-R0287"
+        ],
+        "x": 498,
+        "y": 292,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0057",
+          "ood-19-0-R0100"
+        ],
+        "x": 498,
+        "y": 656,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0254",
+          "ood-19-0-R0007"
+        ],
+        "x": 498,
+        "y": 1111,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0073"
+        ],
+        "x": 498,
+        "y": 747,
+        "w": 148,
+        "h": 69,
+        "status": "rejected"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0319"
+        ],
+        "x": 498,
+        "y": 906.25,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0319",
+          "ood-19-0-R0091"
+        ],
+        "x": 732,
+        "y": 838,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0319",
+          "ood-19-0-R0164"
+        ],
+        "x": 732,
+        "y": 974.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0319",
+          "ood-19-0-R0164",
+          "ood-19-0-R0079"
+        ],
+        "x": 966,
+        "y": 929,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "ood-19-0-R0116",
+          "ood-19-0-R0319",
+          "ood-19-0-R0164",
+          "ood-19-0-R0140"
+        ],
+        "x": 966,
+        "y": 1020,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      }
+    ]
+  },
+  {
+    "name": "15_tree_no_answer",
+    "viewBox": [
+      900,
+      711
+    ],
+    "case_id": "F09_proved_no_answer",
+    "full_trace": true,
+    "states": 7,
+    "events": 8,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 337.5,
+        "w": 164,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0027"
+        ],
+        "x": 280,
+        "y": 110,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0038"
+        ],
+        "x": 280,
+        "y": 201,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0086"
+        ],
+        "x": 280,
+        "y": 292,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0131"
+        ],
+        "x": 280,
+        "y": 383,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0158"
+        ],
+        "x": 280,
+        "y": 474,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "reliability_confirmation-5039-0-R0183"
+        ],
+        "x": 280,
+        "y": 565,
+        "w": 164,
+        "h": 69,
+        "status": "proof_pruned"
+      }
+    ]
+  },
+  {
+    "name": "16_tree_controlled_neutral",
+    "viewBox": [
+      1144,
+      347
+    ],
+    "case_id": "F10_controlled_neutral",
+    "full_trace": true,
+    "states": 6,
+    "events": 12,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 155.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live"
+        ],
+        "x": 264,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "z-dead"
+        ],
+        "x": 264,
+        "y": 201,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle"
+        ],
+        "x": 498,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "x": 732,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ],
+        "x": 966,
+        "y": 110,
+        "w": 148,
+        "h": 69,
+        "status": "solution"
+      }
+    ]
+  },
+  {
+    "name": "17_tree_controlled_wrong",
+    "viewBox": [
+      1144,
+      347
+    ],
+    "case_id": "F11_controlled_wrong",
+    "full_trace": true,
+    "states": 7,
+    "events": 12,
+    "layout": "full edge-prefix tree; no clipping or invented nodes",
+    "nodes": [
+      {
+        "edge_prefix": [],
+        "x": 30,
+        "y": 155.5,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live"
+        ],
+        "x": 264,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "z-dead"
+        ],
+        "x": 264,
+        "y": 201.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "z-dead",
+          "bad-next"
+        ],
+        "x": 498,
+        "y": 201,
+        "w": 148,
+        "h": 69,
+        "status": "proof_pruned"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle"
+        ],
+        "x": 498,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "x": 732,
+        "y": 110.0,
+        "w": 148,
+        "h": 69,
+        "status": "expanded"
+      },
+      {
+        "edge_prefix": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ],
+        "x": 966,
+        "y": 110,
+        "w": 148,
+        "h": 69,
+        "status": "frontier"
+      }
+    ]
+  },
+  {
+    "name": "01_architecture",
+    "viewBox": [
+      1080,
+      635
+    ],
+    "layout": "3 columns, separated offline assets, runtime search and output audit"
+  },
+  {
+    "name": "18_ood_expansion_order",
+    "viewBox": [
+      1010,
+      629
+    ],
+    "cases": [
+      "F04_ood_fixed",
+      "F05_ood_ga"
+    ],
+    "source_events": "expanded only"
+  }
+]

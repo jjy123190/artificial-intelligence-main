@@ -1,0 +1,14 @@
+{
+  "duration_seconds": 240,
+  "frames": 7200,
+  "sample_rate": 48000,
+  "audio_samples": 11520000,
+  "tempo": 1.0170637335883836,
+  "caption_count": 85,
+  "min_caption_duration": 0.9292879999999997,
+  "max_caption_width_px": 1232.0,
+  "trim_policy": "Only ~0.76 seconds of generated trailing silence per slide removed; every word retained.",
+  "final_slide_start": 235.0,
+  "raw_peak_dbfs": -2.347766817078278,
+  "font_size_ass": 56
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "company_id": "教学样例-线索较少",
+    "values": {
+      "opacity": 0.1,
+      "related_trade": 0.05,
+      "guarantee": 0.1,
+      "cycle": 0
+    },
+    "source": "虚构的手工测度示例"
+  },
+  {
+    "company_id": "教学样例-多线索",
+    "values": {
+      "opacity": 0.8,
+      "related_trade": 0.75,
+      "guarantee": 0.9,
+      "cycle": 1
+    },
+    "source": "虚构的手工测度示例"
+  },
+  {
+    "company_id": "教学样例-缺测",
+    "values": {
+      "opacity": null,
+      "related_trade": 0.6,
+      "guarantee": null,
+      "cycle": null
+    },
+    "source": "None表示未知，不是零风险"
+  }
+]

@@ -1,0 +1,34 @@
+[aist#0:0/pcm_s16le @ 000001bea0783d40] Guessed Channel Layout: mono
+Input #0, wav, from 'C:\Users\Administrator\Desktop\artificial-intelligence-main\outputs\lab03_materials\PPT_video_20261114_131608\speech\narration-240s-raw.wav':
+  Duration: 00:04:00.00, bitrate: 768 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'C:\Users\Administrator\Desktop\artificial-intelligence-main\outputs\lab03_materials\PPT_video_20261114_131608\speech\narration-240s.wav':
+  Metadata:
+    ISFT            : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 pcm_s16le
+size=    2816KiB time=00:00:31.19 bitrate= 739.4kbits/s speed=61.5x    
+size=    6400KiB time=00:01:10.79 bitrate= 740.5kbits/s speed=68.9x    
+size=    9728KiB time=00:01:44.19 bitrate= 764.8kbits/s speed=67.7x    
+size=   12800KiB time=00:02:17.29 bitrate= 763.7kbits/s speed=66.6x    
+size=   16128KiB time=00:02:53.69 bitrate= 760.6kbits/s speed=67.4x    
+size=   19456KiB time=00:03:30.09 bitrate= 758.6kbits/s speed=  68x    
+[Parsed_loudnorm_0 @ 000001bea081cb40] 
+{
+	"input_i" : "-23.93",
+	"input_tp" : "-2.34",
+	"input_lra" : "3.70",
+	"input_thresh" : "-34.49",
+	"output_i" : "-18.19",
+	"output_tp" : "-1.50",
+	"output_lra" : "2.90",
+	"output_thresh" : "-28.73",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.19"
+}
+[out#0/wav @ 000001bea0791e80] video:0KiB audio:22500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000339%
+size=   22500KiB time=00:04:00.00 bitrate= 768.0kbits/s speed=67.4x    

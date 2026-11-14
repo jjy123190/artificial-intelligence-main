@@ -1,0 +1,22 @@
+{
+  "note": "Runtime display/replay hardening baseline; search/ML/LLM experimental core not changed or retuned.",
+  "archive_sha256": "ad2624d664de255542557c81991e36ecce78199a435863e556c818b57dff01b0",
+  "files": {
+    "experiments/lab03/service.py": "33e64d5ef6da0bfe98f3e66fd8bc7a6115a87ebdf86b4e2c40120f6465ad8ab4",
+    "experiments/lab03/report.py": "381bee6a2b0bacc4a82d2c10ea45ccbab5b734c8ecd7842ce06ee9af2b86dce6",
+    "experiments/lab03/verification.py": "3b1b32cc580b29d457ea57aeb8080b390a2283ad23a5d2c20af001f4d28485ac",
+    "outputs/lab03/acceptance.json": "09f70ac0015eb97eaa57b6a88bc73d61e4b590019c1c37ceaa927a3c595157d1",
+    "README.md": "4e79facd585888d5d9c8953cc126690c0b8cf32d46b713fb812e80972218ba00",
+    "tests/lab03/test_hardening.py": "932b15e4cb92a61c71ea693d4fb277766b484b697e827720f63b1d1c21e55db1",
+    "tests/lab03/test_optimization.py": "beeac86c822a883506e5c4e125c7cd3f992de964bafb1886b2195a6f302a4d07",
+    "tests/lab03/test_refinement.py": "cc48ea8b32a0b5323e6121f070b78ca497d0de8795d0c5efac68ad493977e41e",
+    "tests/lab03/test_reliability.py": "b2d420847236b25e4ebbccc9feed9fec7a10f122fccdc4589104c9de72d4cbdf",
+    "tests/lab03/test_requirements.py": "261debc859106cd5a33db90a0f2e2505fe944c2c10e349a84a5ec90aac4ee371",
+    "tests/lab03/test_review.py": "04dde29a472cde675322a34d58f91b50dbf6a2bcd98b0c300e4d7e0008f8255a",
+    "tests/lab03/test_search.py": "84b9a148de51bc80eb335ef892fe94280ccffd99ca8f09b62c7c603ddab1884e",
+    "tests/lab03/test_structure.py": "c20124279eb92f25a54d0e9db725d2758d7f433703f1991a9ee7838595b3ff9c",
+    "deliverables/lab03/第31组_实验三_汇报讲稿.docx": "a640723f8d40db3c3fd42fbe70bafe06f7fae8031d754073387b1b98a5c1cfef",
+    "deliverables/lab03/第31组_实验三_课程报告.docx": "680613c59009d59f98b0eed0800b247ada603ee54a5eba62aa130e398a50fa01",
+    "deliverables/lab03/第31组_实验三_汇报.pptx": "e2a0a8b648a424475b432da5671f35072ea0dace47a61bfe7cee90a0ba39558d"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-13T19:32:10.976143+08:00",
+  "mode": "published",
+  "report_files": {
+    "deliverables/lab3/第31组_实验三_实验报告.docx": "48e98b75d0d48d6c81dc6fe98e5c6f11ccbda24ca1493e6ee8425168e30adf60",
+    "deliverables/lab3/第31组_实验三_实验报告.pdf": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99"
+  },
+  "checks": [
+    {
+      "check": "pre_edit_snapshot_intact",
+      "passed": true,
+      "files": 2
+    },
+    {
+      "check": "pre_existing_source_data_output_backup_hashes_unchanged",
+      "passed": true,
+      "files": 493
+    },
+    {
+      "check": "only_body_xml_changed",
+      "passed": true,
+      "preserved_parts": 41
+    },
+    {
+      "check": "all_original_paragraphs_preserved_except_documented_edits",
+      "passed": true,
+      "original_count": 219,
+      "documented_updates": 13
+    },
+    {
+      "check": "all_original_tables_and_embedded_figures_preserved",
+      "passed": true,
+      "original_tables": 25,
+      "added_tables": 5,
+      "images": 14
+    },
+    {
+      "check": "table_numbering_and_word_identifiers",
+      "passed": true,
+      "numbered_tables": 30
+    },
+    {
+      "check": "supplement_matches_editable_source",
+      "passed": true
+    },
+    {
+      "check": "example_certificates_replayed_and_match_report",
+      "passed": true,
+      "positive_examples": 2,
+      "negative_cases": 8,
+      "plan_cost": 4
+    },
+    {
+      "check": "original_3888_main_runs_not_changed",
+      "passed": true,
+      "row_counts": {
+        "outputs/lab03/runs.csv": 3888,
+        "deliverables/lab3_备份/evidence/raw/runs.csv": 3888
+      }
+    },
+    {
+      "check": "docx_pdf_text_consistency",
+      "passed": true,
+      "checked_text_items": 903,
+      "pdf_pages": 30
+    },
+    {
+      "check": "supplement_pages_and_tables_not_split_or_outside_body",
+      "passed": true,
+      "supplement_pages": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "check": "untouched_original_pages_pixel_identical",
+      "passed": true,
+      "pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "check": "member_assignments_and_attachment_paths",
+      "passed": true
+    },
+    {
+      "check": "new_external_reference_records_present",
+      "passed": true,
+      "sources": 2
+    },
+    {
+      "check": "published_release_hashes_and_two_file_layout",
+      "passed": true,
+      "support_files": 21
+    }
+  ],
+  "scope": "Document/evidence preservation plus replay of two given examples. No full cross-domain solver benchmark or new lab03 acceptance run."
+}

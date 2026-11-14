@@ -1,0 +1,4067 @@
+[
+  {
+    "file": "frames/frame-000000.png",
+    "timestamp": 1794627684.14468,
+    "bytes": 231205
+  },
+  {
+    "file": "frames/frame-000001.png",
+    "timestamp": 1794627684.863972,
+    "bytes": 231285
+  },
+  {
+    "file": "frames/frame-000002.png",
+    "timestamp": 1794627684.884723,
+    "bytes": 231285
+  },
+  {
+    "file": "frames/frame-000003.png",
+    "timestamp": 1794627686.238837,
+    "bytes": 231363
+  },
+  {
+    "file": "frames/frame-000004.png",
+    "timestamp": 1794627686.273618,
+    "bytes": 231509
+  },
+  {
+    "file": "frames/frame-000005.png",
+    "timestamp": 1794627686.29442,
+    "bytes": 231732
+  },
+  {
+    "file": "frames/frame-000006.png",
+    "timestamp": 1794627686.315253,
+    "bytes": 231543
+  },
+  {
+    "file": "frames/frame-000007.png",
+    "timestamp": 1794627686.363885,
+    "bytes": 231691
+  },
+  {
+    "file": "frames/frame-000008.png",
+    "timestamp": 1794627686.391654,
+    "bytes": 231598
+  },
+  {
+    "file": "frames/frame-000009.png",
+    "timestamp": 1794627686.468027,
+    "bytes": 230835
+  },
+  {
+    "file": "frames/frame-000010.png",
+    "timestamp": 1794627686.488906,
+    "bytes": 230877
+  },
+  {
+    "file": "frames/frame-000011.png",
+    "timestamp": 1794627686.495817,
+    "bytes": 230254
+  },
+  {
+    "file": "frames/frame-000012.png",
+    "timestamp": 1794627686.572219,
+    "bytes": 231142
+  },
+  {
+    "file": "frames/frame-000013.png",
+    "timestamp": 1794627686.586053,
+    "bytes": 231365
+  },
+  {
+    "file": "frames/frame-000014.png",
+    "timestamp": 1794627686.593028,
+    "bytes": 231440
+  },
+  {
+    "file": "frames/frame-000015.png",
+    "timestamp": 1794627686.672086,
+    "bytes": 231713
+  },
+  {
+    "file": "frames/frame-000016.png",
+    "timestamp": 1794627686.683276,
+    "bytes": 231818
+  },
+  {
+    "file": "frames/frame-000017.png",
+    "timestamp": 1794627686.704118,
+    "bytes": 230396
+  },
+  {
+    "file": "frames/frame-000018.png",
+    "timestamp": 1794627686.752806,
+    "bytes": 232067
+  },
+  {
+    "file": "frames/frame-000019.png",
+    "timestamp": 1794627686.77356,
+    "bytes": 231751
+  },
+  {
+    "file": "frames/frame-000020.png",
+    "timestamp": 1794627686.801402,
+    "bytes": 232077
+  },
+  {
+    "file": "frames/frame-000021.png",
+    "timestamp": 1794627686.870762,
+    "bytes": 231826
+  },
+  {
+    "file": "frames/frame-000022.png",
+    "timestamp": 1794627686.87776,
+    "bytes": 232019
+  },
+  {
+    "file": "frames/frame-000023.png",
+    "timestamp": 1794627686.905521,
+    "bytes": 231524
+  },
+  {
+    "file": "frames/frame-000024.png",
+    "timestamp": 1794627686.981917,
+    "bytes": 229687
+  },
+  {
+    "file": "frames/frame-000025.png",
+    "timestamp": 1794627686.988838,
+    "bytes": 229687
+  },
+  {
+    "file": "frames/frame-000026.png",
+    "timestamp": 1794627687.016648,
+    "bytes": 230199
+  },
+  {
+    "file": "frames/frame-000027.png",
+    "timestamp": 1794627687.065279,
+    "bytes": 229956
+  },
+  {
+    "file": "frames/frame-000028.png",
+    "timestamp": 1794627687.092989,
+    "bytes": 230020
+  },
+  {
+    "file": "frames/frame-000029.png",
+    "timestamp": 1794627687.18328,
+    "bytes": 240937
+  },
+  {
+    "file": "frames/frame-000030.png",
+    "timestamp": 1794627687.190222,
+    "bytes": 241362
+  },
+  {
+    "file": "frames/frame-000031.png",
+    "timestamp": 1794627687.225024,
+    "bytes": 240618
+  },
+  {
+    "file": "frames/frame-000032.png",
+    "timestamp": 1794627687.280562,
+    "bytes": 241976
+  },
+  {
+    "file": "frames/frame-000033.png",
+    "timestamp": 1794627687.287442,
+    "bytes": 242120
+  },
+  {
+    "file": "frames/frame-000034.png",
+    "timestamp": 1794627687.315251,
+    "bytes": 241890
+  },
+  {
+    "file": "frames/frame-000035.png",
+    "timestamp": 1794627687.377762,
+    "bytes": 242370
+  },
+  {
+    "file": "frames/frame-000036.png",
+    "timestamp": 1794627687.384669,
+    "bytes": 242616
+  },
+  {
+    "file": "frames/frame-000037.png",
+    "timestamp": 1794627687.405529,
+    "bytes": 242162
+  },
+  {
+    "file": "frames/frame-000038.png",
+    "timestamp": 1794627687.467991,
+    "bytes": 242043
+  },
+  {
+    "file": "frames/frame-000039.png",
+    "timestamp": 1794627687.474927,
+    "bytes": 242712
+  },
+  {
+    "file": "frames/frame-000040.png",
+    "timestamp": 1794627687.495792,
+    "bytes": 242748
+  },
+  {
+    "file": "frames/frame-000041.png",
+    "timestamp": 1794627687.56533,
+    "bytes": 243041
+  },
+  {
+    "file": "frames/frame-000042.png",
+    "timestamp": 1794627687.572204,
+    "bytes": 242681
+  },
+  {
+    "file": "frames/frame-000043.png",
+    "timestamp": 1794627687.593028,
+    "bytes": 242062
+  },
+  {
+    "file": "frames/frame-000044.png",
+    "timestamp": 1794627687.64161,
+    "bytes": 242416
+  },
+  {
+    "file": "frames/frame-000045.png",
+    "timestamp": 1794627687.655586,
+    "bytes": 242241
+  },
+  {
+    "file": "frames/frame-000046.png",
+    "timestamp": 1794627687.676336,
+    "bytes": 241340
+  },
+  {
+    "file": "frames/frame-000047.png",
+    "timestamp": 1794627687.7319,
+    "bytes": 240904
+  },
+  {
+    "file": "frames/frame-000048.png",
+    "timestamp": 1794627687.752756,
+    "bytes": 241191
+  },
+  {
+    "file": "frames/frame-000049.png",
+    "timestamp": 1794627687.780521,
+    "bytes": 241172
+  },
+  {
+    "file": "frames/frame-000050.png",
+    "timestamp": 1794627687.843044,
+    "bytes": 240867
+  },
+  {
+    "file": "frames/frame-000051.png",
+    "timestamp": 1794627687.870775,
+    "bytes": 240770
+  },
+  {
+    "file": "frames/frame-000052.png",
+    "timestamp": 1794627687.877704,
+    "bytes": 240948
+  },
+  {
+    "file": "frames/frame-000053.png",
+    "timestamp": 1794627687.933288,
+    "bytes": 232009
+  },
+  {
+    "file": "frames/frame-000054.png",
+    "timestamp": 1794627687.94021,
+    "bytes": 232241
+  },
+  {
+    "file": "frames/frame-000055.png",
+    "timestamp": 1794627687.968009,
+    "bytes": 232022
+  },
+  {
+    "file": "frames/frame-000056.png",
+    "timestamp": 1794627688.023581,
+    "bytes": 231964
+  },
+  {
+    "file": "frames/frame-000057.png",
+    "timestamp": 1794627688.030542,
+    "bytes": 232059
+  },
+  {
+    "file": "frames/frame-000058.png",
+    "timestamp": 1794627688.058301,
+    "bytes": 232109
+  },
+  {
+    "file": "frames/frame-000059.png",
+    "timestamp": 1794627688.120776,
+    "bytes": 232682
+  },
+  {
+    "file": "frames/frame-000060.png",
+    "timestamp": 1794627688.127755,
+    "bytes": 233115
+  },
+  {
+    "file": "frames/frame-000061.png",
+    "timestamp": 1794627688.148551,
+    "bytes": 233299
+  },
+  {
+    "file": "frames/frame-000062.png",
+    "timestamp": 1794627688.204081,
+    "bytes": 233428
+  },
+  {
+    "file": "frames/frame-000063.png",
+    "timestamp": 1794627688.218034,
+    "bytes": 233472
+  },
+  {
+    "file": "frames/frame-000064.png",
+    "timestamp": 1794627688.238826,
+    "bytes": 233519
+  },
+  {
+    "file": "frames/frame-000065.png",
+    "timestamp": 1794627688.322262,
+    "bytes": 233203
+  },
+  {
+    "file": "frames/frame-000066.png",
+    "timestamp": 1794627688.343047,
+    "bytes": 233302
+  },
+  {
+    "file": "frames/frame-000067.png",
+    "timestamp": 1794627688.363866,
+    "bytes": 233430
+  },
+  {
+    "file": "frames/frame-000068.png",
+    "timestamp": 1794627688.426373,
+    "bytes": 231647
+  },
+  {
+    "file": "frames/frame-000069.png",
+    "timestamp": 1794627688.433286,
+    "bytes": 231691
+  },
+  {
+    "file": "frames/frame-000070.png",
+    "timestamp": 1794627688.447204,
+    "bytes": 231691
+  },
+  {
+    "file": "frames/frame-000071.png",
+    "timestamp": 1794627688.509712,
+    "bytes": 230381
+  },
+  {
+    "file": "frames/frame-000072.png",
+    "timestamp": 1794627688.53052,
+    "bytes": 230668
+  },
+  {
+    "file": "frames/frame-000073.png",
+    "timestamp": 1794627688.599957,
+    "bytes": 226737
+  },
+  {
+    "file": "frames/frame-000074.png",
+    "timestamp": 1794627688.606894,
+    "bytes": 226816
+  },
+  {
+    "file": "frames/frame-000075.png",
+    "timestamp": 1794627688.634707,
+    "bytes": 226840
+  },
+  {
+    "file": "frames/frame-000076.png",
+    "timestamp": 1794627688.683272,
+    "bytes": 227158
+  },
+  {
+    "file": "frames/frame-000077.png",
+    "timestamp": 1794627688.697198,
+    "bytes": 227356
+  },
+  {
+    "file": "frames/frame-000078.png",
+    "timestamp": 1794627688.704116,
+    "bytes": 227345
+  },
+  {
+    "file": "frames/frame-000079.png",
+    "timestamp": 1794627688.773583,
+    "bytes": 227732
+  },
+  {
+    "file": "frames/frame-000080.png",
+    "timestamp": 1794627688.801382,
+    "bytes": 227806
+  },
+  {
+    "file": "frames/frame-000081.png",
+    "timestamp": 1794627688.808307,
+    "bytes": 227878
+  },
+  {
+    "file": "frames/frame-000082.png",
+    "timestamp": 1794627688.863814,
+    "bytes": 228027
+  },
+  {
+    "file": "frames/frame-000083.png",
+    "timestamp": 1794627688.884654,
+    "bytes": 228114
+  },
+  {
+    "file": "frames/frame-000084.png",
+    "timestamp": 1794627688.891609,
+    "bytes": 228146
+  },
+  {
+    "file": "frames/frame-000085.png",
+    "timestamp": 1794627688.968029,
+    "bytes": 228187
+  },
+  {
+    "file": "frames/frame-000086.png",
+    "timestamp": 1794627688.981868,
+    "bytes": 228085
+  },
+  {
+    "file": "frames/frame-000087.png",
+    "timestamp": 1794627689.002728,
+    "bytes": 228031
+  },
+  {
+    "file": "frames/frame-000088.png",
+    "timestamp": 1794627689.051309,
+    "bytes": 227587
+  },
+  {
+    "file": "frames/frame-000089.png",
+    "timestamp": 1794627689.065203,
+    "bytes": 227510
+  },
+  {
+    "file": "frames/frame-000090.png",
+    "timestamp": 1794627689.072172,
+    "bytes": 226733
+  },
+  {
+    "file": "frames/frame-000091.png",
+    "timestamp": 1794627689.231863,
+    "bytes": 231258
+  },
+  {
+    "file": "frames/frame-000092.png",
+    "timestamp": 1794627689.238849,
+    "bytes": 231303
+  },
+  {
+    "file": "frames/frame-000093.png",
+    "timestamp": 1794627689.266648,
+    "bytes": 231406
+  },
+  {
+    "file": "frames/frame-000094.png",
+    "timestamp": 1794627689.329094,
+    "bytes": 231805
+  },
+  {
+    "file": "frames/frame-000095.png",
+    "timestamp": 1794627689.336089,
+    "bytes": 231913
+  },
+  {
+    "file": "frames/frame-000096.png",
+    "timestamp": 1794627689.363862,
+    "bytes": 231941
+  },
+  {
+    "file": "frames/frame-000097.png",
+    "timestamp": 1794627689.447198,
+    "bytes": 232389
+  },
+  {
+    "file": "frames/frame-000098.png",
+    "timestamp": 1794627689.454118,
+    "bytes": 232482
+  },
+  {
+    "file": "frames/frame-000099.png",
+    "timestamp": 1794627689.481919,
+    "bytes": 232479
+  },
+  {
+    "file": "frames/frame-000100.png",
+    "timestamp": 1794627689.537589,
+    "bytes": 232693
+  },
+  {
+    "file": "frames/frame-000101.png",
+    "timestamp": 1794627689.551397,
+    "bytes": 232637
+  },
+  {
+    "file": "frames/frame-000102.png",
+    "timestamp": 1794627689.56526,
+    "bytes": 232640
+  },
+  {
+    "file": "frames/frame-000103.png",
+    "timestamp": 1794627689.627841,
+    "bytes": 233393
+  },
+  {
+    "file": "frames/frame-000104.png",
+    "timestamp": 1794627689.634678,
+    "bytes": 233130
+  },
+  {
+    "file": "frames/frame-000105.png",
+    "timestamp": 1794627689.662437,
+    "bytes": 233014
+  },
+  {
+    "file": "frames/frame-000106.png",
+    "timestamp": 1794627689.718015,
+    "bytes": 232707
+  },
+  {
+    "file": "frames/frame-000107.png",
+    "timestamp": 1794627689.724927,
+    "bytes": 231794
+  },
+  {
+    "file": "frames/frame-000108.png",
+    "timestamp": 1794627689.745798,
+    "bytes": 231927
+  },
+  {
+    "file": "frames/frame-000109.png",
+    "timestamp": 1794627689.794463,
+    "bytes": 232013
+  },
+  {
+    "file": "frames/frame-000110.png",
+    "timestamp": 1794627689.808312,
+    "bytes": 231918
+  },
+  {
+    "file": "frames/frame-000111.png",
+    "timestamp": 1794627689.836113,
+    "bytes": 177139
+  },
+  {
+    "file": "frames/frame-000112.png",
+    "timestamp": 1794627689.884752,
+    "bytes": 177405
+  },
+  {
+    "file": "frames/frame-000113.png",
+    "timestamp": 1794627689.905627,
+    "bytes": 177383
+  },
+  {
+    "file": "frames/frame-000114.png",
+    "timestamp": 1794627689.926357,
+    "bytes": 177455
+  },
+  {
+    "file": "frames/frame-000115.png",
+    "timestamp": 1794627689.988978,
+    "bytes": 177423
+  },
+  {
+    "file": "frames/frame-000116.png",
+    "timestamp": 1794627689.995932,
+    "bytes": 177543
+  },
+  {
+    "file": "frames/frame-000117.png",
+    "timestamp": 1794627690.023654,
+    "bytes": 177928
+  },
+  {
+    "file": "frames/frame-000118.png",
+    "timestamp": 1794627690.079098,
+    "bytes": 178165
+  },
+  {
+    "file": "frames/frame-000119.png",
+    "timestamp": 1794627690.086103,
+    "bytes": 178197
+  },
+  {
+    "file": "frames/frame-000120.png",
+    "timestamp": 1794627690.113923,
+    "bytes": 178152
+  },
+  {
+    "file": "frames/frame-000121.png",
+    "timestamp": 1794627690.162433,
+    "bytes": 178178
+  },
+  {
+    "file": "frames/frame-000122.png",
+    "timestamp": 1794627690.176361,
+    "bytes": 178299
+  },
+  {
+    "file": "frames/frame-000123.png",
+    "timestamp": 1794627690.183261,
+    "bytes": 178123
+  },
+  {
+    "file": "frames/frame-000124.png",
+    "timestamp": 1794627690.259671,
+    "bytes": 177822
+  },
+  {
+    "file": "frames/frame-000125.png",
+    "timestamp": 1794627690.280495,
+    "bytes": 177747
+  },
+  {
+    "file": "frames/frame-000126.png",
+    "timestamp": 1794627690.2875,
+    "bytes": 177144
+  },
+  {
+    "file": "frames/frame-000127.png",
+    "timestamp": 1794627690.336107,
+    "bytes": 176644
+  },
+  {
+    "file": "frames/frame-000128.png",
+    "timestamp": 1794627690.461057,
+    "bytes": 297234
+  },
+  {
+    "file": "frames/frame-000129.png",
+    "timestamp": 1794627690.537412,
+    "bytes": 296819
+  },
+  {
+    "file": "frames/frame-000130.png",
+    "timestamp": 1794627690.544468,
+    "bytes": 307237
+  },
+  {
+    "file": "frames/frame-000131.png",
+    "timestamp": 1794627690.607006,
+    "bytes": 307718
+  },
+  {
+    "file": "frames/frame-000132.png",
+    "timestamp": 1794627690.620808,
+    "bytes": 307701
+  },
+  {
+    "file": "frames/frame-000133.png",
+    "timestamp": 1794627690.662424,
+    "bytes": 306934
+  },
+  {
+    "file": "frames/frame-000134.png",
+    "timestamp": 1794627690.717982,
+    "bytes": 307120
+  },
+  {
+    "file": "frames/frame-000135.png",
+    "timestamp": 1794627690.738817,
+    "bytes": 307393
+  },
+  {
+    "file": "frames/frame-000136.png",
+    "timestamp": 1794627690.766612,
+    "bytes": 307176
+  },
+  {
+    "file": "frames/frame-000137.png",
+    "timestamp": 1794627690.891627,
+    "bytes": 308290
+  },
+  {
+    "file": "frames/frame-000138.png",
+    "timestamp": 1794627691.037431,
+    "bytes": 308013
+  },
+  {
+    "file": "frames/frame-000139.png",
+    "timestamp": 1794627691.0444,
+    "bytes": 308158
+  },
+  {
+    "file": "frames/frame-000140.png",
+    "timestamp": 1794627691.065193,
+    "bytes": 308178
+  },
+  {
+    "file": "frames/frame-000141.png",
+    "timestamp": 1794627691.15549,
+    "bytes": 308178
+  },
+  {
+    "file": "frames/frame-000142.png",
+    "timestamp": 1794627691.190211,
+    "bytes": 308008
+  },
+  {
+    "file": "frames/frame-000143.png",
+    "timestamp": 1794627691.204073,
+    "bytes": 308034
+  },
+  {
+    "file": "frames/frame-000144.png",
+    "timestamp": 1794627691.252848,
+    "bytes": 308008
+  },
+  {
+    "file": "frames/frame-000145.png",
+    "timestamp": 1794627691.29437,
+    "bytes": 236899
+  },
+  {
+    "file": "frames/frame-000146.png",
+    "timestamp": 1794627691.301339,
+    "bytes": 237038
+  },
+  {
+    "file": "frames/frame-000147.png",
+    "timestamp": 1794627691.329158,
+    "bytes": 237190
+  },
+  {
+    "file": "frames/frame-000148.png",
+    "timestamp": 1794627691.38469,
+    "bytes": 237463
+  },
+  {
+    "file": "frames/frame-000149.png",
+    "timestamp": 1794627691.398581,
+    "bytes": 237564
+  },
+  {
+    "file": "frames/frame-000150.png",
+    "timestamp": 1794627691.433299,
+    "bytes": 237783
+  },
+  {
+    "file": "frames/frame-000151.png",
+    "timestamp": 1794627691.468028,
+    "bytes": 238168
+  },
+  {
+    "file": "frames/frame-000152.png",
+    "timestamp": 1794627691.488797,
+    "bytes": 238190
+  },
+  {
+    "file": "frames/frame-000153.png",
+    "timestamp": 1794627691.516608,
+    "bytes": 238260
+  },
+  {
+    "file": "frames/frame-000154.png",
+    "timestamp": 1794627691.544369,
+    "bytes": 238415
+  },
+  {
+    "file": "frames/frame-000155.png",
+    "timestamp": 1794627691.572158,
+    "bytes": 238504
+  },
+  {
+    "file": "frames/frame-000156.png",
+    "timestamp": 1794627691.59302,
+    "bytes": 239655
+  },
+  {
+    "file": "frames/frame-000157.png",
+    "timestamp": 1794627691.61382,
+    "bytes": 239676
+  },
+  {
+    "file": "frames/frame-000158.png",
+    "timestamp": 1794627691.648585,
+    "bytes": 239587
+  },
+  {
+    "file": "frames/frame-000159.png",
+    "timestamp": 1794627691.676312,
+    "bytes": 239540
+  },
+  {
+    "file": "frames/frame-000160.png",
+    "timestamp": 1794627691.704076,
+    "bytes": 239321
+  },
+  {
+    "file": "frames/frame-000161.png",
+    "timestamp": 1794627691.731875,
+    "bytes": 238865
+  },
+  {
+    "file": "frames/frame-000162.png",
+    "timestamp": 1794627691.752799,
+    "bytes": 238032
+  },
+  {
+    "file": "frames/frame-000163.png",
+    "timestamp": 1794627691.787492,
+    "bytes": 237598
+  },
+  {
+    "file": "frames/frame-000164.png",
+    "timestamp": 1794627691.891569,
+    "bytes": 246690
+  },
+  {
+    "file": "frames/frame-000165.png",
+    "timestamp": 1794627692.225007,
+    "bytes": 270558
+  },
+  {
+    "file": "frames/frame-000166.png",
+    "timestamp": 1794627692.537663,
+    "bytes": 259886
+  },
+  {
+    "file": "frames/frame-000167.png",
+    "timestamp": 1794627692.863867,
+    "bytes": 270799
+  },
+  {
+    "file": "frames/frame-000168.png",
+    "timestamp": 1794627693.16935,
+    "bytes": 288783
+  },
+  {
+    "file": "frames/frame-000169.png",
+    "timestamp": 1794627693.488974,
+    "bytes": 302387
+  },
+  {
+    "file": "frames/frame-000170.png",
+    "timestamp": 1794627693.808371,
+    "bytes": 293400
+  },
+  {
+    "file": "frames/frame-000171.png",
+    "timestamp": 1794627694.120784,
+    "bytes": 303063
+  },
+  {
+    "file": "frames/frame-000172.png",
+    "timestamp": 1794627694.426343,
+    "bytes": 302838
+  },
+  {
+    "file": "frames/frame-000173.png",
+    "timestamp": 1794627694.697198,
+    "bytes": 302838
+  },
+  {
+    "file": "frames/frame-000174.png",
+    "timestamp": 1794627694.759775,
+    "bytes": 307403
+  },
+  {
+    "file": "frames/frame-000175.png",
+    "timestamp": 1794627694.752752,
+    "bytes": 307349
+  },
+  {
+    "file": "frames/frame-000176.png",
+    "timestamp": 1794627695.217937,
+    "bytes": 306958
+  },
+  {
+    "file": "frames/frame-000177.png",
+    "timestamp": 1794627695.238818,
+    "bytes": 307358
+  },
+  {
+    "file": "frames/frame-000178.png",
+    "timestamp": 1794627695.252747,
+    "bytes": 307294
+  },
+  {
+    "file": "frames/frame-000179.png",
+    "timestamp": 1794627695.398485,
+    "bytes": 308513
+  },
+  {
+    "file": "frames/frame-000180.png",
+    "timestamp": 1794627695.419346,
+    "bytes": 308451
+  },
+  {
+    "file": "frames/frame-000181.png",
+    "timestamp": 1794627695.433213,
+    "bytes": 308419
+  },
+  {
+    "file": "frames/frame-000182.png",
+    "timestamp": 1794627695.50967,
+    "bytes": 273167
+  },
+  {
+    "file": "frames/frame-000183.png",
+    "timestamp": 1794627695.523523,
+    "bytes": 272893
+  },
+  {
+    "file": "frames/frame-000184.png",
+    "timestamp": 1794627695.530498,
+    "bytes": 273221
+  },
+  {
+    "file": "frames/frame-000185.png",
+    "timestamp": 1794627695.620784,
+    "bytes": 273812
+  },
+  {
+    "file": "frames/frame-000186.png",
+    "timestamp": 1794627695.627706,
+    "bytes": 273866
+  },
+  {
+    "file": "frames/frame-000187.png",
+    "timestamp": 1794627695.655464,
+    "bytes": 274000
+  },
+  {
+    "file": "frames/frame-000188.png",
+    "timestamp": 1794627695.70405,
+    "bytes": 274085
+  },
+  {
+    "file": "frames/frame-000189.png",
+    "timestamp": 1794627695.717943,
+    "bytes": 274180
+  },
+  {
+    "file": "frames/frame-000190.png",
+    "timestamp": 1794627695.724886,
+    "bytes": 274228
+  },
+  {
+    "file": "frames/frame-000191.png",
+    "timestamp": 1794627695.808228,
+    "bytes": 273919
+  },
+  {
+    "file": "frames/frame-000192.png",
+    "timestamp": 1794627695.815158,
+    "bytes": 274016
+  },
+  {
+    "file": "frames/frame-000193.png",
+    "timestamp": 1794627695.836075,
+    "bytes": 273749
+  },
+  {
+    "file": "frames/frame-000194.png",
+    "timestamp": 1794627695.884622,
+    "bytes": 274454
+  },
+  {
+    "file": "frames/frame-000195.png",
+    "timestamp": 1794627695.912408,
+    "bytes": 273371
+  },
+  {
+    "file": "frames/frame-000196.png",
+    "timestamp": 1794627695.926316,
+    "bytes": 274213
+  },
+  {
+    "file": "frames/frame-000197.png",
+    "timestamp": 1794627695.981858,
+    "bytes": 273470
+  },
+  {
+    "file": "frames/frame-000198.png",
+    "timestamp": 1794627695.988826,
+    "bytes": 273501
+  },
+  {
+    "file": "frames/frame-000199.png",
+    "timestamp": 1794627696.023551,
+    "bytes": 272450
+  },
+  {
+    "file": "frames/frame-000200.png",
+    "timestamp": 1794627696.099921,
+    "bytes": 272781
+  },
+  {
+    "file": "frames/frame-000201.png",
+    "timestamp": 1794627696.106869,
+    "bytes": 272828
+  },
+  {
+    "file": "frames/frame-000202.png",
+    "timestamp": 1794627696.134659,
+    "bytes": 272810
+  },
+  {
+    "file": "frames/frame-000203.png",
+    "timestamp": 1794627696.183265,
+    "bytes": 272756
+  },
+  {
+    "file": "frames/frame-000204.png",
+    "timestamp": 1794627696.190174,
+    "bytes": 272735
+  },
+  {
+    "file": "frames/frame-000205.png",
+    "timestamp": 1794627696.231911,
+    "bytes": 272862
+  },
+  {
+    "file": "frames/frame-000206.png",
+    "timestamp": 1794627696.273612,
+    "bytes": 307839
+  },
+  {
+    "file": "frames/frame-000207.png",
+    "timestamp": 1794627696.294367,
+    "bytes": 307952
+  },
+  {
+    "file": "frames/frame-000208.png",
+    "timestamp": 1794627696.322134,
+    "bytes": 308212
+  },
+  {
+    "file": "frames/frame-000209.png",
+    "timestamp": 1794627696.412479,
+    "bytes": 308682
+  },
+  {
+    "file": "frames/frame-000210.png",
+    "timestamp": 1794627696.433226,
+    "bytes": 308957
+  },
+  {
+    "file": "frames/frame-000211.png",
+    "timestamp": 1794627696.440268,
+    "bytes": 308927
+  },
+  {
+    "file": "frames/frame-000212.png",
+    "timestamp": 1794627696.49572,
+    "bytes": 309548
+  },
+  {
+    "file": "frames/frame-000213.png",
+    "timestamp": 1794627696.523517,
+    "bytes": 309221
+  },
+  {
+    "file": "frames/frame-000214.png",
+    "timestamp": 1794627696.530535,
+    "bytes": 309167
+  },
+  {
+    "file": "frames/frame-000215.png",
+    "timestamp": 1794627696.579085,
+    "bytes": 309441
+  },
+  {
+    "file": "frames/frame-000216.png",
+    "timestamp": 1794627696.627702,
+    "bytes": 309554
+  },
+  {
+    "file": "frames/frame-000217.png",
+    "timestamp": 1794627696.634619,
+    "bytes": 309483
+  },
+  {
+    "file": "frames/frame-000218.png",
+    "timestamp": 1794627696.68329,
+    "bytes": 309095
+  },
+  {
+    "file": "frames/frame-000219.png",
+    "timestamp": 1794627696.711076,
+    "bytes": 308809
+  },
+  {
+    "file": "frames/frame-000220.png",
+    "timestamp": 1794627696.71805,
+    "bytes": 308725
+  },
+  {
+    "file": "frames/frame-000221.png",
+    "timestamp": 1794627696.759782,
+    "bytes": 273349
+  },
+  {
+    "file": "frames/frame-000222.png",
+    "timestamp": 1794627696.808252,
+    "bytes": 273103
+  },
+  {
+    "file": "frames/frame-000223.png",
+    "timestamp": 1794627696.815212,
+    "bytes": 273334
+  },
+  {
+    "file": "frames/frame-000224.png",
+    "timestamp": 1794627696.863944,
+    "bytes": 273502
+  },
+  {
+    "file": "frames/frame-000225.png",
+    "timestamp": 1794627696.891558,
+    "bytes": 273650
+  },
+  {
+    "file": "frames/frame-000226.png",
+    "timestamp": 1794627696.919383,
+    "bytes": 273799
+  },
+  {
+    "file": "frames/frame-000227.png",
+    "timestamp": 1794627696.974947,
+    "bytes": 274094
+  },
+  {
+    "file": "frames/frame-000228.png",
+    "timestamp": 1794627696.988825,
+    "bytes": 274293
+  },
+  {
+    "file": "frames/frame-000229.png",
+    "timestamp": 1794627697.044378,
+    "bytes": 274276
+  },
+  {
+    "file": "frames/frame-000230.png",
+    "timestamp": 1794627697.065197,
+    "bytes": 274262
+  },
+  {
+    "file": "frames/frame-000231.png",
+    "timestamp": 1794627697.079073,
+    "bytes": 274069
+  },
+  {
+    "file": "frames/frame-000232.png",
+    "timestamp": 1794627697.134659,
+    "bytes": 274136
+  },
+  {
+    "file": "frames/frame-000233.png",
+    "timestamp": 1794627697.169408,
+    "bytes": 274016
+  },
+  {
+    "file": "frames/frame-000234.png",
+    "timestamp": 1794627697.176335,
+    "bytes": 273800
+  },
+  {
+    "file": "frames/frame-000235.png",
+    "timestamp": 1794627697.231859,
+    "bytes": 272561
+  },
+  {
+    "file": "frames/frame-000236.png",
+    "timestamp": 1794627697.25268,
+    "bytes": 272739
+  },
+  {
+    "file": "frames/frame-000237.png",
+    "timestamp": 1794627697.280577,
+    "bytes": 272689
+  },
+  {
+    "file": "frames/frame-000238.png",
+    "timestamp": 1794627697.384621,
+    "bytes": 307646
+  },
+  {
+    "file": "frames/frame-000239.png",
+    "timestamp": 1794627697.391563,
+    "bytes": 307551
+  },
+  {
+    "file": "frames/frame-000240.png",
+    "timestamp": 1794627697.426285,
+    "bytes": 307969
+  },
+  {
+    "file": "frames/frame-000241.png",
+    "timestamp": 1794627697.48878,
+    "bytes": 308274
+  },
+  {
+    "file": "frames/frame-000242.png",
+    "timestamp": 1794627697.502726,
+    "bytes": 308251
+  },
+  {
+    "file": "frames/frame-000243.png",
+    "timestamp": 1794627697.523642,
+    "bytes": 307835
+  },
+  {
+    "file": "frames/frame-000244.png",
+    "timestamp": 1794627697.599875,
+    "bytes": 308984
+  },
+  {
+    "file": "frames/frame-000245.png",
+    "timestamp": 1794627697.620738,
+    "bytes": 308952
+  },
+  {
+    "file": "frames/frame-000246.png",
+    "timestamp": 1794627697.634698,
+    "bytes": 309239
+  },
+  {
+    "file": "frames/frame-000247.png",
+    "timestamp": 1794627697.717931,
+    "bytes": 309503
+  },
+  {
+    "file": "frames/frame-000248.png",
+    "timestamp": 1794627697.731843,
+    "bytes": 309633
+  },
+  {
+    "file": "frames/frame-000249.png",
+    "timestamp": 1794627697.738769,
+    "bytes": 309347
+  },
+  {
+    "file": "frames/frame-000250.png",
+    "timestamp": 1794627697.8082,
+    "bytes": 309418
+  },
+  {
+    "file": "frames/frame-000251.png",
+    "timestamp": 1794627697.822152,
+    "bytes": 309167
+  },
+  {
+    "file": "frames/frame-000252.png",
+    "timestamp": 1794627697.835996,
+    "bytes": 308211
+  },
+  {
+    "file": "frames/frame-000253.png",
+    "timestamp": 1794627697.89155,
+    "bytes": 307647
+  },
+  {
+    "file": "frames/frame-000254.png",
+    "timestamp": 1794627697.912431,
+    "bytes": 307595
+  },
+  {
+    "file": "frames/frame-000255.png",
+    "timestamp": 1794627697.926303,
+    "bytes": 307589
+  },
+  {
+    "file": "frames/frame-000256.png",
+    "timestamp": 1794627697.988911,
+    "bytes": 308143
+  },
+  {
+    "file": "frames/frame-000257.png",
+    "timestamp": 1794627698.016686,
+    "bytes": 308205
+  },
+  {
+    "file": "frames/frame-000258.png",
+    "timestamp": 1794627698.030644,
+    "bytes": 308210
+  },
+  {
+    "file": "frames/frame-000259.png",
+    "timestamp": 1794627698.093013,
+    "bytes": 308662
+  },
+  {
+    "file": "frames/frame-000260.png",
+    "timestamp": 1794627698.100059,
+    "bytes": 308887
+  },
+  {
+    "file": "frames/frame-000261.png",
+    "timestamp": 1794627698.120859,
+    "bytes": 308739
+  },
+  {
+    "file": "frames/frame-000262.png",
+    "timestamp": 1794627698.20411,
+    "bytes": 309073
+  },
+  {
+    "file": "frames/frame-000263.png",
+    "timestamp": 1794627698.210977,
+    "bytes": 309181
+  },
+  {
+    "file": "frames/frame-000264.png",
+    "timestamp": 1794627698.23877,
+    "bytes": 309292
+  },
+  {
+    "file": "frames/frame-000265.png",
+    "timestamp": 1794627698.329081,
+    "bytes": 308981
+  },
+  {
+    "file": "frames/frame-000266.png",
+    "timestamp": 1794627698.336054,
+    "bytes": 327479
+  },
+  {
+    "file": "frames/frame-000267.png",
+    "timestamp": 1794627698.363817,
+    "bytes": 325511
+  },
+  {
+    "file": "frames/frame-000268.png",
+    "timestamp": 1794627698.419355,
+    "bytes": 343044
+  },
+  {
+    "file": "frames/frame-000269.png",
+    "timestamp": 1794627698.43325,
+    "bytes": 342209
+  },
+  {
+    "file": "frames/frame-000270.png",
+    "timestamp": 1794627698.447161,
+    "bytes": 328101
+  },
+  {
+    "file": "frames/frame-000271.png",
+    "timestamp": 1794627698.52355,
+    "bytes": 306193
+  },
+  {
+    "file": "frames/frame-000272.png",
+    "timestamp": 1794627698.530503,
+    "bytes": 304991
+  },
+  {
+    "file": "frames/frame-000273.png",
+    "timestamp": 1794627698.55821,
+    "bytes": 304557
+  },
+  {
+    "file": "frames/frame-000274.png",
+    "timestamp": 1794627698.627702,
+    "bytes": 303745
+  },
+  {
+    "file": "frames/frame-000275.png",
+    "timestamp": 1794627698.641642,
+    "bytes": 296398
+  },
+  {
+    "file": "frames/frame-000276.png",
+    "timestamp": 1794627698.655526,
+    "bytes": 296544
+  },
+  {
+    "file": "frames/frame-000277.png",
+    "timestamp": 1794627698.738906,
+    "bytes": 292208
+  },
+  {
+    "file": "frames/frame-000278.png",
+    "timestamp": 1794627698.745763,
+    "bytes": 293144
+  },
+  {
+    "file": "frames/frame-000279.png",
+    "timestamp": 1794627698.766577,
+    "bytes": 293404
+  },
+  {
+    "file": "frames/frame-000280.png",
+    "timestamp": 1794627698.829119,
+    "bytes": 292822
+  },
+  {
+    "file": "frames/frame-000281.png",
+    "timestamp": 1794627698.849908,
+    "bytes": 292612
+  },
+  {
+    "file": "frames/frame-000282.png",
+    "timestamp": 1794627698.863816,
+    "bytes": 292625
+  },
+  {
+    "file": "frames/frame-000283.png",
+    "timestamp": 1794627699.447383,
+    "bytes": 292625
+  },
+  {
+    "file": "frames/frame-000284.png",
+    "timestamp": 1794627699.912429,
+    "bytes": 292625
+  },
+  {
+    "file": "frames/frame-000285.png",
+    "timestamp": 1794627699.919426,
+    "bytes": 292294
+  },
+  {
+    "file": "frames/frame-000286.png",
+    "timestamp": 1794627699.961136,
+    "bytes": 291451
+  },
+  {
+    "file": "frames/frame-000287.png",
+    "timestamp": 1794627700.065227,
+    "bytes": 234858
+  },
+  {
+    "file": "frames/frame-000288.png",
+    "timestamp": 1794627700.086168,
+    "bytes": 230839
+  },
+  {
+    "file": "frames/frame-000289.png",
+    "timestamp": 1794627700.113947,
+    "bytes": 222653
+  },
+  {
+    "file": "frames/frame-000290.png",
+    "timestamp": 1794627700.190357,
+    "bytes": 226470
+  },
+  {
+    "file": "frames/frame-000291.png",
+    "timestamp": 1794627700.211061,
+    "bytes": 223048
+  },
+  {
+    "file": "frames/frame-000292.png",
+    "timestamp": 1794627700.231923,
+    "bytes": 222637
+  },
+  {
+    "file": "frames/frame-000293.png",
+    "timestamp": 1794627700.273465,
+    "bytes": 219799
+  },
+  {
+    "file": "frames/frame-000294.png",
+    "timestamp": 1794627700.315153,
+    "bytes": 218295
+  },
+  {
+    "file": "frames/frame-000295.png",
+    "timestamp": 1794627700.329046,
+    "bytes": 218066
+  },
+  {
+    "file": "frames/frame-000296.png",
+    "timestamp": 1794627700.370736,
+    "bytes": 218249
+  },
+  {
+    "file": "frames/frame-000297.png",
+    "timestamp": 1794627700.974871,
+    "bytes": 218259
+  },
+  {
+    "file": "frames/frame-000298.png",
+    "timestamp": 1794627700.995753,
+    "bytes": 218167
+  },
+  {
+    "file": "frames/frame-000299.png",
+    "timestamp": 1794627701.03742,
+    "bytes": 218250
+  },
+  {
+    "file": "frames/frame-000300.png",
+    "timestamp": 1794627701.135899,
+    "bytes": 218305
+  },
+  {
+    "file": "frames/frame-000301.png",
+    "timestamp": 1794627701.148482,
+    "bytes": 218205
+  },
+  {
+    "file": "frames/frame-000302.png",
+    "timestamp": 1794627701.155439,
+    "bytes": 218135
+  },
+  {
+    "file": "frames/frame-000303.png",
+    "timestamp": 1794627701.238766,
+    "bytes": 218146
+  },
+  {
+    "file": "frames/frame-000304.png",
+    "timestamp": 1794627701.245677,
+    "bytes": 218101
+  },
+  {
+    "file": "frames/frame-000305.png",
+    "timestamp": 1794627701.266551,
+    "bytes": 218302
+  },
+  {
+    "file": "frames/frame-000306.png",
+    "timestamp": 1794627701.335963,
+    "bytes": 224223
+  },
+  {
+    "file": "frames/frame-000307.png",
+    "timestamp": 1794627701.342904,
+    "bytes": 224340
+  },
+  {
+    "file": "frames/frame-000308.png",
+    "timestamp": 1794627701.370686,
+    "bytes": 224366
+  },
+  {
+    "file": "frames/frame-000309.png",
+    "timestamp": 1794627701.419358,
+    "bytes": 224595
+  },
+  {
+    "file": "frames/frame-000310.png",
+    "timestamp": 1794627701.43322,
+    "bytes": 224551
+  },
+  {
+    "file": "frames/frame-000311.png",
+    "timestamp": 1794627701.454067,
+    "bytes": 224690
+  },
+  {
+    "file": "frames/frame-000312.png",
+    "timestamp": 1794627701.516568,
+    "bytes": 224716
+  },
+  {
+    "file": "frames/frame-000313.png",
+    "timestamp": 1794627701.537408,
+    "bytes": 225054
+  },
+  {
+    "file": "frames/frame-000314.png",
+    "timestamp": 1794627701.544316,
+    "bytes": 225007
+  },
+  {
+    "file": "frames/frame-000315.png",
+    "timestamp": 1794627701.6,
+    "bytes": 225185
+  },
+  {
+    "file": "frames/frame-000316.png",
+    "timestamp": 1794627701.627645,
+    "bytes": 225223
+  },
+  {
+    "file": "frames/frame-000317.png",
+    "timestamp": 1794627701.641539,
+    "bytes": 225229
+  },
+  {
+    "file": "frames/frame-000318.png",
+    "timestamp": 1794627701.676258,
+    "bytes": 225058
+  },
+  {
+    "file": "frames/frame-000319.png",
+    "timestamp": 1794627701.717898,
+    "bytes": 230470
+  },
+  {
+    "file": "frames/frame-000320.png",
+    "timestamp": 1794627701.724864,
+    "bytes": 230705
+  },
+  {
+    "file": "frames/frame-000321.png",
+    "timestamp": 1794627701.773454,
+    "bytes": 229678
+  },
+  {
+    "file": "frames/frame-000322.png",
+    "timestamp": 1794627701.80135,
+    "bytes": 228663
+  },
+  {
+    "file": "frames/frame-000323.png",
+    "timestamp": 1794627701.808221,
+    "bytes": 228663
+  },
+  {
+    "file": "frames/frame-000324.png",
+    "timestamp": 1794627701.967929,
+    "bytes": 232846
+  },
+  {
+    "file": "frames/frame-000325.png",
+    "timestamp": 1794627702.308172,
+    "bytes": 232403
+  },
+  {
+    "file": "frames/frame-000326.png",
+    "timestamp": 1794627702.599834,
+    "bytes": 239326
+  },
+  {
+    "file": "frames/frame-000327.png",
+    "timestamp": 1794627702.606822,
+    "bytes": 239440
+  },
+  {
+    "file": "frames/frame-000328.png",
+    "timestamp": 1794627702.634646,
+    "bytes": 239507
+  },
+  {
+    "file": "frames/frame-000329.png",
+    "timestamp": 1794627702.690149,
+    "bytes": 239648
+  },
+  {
+    "file": "frames/frame-000330.png",
+    "timestamp": 1794627702.697049,
+    "bytes": 239714
+  },
+  {
+    "file": "frames/frame-000331.png",
+    "timestamp": 1794627702.731789,
+    "bytes": 239873
+  },
+  {
+    "file": "frames/frame-000332.png",
+    "timestamp": 1794627702.787359,
+    "bytes": 239811
+  },
+  {
+    "file": "frames/frame-000333.png",
+    "timestamp": 1794627702.7943,
+    "bytes": 239811
+  },
+  {
+    "file": "frames/frame-000334.png",
+    "timestamp": 1794627702.815137,
+    "bytes": 239125
+  },
+  {
+    "file": "frames/frame-000335.png",
+    "timestamp": 1794627702.98179,
+    "bytes": 239125
+  },
+  {
+    "file": "frames/frame-000336.png",
+    "timestamp": 1794627704.210958,
+    "bytes": 239291
+  },
+  {
+    "file": "frames/frame-000337.png",
+    "timestamp": 1794627704.224891,
+    "bytes": 239191
+  },
+  {
+    "file": "frames/frame-000338.png",
+    "timestamp": 1794627704.238773,
+    "bytes": 239237
+  },
+  {
+    "file": "frames/frame-000339.png",
+    "timestamp": 1794627704.342982,
+    "bytes": 239235
+  },
+  {
+    "file": "frames/frame-000340.png",
+    "timestamp": 1794627704.36379,
+    "bytes": 239275
+  },
+  {
+    "file": "frames/frame-000341.png",
+    "timestamp": 1794627704.370709,
+    "bytes": 239234
+  },
+  {
+    "file": "frames/frame-000342.png",
+    "timestamp": 1794627704.440138,
+    "bytes": 239257
+  },
+  {
+    "file": "frames/frame-000343.png",
+    "timestamp": 1794627704.460946,
+    "bytes": 239246
+  },
+  {
+    "file": "frames/frame-000344.png",
+    "timestamp": 1794627704.488773,
+    "bytes": 239208
+  },
+  {
+    "file": "frames/frame-000345.png",
+    "timestamp": 1794627704.530438,
+    "bytes": 239869
+  },
+  {
+    "file": "frames/frame-000346.png",
+    "timestamp": 1794627704.551274,
+    "bytes": 240003
+  },
+  {
+    "file": "frames/frame-000347.png",
+    "timestamp": 1794627704.585947,
+    "bytes": 240335
+  },
+  {
+    "file": "frames/frame-000348.png",
+    "timestamp": 1794627704.61374,
+    "bytes": 240429
+  },
+  {
+    "file": "frames/frame-000349.png",
+    "timestamp": 1794627704.634589,
+    "bytes": 240405
+  },
+  {
+    "file": "frames/frame-000350.png",
+    "timestamp": 1794627704.669276,
+    "bytes": 240728
+  },
+  {
+    "file": "frames/frame-000351.png",
+    "timestamp": 1794627704.690113,
+    "bytes": 240759
+  },
+  {
+    "file": "frames/frame-000352.png",
+    "timestamp": 1794627704.711063,
+    "bytes": 240916
+  },
+  {
+    "file": "frames/frame-000353.png",
+    "timestamp": 1794627704.752616,
+    "bytes": 241023
+  },
+  {
+    "file": "frames/frame-000354.png",
+    "timestamp": 1794627704.787343,
+    "bytes": 241164
+  },
+  {
+    "file": "frames/frame-000355.png",
+    "timestamp": 1794627704.801225,
+    "bytes": 241184
+  },
+  {
+    "file": "frames/frame-000356.png",
+    "timestamp": 1794627704.842924,
+    "bytes": 241393
+  },
+  {
+    "file": "frames/frame-000357.png",
+    "timestamp": 1794627704.884553,
+    "bytes": 241485
+  },
+  {
+    "file": "frames/frame-000358.png",
+    "timestamp": 1794627704.891476,
+    "bytes": 241300
+  },
+  {
+    "file": "frames/frame-000359.png",
+    "timestamp": 1794627704.9262,
+    "bytes": 241305
+  },
+  {
+    "file": "frames/frame-000360.png",
+    "timestamp": 1794627704.967915,
+    "bytes": 240968
+  },
+  {
+    "file": "frames/frame-000361.png",
+    "timestamp": 1794627704.974859,
+    "bytes": 240960
+  },
+  {
+    "file": "frames/frame-000362.png",
+    "timestamp": 1794627705.009573,
+    "bytes": 240040
+  },
+  {
+    "file": "frames/frame-000363.png",
+    "timestamp": 1794627705.058206,
+    "bytes": 239358
+  },
+  {
+    "file": "frames/frame-000364.png",
+    "timestamp": 1794627705.092898,
+    "bytes": 239053
+  },
+  {
+    "file": "frames/frame-000365.png",
+    "timestamp": 1794627705.09982,
+    "bytes": 239077
+  },
+  {
+    "file": "frames/frame-000366.png",
+    "timestamp": 1794627705.141546,
+    "bytes": 239224
+  },
+  {
+    "file": "frames/frame-000367.png",
+    "timestamp": 1794627705.176204,
+    "bytes": 238871
+  },
+  {
+    "file": "frames/frame-000368.png",
+    "timestamp": 1794627705.183178,
+    "bytes": 238974
+  },
+  {
+    "file": "frames/frame-000369.png",
+    "timestamp": 1794627705.23876,
+    "bytes": 239589
+  },
+  {
+    "file": "frames/frame-000370.png",
+    "timestamp": 1794627705.273478,
+    "bytes": 108772
+  },
+  {
+    "file": "frames/frame-000371.png",
+    "timestamp": 1794627705.301333,
+    "bytes": 108885
+  },
+  {
+    "file": "frames/frame-000372.png",
+    "timestamp": 1794627705.336089,
+    "bytes": 109109
+  },
+  {
+    "file": "frames/frame-000373.png",
+    "timestamp": 1794627705.36387,
+    "bytes": 109281
+  },
+  {
+    "file": "frames/frame-000374.png",
+    "timestamp": 1794627705.370651,
+    "bytes": 109363
+  },
+  {
+    "file": "frames/frame-000375.png",
+    "timestamp": 1794627705.398567,
+    "bytes": 109492
+  },
+  {
+    "file": "frames/frame-000376.png",
+    "timestamp": 1794627705.447222,
+    "bytes": 109636
+  },
+  {
+    "file": "frames/frame-000377.png",
+    "timestamp": 1794627705.460934,
+    "bytes": 109770
+  },
+  {
+    "file": "frames/frame-000378.png",
+    "timestamp": 1794627705.468012,
+    "bytes": 109770
+  },
+  {
+    "file": "frames/frame-000379.png",
+    "timestamp": 1794627705.523472,
+    "bytes": 109991
+  },
+  {
+    "file": "frames/frame-000380.png",
+    "timestamp": 1794627705.537443,
+    "bytes": 110032
+  },
+  {
+    "file": "frames/frame-000381.png",
+    "timestamp": 1794627705.55831,
+    "bytes": 109891
+  },
+  {
+    "file": "frames/frame-000382.png",
+    "timestamp": 1794627705.599976,
+    "bytes": 109963
+  },
+  {
+    "file": "frames/frame-000383.png",
+    "timestamp": 1794627705.627769,
+    "bytes": 109933
+  },
+  {
+    "file": "frames/frame-000384.png",
+    "timestamp": 1794627705.634843,
+    "bytes": 109822
+  },
+  {
+    "file": "frames/frame-000385.png",
+    "timestamp": 1794627705.676356,
+    "bytes": 109481
+  },
+  {
+    "file": "frames/frame-000386.png",
+    "timestamp": 1794627705.697097,
+    "bytes": 109254
+  },
+  {
+    "file": "frames/frame-000387.png",
+    "timestamp": 1794627705.717879,
+    "bytes": 108813
+  },
+  {
+    "file": "frames/frame-000388.png",
+    "timestamp": 1794627706.544267,
+    "bytes": 251347
+  },
+  {
+    "file": "frames/frame-000389.png",
+    "timestamp": 1794627706.815152,
+    "bytes": 251749
+  },
+  {
+    "file": "frames/frame-000390.png",
+    "timestamp": 1794627706.835987,
+    "bytes": 251611
+  },
+  {
+    "file": "frames/frame-000391.png",
+    "timestamp": 1794627706.870671,
+    "bytes": 251852
+  },
+  {
+    "file": "frames/frame-000392.png",
+    "timestamp": 1794627706.954129,
+    "bytes": 251776
+  },
+  {
+    "file": "frames/frame-000393.png",
+    "timestamp": 1794627706.988872,
+    "bytes": 251824
+  },
+  {
+    "file": "frames/frame-000394.png",
+    "timestamp": 1794627707.044321,
+    "bytes": 252752
+  },
+  {
+    "file": "frames/frame-000395.png",
+    "timestamp": 1794627707.16927,
+    "bytes": 256701
+  },
+  {
+    "file": "frames/frame-000396.png",
+    "timestamp": 1794627707.287326,
+    "bytes": 256701
+  },
+  {
+    "file": "frames/frame-000397.png",
+    "timestamp": 1794627707.516489,
+    "bytes": 256332
+  },
+  {
+    "file": "frames/frame-000398.png",
+    "timestamp": 1794627707.544314,
+    "bytes": 256418
+  },
+  {
+    "file": "frames/frame-000399.png",
+    "timestamp": 1794627707.56508,
+    "bytes": 256483
+  },
+  {
+    "file": "frames/frame-000400.png",
+    "timestamp": 1794627707.606779,
+    "bytes": 256430
+  },
+  {
+    "file": "frames/frame-000401.png",
+    "timestamp": 1794627707.634546,
+    "bytes": 256440
+  },
+  {
+    "file": "frames/frame-000402.png",
+    "timestamp": 1794627707.662324,
+    "bytes": 256469
+  },
+  {
+    "file": "frames/frame-000403.png",
+    "timestamp": 1794627707.724949,
+    "bytes": 182075
+  },
+  {
+    "file": "frames/frame-000404.png",
+    "timestamp": 1794627707.731799,
+    "bytes": 182176
+  },
+  {
+    "file": "frames/frame-000405.png",
+    "timestamp": 1794627707.75956,
+    "bytes": 182118
+  },
+  {
+    "file": "frames/frame-000406.png",
+    "timestamp": 1794627707.822136,
+    "bytes": 182400
+  },
+  {
+    "file": "frames/frame-000407.png",
+    "timestamp": 1794627707.829075,
+    "bytes": 182694
+  },
+  {
+    "file": "frames/frame-000408.png",
+    "timestamp": 1794627707.856818,
+    "bytes": 182778
+  },
+  {
+    "file": "frames/frame-000409.png",
+    "timestamp": 1794627707.919629,
+    "bytes": 176022
+  },
+  {
+    "file": "frames/frame-000410.png",
+    "timestamp": 1794627707.926302,
+    "bytes": 176592
+  },
+  {
+    "file": "frames/frame-000411.png",
+    "timestamp": 1794627707.947158,
+    "bytes": 176868
+  },
+  {
+    "file": "frames/frame-000412.png",
+    "timestamp": 1794627708.002582,
+    "bytes": 167342
+  },
+  {
+    "file": "frames/frame-000413.png",
+    "timestamp": 1794627708.016491,
+    "bytes": 172541
+  },
+  {
+    "file": "frames/frame-000414.png",
+    "timestamp": 1794627708.023515,
+    "bytes": 177227
+  },
+  {
+    "file": "frames/frame-000415.png",
+    "timestamp": 1794627708.092951,
+    "bytes": 185524
+  },
+  {
+    "file": "frames/frame-000416.png",
+    "timestamp": 1794627708.099871,
+    "bytes": 183904
+  },
+  {
+    "file": "frames/frame-000417.png",
+    "timestamp": 1794627708.120651,
+    "bytes": 202870
+  },
+  {
+    "file": "frames/frame-000418.png",
+    "timestamp": 1794627708.183141,
+    "bytes": 236403
+  },
+  {
+    "file": "frames/frame-000419.png",
+    "timestamp": 1794627708.190127,
+    "bytes": 239175
+  },
+  {
+    "file": "frames/frame-000420.png",
+    "timestamp": 1794627708.217908,
+    "bytes": 239072
+  },
+  {
+    "file": "frames/frame-000421.png",
+    "timestamp": 1794627708.280428,
+    "bytes": 239048
+  },
+  {
+    "file": "frames/frame-000422.png",
+    "timestamp": 1794627708.28741,
+    "bytes": 238783
+  },
+  {
+    "file": "frames/frame-000423.png",
+    "timestamp": 1794627708.308183,
+    "bytes": 238977
+  },
+  {
+    "file": "frames/frame-000424.png",
+    "timestamp": 1794627708.947106,
+    "bytes": 238951
+  },
+  {
+    "file": "frames/frame-000425.png",
+    "timestamp": 1794627708.954151,
+    "bytes": 238963
+  },
+  {
+    "file": "frames/frame-000426.png",
+    "timestamp": 1794627708.97495,
+    "bytes": 238896
+  },
+  {
+    "file": "frames/frame-000427.png",
+    "timestamp": 1794627709.093064,
+    "bytes": 182068
+  },
+  {
+    "file": "frames/frame-000428.png",
+    "timestamp": 1794627709.113774,
+    "bytes": 184031
+  },
+  {
+    "file": "frames/frame-000429.png",
+    "timestamp": 1794627709.120771,
+    "bytes": 184031
+  },
+  {
+    "file": "frames/frame-000430.png",
+    "timestamp": 1794627709.731829,
+    "bytes": 184089
+  },
+  {
+    "file": "frames/frame-000431.png",
+    "timestamp": 1794627709.752606,
+    "bytes": 184156
+  },
+  {
+    "file": "frames/frame-000432.png",
+    "timestamp": 1794627709.780397,
+    "bytes": 184134
+  },
+  {
+    "file": "frames/frame-000433.png",
+    "timestamp": 1794627709.884534,
+    "bytes": 183713
+  },
+  {
+    "file": "frames/frame-000434.png",
+    "timestamp": 1794627709.926197,
+    "bytes": 183487
+  },
+  {
+    "file": "frames/frame-000435.png",
+    "timestamp": 1794627710.009531,
+    "bytes": 242657
+  },
+  {
+    "file": "frames/frame-000436.png",
+    "timestamp": 1794627710.023429,
+    "bytes": 242775
+  },
+  {
+    "file": "frames/frame-000437.png",
+    "timestamp": 1794627710.030362,
+    "bytes": 242895
+  },
+  {
+    "file": "frames/frame-000438.png",
+    "timestamp": 1794627710.127605,
+    "bytes": 243402
+  },
+  {
+    "file": "frames/frame-000439.png",
+    "timestamp": 1794627710.134565,
+    "bytes": 243476
+  },
+  {
+    "file": "frames/frame-000440.png",
+    "timestamp": 1794627710.162339,
+    "bytes": 243583
+  },
+  {
+    "file": "frames/frame-000441.png",
+    "timestamp": 1794627710.204102,
+    "bytes": 243800
+  },
+  {
+    "file": "frames/frame-000442.png",
+    "timestamp": 1794627710.217929,
+    "bytes": 243746
+  },
+  {
+    "file": "frames/frame-000443.png",
+    "timestamp": 1794627710.245747,
+    "bytes": 243920
+  },
+  {
+    "file": "frames/frame-000444.png",
+    "timestamp": 1794627710.301176,
+    "bytes": 244129
+  },
+  {
+    "file": "frames/frame-000445.png",
+    "timestamp": 1794627710.322071,
+    "bytes": 244124
+  },
+  {
+    "file": "frames/frame-000446.png",
+    "timestamp": 1794627710.329017,
+    "bytes": 244217
+  },
+  {
+    "file": "frames/frame-000447.png",
+    "timestamp": 1794627710.39841,
+    "bytes": 243941
+  },
+  {
+    "file": "frames/frame-000448.png",
+    "timestamp": 1794627710.419254,
+    "bytes": 244132
+  },
+  {
+    "file": "frames/frame-000449.png",
+    "timestamp": 1794627710.426202,
+    "bytes": 243922
+  },
+  {
+    "file": "frames/frame-000450.png",
+    "timestamp": 1794627710.530387,
+    "bytes": 242264
+  },
+  {
+    "file": "frames/frame-000451.png",
+    "timestamp": 1794627710.523424,
+    "bytes": 242264
+  },
+  {
+    "file": "frames/frame-000452.png",
+    "timestamp": 1794627710.648418,
+    "bytes": 242264
+  },
+  {
+    "file": "frames/frame-000453.png",
+    "timestamp": 1794627711.20431,
+    "bytes": 242463
+  },
+  {
+    "file": "frames/frame-000454.png",
+    "timestamp": 1794627711.231794,
+    "bytes": 242383
+  },
+  {
+    "file": "frames/frame-000455.png",
+    "timestamp": 1794627711.252638,
+    "bytes": 242369
+  },
+  {
+    "file": "frames/frame-000456.png",
+    "timestamp": 1794627711.315059,
+    "bytes": 242382
+  },
+  {
+    "file": "frames/frame-000457.png",
+    "timestamp": 1794627711.349855,
+    "bytes": 242094
+  },
+  {
+    "file": "frames/frame-000458.png",
+    "timestamp": 1794627711.356739,
+    "bytes": 242267
+  },
+  {
+    "file": "frames/frame-000459.png",
+    "timestamp": 1794627711.419247,
+    "bytes": 242094
+  },
+  {
+    "file": "frames/frame-000460.png",
+    "timestamp": 1794627711.453973,
+    "bytes": 242164
+  },
+  {
+    "file": "frames/frame-000461.png",
+    "timestamp": 1794627711.46091,
+    "bytes": 242192
+  },
+  {
+    "file": "frames/frame-000462.png",
+    "timestamp": 1794627711.509577,
+    "bytes": 130139
+  },
+  {
+    "file": "frames/frame-000463.png",
+    "timestamp": 1794627711.530621,
+    "bytes": 107969
+  },
+  {
+    "file": "frames/frame-000464.png",
+    "timestamp": 1794627711.572045,
+    "bytes": 108083
+  },
+  {
+    "file": "frames/frame-000465.png",
+    "timestamp": 1794627711.606737,
+    "bytes": 108269
+  },
+  {
+    "file": "frames/frame-000466.png",
+    "timestamp": 1794627711.613739,
+    "bytes": 108325
+  },
+  {
+    "file": "frames/frame-000467.png",
+    "timestamp": 1794627711.641483,
+    "bytes": 108482
+  },
+  {
+    "file": "frames/frame-000468.png",
+    "timestamp": 1794627711.676187,
+    "bytes": 108698
+  },
+  {
+    "file": "frames/frame-000469.png",
+    "timestamp": 1794627711.697043,
+    "bytes": 108794
+  },
+  {
+    "file": "frames/frame-000470.png",
+    "timestamp": 1794627711.704954,
+    "bytes": 108873
+  },
+  {
+    "file": "frames/frame-000471.png",
+    "timestamp": 1794627711.828954,
+    "bytes": 109086
+  },
+  {
+    "file": "frames/frame-000472.png",
+    "timestamp": 1794627711.898403,
+    "bytes": 108836
+  },
+  {
+    "file": "frames/frame-000473.png",
+    "timestamp": 1794627711.905359,
+    "bytes": 108701
+  },
+  {
+    "file": "frames/frame-000474.png",
+    "timestamp": 1794627711.926224,
+    "bytes": 108706
+  },
+  {
+    "file": "frames/frame-000475.png",
+    "timestamp": 1794627711.995617,
+    "bytes": 107366
+  },
+  {
+    "file": "frames/frame-000476.png",
+    "timestamp": 1794627712.690069,
+    "bytes": 423457
+  },
+  {
+    "file": "frames/frame-000477.png",
+    "timestamp": 1794627713.801067,
+    "bytes": 423743
+  },
+  {
+    "file": "frames/frame-000478.png",
+    "timestamp": 1794627713.822133,
+    "bytes": 423411
+  },
+  {
+    "file": "frames/frame-000479.png",
+    "timestamp": 1794627713.849973,
+    "bytes": 423721
+  },
+  {
+    "file": "frames/frame-000480.png",
+    "timestamp": 1794627714.037307,
+    "bytes": 453862
+  },
+  {
+    "file": "frames/frame-000481.png",
+    "timestamp": 1794627714.051165,
+    "bytes": 453966
+  },
+  {
+    "file": "frames/frame-000482.png",
+    "timestamp": 1794627714.072103,
+    "bytes": 453893
+  },
+  {
+    "file": "frames/frame-000483.png",
+    "timestamp": 1794627714.1624,
+    "bytes": 454342
+  },
+  {
+    "file": "frames/frame-000484.png",
+    "timestamp": 1794627714.176225,
+    "bytes": 454541
+  },
+  {
+    "file": "frames/frame-000485.png",
+    "timestamp": 1794627714.196997,
+    "bytes": 454631
+  },
+  {
+    "file": "frames/frame-000486.png",
+    "timestamp": 1794627714.287322,
+    "bytes": 380196
+  },
+  {
+    "file": "frames/frame-000487.png",
+    "timestamp": 1794627714.294291,
+    "bytes": 370938
+  },
+  {
+    "file": "frames/frame-000488.png",
+    "timestamp": 1794627714.315086,
+    "bytes": 368934
+  },
+  {
+    "file": "frames/frame-000489.png",
+    "timestamp": 1794627714.377563,
+    "bytes": 360371
+  },
+  {
+    "file": "frames/frame-000490.png",
+    "timestamp": 1794627714.391421,
+    "bytes": 359330
+  },
+  {
+    "file": "frames/frame-000491.png",
+    "timestamp": 1794627714.41226,
+    "bytes": 359034
+  },
+  {
+    "file": "frames/frame-000492.png",
+    "timestamp": 1794627714.495675,
+    "bytes": 347727
+  },
+  {
+    "file": "frames/frame-000493.png",
+    "timestamp": 1794627714.516455,
+    "bytes": 346879
+  },
+  {
+    "file": "frames/frame-000494.png",
+    "timestamp": 1794627714.544233,
+    "bytes": 324171
+  },
+  {
+    "file": "frames/frame-000495.png",
+    "timestamp": 1794627714.592866,
+    "bytes": 298802
+  },
+  {
+    "file": "frames/frame-000496.png",
+    "timestamp": 1794627714.613745,
+    "bytes": 298534
+  },
+  {
+    "file": "frames/frame-000497.png",
+    "timestamp": 1794627714.634478,
+    "bytes": 298520
+  },
+  {
+    "file": "frames/frame-000498.png",
+    "timestamp": 1794627714.697008,
+    "bytes": 298699
+  },
+  {
+    "file": "frames/frame-000499.png",
+    "timestamp": 1794627716.21782,
+    "bytes": 298723
+  },
+  {
+    "file": "frames/frame-000500.png",
+    "timestamp": 1794627716.231723,
+    "bytes": 298676
+  },
+  {
+    "file": "frames/frame-000501.png",
+    "timestamp": 1794627716.252717,
+    "bytes": 298744
+  },
+  {
+    "file": "frames/frame-000502.png",
+    "timestamp": 1794627716.322168,
+    "bytes": 298702
+  },
+  {
+    "file": "frames/frame-000503.png",
+    "timestamp": 1794627716.356745,
+    "bytes": 298765
+  },
+  {
+    "file": "frames/frame-000504.png",
+    "timestamp": 1794627716.460922,
+    "bytes": 380209
+  },
+  {
+    "file": "frames/frame-000505.png",
+    "timestamp": 1794627716.46782,
+    "bytes": 380235
+  },
+  {
+    "file": "frames/frame-000506.png",
+    "timestamp": 1794627716.488653,
+    "bytes": 380190
+  },
+  {
+    "file": "frames/frame-000507.png",
+    "timestamp": 1794627716.585907,
+    "bytes": 380991
+  },
+  {
+    "file": "frames/frame-000508.png",
+    "timestamp": 1794627716.592846,
+    "bytes": 357036
+  },
+  {
+    "file": "frames/frame-000509.png",
+    "timestamp": 1794627716.620658,
+    "bytes": 332730
+  },
+  {
+    "file": "frames/frame-000510.png",
+    "timestamp": 1794627716.697034,
+    "bytes": 289000
+  },
+  {
+    "file": "frames/frame-000511.png",
+    "timestamp": 1794627716.717859,
+    "bytes": 288200
+  },
+  {
+    "file": "frames/frame-000512.png",
+    "timestamp": 1794627716.73174,
+    "bytes": 275085
+  },
+  {
+    "file": "frames/frame-000513.png",
+    "timestamp": 1794627716.794339,
+    "bytes": 274973
+  },
+  {
+    "file": "frames/frame-000514.png",
+    "timestamp": 1794627716.815157,
+    "bytes": 274937
+  },
+  {
+    "file": "frames/frame-000515.png",
+    "timestamp": 1794627716.828941,
+    "bytes": 274944
+  },
+  {
+    "file": "frames/frame-000516.png",
+    "timestamp": 1794627716.884602,
+    "bytes": 274433
+  },
+  {
+    "file": "frames/frame-000517.png",
+    "timestamp": 1794627716.905387,
+    "bytes": 274217
+  },
+  {
+    "file": "frames/frame-000518.png",
+    "timestamp": 1794627716.91921,
+    "bytes": 274139
+  },
+  {
+    "file": "frames/frame-000519.png",
+    "timestamp": 1794627716.981775,
+    "bytes": 272867
+  },
+  {
+    "file": "frames/frame-000520.png",
+    "timestamp": 1794627717.474804,
+    "bytes": 272867
+  },
+  {
+    "file": "frames/frame-000521.png",
+    "timestamp": 1794627718.912326,
+    "bytes": 272845
+  },
+  {
+    "file": "frames/frame-000522.png",
+    "timestamp": 1794627718.926328,
+    "bytes": 272752
+  },
+  {
+    "file": "frames/frame-000523.png",
+    "timestamp": 1794627718.96088,
+    "bytes": 272713
+  },
+  {
+    "file": "frames/frame-000524.png",
+    "timestamp": 1794627719.044191,
+    "bytes": 272806
+  },
+  {
+    "file": "frames/frame-000525.png",
+    "timestamp": 1794627719.071959,
+    "bytes": 272783
+  },
+  {
+    "file": "frames/frame-000526.png",
+    "timestamp": 1794627719.190017,
+    "bytes": 288671
+  },
+  {
+    "file": "frames/frame-000527.png",
+    "timestamp": 1794627719.224757,
+    "bytes": 288833
+  },
+  {
+    "file": "frames/frame-000528.png",
+    "timestamp": 1794627719.231704,
+    "bytes": 289015
+  },
+  {
+    "file": "frames/frame-000529.png",
+    "timestamp": 1794627719.273371,
+    "bytes": 289102
+  },
+  {
+    "file": "frames/frame-000530.png",
+    "timestamp": 1794627719.294175,
+    "bytes": 289328
+  },
+  {
+    "file": "frames/frame-000531.png",
+    "timestamp": 1794627719.328923,
+    "bytes": 285210
+  },
+  {
+    "file": "frames/frame-000532.png",
+    "timestamp": 1794627719.349805,
+    "bytes": 285115
+  },
+  {
+    "file": "frames/frame-000533.png",
+    "timestamp": 1794627719.384504,
+    "bytes": 285258
+  },
+  {
+    "file": "frames/frame-000534.png",
+    "timestamp": 1794627719.419194,
+    "bytes": 285460
+  },
+  {
+    "file": "frames/frame-000535.png",
+    "timestamp": 1794627719.460886,
+    "bytes": 285636
+  },
+  {
+    "file": "frames/frame-000536.png",
+    "timestamp": 1794627719.495587,
+    "bytes": 285731
+  },
+  {
+    "file": "frames/frame-000537.png",
+    "timestamp": 1794627719.523363,
+    "bytes": 285783
+  },
+  {
+    "file": "frames/frame-000538.png",
+    "timestamp": 1794627719.551156,
+    "bytes": 285843
+  },
+  {
+    "file": "frames/frame-000539.png",
+    "timestamp": 1794627719.578945,
+    "bytes": 285731
+  },
+  {
+    "file": "frames/frame-000540.png",
+    "timestamp": 1794627719.61365,
+    "bytes": 285575
+  },
+  {
+    "file": "frames/frame-000541.png",
+    "timestamp": 1794627719.64142,
+    "bytes": 285171
+  },
+  {
+    "file": "frames/frame-000542.png",
+    "timestamp": 1794627719.676144,
+    "bytes": 284412
+  },
+  {
+    "file": "frames/frame-000543.png",
+    "timestamp": 1794627720.120622,
+    "bytes": 283915
+  },
+  {
+    "file": "frames/frame-000544.png",
+    "timestamp": 1794627720.141458,
+    "bytes": 283894
+  },
+  {
+    "file": "frames/frame-000545.png",
+    "timestamp": 1794627720.183166,
+    "bytes": 284265
+  },
+  {
+    "file": "frames/frame-000546.png",
+    "timestamp": 1794627720.259467,
+    "bytes": 283832
+  },
+  {
+    "file": "frames/frame-000547.png",
+    "timestamp": 1794627720.323195,
+    "bytes": 283493
+  },
+  {
+    "file": "frames/frame-000548.png",
+    "timestamp": 1794627720.335859,
+    "bytes": 283398
+  },
+  {
+    "file": "frames/frame-000549.png",
+    "timestamp": 1794627720.384488,
+    "bytes": 283535
+  },
+  {
+    "file": "frames/frame-000550.png",
+    "timestamp": 1794627720.412252,
+    "bytes": 284061
+  },
+  {
+    "file": "frames/frame-000551.png",
+    "timestamp": 1794627720.42613,
+    "bytes": 284162
+  },
+  {
+    "file": "frames/frame-000552.png",
+    "timestamp": 1794627720.481789,
+    "bytes": 284600
+  },
+  {
+    "file": "frames/frame-000553.png",
+    "timestamp": 1794627720.516554,
+    "bytes": 284764
+  },
+  {
+    "file": "frames/frame-000554.png",
+    "timestamp": 1794627720.530302,
+    "bytes": 284862
+  },
+  {
+    "file": "frames/frame-000555.png",
+    "timestamp": 1794627720.544189,
+    "bytes": 298118
+  },
+  {
+    "file": "frames/frame-000556.png",
+    "timestamp": 1794627720.59278,
+    "bytes": 308127
+  },
+  {
+    "file": "frames/frame-000557.png",
+    "timestamp": 1794627720.62055,
+    "bytes": 308742
+  },
+  {
+    "file": "frames/frame-000558.png",
+    "timestamp": 1794627720.655297,
+    "bytes": 308744
+  },
+  {
+    "file": "frames/frame-000559.png",
+    "timestamp": 1794627720.690002,
+    "bytes": 308828
+  },
+  {
+    "file": "frames/frame-000560.png",
+    "timestamp": 1794627720.71085,
+    "bytes": 308808
+  },
+  {
+    "file": "frames/frame-000561.png",
+    "timestamp": 1794627720.752475,
+    "bytes": 309311
+  },
+  {
+    "file": "frames/frame-000562.png",
+    "timestamp": 1794627720.801113,
+    "bytes": 308799
+  },
+  {
+    "file": "frames/frame-000563.png",
+    "timestamp": 1794627720.821935,
+    "bytes": 308893
+  },
+  {
+    "file": "frames/frame-000564.png",
+    "timestamp": 1794627720.828885,
+    "bytes": 308841
+  },
+  {
+    "file": "frames/frame-000565.png",
+    "timestamp": 1794627720.884487,
+    "bytes": 307598
+  },
+  {
+    "file": "frames/frame-000566.png",
+    "timestamp": 1794627720.905349,
+    "bytes": 307673
+  },
+  {
+    "file": "frames/frame-000567.png",
+    "timestamp": 1794627720.933131,
+    "bytes": 307409
+  },
+  {
+    "file": "frames/frame-000568.png",
+    "timestamp": 1794627720.988605,
+    "bytes": 307346
+  },
+  {
+    "file": "frames/frame-000569.png",
+    "timestamp": 1794627721.009477,
+    "bytes": 308584
+  },
+  {
+    "file": "frames/frame-000570.png",
+    "timestamp": 1794627721.141382,
+    "bytes": 237116
+  },
+  {
+    "file": "frames/frame-000571.png",
+    "timestamp": 1794627721.245554,
+    "bytes": 237094
+  },
+  {
+    "file": "frames/frame-000572.png",
+    "timestamp": 1794627721.259507,
+    "bytes": 236239
+  },
+  {
+    "file": "frames/frame-000573.png",
+    "timestamp": 1794627721.287265,
+    "bytes": 237346
+  },
+  {
+    "file": "frames/frame-000574.png",
+    "timestamp": 1794627721.328936,
+    "bytes": 237122
+  },
+  {
+    "file": "frames/frame-000575.png",
+    "timestamp": 1794627721.356671,
+    "bytes": 237238
+  },
+  {
+    "file": "frames/frame-000576.png",
+    "timestamp": 1794627721.398337,
+    "bytes": 236703
+  },
+  {
+    "file": "frames/frame-000577.png",
+    "timestamp": 1794627721.495586,
+    "bytes": 233086
+  },
+  {
+    "file": "frames/frame-000578.png",
+    "timestamp": 1794627721.613585,
+    "bytes": 233070
+  },
+  {
+    "file": "frames/frame-000579.png",
+    "timestamp": 1794627721.634436,
+    "bytes": 234208
+  },
+  {
+    "file": "frames/frame-000580.png",
+    "timestamp": 1794627721.669152,
+    "bytes": 234067
+  },
+  {
+    "file": "frames/frame-000581.png",
+    "timestamp": 1794627721.689969,
+    "bytes": 233256
+  },
+  {
+    "file": "frames/frame-000582.png",
+    "timestamp": 1794627721.794156,
+    "bytes": 234109
+  },
+  {
+    "file": "frames/frame-000583.png",
+    "timestamp": 1794627721.814982,
+    "bytes": 233620
+  },
+  {
+    "file": "frames/frame-000584.png",
+    "timestamp": 1794627721.905259,
+    "bytes": 234235
+  },
+  {
+    "file": "frames/frame-000585.png",
+    "timestamp": 1794627722.037205,
+    "bytes": 234174
+  },
+  {
+    "file": "frames/frame-000586.png",
+    "timestamp": 1794627722.058082,
+    "bytes": 233712
+  },
+  {
+    "file": "frames/frame-000587.png",
+    "timestamp": 1794627722.085857,
+    "bytes": 233555
+  },
+  {
+    "file": "frames/frame-000588.png",
+    "timestamp": 1794627722.113656,
+    "bytes": 234042
+  },
+  {
+    "file": "frames/frame-000589.png",
+    "timestamp": 1794627722.155289,
+    "bytes": 233941
+  },
+  {
+    "file": "frames/frame-000590.png",
+    "timestamp": 1794627722.162195,
+    "bytes": 234040
+  },
+  {
+    "file": "frames/frame-000591.png",
+    "timestamp": 1794627722.210868,
+    "bytes": 234110
+  },
+  {
+    "file": "frames/frame-000592.png",
+    "timestamp": 1794627722.238607,
+    "bytes": 234111
+  },
+  {
+    "file": "frames/frame-000593.png",
+    "timestamp": 1794627722.245581,
+    "bytes": 234128
+  },
+  {
+    "file": "frames/frame-000594.png",
+    "timestamp": 1794627722.294159,
+    "bytes": 177451
+  },
+  {
+    "file": "frames/frame-000595.png",
+    "timestamp": 1794627722.335844,
+    "bytes": 177605
+  },
+  {
+    "file": "frames/frame-000596.png",
+    "timestamp": 1794627722.342786,
+    "bytes": 177746
+  },
+  {
+    "file": "frames/frame-000597.png",
+    "timestamp": 1794627722.391399,
+    "bytes": 177903
+  },
+  {
+    "file": "frames/frame-000598.png",
+    "timestamp": 1794627722.405262,
+    "bytes": 177717
+  },
+  {
+    "file": "frames/frame-000599.png",
+    "timestamp": 1794627722.419167,
+    "bytes": 177784
+  },
+  {
+    "file": "frames/frame-000600.png",
+    "timestamp": 1794627722.474889,
+    "bytes": 177986
+  },
+  {
+    "file": "frames/frame-000601.png",
+    "timestamp": 1794627722.488631,
+    "bytes": 178128
+  },
+  {
+    "file": "frames/frame-000602.png",
+    "timestamp": 1794627722.516429,
+    "bytes": 178139
+  },
+  {
+    "file": "frames/frame-000603.png",
+    "timestamp": 1794627722.57889,
+    "bytes": 178354
+  },
+  {
+    "file": "frames/frame-000604.png",
+    "timestamp": 1794627722.585843,
+    "bytes": 178325
+  },
+  {
+    "file": "frames/frame-000605.png",
+    "timestamp": 1794627722.606678,
+    "bytes": 178342
+  },
+  {
+    "file": "frames/frame-000606.png",
+    "timestamp": 1794627722.669184,
+    "bytes": 178424
+  },
+  {
+    "file": "frames/frame-000607.png",
+    "timestamp": 1794627722.683061,
+    "bytes": 178234
+  },
+  {
+    "file": "frames/frame-000608.png",
+    "timestamp": 1794627722.703917,
+    "bytes": 178147
+  },
+  {
+    "file": "frames/frame-000609.png",
+    "timestamp": 1794627722.766375,
+    "bytes": 177265
+  },
+  {
+    "file": "frames/frame-000610.png",
+    "timestamp": 1794627722.77334,
+    "bytes": 176707
+  },
+  {
+    "file": "frames/frame-000611.png",
+    "timestamp": 1794627722.794209,
+    "bytes": 176707
+  },
+  {
+    "file": "frames/frame-000612.png",
+    "timestamp": 1794627723.044288,
+    "bytes": 343810
+  },
+  {
+    "file": "frames/frame-000613.png",
+    "timestamp": 1794627723.058063,
+    "bytes": 343695
+  },
+  {
+    "file": "frames/frame-000614.png",
+    "timestamp": 1794627723.065064,
+    "bytes": 343992
+  },
+  {
+    "file": "frames/frame-000615.png",
+    "timestamp": 1794627723.155586,
+    "bytes": 345719
+  },
+  {
+    "file": "frames/frame-000616.png",
+    "timestamp": 1794627723.183056,
+    "bytes": 346395
+  },
+  {
+    "file": "frames/frame-000617.png",
+    "timestamp": 1794627723.190038,
+    "bytes": 360150
+  },
+  {
+    "file": "frames/frame-000618.png",
+    "timestamp": 1794627723.266426,
+    "bytes": 382737
+  },
+  {
+    "file": "frames/frame-000619.png",
+    "timestamp": 1794627723.301169,
+    "bytes": 371332
+  },
+  {
+    "file": "frames/frame-000620.png",
+    "timestamp": 1794627723.308073,
+    "bytes": 362063
+  },
+  {
+    "file": "frames/frame-000621.png",
+    "timestamp": 1794627723.377485,
+    "bytes": 321305
+  },
+  {
+    "file": "frames/frame-000622.png",
+    "timestamp": 1794627723.39149,
+    "bytes": 315643
+  },
+  {
+    "file": "frames/frame-000623.png",
+    "timestamp": 1794627723.412283,
+    "bytes": 314664
+  },
+  {
+    "file": "frames/frame-000624.png",
+    "timestamp": 1794627723.502549,
+    "bytes": 299362
+  },
+  {
+    "file": "frames/frame-000625.png",
+    "timestamp": 1794627723.516357,
+    "bytes": 298074
+  },
+  {
+    "file": "frames/frame-000626.png",
+    "timestamp": 1794627723.523421,
+    "bytes": 298349
+  },
+  {
+    "file": "frames/frame-000627.png",
+    "timestamp": 1794627723.599766,
+    "bytes": 297494
+  },
+  {
+    "file": "frames/frame-000628.png",
+    "timestamp": 1794627723.620567,
+    "bytes": 297437
+  },
+  {
+    "file": "frames/frame-000629.png",
+    "timestamp": 1794627723.627473,
+    "bytes": 297371
+  },
+  {
+    "file": "frames/frame-000630.png",
+    "timestamp": 1794627723.710867,
+    "bytes": 297319
+  },
+  {
+    "file": "frames/frame-000631.png",
+    "timestamp": 1794627723.717806,
+    "bytes": 297386
+  },
+  {
+    "file": "frames/frame-000632.png",
+    "timestamp": 1794627723.738592,
+    "bytes": 297386
+  },
+  {
+    "file": "frames/frame-000633.png",
+    "timestamp": 1794627724.308035,
+    "bytes": 297386
+  },
+  {
+    "file": "frames/frame-000634.png",
+    "timestamp": 1794627725.328869,
+    "bytes": 297339
+  },
+  {
+    "file": "frames/frame-000635.png",
+    "timestamp": 1794627725.342762,
+    "bytes": 297419
+  },
+  {
+    "file": "frames/frame-000636.png",
+    "timestamp": 1794627725.377605,
+    "bytes": 297039
+  },
+  {
+    "file": "frames/frame-000637.png",
+    "timestamp": 1794627725.523337,
+    "bytes": 296786
+  },
+  {
+    "file": "frames/frame-000638.png",
+    "timestamp": 1794627725.551144,
+    "bytes": 296793
+  },
+  {
+    "file": "frames/frame-000639.png",
+    "timestamp": 1794627725.571968,
+    "bytes": 296839
+  },
+  {
+    "file": "frames/frame-000640.png",
+    "timestamp": 1794627725.655246,
+    "bytes": 296698
+  },
+  {
+    "file": "frames/frame-000641.png",
+    "timestamp": 1794627725.683031,
+    "bytes": 296736
+  },
+  {
+    "file": "frames/frame-000642.png",
+    "timestamp": 1794627725.689967,
+    "bytes": 296773
+  },
+  {
+    "file": "frames/frame-000643.png",
+    "timestamp": 1794627725.766496,
+    "bytes": 109230
+  },
+  {
+    "file": "frames/frame-000644.png",
+    "timestamp": 1794627725.780228,
+    "bytes": 109319
+  },
+  {
+    "file": "frames/frame-000645.png",
+    "timestamp": 1794627725.794181,
+    "bytes": 109386
+  },
+  {
+    "file": "frames/frame-000646.png",
+    "timestamp": 1794627725.849707,
+    "bytes": 109537
+  },
+  {
+    "file": "frames/frame-000647.png",
+    "timestamp": 1794627725.85662,
+    "bytes": 109609
+  },
+  {
+    "file": "frames/frame-000648.png",
+    "timestamp": 1794627725.884438,
+    "bytes": 109720
+  },
+  {
+    "file": "frames/frame-000649.png",
+    "timestamp": 1794627725.919394,
+    "bytes": 109973
+  },
+  {
+    "file": "frames/frame-000650.png",
+    "timestamp": 1794627725.939993,
+    "bytes": 110082
+  },
+  {
+    "file": "frames/frame-000651.png",
+    "timestamp": 1794627725.953888,
+    "bytes": 110164
+  },
+  {
+    "file": "frames/frame-000652.png",
+    "timestamp": 1794627726.106616,
+    "bytes": 110369
+  },
+  {
+    "file": "frames/frame-000653.png",
+    "timestamp": 1794627726.127493,
+    "bytes": 110317
+  },
+  {
+    "file": "frames/frame-000654.png",
+    "timestamp": 1794627726.169214,
+    "bytes": 109846
+  },
+  {
+    "file": "frames/frame-000655.png",
+    "timestamp": 1794627726.189985,
+    "bytes": 109807
+  },
+  {
+    "file": "frames/frame-000656.png",
+    "timestamp": 1794627726.196883,
+    "bytes": 109127
+  },
+  {
+    "file": "frames/frame-000657.png",
+    "timestamp": 1794627726.940075,
+    "bytes": 263098
+  },
+  {
+    "file": "frames/frame-000658.png",
+    "timestamp": 1794627727.906275,
+    "bytes": 263397
+  },
+  {
+    "file": "frames/frame-000659.png",
+    "timestamp": 1794627727.912386,
+    "bytes": 263339
+  },
+  {
+    "file": "frames/frame-000660.png",
+    "timestamp": 1794627727.946898,
+    "bytes": 263343
+  },
+  {
+    "file": "frames/frame-000661.png",
+    "timestamp": 1794627728.037197,
+    "bytes": 263493
+  },
+  {
+    "file": "frames/frame-000662.png",
+    "timestamp": 1794627728.093676,
+    "bytes": 264652
+  },
+  {
+    "file": "frames/frame-000663.png",
+    "timestamp": 1794627728.231642,
+    "bytes": 265360
+  },
+  {
+    "file": "frames/frame-000664.png",
+    "timestamp": 1794627729.704457,
+    "bytes": 265348
+  },
+  {
+    "file": "frames/frame-000665.png",
+    "timestamp": 1794627729.710785,
+    "bytes": 265386
+  },
+  {
+    "file": "frames/frame-000666.png",
+    "timestamp": 1794627729.731667,
+    "bytes": 265193
+  },
+  {
+    "file": "frames/frame-000667.png",
+    "timestamp": 1794627729.78032,
+    "bytes": 265091
+  },
+  {
+    "file": "frames/frame-000668.png",
+    "timestamp": 1794627729.807984,
+    "bytes": 265145
+  },
+  {
+    "file": "frames/frame-000669.png",
+    "timestamp": 1794627729.815017,
+    "bytes": 265168
+  },
+  {
+    "file": "frames/frame-000670.png",
+    "timestamp": 1794627729.94694,
+    "bytes": 268463
+  },
+  {
+    "file": "frames/frame-000671.png",
+    "timestamp": 1794627731.106582,
+    "bytes": 265385
+  },
+  {
+    "file": "frames/frame-000672.png",
+    "timestamp": 1794627731.238518,
+    "bytes": 265385
+  },
+  {
+    "file": "frames/frame-000673.png",
+    "timestamp": 1794627731.245567,
+    "bytes": 265232
+  },
+  {
+    "file": "frames/frame-000674.png",
+    "timestamp": 1794627731.259368,
+    "bytes": 265209
+  },
+  {
+    "file": "frames/frame-000675.png",
+    "timestamp": 1794627731.328846,
+    "bytes": 262494
+  },
+  {
+    "file": "frames/frame-000676.png",
+    "timestamp": 1794627731.335809,
+    "bytes": 280446
+  },
+  {
+    "file": "frames/frame-000677.png",
+    "timestamp": 1794627731.356815,
+    "bytes": 277272
+  },
+  {
+    "file": "frames/frame-000678.png",
+    "timestamp": 1794627731.432996,
+    "bytes": 301296
+  },
+  {
+    "file": "frames/frame-000679.png",
+    "timestamp": 1794627731.440022,
+    "bytes": 299072
+  },
+  {
+    "file": "frames/frame-000680.png",
+    "timestamp": 1794627731.4608,
+    "bytes": 302356
+  },
+  {
+    "file": "frames/frame-000681.png",
+    "timestamp": 1794627731.516336,
+    "bytes": 301317
+  },
+  {
+    "file": "frames/frame-000682.png",
+    "timestamp": 1794627731.523273,
+    "bytes": 299121
+  },
+  {
+    "file": "frames/frame-000683.png",
+    "timestamp": 1794627731.551078,
+    "bytes": 297305
+  },
+  {
+    "file": "frames/frame-000684.png",
+    "timestamp": 1794627731.634438,
+    "bytes": 297386
+  },
+  {
+    "file": "frames/frame-000685.png",
+    "timestamp": 1794627731.648354,
+    "bytes": 296539
+  },
+  {
+    "file": "frames/frame-000686.png",
+    "timestamp": 1794627731.655188,
+    "bytes": 296316
+  },
+  {
+    "file": "frames/frame-000687.png",
+    "timestamp": 1794627733.196881,
+    "bytes": 295684
+  },
+  {
+    "file": "frames/frame-000688.png",
+    "timestamp": 1794627733.203854,
+    "bytes": 295101
+  },
+  {
+    "file": "frames/frame-000689.png",
+    "timestamp": 1794627733.231666,
+    "bytes": 293161
+  },
+  {
+    "file": "frames/frame-000690.png",
+    "timestamp": 1794627733.335782,
+    "bytes": 276647
+  },
+  {
+    "file": "frames/frame-000691.png",
+    "timestamp": 1794627733.433199,
+    "bytes": 244429
+  },
+  {
+    "file": "frames/frame-000692.png",
+    "timestamp": 1794627733.447117,
+    "bytes": 246209
+  },
+  {
+    "file": "frames/frame-000693.png",
+    "timestamp": 1794627733.481613,
+    "bytes": 238093
+  },
+  {
+    "file": "frames/frame-000694.png",
+    "timestamp": 1794627733.530264,
+    "bytes": 239975
+  },
+  {
+    "file": "frames/frame-000695.png",
+    "timestamp": 1794627733.537156,
+    "bytes": 231087
+  },
+  {
+    "file": "frames/frame-000696.png",
+    "timestamp": 1794627733.571884,
+    "bytes": 216936
+  },
+  {
+    "file": "frames/frame-000697.png",
+    "timestamp": 1794627733.627433,
+    "bytes": 212763
+  },
+  {
+    "file": "frames/frame-000698.png",
+    "timestamp": 1794627733.634388,
+    "bytes": 212747
+  },
+  {
+    "file": "frames/frame-000699.png",
+    "timestamp": 1794627733.662183,
+    "bytes": 212889
+  },
+  {
+    "file": "frames/frame-000700.png",
+    "timestamp": 1794627735.405195,
+    "bytes": 212984
+  },
+  {
+    "file": "frames/frame-000701.png",
+    "timestamp": 1794627735.419124,
+    "bytes": 212984
+  },
+  {
+    "file": "frames/frame-000702.png",
+    "timestamp": 1794627735.440007,
+    "bytes": 212995
+  },
+  {
+    "file": "frames/frame-000703.png",
+    "timestamp": 1794627735.544189,
+    "bytes": 212875
+  },
+  {
+    "file": "frames/frame-000704.png",
+    "timestamp": 1794627735.564944,
+    "bytes": 212864
+  },
+  {
+    "file": "frames/frame-000705.png",
+    "timestamp": 1794627735.669084,
+    "bytes": 263562
+  },
+  {
+    "file": "frames/frame-000706.png",
+    "timestamp": 1794627735.676017,
+    "bytes": 263565
+  },
+  {
+    "file": "frames/frame-000707.png",
+    "timestamp": 1794627735.703817,
+    "bytes": 263741
+  },
+  {
+    "file": "frames/frame-000708.png",
+    "timestamp": 1794627735.794054,
+    "bytes": 264175
+  },
+  {
+    "file": "frames/frame-000709.png",
+    "timestamp": 1794627735.801048,
+    "bytes": 264255
+  },
+  {
+    "file": "frames/frame-000710.png",
+    "timestamp": 1794627735.821827,
+    "bytes": 264559
+  },
+  {
+    "file": "frames/frame-000711.png",
+    "timestamp": 1794627735.877474,
+    "bytes": 239752
+  },
+  {
+    "file": "frames/frame-000712.png",
+    "timestamp": 1794627735.884404,
+    "bytes": 218700
+  },
+  {
+    "file": "frames/frame-000713.png",
+    "timestamp": 1794627735.905188,
+    "bytes": 222294
+  },
+  {
+    "file": "frames/frame-000714.png",
+    "timestamp": 1794627735.967668,
+    "bytes": 215324
+  },
+  {
+    "file": "frames/frame-000715.png",
+    "timestamp": 1794627735.97467,
+    "bytes": 215043
+  },
+  {
+    "file": "frames/frame-000716.png",
+    "timestamp": 1794627735.995489,
+    "bytes": 214874
+  },
+  {
+    "file": "frames/frame-000717.png",
+    "timestamp": 1794627736.051013,
+    "bytes": 214695
+  },
+  {
+    "file": "frames/frame-000718.png",
+    "timestamp": 1794627736.064916,
+    "bytes": 213389
+  },
+  {
+    "file": "frames/frame-000719.png",
+    "timestamp": 1794627736.071861,
+    "bytes": 213106
+  },
+  {
+    "file": "frames/frame-000720.png",
+    "timestamp": 1794627736.148256,
+    "bytes": 210603
+  },
+  {
+    "file": "frames/frame-000721.png",
+    "timestamp": 1794627736.155287,
+    "bytes": 209729
+  },
+  {
+    "file": "frames/frame-000722.png",
+    "timestamp": 1794627736.182987,
+    "bytes": 209729
+  },
+  {
+    "file": "frames/frame-000723.png",
+    "timestamp": 1794627737.717669,
+    "bytes": 209631
+  },
+  {
+    "file": "frames/frame-000724.png",
+    "timestamp": 1794627737.731591,
+    "bytes": 209594
+  },
+  {
+    "file": "frames/frame-000725.png",
+    "timestamp": 1794627737.766299,
+    "bytes": 209653
+  },
+  {
+    "file": "frames/frame-000726.png",
+    "timestamp": 1794627737.856603,
+    "bytes": 209584
+  },
+  {
+    "file": "frames/frame-000727.png",
+    "timestamp": 1794627737.891332,
+    "bytes": 209597
+  },
+  {
+    "file": "frames/frame-000728.png",
+    "timestamp": 1794627737.974638,
+    "bytes": 229206
+  },
+  {
+    "file": "frames/frame-000729.png",
+    "timestamp": 1794627737.981541,
+    "bytes": 229149
+  },
+  {
+    "file": "frames/frame-000730.png",
+    "timestamp": 1794627738.009368,
+    "bytes": 229373
+  },
+  {
+    "file": "frames/frame-000731.png",
+    "timestamp": 1794627738.06493,
+    "bytes": 229693
+  },
+  {
+    "file": "frames/frame-000732.png",
+    "timestamp": 1794627738.071868,
+    "bytes": 229615
+  },
+  {
+    "file": "frames/frame-000733.png",
+    "timestamp": 1794627738.092711,
+    "bytes": 229799
+  },
+  {
+    "file": "frames/frame-000734.png",
+    "timestamp": 1794627738.162081,
+    "bytes": 230606
+  },
+  {
+    "file": "frames/frame-000735.png",
+    "timestamp": 1794627738.176006,
+    "bytes": 230575
+  },
+  {
+    "file": "frames/frame-000736.png",
+    "timestamp": 1794627738.18989,
+    "bytes": 230753
+  },
+  {
+    "file": "frames/frame-000737.png",
+    "timestamp": 1794627738.238563,
+    "bytes": 230982
+  },
+  {
+    "file": "frames/frame-000738.png",
+    "timestamp": 1794627738.266243,
+    "bytes": 231108
+  },
+  {
+    "file": "frames/frame-000739.png",
+    "timestamp": 1794627738.273316,
+    "bytes": 231062
+  },
+  {
+    "file": "frames/frame-000740.png",
+    "timestamp": 1794627738.328734,
+    "bytes": 230935
+  },
+  {
+    "file": "frames/frame-000741.png",
+    "timestamp": 1794627738.356546,
+    "bytes": 231108
+  },
+  {
+    "file": "frames/frame-000742.png",
+    "timestamp": 1794627738.370436,
+    "bytes": 231026
+  },
+  {
+    "file": "frames/frame-000743.png",
+    "timestamp": 1794627738.426018,
+    "bytes": 247834
+  },
+  {
+    "file": "frames/frame-000744.png",
+    "timestamp": 1794627738.439888,
+    "bytes": 247496
+  },
+  {
+    "file": "frames/frame-000745.png",
+    "timestamp": 1794627738.460702,
+    "bytes": 246975
+  },
+  {
+    "file": "frames/frame-000746.png",
+    "timestamp": 1794627738.516277,
+    "bytes": 245916
+  },
+  {
+    "file": "frames/frame-000747.png",
+    "timestamp": 1794627738.537117,
+    "bytes": 245891
+  },
+  {
+    "file": "frames/frame-000748.png",
+    "timestamp": 1794627738.544073,
+    "bytes": 249634
+  },
+  {
+    "file": "frames/frame-000749.png",
+    "timestamp": 1794627738.606579,
+    "bytes": 255570
+  },
+  {
+    "file": "frames/frame-000750.png",
+    "timestamp": 1794627738.634367,
+    "bytes": 256129
+  },
+  {
+    "file": "frames/frame-000751.png",
+    "timestamp": 1794627738.641376,
+    "bytes": 257687
+  },
+  {
+    "file": "frames/frame-000752.png",
+    "timestamp": 1794627738.696814,
+    "bytes": 247889
+  },
+  {
+    "file": "frames/frame-000753.png",
+    "timestamp": 1794627738.71764,
+    "bytes": 247654
+  },
+  {
+    "file": "frames/frame-000754.png",
+    "timestamp": 1794627738.725297,
+    "bytes": 247573
+  },
+  {
+    "file": "frames/frame-000755.png",
+    "timestamp": 1794627738.787128,
+    "bytes": 242693
+  },
+  {
+    "file": "frames/frame-000756.png",
+    "timestamp": 1794627738.814915,
+    "bytes": 242346
+  },
+  {
+    "file": "frames/frame-000757.png",
+    "timestamp": 1794627738.821861,
+    "bytes": 242316
+  },
+  {
+    "file": "frames/frame-000758.png",
+    "timestamp": 1794627738.877381,
+    "bytes": 241136
+  },
+  {
+    "file": "frames/frame-000759.png",
+    "timestamp": 1794627739.412143,
+    "bytes": 241136
+  },
+  {
+    "file": "frames/frame-000760.png",
+    "timestamp": 1794627741.085938,
+    "bytes": 241136
+  },
+  {
+    "file": "frames/frame-000761.png",
+    "timestamp": 1794627741.093092,
+    "bytes": 241037
+  },
+  {
+    "file": "frames/frame-000762.png",
+    "timestamp": 1794627741.120501,
+    "bytes": 240959
+  },
+  {
+    "file": "frames/frame-000763.png",
+    "timestamp": 1794627741.217744,
+    "bytes": 254403
+  },
+  {
+    "file": "frames/frame-000764.png",
+    "timestamp": 1794627741.231517,
+    "bytes": 244678
+  },
+  {
+    "file": "frames/frame-000765.png",
+    "timestamp": 1794627741.287188,
+    "bytes": 246498
+  },
+  {
+    "file": "frames/frame-000766.png",
+    "timestamp": 1794627741.419088,
+    "bytes": 299432
+  },
+  {
+    "file": "frames/frame-000767.png",
+    "timestamp": 1794627741.446884,
+    "bytes": 304657
+  },
+  {
+    "file": "frames/frame-000768.png",
+    "timestamp": 1794627741.453837,
+    "bytes": 303496
+  },
+  {
+    "file": "frames/frame-000769.png",
+    "timestamp": 1794627741.509439,
+    "bytes": 275588
+  },
+  {
+    "file": "frames/frame-000770.png",
+    "timestamp": 1794627741.537122,
+    "bytes": 269805
+  },
+  {
+    "file": "frames/frame-000771.png",
+    "timestamp": 1794627741.544,
+    "bytes": 276100
+  },
+  {
+    "file": "frames/frame-000772.png",
+    "timestamp": 1794627741.606589,
+    "bytes": 259417
+  },
+  {
+    "file": "frames/frame-000773.png",
+    "timestamp": 1794627741.627379,
+    "bytes": 259504
+  },
+  {
+    "file": "frames/frame-000774.png",
+    "timestamp": 1794627741.634315,
+    "bytes": 264081
+  },
+  {
+    "file": "frames/frame-000775.png",
+    "timestamp": 1794627741.689894,
+    "bytes": 261926
+  },
+  {
+    "file": "frames/frame-000776.png",
+    "timestamp": 1794627741.71074,
+    "bytes": 261880
+  },
+  {
+    "file": "frames/frame-000777.png",
+    "timestamp": 1794627741.731742,
+    "bytes": 261763
+  },
+  {
+    "file": "frames/frame-000778.png",
+    "timestamp": 1794627741.794039,
+    "bytes": 257739
+  },
+  {
+    "file": "frames/frame-000779.png",
+    "timestamp": 1794627741.800936,
+    "bytes": 263035
+  },
+  {
+    "file": "frames/frame-000780.png",
+    "timestamp": 1794627741.821799,
+    "bytes": 263460
+  },
+  {
+    "file": "frames/frame-000781.png",
+    "timestamp": 1794627741.891296,
+    "bytes": 263824
+  },
+  {
+    "file": "frames/frame-000782.png",
+    "timestamp": 1794627741.898231,
+    "bytes": 263717
+  },
+  {
+    "file": "frames/frame-000783.png",
+    "timestamp": 1794627741.912118,
+    "bytes": 263717
+  },
+  {
+    "file": "frames/frame-000784.png",
+    "timestamp": 1794627742.502346,
+    "bytes": 263904
+  },
+  {
+    "file": "frames/frame-000785.png",
+    "timestamp": 1794627742.523172,
+    "bytes": 263928
+  },
+  {
+    "file": "frames/frame-000786.png",
+    "timestamp": 1794627742.55111,
+    "bytes": 264033
+  },
+  {
+    "file": "frames/frame-000787.png",
+    "timestamp": 1794627742.578818,
+    "bytes": 264157
+  },
+  {
+    "file": "frames/frame-000788.png",
+    "timestamp": 1794627742.606584,
+    "bytes": 263916
+  },
+  {
+    "file": "frames/frame-000789.png",
+    "timestamp": 1794627742.655155,
+    "bytes": 264119
+  },
+  {
+    "file": "frames/frame-000790.png",
+    "timestamp": 1794627742.662082,
+    "bytes": 264103
+  },
+  {
+    "file": "frames/frame-000791.png",
+    "timestamp": 1794627742.696779,
+    "bytes": 264112
+  },
+  {
+    "file": "frames/frame-000792.png",
+    "timestamp": 1794627742.759634,
+    "bytes": 264126
+  },
+  {
+    "file": "frames/frame-000793.png",
+    "timestamp": 1794627742.766222,
+    "bytes": 264188
+  },
+  {
+    "file": "frames/frame-000794.png",
+    "timestamp": 1794627742.793999,
+    "bytes": 264691
+  },
+  {
+    "file": "frames/frame-000795.png",
+    "timestamp": 1794627742.856512,
+    "bytes": 265094
+  },
+  {
+    "file": "frames/frame-000796.png",
+    "timestamp": 1794627742.863447,
+    "bytes": 265108
+  },
+  {
+    "file": "frames/frame-000797.png",
+    "timestamp": 1794627742.877334,
+    "bytes": 265440
+  },
+  {
+    "file": "frames/frame-000798.png",
+    "timestamp": 1794627742.953755,
+    "bytes": 265717
+  },
+  {
+    "file": "frames/frame-000799.png",
+    "timestamp": 1794627742.960721,
+    "bytes": 265795
+  },
+  {
+    "file": "frames/frame-000800.png",
+    "timestamp": 1794627742.98155,
+    "bytes": 265753
+  },
+  {
+    "file": "frames/frame-000801.png",
+    "timestamp": 1794627743.057909,
+    "bytes": 266273
+  },
+  {
+    "file": "frames/frame-000802.png",
+    "timestamp": 1794627743.06488,
+    "bytes": 266524
+  },
+  {
+    "file": "frames/frame-000803.png",
+    "timestamp": 1794627743.078817,
+    "bytes": 266541
+  },
+  {
+    "file": "frames/frame-000804.png",
+    "timestamp": 1794627743.141258,
+    "bytes": 266554
+  },
+  {
+    "file": "frames/frame-000805.png",
+    "timestamp": 1794627743.169007,
+    "bytes": 266572
+  },
+  {
+    "file": "frames/frame-000806.png",
+    "timestamp": 1794627743.189876,
+    "bytes": 266234
+  },
+  {
+    "file": "frames/frame-000807.png",
+    "timestamp": 1794627743.24544,
+    "bytes": 266655
+  },
+  {
+    "file": "frames/frame-000808.png",
+    "timestamp": 1794627743.259282,
+    "bytes": 265921
+  },
+  {
+    "file": "frames/frame-000809.png",
+    "timestamp": 1794627743.266222,
+    "bytes": 265126
+  },
+  {
+    "file": "frames/frame-000810.png",
+    "timestamp": 1794627743.328791,
+    "bytes": 264577
+  },
+  {
+    "file": "frames/frame-000811.png",
+    "timestamp": 1794627743.439843,
+    "bytes": 264577
+  },
+  {
+    "file": "frames/frame-000812.png",
+    "timestamp": 1794627745.592637,
+    "bytes": 264577
+  }
+]

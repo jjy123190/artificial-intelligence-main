@@ -1,0 +1,31 @@
+{
+  "published_at": "2026-11-13T23:45:06.752686+08:00",
+  "pptx": "deliverables/lab3/第31组_实验三_汇报.pptx",
+  "pptx_sha256": "253a62900d55de14cc20e364b8b1eaf199301469c58d42a5f64f248b3cfd6c54",
+  "slides": 18,
+  "main_slides": 16,
+  "appendix_slides": 2,
+  "support_files_sha256": {
+    "build_ppt.py": "904de6c84a37c6b0b71ab1681511a210642c5228feff454e95a6ad82452f04c6",
+    "export_ppt.py": "29caaa712c4931ea537ea1c9bce26c9240307720fe95f4b03c3d979363a0a322",
+    "verify_ppt.py": "1173aa578189fb6ac5e2ea9b4eb738b9b78762865572d9c6c5e7886027588f7d",
+    "README_新版PPT.md": "1901b36611eb42ea35165e3cdf4f15deb31caa4226789821dc07bee789765e43",
+    "outline.md": "99ecee7ba00e2e97d8bec229b39516b5a9a2fe4b9495be40923baf2c79b4c2e0",
+    "source/deck_spec.json": "1a779986bd5a83745ba819b71b699b707ae3349e4bed00e45ecf8a6b57a00081",
+    "source/report_content.json": "1e41fad44c65ef121bf049252c4df85b169959d11828eee9dd1ccec26973125f",
+    "source/ui_capture.json": "417f20ae59b0725954312637408ada949bad126b88c6309497dd4f180ebd24e5",
+    "source/第31组_实验三_实验报告.docx": "fac893732800580e8cf788cd7254db5538e5dd37ab99a0f86079b0c240e4afc1",
+    "source/第31组_实验三_实验报告.pdf": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99",
+    "source/第31组_实验三_实验报告-制作开始快照.docx": "48e98b75d0d48d6c81dc6fe98e5c6f11ccbda24ca1493e6ee8425168e30adf60",
+    "draft/第31组_实验三_汇报.pptx": "253a62900d55de14cc20e364b8b1eaf199301469c58d42a5f64f248b3cfd6c54",
+    "draft/第31组_实验三_汇报.pdf": "6eb56ae2e5cac922618d8653d6a33c0d29870b1add948a22309f4aef04408cbc",
+    "assets/current_lab3_entry.png": "df58e23d8820c07bda883e97378adba8240ec8b62bbccc3e7baf523411173a83",
+    "qa/protected_before.json": "f9d59bfd26688a412cf772f9052d9ab332322b14086e101b0d1d4982efcc7daf",
+    "qa/user_report_saved_during_build.json": "85ead0a06500777585a107212430ed3de60bfab575b48cdc5e218f332167db40",
+    "qa/ppt_validation.json": "89bbdfddc0fb0e2f8de35b54ff06442d042696e4dcb09d81c9c034499b042c2c",
+    "qa/visual_review.json": "fec0c4697a7233b75adeef2cee6345165935a89e4a7992e7794c390d7bb5aa7c",
+    "qa/office_geometry.json": "5d2d32a630c039228c9c79d15350e111bb7c937b879130c3aa4f9eca76a224e8"
+  },
+  "current_report_docx_sha256": "fac893732800580e8cf788cd7254db5538e5dd37ab99a0f86079b0c240e4afc1",
+  "report_pdf_sha256": "43ddeea4b1d9ac5b2c7ee0a159eaa7768bade5239f9a034e95e585d87e35ab99"
+}

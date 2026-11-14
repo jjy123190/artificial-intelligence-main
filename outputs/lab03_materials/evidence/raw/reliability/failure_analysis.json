@@ -1,0 +1,177 @@
+{
+  "source": "post-hoc extraction from frozen fourth-stage saved results; no tuning",
+  "protocol_sha256": "2d84ef91d6862865be6e130cc39dea8922622463dfdf7b50054bd7416b382835",
+  "search_failures_budget8": [
+    {
+      "query_id": "reliability_confirmation_shift-7001-2-Q2",
+      "graph_id": "reliability_confirmation_shift-7001-2",
+      "split": "reliability_confirmation_shift",
+      "budget": 8,
+      "method": "astar_fixed",
+      "before": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 67,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "after": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 67,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "proof_pruned": 15,
+      "proof_checks": 24,
+      "peak_frontier": 5
+    },
+    {
+      "query_id": "reliability_confirmation_shift-7001-2-Q2",
+      "graph_id": "reliability_confirmation_shift-7001-2",
+      "split": "reliability_confirmation_shift",
+      "budget": 8,
+      "method": "astar_ga",
+      "before": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 76,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "after": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 76,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "proof_pruned": 15,
+      "proof_checks": 24,
+      "peak_frontier": 5
+    },
+    {
+      "query_id": "reliability_confirmation_shift-7001-2-Q2",
+      "graph_id": "reliability_confirmation_shift-7001-2",
+      "split": "reliability_confirmation_shift",
+      "budget": 8,
+      "method": "hybrid",
+      "before": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 76,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "after": {
+        "valid": false,
+        "found": false,
+        "expanded": 8,
+        "total_work": 8,
+        "total_edge_checks": 76,
+        "status": "budget_exhausted",
+        "hops": null
+      },
+      "proof_pruned": 15,
+      "proof_checks": 24,
+      "peak_frontier": 5
+    }
+  ],
+  "llm_calibrated_errors": [
+    {
+      "query_id": "reliability_confirmation-9001-0-Q1",
+      "path_edges": [
+        "reliability_confirmation-9001-0-R0105"
+      ],
+      "legality_prompt": "Is every condition true? verified must be True; active must be True; minimum_confidence must be at least 0.55.\nverified=True; active=True; minimum_confidence=0.26\nReturn True if all three conditions hold, otherwise False. Result:",
+      "expected": false,
+      "raw_legal": true,
+      "calibrated_legal": true,
+      "calibrated_confidence": 0.8723074651832762
+    }
+  ],
+  "numeric_calibrated_errors": [
+    {
+      "confidence": 0.0,
+      "verified": true,
+      "active": true,
+      "target": false,
+      "raw_legal": true,
+      "raw_probabilities": [
+        0.7939066290855408,
+        0.20609334111213684
+      ],
+      "calibrated_legal": true,
+      "calibrated_probability": 0.9778379171525392
+    },
+    {
+      "confidence": 0.62041,
+      "verified": true,
+      "active": true,
+      "target": true,
+      "raw_legal": true,
+      "raw_probabilities": [
+        0.7939899563789368,
+        0.20601002871990204
+      ],
+      "calibrated_legal": false,
+      "calibrated_probability": 0.2947362655535712
+    },
+    {
+      "confidence": 0.57637,
+      "verified": true,
+      "active": true,
+      "target": true,
+      "raw_legal": true,
+      "raw_probabilities": [
+        0.8040758967399597,
+        0.1959240883588791
+      ],
+      "calibrated_legal": false,
+      "calibrated_probability": 0.01685896062578624
+    }
+  ],
+  "numeric_raw": {
+    "total": 100,
+    "eligible": 13,
+    "ineligible": 87,
+    "true_legal": 13,
+    "true_illegal": 75,
+    "false_accept": 12,
+    "false_reject": 0,
+    "accuracy": 0.88,
+    "eligible_recall": 1.0,
+    "ineligible_recall": 0.8620689655172413,
+    "false_accept_rate": 0.13793103448275862,
+    "balanced_accuracy": 0.9310344827586207,
+    "always_legal_accuracy": 0.13,
+    "note": "合法为正类；总体一致率受类比例影响，必须同时查看不合法证据检出率和误放行数。"
+  },
+  "numeric_calibrated": {
+    "total": 100,
+    "eligible": 13,
+    "ineligible": 87,
+    "true_legal": 11,
+    "true_illegal": 86,
+    "false_accept": 1,
+    "false_reject": 2,
+    "accuracy": 0.97,
+    "eligible_recall": 0.8461538461538461,
+    "ineligible_recall": 0.9885057471264368,
+    "false_accept_rate": 0.011494252873563218,
+    "balanced_accuracy": 0.9173297966401415,
+    "always_legal_accuracy": 0.13,
+    "note": "合法为正类；总体一致率受类比例影响，必须同时查看不合法证据检出率和误放行数。"
+  },
+  "interpretation": "Safety rules reject invalid evidence but cannot guarantee ranking or finite-budget completeness. The learned readout reduces false accepts but raises false rejects under precision shift. These are failures, not evidence of universal improvement."
+}

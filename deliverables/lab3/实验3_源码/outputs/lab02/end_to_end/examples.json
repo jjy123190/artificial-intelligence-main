@@ -1,0 +1,1593 @@
+{
+  "extra_false_positive": {
+    "seed": 7,
+    "scenario": "clean",
+    "sample_id": "g7-test-000002",
+    "label": 0,
+    "oracle_alerts": [
+      "循环持股"
+    ],
+    "request": {
+      "case": {
+        "schema_version": 1,
+        "entities": [
+          {
+            "eid": "g7-test-000002_P0",
+            "name": "教学自然人0",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000002_P1",
+            "name": "教学自然人1",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000002_P2",
+            "name": "教学自然人2",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000002_C0",
+            "name": "教学企业0",
+            "kind": "Company",
+            "category": "上市公司",
+            "capital": 39000.0,
+            "opacity": 0.2505455581170067,
+            "disclosure": 0.7494544418829934
+          },
+          {
+            "eid": "g7-test-000002_C1",
+            "name": "教学企业1",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 11000.0,
+            "opacity": 0.1114725518794497,
+            "disclosure": 0.8885274481205503
+          },
+          {
+            "eid": "g7-test-000002_C2",
+            "name": "教学企业2",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 8000.0,
+            "opacity": 0.33897543237888833,
+            "disclosure": 0.6610245676211117
+          },
+          {
+            "eid": "g7-test-000002_C3",
+            "name": "教学企业3",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 40000.0,
+            "opacity": 0.2368714217651943,
+            "disclosure": 0.7631285782348057
+          },
+          {
+            "eid": "g7-test-000002_C4",
+            "name": "教学企业4",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 54000.0,
+            "opacity": 0.07860986099127498,
+            "disclosure": 0.921390139008725
+          },
+          {
+            "eid": "g7-test-000002_C5",
+            "name": "教学企业5",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 41000.0,
+            "opacity": 0.0610007458704451,
+            "disclosure": 0.9389992541295549
+          },
+          {
+            "eid": "g7-test-000002_C6",
+            "name": "教学企业6",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 78000.0,
+            "opacity": 0.02683870789885109,
+            "disclosure": 0.9731612921011489
+          }
+        ],
+        "holdings": [
+          {
+            "holder": "g7-test-000002_P0",
+            "target": "g7-test-000002_C1",
+            "ratio": 0.8,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_C1",
+            "target": "g7-test-000002_C2",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_P0",
+            "target": "g7-test-000002_C3",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_C2",
+            "target": "g7-test-000002_C0",
+            "ratio": 0.22,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_C1",
+            "target": "g7-test-000002_C0",
+            "ratio": 0.1,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_P1",
+            "target": "g7-test-000002_C0",
+            "ratio": 0.54,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_P2",
+            "target": "g7-test-000002_C4",
+            "ratio": 0.6,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_C0",
+            "target": "g7-test-000002_C4",
+            "ratio": 0.25,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_P1",
+            "target": "g7-test-000002_C5",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_P2",
+            "target": "g7-test-000002_C6",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000002_C4",
+            "target": "g7-test-000002_C0",
+            "ratio": 0.12,
+            "since": "",
+            "layered": false
+          }
+        ],
+        "guarantees": [
+          {
+            "guarantor": "g7-test-000002_C0",
+            "beneficiary": "g7-test-000002_C5",
+            "amount": 2160.48
+          },
+          {
+            "guarantor": "g7-test-000002_C5",
+            "beneficiary": "g7-test-000002_C6",
+            "amount": 6224.79
+          }
+        ],
+        "trades": [
+          {
+            "seller": "g7-test-000002_C3",
+            "buyer": "g7-test-000002_C0",
+            "amount": 5803.39
+          },
+          {
+            "seller": "g7-test-000002_C6",
+            "buyer": "g7-test-000002_C0",
+            "amount": 1917.0
+          }
+        ],
+        "kinships": [],
+        "source": "合成股权图 v1；seed=7；split=test；观测条件=clean（不含标签或干净图真值）",
+        "label": "g7-test-000002"
+      },
+      "target_id": "g7-test-000002_C0",
+      "completeness": {
+        "holdings": true,
+        "trades": true,
+        "guarantees": true,
+        "registry": true
+      }
+    },
+    "unlocked": {
+      "score": 0.425054268901773,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "中",
+      "decision_threshold": 0.5,
+      "lock_structure": false,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": true,
+      "priority_floor_violation": true,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "Alert",
+          "g7-test-000002_C0",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P2"
+        ],
+        [
+          "Controls",
+          "g7-test-000002_P1",
+          "g7-test-000002_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "高"
+        ]
+      ],
+      "locked_facts": [],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000002_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_unlocked",
+      "observation": {
+        "company_id": "g7-test-000002_C0",
+        "values": {
+          "opacity": 0.2505455581170067,
+          "related_trade": 0.0,
+          "guarantee": 0.05539692307692308,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.7494544418829934
+      },
+      "preparation_ms": 4.621300031431019,
+      "decision_ms": 0.3372999490238726,
+      "end_to_end_ms": 4.958599980454892,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      }
+    },
+    "locked": {
+      "score": 0.425054268901773,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "Alert",
+          "g7-test-000002_C0",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P2"
+        ],
+        [
+          "Controls",
+          "g7-test-000002_P1",
+          "g7-test-000002_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "Alert",
+          "g7-test-000002_C0",
+          "循环持股"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000002_C0",
+          "g7-test-000002_P2"
+        ],
+        [
+          "Controls",
+          "g7-test-000002_P1",
+          "g7-test-000002_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000002_C0",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "循环持股"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000002_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_locked",
+      "observation": {
+        "company_id": "g7-test-000002_C0",
+        "values": {
+          "opacity": 0.2505455581170067,
+          "related_trade": 0.0,
+          "guarantee": 0.05539692307692308,
+          "cycle": 1.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.7494544418829934
+      },
+      "preparation_ms": 4.621300031431019,
+      "decision_ms": 0.7066999678499997,
+      "end_to_end_ms": 5.327999999281019,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.21506728239398087,
+        "fuzzy": 0.6740555978615378,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "g7-test-000002_C0",
+            "g7-test-000002_P1"
+          ],
+          "lines": [
+            "• ActualController(g7-test-000002_C0,g7-test-000002_P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(g7-test-000002_P1,g7-test-000002_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(g7-test-000002_P1,g7-test-000002_C0) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(g7-test-000002_P1,g7-test-000002_C0,0.54) [输入/预处理事实]",
+            "    • Person(g7-test-000002_P1) [输入/预处理事实]",
+            "    • Company(g7-test-000002_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "g7-test-000002_C0",
+            "循环持股"
+          ],
+          "lines": [
+            "• Alert(g7-test-000002_C0,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "    • HoldReach(g7-test-000002_C0,g7-test-000002_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(g7-test-000002_C0,g7-test-000002_C4) ⇐ R10 持股可达：基础边",
+            "            • Holds(g7-test-000002_C0,g7-test-000002_C4,0.25) [输入/预处理事实]",
+            "        • Holds(g7-test-000002_C4,g7-test-000002_C0,0.12) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000002_C0",
+            "g7-test-000002_P0"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000002_C0,g7-test-000002_P0) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000002_P0,g7-test-000002_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(g7-test-000002_P0,g7-test-000002_C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(g7-test-000002_P0,g7-test-000002_C1,0.8) [输入/预处理事实]",
+            "        • Holds(g7-test-000002_C1,g7-test-000002_C0,0.1) [输入/预处理事实]",
+            "    • Person(g7-test-000002_P0) [输入/预处理事实]",
+            "    • Company(g7-test-000002_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000002_C0",
+            "g7-test-000002_P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000002_C0,g7-test-000002_P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000002_P1,g7-test-000002_C0) ⇐ R10 持股可达：基础边",
+            "        • Holds(g7-test-000002_P1,g7-test-000002_C0,0.54) [输入/预处理事实]",
+            "    • Person(g7-test-000002_P1) [输入/预处理事实]",
+            "    • Company(g7-test-000002_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000002_C0",
+            "g7-test-000002_P2"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000002_C0,g7-test-000002_P2) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000002_P2,g7-test-000002_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(g7-test-000002_P2,g7-test-000002_C4) ⇐ R10 持股可达：基础边",
+            "            • Holds(g7-test-000002_P2,g7-test-000002_C4,0.6) [输入/预处理事实]",
+            "        • Holds(g7-test-000002_C4,g7-test-000002_C0,0.12) [输入/预处理事实]",
+            "    • Person(g7-test-000002_P2) [输入/预处理事实]",
+            "    • Company(g7-test-000002_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "g7-test-000002_P1",
+            "g7-test-000002_C0"
+          ],
+          "lines": [
+            "• Controls(g7-test-000002_P1,g7-test-000002_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(g7-test-000002_P1,g7-test-000002_C0) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(g7-test-000002_P1,g7-test-000002_C0,0.54) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "g7-test-000002_C0",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(g7-test-000002_C0,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(g7-test-000002_P0,g7-test-000002_C0) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(g7-test-000002_P0,g7-test-000002_C0) [输入/预处理事实]",
+            "    • Company(g7-test-000002_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "g7-test-000002_C0",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(g7-test-000002_C0,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(g7-test-000002_C0,循环持股) ⇐ R20 持股路径回到自身 → 循环持股线索",
+            "        • HoldReach(g7-test-000002_C0,g7-test-000002_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "            • HoldReach(g7-test-000002_C0,g7-test-000002_C4) ⇐ R10 持股可达：基础边",
+            "                • Holds(g7-test-000002_C0,g7-test-000002_C4,0.25) [输入/预处理事实]",
+            "            • Holds(g7-test-000002_C4,g7-test-000002_C0,0.12) [输入/预处理事实]"
+          ]
+        }
+      ]
+    }
+  },
+  "missed_positive": {
+    "seed": 7,
+    "scenario": "clean",
+    "sample_id": "g7-test-000018",
+    "label": 1,
+    "oracle_alerts": [],
+    "request": {
+      "case": {
+        "schema_version": 1,
+        "entities": [
+          {
+            "eid": "g7-test-000018_P0",
+            "name": "教学自然人0",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000018_P1",
+            "name": "教学自然人1",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000018_P2",
+            "name": "教学自然人2",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000018_C0",
+            "name": "教学企业0",
+            "kind": "Company",
+            "category": "上市公司",
+            "capital": 76000.0,
+            "opacity": 0.14082812752577487,
+            "disclosure": 0.8591718724742251
+          },
+          {
+            "eid": "g7-test-000018_C1",
+            "name": "教学企业1",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 8000.0,
+            "opacity": 0.3621498261677907,
+            "disclosure": 0.6378501738322093
+          },
+          {
+            "eid": "g7-test-000018_C2",
+            "name": "教学企业2",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 6000.0,
+            "opacity": 0.3043570633644742,
+            "disclosure": 0.6956429366355258
+          },
+          {
+            "eid": "g7-test-000018_C3",
+            "name": "教学企业3",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 54000.0,
+            "opacity": 0.25376325200858385,
+            "disclosure": 0.7462367479914161
+          },
+          {
+            "eid": "g7-test-000018_C4",
+            "name": "教学企业4",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 69000.0,
+            "opacity": 0.03221403460932597,
+            "disclosure": 0.9677859653906741
+          },
+          {
+            "eid": "g7-test-000018_C5",
+            "name": "教学企业5",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 71000.0,
+            "opacity": 0.2457271369757133,
+            "disclosure": 0.7542728630242868
+          },
+          {
+            "eid": "g7-test-000018_C6",
+            "name": "教学企业6",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 29000.0,
+            "opacity": 0.046245975379362037,
+            "disclosure": 0.953754024620638
+          }
+        ],
+        "holdings": [
+          {
+            "holder": "g7-test-000018_P0",
+            "target": "g7-test-000018_C1",
+            "ratio": 0.8,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_C1",
+            "target": "g7-test-000018_C2",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_P0",
+            "target": "g7-test-000018_C3",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_C2",
+            "target": "g7-test-000018_C0",
+            "ratio": 0.22,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_C1",
+            "target": "g7-test-000018_C0",
+            "ratio": 0.1,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_P1",
+            "target": "g7-test-000018_C0",
+            "ratio": 0.54,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_P2",
+            "target": "g7-test-000018_C4",
+            "ratio": 0.6,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_C0",
+            "target": "g7-test-000018_C4",
+            "ratio": 0.25,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_P1",
+            "target": "g7-test-000018_C5",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000018_P2",
+            "target": "g7-test-000018_C6",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          }
+        ],
+        "guarantees": [
+          {
+            "guarantor": "g7-test-000018_C0",
+            "beneficiary": "g7-test-000018_C5",
+            "amount": 12573.28
+          },
+          {
+            "guarantor": "g7-test-000018_C5",
+            "beneficiary": "g7-test-000018_C6",
+            "amount": 7852.38
+          }
+        ],
+        "trades": [
+          {
+            "seller": "g7-test-000018_C3",
+            "buyer": "g7-test-000018_C0",
+            "amount": 70347.95
+          },
+          {
+            "seller": "g7-test-000018_C6",
+            "buyer": "g7-test-000018_C0",
+            "amount": 5888.85
+          }
+        ],
+        "kinships": [],
+        "source": "合成股权图 v1；seed=7；split=test；观测条件=clean（不含标签或干净图真值）",
+        "label": "g7-test-000018"
+      },
+      "target_id": "g7-test-000018_C0",
+      "completeness": {
+        "holdings": true,
+        "trades": true,
+        "guarantees": true,
+        "registry": true
+      }
+    },
+    "unlocked": {
+      "score": 0.11659005938896,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "低",
+      "decision_threshold": 0.5,
+      "lock_structure": false,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "中",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": true,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000018_P1",
+          "g7-test-000018_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000018_C0",
+          "中"
+        ]
+      ],
+      "locked_facts": [],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000018_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_unlocked",
+      "observation": {
+        "company_id": "g7-test-000018_C0",
+        "values": {
+          "opacity": 0.14082812752577487,
+          "related_trade": 0.0,
+          "guarantee": 0.16543789473684212,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.8591718724742251
+      },
+      "preparation_ms": 6.5744000021368265,
+      "decision_ms": 0.30010001501068473,
+      "end_to_end_ms": 6.874500017147511,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      }
+    },
+    "locked": {
+      "score": 0.11659005938896,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "中",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": false,
+      "rule_priority_floor": "中",
+      "applied_priority_floor": "中",
+      "lock_changed_action": false,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000018_P1",
+          "g7-test-000018_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000018_C0",
+          "中"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000018_C0",
+          "g7-test-000018_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000018_P1",
+          "g7-test-000018_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000018_C0",
+          "中"
+        ]
+      ],
+      "alerts": [],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000018_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_locked",
+      "observation": {
+        "company_id": "g7-test-000018_C0",
+        "values": {
+          "opacity": 0.14082812752577487,
+          "related_trade": 0.0,
+          "guarantee": 0.16543789473684212,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.8591718724742251
+      },
+      "preparation_ms": 6.5744000021368265,
+      "decision_ms": 0.5712999845854938,
+      "end_to_end_ms": 7.14569998672232,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.026911278599696165,
+        "fuzzy": 0.3117731689165692,
+        "rule": 0.15
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "g7-test-000018_C0",
+            "g7-test-000018_P1"
+          ],
+          "lines": [
+            "• ActualController(g7-test-000018_C0,g7-test-000018_P1) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(g7-test-000018_P1,g7-test-000018_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(g7-test-000018_P1,g7-test-000018_C0) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(g7-test-000018_P1,g7-test-000018_C0,0.54) [输入/预处理事实]",
+            "    • Person(g7-test-000018_P1) [输入/预处理事实]",
+            "    • Company(g7-test-000018_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000018_C0",
+            "g7-test-000018_P0"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000018_C0,g7-test-000018_P0) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000018_P0,g7-test-000018_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(g7-test-000018_P0,g7-test-000018_C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(g7-test-000018_P0,g7-test-000018_C1,0.8) [输入/预处理事实]",
+            "        • Holds(g7-test-000018_C1,g7-test-000018_C0,0.1) [输入/预处理事实]",
+            "    • Person(g7-test-000018_P0) [输入/预处理事实]",
+            "    • Company(g7-test-000018_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000018_C0",
+            "g7-test-000018_P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000018_C0,g7-test-000018_P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000018_P1,g7-test-000018_C0) ⇐ R10 持股可达：基础边",
+            "        • Holds(g7-test-000018_P1,g7-test-000018_C0,0.54) [输入/预处理事实]",
+            "    • Person(g7-test-000018_P1) [输入/预处理事实]",
+            "    • Company(g7-test-000018_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "g7-test-000018_P1",
+            "g7-test-000018_C0"
+          ],
+          "lines": [
+            "• Controls(g7-test-000018_P1,g7-test-000018_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(g7-test-000018_P1,g7-test-000018_C0) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "        • Holds(g7-test-000018_P1,g7-test-000018_C0,0.54) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "g7-test-000018_C0",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(g7-test-000018_C0,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(g7-test-000018_P0,g7-test-000018_C0) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(g7-test-000018_P0,g7-test-000018_C0) [输入/预处理事实]",
+            "    • Company(g7-test-000018_C0) [输入/预处理事实]"
+          ]
+        }
+      ]
+    }
+  },
+  "retained_true_positive": {
+    "seed": 7,
+    "scenario": "clean",
+    "sample_id": "g7-test-000048",
+    "label": 1,
+    "oracle_alerts": [
+      "关联交易待核查"
+    ],
+    "request": {
+      "case": {
+        "schema_version": 1,
+        "entities": [
+          {
+            "eid": "g7-test-000048_P0",
+            "name": "教学自然人0",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000048_P1",
+            "name": "教学自然人1",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000048_P2",
+            "name": "教学自然人2",
+            "kind": "Person",
+            "category": "",
+            "capital": 0.0,
+            "opacity": 0.0,
+            "disclosure": 1.0
+          },
+          {
+            "eid": "g7-test-000048_C0",
+            "name": "教学企业0",
+            "kind": "Company",
+            "category": "上市公司",
+            "capital": 104000.0,
+            "opacity": 0.7430095309201027,
+            "disclosure": 0.2569904690798973
+          },
+          {
+            "eid": "g7-test-000048_C1",
+            "name": "教学企业1",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 34000.0,
+            "opacity": 0.3011257737188435,
+            "disclosure": 0.6988742262811565
+          },
+          {
+            "eid": "g7-test-000048_C2",
+            "name": "教学企业2",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 71000.0,
+            "opacity": 0.27230489595786705,
+            "disclosure": 0.7276951040421329
+          },
+          {
+            "eid": "g7-test-000048_C3",
+            "name": "教学企业3",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 32000.0,
+            "opacity": 0.6018305798643905,
+            "disclosure": 0.3981694201356095
+          },
+          {
+            "eid": "g7-test-000048_C4",
+            "name": "教学企业4",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 12000.0,
+            "opacity": 0.19852972644597905,
+            "disclosure": 0.8014702735540209
+          },
+          {
+            "eid": "g7-test-000048_C5",
+            "name": "教学企业5",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 7000.0,
+            "opacity": 0.19956756992168387,
+            "disclosure": 0.8004324300783161
+          },
+          {
+            "eid": "g7-test-000048_C6",
+            "name": "教学企业6",
+            "kind": "Company",
+            "category": "企业",
+            "capital": 76000.0,
+            "opacity": 0.26576759956882995,
+            "disclosure": 0.73423240043117
+          }
+        ],
+        "holdings": [
+          {
+            "holder": "g7-test-000048_P0",
+            "target": "g7-test-000048_C1",
+            "ratio": 0.8,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_C1",
+            "target": "g7-test-000048_C2",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_P0",
+            "target": "g7-test-000048_C3",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_C2",
+            "target": "g7-test-000048_C0",
+            "ratio": 0.35,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_C1",
+            "target": "g7-test-000048_C0",
+            "ratio": 0.2,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_P1",
+            "target": "g7-test-000048_C0",
+            "ratio": 0.2,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_P2",
+            "target": "g7-test-000048_C4",
+            "ratio": 0.6,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_C0",
+            "target": "g7-test-000048_C4",
+            "ratio": 0.25,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_P1",
+            "target": "g7-test-000048_C5",
+            "ratio": 0.65,
+            "since": "",
+            "layered": false
+          },
+          {
+            "holder": "g7-test-000048_P2",
+            "target": "g7-test-000048_C6",
+            "ratio": 0.7,
+            "since": "",
+            "layered": false
+          }
+        ],
+        "guarantees": [
+          {
+            "guarantor": "g7-test-000048_C0",
+            "beneficiary": "g7-test-000048_C5",
+            "amount": 16219.78
+          },
+          {
+            "guarantor": "g7-test-000048_C5",
+            "beneficiary": "g7-test-000048_C6",
+            "amount": 4513.49
+          }
+        ],
+        "trades": [
+          {
+            "seller": "g7-test-000048_C3",
+            "buyer": "g7-test-000048_C0",
+            "amount": 27813.26
+          },
+          {
+            "seller": "g7-test-000048_C6",
+            "buyer": "g7-test-000048_C0",
+            "amount": 6047.82
+          }
+        ],
+        "kinships": [],
+        "source": "合成股权图 v1；seed=7；split=test；观测条件=clean（不含标签或干净图真值）",
+        "label": "g7-test-000048"
+      },
+      "target_id": "g7-test-000048_C0",
+      "completeness": {
+        "holdings": true,
+        "trades": true,
+        "guarantees": true,
+        "registry": true
+      }
+    },
+    "unlocked": {
+      "score": 0.37597759635483324,
+      "risk_class": 0,
+      "review_required": false,
+      "review_priority": "中",
+      "decision_threshold": 0.5,
+      "lock_structure": false,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "低",
+      "lock_changed_action": false,
+      "constraint_violation": true,
+      "priority_floor_violation": true,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "Alert",
+          "g7-test-000048_C0",
+          "关联交易待核查"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_C1",
+          "g7-test-000048_C0"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_P0",
+          "g7-test-000048_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "高"
+        ]
+      ],
+      "locked_facts": [],
+      "alerts": [
+        "关联交易待核查"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000048_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_unlocked",
+      "observation": {
+        "company_id": "g7-test-000048_C0",
+        "values": {
+          "opacity": 0.7430095309201027,
+          "related_trade": 0.2674351923076923,
+          "guarantee": 0.1559594230769231,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.2569904690798973
+      },
+      "preparation_ms": 8.460899989586323,
+      "decision_ms": 0.7127999560907483,
+      "end_to_end_ms": 9.173699945677072,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      }
+    },
+    "locked": {
+      "score": 0.37597759635483324,
+      "risk_class": 0,
+      "review_required": true,
+      "review_priority": "高",
+      "decision_threshold": 0.5,
+      "lock_structure": true,
+      "structural_alert_requires_review": true,
+      "rule_priority_floor": "高",
+      "applied_priority_floor": "高",
+      "lock_changed_action": true,
+      "constraint_violation": false,
+      "priority_floor_violation": false,
+      "provided_facts": [
+        [
+          "ActualController",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "Alert",
+          "g7-test-000048_C0",
+          "关联交易待核查"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_C1",
+          "g7-test-000048_C0"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_P0",
+          "g7-test-000048_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "高"
+        ]
+      ],
+      "locked_facts": [
+        [
+          "ActualController",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "Alert",
+          "g7-test-000048_C0",
+          "关联交易待核查"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P0"
+        ],
+        [
+          "BeneficialOwner",
+          "g7-test-000048_C0",
+          "g7-test-000048_P1"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_C1",
+          "g7-test-000048_C0"
+        ],
+        [
+          "Controls",
+          "g7-test-000048_P0",
+          "g7-test-000048_C0"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "中"
+        ],
+        [
+          "RiskLevel",
+          "g7-test-000048_C0",
+          "高"
+        ]
+      ],
+      "alerts": [
+        "关联交易待核查"
+      ],
+      "coverage": 1.0,
+      "note": "score始终是原始评分；review_required才是包含结构约束的最终复核行动。",
+      "company_id": "g7-test-000048_C0",
+      "company_name": "教学企业0",
+      "method": "hybrid_locked",
+      "observation": {
+        "company_id": "g7-test-000048_C0",
+        "values": {
+          "opacity": 0.7430095309201027,
+          "related_trade": 0.2674351923076923,
+          "guarantee": 0.1559594230769231,
+          "cycle": 0.0
+        },
+        "source": "同源 CSV + 规则派生 + 明示的 opacity 教学参数; 未完整采集的指标用None表示，已有正向证明仍保留",
+        "quality": 0.2569904690798973
+      },
+      "preparation_ms": 8.460899989586323,
+      "decision_ms": 0.6688000285066664,
+      "end_to_end_ms": 9.12970001809299,
+      "weights": {
+        "bayes": 0.6,
+        "fuzzy": 0.25,
+        "rule": 0.15
+      },
+      "components": {
+        "bayes": 0.16381900773043329,
+        "fuzzy": 0.6007447668662931,
+        "rule": 0.85
+      },
+      "proofs": [
+        {
+          "fact": [
+            "ActualController",
+            "g7-test-000048_C0",
+            "g7-test-000048_P0"
+          ],
+          "lines": [
+            "• ActualController(g7-test-000048_C0,g7-test-000048_P0) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "    • Controls(g7-test-000048_P0,g7-test-000048_C0) ⇐ R07 控制传递（不输出自身控制自身）",
+            "        • Controls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(g7-test-000048_P0,g7-test-000048_C1,0.8) [输入/预处理事实]",
+            "        • Controls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "            • DirectControls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                • DirectControls(g7-test-000048_C1,g7-test-000048_C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                    • Holds(g7-test-000048_C1,g7-test-000048_C2,0.65) [输入/预处理事实]",
+            "                • Holds(g7-test-000048_C2,g7-test-000048_C0,0.35) [输入/预处理事实]",
+            "                • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]",
+            "    • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "    • Company(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Alert",
+            "g7-test-000048_C0",
+            "关联交易待核查"
+          ],
+          "lines": [
+            "• Alert(g7-test-000048_C0,关联交易待核查) ⇐ R19 上市买方存在关联交易线索 → 待核查预警",
+            "    • RelatedTrade(g7-test-000048_C3,g7-test-000048_C0) ⇐ R15 共同控制企业之间的实际交易 → 关联交易线索",
+            "        • SharedController(g7-test-000048_C3,g7-test-000048_C0) ⇐ R14 同一自然人控制的不同企业 → 共同控制关系",
+            "            • ActualController(g7-test-000048_C3,g7-test-000048_P0) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                • Controls(g7-test-000048_P0,g7-test-000048_C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                    • DirectControls(g7-test-000048_P0,g7-test-000048_C3) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                        • Holds(g7-test-000048_P0,g7-test-000048_C3,0.7) [输入/预处理事实]",
+            "                • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "                • Company(g7-test-000048_C3) [输入/预处理事实]",
+            "            • ActualController(g7-test-000048_C0,g7-test-000048_P0) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                • Controls(g7-test-000048_P0,g7-test-000048_C0) ⇐ R07 控制传递（不输出自身控制自身）",
+            "                    • Controls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                            • Holds(g7-test-000048_P0,g7-test-000048_C1,0.8) [输入/预处理事实]",
+            "                    • Controls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                            • DirectControls(g7-test-000048_C1,g7-test-000048_C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                • Holds(g7-test-000048_C1,g7-test-000048_C2,0.65) [输入/预处理事实]",
+            "                            • Holds(g7-test-000048_C2,g7-test-000048_C0,0.35) [输入/预处理事实]",
+            "                            • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]",
+            "                • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "                • Company(g7-test-000048_C0) [输入/预处理事实]",
+            "        • Trade(g7-test-000048_C3,g7-test-000048_C0,27813.26) [输入/预处理事实]",
+            "    • Listed(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000048_C0",
+            "g7-test-000048_P0"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000048_C0,g7-test-000048_P0) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000048_P0,g7-test-000048_C0) ⇐ R11 持股可达：传递闭包（保留回到自身的路径）",
+            "        • HoldReach(g7-test-000048_P0,g7-test-000048_C1) ⇐ R10 持股可达：基础边",
+            "            • Holds(g7-test-000048_P0,g7-test-000048_C1,0.8) [输入/预处理事实]",
+            "        • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]",
+            "    • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "    • Company(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "BeneficialOwner",
+            "g7-test-000048_C0",
+            "g7-test-000048_P1"
+          ],
+          "lines": [
+            "• BeneficialOwner(g7-test-000048_C0,g7-test-000048_P1) ⇐ R24 可达企业的自然人股东 → 受益人候选（非最终认定）",
+            "    • HoldReach(g7-test-000048_P1,g7-test-000048_C0) ⇐ R10 持股可达：基础边",
+            "        • Holds(g7-test-000048_P1,g7-test-000048_C0,0.2) [输入/预处理事实]",
+            "    • Person(g7-test-000048_P1) [输入/预处理事实]",
+            "    • Company(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "g7-test-000048_C1",
+            "g7-test-000048_C0"
+          ],
+          "lines": [
+            "• Controls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "    • DirectControls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "        • DirectControls(g7-test-000048_C1,g7-test-000048_C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(g7-test-000048_C1,g7-test-000048_C2,0.65) [输入/预处理事实]",
+            "        • Holds(g7-test-000048_C2,g7-test-000048_C0,0.35) [输入/预处理事实]",
+            "        • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "Controls",
+            "g7-test-000048_P0",
+            "g7-test-000048_C0"
+          ],
+          "lines": [
+            "• Controls(g7-test-000048_P0,g7-test-000048_C0) ⇐ R07 控制传递（不输出自身控制自身）",
+            "    • Controls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "            • Holds(g7-test-000048_P0,g7-test-000048_C1,0.8) [输入/预处理事实]",
+            "    • Controls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "        • DirectControls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "            • DirectControls(g7-test-000048_C1,g7-test-000048_C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                • Holds(g7-test-000048_C1,g7-test-000048_C2,0.65) [输入/预处理事实]",
+            "            • Holds(g7-test-000048_C2,g7-test-000048_C0,0.35) [输入/预处理事实]",
+            "            • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "g7-test-000048_C0",
+            "中"
+          ],
+          "lines": [
+            "• RiskLevel(g7-test-000048_C0,中) ⇐ R23 多层持股路径的目标企业 → 中复核优先级",
+            "    • OpaqueLayer(g7-test-000048_P0,g7-test-000048_C0) ⇐ R17 存在三层及以上简单持股路径 → 多层结构线索",
+            "        • ElevatedReach(g7-test-000048_P0,g7-test-000048_C0) [输入/预处理事实]",
+            "    • Company(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        },
+        {
+          "fact": [
+            "RiskLevel",
+            "g7-test-000048_C0",
+            "高"
+          ],
+          "lines": [
+            "• RiskLevel(g7-test-000048_C0,高) ⇐ R22 有预警 → 高复核优先级",
+            "    • Alert(g7-test-000048_C0,关联交易待核查) ⇐ R19 上市买方存在关联交易线索 → 待核查预警",
+            "        • RelatedTrade(g7-test-000048_C3,g7-test-000048_C0) ⇐ R15 共同控制企业之间的实际交易 → 关联交易线索",
+            "            • SharedController(g7-test-000048_C3,g7-test-000048_C0) ⇐ R14 同一自然人控制的不同企业 → 共同控制关系",
+            "                • ActualController(g7-test-000048_C3,g7-test-000048_P0) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                    • Controls(g7-test-000048_P0,g7-test-000048_C3) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                        • DirectControls(g7-test-000048_P0,g7-test-000048_C3) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                            • Holds(g7-test-000048_P0,g7-test-000048_C3,0.7) [输入/预处理事实]",
+            "                    • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "                    • Company(g7-test-000048_C3) [输入/预处理事实]",
+            "                • ActualController(g7-test-000048_C0,g7-test-000048_P0) ⇐ R09 控制企业的自然人 → 实际控制人候选",
+            "                    • Controls(g7-test-000048_P0,g7-test-000048_C0) ⇐ R07 控制传递（不输出自身控制自身）",
+            "                        • Controls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                            • DirectControls(g7-test-000048_P0,g7-test-000048_C1) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                • Holds(g7-test-000048_P0,g7-test-000048_C1,0.8) [输入/预处理事实]",
+            "                        • Controls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R08 将 DirectControls 纳入 Controls",
+            "                            • DirectControls(g7-test-000048_C1,g7-test-000048_C0) ⇐ R05 自身与所控企业的直接持股合计超过 50% → 控制候选",
+            "                                • DirectControls(g7-test-000048_C1,g7-test-000048_C2) ⇐ R01 单方直接持股超过 50% → 绝对控股线索",
+            "                                    • Holds(g7-test-000048_C1,g7-test-000048_C2,0.65) [输入/预处理事实]",
+            "                                • Holds(g7-test-000048_C2,g7-test-000048_C0,0.35) [输入/预处理事实]",
+            "                                • Holds(g7-test-000048_C1,g7-test-000048_C0,0.2) [输入/预处理事实]",
+            "                    • Person(g7-test-000048_P0) [输入/预处理事实]",
+            "                    • Company(g7-test-000048_C0) [输入/预处理事实]",
+            "            • Trade(g7-test-000048_C3,g7-test-000048_C0,27813.26) [输入/预处理事实]",
+            "        • Listed(g7-test-000048_C0) [输入/预处理事实]"
+          ]
+        }
+      ]
+    }
+  }
+}

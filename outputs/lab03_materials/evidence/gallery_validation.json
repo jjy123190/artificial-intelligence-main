@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "verified_at": "2026-11-13T17:54:36",
+  "scope": "Offline delivery index only; original website is not started or modified.",
+  "local_references_checked": 138,
+  "unique_local_files": 55,
+  "unique_anchors": 19,
+  "image_count": 18,
+  "svg_files_checked": 18,
+  "svg_text_out_of_bounds": 0,
+  "layouts": [
+    {
+      "viewport": [
+        1366,
+        900
+      ],
+      "javascript_disabled": true,
+      "offline": true,
+      "native_anchor_navigation": "passed",
+      "width": 1366,
+      "scroll_width": 1366,
+      "image_count": 18,
+      "broken_images": [],
+      "overflow": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "javascript_disabled": true,
+      "offline": true,
+      "native_anchor_navigation": "passed",
+      "width": 390,
+      "scroll_width": 390,
+      "image_count": 18,
+      "broken_images": [],
+      "overflow": []
+    }
+  ],
+  "assets_sha256": {
+    "图片与案例索引.html": "fb376970acaee4059fd1ee540f50bd20e946648ccc66e418954ca505f83382a5",
+    "figures/01_architecture.png": "cf5b67d43e79683ff6c1bd3c49c292590f8a298a37480cd7492680d5e1c65c01",
+    "figures/02_ga_validation.png": "47d4c994d04c3f43cd5c70294a63483d2246ae3b355f6a6a312d1ecfe6ae440c",
+    "figures/03_accuracy_budget8.png": "c9ce229e2567f54581a6dbb2805feb9089158748f2d5b3f704e38ad969b36692",
+    "figures/04_budget_sensitivity.png": "94281ed19a8971ef822c576700fd0b8a82b4a0c1ccd61d300be58003b552882c",
+    "figures/05_cost_breakdown.png": "bfe4983ce449359a666248b04b9da6af921eed465d0fdff9f81ac0edcc56b1eb",
+    "figures/06_llm_numeric_confusion.png": "fb6cc36017c54e46014ab948b09e0fb52c7b40de7cdb46aa49b8ec20ae72eafb",
+    "figures/07_negative_confirmation.png": "fe5adcbac05c43a14b575ebd708b7dee44bcf5f89b3366a54dd2cea391920c65",
+    "figures/08_tree_two_hop.png": "7135bb0aa02871208b1a51a532f9db6a0e28b19c278279bc8344d7b937b7a6bc",
+    "figures/09_tree_three_hop.png": "830c0d213eb12594740a6e71b48b8138cd8b4093e84b94c898b69c357c17231e",
+    "figures/10_tree_four_hop.png": "93a455464d57c2146aebf4df5ca6d3820972b368203be98216e13ea3d9f45cb1",
+    "figures/11_tree_mcts.png": "0171e067937fc9d209d69e1d66c4a136cb4c519fe82627ae5e191c944ebfd374",
+    "figures/12_tree_bfs_budget.png": "23678099c8d1de7c12380bf37be570880c3d9d4f4c0a299f98532bec99f050b8",
+    "figures/13_tree_no_expert.png": "4ca0e3f2914ca5cb8e4858ad5117ff92c5e4bffccfbfb0dbb51639456cad7656",
+    "figures/14_tree_ood_ga.png": "40fb7b1c2b212f3e861076a6eee6949d72da65439442dbc44a1d9d1eabe1bac6",
+    "figures/15_tree_no_answer.png": "4308a0194fda3933f16e2df274733bc83ae7e18a6fb55f02b03a187238d9ca9d",
+    "figures/16_tree_controlled_neutral.png": "800eb9b0acd003869ce6048500e93e1f9205138dffc0a444da0b05f9bd672f13",
+    "figures/17_tree_controlled_wrong.png": "9221796cf4ac1f3ec041fa2fbe2f55cbcc4f513e89f38b81f0afca4f26285bba",
+    "figures/18_ood_expansion_order.png": "e12876a66577898178c6bf1270b5187c3f960a9f0a054f1a487f45eb6bdfe47e",
+    "figures/01_architecture.svg": "d9e09415598cf5a3c9e925f083970371e25e881a21924319a849efcb61f44bd9",
+    "figures/02_ga_validation.svg": "1851d994a2a90438714595c5a2327f6c77e2b4d76725f282b26e68368b90b8b9",
+    "figures/03_accuracy_budget8.svg": "503158a2959e907c0623e47737d841e9ad87278d38fc172b620e61ee93943b66",
+    "figures/04_budget_sensitivity.svg": "41157f4e05a1a6aec29f454309caca702101626b972a9a3e03ed719cd6af3f35",
+    "figures/05_cost_breakdown.svg": "2f9f33dc84b371085e79e335877f1249c89b0242088ed59820971f99c9101796",
+    "figures/06_llm_numeric_confusion.svg": "27fa0def15126620acb4863717f8d8f211ba51a9d13e76e4471859ceb410eb85",
+    "figures/07_negative_confirmation.svg": "316ddeeff21baa46ae2b6fa2033f7ec7842ec711bf6d9123b25773a2a80919a1",
+    "figures/08_tree_two_hop.svg": "9cc9a41175be0930e8136b14c8a9c469140a24b98746b0ec4d8f4ac02fafa849",
+    "figures/09_tree_three_hop.svg": "d41b46b1957a211eab03b3f6bb7ab2bff0833c3d316f766120195b6edab4d2a3",
+    "figures/10_tree_four_hop.svg": "e70b930ede0df20e170fc4c390783b6f314c21ab3cca6de674afa8e4d8e987aa",
+    "figures/11_tree_mcts.svg": "13b076c109a38e4c2e8abc322953102fb0221759e605914beadb017ec52cbfef",
+    "figures/12_tree_bfs_budget.svg": "e713ef1bf5276dc287c1768d7cc9047512f0c81251237bd560c22c1bed8f681a",
+    "figures/13_tree_no_expert.svg": "85fe3f9d7b04bc241f615b9736ce338fd50a5a6261337e095b24a8ce66ebce73",
+    "figures/14_tree_ood_ga.svg": "6fdb0c2b1e7945dbeb07aae7a7e104dfa3e60a6b3842aa16b8db05c81f4b12e8",
+    "figures/15_tree_no_answer.svg": "a16e2db5fc0821cc8511ade5cde9ae2ec58e4db71529eba03e79aa64336bba5c",
+    "figures/16_tree_controlled_neutral.svg": "b141d277680b370e4f9e7dba724af9faf7a405cfaca73244b80304df298f95e9",
+    "figures/17_tree_controlled_wrong.svg": "04c361004378dfdf6ef7ffdf2309cf6d67b3aaf27e5a30fdd8627916bc114303",
+    "figures/18_ood_expansion_order.svg": "120dc5fdfb7769f0f48d2f4756b83f10f32f63b761f307a96524fae926fe677e"
+  }
+}

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1144 620" role="img" aria-label="MCTS：树扩展与 rollout 分开计数">
+<defs><style>text{font-family:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;fill:#e2e8f0}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+<marker id="arr-solution" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#34d399"/></marker>
+<marker id="arr-expanded" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#22d3ee"/></marker>
+<marker id="arr-frontier" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#94a3b8"/></marker>
+<marker id="arr-rejected" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+<marker id="arr-proof_pruned" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fbbf24"/></marker>
+<marker id="arr-rollout" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#a78bfa"/></marker>
+<marker id="arr-invalid" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+</defs>
+<rect width="1144" height="620" fill="#0f172a"/><rect width="1144" height="620" fill="url(#grid)"/>
+<text x="30" y="38" font-size="23" fill="#f8fafc" style="fill:#f8fafc" text-anchor="start" font-weight="700">MCTS：树扩展与 rollout 分开计数</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">test-7-0-Q2  |  mcts  |  预算 8  |  全部 12 个路径状态 / 17 个事件</text>
+<path d="M178,326.5 C219.5,326.5 219.5,144.5 261,144.5" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<text x="221.0" y="137.5" font-size="11" fill="#34d399" style="fill:#34d399" text-anchor="middle" font-weight="400">R0068</text>
+<path d="M178,326.5 C219.5,326.5 219.5,235.5 261,235.5" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)" stroke-dasharray="5 4"/>
+<text x="221.0" y="228.5" font-size="11" fill="#a78bfa" style="fill:#a78bfa" text-anchor="middle" font-weight="400">R0167</text>
+<path d="M178,326.5 C219.5,326.5 219.5,326.5 261,326.5" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-frontier)"/>
+<text x="221.0" y="319.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="middle" font-weight="400">R0171</text>
+<path d="M178,326.5 C219.5,326.5 219.5,417.5 261,417.5" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-frontier)"/>
+<text x="221.0" y="410.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="middle" font-weight="400">R0178</text>
+<path d="M178,326.5 C219.5,326.5 219.5,508.5 261,508.5" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-frontier)"/>
+<text x="221.0" y="501.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="middle" font-weight="400">R0198</text>
+<path d="M412,235.5 C453.5,235.5 453.5,235.5 495,235.5" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)" stroke-dasharray="5 4"/>
+<text x="455.0" y="228.5" font-size="11" fill="#a78bfa" style="fill:#a78bfa" text-anchor="middle" font-weight="400">R0003</text>
+<path d="M646,235.5 C687.5,235.5 687.5,235.5 729,235.5" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)" stroke-dasharray="5 4"/>
+<text x="689.0" y="228.5" font-size="11" fill="#a78bfa" style="fill:#a78bfa" text-anchor="middle" font-weight="400">R0069</text>
+<path d="M880,235.5 C921.5,235.5 921.5,235.5 963,235.5" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)" stroke-dasharray="5 4"/>
+<text x="923.0" y="228.5" font-size="11" fill="#a78bfa" style="fill:#a78bfa" text-anchor="middle" font-weight="400">R0197</text>
+<path d="M412,144.5 C453.5,144.5 453.5,144.5 495,144.5" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<text x="455.0" y="137.5" font-size="11" fill="#34d399" style="fill:#34d399" text-anchor="middle" font-weight="400">R0155</text>
+<path d="M646,144.5 C687.5,144.5 687.5,144.5 729,144.5" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<text x="689.0" y="137.5" font-size="11" fill="#34d399" style="fill:#34d399" text-anchor="middle" font-weight="400">R0015</text>
+<path d="M880,144.5 C921.5,144.5 921.5,144.5 963,144.5" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<text x="923.0" y="137.5" font-size="11" fill="#34d399" style="fill:#34d399" text-anchor="middle" font-weight="400">R0188</text>
+<rect x="30" y="292.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="30" y="292.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="42" y="315.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N2   #1</text>
+<text x="42" y="336.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=0</text>
+<text x="42" y="352.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 0 / 前缀状态</text>
+<rect x="264" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="133.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N30   #2</text>
+<text x="276" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 2 / 前缀状态</text>
+<rect x="264" y="201.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="201.0" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="276" y="224.0" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N21</text>
+<text x="276" y="245.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=1</text>
+<text x="276" y="261.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 3 / 前缀状态</text>
+<rect x="264" y="292" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="292" width="148" height="69" rx="7" fill="#122535" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="276" y="315" font-size="18" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="700">N11</text>
+<text x="276" y="336" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">待扩展 · d=1</text>
+<text x="276" y="352" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 4 / 前缀状态</text>
+<rect x="264" y="383" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="383" width="148" height="69" rx="7" fill="#122535" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="276" y="406" font-size="18" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="700">N24</text>
+<text x="276" y="427" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">待扩展 · d=1</text>
+<text x="276" y="443" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 5 / 前缀状态</text>
+<rect x="264" y="474" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="474" width="148" height="69" rx="7" fill="#122535" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="276" y="497" font-size="18" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="700">N34</text>
+<text x="276" y="518" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">待扩展 · d=1</text>
+<text x="276" y="534" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 6 / 前缀状态</text>
+<rect x="498" y="201.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="201.0" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="510" y="224.0" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N29</text>
+<text x="510" y="245.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=2</text>
+<text x="510" y="261.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 8 / 前缀状态</text>
+<rect x="732" y="201.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="732" y="201.0" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="744" y="224.0" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N9</text>
+<text x="744" y="245.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=3</text>
+<text x="744" y="261.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 9 / 前缀状态</text>
+<rect x="966" y="201" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="966" y="201" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="978" y="224" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N5</text>
+<text x="978" y="245" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=4</text>
+<text x="978" y="261" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 10 / 前缀状态</text>
+<rect x="498" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="510" y="133.0" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N14</text>
+<text x="510" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=2</text>
+<text x="510" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 12 / 前缀状态</text>
+<rect x="732" y="110.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="732" y="110.0" width="148" height="69" rx="7" fill="#122535" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="744" y="133.0" font-size="18" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">N38</text>
+<text x="744" y="154.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">模拟路径 · d=3</text>
+<text x="744" y="170.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 14 / 前缀状态</text>
+<rect x="966" y="110" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="966" y="110" width="148" height="69" rx="7" fill="#122535" stroke="#34d399" stroke-width="1.5"/>
+<text x="978" y="133" font-size="18" fill="#34d399" style="fill:#34d399" text-anchor="start" font-weight="700">N41</text>
+<text x="978" y="154" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">有效解 · d=4</text>
+<text x="978" y="170" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 15 / 前缀状态</text>
+<circle cx="30.0" cy="591" r="5" fill="#34d399"/>
+<text x="41.0" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">解路径</text>
+<circle cx="210.66666666666666" cy="591" r="5" fill="#22d3ee"/>
+<text x="221.66666666666666" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已扩展 #序号</text>
+<circle cx="391.3333333333333" cy="591" r="5" fill="#94a3b8"/>
+<text x="402.3333333333333" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">待扩展</text>
+<circle cx="572.0" cy="591" r="5" fill="#fbbf24"/>
+<text x="583.0" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已证无解</text>
+<circle cx="752.6666666666666" cy="591" r="5" fill="#fb7185"/>
+<text x="763.6666666666666" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">拒绝 / 无效</text>
+<circle cx="933.3333333333333" cy="591" r="5" fill="#a78bfa"/>
+<text x="944.3333333333333" y="596" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">模拟</text>
+</svg>

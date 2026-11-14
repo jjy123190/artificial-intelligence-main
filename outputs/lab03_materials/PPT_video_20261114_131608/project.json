@@ -1,0 +1,24 @@
+{
+  "source": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\deliverables\\lab3\\第31组_实验三_汇报.pptx",
+  "snapshot": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\PPT_video_20261114_131608\\source\\第31组_实验三_汇报.pptx",
+  "source_sha256": "0b3fbf9bdf669afa6a3cfc995ed0404b876caf6241fd9215a8235cea99e7d574",
+  "source_last_modified": "2026-11-14T13:05:31.162745+08:00",
+  "work": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\PPT_video_20261114_131608",
+  "slides": 17,
+  "slide_width_emu": 14630400,
+  "slide_height_emu": 8229600,
+  "target_duration_seconds": 240,
+  "video_size": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "subtitle": "直接叠加在PPT底部中央，随深浅页面切换高对比字色，不增加黑边或字幕条",
+  "protected_files_before": {
+    "deliverables/lab3/第31组_实验三_Demo.mp4": "d655acb9100ab24a5aceee03fbe65d96ff78bca46e9490649d0057ee820f2cf3",
+    "deliverables/lab3/第31组_实验三_实验报告.docx": "34a16a8bf45dc48cfdd54e99a254ba8d9441d483903541670fdc5d96dba46fa1",
+    "deliverables/lab3/第31组_实验三_实验报告.pdf": "47eee476a5cdd771dba6552f8fd6209b9632d095743ed47941f4fc04e58dec82",
+    "deliverables/lab3/第31组_实验三_汇报.pptx": "0b3fbf9bdf669afa6a3cfc995ed0404b876caf6241fd9215a8235cea99e7d574"
+  }
+}

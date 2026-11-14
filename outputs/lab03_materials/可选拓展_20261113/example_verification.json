@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "two constructed examples and eight adversarial validation cases; not a migrated solver evaluation",
+  "external_proof_kernel_executed": false,
+  "lab03_search_executed": false,
+  "llm_calls": 0,
+  "training_runs": 0,
+  "positive_examples_accepted": 2,
+  "negative_cases_rejected": 8,
+  "theorem": {
+    "accepted": true,
+    "conclusion": [
+      "c",
+      "a"
+    ],
+    "context": {
+      "h1": [
+        "a",
+        "b"
+      ],
+      "h2": [
+        "b",
+        "c"
+      ]
+    },
+    "trace": [
+      {
+        "step": 0,
+        "action": "initial",
+        "open_goals": [
+          [
+            "c",
+            "a"
+          ]
+        ]
+      },
+      {
+        "step": 1,
+        "action": {
+          "rule": "symm"
+        },
+        "open_goals": [
+          [
+            "a",
+            "c"
+          ]
+        ]
+      },
+      {
+        "step": 2,
+        "action": {
+          "rule": "trans",
+          "via": "b"
+        },
+        "open_goals": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ]
+        ]
+      },
+      {
+        "step": 3,
+        "action": {
+          "rule": "exact",
+          "ref": "h1"
+        },
+        "open_goals": [
+          [
+            "b",
+            "c"
+          ]
+        ]
+      },
+      {
+        "step": 4,
+        "action": {
+          "rule": "exact",
+          "ref": "h2"
+        },
+        "open_goals": []
+      }
+    ],
+    "certificate": {
+      "rule": "symm",
+      "premise": {
+        "rule": "trans",
+        "left": {
+          "rule": "hyp",
+          "ref": "h1"
+        },
+        "right": {
+          "rule": "hyp",
+          "ref": "h2"
+        }
+      }
+    },
+    "backward_actions": 4,
+    "nontrivial_equality_inferences": 2,
+    "hypothesis_leaves": 2,
+    "scope": "finite equality fragment; not a Lean kernel run"
+  },
+  "planning": {
+    "accepted": true,
+    "initial": [
+      "ontable(A)",
+      "ontable(B)",
+      "ontable(C)",
+      "clear(A)",
+      "clear(B)",
+      "clear(C)",
+      "handempty"
+    ],
+    "goal": [
+      "on(A,B)",
+      "on(B,C)",
+      "handempty"
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "action": "initial",
+        "state": [
+          "ontable(A)",
+          "ontable(B)",
+          "ontable(C)",
+          "clear(A)",
+          "clear(B)",
+          "clear(C)",
+          "handempty"
+        ],
+        "g": 0,
+        "goal_satisfied": false
+      },
+      {
+        "step": 1,
+        "action": "PickUp(B)",
+        "preconditions": [
+          "ontable(B)",
+          "clear(B)",
+          "handempty"
+        ],
+        "add": [
+          "holding(B)"
+        ],
+        "delete": [
+          "ontable(B)",
+          "clear(B)",
+          "handempty"
+        ],
+        "state": [
+          "ontable(A)",
+          "ontable(C)",
+          "clear(A)",
+          "clear(C)",
+          "holding(B)"
+        ],
+        "g": 1,
+        "goal_satisfied": false
+      },
+      {
+        "step": 2,
+        "action": "Stack(B,C)",
+        "preconditions": [
+          "clear(C)",
+          "holding(B)"
+        ],
+        "add": [
+          "on(B,C)",
+          "clear(B)",
+          "handempty"
+        ],
+        "delete": [
+          "clear(C)",
+          "holding(B)"
+        ],
+        "state": [
+          "ontable(A)",
+          "ontable(C)",
+          "on(B,C)",
+          "clear(A)",
+          "clear(B)",
+          "handempty"
+        ],
+        "g": 2,
+        "goal_satisfied": false
+      },
+      {
+        "step": 3,
+        "action": "PickUp(A)",
+        "preconditions": [
+          "ontable(A)",
+          "clear(A)",
+          "handempty"
+        ],
+        "add": [
+          "holding(A)"
+        ],
+        "delete": [
+          "ontable(A)",
+          "clear(A)",
+          "handempty"
+        ],
+        "state": [
+          "ontable(C)",
+          "on(B,C)",
+          "clear(B)",
+          "holding(A)"
+        ],
+        "g": 3,
+        "goal_satisfied": false
+      },
+      {
+        "step": 4,
+        "action": "Stack(A,B)",
+        "preconditions": [
+          "clear(B)",
+          "holding(A)"
+        ],
+        "add": [
+          "on(A,B)",
+          "clear(A)",
+          "handempty"
+        ],
+        "delete": [
+          "clear(B)",
+          "holding(A)"
+        ],
+        "state": [
+          "ontable(C)",
+          "on(A,B)",
+          "on(B,C)",
+          "clear(A)",
+          "handempty"
+        ],
+        "g": 4,
+        "goal_satisfied": true
+      }
+    ],
+    "plan_length": 4,
+    "plan_cost": 4,
+    "analytic_lower_bound": 4,
+    "matches_lower_bound": true,
+    "lower_bound_reason": "two required new On facts each need a Stack and a separate acquisition; initially empty hand; unit costs",
+    "scope": "given deterministic closed-world single-gripper plan; no search benchmark"
+  },
+  "negative_cases": [
+    {
+      "name": "proof_reversed_middle",
+      "rejected": true,
+      "code": "trans_middle_mismatch",
+      "detail": "b=c cannot compose with a=b"
+    },
+    {
+      "name": "proof_fabricated_hypothesis",
+      "rejected": true,
+      "code": "unknown_hypothesis",
+      "detail": "'h3'"
+    },
+    {
+      "name": "proof_missing_AND_branch",
+      "rejected": true,
+      "code": "certificate_shape",
+      "detail": "trans expects ['left', 'right', 'rule'], got ['left', 'rule']"
+    },
+    {
+      "name": "proof_unfinished_obligation",
+      "rejected": true,
+      "code": "open_obligations",
+      "detail": "[('b', 'c')]"
+    },
+    {
+      "name": "plan_stack_without_holding",
+      "rejected": true,
+      "code": "precondition_failed",
+      "detail": "step 1: Stack(A,B); missing=['holding(A)']"
+    },
+    {
+      "name": "plan_pick_with_occupied_hand",
+      "rejected": true,
+      "code": "precondition_failed",
+      "detail": "step 2: PickUp(C); missing=['handempty']"
+    },
+    {
+      "name": "plan_goal_incomplete",
+      "rejected": true,
+      "code": "goal_not_satisfied",
+      "detail": "['on(A,B)']"
+    },
+    {
+      "name": "plan_stack_on_itself",
+      "rejected": true,
+      "code": "same_block_arguments",
+      "detail": "('A', 'A')"
+    }
+  ]
+}
