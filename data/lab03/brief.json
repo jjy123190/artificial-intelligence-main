@@ -6,7 +6,7 @@
       "id": 1,
       "requirement": "2—4跳知识图谱问答；BFS、A*、MCTS三套搜索内核",
       "implementation": "domain.py / dataset.py / search.py",
-      "evidence": "405题图级隔离数据；逐步搜索树与路径证据"
+      "evidence": "原405题图级隔离数据；独立BFS/A*/MCTS；已证无解剪枝与专家拒绝分列，截断未知不剪枝"
     },
     {
       "id": 2,
@@ -17,8 +17,8 @@
     {
       "id": 3,
       "requirement": "LLM检验行动、给出reward、解释路径；不能直接回答",
-      "implementation": "llm.py / service.py",
-      "evidence": "Qwen2.5-0.5B真实本地前向推断；A/B/C与Y/N受限评分；解释在搜索后生成"
+      "implementation": "llm.py / calibration.py / service.py",
+      "evidence": "Qwen2.5-0.5B固定7文件校验；原始与训练图拟合的隐藏表示评估头分列；原9题/新18题真实推断；100数值挑战保留误放行与误拒；解释权限隔离"
     },
     {
       "id": 4,
@@ -29,8 +29,8 @@
     {
       "id": 5,
       "requirement": "准确率、节点扩展、路径跳数、冗余路径、失效分析",
-      "implementation": "evaluate.py",
-      "evidence": "3888次基准；图级bootstrap；LLM小样本配对；错误评分注入"
+      "implementation": "evaluate.py / reliability.py / verification.py",
+      "evidence": "3888次原基准；4阶段归档；第四阶段216道可答/5184对与216道不可答/864对分列；扩展、扫描、证明与LLM训练/推断成本可追溯"
     },
     {
       "id": 6,
@@ -60,7 +60,7 @@
       "产业/行业结合度",
       "优化迭代度"
     ],
-    "recommendation": "以B档90分作为有证据的自评目标；最终由组员核实、教师评定。小模型仅9题，不据此宣称SOTA或95分必得。",
+    "recommendation": "以B档90分作为有证据的自评目标；最终由组员核实、教师评定。小模型原9题与新18题仍是小样本，不据此宣称SOTA或95分必得。",
     "presentation": "截图规定自评90分及以上可直接进入争优演示；85/80档需自行报名并经教师核实。课堂奖励由教师按展示表现决定。"
   },
   "references": [
@@ -100,5 +100,12 @@
       "url": "https://developers.openai.com/api/docs/guides/structured-outputs"
     }
   ],
-  "data_policy": "共享场景来自项目CSV；扩展评估为全新教学合成图，不导入真实企业敏感资料。模型权重保存在用户缓存，密钥只读环境变量，不进入项目。"
+  "data_policy": "共享场景来自项目CSV；扩展评估为全新教学合成图，不导入真实企业敏感资料。模型权重保存在用户缓存，密钥只读环境变量，不进入项目。",
+  "submission_requirements": {
+    "team_size": "1—5人",
+    "platform_project_required": true,
+    "member_association_required": true,
+    "submitter": "课程平台项目管理员",
+    "status": "需小组在平台手工确认，代码仓库不代为证明已提交"
+  }
 }

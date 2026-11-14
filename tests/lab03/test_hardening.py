@@ -1,10 +1,11 @@
 """Regression tests for failures not covered by the original course happy paths."""
+from tests.lab03.support import requires_artifacts
 import copy
 import unittest
 from unittest.mock import patch
 
 from experiments.lab03.domain import Graph, Node, Edge, Query, State
-from experiments.lab03.search import search
+from tests.lab03.test_search import search
 from experiments.lab03 import service
 from tests.lab03.test_search import fixture
 
@@ -48,7 +49,14 @@ class SearchBoundaryTests(unittest.TestCase):
         result = search(graph, query, "astar_fixed", 16)
         for step in result["trace"]:
             self.assertEqual(step["parent_path"], step["edge_ids"][:-1])
-            self.assertAlmostEqual(step["f"], step["g"] + step["h"], places=4)
+            if step["status"] == "rejected":
+                # Pruned evidence is not put on the frontier or scored. Rendering
+                # it must not cause extra lookahead invisible to non-trace runs.
+                self.assertIsNone(step["h"])
+                self.assertIsNone(step["f"])
+                self.assertIsNone(step["p"])
+            else:
+                self.assertAlmostEqual(step["f"], step["g"] + step["h"], places=4)
         self.assertEqual(result["trace_events"], len(result["trace"]))
         self.assertFalse(result["trace_truncated"])
 
@@ -117,9 +125,10 @@ class SearchBoundaryTests(unittest.TestCase):
 
 class ServiceIntegrityTests(unittest.TestCase):
     def modify_artifact(self, name, transform):
+        from tests.lab03.support import artifact_fixture
         original = service.read
         def read(filename, default=None):
-            value = original(filename, default)
+            value = artifact_fixture(filename, original(filename, default))
             return transform(copy.deepcopy(value)) if filename == name else value
         return patch.object(service, "read", side_effect=read)
 
@@ -170,6 +179,7 @@ class ServiceIntegrityTests(unittest.TestCase):
                     service.run_task({"method": "hybrid"})
                 self.assertTrue(service.snapshot()["warnings"])
 
+    @requires_artifacts('models.json','ga_history.json','manifest.json','llm_cache.json','llm_audit.json','llm_evidence_readout.json')
     def test_replay_scores_require_valid_structure_not_just_hashes(self):
         for scores in [{"missing": 0.4}, {"edge": float("nan")}, {}, []]:
             def corrupt(value):
@@ -181,6 +191,7 @@ class ServiceIntegrityTests(unittest.TestCase):
                 query = next(q for q in service.snapshot()["queries"] if q["id"] == "test-7-0-Q0")
                 self.assertFalse(query["llm_cached"])
 
+    @requires_artifacts('models.json','ga_history.json','manifest.json','llm_cache.json','llm_audit.json','llm_evidence_readout.json')
     def test_missing_replay_fields_are_explained_not_keyerrors(self):
         def corrupt(value):
             value["test-7-0-Q0"].pop("graph_sha256")
@@ -199,7 +210,9 @@ class ServiceIntegrityTests(unittest.TestCase):
         graph = Graph([Node("p", "人"), Node("a", "甲"), Node("c", "目标", sector="制造", listed=True)],
                       [Edge("e1", "p", "a", "HOLDS", confidence=.54), Edge("e2", "a", "c", "HOLDS")])
         query = Query("q", "p", ("HOLDS", "HOLDS"), "制造")
-        with patch.object(service, "tasks", return_value={"q": (graph, query, 7)}):
+        from tests.lab03.support import artifact_fixture
+        with patch.object(service, "tasks", return_value={"q": (graph, query, 7)}), \
+             patch.object(service, "read", side_effect=artifact_fixture):
             result = service.run_task({"query_id": "q", "method": "hybrid_no_expert", "budget": 16})
         self.assertTrue(result["result"]["found"])
         self.assertFalse(result["result"]["valid"])

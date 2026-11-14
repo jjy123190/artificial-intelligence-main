@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useMemo, useRef, useState } from "react";
 import cytoscape from "cytoscape";
 import type { Core, ElementDefinition } from "cytoscape";
@@ -342,12 +343,12 @@ export default function GraphView({
             node.kind === "Person"
               ? (node.eid.length > 10 ? "…" + node.eid.slice(-7) : node.eid) +
                 " · " +
-                node.name.slice(0, 8)
+                displayText(node.name).slice(0, 8)
               : (node.eid.length > 10 ? "…" + node.eid.slice(-7) : node.eid) +
                 "\n" +
-                (shortName(node.name).length > 8
-                  ? shortName(node.name).slice(0, 8) + "…"
-                  : shortName(node.name)),
+                (shortName(displayText(node.name)).length > 8
+                  ? shortName(displayText(node.name)).slice(0, 8) + "…"
+                  : shortName(displayText(node.name))),
           kind: node.kind,
         },
         position: previous.get(node.eid) || {
@@ -656,13 +657,13 @@ export default function GraphView({
             <strong>
               {current
                 ? current.rule
-                  ? current.rule + " · " + current.rule_description
+                  ? current.rule + " · " + displayText(current.rule_description)
                   : "读取输入事实"
                 : "让推理过程看得见"}
             </strong>
             <span>
               {current
-                ? current.label
+                ? displayText(current.label)
                 : sequence.length
                   ? "播放当前结论的 " + sequence.length + " 个证明节点"
                   : "选中企业后，在证据中选择要演示的结论"}

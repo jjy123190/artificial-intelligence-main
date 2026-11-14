@@ -1,8 +1,9 @@
+import { displayText } from "../display-text";
 import { useEffect, useRef, useState } from "react";
 import { ChartBar, DownloadSimple, Stop } from "@phosphor-icons/react";
 import { request, downloadJson } from "../api";
 import type { QueryInfo, Result } from "./types";
-import { resultTitle } from "./presentation";
+import { resultTitle, comparisonCompletion } from "./presentation";
 
 const methods = [
   { id: "bfs", name: "BFS", note: "逐层扩展" },
@@ -53,6 +54,7 @@ export default function CompareRuns({
     setRows([]);
     setBusy(true);
     onBusyChange(true);
+    const completedRows: Row[] = [];
     try {
       // Respect the backend's bounded worker pool and keep per-method failures visible.
       for (const method of methods) {
@@ -86,11 +88,14 @@ export default function CompareRuns({
           }
         }
         if (controller.signal.aborted || pending.current !== controller) return;
-        setRows((previous) => [...previous, row]);
+        completedRows.push(row);
+        setRows([...completedRows]);
       }
       if (!controller.signal.aborted)
         setMessage(
-          "对比结束。单题结果用于观察搜索行为，整体收益请查看评估分析。",
+          comparisonCompletion(completedRows, methods.map((m) => m.id)).complete
+            ? "四种算法均已返回结果。单题结果用于观察搜索行为，整体收益请查看评估分析。"
+            : "对比已结束，但部分算法未能运行；错误不记作算法失败答案率，请修复后重试。",
         );
     } finally {
       if (pending.current === controller) {
@@ -127,16 +132,28 @@ export default function CompareRuns({
           const value = row?.result?.result;
           return (
             <article key={method.id} data-valid={value?.valid}>
-              <h3>{method.name}</h3>
-              <p>{method.note}</p>
+              <h3>{displayText(method.name)}</h3>
+              <p>{displayText(method.note)}</p>
               <strong className="lab3-compare-value">
                 {value?.expanded ?? "—"}
                 <small>扩展节点</small>
               </strong>
               <dl>
                 <div>
-                  <dt>总工作量</dt>
+                  <dt>节点工作量</dt>
                   <dd>{value?.total_work ?? "—"}</dd>
+                </div>
+                <div>
+                  <dt>启发边检查</dt>
+                  <dd>{value?.heuristic_edge_checks ?? "—"}</dd>
+                </div>
+                <div>
+                  <dt>候选检查 / 扫描</dt>
+                  <dd>{value ? `${value.total_edge_checks} / ${value.adjacency_edge_scans}` : "—"}</dd>
+                </div>
+                <div>
+                  <dt>复用 / 已证剪枝</dt>
+                  <dd>{value ? `${value.successor_cache_hits} / ${value.proof_pruned}` : "—"}</dd>
                 </div>
                 <div>
                   <dt>模拟步数</dt>
@@ -163,10 +180,10 @@ export default function CompareRuns({
       </div>
       <p className="helper-text">
         BFS / A* 按出队状态计费；MCTS
-        按树扩展计费，模拟开销另计。相同扩展预算不代表相同计算成本。
+        按树扩展计费，模拟另计。两跳后缀最多探测2个子前缀；候选证据检查、全部出边扫描另列。相同扩展预算不代表相同总成本。
       </p>
       <p className="lab3-comparison-message" role="status">
-        {message}
+        {displayText(message)}
       </p>
       <div className="lab3-run-actions">
         {busy && (
@@ -184,7 +201,7 @@ export default function CompareRuns({
                   query,
                   budget,
                   methods: methods.map((m) => m.id),
-                  complete: rows.length === methods.length,
+                  ...comparisonCompletion(rows, methods.map((m) => m.id)),
                   note: "单题实测；MCTS模拟另计，不作为整体性能结论。",
                   rows,
                 },

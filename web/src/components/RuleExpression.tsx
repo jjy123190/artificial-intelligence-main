@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { ArrowRight } from "@phosphor-icons/react";
 
 export default function RuleExpression({
@@ -22,7 +23,7 @@ export default function RuleExpression({
           <span key={index}>
             {index > 0 && <b aria-label="并且">∧</b>}
             <code className={condition.guard ? "rule-guard" : undefined}>
-              {condition.text}
+              {displayText(condition.text)}
             </code>
           </span>
         ))}

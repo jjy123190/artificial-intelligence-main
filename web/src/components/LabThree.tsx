@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -294,9 +295,9 @@ export default function LabThree({
     ) || [];
   const current = result?.result.trace[step];
   const lastStep = Math.max(0, (result?.result.trace.length || 1) - 1);
-  const currentName = result?.graph.nodes.find(
+  const currentName = displayText(result?.graph.nodes.find(
     (n) => n.id === current?.node,
-  )?.name;
+  )?.name);
   const methodName =
     result?.result.label ||
     snapshot?.methods.find((m) => m.id === method)?.name ||
@@ -476,7 +477,7 @@ export default function LabThree({
                             <option key={q.id} value={q.id}>
                               {q.split === "shared" ? "共享场景" : "测试图"} ·{" "}
                               {q.hops}跳{q.llm_cached ? " · LLM实测" : ""} ·{" "}
-                              {q.text}
+                              {displayText(q.text)}
                             </option>
                           ))}
                         </select>
@@ -494,7 +495,7 @@ export default function LabThree({
                         >
                           {snapshot.methods.map((m) => (
                             <option key={m.id} value={m.id}>
-                              {m.name}
+                              {displayText(m.name)}
                               {selected?.unavailable_methods?.[m.id]
                                 ? "（数据不可用）"
                                 : ""}
@@ -571,7 +572,7 @@ export default function LabThree({
                           {selected.hops} 跳 ·{" "}
                           {selected.split === "shared"
                             ? "共享原始CSV场景"
-                            : "图级隔离的教学测试图"}
+                            : "图级隔离的测试图"}
                         </span>
                       </div>
                     )}
@@ -622,7 +623,7 @@ export default function LabThree({
                     )}
                     {error && (
                       <div className="error-banner" role="alert">
-                        <span>{error}</span>
+                        <span>{displayText(error)}</span>
                         <button
                           className="button secondary"
                           disabled={busy || Boolean(blocked)}
@@ -695,7 +696,7 @@ export default function LabThree({
                           </button>
                         </div>
                         <p className="lab3-result-meta">
-                          {result.result.label} · 扩展预算{" "}
+                          {displayText(result.result.label)} · 扩展预算{" "}
                           {result.result.budget} · {result.query.id}
                         </p>
                         {result.result.trace.length > 0 ? (
@@ -853,7 +854,7 @@ export default function LabThree({
                                 : "lab3-result-explanation"
                             }
                           >
-                            {result.explanation}
+                            {displayText(result.explanation)}
                           </p>
                           {!result.result.valid && result.result.found && (
                             <p className="lab3-rejection">
@@ -861,8 +862,8 @@ export default function LabThree({
                               {result.result.path
                                 .map(
                                   (id) =>
-                                    result.graph.nodes.find((n) => n.id === id)
-                                      ?.name || id,
+                                    displayText(result.graph.nodes.find((n) => n.id === id)
+                                      ?.name || id),
                                 )
                                 .join(" → ")}
                             </p>
@@ -889,7 +890,7 @@ export default function LabThree({
                             </div>
                             <div>
                               <strong>{result.result.total_work}</strong>
-                              <span>总工作量（含模拟）</span>
+                              <span>节点工作量（含模拟）</span>
                             </div>
                             <div>
                               <strong>{result.result.hops ?? "—"}</strong>
@@ -900,6 +901,15 @@ export default function LabThree({
                               <span>证据规则拦截</span>
                             </div>
                           </div>
+                          <p className="helper-text">
+                            启发检查 {result.result.heuristic_edge_checks} 条候选边 ·
+                            合计检查 {result.result.total_edge_checks} 条候选边。
+                            后缀探测 {result.result.heuristic_probe_states} 个子前缀 ·
+                            出边扫描 {result.result.adjacency_edge_scans} 次 ·
+                            复用候选 {result.result.successor_cache_hits} 次 ·
+                            已证无解剪枝 {result.result.proof_pruned} 个。
+                            扫描含关系与环过滤，候选证据检查不重复计算缓存；节点工作量不含前瞻与LLM推断。
+                          </p>
                           {result.llm.mode !== "off" && (
                             <p className="lab3-notice">
                               <ShieldCheck size={18} />
@@ -938,15 +948,15 @@ export default function LabThree({
                                     <th scope="row">{relations[e.relation]}</th>
                                     <td>
                                       {
-                                        result.graph.nodes.find(
+                                        displayText(result.graph.nodes.find(
                                           (n) => n.id === e.source,
-                                        )?.name
+                                        )?.name)
                                       }{" "}
                                       →{" "}
                                       {
-                                        result.graph.nodes.find(
+                                        displayText(result.graph.nodes.find(
                                           (n) => n.id === e.target,
-                                        )?.name
+                                        )?.name)
                                       }
                                     </td>
                                     <td>{percent(e.confidence)}</td>
@@ -971,7 +981,7 @@ export default function LabThree({
                         )}
                         <details className="task-details">
                           <summary>算法语义与解释边界</summary>
-                          <p>{result.result.note}</p>
+                          <p>{displayText(result.result.note)}</p>
                           <p>
                             这里检索的是关系路径；持股路径不自动等于控制关系，担保或交易线索也不是违法判断。
                           </p>
@@ -1000,7 +1010,7 @@ export default function LabThree({
                       <h3>A*</h3>
                       <p>
                         以 f=g+h
-                        排序。下界版用于校验；固定、GA和学习版比较引导效率。
+                        排序。已观察到的一/两步目标延伸优先于估值，仍按出队计费；有估值同分时优先更深路径，下界版保持FIFO。已完整核验无解的后缀可剪枝，未知分支不能因低估值被删除。
                       </p>
                     </div>
                     <div>
@@ -1020,7 +1030,7 @@ export default function LabThree({
                     <h2>用验证图学习更好的搜索顺序</h2>
                     <p>
                       适应度 = 有效答案率 − 0.12 ×
-                      平均扩展预算占比。测试集不参与参数选择。
+                      平均扩展预算占比。验证预算与主比较均为8，测试集不参与参数选择。
                     </p>
                   </header>
                   <label className="task-inline-field">
@@ -1085,14 +1095,14 @@ export default function LabThree({
                         种群 {snapshot.ga[gaSeed].population} · 迭代{" "}
                         {snapshot.ga[gaSeed].generations} 代 ·{" "}
                         {snapshot.ga[gaSeed].validation_queries} 道验证问题 ·
-                        精英保留 / 锦标赛选择 / 算术交叉 / 高斯变异
+                        固定h与前轮验证候选热启动 / 精英保留 / 锦标赛 / 交叉 / 变异
                       </p>
                       <div className="lab3-weights">
                         {[
-                          "主题差异",
-                          "后继稀疏",
+                          "局部后缀潜力",
+                          "有效后继稀疏",
                           "证据风险",
-                          "终点类型",
+                          "阶段化终点",
                           "死路惩罚",
                         ].map((n, i) => (
                           <div key={n}>
@@ -1109,7 +1119,7 @@ export default function LabThree({
                 <section className="task-section">
                   <h2>路径价值分类器与专家约束</h2>
                   <p>
-                    从训练图的成功/失败路径前缀学习逻辑回归分类器。输入是剩余跳数、主题、后继、证据质量等6个特征；不包含答案编号。
+                    从训练图的成功/失败路径前缀学习6维逻辑回归。只看下一关系的一步合法邻居；恰余两跳时最多额外探测2个子前缀，未探测完不等于死路，不调用答案穷举；离终点越远，上市属性越不应决定路径价值。混合学习权重经验证集比较后采用0.25，避免弱估值覆盖更可靠的图谱线索。
                   </p>
                   {snapshot.learning.length === 0 && (
                     <p className="task-empty">
@@ -1155,18 +1165,18 @@ export default function LabThree({
                 <section className="task-section">
                   <h2>模型评估行动，搜索程序产生答案</h2>
                   <p>
-                    LLM只接收问题的关系序列、目标属性和候选关系的证据字段，输出行动评分。它没有修改图或直接填入答案的权限。
+                    LLM接收关系序列、目标属性、已走路径及沿途证据，评价当前路径前缀。价值仍用A/B/C受限评分；合法性用验证集选定的True/False判断，减少选项偏置。评分绑定整个前缀，模型无权修改图或直接填入答案。
                   </p>
                   <div className="lab3-method-notes">
                     <div>
                       <h3>① 合法性辅助</h3>
-                      <p>模型评价候选边；最终是否可走由确定性证据规则裁决。</p>
+                      <p>保留原始模型证据判断，并另列训练图拟合的LLM表示分类头；最终是否可走由确定性规则裁决。</p>
                     </div>
                     <div>
                       <h3>② 路径价值</h3>
                       <p>
                         限制为 A / B / C
-                        三档下一token概率，转成排序奖励，避免自由文本夹带答案。
+                        三档下一token概率，转成有界排序奖励；未评分节点为零调整，不能覆盖已知合法后缀，避免自由文本夹带答案。
                       </p>
                     </div>
                     <div>
@@ -1180,10 +1190,10 @@ export default function LabThree({
                     <>
                       <p className="lab3-notice">
                         实测模型：{snapshot.llm_summary.model} ·{" "}
-                        {snapshot.llm_summary.questions} 道独立测试问题 ·
+                        {snapshot.llm_summary.questions} 道图级隔离的测试问题 ·
                         本地推断记录可重放
                       </p>
-                      <p>{snapshot.llm_summary.note}</p>
+                      <p>{displayText(snapshot.llm_summary.note)}</p>
                       {Boolean(snapshot.llm_summary.results?.length) && (
                         <>
                           <div
@@ -1204,7 +1214,7 @@ export default function LabThree({
                               <tbody>
                                 {snapshot.llm_summary.results!.map((row) => (
                                   <tr key={row.method}>
-                                    <th scope="row">{row.label}</th>
+                                    <th scope="row">{displayText(row.label)}</th>
                                     <td>{percent(row.success_rate)}</td>
                                     <td>{row.mean_expanded.toFixed(2)}</td>
                                     <td>{row.mean_total_work.toFixed(2)}</td>
@@ -1216,24 +1226,83 @@ export default function LabThree({
                           <p className="helper-text">
                             同一批 {snapshot.llm_summary.questions}{" "}
                             题、扩展预算8。LLM评分推断另耗时{" "}
-                            {(
-                              (snapshot.llm_summary.total_inference_ms || 0) /
-                              1000
-                            ).toFixed(1)}{" "}
+                            {snapshot.llm_summary.total_inference_ms == null
+                              ? "未记录"
+                              : (snapshot.llm_summary.total_inference_ms / 1000).toFixed(1)}{" "}
                             秒（合计，不含模型加载），未计入搜索扩展。小样本机制验证，不代表普遍收益。
                           </p>
                         </>
                       )}
                       <p>
                         合法性检查 {snapshot.llm_summary.legal_checks}{" "}
-                        条，一致率{" "}
+                        个路径前缀，一致率{" "}
                         {snapshot.llm_summary.legal_check_accuracy == null
                           ? "尚未测量"
                           : percent(snapshot.llm_summary.legal_check_accuracy)}
                         ；{snapshot.llm_summary.explanations} 段解释中，
                         {snapshot.llm_summary.explanation_grounded}{" "}
-                        段包含全部路径实体。
+                        段与程序证据解释完全一致；仅包含实体名不代表关系或语义正确。
+                        {snapshot.llm_summary.legal_metrics && (
+                          <>
+                            {" "}其中不合格前缀 {snapshot.llm_summary.legal_metrics.ineligible} 条，
+                            被模型误放行 {snapshot.llm_summary.legal_metrics.false_accept} 条；
+                            不合法证据检出率 {snapshot.llm_summary.legal_metrics.ineligible_recall == null
+                              ? "无该类样本"
+                              : percent(snapshot.llm_summary.legal_metrics.ineligible_recall)}。
+                            全部预测合法的基线一致率为 {snapshot.llm_summary.legal_metrics.always_legal_accuracy == null
+                              ? "未测量"
+                              : percent(snapshot.llm_summary.legal_metrics.always_legal_accuracy)}，
+                            不能仅凭总体一致率认定模型能拦截风险。
+                          </>
+                        )}
+                        {snapshot.llm_summary.calibrated_legal_metrics && (
+                          <>
+                            {" "}另列有监督证据评估（固定Qwen表示 + 训练图分类头，不是原始模型能力）：
+                            误放行 {snapshot.llm_summary.calibrated_legal_metrics.false_accept} 条，
+                            误拒 {snapshot.llm_summary.calibrated_legal_metrics.false_reject} 条，
+                            不合格检出率 {snapshot.llm_summary.calibrated_legal_metrics.ineligible_recall == null
+                              ? "无该类样本"
+                              : percent(snapshot.llm_summary.calibrated_legal_metrics.ineligible_recall)}。
+                            分类头不接收运行时专家判定；最终证据规则仍独立核验。
+                          </>
+                        )}
+                        {snapshot.llm_summary.paired_diagnostics && (
+                          <>
+                            {" "}同题配对中，新增答对 {snapshot.llm_summary.paired_diagnostics.improved_answers} 题，
+                            丢失原可答 {snapshot.llm_summary.paired_diagnostics.lost_answers} 题，
+                            {snapshot.llm_summary.paired_diagnostics.extra_expansion_cases} 题增加了扩展；
+                            评分可能增加搜索成本，专家规则也不能保证有限预算下找到答案。
+                          </>
+                        )}
                       </p>
+                      {snapshot.llm_confirmation?.numeric_calibrated && (
+                        <details className="task-details">
+                          <summary>新图与数值挑战：查看未改善与退化</summary>
+                          <p className="helper-text">
+                            冻结后新增 {snapshot.llm_confirmation.questions} 题、{snapshot.llm_confirmation.prefixes} 个前缀。
+                            原始模型误放行 {snapshot.llm_confirmation.raw_metrics?.false_accept} 条、误拒 {snapshot.llm_confirmation.raw_metrics?.false_reject} 条；
+                            有监督评估头误放行 {snapshot.llm_confirmation.calibrated_metrics?.false_accept} 条、误拒 {snapshot.llm_confirmation.calibrated_metrics?.false_reject} 条。
+                            其中 {snapshot.llm_confirmation.novel_prompt_prefixes} 个前缀的完整证据提示不在训练集中；图隔离不等于数字文本不重合。
+                          </p>
+                          <p className="helper-text">
+                            {snapshot.llm_confirmation.numeric_cases} 例数值精度挑战中，误放行 {snapshot.llm_confirmation.numeric_raw?.false_accept} → {snapshot.llm_confirmation.numeric_calibrated.false_accept}，
+                            误拒 {snapshot.llm_confirmation.numeric_raw?.false_reject} → {snapshot.llm_confirmation.numeric_calibrated.false_reject}。
+                            均衡准确率 {snapshot.llm_confirmation.numeric_raw?.balanced_accuracy == null ? "不适用" : percent(snapshot.llm_confirmation.numeric_raw.balanced_accuracy)} → {snapshot.llm_confirmation.numeric_calibrated.balanced_accuracy == null ? "不适用" : percent(snapshot.llm_confirmation.numeric_calibrated.balanced_accuracy)}；
+                            总体准确率上升不代表两类都改善。这些确认结果没有反过来用于调参。
+                          </p>
+                          {snapshot.llm_confirmation.paired_summary?.map((row) => (
+                            <p className="helper-text" key={row.variant}>
+                              {({ no_llm: "无LLM", raw: "原始LLM", calibrated: "校准LLM" } as Record<string, string>)[row.variant] ?? row.variant}：
+                              {row.valid}/{row.questions} 题答对，扩展合计 {row.expanded} 次。
+                            </p>
+                          ))}
+                          <p className="helper-text">
+                            新图真实推断 {(Number(snapshot.llm_confirmation.inference_ms) / 1000).toFixed(1)} 秒；
+                            分类头训练 {(Number(snapshot.llm_summary.readout_training?.training_elapsed_ms) / 1000).toFixed(1)} 秒另计。
+                            评分不直接剪枝，最终答案仍由图路径和证据规则核验。
+                          </p>
+                        </details>
+                      )}
                       <a
                         className="button primary"
                         href={labHref("lab03", "search")}
@@ -1257,16 +1326,24 @@ export default function LabThree({
                   )}
                   {snapshot.llm_explanations.map((e) => (
                     <details className="task-details" key={e.query_id}>
-                      <summary>{e.query_id} · 查看模型原始解释</summary>
+                      <summary>{e.query_id} · 查看模型解释</summary>
+                      {e.controlled_text && e.controlled_grounded && (
+                        <>
+                          <p>受控证据说明（LLM选择措辞，不生成事实）：{displayText(e.controlled_text)}</p>
+                          <small>{displayText(e.controlled_note)}</small>
+                        </>
+                      )}
                       <p className="lab3-notice">
                         {e.grounded
-                          ? "实体名称检查通过；这不等于整段语义已核验。"
-                          : "实体核对未通过：" +
-                            e.missing_path_entities.join("、") +
-                            " 未在解释中完整出现。请以程序证据路径为准。"}
+                          ? "与已核验路径的程序解释完全一致。"
+                          : "模型解释未通过完整证据认证，不作为推理结论。" +
+                            (e.missing_path_entities.length
+                              ? " 缺少路径实体：" + e.missing_path_entities.map(displayText).join("、") + "。"
+                              : " 即使实体名齐全，也可能说错关系。")}
                       </p>
-                      <p>{e.text}</p>
-                      <small>{e.note}</small>
+                      <p>{displayText(e.text)}</p>
+                      {e.verified_text && <p>程序核验解释：{displayText(e.verified_text)}</p>}
+                      <small>{displayText(e.note)}</small>
                     </details>
                   ))}
                   <p>
@@ -1353,12 +1430,12 @@ export default function LabThree({
                   )}
                   <p className="helper-text">
                     有效答案率 · {metrics[0]?.n ?? 0} 道配对问题 / 方法 ·
-                    越高越好
+                    越高越好。节点扩展减少不代表总计算更少；边检查只计首次实际工作，候选缓存复用不再重复计费。
                   </p>
                   <div className="lab3-bars">
                     {metrics.map((r) => (
                       <div key={r.method}>
-                        <span>{r.label}</span>
+                        <span>{displayText(r.label)}</span>
                         <div>
                           <i style={{ width: percent(r.success_rate) }} />
                         </div>
@@ -1378,9 +1455,12 @@ export default function LabThree({
                           <th scope="col">方法</th>
                           <th scope="col">有效答案率</th>
                           <th scope="col">扩展节点</th>
-                          <th scope="col">含模拟总工作量</th>
+                          <th scope="col">节点工作量（含模拟）</th>
                           <th scope="col">成功路径跳数</th>
-                          <th scope="col">后继检查数</th>
+                          <th scope="col">扩展边检查</th>
+                          <th scope="col">启发边检查</th>
+                          <th scope="col">合计边检查 / 扫描</th>
+                          <th scope="col">复用 / 已证剪枝</th>
                           <th scope="col">冗余路径比例</th>
                           <th scope="col">无效答案率</th>
                         </tr>
@@ -1388,7 +1468,7 @@ export default function LabThree({
                       <tbody>
                         {metrics.map((r) => (
                           <tr key={r.method}>
-                            <th scope="row">{r.label}</th>
+                            <th scope="row">{displayText(r.label)}</th>
                             <td>{percent(r.success_rate)}</td>
                             <td>{r.mean_expanded.toFixed(2)}</td>
                             <td>{r.mean_total_work.toFixed(2)}</td>
@@ -1398,6 +1478,9 @@ export default function LabThree({
                                 : r.mean_hops_success.toFixed(2)}
                             </td>
                             <td>{r.mean_successor_checks.toFixed(2)}</td>
+                            <td>{r.mean_heuristic_edge_checks.toFixed(2)}</td>
+                            <td>{r.mean_total_edge_checks.toFixed(2)} / {r.mean_adjacency_edge_scans.toFixed(2)}</td>
+                            <td>{r.mean_successor_cache_hits.toFixed(2)} / {r.mean_proof_pruned.toFixed(2)}</td>
                             <td>{percent(r.mean_redundant_paths)}</td>
                             <td>{percent(r.invalid_answer_rate)}</td>
                           </tr>
@@ -1406,7 +1489,7 @@ export default function LabThree({
                     </table>
                   </div>
                   <p className="helper-text">
-                    答案率要求端点正确且每条证据有效。跳数只统计成功路径；后继检查数包含模拟中的检查。MCTS预算只约束树扩展，模拟另列，不能只看树节点数宣称更快。全部结果来自教学合成图。
+                    答案率要求端点正确且每条证据有效。跳数只统计成功路径；“检查 / 扫描”分别为候选证据检查和含关系/环过滤的全部出边扫描；后继检查含模拟中的检查。MCTS预算只约束树扩展，模拟另列，不能只看树节点数宣称更快。全部结果来自当前图谱数据。
                   </p>
                 </section>
                 {paired.length > 0 && (
@@ -1453,6 +1536,39 @@ export default function LabThree({
                     </div>
                   </section>
                 )}
+                {Boolean(snapshot.confirmation?.negative_summary?.length) && (
+                  <section className="task-section">
+                    <h2>无解问题：区分证明穷尽与预算耗尽</h2>
+                    <p className="helper-text">
+                      冻结后追加 {snapshot.confirmation?.question_count} 道可答题和 {snapshot.confirmation?.negative_questions} 道派生不可答题，
+                      分别 {snapshot.confirmation?.paired_runs} 对和 {snapshot.confirmation?.negative_pairs} 对新旧运行；不混入上方原测试答案率。
+                    </p>
+                    <details className="task-details">
+                      <summary>查看混合搜索的已证无解剪枝对比</summary>
+                      <div className="table-scroll" tabIndex={0} role="region" aria-label="无解确认对比，可横向滚动">
+                        <table aria-label="实验三无解确认结果">
+                          <thead><tr>
+                            <th scope="col">新图 / 预算</th><th scope="col">正确穷尽（前 → 后）</th>
+                            <th scope="col">平均扩展（前 → 后）</th><th scope="col">证据检查（前 → 后）</th>
+                          </tr></thead>
+                          <tbody>{snapshot.confirmation?.negative_summary?.filter((row) => row.method === "hybrid").map((row) => (
+                            <tr key={`${row.split}-${row.budget}`}>
+                              <th scope="row">{row.split.endsWith("_shift") ? "强干扰" : "普通"} / {row.budget}</th>
+                              <td>{row.before.correct_exhausted}/{row.n} → {row.after.correct_exhausted}/{row.n}</td>
+                              <td>{row.before.mean_expanded.toFixed(2)} → {row.after.mean_expanded.toFixed(2)}</td>
+                              <td>{row.before.mean_edge_checks.toFixed(2)} → {row.after.mean_edge_checks.toFixed(2)}</td>
+                            </tr>
+                          ))}</tbody>
+                        </table>
+                      </div>
+                      <p className="helper-text">
+                        只剪去证据已经完整证明无解的前缀，截断探测仍为未知；ML/LLM分数不能直接删除分支。
+                        证明检查、边扫描仍计成本，队列扩展变少不代表证据检查归零。
+                        不可答题是图中不存在的目标行业，仅检验闭世界固定关系任务，不证明开放世界无答案。
+                      </p>
+                    </details>
+                  </section>
+                )}
                 <section className="task-section">
                   <h2>失败案例与改进边界</h2>
                   {snapshot.failures.length === 0 && (
@@ -1472,7 +1588,7 @@ export default function LabThree({
                             ? "证据未通过"
                             : "未找到答案"}
                       </summary>
-                      <p>{f.query.text}</p>
+                      <p>{displayText(f.query.text)}</p>
                       <p>
                         {f.diagnosis}。独立穷举存在 {f.oracle_paths}{" "}
                         条有效路径。

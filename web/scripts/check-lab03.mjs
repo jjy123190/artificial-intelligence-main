@@ -13,7 +13,7 @@ async function load(relative) {
     "data:text/javascript;base64," + Buffer.from(outputText).toString("base64")
   );
 }
-const { percent, resultTitle, blockedReason } = await load(
+const { percent, resultTitle, blockedReason, comparisonCompletion } = await load(
   "../src/lab-three/presentation.ts",
 );
 const { treeStates, stateKey } = await load("../src/lab-three/tree-model.ts");
@@ -83,3 +83,11 @@ assert.equal(omitted.states.filter((s) => s.status === "path").length, 3);
 console.log(
   "Lab03 presentation checks passed: distinct outcomes, missing-model gates, null metrics, focused-branch windowing and missing ancestor reconstruction.",
 );
+
+const compared = [{ method: "bfs", result: {} }, { method: "mcts", error: "timeout" }];
+assert.equal(comparisonCompletion(compared, ["bfs", "mcts"]).complete, false);
+assert.equal(comparisonCompletion(compared, ["bfs", "mcts"]).successful, 1);
+assert.equal(comparisonCompletion(compared.slice(0, 1), ["bfs", "mcts"]).complete, false);
+assert.equal(comparisonCompletion([{method:"bfs",result:{}},{method:"mcts",result:{}}], ["bfs", "mcts"]).complete, true);
+assert.equal(comparisonCompletion([{method:"bfs",result:{}},{method:"bfs",result:{}}], ["bfs", "mcts"]).complete, false);
+console.log("Comparison exports distinguish complete, failed and cancelled runs.");

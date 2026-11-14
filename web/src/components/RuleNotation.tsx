@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import type { RuleExample } from "../rule-notation";
 import RuleExpression from "./RuleExpression";
 
@@ -17,7 +18,7 @@ export default function RuleNotation({
       </p>
       <p>
         <code>∧</code> 表示“并且”，所有前提和比较条件都要成立；
-        <code>→</code> 表示在当前教学规则下可以推导结论。
+        <code>→</code> 表示在当前规则下可以推导结论。
       </p>
       <details className="rule-notation-details">
         <summary>变量含义与当前案例示例</summary>
@@ -55,7 +56,7 @@ export default function RuleNotation({
             <p>
               <strong>实际记录</strong> <code>{example.fact}</code>
             </p>
-            <p>{example.description}</p>
+            <p>{displayText(example.description)}</p>
             <ul className="rule-bindings" aria-label="变量绑定">
               {example.bindings.map((binding) => (
                 <li key={binding.variable}>

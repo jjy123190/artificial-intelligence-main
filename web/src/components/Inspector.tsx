@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useState } from "react";
 import { reasoningGraphHref as graphHref } from "../routes";
 import {
@@ -74,11 +75,11 @@ function TreeNode({
         </button>
         <button className="proof-node-label" onClick={() => onSelect(id)}>
           <span className="rule-code">{node.rule || "输入"}</span>
-          <span>{node.label}</span>
+          <span>{displayText(node.label)}</span>
         </button>
       </div>
       <p className="proof-note">
-        {node.rule ? node.rule_description : node.source}
+        {displayText(node.rule ? node.rule_description : node.source)}
       </p>
       {expanded && node.premises.length > 0 && (
         <div className="proof-children">
@@ -277,7 +278,7 @@ export default function Inspector(props: Props) {
   const [holdingIndex, setHoldingIndex] = useState(-1);
   const entity = data.entities.find((e) => e.eid === selected);
   const decision = analysis?.decisions[selected];
-  const names = Object.fromEntries(data.entities.map((e) => [e.eid, e.name]));
+  const names = Object.fromEntries(data.entities.map((e) => [e.eid, displayText(e.name)]));
   const incoming = data.holdings
     .map((h, i) => ({ ...h, index: i }))
     .filter((h) => h.target === selected);
@@ -322,7 +323,7 @@ export default function Inspector(props: Props) {
             {entity.kind === "Person" ? "自然人" : entity.category || "企业"}
           </span>
         </div>
-        <h2>{entity.name}</h2>
+        <h2>{displayText(entity.name)}</h2>
         {entity.kind === "Company" && (
           <p>注册资本 {fmt(entity.capital, 0)} 万元</p>
         )}
@@ -388,7 +389,7 @@ export default function Inspector(props: Props) {
                   </option>
                   {decision?.claim_ids.map((id) => (
                     <option key={id} value={id}>
-                      {analysis?.provenance[id]?.label || id}
+                      {displayText(analysis?.provenance[id]?.label || id)}
                     </option>
                   ))}
                 </select>
@@ -440,7 +441,7 @@ export default function Inspector(props: Props) {
                         {incoming.map((h) => (
                           <option key={h.index} value={h.index}>
                             {shortName(names[h.holder] || h.holder)} →{" "}
-                            {shortName(entity.name)}
+                            {shortName(displayText(entity.name))}
                           </option>
                         ))}
                       </select>
@@ -492,7 +493,7 @@ export default function Inspector(props: Props) {
                     }
                   />
                   <p className="helper-text">
-                    教学设定，不是对真实企业的测量。
+                    当前参数设置，仅用于本次评分。
                   </p>
                 </section>
                 <p className="helper-text">

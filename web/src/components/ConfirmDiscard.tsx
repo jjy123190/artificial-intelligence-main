@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useId, useRef } from "react";
 import { Warning, DownloadSimple } from "@phosphor-icons/react";
 
@@ -65,7 +66,7 @@ export default function ConfirmDiscard({
             <Warning size={25} />
           </div>
           <h2 id={titleId}>{confirmation.title}</h2>
-          <p id={descriptionId}>{confirmation.description}</p>
+          <p id={descriptionId}>{displayText(confirmation.description)}</p>
           <button className="draft-export-link" onClick={onExport}>
             <DownloadSimple size={17} />
             先导出当前草稿

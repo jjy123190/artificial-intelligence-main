@@ -3,6 +3,7 @@ from __future__ import annotations
 import math,random
 from .domain import State,features,enumerate_paths,FEATURE_NAMES
 from .dataset import unpack
+from .artifacts import provenance
 
 def sigmoid(x):return 1/(1+math.exp(-max(-30,min(30,x))))
 
@@ -12,6 +13,7 @@ def probability(model,x):
 
 def fit_classifier(records,seed):
     import numpy as np
+    if type(seed) is not int:raise ValueError('分类器种子必须是整数')
     samples=[];ids=[]
     for record in records:
         if record['split']!='train' or record['seed']!=seed:continue
@@ -25,6 +27,8 @@ def fit_classifier(records,seed):
                 samples.append((features(graph,state,q),int(state.edges in positive)))
                 if state.depth<q.hops:
                     todo.extend(graph.apply(state,e) for e in graph.successors(state,q,True))
+    if not samples:raise ValueError('该种子没有训练图或路径样本')
+    if len({s[1] for s in samples}) != 2:raise ValueError('路径分类器训练必须同时包含成功与失败前缀')
     x=np.asarray([s[0] for s in samples],dtype=float);y=np.asarray([s[1] for s in samples],dtype=float)
     w=np.zeros(x.shape[1]);b=0.
     positives=int(y.sum());negatives=len(y)-positives
@@ -34,10 +38,10 @@ def fit_classifier(records,seed):
         err=(pred-y)*weight
         w-=.12*(x.T@err/len(y)+.012*w);b-=.12*err.mean()
     preds=1/(1+np.exp(-np.clip(x@w+b,-30,30)))
-    return {'kind':'logistic_regression','coef':w.tolist(),'intercept':float(b),'features':FEATURE_NAMES,
+    return {'provenance':provenance(),'kind':'logistic_regression','coef':w.tolist(),'intercept':float(b),'features':FEATURE_NAMES,
             'seed':seed,'train_graph_ids':ids,'samples':len(y),'positive':positives,'negative':negatives,
             'train_brier':float(np.mean((preds-y)**2)), 'label':'state has at least one valid goal continuation in training graph',
-            'note':'训练图穷举产生正负路径前缀；不使用节点编号、目标答案或测试标签作为特征。'}
+            'note':'训练图穷举产生正负路径前缀；特征使用与搜索一致的一跳/有界两跳证据；不使用节点编号、目标答案或测试标签作为特征。'}
 
 
 def classifier_evaluation(records,model,split='test'):

@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { ArrowRight, Target } from "@phosphor-icons/react";
 import type { QueryInfo } from "./types";
 import { relations } from "./presentation";
@@ -6,10 +7,10 @@ export default function QueryModel({ query }: { query: QueryInfo }) {
   return (
     <div className="lab3-query-model">
       <h3>问题定义</h3>
-      <p>{query.text}</p>
+      <p>{displayText(query.text)}</p>
       {query.relations && (
         <ol className="lab3-relation-chain" aria-label="待搜索的关系序列">
-          <li>{query.start_name || "起点"}</li>
+          <li>{displayText(query.start_name) || "起点"}</li>
           {query.relations.map((relation, index) => (
             <li key={index}>
               <ArrowRight size={14} aria-hidden="true" />

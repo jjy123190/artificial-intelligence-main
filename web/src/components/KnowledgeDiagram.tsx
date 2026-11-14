@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useRef, useState } from "react";
 import cytoscape from "cytoscape";
 import type { Core } from "cytoscape";
@@ -20,7 +21,7 @@ export default function KnowledgeDiagram({ data }: { data: LabOneResult }) {
         ...data.entities.map((e) => ({
           data: {
             id: "entity:" + e.eid,
-            label: e.name,
+            label: displayText(e.name),
             kind: e.kind,
             eid: e.eid,
           },
@@ -135,7 +136,7 @@ export default function KnowledgeDiagram({ data }: { data: LabOneResult }) {
           >
             {data.entities.map((e) => (
               <option key={e.eid} value={e.eid}>
-                {e.eid} · {e.name}
+                {e.eid} · {displayText(e.name)}
               </option>
             ))}
           </select>

@@ -1,14 +1,25 @@
 """Meaningful invariants: independent search, valid witnesses, budgets, and split leakage."""
+from tests.lab03.support import requires_artifacts
 import json,unittest,random,math
 from pathlib import Path
 from unittest.mock import patch
 from experiments.lab03.domain import Graph,Node,Edge,Query,State,enumerate_paths,expert_legal
-from experiments.lab03.search import search
+from experiments.lab03.search import search as engine_search, FIXED, GA_METHODS, ML_METHODS
+from experiments.lab03.domain import path_key
 from experiments.lab03.dataset import load_dataset,unpack,shared_graph
 from experiments.lab03.learning import probability,fit_classifier
 from experiments.lab03.genetic import optimize
 from experiments.lab03.service import run_task,tasks
 from backend.schemas import LabThreeTask
+
+
+def search(graph, query, method='bfs', budget=24, **kwargs):
+    """Explicit synthetic parameters for engine fixtures, never service fallbacks."""
+    if method in GA_METHODS:
+        kwargs.setdefault('weights', list(FIXED))
+    if method in ML_METHODS:
+        kwargs.setdefault('model', {'coef': [0.] * 6, 'intercept': 0., 'seed': kwargs.get('seed', 7)})
+    return engine_search(graph, query, method, budget, **kwargs)
 
 
 def fixture():
@@ -50,8 +61,20 @@ class SearchTests(unittest.TestCase):
 
     def test_expert_rejects_invalid_path_even_if_model_rewards_it(self):
         g,_=fixture();q=Query('q','p',('HOLDS','HOLDS'),'制造')
-        r=search(g,q,'hybrid_llm',32,llm_scores={'bad':1.,'e2':0.})
+        r=search(g,q,'hybrid_llm',32,llm_scores={path_key(('e1','bad')):1.,path_key(('e1','e2')):0.})
+        self.assertFalse(r['found'])
+        # The informed search now proves this parent has no legal goal before
+        # it is ever expanded. Proof pruning is not an expansion-time rejection.
+        self.assertEqual(r['status'],'exhausted');self.assertEqual(r['proof_pruned'],1)
+        self.assertEqual(r['expert_rejections'],0);self.assertEqual(r['total_edge_checks'],3)
+        self.assertTrue(any(s['status']=='proof_pruned' for s in r['trace']))
+        # Independently exercise the original expert rejection even with a
+        # maximal model reward: zero weights disable the informed proof shortcut.
+        r=search(g,q,'hybrid_llm',32,weights=[0.]*6,
+                 llm_scores={path_key(('e1','bad')):1.,path_key(('e1','e2')):0.})
         self.assertFalse(r['found']);self.assertGreater(r['expert_rejections'],0)
+        self.assertEqual(r['proof_pruned'],0)
+        self.assertTrue(any(s['status']=='rejected' and s['edge_ids']==['e1','bad'] for s in r['trace']))
         r=search(g,q,'hybrid_no_expert',32)
         self.assertTrue(r['found']);self.assertFalse(r['valid'])
 
@@ -101,14 +124,14 @@ class DataTests(unittest.TestCase):
     def test_model_features_do_not_contain_ids_or_gold(self):
         from experiments.lab03.domain import FEATURE_NAMES
         self.assertEqual(len(FEATURE_NAMES),6)
-        m=json.loads(Path('outputs/lab03/models.json').read_text(encoding='utf-8'))
+        m={str(seed):fit_classifier(load_dataset(),seed) for seed in (7,19,43)}
         for model in m.values():
             self.assertTrue(all(x.startswith('train-') for x in model['train_graph_ids']))
             self.assertEqual(len(model['coef']),6)
             self.assertTrue(0<=probability(model,[.5,1,.5,1,1,0])<=1)
 
     def test_ga_elitism_and_validation_only(self):
-        ga=json.loads(Path('outputs/lab03/ga_history.json').read_text(encoding='utf-8'))
+        ga={str(seed):optimize(load_dataset(),seed,population=4,generations=2) for seed in (7,19,43)}
         for result in ga.values():
             self.assertTrue(all(x.startswith('validation-') for x in result['validation_graph_ids']))
             values=[r['fitness'] for r in result['history']]
@@ -116,13 +139,14 @@ class DataTests(unittest.TestCase):
 
     def test_web_query_cannot_override_graph_or_answers(self):
         with self.assertRaises(ValueError):run_task({'query_id':'../../secrets'})
-        r=run_task({'query_id':'shared-3','method':'hybrid','budget':16})
+        r=run_task({'query_id':'shared-3','method':'astar_fixed','budget':16})
         self.assertTrue(r['result']['valid']);self.assertEqual(r['llm']['mode'],'off')
 
     def test_missing_llm_replay_fails_explicitly(self):
         with self.assertRaises(ValueError):run_task({'query_id':'shared-3','method':'hybrid_llm','budget':8})
 
 class LLMTests(unittest.TestCase):
+    @requires_artifacts('models.json','ga_history.json','manifest.json','llm_cache.json','llm_audit.json','llm_evidence_readout.json')
     def test_real_cached_scores_are_bounded_and_graph_bound(self):
         from experiments.lab03.service import read
         from experiments.lab03.domain import digest
@@ -132,10 +156,11 @@ class LLMTests(unittest.TestCase):
             g,q,_=tasks()[qid]
             self.assertEqual(record['graph_sha256'],digest(g.to_dict()))
             self.assertEqual(record['query_sha256'],digest(q.__dict__))
-            self.assertTrue(all(e in g.edges and 0<=v<=1 for e,v in record['scores'].items()))
+            self.assertTrue(all(g.valid_prefix(g.state_for_edges(q,json.loads(e)),q,expert=False) and 0<=v<=1 for e,v in record['scores'].items()))
             result=run_task({'query_id':qid,'method':'hybrid_llm','budget':8})
             self.assertEqual(result['llm']['mode'],'replay')
 
+    @requires_artifacts('models.json','ga_history.json','manifest.json','llm_cache.json','llm_audit.json','llm_evidence_readout.json')
     def test_replay_rejects_tampered_fingerprint(self):
         import experiments.lab03.service as service
         original=service.read

@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowsOut,
@@ -33,7 +34,7 @@ export default function SearchTree({
     [result, index],
   );
   const names = useMemo(
-    () => Object.fromEntries(result.graph.nodes.map((n) => [n.id, n.name])),
+    () => Object.fromEntries(result.graph.nodes.map((n) => [n.id, displayText(n.name)])),
     [result],
   );
   const columns = new Map<number, typeof visible.states>();
@@ -246,7 +247,7 @@ export default function SearchTree({
               {visible.states.map((s) => {
                 const pos = positions.get(stateKey(s.edge_ids))!;
                 const current = stateKey(s.edge_ids) === currentKey;
-                const rejected = s.status === "rejected";
+                const rejected = s.status === "rejected" || s.status === "proof_pruned";
                 const label = names[s.node] || s.node;
                 const eventIndex = recorded.get(stateKey(s.edge_ids));
                 return (
@@ -377,7 +378,7 @@ export default function SearchTree({
             </span>
             <span>
               <i className="rejected" />
-              专家规则拦截
+              规则拦截 / 已证无解
             </span>
             <span>
               <i />

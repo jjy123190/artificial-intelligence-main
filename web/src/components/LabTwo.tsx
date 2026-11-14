@@ -1,3 +1,4 @@
+import { displayJson, displayText } from "../display-text";
 import {
   lazy,
   Suspense,
@@ -286,7 +287,7 @@ export default function LabTwo({
             boot={boot}
             target={inputTarget}
             busy={workspaceBusy}
-            error={workspaceError}
+            error={displayText(workspaceError)}
             onChooseCase={onChooseCase}
             onApply={onApplyInputs}
             onClose={() => {
@@ -349,7 +350,7 @@ export default function LabTwo({
       <header className="course-header">
         <div>
           <h1>{module.title}</h1>
-          <p>{module.description}</p>
+          <p>{displayText(module.description)}</p>
         </div>
       </header>
       <div className="task-requirement">
@@ -358,7 +359,7 @@ export default function LabTwo({
       </div>
       {!workspace && workspaceError && (
         <div className="error-banner" role="alert">
-          <span>{workspaceError}</span>
+          <span>{displayText(workspaceError)}</span>
           <button
             className="button secondary"
             disabled={workspaceBusy}
@@ -399,7 +400,7 @@ export default function LabTwo({
                     .filter((entity) => entity.kind === "Company")
                     .map((entity) => (
                       <option key={entity.eid} value={entity.eid}>
-                        {entity.eid} · {entity.name}
+                        {entity.eid} · {displayText(entity.name)}
                       </option>
                     ))}
                 </select>
@@ -415,7 +416,7 @@ export default function LabTwo({
             {inputControls}
             {error && (
               <p className="field-error" role="alert">
-                {error}
+                {displayText(error)}
               </p>
             )}
             {result?.task === "modeling" && (
@@ -444,7 +445,7 @@ export default function LabTwo({
                             <td>
                               <code>{fact.formula}</code>
                             </td>
-                            <td>{fact.source}</td>
+                            <td>{displayText(fact.source)}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -453,7 +454,7 @@ export default function LabTwo({
                 </details>
                 <details className="task-details">
                   <summary>结构推导后的新增知识与依据</summary>
-                  <pre>{JSON.stringify(result.derived_facts, null, 2)}</pre>
+                  <pre>{displayJson(result.derived_facts)}</pre>
                 </details>
               </>
             )}
@@ -462,7 +463,7 @@ export default function LabTwo({
               <dl className="limits-list">
                 <div>
                   <dt>不透明度</dt>
-                  <dd>明确的教学参数，不是从真实企业自动测量。</dd>
+                  <dd>由当前案例显式提供的参数。</dd>
                 </div>
                 <div>
                   <dt>关联交易与对外担保</dt>
@@ -567,7 +568,7 @@ export default function LabTwo({
                       >
                         {workspace?.case.entities.map((e) => (
                           <option key={e.eid} value={e.eid}>
-                            {e.eid} · {e.name}
+                            {e.eid} · {displayText(e.name)}
                           </option>
                         ))}
                       </select>
@@ -587,7 +588,7 @@ export default function LabTwo({
                   >
                     {boot?.models.map((m) => (
                       <option key={m.id} value={m.id}>
-                        {m.name}
+                        {displayText(m.name)}
                       </option>
                     ))}
                   </select>
@@ -606,7 +607,7 @@ export default function LabTwo({
                       .filter((e) => e.kind === "Company")
                       .map((e) => (
                         <option key={e.eid} value={e.eid}>
-                          {e.eid} · {e.name}
+                          {e.eid} · {displayText(e.name)}
                         </option>
                       ))}
                   </select>
@@ -671,7 +672,7 @@ export default function LabTwo({
             )}
             {error && (
               <div className="error-banner" role="alert">
-                <span>{error}</span>
+                <span>{displayText(error)}</span>
                 <button className="button secondary" onClick={() => void run()}>
                   重试
                 </button>
@@ -697,9 +698,9 @@ export default function LabTwo({
                     {result.model_source && (
                       <p className="result-parameters">
                         参数：
-                        {boot?.models.find(
+                        {displayText(boot?.models.find(
                           (item) => item.id === result.model_source,
-                        )?.name || result.model_source}
+                        )?.name || result.model_source)}
                         {result.decision_threshold !== undefined &&
                           " · 复核阈值 " + result.decision_threshold.toFixed(2)}
                       </p>
@@ -767,16 +768,12 @@ export default function LabTwo({
                     <details className="task-details">
                       <summary>查看完整步骤和优化统计</summary>
                       <pre>
-                        {JSON.stringify(
-                          {
+                        {displayJson({
                             forward: result.forward_stats,
                             backward: result.backward_stats,
                             resolution: result.stats,
                             steps: result.steps,
-                          },
-                          null,
-                          2,
-                        )}
+                          })}
                       </pre>
                     </details>
                   </>
@@ -821,20 +818,16 @@ export default function LabTwo({
                     <details className="task-details">
                       <summary>Bayes先验与条件参数</summary>
                       <pre>
-                        {JSON.stringify(result.bayes?.parameters, null, 2)}
+                        {displayJson(result.bayes?.parameters)}
                       </pre>
                     </details>
                     <details className="task-details">
                       <summary>Mamdani隶属度、规则激活与参数</summary>
                       <pre>
-                        {JSON.stringify(
-                          {
+                        {displayJson({
                             parameters: result.fuzzy?.parameters,
                             explanation: result.fuzzy?.explanation,
-                          },
-                          null,
-                          2,
-                        )}
+                          })}
                       </pre>
                     </details>
                     <p className="helper-text">
@@ -873,7 +866,7 @@ export default function LabTwo({
                     </div>
                     <details className="task-details">
                       <summary>查看各策略的完整依据与校准信息</summary>
-                      <pre>{JSON.stringify(result.decisions, null, 2)}</pre>
+                      <pre>{displayJson(result.decisions)}</pre>
                     </details>
                     <a
                       className="button secondary"
@@ -892,7 +885,7 @@ export default function LabTwo({
                     流程总耗时包含事实构建和正反向核对。各引擎耗时见「完整步骤和优化统计」。
                   </p>
                 )}
-                <p className="helper-text">{result.note}</p>
+                <p className="helper-text">{displayText(result.note)}</p>
               </section>
             )}
           </section>
@@ -961,7 +954,7 @@ export default function LabTwo({
               >
                 <span>
                   <strong>{item.title}</strong>
-                  <small>{item.description}</small>
+                  <small>{displayText(item.description)}</small>
                 </span>
                 <ArrowRight size={18} />
               </a>

@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useId, useRef, useState } from "react";
 import type { Bootstrap, CaseBundle } from "../types";
 import { fmt } from "../api";
@@ -116,7 +117,7 @@ export default function TaskInputs({
                 >
                   {boot?.cases.map((item) => (
                     <option key={item.id} value={item.id}>
-                      {item.name}
+                      {displayText(item.name)}
                     </option>
                   ))}
                   {workspace.id === "custom" && (
@@ -125,8 +126,8 @@ export default function TaskInputs({
                 </select>
               </label>
               <p className="helper-text">
-                {boot?.cases.find((item) => item.id === caseId)?.detail ||
-                  workspace.case.label}
+                {displayText(boot?.cases.find((item) => item.id === caseId)?.detail ||
+                  workspace.case.label)}
               </p>
               <p className="helper-text">
                 切换案例会更新其他实验的共享输入；有尚未导出的修改时会先确认。
@@ -136,7 +137,7 @@ export default function TaskInputs({
           {mode === "entity" && entity && (
             <>
               <p className="task-input-target">
-                当前目标：{entity.eid} · {entity.name}
+                当前目标：{entity.eid} · {displayText(entity.name)}
               </p>
               {incoming.length ? (
                 <>
@@ -153,8 +154,8 @@ export default function TaskInputs({
                     {incoming.map((row) => (
                       <option key={row.index} value={row.index}>
                         {row.holder} ·{" "}
-                        {draft.entities.find((item) => item.eid === row.holder)
-                          ?.name || row.holder}{" "}
+                        {displayText(draft.entities.find((item) => item.eid === row.holder)
+                          ?.name || row.holder)}{" "}
                         → {entity.eid}
                       </option>
                     ))}
@@ -213,7 +214,7 @@ export default function TaskInputs({
                 }}
               />
               <p className="helper-text">
-                不透明度用于评分，不代替持股结构证明；均为教学设定。
+                不透明度用于评分，不代替持股结构证明；采用当前参数设置。
               </p>
             </>
           )}

@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import ExperimentBreadcrumb from "./ExperimentBreadcrumb";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -659,13 +660,13 @@ export default function Governance({
       if (controller.signal.aborted) return;
       proposeReplacement({
         payload: { ...initial(result.case), target: result.target },
-        name: "循环持股权益教学案例",
+        name: "循环持股权益案例",
         snapshot: null,
         notice: result.note + "。请点击重新核查，查看实际求解结果。",
       });
     } catch (e) {
       if (!controller.signal.aborted)
-        setError(e instanceof Error ? e.message : "教学案例加载失败");
+        setError(e instanceof Error ? e.message : "案例加载失败");
     } finally {
       if (requestRef.current === controller) {
         operationBusy.current = false;
@@ -761,12 +762,12 @@ export default function Governance({
       )}
       {error && (
         <div className="error-banner" role="alert">
-          {error}
+          {displayText(error)}
         </div>
       )}
       {notice && (
         <p className="governance-notice" role="status">
-          {notice}
+          {displayText(notice)}
         </p>
       )}
       <section className="governance-controls" aria-label="日期与版本控制">
@@ -804,7 +805,7 @@ export default function Governance({
               .filter((e) => e.kind === "Company")
               .map((e) => (
                 <option key={e.eid} value={e.eid}>
-                  {e.name} · {e.eid}
+                  {displayText(e.name)} · {e.eid}
                 </option>
               ))}
           </select>
@@ -875,7 +876,7 @@ export default function Governance({
         aria-label="核查案例导入与演示"
       >
         <p>
-          当前案例：{payload.case.label || name} · {entities.length}{" "}
+          当前案例：{displayText(payload.case.label || name)} · {entities.length}{" "}
           个实体。核查草稿独立于工作台，替换草稿不会改动原始数据或已保存版本。
         </p>
         <ActionMenu
@@ -906,7 +907,7 @@ export default function Governance({
             disabled={busy}
             onClick={() => void loadCycleExample()}
           >
-            加载循环持股教学案例
+            加载循环持股案例
           </button>
           <button
             className="button secondary"
@@ -940,7 +941,7 @@ export default function Governance({
         {pendingReplacement && (
           <div className="governance-replacement" role="alert">
             <p>
-              即将用“{pendingReplacement.name}
+              即将用“{displayText(pendingReplacement.name)}
               ”替换当前草稿。未保存内容和当前预览将被替换，已保存的本机历史版本不会删除。
             </p>
             <div className="page-actions">
@@ -1085,12 +1086,12 @@ export default function Governance({
               {snapshot.proofs.map((p) => (
                 <div className="governance-proof" key={canonical(p.fact)}>
                   <strong>{factText(p.fact)}</strong>
-                  <pre>{p.lines.join("\n")}</pre>
+                  <pre>{displayText(p.lines.join("\n"))}</pre>
                 </div>
               ))}
             </details>
             <h3>循环持股经济权益</h3>
-            <p>{snapshot.equity.note}</p>
+            <p>{displayText(snapshot.equity.note)}</p>
             {snapshot.equity.status !== "solved" ? (
               <p className="governance-conflict">
                 无法唯一求解：{snapshot.equity.reason}
@@ -1108,7 +1109,7 @@ export default function Governance({
                     {snapshot.equity.owners.map((o) => (
                       <tr key={o.entity_id}>
                         <td>
-                          {o.name} · {o.entity_id}
+                          {displayText(o.name)} · {o.entity_id}
                         </td>
                         <td>{(o.share * 100).toFixed(4)}%</td>
                       </tr>
@@ -1175,7 +1176,7 @@ export default function Governance({
           </div>
           {!payload.documents.length && (
             <p className="governance-empty">
-              还没有凭证。可以先预览原教学案例，或登记一份文本凭证并绑定关系。
+              还没有凭证。可以先预览原案例，或登记一份文本凭证并绑定关系。
             </p>
           )}
           {payload.documents.map((d, i) => (
@@ -1284,7 +1285,7 @@ export default function Governance({
               >
                 {entities.map((e) => (
                   <option key={e.eid} value={e.eid}>
-                    {e.name} · {e.eid}
+                    {displayText(e.name)} · {e.eid}
                   </option>
                 ))}
               </select>
@@ -1396,7 +1397,7 @@ export default function Governance({
                 <option value="">请选择</option>
                 {relationOptions.map((r) => (
                   <option key={r.key} value={r.key}>
-                    {r.label}
+                    {displayText(r.label)}
                   </option>
                 ))}
               </select>
@@ -1460,7 +1461,7 @@ export default function Governance({
         <section className="governance-section">
           <h2>表决权与控制协议</h2>
           <p>
-            明确权利记录优先于“股权比例等于表决权”的教学假设。冲突记录将被阻断并要求人工裁决；过期后重新依据有效证据推理。
+            明确权利记录优先于“股权比例等于表决权”的规则假设。冲突记录将被阻断并要求人工裁决；过期后重新依据有效证据推理。
           </p>
           <div className="governance-form-grid">
             <label>
@@ -1474,7 +1475,7 @@ export default function Governance({
                   .filter((e) => e.eid !== payload.target)
                   .map((e) => (
                     <option key={e.eid} value={e.eid}>
-                      {e.name} · {e.eid}
+                      {displayText(e.name)} · {e.eid}
                     </option>
                   ))}
               </select>
@@ -1612,7 +1613,7 @@ export default function Governance({
               <option value="">请选择已保存案例</option>
               {listing.map((r) => (
                 <option key={r.case_id} value={r.case_id}>
-                  {r.name} · 最新版本 {r.revision}
+                  {displayText(r.name)} · 最新版本 {r.revision}
                 </option>
               ))}
             </select>
@@ -1655,7 +1656,7 @@ export default function Governance({
         <section className="governance-section" aria-label="循环权益扩容实测">
           <h2>循环权益扩容实测</h2>
           <p>
-            对8、32、64、128家上游企业的合成循环持股图重复求解，并与独立不动点迭代核对。以下数据读取正式实验文件，不是估算或现实企业认证。
+            对8、32、64、128家上游企业的循环持股图重复求解，并与独立不动点迭代核对。以下数据读取正式实验文件，不是估算或现实企业认证。
           </p>
           {benchmarkError ? (
             <p role="status">{benchmarkError}</p>

@@ -1,3 +1,4 @@
+import { displayJson, displayText } from "../display-text";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -141,7 +142,7 @@ export default function LabOne({
     }
   }
   const names = Object.fromEntries(
-    (snapshot?.entities || []).map((e) => [e.eid, e.name]),
+    (snapshot?.entities || []).map((e) => [e.eid, displayText(e.name)]),
   );
   const holdingRule = snapshot?.rules.find((rule) => rule.name === "R1");
   const example = holdingExample(
@@ -173,7 +174,7 @@ export default function LabOne({
       <header className="course-header">
         <div>
           <h1>{module.title}</h1>
-          <p>{module.description}</p>
+          <p>{displayText(module.description)}</p>
         </div>
       </header>
       <div className="task-requirement">
@@ -182,7 +183,7 @@ export default function LabOne({
       </div>
       {error && (
         <div className="error-banner" role="alert">
-          <span>{error}</span>
+          <span>{displayText(error)}</span>
           <button
             className="button secondary"
             onClick={() => void (snapshot ? run() : load())}
@@ -210,7 +211,7 @@ export default function LabOne({
                   className={view === item.id ? "active" : ""}
                   onClick={() => setView(item.id)}
                 >
-                  {item.name}
+                  {displayText(item.name)}
                 </button>
               ))}
             </div>
@@ -250,7 +251,7 @@ export default function LabOne({
                         {snapshot.triples.map((triple, i) => (
                           <tr key={i}>
                             <td>{names[triple.source]}</td>
-                            <td>{triple.name}</td>
+                            <td>{displayText(triple.name)}</td>
                             <td>{names[triple.target]}</td>
                             <td>
                               {triple.relation === "HOLDS"
@@ -266,11 +267,7 @@ export default function LabOne({
                 <details className="task-details">
                   <summary>查看模式层与一阶谓词事实</summary>
                   <pre>
-                    {JSON.stringify(
-                      { schema: snapshot.schema, facts: snapshot.facts },
-                      null,
-                      2,
-                    )}
+                    {displayJson({ schema: snapshot.schema, facts: snapshot.facts })}
                   </pre>
                 </details>
               </>
@@ -289,8 +286,8 @@ export default function LabOne({
                     <tbody>
                       {snapshot.rules.map((rule) => (
                         <tr key={rule.name}>
-                          <th>{rule.name}</th>
-                          <td>{rule.description}</td>
+                          <th>{displayText(rule.name)}</th>
+                          <td>{displayText(rule.description)}</td>
                           <td>
                             <RuleExpression
                               antecedents={rule.conditions.map(formatPattern)}
@@ -320,7 +317,7 @@ export default function LabOne({
                       .filter((e) => e.kind === "Company")
                       .map((e) => (
                         <option key={e.eid} value={e.eid}>
-                          {e.name}
+                          {displayText(e.name)}
                         </option>
                       ))}
                   </select>
@@ -339,7 +336,7 @@ export default function LabOne({
                         .find((f) => f.id === target)
                         ?.slots.map((slot) => (
                           <tr key={slot.name}>
-                            <th>{slot.name}</th>
+                            <th>{displayText(slot.name)}</th>
                             <td>
                               {String(slot.value ?? "未填写")}
                               {slot.unit ? String(slot.unit) : ""}
@@ -372,7 +369,7 @@ export default function LabOne({
                 <tbody>
                   {representations.map((item) => (
                     <tr key={item.id}>
-                      <th>{item.name}</th>
+                      <th>{displayText(item.name)}</th>
                       <td>{item.strength}</td>
                       <td>{item.weakness}</td>
                       <td>{item.scene}</td>
@@ -433,7 +430,7 @@ export default function LabOne({
             <ArrowRight size={16} />
           </a>
           <p>
-            本项目没有导入其中的真实人员数据，也不声称复现其内部推理系统。王建国、恒通科技等是为课堂演示构造的实体。
+            本项目没有导入其中的真实人员数据，也不声称复现其内部推理系统。王建国、恒通科技等实体来自当前数据。
           </p>
           <div className="table-scroll">
             <table aria-label="真实行业案例与本项目的对应">
@@ -460,7 +457,7 @@ export default function LabOne({
                 <tr>
                   <td>发现联系后，怎样复核而非直接下结论？</td>
                   <td>
-                    用教学规则生成候选控制与复核线索，逐条展示前提及来源，再由人工核查。
+                    用规则生成候选控制与复核线索，逐条展示前提及来源，再由人工核查。
                   </td>
                 </tr>
               </tbody>
@@ -483,7 +480,7 @@ export default function LabOne({
           <h3>本项目怎样落地这一流程？</h3>
           <p>
             CSV
-            提供教学输入；知识图谱保存关系，框架组织企业档案，产生式规则生成控制和结构线索；推导结果只在内存回写，原始数据保持不变。
+            提供数据输入；知识图谱保存关系，框架组织企业档案，产生式规则生成控制和结构线索；推导结果只在内存回写，原始数据保持不变。
           </p>
           <a className="button secondary" href={labHref("lab01", "demo")}>
             运行小型推理演示
@@ -535,7 +532,7 @@ export default function LabOne({
                 >
                   {snapshot?.entities.map((e) => (
                     <option key={e.eid} value={e.eid}>
-                      {e.eid} · {e.name}
+                      {e.eid} · {displayText(e.name)}
                     </option>
                   ))}
                 </select>
@@ -556,7 +553,7 @@ export default function LabOne({
                   .filter((e) => task === "path" || e.kind === "Company")
                   .map((e) => (
                     <option key={e.eid} value={e.eid}>
-                      {e.eid} · {e.name}
+                      {e.eid} · {displayText(e.name)}
                     </option>
                   ))}
               </select>
@@ -631,15 +628,11 @@ export default function LabOne({
                   <details className="task-details">
                     <summary>完整规则执行与知识增强记录</summary>
                     <pre>
-                      {JSON.stringify(
-                        {
+                      {displayJson({
                           steps: result.steps,
                           enhanced_relations: result.enhanced_relations,
                           frames_after: result.frames_after,
-                        },
-                        null,
-                        2,
-                      )}
+                        })}
                     </pre>
                   </details>
                 </>
@@ -651,16 +644,16 @@ export default function LabOne({
                         <tr>
                           <th>路径端点</th>
                           <th>简单路径累计权益</th>
-                          <th>教学筛查候选</th>
+                          <th>筛查候选</th>
                         </tr>
                       </thead>
                       <tbody>
                         {result.owners?.map((owner) => (
                           <tr key={owner.owner}>
-                            <th>{owner.name}</th>
+                            <th>{displayText(owner.name)}</th>
                             <td>{(owner.ratio * 100).toFixed(4)}%</td>
                             <td>
-                              {owner.beneficial ? "达到教学阈值" : "未标记"}
+                              {owner.beneficial ? "达到筛查阈值" : "未标记"}
                             </td>
                           </tr>
                         ))}
@@ -670,14 +663,10 @@ export default function LabOne({
                   <details open className="task-details">
                     <summary>逐条路径和乘积</summary>
                     <pre>
-                      {JSON.stringify(
-                        result.owners?.map((o) => ({
+                      {displayJson(result.owners?.map((o) => ({
                           name: o.name,
                           paths: o.paths,
-                        })),
-                        null,
-                        2,
-                      )}
+                        })))}
                     </pre>
                   </details>
                 </>
@@ -698,7 +687,7 @@ export default function LabOne({
                   )}
                 </div>
               )}
-              <p className="helper-text">{result.note}</p>
+              <p className="helper-text">{displayText(result.note)}</p>
             </section>
           )}
         </section>
@@ -711,7 +700,7 @@ export default function LabOne({
               <dd>知识图谱能组织关系，但输入来源和证据仍需核查。</dd>
             </div>
             <div>
-              <dt>教学控制不是法律认定</dt>
+              <dt>控制推理不是法律认定</dt>
               <dd>
                 配偶一致行动、过半持股控制传递等是简化规则；控制、经济权益和风险是不同概念。
               </dd>

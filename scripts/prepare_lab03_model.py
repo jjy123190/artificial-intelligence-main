@@ -19,7 +19,11 @@ def main():
         temporary.replace(path)
     with (root/'model.safetensors').open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
     if digest!=EXPECTED_SHA256:raise RuntimeError('模型权重哈希不符，请检查下载')
-    print('Model ready:',root,'SHA256:',digest)
+    import sys
+    sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+    from experiments.lab03.llm import verified_local_source
+    verified_local_source()
+    print('Model ready:',root,'SHA256:',digest,'and pinned tokenizer/config verified')
     return 0
 
 if __name__=='__main__':raise SystemExit(main())

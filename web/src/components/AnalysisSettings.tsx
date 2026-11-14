@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import type { Bootstrap, Completeness, Parameters } from "../types";
 import CompletenessFields from "./CompletenessFields";
 export default function AnalysisSettings({
@@ -32,7 +33,7 @@ export default function AnalysisSettings({
           >
             {boot?.methods.map((m) => (
               <option key={m.id} value={m.id}>
-                {m.name}
+                {displayText(m.name)}
               </option>
             ))}
           </select>
@@ -47,7 +48,7 @@ export default function AnalysisSettings({
           >
             {boot?.models.map((m) => (
               <option key={m.id} value={m.id}>
-                {m.name}
+                {displayText(m.name)}
               </option>
             ))}
           </select>
@@ -80,7 +81,7 @@ export default function AnalysisSettings({
           onChange={onCompleteness}
         />
         <p className="helper-text">
-          全部为当前案例的教学设定，不改变原始CSV；训练参数和策略不保证在所有条件中改善。
+          全部为当前案例的参数设定，不改变原始CSV；训练参数和策略不保证在所有条件中改善。
         </p>
       </section>
     </div>

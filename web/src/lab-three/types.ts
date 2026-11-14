@@ -26,6 +26,14 @@ export type Metric = {
   mean_hops_success: number | null;
   mean_total_work: number;
   mean_successor_checks: number;
+  mean_proof_pruned: number;
+  mean_proof_checks: number;
+  mean_peak_frontier: number | null;
+  mean_heuristic_probe_states: number;
+  mean_adjacency_edge_scans: number;
+  mean_heuristic_edge_checks: number;
+  mean_successor_cache_hits: number;
+  mean_total_edge_checks: number;
   mean_redundancy: number;
   mean_redundant_paths: number;
   mean_ms: number;
@@ -43,6 +51,24 @@ export type GA = {
   population: number;
   generations: number;
   validation_queries: number;
+  budget: number;
+};
+export type LegalitySummary = {
+  total: number;
+  eligible: number;
+  ineligible: number;
+  false_accept: number;
+  false_reject: number;
+  accuracy: number | null;
+  balanced_accuracy: number | null;
+};
+export type ConfirmationPair = {
+  split: string;
+  method: string;
+  budget: number;
+  n: number;
+  before: { correct_exhausted: number; false_found: number; mean_expanded: number; mean_edge_checks: number };
+  after: { correct_exhausted: number; false_found: number; mean_expanded: number; mean_edge_checks: number };
 };
 export type Snapshot = {
   warnings: string[];
@@ -81,8 +107,54 @@ export type Snapshot = {
     total_inference_ms?: number;
     legal_checks?: number;
     legal_check_accuracy?: number;
+    legal_metrics?: {
+      eligible: number;
+      ineligible: number;
+      false_accept: number;
+      false_reject: number;
+      ineligible_recall: number | null;
+      balanced_accuracy: number | null;
+      always_legal_accuracy: number | null;
+    };
+    calibrated_legal_metrics?: {
+      eligible: number;
+      ineligible: number;
+      false_accept: number;
+      false_reject: number;
+      ineligible_recall: number | null;
+      balanced_accuracy: number | null;
+    };
+    readout_training?: { training_prefixes: number; trained_unique_prompts: number; training_elapsed_ms: number; };
+    paired_diagnostics?: {
+      improved_answers: number;
+      lost_answers: number;
+      extra_expansion_cases: number;
+      fewer_expansion_cases: number;
+      extra_expansions: number;
+    };
     explanation_grounded?: number;
     explanations?: number;
+  };
+  confirmation?: {
+    question_count?: number;
+    paired_runs?: number;
+    negative_questions?: number;
+    negative_pairs?: number;
+    negative_summary?: ConfirmationPair[];
+  };
+  llm_confirmation?: {
+    questions?: number;
+    prefixes?: number;
+    numeric_cases?: number;
+    inference_ms?: number;
+    raw_metrics?: LegalitySummary;
+    calibrated_metrics?: LegalitySummary;
+    novel_prompt_prefixes?: number;
+    novel_raw_metrics?: LegalitySummary;
+    novel_calibrated_metrics?: LegalitySummary;
+    numeric_raw?: LegalitySummary;
+    numeric_calibrated?: LegalitySummary;
+    paired_summary?: { variant: string; questions: number; valid: number; expanded: number }[];
   };
   llm_explanations: {
     query_id: string;
@@ -91,6 +163,11 @@ export type Snapshot = {
     note: string;
     grounded: boolean;
     missing_path_entities: string[];
+    verified_text: string;
+    controlled_text?: string;
+    controlled_grounded?: boolean;
+    controlled_note?: string;
+    verification: string;
   }[];
   stress: { source?: string; invalid_answers?: number };
   failures: {
@@ -158,6 +235,16 @@ export type Result = {
     hops: number | null;
     total_work: number;
     rollout_steps: number;
+    heuristic_evaluations: number;
+    proof_pruned: number;
+    proof_checks: number;
+    peak_frontier: number | null;
+    heuristic_probe_states: number;
+    adjacency_edge_scans: number;
+    successor_cache_hits: number;
+    successor_cache_entries: number;
+    heuristic_edge_checks: number;
+    total_edge_checks: number;
     expert_rejections: number;
     redundancy_ratio: number;
     elapsed_ms: number;
@@ -176,6 +263,8 @@ export type Result = {
     model?: string;
     scored_edges?: number;
     llm_ms?: number;
+    preparation_edge_scans?: number;
+    preparation_states?: number;
   };
   path_evidence: Edge[];
   explanation: string;

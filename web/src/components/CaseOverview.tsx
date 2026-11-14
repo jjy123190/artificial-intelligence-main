@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useMemo, useState } from "react";
 import {
   ArrowRight,
@@ -36,8 +37,8 @@ export default function CaseOverview({ data }: { data: CaseData }) {
             <Buildings size={26} />
           </span>
           <div>
-            <h2>{data.label}</h2>
-            <p>共享教学数据 · 浏览实体资料与输入关系，不包含实验推理结果。</p>
+            <h2>{displayText(data.label)}</h2>
+            <p>共享数据 · 浏览实体资料与输入关系，不包含实验推理结果。</p>
           </div>
         </div>
         <dl>
@@ -124,7 +125,7 @@ export default function CaseOverview({ data }: { data: CaseData }) {
                   )}
                 </span>
                 <div>
-                  <strong>{entity.name}</strong>
+                  <strong>{displayText(entity.name)}</strong>
                   <small>{entity.eid}</small>
                 </div>
               </div>

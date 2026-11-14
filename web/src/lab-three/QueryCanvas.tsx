@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { ArrowRight, Crosshair } from "@phosphor-icons/react";
 import type { QueryInfo } from "./types";
 import { relations } from "./presentation";
@@ -19,7 +20,7 @@ export default function QueryCanvas({ query }: { query: QueryInfo }) {
         <div className="lab3-blueprint">
           <article className="lab3-blueprint-node start">
             <small>起始实体</small>
-            <strong>{query.start_name || "指定起点"}</strong>
+            <strong>{displayText(query.start_name) || "指定起点"}</strong>
             <span>深度 0</span>
           </article>
           <div className="lab3-blueprint-connection">

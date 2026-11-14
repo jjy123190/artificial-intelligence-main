@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { DownloadSimple } from "@phosphor-icons/react";
 import type { Analysis, CaseData, ControlQuery } from "../types";
 import { downloadJson } from "../api";
@@ -51,7 +52,7 @@ export default function AnalysisRecords({
                   <span className="rule-code">{s.rule}</span>
                   <span>
                     {s.fact_ids
-                      .map((id) => analysis.provenance[id]?.label || id)
+                      .map((id) => displayText(analysis.provenance[id]?.label || id))
                       .join("；")}
                   </span>
                 </div>

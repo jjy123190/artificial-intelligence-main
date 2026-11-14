@@ -10,6 +10,7 @@ export const statuses: Record<string, string> = {
   generated: "加入候选",
   expanded: "扩展节点",
   rejected: "专家规则拦截",
+  proof_pruned: "已证无解分支",
   rollout: "模拟路径",
   solution: "找到候选路径",
 };
@@ -45,4 +46,22 @@ export function blockedReason(
   if (mode === "remote" && !snapshot.remote_available)
     return "远程模型尚未配置。请先设置服务环境变量，或使用实测评分重放。";
   return "";
+}
+
+export function comparisonCompletion(
+  rows: { method: string; result?: unknown; error?: string }[],
+  expectedMethods: string[],
+) {
+  const counts = new Map<string, number>();
+  for (const row of rows) counts.set(row.method, (counts.get(row.method) || 0) + 1);
+  const attempted = expectedMethods.filter((id) => counts.has(id)).length;
+  const successful = expectedMethods.filter((id) =>
+    counts.get(id) === 1 && rows.some((row) => row.method === id && row.result != null && !row.error),
+  ).length;
+  return {
+    attempted,
+    successful,
+    failed: rows.filter((row) => expectedMethods.includes(row.method) && Boolean(row.error)).length,
+    complete: successful === expectedMethods.length && rows.length === expectedMethods.length,
+  };
 }

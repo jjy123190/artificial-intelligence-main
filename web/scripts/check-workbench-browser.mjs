@@ -2,8 +2,15 @@
  * browser as test:browser; only error/race cases intercept network responses. */
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import ts from "typescript";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
+
+const { outputText } = ts.transpileModule(
+  await readFile(new URL("../src/display-text.ts", import.meta.url), "utf8"),
+  { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } },
+);
+const { displayText } = await import("data:text/javascript;base64," + Buffer.from(outputText).toString("base64"));
 
 const base = process.env.LAB03_TEST_URL || "http://127.0.0.1:8765";
 const browser = await chromium.launch({
@@ -59,7 +66,7 @@ try {
         );
         assert.ok(
           (await page.locator(".lab3-query-model").innerText()).includes(
-            query.start_name,
+            displayText(query.start_name),
           ),
         );
       }
@@ -135,11 +142,22 @@ try {
             },
           })
         ).json();
+        assert.ok(row.result.result.adjacency_edge_scans >= row.result.result.total_edge_checks);
+        assert.equal(row.result.result.total_edge_checks,
+          row.result.result.successor_checks + row.result.result.heuristic_edge_checks);
         for (const field of [
           "status",
           "valid",
           "expanded",
           "total_work",
+          "heuristic_edge_checks",
+          "heuristic_probe_states",
+          "proof_pruned",
+          "proof_checks",
+          "peak_frontier",
+          "adjacency_edge_scans",
+          "total_edge_checks",
+          "successor_cache_hits",
           "rollout_steps",
           "hops",
         ])
@@ -149,6 +167,8 @@ try {
             row.method + " " + field,
           );
       }
+      assert.match(await page.locator(".lab3-comparison-grid").innerText(), /启发边检查/);
+      assert.match(await page.locator(".lab3-comparison-grid").innerText(), /候选检查 \/ 扫描/);
       const audit = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa"])
         .analyze();
@@ -180,6 +200,9 @@ try {
       await p.getByRole("button", { name: "导出算法对比" }).waitFor();
       const result = await exportJson(p, "导出算法对比");
       assert.equal(result.rows.filter((row) => row.result).length, 3);
+      assert.equal(result.complete, false);
+      assert.equal(result.successful, 3);
+      assert.equal(result.failed, 1);
       assert.match(result.rows[1].error, /工作进程暂不可用/);
       assert.equal(
         await p
@@ -273,6 +296,70 @@ try {
           (row) => row.split === "ood" && row.budget === 4,
         ),
       );
+    },
+  );
+  await check(
+    "LLM diagnostics expose unsafe misses and paired search cost without invented benefit",
+    async () => {
+      await page.goto(base + "/#/labs/lab03/assistant");
+      const diagnostic = page.getByText(/合法性检查.*个路径前缀/);
+      await diagnostic.waitFor();
+      const text = await diagnostic.innerText();
+      const metrics = snapshot.llm_summary.legal_metrics;
+      const paired = snapshot.llm_summary.paired_diagnostics;
+      assert.ok(metrics, "current results include class-sensitive diagnostics");
+      assert.ok(text.includes(`不合格前缀 ${metrics.ineligible} 条`));
+      assert.ok(text.includes(`被模型误放行 ${metrics.false_accept} 条`));
+      assert.match(text, /不合法证据检出率/);
+      assert.match(text, /全部预测合法的基线/);
+      assert.match(text, /不能仅凭总体一致率/);
+      assert.ok(text.includes(`新增答对 ${paired.improved_answers} 题`));
+      assert.match(text, /评分可能增加搜索成本/);
+      const calibrated = snapshot.llm_summary.calibrated_legal_metrics;
+      if (calibrated) {
+        assert.match(text, /有监督证据评估/);
+        assert.match(text, /不是原始模型能力/);
+        assert.ok(text.includes(`误放行 ${calibrated.false_accept} 条`));
+        assert.ok(text.includes(`误拒 ${calibrated.false_reject} 条`));
+      }
+      const first = snapshot.llm_explanations[0];
+      if (first?.controlled_grounded) {
+        await page.getByText(`${first.query_id} · 查看模型解释`, { exact: true }).click();
+        await page.getByText(`受控证据说明（LLM选择措辞，不生成事实）：${displayText(first.controlled_text)}`, { exact: true }).waitFor();
+        assert.ok((await page.locator("main").innerText()).includes("模型解释未通过完整证据认证"));
+      }
+
+    },
+  );
+  await check(
+    "fresh confirmation shows precision-shift regressions and measured unsatisfiable work",
+    async () => {
+      await page.goto(base + "/#/labs/lab03/assistant");
+      const llmDetail = page.locator("details").filter({ has: page.getByText("新图与数值挑战：查看未改善与退化", { exact: true }) });
+      await llmDetail.locator("summary").click();
+      const text = await llmDetail.innerText();
+      const fresh = snapshot.llm_confirmation;
+      assert.ok(text.includes(`误放行 ${fresh.numeric_raw.false_accept} → ${fresh.numeric_calibrated.false_accept}`));
+      assert.ok(text.includes(`误拒 ${fresh.numeric_raw.false_reject} → ${fresh.numeric_calibrated.false_reject}`));
+      assert.match(text, /均衡准确率/);
+      assert.match(text, /总体准确率上升不代表两类都改善/);
+      for (const row of fresh.paired_summary) {
+        assert.ok(text.includes(`${row.valid}/${row.questions} 题答对，扩展合计 ${row.expanded} 次`));
+      }
+      await page.goto(base + "/#/labs/lab03/evaluation");
+      await page.getByText("查看混合搜索的已证无解剪枝对比", { exact: true }).click();
+      const table = page.getByRole("table", { name: "实验三无解确认结果", exact: true });
+      const rows = table.locator("tbody tr");
+      const measured = snapshot.confirmation.negative_summary.filter((row) => row.method === "hybrid");
+      assert.equal(await rows.count(), measured.length);
+      for (let i = 0; i < measured.length; i++) {
+        const r = measured[i];
+        const row = await rows.nth(i).innerText();
+        assert.ok(row.includes(`${r.before.correct_exhausted}/${r.n} → ${r.after.correct_exhausted}/${r.n}`));
+        assert.ok(row.includes(`${r.before.mean_edge_checks.toFixed(2)} → ${r.after.mean_edge_checks.toFixed(2)}`));
+      }
+      await page.setViewportSize({ width: 390, height: 900 });
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     },
   );
   assert.deepEqual(errors, []);

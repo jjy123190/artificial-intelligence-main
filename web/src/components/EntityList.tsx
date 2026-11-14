@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useState } from "react";
 import { MagnifyingGlass, Buildings, User } from "@phosphor-icons/react";
 import type { Analysis, CaseData } from "../types";
@@ -62,7 +63,7 @@ export default function EntityList({
               }
               aria-pressed={selected === entity.eid}
               onClick={() => onSelect(entity.eid)}
-              title={entity.name}
+              title={displayText(entity.name)}
             >
               <span className="entity-icon">
                 {kind === "Company" ? (
@@ -72,7 +73,7 @@ export default function EntityList({
                 )}
               </span>
               <span className="entity-row-text">
-                <strong>{shortName(entity.name)}</strong>
+                <strong>{shortName(displayText(entity.name))}</strong>
                 <small>
                   {entity.eid}
                   {entity.category === "上市公司" ? " · 上市公司" : ""}

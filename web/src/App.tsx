@@ -1,3 +1,4 @@
+import { displayText } from "./display-text";
 import {
   lazy,
   Suspense,
@@ -824,7 +825,7 @@ export default function App() {
     };
     document.title =
       (entity && (isEntityPage || route === "caseEntity")
-        ? entity.name + " · "
+        ? displayText(entity.name) + " · "
         : "") +
       (address.page === "task"
         ? catalog?.labs
@@ -1038,7 +1039,7 @@ export default function App() {
                     boot={boot}
                     parameters={parameters}
                     workspaceBusy={busy}
-                    workspaceError={error}
+                    workspaceError={displayText(error)}
                     onReconnect={() => void start()}
                     onChooseCase={chooseCase}
                     onApplyInputs={applyTaskInputs}
@@ -1128,7 +1129,7 @@ export default function App() {
               <span>/</span>
               <span>
                 {isEntityPage || route === "caseEntity"
-                  ? entity?.name || address.entityId
+                  ? displayText(entity?.name) || address.entityId
                   : titles[route as keyof typeof titles][0]}
               </span>
             </nav>
@@ -1159,7 +1160,7 @@ export default function App() {
                   >
                     {boot?.cases.map((c) => (
                       <option value={c.id} key={c.id}>
-                        {c.name}
+                        {displayText(c.name)}
                       </option>
                     ))}
                     {workspace?.id === "custom" && (
@@ -1237,7 +1238,7 @@ export default function App() {
               <Warning size={21} />
               <div>
                 <strong>操作未完成</strong>
-                <p>{visibleError}</p>
+                <p>{displayText(visibleError)}</p>
               </div>
               <button
                 className="icon-button"
@@ -1251,7 +1252,7 @@ export default function App() {
           {workspace && (
             <div className="workspace-context focused-context">
               <span>
-                {workspace.case.label}
+                {displayText(workspace.case.label)}
                 {edited && <span className="edited-tag">已调整</span>}
               </span>
               <div>
@@ -1338,7 +1339,7 @@ export default function App() {
                 <strong>
                   任务查询：
                   <code>
-                    Controls({detailQuery.source}, {detailQuery.target})
+                    Controls({displayText(detailQuery.source)}, {detailQuery.target})
                   </code>
                 </strong>
                 <p>
@@ -1423,7 +1424,7 @@ export default function App() {
                         >
                           {workspace.case.entities.map((item) => (
                             <option key={item.eid} value={item.eid}>
-                              {item.eid} · {item.name}
+                              {item.eid} · {displayText(item.name)}
                             </option>
                           ))}
                         </select>
@@ -1457,7 +1458,7 @@ export default function App() {
                         >
                           {workspace.case.entities.map((e) => (
                             <option key={e.eid} value={e.eid}>
-                              {e.eid} · {e.name}
+                              {e.eid} · {displayText(e.name)}
                             </option>
                           ))}
                         </select>
@@ -1563,7 +1564,7 @@ export default function App() {
                         >
                           {workspace.case.entities.map((e) => (
                             <option key={e.eid} value={e.eid}>
-                              {e.eid} · {e.name}
+                              {e.eid} · {displayText(e.name)}
                             </option>
                           ))}
                         </select>
@@ -1675,7 +1676,7 @@ export default function App() {
       {notice && (noticeScope === "case" || isAnalysisPage) && (
         <div className="toast" role="status">
           <CheckCircle size={18} />
-          {notice}
+          {displayText(notice)}
           <button aria-label="关闭提示" onClick={() => setNotice("")}>
             <X size={15} />
           </button>

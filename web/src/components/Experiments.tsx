@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import ExperimentBreadcrumb from "./ExperimentBreadcrumb";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -150,7 +151,7 @@ export default function Experiments({
       </header>
       {error && (
         <div role="alert" className="error-banner">
-          {error}
+          {displayText(error)}
           <button className="text-button" onClick={() => void load()}>
             重试
           </button>
@@ -219,7 +220,7 @@ export default function Experiments({
                     张测试图 · 同图配对对照
                   </span>
                 </div>
-                <span className="data-badge">本地实测 · 合成数据</span>
+                <span className="data-badge">本地数据 · 实测结果</span>
               </div>
               <div className="chart-grid">
                 <section className="chart-section">
@@ -456,7 +457,7 @@ export default function Experiments({
             <AdditionalExperiments data={data} section={section} />
           )}
           <p className="method-note">
-            {data.note}{" "}
+            {displayText(data.note)}{" "}
             Bayes与Mamdani评分器也共用规则提取的结构指标；此处不声称比较了完全不使用符号预处理的系统。
           </p>
         </>

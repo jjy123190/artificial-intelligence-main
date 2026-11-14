@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useMemo, useState } from "react";
 import {
   ArrowRight,
@@ -49,7 +50,7 @@ export default function AnalysisDirectory({
             <Buildings size={26} />
           </span>
           <div>
-            <h2>{data.label}</h2>
+            <h2>{displayText(data.label)}</h2>
             <p>实验二 · 查看结构证明、评分与复核策略，不代表真实风险认定。</p>
           </div>
         </div>
@@ -148,7 +149,7 @@ export default function AnalysisDirectory({
                   (entity.kind === "Person" ? "持股" : "分析")
                 }
                 aria-description={
-                  entity.name +
+                  displayText(entity.name) +
                   "，" +
                   (entity.kind === "Person"
                     ? "直接持股记录"
@@ -168,7 +169,7 @@ export default function AnalysisDirectory({
                     )}
                   </span>
                   <div>
-                    <strong>{entity.name}</strong>
+                    <strong>{displayText(entity.name)}</strong>
                     <small>{entity.eid}</small>
                   </div>
                 </div>

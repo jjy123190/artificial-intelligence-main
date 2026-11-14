@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { ArrowRight, ArrowLeft, Graph } from "@phosphor-icons/react";
 import type { CourseCatalog, LabId } from "../types";
 import { labHref } from "../routes";
@@ -70,7 +71,7 @@ export default function CoursePortal({
               <div>
                 <span className="requirement-label">{module.kind}</span>
                 <h2>{module.title}</h2>
-                <p>{module.description}</p>
+                <p>{displayText(module.description)}</p>
                 <small>{module.requirement}</small>
               </div>
               <span className="module-open">
@@ -94,7 +95,7 @@ export default function CoursePortal({
                   <span className="lab-number">实验 {item.number}</span>
                   <span>{item.modules.length} 个任务</span>
                 </div>
-                <h2>{item.name}</h2>
+                <h2>{displayText(item.name)}</h2>
                 <p>{item.summary}</p>
                 <div className="lab-task-preview">
                   {item.modules.map((module) => (

@@ -163,7 +163,7 @@ export default function AdditionalExperiments({
     return (
       <section className="results-section">
         <header>
-          <h2>独立合成来源的D-S冲突与可靠性实验</h2>
+          <h2>独立来源的D-S冲突与可靠性实验</h2>
           <p>
             这是额外实验，不把读取同一组指标的Bayes与Mamdani假定成独立证据相乘。完全冲突与未知必须明确处理。
           </p>
@@ -196,7 +196,7 @@ export default function AdditionalExperiments({
         </div>
         <p className="helper-text">
           读取
-          outputs/lab02/experiments/conflict_summary.csv；来源质量与冲突率是合成设定，不是现实凭证真实性认证。
+          outputs/lab02/experiments/conflict_summary.csv；来源质量与冲突率按实验配置设置，不作为凭证真实性认证。
         </p>
       </section>
     );
@@ -206,7 +206,7 @@ export default function AdditionalExperiments({
         <header>
           <h2>评分算法优化与消融</h2>
           <p>
-            手工参数、训练参数、验证选择权重与移除组件的对照，使用同一批合成指标样本。这里评估评分分类，不混用图级复核行动指标。
+            手工参数、训练参数、验证选择权重与移除组件的对照，使用同一批指标样本。这里评估评分分类，不混用图级复核行动指标。
           </p>
         </header>
         <label className="task-inline-field">

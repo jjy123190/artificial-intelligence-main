@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useMemo } from "react";
 import { ArrowRight, Graph } from "@phosphor-icons/react";
 import type { CaseData } from "../types";
@@ -16,7 +17,7 @@ export default function CaseEntityDetails({
   const entity = data.entities.find((item) => item.eid === entityId);
   const names = useMemo(
     () =>
-      Object.fromEntries(data.entities.map((item) => [item.eid, item.name])),
+      Object.fromEntries(data.entities.map((item) => [item.eid, displayText(item.name)])),
     [data],
   );
   const rows = useMemo(
@@ -70,7 +71,7 @@ export default function CaseEntityDetails({
         aria-label="原始实体资料"
       >
         <header>
-          <h2>{entity.name}</h2>
+          <h2>{displayText(entity.name)}</h2>
           <p>
             {entity.eid} ·{" "}
             {entity.kind === "Person" ? "自然人" : entity.category || "企业"}
@@ -144,7 +145,7 @@ export default function CaseEntityDetails({
                       </a>
                     </td>
                     <td>{row.value}</td>
-                    <td>{row.note}</td>
+                    <td>{displayText(row.note)}</td>
                   </tr>
                 ))}
               </tbody>

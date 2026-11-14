@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -107,7 +108,7 @@ export default function QueryPanel({
           >
             {data.entities.map((e) => (
               <option key={e.eid} value={e.eid}>
-                {e.eid} · {e.name}
+                {e.eid} · {displayText(e.name)}
               </option>
             ))}
           </select>
@@ -129,7 +130,7 @@ export default function QueryPanel({
               .filter((e) => e.kind === "Company")
               .map((e) => (
                 <option key={e.eid} value={e.eid}>
-                  {e.eid} · {e.name}
+                  {e.eid} · {displayText(e.name)}
                 </option>
               ))}
           </select>

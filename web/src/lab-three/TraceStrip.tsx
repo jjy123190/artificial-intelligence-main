@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import type { Result } from "./types";
 import { statuses } from "./presentation";
 
@@ -16,9 +17,10 @@ export default function TraceStrip({
     <div className="lab3-trace-strip" role="group" aria-label="搜索事件时间线">
       {trace.slice(start, start + 12).map((event, offset) => {
         const position = start + offset;
-        const name =
+        const name = displayText(
           result.graph.nodes.find((n) => n.id === event.node)?.name ||
-          event.node;
+          event.node,
+        );
         return (
           <button
             type="button"

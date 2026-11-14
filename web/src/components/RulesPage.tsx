@@ -1,3 +1,4 @@
+import { displayText } from "../display-text";
 import ExperimentBreadcrumb from "./ExperimentBreadcrumb";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
@@ -147,7 +148,7 @@ export default function RulesPage({
         </div>
         {error && (
           <div role="alert" className="error-banner">
-            {error}
+            {displayText(error)}
             <button className="text-button" onClick={() => void load()}>
               重新读取
             </button>
@@ -159,10 +160,10 @@ export default function RulesPage({
           <div className="rules-list">
             {filtered.map((rule) => (
               <article className="rule-row" key={rule.name}>
-                <div className="rule-row-code">{rule.name}</div>
+                <div className="rule-row-code">{displayText(rule.name)}</div>
                 <div className="rule-content">
                   <header>
-                    <h2>{rule.description}</h2>
+                    <h2>{displayText(rule.description)}</h2>
                     <span>{rule.group}</span>
                   </header>
                   <RuleExpression
@@ -182,7 +183,7 @@ export default function RulesPage({
                   {rule.note && (
                     <p className="rule-boundary">
                       <strong>适用边界</strong>
-                      {rule.note}
+                      {displayText(rule.note)}
                     </p>
                   )}
                 </div>

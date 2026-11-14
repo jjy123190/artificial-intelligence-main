@@ -122,13 +122,11 @@ $startupMutex.ReleaseMutex()
 $mutexOwned = $false
 Open-Website ($url + "/" + $fragment)
 
-# 先开放网页基础功能，再生成耗时的正式对比数据；不让浏览器等完整实验。
-& $python -B -X utf8 (Join-Path $root 'scripts\prepare_lab02.py') --check
-if ($LASTEXITCODE -ne 0) {
-    Write-Host '网站已打开，可以先使用基础功能。正在生成实验对比数据，完成后点击网页中的刷新结果。'
-    & (Join-Path $root 'run_lab02.ps1') -PythonPath $python
-    Write-Host '实验对比数据已就绪。'
-}
+# 源码模式先开放基础算法，不隐式生成报告/录屏或完整实验结果。
+Write-Host '源码模式已启动；缺少历史统计时页面显示未生成，不会伪造结果。'
+Write-Host '初始化实验二：python scripts/prepare_lab02.py'
+Write-Host '初始化实验三：python scripts/prepare_lab03.py（真实LLM需另加 --llm）'
+Write-Host '初始化后刷新页面。构建与实验命令会生成outputs/web/dist，纯源码检查前应另行归档。'
 } catch {
     Write-Host ('启动失败：' + $_.Exception.Message) -ForegroundColor Red
     Write-Host ('错误日志：' + $launchLog)
