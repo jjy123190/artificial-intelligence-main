@@ -1,0 +1,54 @@
+ffconcat version 1.0
+file 'slides/slide-01.png'
+option framerate 30
+duration 12.366666667
+file 'slides/slide-02.png'
+option framerate 30
+duration 14.466666667
+file 'slides/slide-03.png'
+option framerate 30
+duration 14.633333333
+file 'slides/slide-04.png'
+option framerate 30
+duration 15.366666667
+file 'slides/slide-05.png'
+option framerate 30
+duration 16.233333333
+file 'slides/slide-06.png'
+option framerate 30
+duration 15.000000000
+file 'slides/slide-07.png'
+option framerate 30
+duration 15.966666667
+file 'slides/slide-08.png'
+option framerate 30
+duration 15.033333333
+file 'slides/slide-09.png'
+option framerate 30
+duration 14.233333333
+file 'slides/slide-10.png'
+option framerate 30
+duration 13.800000000
+file 'slides/slide-11.png'
+option framerate 30
+duration 14.533333333
+file 'slides/slide-12.png'
+option framerate 30
+duration 18.366666667
+file 'slides/slide-13.png'
+option framerate 30
+duration 13.666666667
+file 'slides/slide-14.png'
+option framerate 30
+duration 15.066666667
+file 'slides/slide-15.png'
+option framerate 30
+duration 13.200000000
+file 'slides/slide-16.png'
+option framerate 30
+duration 13.066666667
+file 'slides/slide-17.png'
+option framerate 30
+duration 5.000000000
+file 'slides/slide-17.png'
+option framerate 30

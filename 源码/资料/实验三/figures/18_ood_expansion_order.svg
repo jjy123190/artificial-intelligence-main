@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 629" role="img" aria-label="同一 OOD 问题：固定 A* 与 GA A* 的扩展顺序">
+<defs><style>text{font-family:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;fill:#e2e8f0}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+<marker id="arr-solution" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#34d399"/></marker>
+<marker id="arr-expanded" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#22d3ee"/></marker>
+<marker id="arr-frontier" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#94a3b8"/></marker>
+<marker id="arr-rejected" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+<marker id="arr-proof_pruned" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fbbf24"/></marker>
+<marker id="arr-rollout" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#a78bfa"/></marker>
+<marker id="arr-invalid" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+</defs>
+<rect width="1010" height="629" fill="#0f172a"/><rect width="1010" height="629" fill="url(#grid)"/>
+<text x="30" y="38" font-size="23" fill="#f8fafc" style="fill:#f8fafc" text-anchor="start" font-weight="700">同一 OOD 问题：固定 A* 与 GA A* 的扩展顺序</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">ood-19-0-Q8 / 预算 8；表格直接取 trace.status = expanded，Nxx 为原实体 ID 后缀。</text>
+<text x="30" y="110" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">固定 A*：第 8 次扩展找到目标</text>
+<rect x="30" y="132" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="132" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="159" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">01  N0</text>
+<rect x="30" y="181" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="181" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="208" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">02  N0 → N30</text>
+<rect x="30" y="230" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="230" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="257" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">03  N0 → N58</text>
+<rect x="30" y="279" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="279" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="306" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">04  N0 → N60</text>
+<rect x="30" y="328" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="328" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="355" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">05  N0 → N51</text>
+<rect x="30" y="377" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="377" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="404" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">06  N0 → N51 → N11</text>
+<rect x="30" y="426" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="426" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="42" y="453" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">07  N0 → N51 → N11 → N53</text>
+<rect x="30" y="475" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="30" y="475" width="460" height="41" rx="7" fill="#16283a" stroke="#34d399" stroke-width="1.5"/>
+<text x="42" y="502" font-size="15" fill="#34d399" style="fill:#34d399" text-anchor="start" font-weight="400">08  N0 → N51 → N11 → N53 → N63</text>
+<text x="520" y="110" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">GA A*：预算 8 耗尽，目标尚待出队</text>
+<rect x="520" y="132" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="132" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="159" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">01  N0</text>
+<rect x="520" y="181" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="181" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="208" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">02  N0 → N30</text>
+<rect x="520" y="230" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="230" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="257" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">03  N0 → N58</text>
+<rect x="520" y="279" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="279" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="306" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">04  N0 → N60</text>
+<rect x="520" y="328" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="328" width="460" height="41" rx="7" fill="#16283a" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="532" y="355" font-size="15" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="400">05  N0 → N34</text>
+<rect x="520" y="377" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="377" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="404" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">06  N0 → N51</text>
+<rect x="520" y="426" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="426" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="453" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">07  N0 → N51 → N11</text>
+<rect x="520" y="475" width="460" height="41" rx="7" fill="#0f172a"/>
+<rect x="520" y="475" width="460" height="41" rx="7" fill="#16283a" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="532" y="502" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">08  N0 → N51 → N11 → N53</text>
+<text x="30" y="581" font-size="17" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="400">GA 先扩展 N34，再转向 N51；预算增至 16 后，第 9 次扩展成功。</text>
+<text x="30" y="609" font-size="15" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">结论：证据规则未失效；失败来自分布变化下的排序及预算边界。</text>
+</svg>

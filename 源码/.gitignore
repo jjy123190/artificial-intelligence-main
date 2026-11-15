@@ -1,0 +1,23 @@
+# Local environments, installed dependencies, caches and private state.
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+*.tsbuildinfo
+.state/
+.local/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+**/outputs/runtime/
+
+# Secrets, downloaded weights, office locks and temporary files.
+.env
+.env.*
+!.env.example
+*.safetensors
+~$*
+Thumbs.db
+.DS_Store
+*.tmp

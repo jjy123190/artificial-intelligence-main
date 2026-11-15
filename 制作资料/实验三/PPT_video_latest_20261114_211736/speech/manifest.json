@@ -1,0 +1,189 @@
+[
+  {
+    "slide": 1,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 12.84,
+    "word_boundaries": 34,
+    "audio": "speech/slide-01.mp3",
+    "timing": "speech/slide-01-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 11.9625
+  },
+  {
+    "slide": 2,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.192,
+    "word_boundaries": 30,
+    "audio": "speech/slide-02.mp3",
+    "timing": "speech/slide-02-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.3
+  },
+  {
+    "slide": 3,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.336,
+    "word_boundaries": 33,
+    "audio": "speech/slide-03.mp3",
+    "timing": "speech/slide-03-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.45
+  },
+  {
+    "slide": 4,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 16.104,
+    "word_boundaries": 36,
+    "audio": "speech/slide-04.mp3",
+    "timing": "speech/slide-04-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 15.2125
+  },
+  {
+    "slide": 5,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 16.968,
+    "word_boundaries": 37,
+    "audio": "speech/slide-05.mp3",
+    "timing": "speech/slide-05-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 16.0875
+  },
+  {
+    "slide": 6,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.696,
+    "word_boundaries": 33,
+    "audio": "speech/slide-06.mp3",
+    "timing": "speech/slide-06-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.8125
+  },
+  {
+    "slide": 7,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 16.704,
+    "word_boundaries": 34,
+    "audio": "speech/slide-07.mp3",
+    "timing": "speech/slide-07-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 15.825
+  },
+  {
+    "slide": 8,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.768,
+    "word_boundaries": 36,
+    "audio": "speech/slide-08.mp3",
+    "timing": "speech/slide-08-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.875
+  },
+  {
+    "slide": 9,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 14.904,
+    "word_boundaries": 29,
+    "audio": "speech/slide-09.mp3",
+    "timing": "speech/slide-09-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.025
+  },
+  {
+    "slide": 10,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 14.52,
+    "word_boundaries": 34,
+    "audio": "speech/slide-10.mp3",
+    "timing": "speech/slide-10-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 13.6375
+  },
+  {
+    "slide": 11,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.216,
+    "word_boundaries": 37,
+    "audio": "speech/slide-11.mp3",
+    "timing": "speech/slide-11-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.3375
+  },
+  {
+    "slide": 12,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 19.152,
+    "word_boundaries": 46,
+    "audio": "speech/slide-12.mp3",
+    "timing": "speech/slide-12-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 18.275
+  },
+  {
+    "slide": 13,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 14.352,
+    "word_boundaries": 32,
+    "audio": "speech/slide-13.mp3",
+    "timing": "speech/slide-13-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 13.475
+  },
+  {
+    "slide": 14,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 15.768,
+    "word_boundaries": 36,
+    "audio": "speech/slide-14.mp3",
+    "timing": "speech/slide-14-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 14.8875
+  },
+  {
+    "slide": 15,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 13.896,
+    "word_boundaries": 30,
+    "audio": "speech/slide-15.mp3",
+    "timing": "speech/slide-15-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 13.0125
+  },
+  {
+    "slide": 16,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 13.728,
+    "word_boundaries": 31,
+    "audio": "speech/slide-16.mp3",
+    "timing": "speech/slide-16-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 12.85
+  },
+  {
+    "slide": 17,
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "+0%",
+    "duration": 3.528,
+    "word_boundaries": 9,
+    "audio": "speech/slide-17.mp3",
+    "timing": "speech/slide-17-boundaries.jsonl",
+    "first_word_seconds": 0.1,
+    "last_word_end_seconds": 2.6375
+  }
+]

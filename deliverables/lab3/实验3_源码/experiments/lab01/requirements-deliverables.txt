@@ -1,3 +1,0 @@
--r ../../requirements-lab01.txt
-pillow>=11,<13
-imageio-ffmpeg>=0.6,<1

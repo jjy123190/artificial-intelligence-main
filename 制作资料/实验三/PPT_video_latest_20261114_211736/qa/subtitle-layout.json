@@ -1,0 +1,206 @@
+[
+  {
+    "slide": 1,
+    "longest_caption": "让搜索返回有证据、可核验的答案。",
+    "rendered_bounds": [
+      941,
+      1335,
+      1590,
+      1377
+    ],
+    "sample_seconds": 10.764659000000002,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 2,
+    "longest_caption": "本次任务给定起点、关系顺序和终点条件。",
+    "rendered_bounds": [
+      877,
+      1335,
+      1654,
+      1377
+    ],
+    "sample_seconds": 14.593934,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 3,
+    "longest_caption": "预算耗尽只能保留未知，不能当作无解。",
+    "rendered_bounds": [
+      898,
+      1335,
+      1633,
+      1377
+    ],
+    "sample_seconds": 39.5134855,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 4,
+    "longest_caption": "蒙特卡洛树搜索执行选择、扩展、模拟和回传，",
+    "rendered_bounds": [
+      835,
+      1335,
+      1696,
+      1377
+    ],
+    "sample_seconds": 51.940713,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 5,
+    "longest_caption": "混合架构用遗传算法、路径分类器",
+    "rendered_bounds": [
+      962,
+      1335,
+      1598,
+      1377
+    ],
+    "sample_seconds": 58.611892499999996,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 6,
+    "longest_caption": "八十一道验证题仅减少四次总扩展，",
+    "rendered_bounds": [
+      941,
+      1335,
+      1590,
+      1377
+    ],
+    "sample_seconds": 81.8200735,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 7,
+    "longest_caption": "测试集已经迭代查看，结果按同题回归解释。",
+    "rendered_bounds": [
+      856,
+      1335,
+      1675,
+      1377
+    ],
+    "sample_seconds": 101.8529445,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 8,
+    "longest_caption": "固定版全部成功，遗传优化版少答对一题，",
+    "rendered_bounds": [
+      880,
+      1335,
+      1654,
+      1377
+    ],
+    "sample_seconds": 114.6671535,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 9,
+    "longest_caption": "蒙特卡洛树搜索还有模拟开销。",
+    "rendered_bounds": [
+      983,
+      1335,
+      1548,
+      1377
+    ],
+    "sample_seconds": 125.7184355,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 10,
+    "longest_caption": "混合方法四次扩展就找到有效路径。",
+    "rendered_bounds": [
+      941,
+      1335,
+      1591,
+      1377
+    ],
+    "sample_seconds": 136.54121550000002,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 11,
+    "longest_caption": "预算不足、遗传排序退化，以及专家规则关闭。",
+    "rendered_bounds": [
+      835,
+      1335,
+      1697,
+      1377
+    ],
+    "sample_seconds": 151.0663425,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 12,
+    "longest_caption": "大模型负责合法性辅助、路径评分与核验后解释。",
+    "rendered_bounds": [
+      814,
+      1335,
+      1718,
+      1377
+    ],
+    "sample_seconds": 163.903617,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 13,
+    "longest_caption": "必须重新定义状态、动作、终止和成本。",
+    "rendered_bounds": [
+      899,
+      1335,
+      1633,
+      1377
+    ],
+    "sample_seconds": 184.10768050000001,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 14,
+    "longest_caption": "两个正例通过，八个错误分支被拒绝。",
+    "rendered_bounds": [
+      920,
+      1335,
+      1612,
+      1377
+    ],
+    "sample_seconds": 202.1066715,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 15,
+    "longest_caption": "后续评估关注完成率、总成本、解质量和泛化，",
+    "rendered_bounds": [
+      835,
+      1335,
+      1696,
+      1377
+    ],
+    "sample_seconds": 211.1080845,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 16,
+    "longest_caption": "最后总结：启发排序改善预算内搜索，",
+    "rendered_bounds": [
+      920,
+      1335,
+      1611,
+      1377
+    ],
+    "sample_seconds": 223.779602,
+    "not_over_body_or_footer_names": true
+  },
+  {
+    "slide": 17,
+    "longest_caption": "我们的汇报到此结束，",
+    "rendered_bounds": [
+      1068,
+      1335,
+      1463,
+      1377
+    ],
+    "sample_seconds": 235.91750000000002,
+    "not_over_body_or_footer_names": true
+  }
+]

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1144 1257" role="img" aria-label="OOD：一次额外分支消耗关键预算">
+<defs><style>text{font-family:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;fill:#e2e8f0}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+<marker id="arr-solution" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#34d399"/></marker>
+<marker id="arr-expanded" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#22d3ee"/></marker>
+<marker id="arr-frontier" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#94a3b8"/></marker>
+<marker id="arr-rejected" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+<marker id="arr-proof_pruned" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fbbf24"/></marker>
+<marker id="arr-rollout" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#a78bfa"/></marker>
+<marker id="arr-invalid" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+</defs>
+<rect width="1144" height="1257" fill="#0f172a"/><rect width="1144" height="1257" fill="url(#grid)"/>
+<text x="30" y="38" font-size="23" fill="#f8fafc" style="fill:#f8fafc" text-anchor="start" font-weight="700">OOD：一次额外分支消耗关键预算</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">ood-19-0-Q8  |  astar_ga  |  预算 8  |  全部 20 个路径状态 / 28 个事件</text>
+<path d="M178,584.875 C219.5,584.875 219.5,144.5 261,144.5" fill="none" stroke="#fb7185" stroke-width="1.6" marker-end="url(#arr-rejected)" stroke-dasharray="5 4"/>
+<text x="221.0" y="137.5" font-size="11" fill="#fb7185" style="fill:#fb7185" text-anchor="middle" font-weight="400">R0047</text>
+<path d="M178,584.875 C219.5,584.875 219.5,281.0 261,281.0" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="274.0" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0009</text>
+<path d="M178,584.875 C219.5,584.875 219.5,417.5 261,417.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="221.0" y="410.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0018</text>
+<path d="M178,584.875 C219.5,584.875 219.5,554.0 261,554.0" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="547.0" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0048</text>
+<path d="M178,584.875 C219.5,584.875 219.5,690.5 261,690.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="683.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0057</text>
+<path d="M178,584.875 C219.5,584.875 219.5,861.125 261,861.125" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="854.125" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0116</text>
+<path d="M178,584.875 C219.5,584.875 219.5,1145.5 261,1145.5" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="221.0" y="1138.5" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0254</text>
+<path d="M412,554.0 C453.5,554.0 453.5,508.5 495,508.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="501.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0035</text>
+<path d="M412,554.0 C453.5,554.0 453.5,599.5 495,599.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="592.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0290</text>
+<path d="M412,281.0 C453.5,281.0 453.5,235.5 495,235.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="228.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0039</text>
+<path d="M412,281.0 C453.5,281.0 453.5,326.5 495,326.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="319.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0287</text>
+<path d="M412,690.5 C453.5,690.5 453.5,690.5 495,690.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="683.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0100</text>
+<path d="M412,1145.5 C453.5,1145.5 453.5,1145.5 495,1145.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="455.0" y="1138.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0007</text>
+<path d="M412,861.125 C453.5,861.125 453.5,781.5 495,781.5" fill="none" stroke="#fb7185" stroke-width="1.6" marker-end="url(#arr-rejected)" stroke-dasharray="5 4"/>
+<text x="455.0" y="774.5" font-size="11" fill="#fb7185" style="fill:#fb7185" text-anchor="middle" font-weight="400">R0073</text>
+<path d="M412,861.125 C453.5,861.125 453.5,940.75 495,940.75" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="455.0" y="933.75" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0319</text>
+<path d="M646,940.75 C687.5,940.75 687.5,872.5 729,872.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="689.0" y="865.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0091</text>
+<path d="M646,940.75 C687.5,940.75 687.5,1009.0 729,1009.0" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<text x="689.0" y="1002.0" font-size="11" fill="#22d3ee" style="fill:#22d3ee" text-anchor="middle" font-weight="400">R0164</text>
+<path d="M880,1009.0 C921.5,1009.0 921.5,963.5 963,963.5" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-frontier)"/>
+<text x="923.0" y="956.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="middle" font-weight="400">R0079</text>
+<path d="M880,1009.0 C921.5,1009.0 921.5,1054.5 963,1054.5" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)" stroke-dasharray="5 4"/>
+<text x="923.0" y="1047.5" font-size="11" fill="#fbbf24" style="fill:#fbbf24" text-anchor="middle" font-weight="400">R0140</text>
+<rect x="30" y="550.375" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="30" y="550.375" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="42" y="573.375" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N0   #1</text>
+<text x="42" y="594.375" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=0</text>
+<text x="42" y="610.375" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=5.429  f=5.429</text>
+<rect x="264" y="110" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="110" width="148" height="69" rx="7" fill="#321c30" stroke="#fb7185" stroke-width="1.5"/>
+<text x="276" y="133" font-size="18" fill="#fb7185" style="fill:#fb7185" text-anchor="start" font-weight="700">N56</text>
+<text x="276" y="154" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">专家拒绝 · d=1</text>
+<text x="276" y="170" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 2 / 前缀状态</text>
+<rect x="264" y="246.5" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="246.5" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="269.5" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N58   #3</text>
+<text x="276" y="290.5" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="306.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=7.477  f=8.477</text>
+<rect x="264" y="383" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="383" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="276" y="406" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N43</text>
+<text x="276" y="427" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=1</text>
+<text x="276" y="443" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 4 / 前缀状态</text>
+<rect x="264" y="519.5" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="519.5" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="542.5" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N30   #2</text>
+<text x="276" y="563.5" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="579.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=7.139  f=8.139</text>
+<rect x="264" y="656.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="656.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="679.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N60   #4</text>
+<text x="276" y="700.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="716.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=7.930  f=8.930</text>
+<rect x="264" y="826.625" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="826.625" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="849.625" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N51   #6</text>
+<text x="276" y="870.625" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="886.625" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=8.697  f=9.697</text>
+<rect x="264" y="1111.0" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="264" y="1111.0" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="276" y="1134.0" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N34   #5</text>
+<text x="276" y="1155.0" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=1</text>
+<text x="276" y="1171.0" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=8.137  f=9.137</text>
+<rect x="498" y="474" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="474" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="497" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N60</text>
+<text x="510" y="518" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="534" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 10 / 前缀状态</text>
+<rect x="498" y="565" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="565" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="588" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N55</text>
+<text x="510" y="609" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="625" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 11 / 前缀状态</text>
+<rect x="498" y="201" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="201" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="224" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N45</text>
+<text x="510" y="245" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="261" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 13 / 前缀状态</text>
+<rect x="498" y="292" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="292" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="315" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N50</text>
+<text x="510" y="336" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="352" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 14 / 前缀状态</text>
+<rect x="498" y="656" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="656" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="679" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N27</text>
+<text x="510" y="700" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="716" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 16 / 前缀状态</text>
+<rect x="498" y="1111" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="1111" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="510" y="1134" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N37</text>
+<text x="510" y="1155" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=2</text>
+<text x="510" y="1171" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 18 / 前缀状态</text>
+<rect x="498" y="747" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="747" width="148" height="69" rx="7" fill="#321c30" stroke="#fb7185" stroke-width="1.5"/>
+<text x="510" y="770" font-size="18" fill="#fb7185" style="fill:#fb7185" text-anchor="start" font-weight="700">N46</text>
+<text x="510" y="791" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">专家拒绝 · d=2</text>
+<text x="510" y="807" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 20 / 前缀状态</text>
+<rect x="498" y="906.25" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="498" y="906.25" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="510" y="929.25" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N11   #7</text>
+<text x="510" y="950.25" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=2</text>
+<text x="510" y="966.25" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=2.000  f=4.000</text>
+<rect x="732" y="838" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="732" y="838" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="744" y="861" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N40</text>
+<text x="744" y="882" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=3</text>
+<text x="744" y="898" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 23 / 前缀状态</text>
+<rect x="732" y="974.5" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="732" y="974.5" width="148" height="69" rx="7" fill="#122535" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="744" y="997.5" font-size="18" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">N53   #8</text>
+<text x="744" y="1018.5" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">已扩展 · d=3</text>
+<text x="744" y="1034.5" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=1.000  f=4.000</text>
+<rect x="966" y="929" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="966" y="929" width="148" height="69" rx="7" fill="#122535" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="978" y="952" font-size="18" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="700">N63</text>
+<text x="978" y="973" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">待扩展 · d=4</text>
+<text x="978" y="989" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">h=0.000  f=4.000</text>
+<rect x="966" y="1020" width="148" height="69" rx="7" fill="#0f172a"/>
+<rect x="966" y="1020" width="148" height="69" rx="7" fill="#122535" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="978" y="1043" font-size="18" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">N14</text>
+<text x="978" y="1064" font-size="13" fill="#e2e8f0" style="fill:#e2e8f0" text-anchor="start" font-weight="400">证明剪枝 · d=4</text>
+<text x="978" y="1080" font-size="11" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">事件 27 / 前缀状态</text>
+<circle cx="30.0" cy="1228" r="5" fill="#34d399"/>
+<text x="41.0" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">解路径</text>
+<circle cx="210.66666666666666" cy="1228" r="5" fill="#22d3ee"/>
+<text x="221.66666666666666" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已扩展 #序号</text>
+<circle cx="391.3333333333333" cy="1228" r="5" fill="#94a3b8"/>
+<text x="402.3333333333333" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">待扩展</text>
+<circle cx="572.0" cy="1228" r="5" fill="#fbbf24"/>
+<text x="583.0" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">已证无解</text>
+<circle cx="752.6666666666666" cy="1228" r="5" fill="#fb7185"/>
+<text x="763.6666666666666" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">拒绝 / 无效</text>
+<circle cx="933.3333333333333" cy="1228" r="5" fill="#a78bfa"/>
+<text x="944.3333333333333" y="1233" font-size="12" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">模拟</text>
+</svg>

@@ -1,0 +1,504 @@
+{
+  "case_id": "F10_controlled_neutral",
+  "kind": "controlled_injected_scores_not_real_llm",
+  "selection_reason": "精确复现固定微型反例，隔离错误评分对有限预算排序的影响。",
+  "source": "experiments/lab03/diagnostics.py::controlled_counterexamples",
+  "graph_sha256": "ec1cb0ebca70a6a3968aeedf0446c99d4bb73595a29eed41d04f9b45b982834d",
+  "query_sha256": "9edfa4a4ab8832367551d4dced1ffe6f96b5ea0ce4f8b387771fa74b92b389e3",
+  "parameters": {
+    "method": "hybrid_llm",
+    "budget": 5,
+    "seed": 7,
+    "weights": [
+      0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "model": {
+      "seed": 7,
+      "coef": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "intercept": 0.0
+    },
+    "expert": true,
+    "llm_scores": {
+      "[\"a-live\"]": 0.5,
+      "[\"z-dead\"]": 0.5
+    }
+  },
+  "graph": {
+    "id": "",
+    "split": "",
+    "nodes": [
+      {
+        "id": "p",
+        "name": "起点",
+        "kind": "Person",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "a",
+        "name": "安全中间",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "b",
+        "name": "干扰中间",
+        "kind": "Company",
+        "sector": "综合",
+        "listed": false
+      },
+      {
+        "id": "z",
+        "name": "目标公司",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": true
+      },
+      {
+        "id": "c",
+        "name": "第二层",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": false
+      },
+      {
+        "id": "d",
+        "name": "第三层",
+        "kind": "Company",
+        "sector": "制造",
+        "listed": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "a-live",
+        "source": "p",
+        "target": "a",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      },
+      {
+        "id": "z-dead",
+        "source": "p",
+        "target": "b",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      },
+      {
+        "id": "middle",
+        "source": "a",
+        "target": "c",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      },
+      {
+        "id": "next",
+        "source": "c",
+        "target": "d",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      },
+      {
+        "id": "end",
+        "source": "d",
+        "target": "z",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      },
+      {
+        "id": "bad-next",
+        "source": "b",
+        "target": "z",
+        "relation": "HOLDS",
+        "confidence": 1.0,
+        "verified": true,
+        "active": true,
+        "value": 0.0
+      }
+    ]
+  },
+  "query": {
+    "id": "controlled-budget",
+    "start": "p",
+    "relations": [
+      "HOLDS",
+      "HOLDS",
+      "HOLDS",
+      "HOLDS"
+    ],
+    "sector": "制造",
+    "listed": true,
+    "text": ""
+  },
+  "result": {
+    "method": "hybrid_llm",
+    "label": "混合 + LLM",
+    "status": "found",
+    "found": true,
+    "valid": true,
+    "answer": "z",
+    "path": [
+      "p",
+      "a",
+      "c",
+      "d",
+      "z"
+    ],
+    "edge_ids": [
+      "a-live",
+      "middle",
+      "next",
+      "end"
+    ],
+    "expanded": 5,
+    "generated": 6,
+    "successor_checks": 0,
+    "expert_rejections": 0,
+    "rollout_steps": 0,
+    "simulations": 0,
+    "total_work": 5,
+    "repeated_states": 0,
+    "heuristic_evaluations": 5,
+    "heuristic_edge_checks": 6,
+    "heuristic_probe_states": 1,
+    "adjacency_edge_scans": 6,
+    "proof_pruned": 0,
+    "proof_checks": 5,
+    "peak_frontier": 2,
+    "total_edge_checks": 6,
+    "successor_cache_hits": 5,
+    "successor_cache_entries": 5,
+    "completed_paths": 1,
+    "redundant_paths": 0,
+    "redundant_path_ratio": 0.0,
+    "redundancy_ratio": 0.0,
+    "hops": 4,
+    "elapsed_ms": 0.5388999998103827,
+    "budget": 5,
+    "expert_enabled": true,
+    "trace": [
+      {
+        "id": 0,
+        "node": "p",
+        "depth": 0,
+        "path": [
+          "p"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "start",
+        "g": 0,
+        "h": 4.1,
+        "f": 4.1,
+        "p": 0.5
+      },
+      {
+        "id": 1,
+        "node": "p",
+        "depth": 0,
+        "path": [
+          "p"
+        ],
+        "edge_ids": [],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 0,
+        "h": 4.1,
+        "f": 4.1,
+        "p": 0.5
+      },
+      {
+        "id": 2,
+        "node": "a",
+        "depth": 1,
+        "path": [
+          "p",
+          "a"
+        ],
+        "edge_ids": [
+          "a-live"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 3.05,
+        "f": 4.05,
+        "p": 0.5
+      },
+      {
+        "id": 3,
+        "node": "b",
+        "depth": 1,
+        "path": [
+          "p",
+          "b"
+        ],
+        "edge_ids": [
+          "z-dead"
+        ],
+        "parent_path": [],
+        "status": "generated",
+        "g": 1,
+        "h": 3.05,
+        "f": 4.05,
+        "p": 0.5
+      },
+      {
+        "id": 4,
+        "node": "a",
+        "depth": 1,
+        "path": [
+          "p",
+          "a"
+        ],
+        "edge_ids": [
+          "a-live"
+        ],
+        "parent_path": [],
+        "status": "expanded",
+        "g": 1,
+        "h": 3.05,
+        "f": 4.05,
+        "p": 0.5
+      },
+      {
+        "id": 5,
+        "node": "c",
+        "depth": 2,
+        "path": [
+          "p",
+          "a",
+          "c"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle"
+        ],
+        "parent_path": [
+          "a-live"
+        ],
+        "status": "generated",
+        "g": 2,
+        "h": 2.0,
+        "f": 4.0,
+        "p": 0.5
+      },
+      {
+        "id": 6,
+        "node": "c",
+        "depth": 2,
+        "path": [
+          "p",
+          "a",
+          "c"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle"
+        ],
+        "parent_path": [
+          "a-live"
+        ],
+        "status": "expanded",
+        "g": 2,
+        "h": 2.0,
+        "f": 4.0,
+        "p": 0.5
+      },
+      {
+        "id": 7,
+        "node": "d",
+        "depth": 3,
+        "path": [
+          "p",
+          "a",
+          "c",
+          "d"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "parent_path": [
+          "a-live",
+          "middle"
+        ],
+        "status": "generated",
+        "g": 3,
+        "h": 1.0,
+        "f": 4.0,
+        "p": 0.5
+      },
+      {
+        "id": 8,
+        "node": "d",
+        "depth": 3,
+        "path": [
+          "p",
+          "a",
+          "c",
+          "d"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "parent_path": [
+          "a-live",
+          "middle"
+        ],
+        "status": "expanded",
+        "g": 3,
+        "h": 1.0,
+        "f": 4.0,
+        "p": 0.5
+      },
+      {
+        "id": 9,
+        "node": "z",
+        "depth": 4,
+        "path": [
+          "p",
+          "a",
+          "c",
+          "d",
+          "z"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ],
+        "parent_path": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "status": "generated",
+        "g": 4,
+        "h": 0.0,
+        "f": 4.0,
+        "p": null
+      },
+      {
+        "id": 10,
+        "node": "z",
+        "depth": 4,
+        "path": [
+          "p",
+          "a",
+          "c",
+          "d",
+          "z"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ],
+        "parent_path": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "status": "expanded",
+        "g": 4,
+        "h": 0.0,
+        "f": 4.0,
+        "p": null
+      },
+      {
+        "id": 11,
+        "node": "z",
+        "depth": 4,
+        "path": [
+          "p",
+          "a",
+          "c",
+          "d",
+          "z"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ],
+        "parent_path": [
+          "a-live",
+          "middle",
+          "next"
+        ],
+        "status": "solution",
+        "g": 4,
+        "h": 0.0,
+        "f": 4.0,
+        "p": null
+      }
+    ],
+    "trace_events": 12,
+    "trace_truncated": false,
+    "classifier_used": true,
+    "heuristic_used": true,
+    "note": "目标仅按问题谓词和图中实际路径验证；预算耗尽不等于无答案。GA/学习启发式不保证可采纳性。一/两步已知目标延伸优先于估值，仍按出队付费；两步仅探测最多2个子前缀，heuristic_probe_states与边检查另计；有估值A*同分优先更深前缀，下界A*保留FIFO。候选与规则判断按完整前缀缓存；total_edge_checks仅计候选证据检查；adjacency_edge_scans另计含关系/环过滤的出边扫描；模型推断另计。total_work仅计扩展+模拟。未评分LLM前缀为零调整，真实评分最多±1且不能覆盖已知合法后缀。有估值A*可剪去已完整核验的无解后缀，截断未知分支不剪；proof_pruned不冒充专家拦截，证据检查/探测仍计费。"
+  },
+  "independent_oracle": {
+    "used_only_after_search": true,
+    "valid_path_count": 1,
+    "valid_paths": [
+      {
+        "nodes": [
+          "p",
+          "a",
+          "c",
+          "d",
+          "z"
+        ],
+        "edge_ids": [
+          "a-live",
+          "middle",
+          "next",
+          "end"
+        ]
+      }
+    ]
+  },
+  "replay_validation": {
+    "all_trace_states_valid": true,
+    "trace_complete": true,
+    "matches_saved_run_fields": [],
+    "elapsed_ms_not_compared": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "purpose": "新增第14章两项外部来源核验；原实验结果仍以原冻结证据为准。",
+  "records": [
+    {
+      "name": "lean_equality",
+      "requested_url": "https://lean-lang.org/theorem_proving_in_lean4/Quantifiers-and-Equality/",
+      "resolved_url": "https://lean-lang.org/theorem_proving_in_lean4/Quantifiers-and-Equality/",
+      "status_code": 200,
+      "retrieved_at": "2026-11-13T19:08:18.926418+08:00",
+      "response_sha256": "00d36c932a36c5cc2e9e19ca495e1299ee49d9c82e1e59e3fbcb56522ac4945f",
+      "title": "Theorem Proving in Lean 4 — Quantifiers and Equality",
+      "checked_excerpts": {
+        "Eq.symm": "ck Eq.refl Eq.refl.{u_1} { α : Sort u_1 } ( a : α ) : a = a Eq.symm.{u} { α : Sort u } { a b : α } ( h : a = b ) : b = a #check Eq.symm Eq.symm.{u} { α : Sort u } { a b : α } ( h : a = b ) : b = a Eq.trans.{u} { α : Sort u } { a b c : α } ( h₁ : a = b ) ( h₂ : b = c ) : a = c #check Eq.trans Eq.trans.{u} { α ",
+        "Eq.trans": "q.symm.{u} { α : Sort u } { a b : α } ( h : a = b ) : b = a Eq.trans.{u} { α : Sort u } { a b c : α } ( h₁ : a = b ) ( h₂ : b = c ) : a = c #check Eq.trans Eq.trans.{u} { α : Sort u } { a b c : α } ( h₁ : a = b ) ( h₂ : b = c ) : a = c We can make the output easier to read by telling Lean not to insert\nthe im"
+      }
+    },
+    {
+      "name": "strips_crossref",
+      "requested_url": "https://api.crossref.org/works/10.1016/0004-3702(71)90010-5",
+      "resolved_url": "https://api.crossref.org/works/10.1016/0004-3702(71)90010-5",
+      "status_code": 200,
+      "retrieved_at": "2026-11-13T19:08:21.436084+08:00",
+      "response_sha256": "46a64f212365d78b8a142f5787a6a2e202ab47e741e988045799de91db45ad8c",
+      "metadata": {
+        "title": [
+          "Strips: A new approach to the application of theorem proving to problem solving"
+        ],
+        "author": [
+          {
+            "given": "Richard E.",
+            "family": "Fikes",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nils J.",
+            "family": "Nilsson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Artificial Intelligence"
+        ],
+        "volume": "2",
+        "issue": "3-4",
+        "page": "189-208",
+        "published": {
+          "date-parts": [
+            [
+              1971,
+              12
+            ]
+          ]
+        },
+        "DOI": "10.1016/0004-3702(71)90010-5",
+        "URL": "https://doi.org/10.1016/0004-3702(71)90010-5"
+      }
+    }
+  ]
+}

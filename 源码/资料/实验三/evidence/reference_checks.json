@@ -1,0 +1,272 @@
+[
+  {
+    "key": "astar",
+    "source_url": "https://api.crossref.org/works/10.1109/TSSC.1968.300136",
+    "accessed": "2026-11-13",
+    "status_code": 200,
+    "metadata": {
+      "title": [
+        "A Formal Basis for the Heuristic Determination of Minimum Cost Paths"
+      ],
+      "author": [
+        {
+          "given": "Peter",
+          "family": "Hart",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nils",
+          "family": "Nilsson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bertram",
+          "family": "Raphael",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Systems Science and Cybernetics"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1968
+          ]
+        ]
+      },
+      "volume": "4",
+      "issue": "2",
+      "page": "100-107",
+      "DOI": "10.1109/tssc.1968.300136"
+    }
+  },
+  {
+    "key": "uct",
+    "source_url": "https://api.crossref.org/works/10.1007/11871842_29",
+    "accessed": "2026-11-13",
+    "status_code": 200,
+    "metadata": {
+      "title": [
+        "Bandit Based Monte-Carlo Planning"
+      ],
+      "author": [
+        {
+          "given": "Levente",
+          "family": "Kocsis",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Csaba",
+          "family": "Szepesvári",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Machine Learning: ECML 2006"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "282-293",
+      "DOI": "10.1007/11871842_29"
+    }
+  },
+  {
+    "key": "lats",
+    "source_url": "https://proceedings.mlr.press/v235/zhou24r.html",
+    "accessed": "2026-11-13",
+    "status_code": 200,
+    "citation_meta": [
+      [
+        "citation_publisher",
+        "PMLR"
+      ],
+      [
+        "citation_title",
+        "Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models"
+      ],
+      [
+        "citation_language",
+        "en"
+      ],
+      [
+        "citation_abstract_html_url",
+        "https://proceedings.mlr.press/v235/zhou24r.html"
+      ],
+      [
+        "citation_pdf_url",
+        "https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhou24r/zhou24r.pdf"
+      ],
+      [
+        "citation_firstpage",
+        "62138"
+      ],
+      [
+        "citation_lastpage",
+        "62160"
+      ],
+      [
+        "citation_author",
+        "Andy Zhou"
+      ],
+      [
+        "citation_author",
+        "Kai Yan"
+      ],
+      [
+        "citation_author",
+        "Michal Shlapentokh-Rothman"
+      ],
+      [
+        "citation_author",
+        "Haohan Wang"
+      ],
+      [
+        "citation_author",
+        "Yu-Xiong Wang"
+      ],
+      [
+        "citation_publication_date",
+        "2024/07/08"
+      ],
+      [
+        "citation_inbook_title",
+        "International Conference on Machine Learning"
+      ],
+      [
+        "citation_conference_title",
+        "International Conference on Machine Learning"
+      ],
+      [
+        "citation_issn",
+        "2640-3498"
+      ]
+    ],
+    "title": [
+      "Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models"
+    ]
+  },
+  {
+    "key": "tog",
+    "source_url": "https://arxiv.org/abs/2307.07697",
+    "accessed": "2026-11-13",
+    "status_code": 200,
+    "citation_meta": [
+      [
+        "citation_title",
+        "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph"
+      ],
+      [
+        "citation_author",
+        "Sun, Jiashuo"
+      ],
+      [
+        "citation_author",
+        "Xu, Chengjin"
+      ],
+      [
+        "citation_author",
+        "Tang, Lumingyuan"
+      ],
+      [
+        "citation_author",
+        "Wang, Saizhuo"
+      ],
+      [
+        "citation_author",
+        "Lin, Chen"
+      ],
+      [
+        "citation_author",
+        "Gong, Yeyun"
+      ],
+      [
+        "citation_author",
+        "Ni, Lionel M."
+      ],
+      [
+        "citation_author",
+        "Shum, Heung-Yeung"
+      ],
+      [
+        "citation_author",
+        "Guo, Jian"
+      ],
+      [
+        "citation_date",
+        "2023/07/15"
+      ],
+      [
+        "citation_online_date",
+        "2024/03/24"
+      ],
+      [
+        "citation_pdf_url",
+        "https://arxiv.org/pdf/2307.07697"
+      ],
+      [
+        "citation_arxiv_id",
+        "2307.07697"
+      ],
+      [
+        "citation_abstract",
+        "Although large language models (LLMs) have achieved significant success in various tasks, they often struggle with hallucination problems, especially in scenarios requiring deep and responsible reasoning. These issues could be partially addressed by introducing external knowledge graphs (KG) in LLM reasoning. In this paper, we propose a new LLM-KG integrating paradigm ``$\\hbox{LLM}\\otimes\\hbox{KG}$&#39;&#39; which treats the LLM as an agent to interactively explore related entities and relations on KGs and perform reasoning based on the retrieved knowledge. We further implement this paradigm by introducing a new approach called Think-on-Graph (ToG), in which the LLM agent iteratively executes beam search on KG, discovers the most promising reasoning paths, and returns the most likely reasoning results. We use a number of well-designed experiments to examine and illustrate the following advantages of ToG: 1) compared with LLMs, ToG has better deep reasoning power; 2) ToG has the ability of knowledge traceability and knowledge correctability by leveraging LLMs reasoning and expert feedback; 3) ToG provides a flexible plug-and-play framework for different LLMs, KGs and prompting strategies without any additional training cost; 4) the performance of ToG with small LLM models could exceed large LLM such as GPT-4 in certain scenarios and this reduces the cost of LLM deployment and application. As a training-free method with lower computational cost and better generality, ToG achieves overall SOTA in 6 out of 9 datasets where most previous SOTAs rely on additional training."
+      ]
+    ],
+    "title": [
+      "[2307.07697] Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph"
+    ]
+  },
+  {
+    "key": "qwen",
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/raw/7ae557604adf67be50417f59c2c2f167def9a775/README.md",
+    "accessed": "2026-11-13",
+    "status_code": 200,
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "identity_verified": true
+  }
+]

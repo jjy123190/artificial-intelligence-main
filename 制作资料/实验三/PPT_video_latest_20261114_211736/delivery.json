@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "delivered_at": "2026-11-14T21:35:51.778857+08:00",
+  "file": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\deliverables\\lab3\\第4组_实验三_PPT演讲.mp4",
+  "sha256": "1dec0f0f49bdae76c07193014c2af3c80603dda8bdbfab32406adaec67c0743a",
+  "bytes": 12859453,
+  "duration_seconds": 240,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "source_ppt_sha256": "dad564d9403346f9ad6861824fb3d4e04c3dd31bebd795175e3cc5451e88505f",
+  "source_ppt_unchanged": true,
+  "slides": 17,
+  "captions": 85,
+  "speech": "Chinese synthesized narration",
+  "previous_video_backup": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main\\outputs\\lab03_materials\\PPT_video_latest_20261114_211736\\source\\previous-ppt-video.mp4",
+  "other_submission_files_unchanged": true
+}

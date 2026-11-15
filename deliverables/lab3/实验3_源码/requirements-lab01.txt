@@ -1,4 +1,0 @@
-networkx==3.5
-matplotlib>=3.9,<4
-numpy>=2,<3
-pyvis==0.3.2

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 635" role="img" aria-label="规则约束 + 学习估值 + 启发搜索">
+<defs><style>text{font-family:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;fill:#e2e8f0}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+<marker id="arr-solution" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#34d399"/></marker>
+<marker id="arr-expanded" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#22d3ee"/></marker>
+<marker id="arr-frontier" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#94a3b8"/></marker>
+<marker id="arr-rejected" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+<marker id="arr-proof_pruned" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fbbf24"/></marker>
+<marker id="arr-rollout" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#a78bfa"/></marker>
+<marker id="arr-invalid" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#fb7185"/></marker>
+</defs>
+<rect width="1080" height="635" fill="#0f172a"/><rect width="1080" height="635" fill="url(#grid)"/>
+<text x="30" y="38" font-size="23" fill="#f8fafc" style="fill:#f8fafc" text-anchor="start" font-weight="700">规则约束 + 学习估值 + 启发搜索</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">实线表示数据流；LLM 只能评估真实路径前缀，不能创建实体、边或答案。</text>
+<path d="M155,209 C155.0,209 155.0,292 155,292" fill="none" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-expanded)"/>
+<path d="M285,344 C325.0,344 325.0,344 365,344" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#arr-proof_pruned)"/>
+<path d="M512,209 C512.0,209 512.0,292 512,292" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)"/>
+<path d="M897,209 C897.0,209 897.0,292 897,292" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)"/>
+<path d="M745,344 C702.5,344 702.5,344 660,344" fill="none" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arr-rollout)"/>
+<path d="M512,396 C512.0,396 512.0,480 512,480" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<path d="M660,525 C702.5,525 702.5,525 745,525" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arr-solution)"/>
+<rect x="30" y="118" width="255" height="91" rx="7" fill="#0f172a"/>
+<rect x="30" y="118" width="255" height="91" rx="7" fill="#16283a" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="48" y="147" font-size="19" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">输入图谱与关系序列</text>
+<text x="48" y="172" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">2—4 跳问题 / 终点公开谓词</text>
+<text x="48" y="194" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">实体、真实边与证据属性</text>
+<rect x="365" y="118" width="295" height="91" rx="7" fill="#0f172a"/>
+<rect x="365" y="118" width="295" height="91" rx="7" fill="#16283a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="383" y="147" font-size="19" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">离线训练与验证</text>
+<text x="383" y="172" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">训练图 → 6 维路径分类器</text>
+<text x="383" y="194" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">验证图 → GA 参数；测试不回流</text>
+<rect x="745" y="118" width="305" height="91" rx="7" fill="#0f172a"/>
+<rect x="745" y="118" width="305" height="91" rx="7" fill="#16283a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="763" y="147" font-size="19" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">本地 Qwen 评估</text>
+<text x="763" y="172" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">合法性 True / False + 节点价值</text>
+<text x="763" y="194" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">受控解释在搜索后生成</text>
+<rect x="30" y="292" width="255" height="104" rx="7" fill="#0f172a"/>
+<rect x="30" y="292" width="255" height="104" rx="7" fill="#16283a" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="48" y="321" font-size="19" fill="#fbbf24" style="fill:#fbbf24" text-anchor="start" font-weight="700">动作与专家约束</text>
+<text x="48" y="346" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">匹配关系 / 禁止路径内循环</text>
+<text x="48" y="368" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">核验 + 有效 + 置信度 ≥ 0.55</text>
+<rect x="365" y="292" width="295" height="104" rx="7" fill="#0f172a"/>
+<rect x="365" y="292" width="295" height="104" rx="7" fill="#16283a" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="383" y="321" font-size="19" fill="#22d3ee" style="fill:#22d3ee" text-anchor="start" font-weight="700">独立搜索内核</text>
+<text x="383" y="346" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">BFS / A* / MCTS</text>
+<text x="383" y="368" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">A*：固定、GA、ML、混合</text>
+<rect x="745" y="292" width="305" height="104" rx="7" fill="#0f172a"/>
+<rect x="745" y="292" width="305" height="104" rx="7" fill="#16283a" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="763" y="321" font-size="19" fill="#a78bfa" style="fill:#a78bfa" text-anchor="start" font-weight="700">路径前缀估值</text>
+<text x="763" y="346" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">h = 剩余步数 + 特征罚项</text>
+<text x="763" y="368" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">pML / 有界 pLLM 仅影响排序</text>
+<rect x="365" y="480" width="295" height="91" rx="7" fill="#0f172a"/>
+<rect x="365" y="480" width="295" height="91" rx="7" fill="#16283a" stroke="#34d399" stroke-width="1.5"/>
+<text x="383" y="509" font-size="19" fill="#34d399" style="fill:#34d399" text-anchor="start" font-weight="700">返回与独立核验</text>
+<text x="383" y="534" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">found 与 valid 分离</text>
+<text x="383" y="556" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">完整路径 → 图证据检查</text>
+<rect x="745" y="480" width="305" height="91" rx="7" fill="#0f172a"/>
+<rect x="745" y="480" width="305" height="91" rx="7" fill="#16283a" stroke="#34d399" stroke-width="1.5"/>
+<text x="763" y="509" font-size="19" fill="#34d399" style="fill:#34d399" text-anchor="start" font-weight="700">可复核证据</text>
+<text x="763" y="534" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">trace / 指标 / 原始 JSON</text>
+<text x="763" y="556" font-size="14" fill="#cbd5e1" style="fill:#cbd5e1" text-anchor="start" font-weight="400">自由解释与证据文本分列</text>
+<text x="30" y="610" font-size="16" fill="#94a3b8" style="fill:#94a3b8" text-anchor="start" font-weight="400">硬约束决定能否使用证据；统计模型只决定优先看哪条合法路径。</text>
+</svg>

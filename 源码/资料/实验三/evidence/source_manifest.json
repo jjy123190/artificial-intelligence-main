@@ -1,0 +1,198 @@
+{
+  "created_at": "2026-11-13T14:20:31",
+  "report_date": "2026-11-13",
+  "root_path_at_generation": "C:\\Users\\Administrator\\Desktop\\artificial-intelligence-main",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "policy": "Only copies and replays; original outputs and code unchanged. No new LLM inference, no data regeneration.",
+  "sources": [
+    {
+      "source": "outputs/lab03/manifest.json",
+      "attachment": "evidence/raw/manifest.json",
+      "bytes": 2725,
+      "sha256": "151e90a0d4fddd7a5b39c110a2751ce73c30253127c55dd0adbdf2726715e5ad"
+    },
+    {
+      "source": "outputs/lab03/runs.csv",
+      "attachment": "evidence/raw/runs.csv",
+      "bytes": 508533,
+      "sha256": "075f839ac0fe20df9d2aa7f28431802398a46e2eafdb2878d6349112bfd47369"
+    },
+    {
+      "source": "outputs/lab03/summary.json",
+      "attachment": "evidence/raw/summary.json",
+      "bytes": 43923,
+      "sha256": "0b3b5280780dff6cbb8e76fbdfcb846672a364f2a82284581683190e4746c96d"
+    },
+    {
+      "source": "outputs/lab03/paired_effects.json",
+      "attachment": "evidence/raw/paired_effects.json",
+      "bytes": 4407,
+      "sha256": "e6c5fa97240d8a7931515db2d59064b15933123a07bd0cd9b28e7f4d8c489ed8"
+    },
+    {
+      "source": "outputs/lab03/ga_history.json",
+      "attachment": "evidence/raw/ga_history.json",
+      "bytes": 17182,
+      "sha256": "d80fdfcba3710043be8b98acef2188369dadb471260898cb2be2c2b374e8b300"
+    },
+    {
+      "source": "outputs/lab03/models.json",
+      "attachment": "evidence/raw/models.json",
+      "bytes": 6182,
+      "sha256": "2773ece3a9ed0b9da8b444569b41950c548c97d57170cf8cdb3f6cc0ffba1536"
+    },
+    {
+      "source": "outputs/lab03/learning_metrics.json",
+      "attachment": "evidence/raw/learning_metrics.json",
+      "bytes": 631,
+      "sha256": "a8521cda227e2fdf805ce4e4f9ab8b9ba551dca6a8d63285283c5d6421d25fcd"
+    },
+    {
+      "source": "outputs/lab03/llm_summary.json",
+      "attachment": "evidence/raw/llm_summary.json",
+      "bytes": 6173,
+      "sha256": "05247b3c753cd3cb09dc6d607868627e1de29e0ba51991491c1431f469079057"
+    },
+    {
+      "source": "outputs/lab03/llm_diagnostics.json",
+      "attachment": "evidence/raw/llm_diagnostics.json",
+      "bytes": 4411,
+      "sha256": "8c8158688cf395da9be742e794b83c0f20224567d0de863daca8979bbf7fd3df"
+    },
+    {
+      "source": "outputs/lab03/llm_explanations.json",
+      "attachment": "evidence/raw/llm_explanations.json",
+      "bytes": 12435,
+      "sha256": "9b0c450216c48569afde614e515303f5b986ea8198ec2373ee6192af88611788"
+    },
+    {
+      "source": "outputs/lab03/llm_audit.json",
+      "attachment": "evidence/raw/llm_audit.json",
+      "bytes": 2227511,
+      "sha256": "d745e7daa24eb4988aaa2bff4668431657117393bb324f1d2c850b6bfa0e5c53"
+    },
+    {
+      "source": "outputs/lab03/hallucination_stress.json",
+      "attachment": "evidence/raw/hallucination_stress.json",
+      "bytes": 4470,
+      "sha256": "173d3f8e54cb54c717fcf7f35bddc1f25ee3f77b63b4f17dbccbb04079f58b4d"
+    },
+    {
+      "source": "outputs/lab03/boundary_cases.json",
+      "attachment": "evidence/raw/boundary_cases.json",
+      "bytes": 10072,
+      "sha256": "86cc572b535a8af04f2f6094a90ccc930b709d62682c9b1ccd009ac5744eb69f"
+    },
+    {
+      "source": "outputs/lab03/optimization/comparison.json",
+      "attachment": "evidence/raw/optimization/comparison.json",
+      "bytes": 26797,
+      "sha256": "86d30b0a83d01cd57bcbab6bd11f99a1439ae56aa7a4f9a6a84e3868a1e16d9f"
+    },
+    {
+      "source": "outputs/lab03/refinement/comparison.json",
+      "attachment": "evidence/raw/refinement/comparison.json",
+      "bytes": 27566,
+      "sha256": "b060d888921ae9b905d45dad8e3f51d4b2f93089d3c93f4bedb8c8541024a2a3"
+    },
+    {
+      "source": "outputs/lab03/structure/comparison.json",
+      "attachment": "evidence/raw/structure/comparison.json",
+      "bytes": 32302,
+      "sha256": "5bdd6e80fcb244fe04e1d69ffe9bc0099fbd253129aa18dd97ab27840e648873"
+    },
+    {
+      "source": "outputs/lab03/reliability/comparison.json",
+      "attachment": "evidence/raw/reliability/comparison.json",
+      "bytes": 29905,
+      "sha256": "42823333782928eb521fac42cccbf91fbb99c8501cd2a9c40eb1e41d57119c16"
+    },
+    {
+      "source": "outputs/lab03/reliability/confirmation.json",
+      "attachment": "evidence/raw/reliability/confirmation.json",
+      "bytes": 4470528,
+      "sha256": "fe212023db8c08446396dec0c533507cb715d38df161dbe1b3bd3a8df523f50e"
+    },
+    {
+      "source": "outputs/lab03/reliability/protocol.json",
+      "attachment": "evidence/raw/reliability/protocol.json",
+      "bytes": 7123,
+      "sha256": "2d84ef91d6862865be6e130cc39dea8922622463dfdf7b50054bd7416b382835"
+    },
+    {
+      "source": "outputs/lab03/reliability/llm_confirmation.json",
+      "attachment": "evidence/raw/reliability/llm_confirmation.json",
+      "bytes": 7414646,
+      "sha256": "e488afee23c619e78e865879009fa98ff7505482cd3151c2ae2e7b274340e861"
+    },
+    {
+      "source": "outputs/lab03/reliability/failure_analysis.json",
+      "attachment": "evidence/raw/reliability/failure_analysis.json",
+      "bytes": 5488,
+      "sha256": "ae2b933b760f16a861b42c35e792be27ca9f7bc9b81c7e00cab4800632c0e756"
+    },
+    {
+      "source": "outputs/runtime/code-audit-20261113-132011/代码核查与修正验收.json",
+      "attachment": "evidence/code_audit_20261113.json",
+      "sha256": "c6aa7fc52a63fd72537120a1b7ce2f019e8857a8b830ee9da7e809f815e5d14b"
+    },
+    {
+      "source": "data/lab03/benchmark.json",
+      "attachment": null,
+      "sha256": "e6e4e9f48808c17efa98f4af1ddd08955172e2afe1174e6e6c99f2e7a0982c40",
+      "bytes": 1913794
+    },
+    {
+      "source": "data/lab03/ga_warm_start.json",
+      "attachment": null,
+      "sha256": "d0950b1b18cdb1ab8fd271c85289c85b1b6b481326f6ebd19c9819ffa1358d1e",
+      "bytes": 3790
+    },
+    {
+      "source": "data/lab03/llm_model_manifest.json",
+      "attachment": null,
+      "sha256": "494ed01240f8887c941700ef7bcbbe7f09f09db0169815791c223e7beaef2c34",
+      "bytes": 2211
+    },
+    {
+      "source": "outputs/lab03/llm_readout_training.json",
+      "attachment": null,
+      "sha256": "33c6a32e9dd33a7060d4c8849dc96ed450c8a80c7dc102c3b3d3a7b63a7b2b72",
+      "bytes": 8270887
+    },
+    {
+      "source": "outputs/lab03/llm_evidence_readout.json",
+      "attachment": null,
+      "sha256": "639912b23af0258089f5957d85dec27e7013a734261c25b00095d415e6a5f538",
+      "bytes": 72390
+    }
+  ],
+  "core_hashes_at_report_time": {
+    "experiments/lab03/__init__.py": "8d655844eb40b60fb63c7143955f892b9db948ce8db7b838701765399eccca90",
+    "experiments/lab03/artifacts.py": "a333da9e4ab421b4bd12c51fa9f2fa14337fcd6b117ee73bff9d7483ea46a4d0",
+    "experiments/lab03/calibration.py": "f7b0e966ef5c48ce1a42a4425f81db81eda4a48f05cd43669a55aaf777276a3e",
+    "experiments/lab03/dataset.py": "a0a1d3391919b38aa8662e191485a67b3a826b1ec480efb7d601540726ae845b",
+    "experiments/lab03/diagnostics.py": "ad4e1352aea8ac8c428ee93b0acc5c308eb108c1cceb48534bb4e5fcf00c66c7",
+    "experiments/lab03/domain.py": "69f738fffcff6a0296738ec585e85eb0e8ce520e74e056cb1bf220d52c315cc0",
+    "experiments/lab03/evaluate.py": "4e19437b21ea19fd13be86a99fc0413b15863f0a73092e08b9005383465c58f8",
+    "experiments/lab03/genetic.py": "4be097babe2ad96defe08aeb2789e69c28fdfcb13072f4778e4ada8ad39cd4b8",
+    "experiments/lab03/history.py": "5cb41ca0a709e104a6caf26e6c173e7550952ea263c6970753411dc5fbe10819",
+    "experiments/lab03/history_three.py": "1fab92236ae4edc3a030f21404b3cee3cad58e3e03f3d913229cbf0d184d99ee",
+    "experiments/lab03/learned_integrity.py": "bdebec626fae90c121266ef85cc3195b8a70f4c232a218e3a9750221d65bf760",
+    "experiments/lab03/learning.py": "18162416415b7267fc393af5c18302e81965ea4e7aea319c287f38a0e2380c99",
+    "experiments/lab03/llm.py": "90934dbdc62ea806218623c497fa180cb3a9a43ae8620267fdccc379bd2f2dcf",
+    "experiments/lab03/main.py": "927c33be9f2d708e19437b0f03639e85ed964c5ba5b33a886372cac4ab7703f2",
+    "experiments/lab03/optimization.py": "5dd77c1c4c86864765aa2ba1fb0eff212202012967806bd405a75a4bd48cdf83",
+    "experiments/lab03/posthoc.py": "3f1f4be579c196e510b059e326946606a1c37861bfead2ef3ce24eafccf059eb",
+    "experiments/lab03/refinement.py": "d632741402a76003ba323d3efaa4bc1a6e2cec479604ae438d87dc6819e100fe",
+    "experiments/lab03/reliability.py": "44956d23d12992c11663afb37601b3d9597e6b54494a3261c0859238f7ad641a",
+    "experiments/lab03/report.py": "f987e2fba475b2c736dde733c2e05a67168e3d37d59443eb6edf118a4991b313",
+    "experiments/lab03/runtime_integrity.py": "a5dabf2957af2d167b5706c33261e6319ee3aa49ea26726b0d71b83dafa709ee",
+    "experiments/lab03/search.py": "f4f9010defbac12c7444a833f373e8bf96661e11e7b6b4fda30e2ff80c427ec6",
+    "experiments/lab03/service.py": "c66272b12521c873bbf718647105a6cabdb098004bf70aec9587967b6827763a",
+    "experiments/lab03/structure.py": "24d7328ca9a8dde09ba24c35ea3af814772638986876985e20216d3a90f67e87",
+    "experiments/lab03/verification.py": "9aeebcd8dcb668ca7462207b1fca8fb6e8123eef2eb793ff00be45c619b17eee",
+    "experiments/lab03/verification_reliability.py": "02727796fe105c91768a7b02d5df71b22a9f268e805c24c2b63852f373ce24c8"
+  }
+}
