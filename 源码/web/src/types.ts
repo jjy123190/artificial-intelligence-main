@@ -176,7 +176,7 @@ export type ExperimentsData = {
   note: string;
 };
 
-export type LabId = "lab01" | "lab02" | "lab03";
+export type LabId = "lab01" | "lab02" | "lab03" | "lab04";
 export type CourseModule = {
   id: string;
   title: string;

@@ -1,0 +1,34 @@
+{
+  "dataset": "mini-ImageNet",
+  "split": "Ravi & Larochelle 64/16/20",
+  "image_size": [
+    84,
+    84
+  ],
+  "training_classes": 64,
+  "validation_classes": 16,
+  "test_classes": 20,
+  "train_per_class": 600,
+  "evaluation_pool_per_class": 100,
+  "training_images": 38400,
+  "validation_images": 1600,
+  "ways": 5,
+  "shots": [
+    1,
+    5
+  ],
+  "queries_per_class": 15,
+  "test_episodes_per_shot": 100,
+  "seed": 20261122,
+  "train_selection_sha256": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "validation_selection_sha256": "03d138276cef2434e1688a0f8a8ada8f8ba42bc17f8375487b95267509e9aece",
+  "full_training_split": true,
+  "full_evaluation_split": false,
+  "scope": "CPU narrow-backbone experiment; scores are not published standard-width benchmarks",
+  "no_test_tuning": true,
+  "test_selection_sha256": "d83590381f5d3897ed665a3cf0812968dec0f3b335e9176b056b6c180bba7564",
+  "test_images": 2000,
+  "maml_train_queries_per_class": 5,
+  "maml_train_inner_steps": 1,
+  "maml_test_inner_steps": 3
+}

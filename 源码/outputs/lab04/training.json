@@ -1,0 +1,215 @@
+{
+  "warm_ce": {
+    "epochs": [
+      {
+        "epoch": 1,
+        "ce_loss": 3.846570013165474,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.07088541666666667,
+        "validation_5shot_accuracy": 0.3671111111111111,
+        "seconds": 77.86247520000325
+      },
+      {
+        "epoch": 2,
+        "ce_loss": 3.3341931605339052,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.16239583333333332,
+        "validation_5shot_accuracy": 0.4248888888888889,
+        "seconds": 76.31293420000293
+      },
+      {
+        "epoch": 3,
+        "ce_loss": 3.0699452608823776,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.21591145833333333,
+        "validation_5shot_accuracy": 0.46977777777777774,
+        "seconds": 79.37198309999803
+      },
+      {
+        "epoch": 4,
+        "ce_loss": 2.8944693940877912,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.251484375,
+        "validation_5shot_accuracy": 0.4995555555555555,
+        "seconds": 81.27334790000168
+      },
+      {
+        "epoch": 5,
+        "ce_loss": 2.7640555810928347,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.28161458333333333,
+        "validation_5shot_accuracy": 0.5093333333333333,
+        "seconds": 71.88584829999309
+      },
+      {
+        "epoch": 6,
+        "ce_loss": 2.654842477440834,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.3078125,
+        "validation_5shot_accuracy": 0.5204444444444445,
+        "seconds": 80.19719250000344
+      },
+      {
+        "epoch": 7,
+        "ce_loss": 2.569749983549118,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.32958333333333334,
+        "validation_5shot_accuracy": 0.5355555555555556,
+        "seconds": 77.34532179999951
+      },
+      {
+        "epoch": 8,
+        "ce_loss": 2.502497522830963,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.34453125,
+        "validation_5shot_accuracy": 0.5426666666666666,
+        "seconds": 80.8483613999997
+      },
+      {
+        "epoch": 9,
+        "ce_loss": 2.4559959673881533,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.3536197916666667,
+        "validation_5shot_accuracy": 0.5422222222222223,
+        "seconds": 77.90549759999703
+      },
+      {
+        "epoch": 10,
+        "ce_loss": 2.4309661117196084,
+        "alignment_loss": 0.0,
+        "training_accuracy": 0.35966145833333335,
+        "validation_5shot_accuracy": 0.5471111111111111,
+        "seconds": 70.81514099999913
+      }
+    ],
+    "seconds": 773.8448616999958,
+    "alignment_weight": 0.0,
+    "paired_views": false,
+    "selection": "fixed_final_epoch"
+  },
+  "baseline_control": {
+    "epochs": [
+      {
+        "epoch": 1,
+        "ce_loss": 2.4536598080396654,
+        "alignment_loss": 0.0071870135003700856,
+        "training_accuracy": 0.355703125,
+        "validation_5shot_accuracy": 0.5408888888888889,
+        "seconds": 156.99576490000618
+      },
+      {
+        "epoch": 2,
+        "ce_loss": 2.417709968984127,
+        "alignment_loss": 0.007543730736651924,
+        "training_accuracy": 0.3606770833333333,
+        "validation_5shot_accuracy": 0.5435555555555556,
+        "seconds": 163.80212750000646
+      }
+    ],
+    "seconds": 320.8023684,
+    "alignment_weight": 0.0,
+    "paired_views": true,
+    "selection": "fixed_final_epoch"
+  },
+  "aligned": {
+    "epochs": [
+      {
+        "epoch": 1,
+        "ce_loss": 2.4537354707717896,
+        "alignment_loss": 0.007106707584753167,
+        "training_accuracy": 0.3558854166666667,
+        "validation_5shot_accuracy": 0.5399999999999999,
+        "seconds": 162.5570990999986
+      },
+      {
+        "epoch": 2,
+        "ce_loss": 2.417818174660206,
+        "alignment_loss": 0.007387684625573456,
+        "training_accuracy": 0.36059895833333333,
+        "validation_5shot_accuracy": 0.544,
+        "seconds": 167.84546480000427
+      }
+    ],
+    "seconds": 330.4064627999978,
+    "alignment_weight": 0.5,
+    "paired_views": true,
+    "selection": "fixed_final_epoch"
+  },
+  "maml": {
+    "tasks": 500,
+    "meta_batch_size": 2,
+    "inner_steps": 1,
+    "inner_lr": 0.1,
+    "outer_lr": 0.001,
+    "second_order": true,
+    "history": [
+      {
+        "tasks": 50,
+        "query_loss": 1.6415449714660644,
+        "query_accuracy": 0.29120000153779985,
+        "seconds": 7.8359449000054155
+      },
+      {
+        "tasks": 100,
+        "query_loss": 1.512344012260437,
+        "query_accuracy": 0.34879999846220017,
+        "seconds": 16.86595180000586
+      },
+      {
+        "tasks": 150,
+        "query_loss": 1.4649940299987794,
+        "query_accuracy": 0.3911999978125095,
+        "seconds": 25.154791200002364
+      },
+      {
+        "tasks": 200,
+        "query_loss": 1.4811850666999817,
+        "query_accuracy": 0.34879999846220017,
+        "seconds": 32.51117030000023
+      },
+      {
+        "tasks": 250,
+        "query_loss": 1.4477700233459472,
+        "query_accuracy": 0.38720000103116037,
+        "seconds": 39.61829470000521
+      },
+      {
+        "tasks": 300,
+        "query_loss": 1.418136339187622,
+        "query_accuracy": 0.4335999973118305,
+        "seconds": 46.610838100001274
+      },
+      {
+        "tasks": 350,
+        "query_loss": 1.4096286821365356,
+        "query_accuracy": 0.40799999922513963,
+        "seconds": 53.68056780000188
+      },
+      {
+        "tasks": 400,
+        "query_loss": 1.4146259570121764,
+        "query_accuracy": 0.38880000114440916,
+        "seconds": 60.782897400000365
+      },
+      {
+        "tasks": 450,
+        "query_loss": 1.3855014491081237,
+        "query_accuracy": 0.42559999898076056,
+        "seconds": 68.02918050000153
+      },
+      {
+        "tasks": 500,
+        "query_loss": 1.373289406299591,
+        "query_accuracy": 0.4311999988555908,
+        "seconds": 75.05704790000163
+      }
+    ],
+    "seconds": 75.05712150000181,
+    "training_shots": [
+      1,
+      5
+    ],
+    "queries_per_class": 5
+  },
+  "matched_control": "same warm checkpoint, examples, order, augmentations, CE steps and epochs; only alignment coefficient differs"
+}

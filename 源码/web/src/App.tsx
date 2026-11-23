@@ -26,6 +26,7 @@ import {
   ArrowLeft,
   ArrowRight,
   SquaresFour,
+  ImageSquare,
 } from "@phosphor-icons/react";
 import type {
   Analysis,
@@ -69,7 +70,13 @@ const Governance = lazy(() => import("./components/Governance"));
 const CoursePortal = lazy(() => import("./components/CoursePortal"));
 const LabOne = lazy(() => import("./components/LabOne"));
 const LabThree = lazy(() => import("./components/LabThree"));
+const LabFour = lazy(() => import("./components/LabFour"));
 const LabTwo = lazy(() => import("./components/LabTwo"));
+// Experiment four keeps a sampled episode while its explanation/results tabs change.
+const taskInstanceKey = (address: Address) =>
+  address.labId === "lab04"
+    ? "lab04:workspace"
+    : address.labId + ":" + address.moduleId;
 const initialParameters: Parameters = {
   method: "hybrid_locked",
   threshold: 0.5,
@@ -136,11 +143,11 @@ export default function App() {
   }, [route]);
   const [visitedTasks, setVisitedTasks] = useState<string[]>(() => {
     const a = parseRoute(location.hash);
-    return a.page === "task" ? [a.labId + ":" + a.moduleId] : [];
+    return a.page === "task" ? [taskInstanceKey(a)] : [];
   });
   useEffect(() => {
     if (address.page !== "task") return;
-    const id = address.labId + ":" + address.moduleId;
+    const id = taskInstanceKey(address);
     setVisitedTasks((old) => (old.includes(id) ? old : [...old, id]));
   }, [address.page, address.labId, address.moduleId]);
   const [catalog, setCatalog] = useState<CourseCatalog | null>(null);
@@ -838,7 +845,9 @@ export default function App() {
               ? "一"
               : address.labId === "lab03"
                 ? "三"
-                : "二")
+                : address.labId === "lab04"
+                  ? "四"
+                  : "二")
           : names[route]) +
       (address.labId === "lab02" ? " · 实验二" : "") +
       " · 股权推理";
@@ -917,6 +926,14 @@ export default function App() {
           >
             <TreeStructure size={18} />
             <span>实验三</span>
+          </a>
+          <a
+            href={labHref("lab04")}
+            className={address.labId === "lab04" ? "active" : ""}
+            aria-current={address.labId === "lab04" ? "location" : undefined}
+          >
+            <ImageSquare size={18} />
+            <span>实验四</span>
           </a>
           <ActionMenu
             label="公共工具"
@@ -1007,7 +1024,7 @@ export default function App() {
           const active =
             address.page === "task" &&
             address.labId === labId &&
-            address.moduleId === moduleId;
+            (labId === "lab04" || address.moduleId === moduleId);
           return (
             <div key={id} hidden={!active}>
               <Suspense
@@ -1030,6 +1047,14 @@ export default function App() {
                   <LabOne lab={lab} moduleId={moduleId} active={active} />
                 ) : labId === "lab03" ? (
                   <LabThree lab={lab} moduleId={moduleId} active={active} />
+                ) : labId === "lab04" ? (
+                  <LabFour
+                    lab={lab}
+                    moduleId={
+                      active ? address.moduleId || "inference" : "inference"
+                    }
+                    active={active}
+                  />
                 ) : (
                   <LabTwo
                     lab={lab}
@@ -1075,7 +1100,7 @@ export default function App() {
               error={catalogError}
               onRetry={() => void loadCatalog()}
             />
-          ) : !visitedTasks.includes(address.labId + ":" + address.moduleId) ? (
+          ) : !visitedTasks.includes(taskInstanceKey(address)) ? (
             <main
               id="main-content"
               tabIndex={-1}
@@ -1339,7 +1364,8 @@ export default function App() {
                 <strong>
                   任务查询：
                   <code>
-                    Controls({displayText(detailQuery.source)}, {detailQuery.target})
+                    Controls({displayText(detailQuery.source)},{" "}
+                    {detailQuery.target})
                   </code>
                 </strong>
                 <p>

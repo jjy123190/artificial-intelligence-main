@@ -198,3 +198,17 @@ class LabThreeTask(StrictModel):
     method: Literal["bfs","astar_admissible","astar_fixed","astar_ga","astar_ml","mcts","hybrid","hybrid_no_expert","hybrid_llm"] = "hybrid"
     budget: Annotated[int, Field(strict=True, ge=1, le=128)] = 16
     llm_mode: Literal["replay","remote"] = "replay"
+
+
+class LabFourTask(StrictModel):
+    """Only bounded episode choices cross the web boundary, never labels or paths."""
+    method: Literal["baseline", "maml", "calibrated"] = "calibrated"
+    shots: Annotated[int, Field(strict=True, ge=1, le=5)] = 1
+    seed: Annotated[int, Field(strict=True, ge=0, le=2_147_483_647)] = 20261122
+    calibration: Literal["none", "mean", "variance", "prototype", "full"] = "full"
+
+    @model_validator(mode="after")
+    def supported_shots(self):
+        if self.shots not in (1, 5):
+            raise ValueError("本实验支持每类1张或5张支持样本")
+        return self

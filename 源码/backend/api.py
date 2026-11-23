@@ -19,7 +19,7 @@ from core.kb.graph_io import case_from_dict
 from core.kb.rules import build_rules
 from core.kb.rules_dsl import guard_vars
 from core.kb.guard_display import describe_guard
-from .schemas import CaseInput, AnalyzeRequest, QueryRequest, LabOneTask, LabTwoTask, LabThreeTask, MAX_BODY_BYTES, MAX_ENTITIES, MAX_RELATIONS
+from .schemas import CaseInput, AnalyzeRequest, QueryRequest, LabOneTask, LabTwoTask, LabThreeTask, LabFourTask, MAX_BODY_BYTES, MAX_ENTITIES, MAX_RELATIONS
 from .service import InferenceService, WebError, run_bounded
 from .worker import preset_case, model_catalog
 from .schemas import GovernanceInput, SaveGovernanceRequest, LoadGovernanceRequest
@@ -100,9 +100,11 @@ async def _body(request: Request, schema):
         raise WebError("invalid_input", "输入校验未通过：" + "；".join(details), 422) from exc
 
 
-def create_app(service: InferenceService | None = None, governance_database: Path | None = None, governance_runner=None) -> FastAPI:
+def create_app(service: InferenceService | None = None, governance_database: Path | None = None, governance_runner=None, lab_four_service=None) -> FastAPI:
     app = FastAPI(title="股权推理工作台", docs_url=None, redoc_url=None, openapi_url=None)
     app.state.inference = service or InferenceService()
+    from .lab_four import LabFourService
+    app.state.lab_four = lab_four_service if lab_four_service is not None else LabFourService(ROOT / "outputs" / "lab04")
     app.add_middleware(TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost", "[::1]", "testserver"])
     app.add_middleware(GZipMiddleware, minimum_size=1200)
 
@@ -166,6 +168,15 @@ def create_app(service: InferenceService | None = None, governance_database: Pat
             return await run_in_threadpool(snapshot)
         except (ValueError, OSError) as exc:
             raise WebError("lab03_data_unavailable", "实验三数据无法读取。请重新生成数据后重试。", 503) from exc
+
+    @app.get("/api/labs/lab04/snapshot")
+    async def lab_four_snapshot():
+        return await run_in_threadpool(app.state.lab_four.snapshot)
+
+    @app.post("/api/labs/lab04/run")
+    async def lab_four_run(request: Request):
+        value = await _body(request, LabFourTask)
+        return await run_in_threadpool(app.state.lab_four.run, value.model_dump())
 
     @app.post("/api/labs/lab03/run")
     async def lab_three_run(request: Request):

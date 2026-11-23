@@ -19,6 +19,10 @@ LABS["lab03"]={"id":"lab03","number":"03","name":"多跳路径搜索与智能优
  {"id":"optimization","title":"遗传优化与路径学习","requirement":"要求2、4：GA优化启发式；路径价值分类器与专家约束。","description":"查看验证集适应度曲线、训练样本和学到的参数。","kind":"优化迭代"},
  {"id":"assistant","title":"LLM辅助与证据约束","requirement":"要求3：LLM只评估搜索节点，不能直接产生答案。","description":"重放真实模型评分，检查模型误判、证据拦截与生成解释。","kind":"混合创新"},
  {"id":"evaluation","title":"对比实验与失败分析","requirement":"要求5、6：量化比较、搜索树可视化与失败案例。","description":"读取三种子的真实测试结果，比较效率、开销和分布变化。","kind":"实验验证"}]}
+LABS["lab04"]={"id":"lab04","number":"04","name":"小样本学习与特征校准","summary":"在mini-ImageNet上比较ResNet12、MAML与特征校准，观察支持样本、特征分布和原型更新。","code":"experiments/lab04/","entry":"#/labs/lab04","modules":[
+ {"id":"inference","title":"现场小样本推理","requirement":"轻量ResNet12；5-way 1-shot与5-shot分类及端侧演示。","description":"运行真实模型，查看支持样本、查询预测及校准前后的特征。","kind":"模型演示"},
+ {"id":"protocol","title":"方法与实验协议","requirement":"分析特征漂移；交叉熵与分布对齐；比较Baseline、MAML和校准方案。","description":"解释均值方差收缩、原型自适应、类别隔离和未标注查询集的使用。","kind":"方法实现"},
+ {"id":"evaluation","title":"对比与消融实验","requirement":"mini-ImageNet验证、消融、局限与后续研究方向。","description":"读取同任务实测准确率、95%置信区间、消融和计算开销。","kind":"实验验证"}]}
 # 正式报告/源码使用第33组；实验三演示材料保留另一平台的第4组文件名。
 FILES={
  "lab01":{
@@ -38,6 +42,12 @@ FILES["lab03"]={
  "report":("实验三课程报告","deliverables/lab3/第33组_实验三_实验报告.docx","report"),
  "slides":("实验三汇报PPT","deliverables/lab3/第4组_企业股权知识图谱多跳智能设计.pptx","slides"),
  "presentation-video":("实验三PPT演讲视频","deliverables/lab3/第4组_实验三_PPT演讲.mp4","video")}
+
+FILES["lab04"]={
+ "report":("实验四课程报告","deliverables/lab4/第33组_实验四_实验报告.docx","report"),
+ "slides":("实验四汇报PPT","deliverables/lab4/小样本学习与特征校准.pptx","slides"),
+ "demo-video":("实验四模型演示","deliverables/lab4/实验四_Demo.mp4","video"),
+ "presentation-video":("实验四PPT讲解","deliverables/lab4/实验四_PPT汇报.mp4","video")}
 
 def _material_path(relative):
     base = ROOT.parent if ROOT.name == "源码" and (ROOT.parent / "deliverables").is_dir() else ROOT

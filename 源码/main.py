@@ -1,4 +1,4 @@
-"""人工智能课程项目入口，统一提供实验一、实验二、实验三与网站。
+"""人工智能课程项目入口，统一提供实验一至实验四与网站。
 
 输入、依赖和实验输出均相对于源码目录定位。
 网页：双击打开网站.cmd，或 python main.py web。
@@ -41,6 +41,9 @@ def main(argv=None):
     if command=="lab03":
         from experiments.lab03.main import main as lab03
         return lab03(args[1:])
+    if command=="lab04":
+        from experiments.lab04.main import main as lab04
+        return lab04(args[1:])
     from experiments.lab02.main import main as lab02
     return lab02(args[1:] if command=="lab02" else args)
 

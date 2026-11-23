@@ -26,8 +26,8 @@ class CourseTests(unittest.TestCase):
 
     def test_catalog_has_requirement_entries_and_code_positions(self):
         value=self.client.get('/api/course').json()
-        self.assertEqual([l['id'] for l in value['labs']],['lab01','lab02','lab03'])
-        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5,4])
+        self.assertEqual([l['id'] for l in value['labs']],['lab01','lab02','lab03','lab04'])
+        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5,4,3])
         for lab in value['labs']:
             self.assertTrue((ROOT/lab['code']).is_dir())
             self.assertTrue(all(m['requirement'] and m['description'] for m in lab['modules']))
@@ -38,6 +38,7 @@ class CourseTests(unittest.TestCase):
             'lab01':['representation','industry','demo','limitations'],
             'lab02':['modeling','deterministic','uncertain','optimization','hybrid'],
             'lab03':['search','optimization','assistant','evaluation'],
+            'lab04':['inference','protocol','evaluation'],
         }
         for lab in value['labs']:
             self.assertEqual([module['id'] for module in lab['modules']],expected[lab['id']])
@@ -232,7 +233,7 @@ class CourseTests(unittest.TestCase):
     def test_material_registry_matches_retained_submission_files(self):
         self.assertEqual(set(FILES['lab01']), {'report','slides','presentation-video','demo-video'})
         self.assertEqual(set(FILES['lab02']), {'report','slides','innovation','presentation-video','demo-video'})
-        submission_folders = {'lab01': 'lab1', 'lab02': 'lab2', 'lab03': 'lab3'}
+        submission_folders = {'lab01': 'lab1', 'lab02': 'lab2', 'lab03': 'lab3', 'lab04': 'lab4'}
         for lab, files in FILES.items():
             for _, relative, _ in files.values():
                 self.assertTrue(relative.startswith('deliverables/'+submission_folders[lab]+'/'))
@@ -259,7 +260,7 @@ class CourseTests(unittest.TestCase):
         with tempfile.TemporaryDirectory(prefix='equity_source_only_') as directory:
             source=Path(directory)/'源码';source.mkdir()
             with patch('backend.course.ROOT',source):
-                self.assertEqual(len(catalog()['labs']),3)
+                self.assertEqual(len(catalog()['labs']),4)
                 with self.assertRaises(FileNotFoundError):file_path('lab03','report')
 
     def test_sibling_material_resolution_rejects_path_escape(self):

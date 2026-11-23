@@ -1,0 +1,4 @@
+# Use the CPU PyTorch wheel index on machines without CUDA.
+numpy>=2.0,<3
+Pillow>=11,<14
+torch>=2.5,<3

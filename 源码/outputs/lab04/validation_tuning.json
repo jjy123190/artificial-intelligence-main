@@ -1,0 +1,450 @@
+{
+  "1": {
+    "seed": 20261223,
+    "episodes": 40,
+    "shots": 1,
+    "selected_index": 4,
+    "candidates": [
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.37333333333333335
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.36900000000000005
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.38533333333333336
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.3736666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.389
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.3716666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.377
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.371
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.38166666666666665
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.371
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.387
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.369
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.37333333333333335
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.37
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.37866666666666665
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.3673333333333334
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.3873333333333333
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.366
+      }
+    ]
+  },
+  "5": {
+    "seed": 20261227,
+    "episodes": 40,
+    "shots": 5,
+    "selected_index": 6,
+    "candidates": [
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5083333333333333
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5086666666666666
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5096666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5083333333333333
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5109999999999999
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5016666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5116666666666666
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5093333333333334
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5106666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5056666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5086666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.15,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.49766666666666665
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5106666666666666
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.1,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5083333333333334
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.5093333333333334
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.3,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.5056666666666667
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 0.5
+        },
+        "validation_accuracy": 0.509
+      },
+      {
+        "config": {
+          "mean_weight": 0.3,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.6,
+          "prototype_steps": 2,
+          "confidence_threshold": 0.25,
+          "temperature": 1.0
+        },
+        "validation_accuracy": 0.4956666666666667
+      }
+    ]
+  }
+}

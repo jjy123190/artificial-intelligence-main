@@ -6580,9 +6580,19 @@
   }
 }
 
-/* Four experiment links need a second row on small tablets as well as phones. */
+/* Keep all four experiment entries legible on tablets as well as phones. */
 @layer responsive {
-  @media (min-width: 761px) and (max-width: 920px) {
+  @media (max-width: 360px) {
+    .course-app-header .course-navigation > a {
+      font-size: 0.75rem;
+      padding-inline: 2px;
+    }
+    .course-app-header .course-navigation > .research-menu > summary {
+      font-size: 0.75rem;
+      padding-inline: 2px;
+    }
+  }
+  @media (min-width: 761px) and (max-width: 1100px) {
     .course-app-header {
       flex-wrap: wrap;
       height: auto;

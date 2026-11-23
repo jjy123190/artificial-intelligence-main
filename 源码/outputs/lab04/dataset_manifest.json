@@ -1,0 +1,193 @@
+{
+  "name": "mini-ImageNet",
+  "split_protocol": "Ravi & Larochelle (2017), 64/16/20 disjoint classes",
+  "source_page": "https://yaoyaoliu.web.illinois.edu/projects/mtl/download/Lmzjm9tX.html",
+  "purpose": "Non-commercial educational experiment",
+  "splits": {
+    "train": {
+      "archive": {
+        "url": "https://drive.usercontent.google.com/download?id=107FTosYIeBn5QbynR46YG91nHcJ70whs&export=download&confirm=t",
+        "md5": "62af9b3c839974dad2d474e6325795af",
+        "sha256": "376419f799ffe00216622461ac08355f6175d1873ca495eb1d876dc2b8aad429",
+        "bytes": 125900800
+      },
+      "official_split_csv": {
+        "url": "https://raw.githubusercontent.com/yaoyao-liu/mini-imagenet-tools/master/csv_files/train.csv",
+        "csv_rows": 38400,
+        "md5": "9525e1538f67719f18f1936bf8d0782d",
+        "sha256": "498519cd8e49ce97ed26a4a3638966698ae41ab35e9c68538319fc9b46ba7d2f",
+        "bytes": 1228815
+      },
+      "classes": 64,
+      "images": 38400,
+      "class_counts": {
+        "n01532829": 600,
+        "n01558993": 600,
+        "n01704323": 600,
+        "n01749939": 600,
+        "n01770081": 600,
+        "n01843383": 600,
+        "n01910747": 600,
+        "n02074367": 600,
+        "n02089867": 600,
+        "n02091831": 600,
+        "n02101006": 600,
+        "n02105505": 600,
+        "n02108089": 600,
+        "n02108551": 600,
+        "n02108915": 600,
+        "n02111277": 600,
+        "n02113712": 600,
+        "n02120079": 600,
+        "n02165456": 600,
+        "n02457408": 600,
+        "n02606052": 600,
+        "n02687172": 600,
+        "n02747177": 600,
+        "n02795169": 600,
+        "n02823428": 600,
+        "n02966193": 600,
+        "n03017168": 600,
+        "n03047690": 600,
+        "n03062245": 600,
+        "n03207743": 600,
+        "n03220513": 600,
+        "n03337140": 600,
+        "n03347037": 600,
+        "n03400231": 600,
+        "n03476684": 600,
+        "n03527444": 600,
+        "n03676483": 600,
+        "n03838899": 600,
+        "n03854065": 600,
+        "n03888605": 600,
+        "n03908618": 600,
+        "n03924679": 600,
+        "n03998194": 600,
+        "n04067472": 600,
+        "n04243546": 600,
+        "n04251144": 600,
+        "n04258138": 600,
+        "n04275548": 600,
+        "n04296562": 600,
+        "n04389033": 600,
+        "n04435653": 600,
+        "n04443257": 600,
+        "n04509417": 600,
+        "n04515003": 600,
+        "n04596742": 600,
+        "n04604644": 600,
+        "n04612504": 600,
+        "n06794110": 600,
+        "n07584110": 600,
+        "n07697537": 600,
+        "n07747607": 600,
+        "n09246464": 600,
+        "n13054560": 600,
+        "n13133613": 600
+      },
+      "sizes": {
+        "84x84": 38400
+      },
+      "modes": {
+        "RGB": 38400
+      },
+      "all_images_decoded": true
+    },
+    "val": {
+      "archive": {
+        "url": "https://drive.usercontent.google.com/download?id=1hSMUMj5IRpf-nQs1OwgiQLmGZCN0KDWl&export=download&confirm=t",
+        "md5": "ab02f050b0bf66823e7acb0c1ac1bc6b",
+        "sha256": "72ada64fab64c26a00250bfa622d608efd2f5cf7720b11bc936103498dbaf314",
+        "bytes": 30791680
+      },
+      "official_split_csv": {
+        "url": "https://raw.githubusercontent.com/yaoyao-liu/mini-imagenet-tools/master/csv_files/val.csv",
+        "csv_rows": 9600,
+        "md5": "ce315ce99b41fbf84fa6acd69315d918",
+        "sha256": "5658a59921ca027ee76af92949869c5d6f41d77592ff3b18db325a9d10c893b9",
+        "bytes": 307215
+      },
+      "classes": 16,
+      "images": 9600,
+      "class_counts": {
+        "n01855672": 600,
+        "n02091244": 600,
+        "n02114548": 600,
+        "n02138441": 600,
+        "n02174001": 600,
+        "n02950826": 600,
+        "n02971356": 600,
+        "n02981792": 600,
+        "n03075370": 600,
+        "n03417042": 600,
+        "n03535780": 600,
+        "n03584254": 600,
+        "n03770439": 600,
+        "n03773504": 600,
+        "n03980874": 600,
+        "n09256479": 600
+      },
+      "sizes": {
+        "84x84": 9600
+      },
+      "modes": {
+        "RGB": 9600
+      },
+      "all_images_decoded": true
+    },
+    "test": {
+      "archive": {
+        "url": "https://drive.usercontent.google.com/download?id=1yKyKgxcnGMIAnA_6Vr2ilbpHMc9COg-v&export=download&confirm=t",
+        "md5": "318185fc3e3bf8bc57de887d9682c666",
+        "sha256": "58cc4c9f68afe15be87de75928c2d0b7d93d00b337a4472d3d9aad2ea671fa4d",
+        "bytes": 39178240
+      },
+      "official_split_csv": {
+        "url": "https://raw.githubusercontent.com/yaoyao-liu/mini-imagenet-tools/master/csv_files/test.csv",
+        "csv_rows": 12000,
+        "md5": "5b89df877c6cbe5d291e43118a2a9591",
+        "sha256": "2b7cfa78342995761a572a8158e539bc4e0a80f9bbd7d00c1e17a460fbbb93fa",
+        "bytes": 384015
+      },
+      "classes": 20,
+      "images": 12000,
+      "class_counts": {
+        "n01930112": 600,
+        "n01981276": 600,
+        "n02099601": 600,
+        "n02110063": 600,
+        "n02110341": 600,
+        "n02116738": 600,
+        "n02129165": 600,
+        "n02219486": 600,
+        "n02443484": 600,
+        "n02871525": 600,
+        "n03127925": 600,
+        "n03146219": 600,
+        "n03272010": 600,
+        "n03544143": 600,
+        "n03775546": 600,
+        "n04146614": 600,
+        "n04149813": 600,
+        "n04418357": 600,
+        "n04522168": 600,
+        "n07613480": 600
+      },
+      "sizes": {
+        "84x84": 12000
+      },
+      "modes": {
+        "RGB": 12000
+      },
+      "all_images_decoded": true
+    }
+  },
+  "class_splits_disjoint": true,
+  "class_names_source": {
+    "url": "https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json",
+    "md5": "c2c37ea517e94d9795004a39431a14cb",
+    "sha256": "a1e7a966a1f601d39e4b43e119b3e7dd4a2ad3ea08cf69847cbaf021013767bc",
+    "bytes": 35363
+  }
+}

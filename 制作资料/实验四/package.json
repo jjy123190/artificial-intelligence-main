@@ -1,0 +1,11 @@
+{
+  "name": "lab04-presentation-source",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "slides": "node build_slides.mjs"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  }
+}
