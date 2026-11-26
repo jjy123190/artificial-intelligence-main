@@ -205,7 +205,7 @@ class LabFourTask(StrictModel):
     method: Literal["baseline", "maml", "calibrated"] = "calibrated"
     shots: Annotated[int, Field(strict=True, ge=1, le=5)] = 1
     seed: Annotated[int, Field(strict=True, ge=0, le=2_147_483_647)] = 20261122
-    calibration: Literal["none", "mean", "variance", "prototype", "full"] = "full"
+    calibration: Literal["none", "mean", "variance", "prototype", "full", "graph", "multiview", "wide", "wideview", "continued"] = "full"
 
     @model_validator(mode="after")
     def supported_shots(self):

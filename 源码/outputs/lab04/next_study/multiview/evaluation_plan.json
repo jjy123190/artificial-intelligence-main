@@ -1,0 +1,14 @@
+{
+  "selection_lock_sha256": "e9f1add62940bcbeeac4b504cf2391b94783e3a73cdefd36fe0c50b6141f8c6c",
+  "checkpoint_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "seed": 20261124,
+  "episodes_per_shot": 600,
+  "test_images_per_class": 600,
+  "source_sha256": {
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e",
+    "evaluate_multiview.py": "982e8fb6c7e9b0af04749018ff58989926baadc50bb57299c15f83294eb1e81a",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  }
+}

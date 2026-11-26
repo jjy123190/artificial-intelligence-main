@@ -1,0 +1,62 @@
+{
+  "kind": "no_external_learned_calibration",
+  "test_accessed": false,
+  "external_weights": false,
+  "seed": 20261203,
+  "configs": [
+    {
+      "architecture": "linear",
+      "dimension": 128,
+      "hidden": 128,
+      "residual_scale": 0.5,
+      "ce_weight": 0.25,
+      "episode_weight": 1.0,
+      "alignment_weight": 0.5,
+      "anchor_weight": 0.1,
+      "learning_rate": 0.001,
+      "epochs": 12
+    },
+    {
+      "architecture": "residual",
+      "dimension": 128,
+      "hidden": 128,
+      "residual_scale": 0.5,
+      "ce_weight": 0.25,
+      "episode_weight": 1.0,
+      "alignment_weight": 0.5,
+      "anchor_weight": 0.1,
+      "learning_rate": 0.001,
+      "epochs": 12
+    }
+  ],
+  "source_hashes": {
+    "study_learned_calibration.py": "0032b9bc6814d4092f59a58cb921110ef36829b6bb9bc0f4ba577050cb921a8b",
+    "learned_calibration.py": "7467a78c87381f499e5126b72251f9a821f2ae9f7e08f96f6c0c3b52267dc370",
+    "metric_training.py": "408f9e731bbe71a2990d6d5c9edb2229cae264d99d5a5e9d0527ffcdac6697ac",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "inputs": {
+    ".local\\lab04-continuation-validation-20261125\\train_views.npz": "2f7bc59a4413f0191e9212fd60e40c52e7e573712ffae51e2f7c3448272c07b8",
+    ".local\\lab04-continuation-validation-20261125\\train_views.json": "d00fd25b5fb607f1abc40bdff08be16d972cc65793257d2fcd97cfcf32da9ab2",
+    ".local\\lab04-continuation-validation-20261125\\val_views.npz": "e6a1de2dcf1274bdf5b64af56f505f039bbc06422082ee553d78c975ec9fa228",
+    ".local\\lab04-continuation-validation-20261125\\val_views.json": "271890f3a90dc3d1840dc06b736d3cfeabcd037b5199ee994abf0530a71326fc",
+    "outputs\\lab04\\continued.pt": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "outputs\\lab04\\continued_configuration.json": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900",
+    "outputs\\lab04\\continued_transform.npz": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+  },
+  "tasks_content_sha256": "d9f5b8887b38bd15edf508f1327bdfb62673cdb3eb66d9f1384429b3730e9680",
+  "epochs_selection": "Epoch0 and all12 fixed epochs, mean both shots on160 search tasks/shot. After training both, each chosen checkpoint gets600 confirmation tasks/shot.",
+  "selection": "Pick architecture by largest min paired lower bound across shots; eligible only if both means>=.01 and lower95>0. No test/publish.",
+  "loss": "base64 CE + 5way alternating1/5shot meta metric + view mean/variance alignment + representation anchor",
+  "training_features": "frozen locally trained continued original+flip, complete38400 base images; no pixel augmentation beyond cached two views",
+  "limitations": [
+    "Added trainable module/budget is not same frozen-weight ablation.",
+    "Validation reused; confirmation images separate from search but same16 classes.",
+    "Not MAML, not exact Meta-Baseline, and no external weights.",
+    "Prediction uses original frozen train transform then new adapter; do not refit on query labels."
+  ],
+  "registered_utc": "2026-11-25T08:32:54.509695+00:00"
+}

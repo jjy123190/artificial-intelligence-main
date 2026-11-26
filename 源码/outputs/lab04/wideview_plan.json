@@ -1,0 +1,120 @@
+{
+  "seed": 20261127,
+  "search_episodes": 160,
+  "confirmation_episodes": 400,
+  "shortlist": 4,
+  "candidates": [
+    {
+      "views": "mean",
+      "exponent": 0.25,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "mean",
+      "exponent": 0.25,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "mean",
+      "exponent": 0.25,
+      "residual_mix": 1.0
+    },
+    {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 1.0
+    },
+    {
+      "views": "mean",
+      "exponent": 0.75,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "mean",
+      "exponent": 0.75,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "mean",
+      "exponent": 0.75,
+      "residual_mix": 1.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.25,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.25,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "concat",
+      "exponent": 0.25,
+      "residual_mix": 1.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.5,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.5,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "concat",
+      "exponent": 0.5,
+      "residual_mix": 1.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.75,
+      "residual_mix": 0.0
+    },
+    {
+      "views": "concat",
+      "exponent": 0.75,
+      "residual_mix": 0.5
+    },
+    {
+      "views": "concat",
+      "exponent": 0.75,
+      "residual_mix": 1.0
+    }
+  ],
+  "test_accessed": false,
+  "inputs": {
+    ".local\\lab04-v3-wide\\best.pt": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+    "outputs\\lab04\\wide_configuration.json": "b8e460c0052ada42390934e4a2dfef81bb55e37d6931de6c6a62242f3a8e2ed9",
+    "outputs\\lab04\\wide_transform.npz": "891c547e266d89d0982355b2bd07294d8c99233dd28ff63a2f24d05b8d42a4a0",
+    ".local\\lab04-v3-wide\\train_features.npz": "a2f444ef9fbb1fe08398657940e95474ff3dfbb67883e0bd55aaafddc6d3cf5c",
+    ".local\\lab04-v3-wide\\train_cache.json": "6300b4a8489504da723f05e8c1b2294c3118b37edce6dc1de9d2aaa171ed91d3",
+    ".local\\lab04-v3-wide\\val_features.npz": "41debc1e8ed3e5196a5e56650da075a8f1bf74cc9fa0d11f1d1e7afd2a265c04",
+    ".local\\lab04-v3-wide\\val_cache.json": "b2ad1631bd794daf4f3b4e867acfd3fb7cfafaec53c2885be24328193259170e"
+  },
+  "source_hashes": {
+    "study_wide_views.py": "23f6835e9a06005b46409082a62f0fa5cc0d309f978de48e9f9397de263236de",
+    "study_cached_refinement.py": "a9eea34aa0a8a070e7c8f5126f387ba483843673abdb5473910348c6568481fd",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "refine.py": "2f118e5f78914b7959750bdb071fe30832f82b174034f9e54b88d205d87d3c30",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "selection_rule": "Search top four, choose confirmation paired lower bound vs frozen wide reference. Retain original wide unless lower bound > 0. No automatic publication.",
+  "limitations": "Repeated same validation classes. Confirmation selects the method, so is not independent final evaluation. Two views add encoding cost."
+}

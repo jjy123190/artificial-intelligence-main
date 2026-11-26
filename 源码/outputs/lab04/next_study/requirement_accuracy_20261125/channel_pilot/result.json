@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "kind": "mechanism_pilot_not_full_benchmark",
+  "plan_sha256": "3e399c6d5b746917aeca93899cdcb19f73594e0637044fab979fdcfbacdf4d05",
+  "test_accessed": false,
+  "external_weights": false,
+  "initial": {
+    "1": {
+      "accuracy": 0.4652666666666667,
+      "ci95": 0.014220481053523991,
+      "episodes": 200,
+      "ci95_low": 0.45104618561314275,
+      "ci95_high": 0.4794871477201907
+    },
+    "5": {
+      "accuracy": 0.6280666666666667,
+      "ci95": 0.012251175068152868,
+      "episodes": 200,
+      "ci95_low": 0.6158154915985138,
+      "ci95_high": 0.6403178417348195
+    }
+  },
+  "branches": {
+    "control": {
+      "selected_epoch": 0,
+      "best_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+      "validation": {
+        "1": {
+          "accuracy": 0.4652666666666667,
+          "ci95": 0.014220481053523991,
+          "episodes": 200,
+          "ci95_low": 0.45104618561314275,
+          "ci95_high": 0.4794871477201907
+        },
+        "5": {
+          "accuracy": 0.6280666666666667,
+          "ci95": 0.012251175068152868,
+          "episodes": 200,
+          "ci95_low": 0.6158154915985138,
+          "ci95_high": 0.6403178417348195
+        }
+      },
+      "paired_vs_initial": {
+        "1": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "wins": 0,
+          "ties": 200,
+          "losses": 0
+        },
+        "5": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "wins": 0,
+          "ties": 200,
+          "losses": 0
+        }
+      }
+    },
+    "diversity": {
+      "selected_epoch": 0,
+      "best_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+      "validation": {
+        "1": {
+          "accuracy": 0.4652666666666667,
+          "ci95": 0.014220481053523991,
+          "episodes": 200,
+          "ci95_low": 0.45104618561314275,
+          "ci95_high": 0.4794871477201907
+        },
+        "5": {
+          "accuracy": 0.6280666666666667,
+          "ci95": 0.012251175068152868,
+          "episodes": 200,
+          "ci95_low": 0.6158154915985138,
+          "ci95_high": 0.6403178417348195
+        }
+      },
+      "paired_vs_initial": {
+        "1": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "wins": 0,
+          "ties": 200,
+          "losses": 0
+        },
+        "5": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "wins": 0,
+          "ties": 200,
+          "losses": 0
+        }
+      }
+    }
+  },
+  "not_publishable": true,
+  "paired_diversity_vs_control": {
+    "1": {
+      "mean": 0.0,
+      "ci95": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "wins": 0,
+      "ties": 200,
+      "losses": 0
+    },
+    "5": {
+      "mean": 0.0,
+      "ci95": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "wins": 0,
+      "ties": 200,
+      "losses": 0
+    }
+  }
+}

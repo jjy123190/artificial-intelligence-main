@@ -1,0 +1,330 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "external_weights": false,
+  "plan_sha256": "326e579e58a104131c909b77e0a05dbff3402264983ab03d22718145d67bb2c7",
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "normalization": "channel_scale",
+          "ridge": 10.0,
+          "search": {
+            "accuracy": 0.45233333333333337,
+            "ci95": 0.01571138543048807,
+            "episodes": 160,
+            "ci95_low": 0.4366219479028453,
+            "ci95_high": 0.4680447187638214
+          },
+          "search_paired": {
+            "mean": -0.08666666666666667,
+            "ci95": 0.01830682940312844,
+            "low": -0.10497349606979511,
+            "high": -0.06835983726353823,
+            "wins": 37,
+            "ties": 5,
+            "losses": 118
+          },
+          "confirmation": {
+            "accuracy": 0.45917777777777774,
+            "ci95": 0.007605470503124635,
+            "episodes": 600,
+            "ci95_low": 0.4515723072746531,
+            "ci95_high": 0.4667832482809024
+          },
+          "confirmation_paired": {
+            "mean": -0.10215555555555556,
+            "ci95": 0.008933927064639972,
+            "low": -0.11108948262019552,
+            "high": -0.09322162849091559,
+            "wins": 104,
+            "ties": 17,
+            "losses": 479
+          }
+        },
+        {
+          "normalization": "channel_scale",
+          "ridge": 0.1,
+          "search": {
+            "accuracy": 0.44375,
+            "ci95": 0.014448540497287157,
+            "episodes": 160,
+            "ci95_low": 0.4293014595027128,
+            "ci95_high": 0.45819854049728714
+          },
+          "search_paired": {
+            "mean": -0.09525,
+            "ci95": 0.01792726563978336,
+            "low": -0.11317726563978336,
+            "high": -0.07732273436021664,
+            "wins": 30,
+            "ties": 9,
+            "losses": 121
+          },
+          "confirmation": {
+            "accuracy": 0.4475333333333334,
+            "ci95": 0.00752278760616464,
+            "episodes": 600,
+            "ci95_low": 0.44001054572716874,
+            "ci95_high": 0.45505612093949804
+          },
+          "confirmation_paired": {
+            "mean": -0.1138,
+            "ci95": 0.009175371097318702,
+            "low": -0.1229753710973187,
+            "high": -0.1046246289026813,
+            "wins": 95,
+            "ties": 11,
+            "losses": 494
+          }
+        },
+        {
+          "normalization": "channel_scale",
+          "ridge": 1.0,
+          "search": {
+            "accuracy": 0.44275000000000003,
+            "ci95": 0.014426087555755276,
+            "episodes": 160,
+            "ci95_low": 0.4283239124442448,
+            "ci95_high": 0.4571760875557553
+          },
+          "search_paired": {
+            "mean": -0.09624999999999999,
+            "ci95": 0.01775698060587993,
+            "low": -0.11400698060587992,
+            "high": -0.07849301939412005,
+            "wins": 30,
+            "ties": 6,
+            "losses": 124
+          }
+        },
+        {
+          "normalization": "local_l2",
+          "ridge": 1.0,
+          "search": {
+            "accuracy": 0.43891666666666673,
+            "ci95": 0.014397913873175206,
+            "episodes": 160,
+            "ci95_low": 0.42451875279349155,
+            "ci95_high": 0.4533145805398419
+          },
+          "search_paired": {
+            "mean": -0.10008333333333334,
+            "ci95": 0.018502282177401446,
+            "low": -0.1185856155107348,
+            "high": -0.0815810511559319,
+            "wins": 33,
+            "ties": 2,
+            "losses": 125
+          }
+        },
+        {
+          "normalization": "local_l2",
+          "ridge": 0.1,
+          "search": {
+            "accuracy": 0.43825000000000003,
+            "ci95": 0.01371446516590648,
+            "episodes": 160,
+            "ci95_low": 0.42453553483409356,
+            "ci95_high": 0.4519644651659065
+          },
+          "search_paired": {
+            "mean": -0.10075,
+            "ci95": 0.019029793696941334,
+            "low": -0.11977979369694133,
+            "high": -0.08172020630305868,
+            "wins": 35,
+            "ties": 7,
+            "losses": 118
+          }
+        }
+      ],
+      "selected": {
+        "normalization": "channel_scale",
+        "ridge": 10.0
+      },
+      "reference": {
+        "search": {
+          "accuracy": 0.539,
+          "ci95": 0.024341550802233654,
+          "episodes": 160,
+          "ci95_low": 0.5146584491977664,
+          "ci95_high": 0.5633415508022337
+        },
+        "confirmation": {
+          "accuracy": 0.5613333333333332,
+          "ci95": 0.012132181843966059,
+          "episodes": 600,
+          "ci95_low": 0.5492011514893672,
+          "ci95_high": 0.5734655151772993
+        }
+      },
+      "eligible": false
+    },
+    "5": {
+      "candidates": [
+        {
+          "normalization": "channel_scale",
+          "ridge": 10.0,
+          "search": {
+            "accuracy": 0.6129166666666667,
+            "ci95": 0.015466629018876321,
+            "episodes": 160,
+            "ci95_low": 0.5974500376477904,
+            "ci95_high": 0.628383295685543
+          },
+          "search_paired": {
+            "mean": -0.07566666666666667,
+            "ci95": 0.010657685474742929,
+            "low": -0.0863243521414096,
+            "high": -0.06500898119192375,
+            "wins": 23,
+            "ties": 7,
+            "losses": 130
+          },
+          "confirmation": {
+            "accuracy": 0.6093555555555555,
+            "ci95": 0.007137578952701333,
+            "episodes": 600,
+            "ci95_low": 0.6022179766028543,
+            "ci95_high": 0.6164931345082568
+          },
+          "confirmation_paired": {
+            "mean": -0.07871111111111109,
+            "ci95": 0.005287104741678138,
+            "low": -0.08399821585278923,
+            "high": -0.07342400636943296,
+            "wins": 54,
+            "ties": 26,
+            "losses": 520
+          }
+        },
+        {
+          "normalization": "local_l2",
+          "ridge": 1.0,
+          "search": {
+            "accuracy": 0.5745833333333333,
+            "ci95": 0.016064941091865702,
+            "episodes": 160,
+            "ci95_low": 0.5585183922414676,
+            "ci95_high": 0.5906482744251991
+          },
+          "search_paired": {
+            "mean": -0.11399999999999999,
+            "ci95": 0.011222684225705949,
+            "low": -0.12522268422570593,
+            "high": -0.10277731577429404,
+            "wins": 9,
+            "ties": 1,
+            "losses": 150
+          },
+          "confirmation": {
+            "accuracy": 0.5751777777777778,
+            "ci95": 0.0073448813353165264,
+            "episodes": 600,
+            "ci95_low": 0.5678328964424613,
+            "ci95_high": 0.5825226591130943
+          },
+          "confirmation_paired": {
+            "mean": -0.11288888888888889,
+            "ci95": 0.0059287117127248155,
+            "low": -0.1188176006016137,
+            "high": -0.10696017717616407,
+            "wins": 31,
+            "ties": 10,
+            "losses": 559
+          }
+        },
+        {
+          "normalization": "channel_scale",
+          "ridge": 1.0,
+          "search": {
+            "accuracy": 0.5665,
+            "ci95": 0.015718965821991216,
+            "episodes": 160,
+            "ci95_low": 0.5507810341780088,
+            "ci95_high": 0.5822189658219912
+          },
+          "search_paired": {
+            "mean": -0.12208333333333332,
+            "ci95": 0.012039173931162963,
+            "low": -0.1341225072644963,
+            "high": -0.11004415940217036,
+            "wins": 10,
+            "ties": 5,
+            "losses": 145
+          }
+        },
+        {
+          "normalization": "local_l2",
+          "ridge": 0.1,
+          "search": {
+            "accuracy": 0.48616666666666664,
+            "ci95": 0.01490889726338145,
+            "episodes": 160,
+            "ci95_low": 0.4712577694032852,
+            "ci95_high": 0.501075563930048
+          },
+          "search_paired": {
+            "mean": -0.2024166666666667,
+            "ci95": 0.014044725500896327,
+            "low": -0.21646139216756302,
+            "high": -0.18837194116577036,
+            "wins": 1,
+            "ties": 0,
+            "losses": 159
+          }
+        },
+        {
+          "normalization": "channel_scale",
+          "ridge": 0.1,
+          "search": {
+            "accuracy": 0.48533333333333334,
+            "ci95": 0.01454673372940708,
+            "episodes": 160,
+            "ci95_low": 0.47078659960392627,
+            "ci95_high": 0.4998800670627404
+          },
+          "search_paired": {
+            "mean": -0.20325,
+            "ci95": 0.01390617999303196,
+            "low": -0.21715617999303194,
+            "high": -0.18934382000696803,
+            "wins": 3,
+            "ties": 0,
+            "losses": 157
+          }
+        }
+      ],
+      "selected": {
+        "normalization": "channel_scale",
+        "ridge": 10.0
+      },
+      "reference": {
+        "search": {
+          "accuracy": 0.6885833333333333,
+          "ci95": 0.01641137738116974,
+          "episodes": 160,
+          "ci95_low": 0.6721719559521636,
+          "ci95_high": 0.704994710714503
+        },
+        "confirmation": {
+          "accuracy": 0.6880666666666666,
+          "ci95": 0.0078212398188341,
+          "episodes": 600,
+          "ci95_low": 0.6802454268478325,
+          "ci95_high": 0.6958879064855007
+        }
+      },
+      "eligible": false
+    }
+  },
+  "limitations": [
+    "FRN-inspired frozen-head test, NOT trained FRN reproduction.",
+    "Candidate is inductive original-image only; published reference is two-view transductive.",
+    "Validation reused across prior studies, confirmation participates in selection.",
+    "More per-task support computation; report cost even if no extra parameters."
+  ],
+  "eligible": false,
+  "publication": "not_published"
+}

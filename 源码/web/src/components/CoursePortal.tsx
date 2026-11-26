@@ -1,3 +1,4 @@
+import LabFourOverview from "../lab-four/Overview";
 import { displayText } from "../display-text";
 import { ArrowRight, ArrowLeft, Graph } from "@phosphor-icons/react";
 import type { CourseCatalog, LabId } from "../types";
@@ -15,6 +16,7 @@ export default function CoursePortal({
   onRetry: () => void;
 }) {
   const lab = catalog?.labs.find((item) => item.id === labId);
+  if (lab?.id === "lab04") return <LabFourOverview lab={lab} />;
   return (
     <main id="main-content" tabIndex={-1} className="page-shell course-shell">
       {labId && (

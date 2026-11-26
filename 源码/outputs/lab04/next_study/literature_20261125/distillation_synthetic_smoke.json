@@ -1,0 +1,18 @@
+{
+  "kind": "synthetic_smoke_only",
+  "passed": true,
+  "test_accessed": false,
+  "real_train_images": 0,
+  "accuracy_claim": null,
+  "losses": {
+    "total": 13.276963233947754,
+    "ce": 11.903815269470215,
+    "feature": 1.0267894268035889,
+    "relation": 2.4121891328832135e-05,
+    "alignment": 2.286990593347582e-06,
+    "metric": 1.3853793144226074
+  },
+  "source_sha256": "42c882ac96fd214b61ea3f6c66d6b0758381e5a77c599cad3c77435829f94d98",
+  "loss_source_sha256": "289ca76101697f429f4627d0ad58cc349ecd8147da1bd85e9cbdbdc0caf674f8",
+  "model_files_written": false
+}

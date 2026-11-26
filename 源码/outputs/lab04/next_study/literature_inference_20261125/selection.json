@@ -1,0 +1,316 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "plan_sha256": "63cb07b1484345f3942ed7dcfaf6c03c8ed286a22156967b80c8973b2e8e1e35",
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "id": "map_whitened",
+          "search": {
+            "accuracy": 0.5613333333333334,
+            "ci95": 0.021378250512344394,
+            "episodes": 160,
+            "ci95_low": 0.5399550828209889,
+            "ci95_high": 0.5827115838456778
+          },
+          "search_paired": {
+            "mean": -0.00041666666666666555,
+            "ci95": 0.005682518554381893,
+            "low": -0.006099185221048559,
+            "high": 0.005265851887715227,
+            "wins": 69,
+            "ties": 24,
+            "losses": 67
+          },
+          "confirmation": {
+            "accuracy": 0.5555555555555555,
+            "ci95": 0.011787666021933537,
+            "episodes": 600,
+            "ci95_low": 0.543767889533622,
+            "ci95_high": 0.567343221577489
+          },
+          "confirmation_paired": {
+            "mean": -0.002755555555555554,
+            "ci95": 0.0023821978099342455,
+            "low": -0.0051377533654898,
+            "high": -0.00037335774562130856,
+            "wins": 206,
+            "ties": 135,
+            "losses": 259
+          }
+        },
+        {
+          "id": "map_taskcenter_whitened",
+          "search": {
+            "accuracy": 0.5581666666666667,
+            "ci95": 0.02128548538113594,
+            "episodes": 160,
+            "ci95_low": 0.5368811812855308,
+            "ci95_high": 0.5794521520478026
+          },
+          "search_paired": {
+            "mean": -0.0035833333333333355,
+            "ci95": 0.00622926565447246,
+            "low": -0.009812598987805796,
+            "high": 0.0026459323211391246,
+            "wins": 63,
+            "ties": 23,
+            "losses": 74
+          },
+          "confirmation": {
+            "accuracy": 0.5541555555555555,
+            "ci95": 0.011835478546579964,
+            "episodes": 600,
+            "ci95_low": 0.5423200770089756,
+            "ci95_high": 0.5659910341021355
+          },
+          "confirmation_paired": {
+            "mean": -0.004155555555555552,
+            "ci95": 0.0028333788728613736,
+            "low": -0.006988934428416926,
+            "high": -0.0013221766826941785,
+            "wins": 215,
+            "ties": 115,
+            "losses": 270
+          }
+        },
+        {
+          "id": "ptmap_signed_taskcenter",
+          "search": {
+            "accuracy": 0.52575,
+            "ci95": 0.020373163379643344,
+            "episodes": 160,
+            "ci95_low": 0.5053768366203567,
+            "ci95_high": 0.5461231633796434
+          },
+          "search_paired": {
+            "mean": -0.036,
+            "ci95": 0.016731251835425624,
+            "low": -0.052731251835425624,
+            "high": -0.019268748164574374,
+            "wins": 54,
+            "ties": 13,
+            "losses": 93
+          }
+        },
+        {
+          "id": "tim_whitened",
+          "search": {
+            "accuracy": 0.5106666666666666,
+            "ci95": 0.01739364112663614,
+            "episodes": 160,
+            "ci95_low": 0.49327302554003044,
+            "ci95_high": 0.5280603077933027
+          },
+          "search_paired": {
+            "mean": -0.05108333333333333,
+            "ci95": 0.013916745341797975,
+            "low": -0.0650000786751313,
+            "high": -0.037166587991535355,
+            "wins": 44,
+            "ties": 5,
+            "losses": 111
+          }
+        },
+        {
+          "id": "tim_taskcenter_whitened",
+          "search": {
+            "accuracy": 0.507,
+            "ci95": 0.016721862781959196,
+            "episodes": 160,
+            "ci95_low": 0.4902781372180408,
+            "ci95_high": 0.5237218627819592
+          },
+          "search_paired": {
+            "mean": -0.054749999999999986,
+            "ci95": 0.014059483572906487,
+            "low": -0.06880948357290648,
+            "high": -0.040690516427093495,
+            "wins": 43,
+            "ties": 3,
+            "losses": 114
+          }
+        }
+      ],
+      "selected": "map_whitened",
+      "eligible": false,
+      "reference": {
+        "search": {
+          "accuracy": 0.56175,
+          "ci95": 0.022551471801930432,
+          "episodes": 160,
+          "ci95_low": 0.5391985281980696,
+          "ci95_high": 0.5843014718019304
+        },
+        "confirmation": {
+          "accuracy": 0.5583111111111111,
+          "ci95": 0.012176456348588998,
+          "episodes": 600,
+          "ci95_low": 0.5461346547625221,
+          "ci95_high": 0.5704875674597001
+        }
+      }
+    },
+    "5": {
+      "candidates": [
+        {
+          "id": "map_taskcenter_whitened",
+          "search": {
+            "accuracy": 0.6837500000000001,
+            "ci95": 0.01473189586459255,
+            "episodes": 160,
+            "ci95_low": 0.6690181041354075,
+            "ci95_high": 0.6984818958645926
+          },
+          "search_paired": {
+            "mean": -0.0003333333333333296,
+            "ci95": 0.0028656687844394032,
+            "low": -0.003199002117772733,
+            "high": 0.0025323354511060736,
+            "wins": 39,
+            "ties": 69,
+            "losses": 52
+          },
+          "confirmation": {
+            "accuracy": 0.6979777777777778,
+            "ci95": 0.00750694977634581,
+            "episodes": 600,
+            "ci95_low": 0.690470828001432,
+            "ci95_high": 0.7054847275541236
+          },
+          "confirmation_paired": {
+            "mean": 0.0002444444444444426,
+            "ci95": 0.0014736371815753464,
+            "low": -0.0012291927371309039,
+            "high": 0.001718081626019789,
+            "wins": 178,
+            "ties": 247,
+            "losses": 175
+          }
+        },
+        {
+          "id": "map_whitened",
+          "search": {
+            "accuracy": 0.6833333333333333,
+            "ci95": 0.014718820935369222,
+            "episodes": 160,
+            "ci95_low": 0.6686145123979641,
+            "ci95_high": 0.6980521542687026
+          },
+          "search_paired": {
+            "mean": -0.0007499999999999955,
+            "ci95": 0.00255144687032191,
+            "low": -0.0033014468703219057,
+            "high": 0.0018014468703219147,
+            "wins": 40,
+            "ties": 69,
+            "losses": 51
+          },
+          "confirmation": {
+            "accuracy": 0.6986,
+            "ci95": 0.007485553207048681,
+            "episodes": 600,
+            "ci95_low": 0.6911144467929513,
+            "ci95_high": 0.7060855532070487
+          },
+          "confirmation_paired": {
+            "mean": 0.0008666666666666662,
+            "ci95": 0.0012934862603615634,
+            "low": -0.0004268195936948972,
+            "high": 0.0021601529270282296,
+            "wins": 168,
+            "ties": 278,
+            "losses": 154
+          }
+        },
+        {
+          "id": "tim_whitened",
+          "search": {
+            "accuracy": 0.6674166666666667,
+            "ci95": 0.015860522564869913,
+            "episodes": 160,
+            "ci95_low": 0.6515561441017967,
+            "ci95_high": 0.6832771892315366
+          },
+          "search_paired": {
+            "mean": -0.016666666666666663,
+            "ci95": 0.006471404605503673,
+            "low": -0.023138071272170338,
+            "high": -0.01019526206116299,
+            "wins": 47,
+            "ties": 15,
+            "losses": 98
+          }
+        },
+        {
+          "id": "tim_taskcenter_whitened",
+          "search": {
+            "accuracy": 0.6673333333333333,
+            "ci95": 0.015488098936450175,
+            "episodes": 160,
+            "ci95_low": 0.6518452343968831,
+            "ci95_high": 0.6828214322697835
+          },
+          "search_paired": {
+            "mean": -0.016749999999999998,
+            "ci95": 0.007576877174330113,
+            "low": -0.02432687717433011,
+            "high": -0.009173122825669885,
+            "wins": 48,
+            "ties": 20,
+            "losses": 92
+          }
+        },
+        {
+          "id": "ptmap_signed_taskcenter",
+          "search": {
+            "accuracy": 0.6406666666666666,
+            "ci95": 0.017025499878758135,
+            "episodes": 160,
+            "ci95_low": 0.6236411667879085,
+            "ci95_high": 0.6576921665454247
+          },
+          "search_paired": {
+            "mean": -0.04341666666666667,
+            "ci95": 0.009546051239635235,
+            "low": -0.05296271790630191,
+            "high": -0.03387061542703144,
+            "wins": 32,
+            "ties": 13,
+            "losses": 115
+          }
+        }
+      ],
+      "selected": "map_whitened",
+      "eligible": false,
+      "reference": {
+        "search": {
+          "accuracy": 0.6840833333333334,
+          "ci95": 0.014966603024055409,
+          "episodes": 160,
+          "ci95_low": 0.669116730309278,
+          "ci95_high": 0.6990499363573888
+        },
+        "confirmation": {
+          "accuracy": 0.6977333333333333,
+          "ci95": 0.007570026352843762,
+          "episodes": 600,
+          "ci95_low": 0.6901633069804896,
+          "ci95_high": 0.7053033596861771
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Validation images/classes have already been reused by earlier studies; not untouched data.",
+    "Search/confirmation image pools are disjoint, but share 16 classes; confirmation participates in selection.",
+    "Intervals are pointwise paired episode intervals, conditional on reused classes, not multiplicity-corrected or class-population intervals.",
+    "External FEAT encoder checkpoint is author-provided, not locally trained; caches are inherited and fingerprinted here.",
+    "Capacity probe jointly changes capacity, normalization and original training; it is not a capacity-only causal ablation.",
+    "TIM promotes uniform marginal entropy; MAP and published graph assume balanced queries.",
+    "Published continued transform uses 38400 train images; diagnostic matched-center heads use identical 6400 train IDs for both models."
+  ],
+  "eligible": false,
+  "publication": "not_published; validation-only; no automatic test or release"
+}

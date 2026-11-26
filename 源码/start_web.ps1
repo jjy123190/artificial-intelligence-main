@@ -1,4 +1,4 @@
-﻿param([int]$Port = 8765, [switch]$NoBrowser, [string]$PythonPath, [ValidateSet("home", "lab01", "lab02", "lab03")][string]$Entry = "home")
+﻿param([int]$Port = 8765, [switch]$NoBrowser, [string]$PythonPath, [ValidateSet("home", "lab01", "lab02", "lab03", "lab04")][string]$Entry = "home")
 $ErrorActionPreference = 'Stop'
 $env:PYTHONUTF8 = '1'
 $env:PYTHONDONTWRITEBYTECODE = '1'
@@ -123,7 +123,7 @@ $mutexOwned = $false
 Open-Website ($url + "/" + $fragment)
 
 # 网站启动读取已有结果，不自动重算实验或生成报告与视频。
-Write-Host '网站首页包含实验一、实验二和实验三，已有实验结果可直接查看。'
+Write-Host '网站首页包含实验一至实验四，已有实验结果可直接查看。'
 Write-Host 'LLM演示默认回放已保存评分，不会自动下载模型或覆盖实验结果。'
 Write-Host '案例编辑与服务日志保存在本机 .state 和 outputs/runtime。'
 } catch {

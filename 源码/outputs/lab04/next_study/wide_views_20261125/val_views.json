@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+    "original_cache_sha256": "41debc1e8ed3e5196a5e56650da075a8f1bf74cc9fa0d11f1d1e7afd2a265c04",
+    "source_sha256": "23f6835e9a06005b46409082a62f0fa5cc0d309f978de48e9f9397de263236de",
+    "preprocessing_sha256": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "view": "horizontal flip of normalized tensor"
+  },
+  "sha256": "b4cb73a98c160934b1ef7e7e18358bd68ad51bbfad6ba05fc159b809a7cec1ac",
+  "seconds": 48.70881079998799
+}

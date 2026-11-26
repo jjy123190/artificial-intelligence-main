@@ -816,7 +816,7 @@ def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--artifacts", type=Path, default=REPO / "源码" / "outputs" / "lab04")
+    parser.add_argument("--artifacts", type=Path, default=(REPO / "源码" / "outputs" / "lab04" / "history" / "v1" if (REPO / "源码" / "outputs" / "lab04" / "history" / "v1").is_dir() else REPO / "源码" / "outputs" / "lab04"))
     parser.add_argument("--output", type=Path, default=REPO / "deliverables" / "lab4" / "第33组_实验四_实验报告.docx")
     parser.add_argument("--pdf", action="store_true")
     parser.add_argument("--qa-dir", type=Path)

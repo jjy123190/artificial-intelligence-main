@@ -69,3 +69,68 @@ class PackagingTests(unittest.TestCase):
         with self.assertRaises(ValueError):build_package('lab99',self.root)
 
 if __name__=='__main__':unittest.main()
+
+
+class LabFourPackagingTests(PackagingTests):
+    def test_lab04_packages_model_and_prior_but_never_downloaded_data(self):
+        self.write("experiments/lab04/打开网站.cmd", "launcher")
+        self.write("experiments/lab04/inference.py", "inference")
+        self.write("outputs/lab04/baseline.pt", "checkpoint")
+        self.write("outputs/lab04/baseline_prior.npz", "statistics")
+        self.write("outputs/lab04/demo_pool.npz", "demo pool")
+        self.write(".local/mini-imagenet/test/private.jpg", "downloaded test data")
+        self.write(".local/lab04-v2/resume.pt", "local training state")
+        result=build_package("lab04",self.root)
+        with zipfile.ZipFile(result["archive"]) as archive:
+            self.assertIn("outputs/lab04/baseline.pt",archive.namelist())
+            self.assertIn("outputs/lab04/baseline_prior.npz",archive.namelist())
+            self.assertIn("outputs/lab04/demo_pool.npz",archive.namelist())
+            self.assertFalse(any(name.startswith(".local/") for name in archive.namelist()))
+            self.assertIn("#/labs/lab04",archive.read("本次实验提交说明.txt").decode("utf-8"))
+
+
+    def test_packaged_inventory_describes_only_included_bytes(self):
+        self.write("文件校验清单.json", json.dumps({"schema_version":1,"files":{".local/secret":{},"main.py":{}}}))
+        self.write(".gitattributes", "* -text")
+        result=build_package("lab04",self.root)
+        with zipfile.ZipFile(result["archive"]) as archive:
+            manifest=json.loads(archive.read("文件校验清单.json"))
+            self.assertNotIn(".local/secret",manifest["files"])
+            self.assertIn(".gitattributes",manifest["files"])
+            for name,entry in manifest["files"].items():
+                actual=archive.read(name)
+                self.assertEqual(len(actual),entry["bytes"])
+                self.assertEqual(hashlib.sha256(actual).hexdigest(),entry["sha256"])
+
+
+class LiteratureReadingCachePackagingTests(PackagingTests):
+    def test_literature_snapshots_not_redistributed_but_evidence_kept(self):
+        prefix='outputs/lab04/next_study/literature_20261125/'
+        for name in ('rfs_pdf.pdf','feat_paper.html','tim_code.txt','rfs_readme.md'):
+            self.write(prefix+name,'third-party reading snapshot')
+        for name in ('README.md','sources.json','verified_sources.json','reference_cache_spotcheck.json'):
+            self.write(prefix+name,'source metadata / our evidence')
+        self.write('outputs/lab04/next_study/literature_inference_20261125/selection.json','negative result')
+        self.write(prefix+'cost_probe/result.json','our synthetic timing')
+        self.write('experiments/lab04/LITERATURE_IMPROVEMENT_PLAN.md','our research plan')
+        paths={p.relative_to(self.root).as_posix() for p in project_files(self.root)}
+        for name in ('rfs_pdf.pdf','feat_paper.html','tim_code.txt','rfs_readme.md'):
+            self.assertNotIn(prefix+name,paths)
+        for name in ('README.md','sources.json','verified_sources.json','reference_cache_spotcheck.json'):
+            self.assertIn(prefix+name,paths)
+        self.assertIn(prefix+'cost_probe/result.json',paths)
+        self.assertIn('outputs/lab04/next_study/literature_inference_20261125/selection.json',paths)
+        self.assertIn('experiments/lab04/LITERATURE_IMPROVEMENT_PLAN.md',paths)
+
+
+class RequirementResearchCachePackagingTests(PackagingTests):
+    def test_raw_research_source_excluded_but_results_kept(self):
+        prefix='outputs/lab04/next_study/requirement_accuracy_20261125/'
+        self.write(prefix+'frn_model.txt','third-party source')
+        self.write(prefix+'README.md','our explanation')
+        self.write(prefix+'cuda_probe.json','our read-only diagnostic')
+        self.write(prefix+'learned_calibration/result.json','our negative result')
+        paths={p.relative_to(self.root).as_posix() for p in project_files(self.root)}
+        self.assertNotIn(prefix+'frn_model.txt',paths)
+        for name in ('README.md','cuda_probe.json','learned_calibration/result.json'):
+            self.assertIn(prefix+name,paths)

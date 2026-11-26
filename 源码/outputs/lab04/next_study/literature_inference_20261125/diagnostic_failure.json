@@ -1,0 +1,11 @@
+{
+  "status": "stopped_on_numeric_guard",
+  "test_accessed": false,
+  "phase": "diagnostic/1",
+  "candidate": "teacher_ptmap",
+  "error": "Transport failed to converge; do not silently use bad masses",
+  "original_sinkhorn_max_steps": 300,
+  "effect": "Student selection completed and saved; teacher diagnostic incomplete. No task removed and no teacher MAP score reported.",
+  "amendment": "Separate supplement will use the official implementation maxiters=1000 for both student and teacher, without changing temperature/alpha/power/iterations or looking at accuracy. Existing plan/source/negative results remain unchanged.",
+  "recorded_utc": "2026-11-25T07:57:41.043912+00:00"
+}

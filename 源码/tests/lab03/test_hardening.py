@@ -284,7 +284,7 @@ class LabThreeAPITests(unittest.TestCase):
 
     def test_course_does_not_lose_existing_lab_entries(self):
         value = self.client.get("/api/course").json()
-        self.assertEqual([lab["id"] for lab in value["labs"]], ["lab01", "lab02", "lab03"])
+        self.assertEqual([lab["id"] for lab in value["labs"]], ["lab01", "lab02", "lab03", "lab04"])
 
 
 if __name__ == "__main__":

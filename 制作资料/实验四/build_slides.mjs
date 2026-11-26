@@ -10,12 +10,14 @@ const arg = (name, fallback) => {
   const index = process.argv.indexOf(name);
   return index < 0 ? fallback : process.argv[index + 1];
 };
-const artifacts = arg("--artifacts", path.join(root, "源码/outputs/lab04"));
+const legacy = path.join(root, "源码/outputs/lab04/history/v1");
+const artifacts = arg("--artifacts", fs.existsSync(legacy) ? legacy : path.join(root, "源码/outputs/lab04"));
 const assets = arg("--assets", "");
 const temporary = arg("--tmp", "");
 if (!assets || !temporary) throw new Error("Provide --assets and --tmp directories for verified captures and private rendering.");
 const result = JSON.parse(fs.readFileSync(path.join(artifacts, "results.json"), "utf8"));
 if (result.status !== "complete") throw new Error("Measured results are not complete.");
+if (result.schema_version !== 1) throw new Error("This historical slide generator describes v1; use the v2 addendum for updated results.");
 const output = path.join(root, "deliverables/lab4");
 fs.mkdirSync(output, { recursive: true });
 fs.mkdirSync(temporary, { recursive: true });

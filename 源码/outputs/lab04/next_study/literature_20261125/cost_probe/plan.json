@@ -1,0 +1,45 @@
+{
+  "kind": "synthetic_cpu_feasibility_only",
+  "batch": 8,
+  "warmups": 1,
+  "repetitions": 3,
+  "threads": 2,
+  "seed": 20261201,
+  "test_accessed": false,
+  "source_sha256": "4ca495143eb6aecf9eecaa113505d8d0e69fe577751ae6e1336d668119fa99ec",
+  "teacher_sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+  "methods": {
+    "small": {
+      "widths": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "work": "one-view CE forward+backward"
+    },
+    "medium": {
+      "widths": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "work": "one-view CE forward+backward"
+    },
+    "small_teacher": {
+      "widths": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "work": "two-view student+frozen teacher forward, full proposed KD loss backward"
+    }
+  },
+  "limitations": [
+    "Random normalized tensors, no dataset decoding/augmentation/validation/optimizer step.",
+    "Teacher CPU cost included in KD, training projector is not deployment cost.",
+    "Tiny batch and three repeats under variable host load: planning estimate only."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "registered_not_trained",
+  "test_accessed": false,
+  "same_train_val_ids": true,
+  "same_train_val_pixels": true,
+  "same_seed": true,
+  "same_initial": true,
+  "source_hashes_match": true,
+  "planned_additional_epochs_each": 16,
+  "actual_training_epochs": 0,
+  "current_model_changed": false,
+  "plans": {
+    "control": {
+      "file": "control_plan.json",
+      "sha256": "c3d6a743746fb55402e4d7b244d05f1ec6c3d5ea33f329944d3d1615270b6d3d"
+    },
+    "distill": {
+      "file": "distill_plan.json",
+      "sha256": "d510f4f2bacaf86b0319674f0bd44dc2112a9d16cf91af3d30ae341ced683286"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "checkpoint_lock": {
+    "training_sha256": "4ab08fe2d71ed69b4d175be3c078a65b0ebe726276ae3f46bcff0e0e2c620031",
+    "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "plan_sha256": "faaa3b952c73c2b1896e314e8e4ce57aa85e1559a86377efb77be51b79344580",
+    "best_epoch": 12,
+    "test_accessed": false
+  },
+  "shots": {
+    "1": {
+      "candidate": {
+        "accuracy": 0.5614888888888888,
+        "ci95": 0.012160148509063728,
+        "episodes": 600,
+        "ci95_low": 0.549328740379825,
+        "ci95_high": 0.5736490373979526
+      },
+      "reference": {
+        "accuracy": 0.5571111111111111,
+        "ci95": 0.012151418927406768,
+        "episodes": 600,
+        "ci95_low": 0.5449596921837043,
+        "ci95_high": 0.5692625300385179
+      },
+      "paired": {
+        "mean": 0.004377777777777776,
+        "ci95": 0.002723122124675399,
+        "wins": 255,
+        "ties": 156,
+        "losses": 189
+      },
+      "promising": true
+    },
+    "5": {
+      "candidate": {
+        "accuracy": 0.6919777777777778,
+        "ci95": 0.007887700356773083,
+        "episodes": 600,
+        "ci95_low": 0.6840900774210047,
+        "ci95_high": 0.6998654781345509
+      },
+      "reference": {
+        "accuracy": 0.6883111111111111,
+        "ci95": 0.007856570118820697,
+        "episodes": 600,
+        "ci95_low": 0.6804545409922904,
+        "ci95_high": 0.6961676812299318
+      },
+      "paired": {
+        "mean": 0.0036666666666666683,
+        "ci95": 0.001558143571482623,
+        "wins": 248,
+        "ties": 189,
+        "losses": 163
+      },
+      "promising": true
+    }
+  },
+  "validation_ids_sha256": "06be6a08a8550e782328c21152715d21db827c68d3065f518d98f220e884ac21",
+  "promising": true,
+  "completed_utc": "2026-11-25T06:28:16.141158+00:00",
+  "journal_sha256": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+  "transform_sha256": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+}

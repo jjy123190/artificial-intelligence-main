@@ -1,0 +1,48 @@
+{
+  "status": "locked",
+  "locked_utc": "2026-11-24T08:13:53.300241+00:00",
+  "test_accessed": false,
+  "checkpoint_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "selection_sha256": "a3c9d6614a09252c5b2764dbb25fc879c1899c6a71645a8e24bfc80affc3752c",
+  "previous_selection_sha256": "03d04042169a3206a7f6c959a1711279a5dfb4fd6692882534d9f103d63ebb43",
+  "selected": {
+    "1": {
+      "views": "concat",
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.75,
+        "residual_mix": 1.0
+      },
+      "assignment": "soft",
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "views": "concat",
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.75,
+        "residual_mix": 1.0
+      },
+      "assignment": "soft",
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    }
+  }
+}

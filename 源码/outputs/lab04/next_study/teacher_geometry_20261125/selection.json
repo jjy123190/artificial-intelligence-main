@@ -1,0 +1,376 @@
+{
+  "status": "complete",
+  "plan_sha256": "f82d3e146019703a7e36990b3854fd98009185b39f1770b0d14715dfb0d9fe25",
+  "test_accessed": false,
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "id": "ridge0.01_mix0.5",
+          "ridge_ratio": 0.01,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.5285833333333333,
+            "ci95": 0.022185697369809357,
+            "episodes": 160,
+            "ci95_low": 0.5063976359635239,
+            "ci95_high": 0.5507690307031426
+          },
+          "search_paired": {
+            "mean": -0.033166666666666664,
+            "ci95": 0.015155525790437828,
+            "low": -0.04832219245710449,
+            "high": -0.018011140876228834,
+            "wins": 49,
+            "ties": 10,
+            "losses": 101
+          },
+          "confirmation": {
+            "accuracy": 0.5333111111111112,
+            "ci95": 0.012336506803385534,
+            "episodes": 600,
+            "ci95_low": 0.5209746043077257,
+            "ci95_high": 0.5456476179144967
+          },
+          "confirmation_paired": {
+            "mean": -0.025,
+            "ci95": 0.007045133714721606,
+            "low": -0.032045133714721605,
+            "high": -0.017954866285278395,
+            "wins": 201,
+            "ties": 47,
+            "losses": 352
+          }
+        },
+        {
+          "id": "ridge0.1_mix0.5",
+          "ridge_ratio": 0.1,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.5171666666666667,
+            "ci95": 0.022342497515901803,
+            "episodes": 160,
+            "ci95_low": 0.4948241691507649,
+            "ci95_high": 0.5395091641825684
+          },
+          "search_paired": {
+            "mean": -0.04458333333333333,
+            "ci95": 0.01666090134035658,
+            "low": -0.061244234673689904,
+            "high": -0.02792243199297675,
+            "wins": 48,
+            "ties": 9,
+            "losses": 103
+          },
+          "confirmation": {
+            "accuracy": 0.5235333333333333,
+            "ci95": 0.012136947525011425,
+            "episodes": 600,
+            "ci95_low": 0.5113963858083219,
+            "ci95_high": 0.5356702808583447
+          },
+          "confirmation_paired": {
+            "mean": -0.034777777777777776,
+            "ci95": 0.007737894328290621,
+            "low": -0.042515672106068395,
+            "high": -0.027039883449487156,
+            "wins": 184,
+            "ties": 42,
+            "losses": 374
+          }
+        },
+        {
+          "id": "ridge0.01_mix1",
+          "ridge_ratio": 0.01,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.5101666666666667,
+            "ci95": 0.02267536963888258,
+            "episodes": 160,
+            "ci95_low": 0.4874912970277841,
+            "ci95_high": 0.5328420363055493
+          },
+          "search_paired": {
+            "mean": -0.05158333333333333,
+            "ci95": 0.018471969129900276,
+            "low": -0.0700553024632336,
+            "high": -0.03311136420343305,
+            "wins": 48,
+            "ties": 9,
+            "losses": 103
+          }
+        },
+        {
+          "id": "ridge0.1_mix1",
+          "ridge_ratio": 0.1,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.50425,
+            "ci95": 0.02252616132467219,
+            "episodes": 160,
+            "ci95_low": 0.4817238386753278,
+            "ci95_high": 0.5267761613246722
+          },
+          "search_paired": {
+            "mean": -0.057499999999999996,
+            "ci95": 0.018047172406386217,
+            "low": -0.07554717240638621,
+            "high": -0.03945282759361378,
+            "wins": 47,
+            "ties": 6,
+            "losses": 107
+          }
+        },
+        {
+          "id": "ridge1_mix0.5",
+          "ridge_ratio": 1.0,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.5004166666666667,
+            "ci95": 0.021704417451230397,
+            "episodes": 160,
+            "ci95_low": 0.4787122492154363,
+            "ci95_high": 0.5221210841178971
+          },
+          "search_paired": {
+            "mean": -0.06133333333333333,
+            "ci95": 0.016986666666666664,
+            "low": -0.07832,
+            "high": -0.044346666666666666,
+            "wins": 43,
+            "ties": 9,
+            "losses": 108
+          }
+        },
+        {
+          "id": "ridge1_mix1",
+          "ridge_ratio": 1.0,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.4948333333333334,
+            "ci95": 0.021509434063653198,
+            "episodes": 160,
+            "ci95_low": 0.4733238992696802,
+            "ci95_high": 0.5163427673969866
+          },
+          "search_paired": {
+            "mean": -0.06691666666666667,
+            "ci95": 0.017920713006102738,
+            "low": -0.0848373796727694,
+            "high": -0.04899595366056393,
+            "wins": 43,
+            "ties": 10,
+            "losses": 107
+          }
+        }
+      ],
+      "selected": "ridge0.01_mix0.5",
+      "reference": {
+        "search": {
+          "accuracy": 0.56175,
+          "ci95": 0.022551471801930432,
+          "episodes": 160,
+          "ci95_low": 0.5391985281980696,
+          "ci95_high": 0.5843014718019304
+        },
+        "confirmation": {
+          "accuracy": 0.5583111111111111,
+          "ci95": 0.012176456348588998,
+          "episodes": 600,
+          "ci95_low": 0.5461346547625221,
+          "ci95_high": 0.5704875674597001
+        }
+      },
+      "eligible": false
+    },
+    "5": {
+      "candidates": [
+        {
+          "id": "ridge0.01_mix0.5",
+          "ridge_ratio": 0.01,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.6438333333333333,
+            "ci95": 0.01729083542797584,
+            "episodes": 160,
+            "ci95_low": 0.6265424979053574,
+            "ci95_high": 0.6611241687613091
+          },
+          "search_paired": {
+            "mean": -0.040249999999999994,
+            "ci95": 0.008760705065773866,
+            "low": -0.04901070506577386,
+            "high": -0.03148929493422613,
+            "wins": 30,
+            "ties": 14,
+            "losses": 116
+          },
+          "confirmation": {
+            "accuracy": 0.6661999999999999,
+            "ci95": 0.00817650429697915,
+            "episodes": 600,
+            "ci95_low": 0.6580234957030208,
+            "ci95_high": 0.674376504296979
+          },
+          "confirmation_paired": {
+            "mean": -0.03153333333333333,
+            "ci95": 0.004364649463994547,
+            "low": -0.03589798279732788,
+            "high": -0.027168683869338784,
+            "wins": 142,
+            "ties": 54,
+            "losses": 404
+          }
+        },
+        {
+          "id": "ridge0.1_mix0.5",
+          "ridge_ratio": 0.1,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.6315833333333333,
+            "ci95": 0.01788494957537668,
+            "episodes": 160,
+            "ci95_low": 0.6136983837579566,
+            "ci95_high": 0.64946828290871
+          },
+          "search_paired": {
+            "mean": -0.05249999999999999,
+            "ci95": 0.010212985732298568,
+            "low": -0.06271298573229855,
+            "high": -0.04228701426770142,
+            "wins": 28,
+            "ties": 7,
+            "losses": 125
+          },
+          "confirmation": {
+            "accuracy": 0.6532,
+            "ci95": 0.008272352467620312,
+            "episodes": 600,
+            "ci95_low": 0.6449276475323797,
+            "ci95_high": 0.6614723524676203
+          },
+          "confirmation_paired": {
+            "mean": -0.044533333333333334,
+            "ci95": 0.004798800702625161,
+            "low": -0.04933213403595849,
+            "high": -0.039734532630708176,
+            "wins": 100,
+            "ties": 52,
+            "losses": 448
+          }
+        },
+        {
+          "id": "ridge0.01_mix1",
+          "ridge_ratio": 0.01,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.6220000000000001,
+            "ci95": 0.01800847394291422,
+            "episodes": 160,
+            "ci95_low": 0.6039915260570858,
+            "ci95_high": 0.6400084739429144
+          },
+          "search_paired": {
+            "mean": -0.06208333333333334,
+            "ci95": 0.010396285469932376,
+            "low": -0.07247961880326571,
+            "high": -0.05168704786340096,
+            "wins": 23,
+            "ties": 12,
+            "losses": 125
+          }
+        },
+        {
+          "id": "ridge0.1_mix1",
+          "ridge_ratio": 0.1,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.6173333333333334,
+            "ci95": 0.018266899140053083,
+            "episodes": 160,
+            "ci95_low": 0.5990664341932803,
+            "ci95_high": 0.6356002324733865
+          },
+          "search_paired": {
+            "mean": -0.06675,
+            "ci95": 0.011200408295318117,
+            "low": -0.07795040829531812,
+            "high": -0.055549591704681885,
+            "wins": 22,
+            "ties": 8,
+            "losses": 130
+          }
+        },
+        {
+          "id": "ridge1_mix0.5",
+          "ridge_ratio": 1.0,
+          "mix": 0.5,
+          "search": {
+            "accuracy": 0.61025,
+            "ci95": 0.018314485281848994,
+            "episodes": 160,
+            "ci95_low": 0.591935514718151,
+            "ci95_high": 0.6285644852818489
+          },
+          "search_paired": {
+            "mean": -0.07383333333333333,
+            "ci95": 0.011485340834648762,
+            "low": -0.0853186741679821,
+            "high": -0.06234799249868457,
+            "wins": 18,
+            "ties": 8,
+            "losses": 134
+          }
+        },
+        {
+          "id": "ridge1_mix1",
+          "ridge_ratio": 1.0,
+          "mix": 1.0,
+          "search": {
+            "accuracy": 0.5986666666666667,
+            "ci95": 0.018339355107859907,
+            "episodes": 160,
+            "ci95_low": 0.5803273115588068,
+            "ci95_high": 0.6170060217745266
+          },
+          "search_paired": {
+            "mean": -0.08541666666666667,
+            "ci95": 0.011989457094113988,
+            "low": -0.09740612376078066,
+            "high": -0.07342720957255268,
+            "wins": 13,
+            "ties": 5,
+            "losses": 142
+          }
+        }
+      ],
+      "selected": "ridge0.01_mix0.5",
+      "reference": {
+        "search": {
+          "accuracy": 0.6840833333333334,
+          "ci95": 0.014966603024055409,
+          "episodes": 160,
+          "ci95_low": 0.669116730309278,
+          "ci95_high": 0.6990499363573888
+        },
+        "confirmation": {
+          "accuracy": 0.6977333333333333,
+          "ci95": 0.007570026352843762,
+          "episodes": 600,
+          "ci95_low": 0.6901633069804896,
+          "ci95_high": 0.7053033596861771
+        }
+      },
+      "eligible": false
+    }
+  },
+  "limitations": [
+    "External teacher lineage; not comparable as no-external-training improvement.",
+    "Inspired by RFS representation distillation, NOT the RFS method or evidence of neural student distillation.",
+    "Teacher trained by author; complete original training cannot be independently verified.",
+    "Validation classes/images are reused, and confirmation participates in selection.",
+    "No change to image encoder; linear geometry cannot recover missing semantic information."
+  ],
+  "eligible": false,
+  "publication": "not_published; external-teacher lineage; validation-only"
+}

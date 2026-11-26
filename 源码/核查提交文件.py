@@ -17,7 +17,7 @@ def main():
             missing.append(name)
         elif path.stat().st_size != expected["bytes"] or hashlib.sha256(path.read_bytes()).hexdigest() != expected["sha256"]:
             changed.append(name)
-    ignored = {".venv", "venv", "node_modules", "__pycache__", ".state", ".git", ".pytest_cache"}
+    ignored = {".venv", "venv", "node_modules", "__pycache__", ".state", ".git", ".pytest_cache", ".local"}
     extra = []
     import os
     for base, dirs, names in os.walk(ROOT):

@@ -1,0 +1,32 @@
+{
+  "output": ".local/lab04-continuation-20261125",
+  "data_root": ".local/mini-imagenet",
+  "initial": "outputs/lab04/wide.pt",
+  "epochs": 16,
+  "learning_rate": 0.0002,
+  "metric_weight": 0.25,
+  "threads": 4,
+  "seed": 20261128,
+  "initial_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "widths": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "test_accessed": false,
+  "source_hashes": {
+    "train_continuation.py": "c162f9b12405fab7753f24f55f624fca1b4c538b0c46b2bfdd748befb8681d02",
+    "train_v3.py": "1c293e17ab47e660680dd53eab5c20dea84d73b8d836a3ef4302d809f2408ca3",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "metric_training.py": "408f9e731bbe71a2990d6d5c9edb2229cae264d99d5a5e9d0527ffcdac6697ac",
+    "experiment.py": "deb6ee01818fb55771f35f62f8051c7c0dae0feab07087a21e5ecc20eb903ea7",
+    "refine.py": "2f118e5f78914b7959750bdb071fe30832f82b174034f9e54b88d205d87d3c30",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac"
+  },
+  "optimizer": "AdamW weight_decay=.0005; fresh optimizer, cosine schedule eta_min=.00001",
+  "objective": "CE label_smoothing=.05 + .25 metric loss, same augmentation as previous wider study",
+  "selection": "Epoch zero and each epoch, same fixed 100 validation tasks/shot; maximize mean of 1/5-shot; never use test scores",
+  "publication": "No auto-publish or auto-test. Frozen downstream validation confirmation required."
+}

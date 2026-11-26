@@ -1,0 +1,22 @@
+{
+  "test_accessed": false,
+  "scope": "train/val author split CSV comparison only; test pool was not opened",
+  "checks": [
+    {
+      "split": "train",
+      "official_images": 38400,
+      "local_images": 38400,
+      "class_count": 64,
+      "same_image_and_class_pairs": true
+    },
+    {
+      "split": "val",
+      "official_images": 9600,
+      "local_images": 9600,
+      "class_count": 16,
+      "same_image_and_class_pairs": true
+    }
+  ],
+  "passed": true,
+  "limitation": "Matching class/file lists do not prove the author checkpoint was never trained on other images."
+}

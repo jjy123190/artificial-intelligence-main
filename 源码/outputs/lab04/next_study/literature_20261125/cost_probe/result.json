@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "plan_sha256": "f695c6634870ea90f0bb4d174ad456ad442cd189e91c7cc974a7287099d7fcfd",
+  "cpu_only": true,
+  "torch_version": "2.10.0+cpu",
+  "host_available_mib": 1833.17578125,
+  "rows": [
+    {
+      "method": "small",
+      "parameters": 509856,
+      "seconds": [
+        0.10663299995940179,
+        0.07759520004037768,
+        0.08183509996160865
+      ],
+      "median_batch_seconds": 0.08183509996160865,
+      "rough_38400_image_epoch_minutes": 6.546807996928692,
+      "rss_after_mib": 297.3046875,
+      "rss_delta_mib": 94.14453125
+    },
+    {
+      "method": "medium",
+      "parameters": 2018048,
+      "seconds": [
+        0.2953856000676751,
+        0.4202504000859335,
+        0.5025775000685826
+      ],
+      "median_batch_seconds": 0.4202504000859335,
+      "rough_38400_image_epoch_minutes": 33.62003200687468,
+      "rss_after_mib": 304.71484375,
+      "rss_delta_mib": 7.41015625
+    },
+    {
+      "method": "small_teacher",
+      "parameters": 509856,
+      "seconds": [
+        1.168573800008744,
+        1.1683758000144735,
+        1.1919111999450251
+      ],
+      "median_batch_seconds": 1.168573800008744,
+      "rough_38400_image_epoch_minutes": 93.48590400069952,
+      "rss_after_mib": 401.55859375,
+      "rss_delta_mib": 65.125
+    }
+  ],
+  "completed_utc": "2026-11-25T07:53:51.569797+00:00",
+  "limitations": [
+    "Random normalized tensors, no dataset decoding/augmentation/validation/optimizer step.",
+    "Teacher CPU cost included in KD, training projector is not deployment cost.",
+    "Tiny batch and three repeats under variable host load: planning estimate only."
+  ]
+}

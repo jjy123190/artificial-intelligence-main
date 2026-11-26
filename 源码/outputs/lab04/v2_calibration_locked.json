@@ -1,0 +1,51 @@
+{
+  "status": "locked",
+  "locked_utc": "2026-11-24T05:43:17.832184+00:00",
+  "seed": 20261124,
+  "selection": "validation-only search on 200 images/class, confirmation on disjoint 400 images/class",
+  "test_accessed": false,
+  "configurations": {
+    "1": {
+      "space": {
+        "center_strength": 1.0,
+        "power": 1.0
+      },
+      "config": {
+        "mean_weight": 0.1,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0.0,
+        "temperature": 0.15,
+        "variance_blend": 0.4,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "validation_accuracy": 0.48617777777777776
+    },
+    "5": {
+      "space": {
+        "center_strength": 1.0,
+        "power": 1.0
+      },
+      "config": {
+        "mean_weight": 0.05,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0.0,
+        "temperature": 0.15,
+        "variance_blend": 0.1,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "validation_accuracy": 0.6241333333333333
+    }
+  },
+  "weights": {
+    "baseline": "e4c4a69b618e8f922a0058b147a5a92aabb160fa9cbd9a415c6bcc3ad3ffb3e3",
+    "aligned": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c"
+  }
+}

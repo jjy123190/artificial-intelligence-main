@@ -1,0 +1,37 @@
+{
+  "source": "validation-selected graph classifier on original v2 aligned backbone",
+  "configurations": {
+    "1": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    }
+  }
+}

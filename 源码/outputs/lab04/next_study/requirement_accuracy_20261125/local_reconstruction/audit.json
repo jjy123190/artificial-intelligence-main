@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "kind": "local_reconstruction",
+  "plan_sha256": "326e579e58a104131c909b77e0a05dbff3402264983ab03d22718145d67bb2c7",
+  "raw_method_episode_predictions_recomputed": 5520,
+  "test_accessed": false,
+  "external_weights": false,
+  "eligible": false,
+  "files": {
+    "plan.json": "326e579e58a104131c909b77e0a05dbff3402264983ab03d22718145d67bb2c7",
+    "result.json": "611c8add95e6707bfa40c14c7cdfad276f4c4327bddc3a321887a169e92f64e6",
+    "scores\\confirmation_1_channel_scale_0.1.json": "25fdb0671d1d76644b623020df067b6926caa3ff201f7ca5eddee04891f16387",
+    "scores\\confirmation_1_channel_scale_10.json": "c2ff7080b94db5af4ce1822b54d0acb9b90f733ba4cc7f3bb9ec5d090c995813",
+    "scores\\confirmation_1_reference.json": "b8e1c48689b733a550af03ad0c5e67c44715518a800bb29e03a4ff41fad309fb",
+    "scores\\confirmation_5_channel_scale_10.json": "4db405a3daf93119fd94f02587e46cbfd497ba6a186f101f5b33418931f14b07",
+    "scores\\confirmation_5_local_l2_1.json": "48b16c86437d86f57b2e9ef3ab2f6edd18ea2af2c3909fb7c288deb5e81673cd",
+    "scores\\confirmation_5_reference.json": "76d774d863dc4b8059ff60dd864e631205ca93a155530dbd8793f7afc3454931",
+    "scores\\search_1_channel_scale_0.1.json": "7b64df72516c1683b4a3e082ff6457262e32526353c2d4ce39b1cd93018cddef",
+    "scores\\search_1_channel_scale_1.json": "729c80c7e6dfe020be3505510838549a81660e91a4d0ddad7decd4d6991f1974",
+    "scores\\search_1_channel_scale_10.json": "bd56e35e44d7f25b5964c7c725d51df688a695171b9c0648d588fd89b5b61063",
+    "scores\\search_1_local_l2_0.1.json": "d99a4fde5dcae999573638955b7108dc67a693807b579b0f73e5b05210f11207",
+    "scores\\search_1_local_l2_1.json": "122a7c52197412fcc9d0b3c4d8ac50486fabb978149dfd644275b8cc35a36cc3",
+    "scores\\search_1_reference.json": "d39c13f65e09f3e17e17223fadb0e8bbe3086b442bbb58c8f5bf05762f6f0e31",
+    "scores\\search_5_channel_scale_0.1.json": "43311a829880e243c348fcdd41465722181118231235db2c4f5bf0b371a919f2",
+    "scores\\search_5_channel_scale_1.json": "c50b0b988f160492707c64a44e4adfa22a9c0d2d27db426574089e18b5865f62",
+    "scores\\search_5_channel_scale_10.json": "8c129951ff9d1973ff3f8239446dd710abd17ef57d9604aa15bc80ac747584a5",
+    "scores\\search_5_local_l2_0.1.json": "7baa37e6e1e7441e1027b92709798bb1faf55f65c4de9c17299bf631866a34d5",
+    "scores\\search_5_local_l2_1.json": "bda4e343e0f4b7be2c80e70a69773de2fe991e7a58ffa3b77e8b8dc92cb1d01e",
+    "scores\\search_5_reference.json": "994768bdaa09fe2a5b53b474500026b54eafed94c84cd7f0ef6eb4718f39161d",
+    "tasks.json": "77149c9bcb3a53bc74f651a529aad575a96938e6fe9578eba08980593d221bf3",
+    "val_maps.json": "f28e697565bc505329bf00061d131815726aa830eaeed8a656fd616aa93eee70"
+  }
+}

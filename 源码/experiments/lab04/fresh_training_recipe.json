@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "proposed_not_trained",
+  "external_weights": false,
+  "dataset": "mini-ImageNet",
+  "class_split": {
+    "train": 64,
+    "val": 16,
+    "test": 20
+  },
+  "input_size": [
+    3,
+    84,
+    84
+  ],
+  "backbone": "12 3x3 convs,4 residual blocks,GroupNorm retained,independent Kaiming initialization; no widening copy",
+  "capacity_candidates": [
+    {
+      "name": "light",
+      "widths": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "parameters": 509856
+    },
+    {
+      "name": "medium",
+      "widths": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "parameters": 2018048
+    }
+  ],
+  "seeds": [
+    20261206,
+    20261207,
+    20261208
+  ],
+  "training_images": 38400,
+  "parameter_budget_axis": "Capacity experiments separate from equal-backbone feature-calibration ablation",
+  "phase1": {
+    "epochs": 100,
+    "optimizer": "SGD",
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "milestones": [
+      60,
+      80
+    ],
+    "gamma": 0.1,
+    "batch": 64,
+    "loss": "CE(.05 smoothing)+.5 normalized two-view mean/variance alignment",
+    "control": "lambda_alignment=0, all other factors identical"
+  },
+  "phase2": {
+    "epochs": 20,
+    "optimizer": "SGD",
+    "lr": 0.001,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "schedule": "cosine to .0001",
+    "batch": "8 base classes x8 examples",
+    "loss": "CE(.05 smoothing)+.5 alignment+.25 5-way cosine episode CE, alternate1/5shot",
+    "control": "same20epochs with episode weight0"
+  },
+  "augmentation": "Independent per-image crop/flip/color; second view is same augmented image horizontal flip, identical across controls for fixed seed.",
+  "downstream": "Base-train mean/variance calibration+prototype adaptation retained; graph optional, selected on val only",
+  "selection": "Fixed val tasks, epoch0 eligible at each new branch; evaluate full val paired confirmation before one frozen test; repeated public test exposure disclosed.",
+  "report": "Three training seed variation separately from600-episode CI; add params,model bytes,CPU latency,memory; preserve Baseline/exact2nd-order MAML/calibration comparisons.",
+  "device": "No GPU training until Code43 is resolved and isolated CUDA environment passes smoke; GPU training does not require GPU deployment.",
+  "measured_accuracy": null
+}

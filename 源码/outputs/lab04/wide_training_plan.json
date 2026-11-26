@@ -1,0 +1,14 @@
+{
+  "data_root": ".local/mini-imagenet",
+  "output": ".local/lab04-v3-wide",
+  "initial": "outputs/lab04/baseline.pt",
+  "epochs": 24,
+  "patience": 8,
+  "learning_rate": 0.0005,
+  "metric_weight": 0.25,
+  "threads": 4,
+  "seed": 20261125,
+  "initial_sha256": "e4c4a69b618e8f922a0058b147a5a92aabb160fa9cbd9a415c6bcc3ad3ffb3e3",
+  "test_accessed": false,
+  "objective": "CE label smoothing .05 + metric coefficient; train classes only"
+}

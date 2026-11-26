@@ -1,0 +1,59 @@
+{
+  "kind": "frozen_self_trained_local_reconstruction",
+  "test_accessed": false,
+  "external_weights": false,
+  "seed": 20261205,
+  "candidates": [
+    {
+      "normalization": "channel_scale",
+      "ridge": 0.1
+    },
+    {
+      "normalization": "channel_scale",
+      "ridge": 1.0
+    },
+    {
+      "normalization": "channel_scale",
+      "ridge": 10.0
+    },
+    {
+      "normalization": "local_l2",
+      "ridge": 0.1
+    },
+    {
+      "normalization": "local_l2",
+      "ridge": 1.0
+    }
+  ],
+  "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "source_hashes": {
+    "study_local_reconstruction.py": "1662a146eefc1a4182840befc0707118f3476415b5219131042d27731a2c93b3",
+    "local_reconstruction.py": "812fe2995721bd4d3f6d1e010d9e01ee79f4917baaf37d94b5117eac3c1f286c",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "experiment.py": "deb6ee01818fb55771f35f62f8051c7c0dae0feab07087a21e5ecc20eb903ea7",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "study_literature.py": "1e170d1bb45b7434cd4d3f56ba43d3e0f16691be9f358eb26b135a84970632a6"
+  },
+  "inputs": {
+    ".local\\lab04-continuation-validation-20261125\\val_views.npz": "e6a1de2dcf1274bdf5b64af56f505f039bbc06422082ee553d78c975ec9fa228",
+    ".local\\lab04-continuation-validation-20261125\\val_views.json": "271890f3a90dc3d1840dc06b736d3cfeabcd037b5199ee994abf0530a71326fc",
+    "outputs\\lab04\\continued_transform.npz": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839",
+    "outputs\\lab04\\continued_configuration.json": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900"
+  },
+  "tasks_content_sha256": "1ed09c53d4d1ae082d00769a3a22b9e9fe4261f4fbd1a3af6686c4cf90bd73b1",
+  "val_ids_sha256": "6e10b1406efbc42d33518dfe975d80a52ecfbc873674b86a642b142d02e70967",
+  "images_used": 9600,
+  "raw_val_pixels_sha256": "85818b5960b31582a228fe9e257f938d0041bf5936c8e38ca999044f8b209eaa",
+  "map_source": "continued.encoder output Nx128x5x5, original image only, no spatial pooling, no feature fine-tuning",
+  "selection": "top2 search160 per shot, confirm600 per shot, largest paired lower95; bothshot low>0 and mean>=.01 to qualify; no test or publish",
+  "limitations": [
+    "FRN-inspired frozen-head test, NOT trained FRN reproduction.",
+    "Candidate is inductive original-image only; published reference is two-view transductive.",
+    "Validation reused across prior studies, confirmation participates in selection.",
+    "More per-task support computation; report cost even if no extra parameters."
+  ],
+  "registered_utc": "2026-11-25T08:43:14.746730+00:00"
+}

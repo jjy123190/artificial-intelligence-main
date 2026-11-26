@@ -2,3 +2,6 @@
 numpy>=2.0,<3
 Pillow>=11,<14
 torch>=2.5,<3
+
+# Optional process-aware continuation helpers for long CPU training.
+psutil>=5.9,<8

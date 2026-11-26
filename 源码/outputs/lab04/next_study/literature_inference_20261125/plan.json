@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "kind": "validation_only_literature_study",
+  "seed": 20261130,
+  "test_accessed": false,
+  "external_reference": {
+    "source": "https://github.com/Sha-Lab/FEAT",
+    "url": "https://drive.usercontent.google.com/download?id=1ixqw1l9XVxl3lh1m5VXkctw6JssahGbQ&export=download&confirm=t",
+    "bytes": 56316902,
+    "sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "kind": "external research checkpoint; not our training",
+    "declared_training": "miniImageNet train64; official train/val/test CSV IDs exactly match local lists",
+    "not_proof": "A published checkpoint cannot independently prove its entire original training process; treat as external reference."
+  },
+  "inputs": {
+    ".local\\lab04-continuation-validation-20261125\\train_views.npz": "2f7bc59a4413f0191e9212fd60e40c52e7e573712ffae51e2f7c3448272c07b8",
+    ".local\\lab04-continuation-validation-20261125\\train_views.json": "d00fd25b5fb607f1abc40bdff08be16d972cc65793257d2fcd97cfcf32da9ab2",
+    ".local\\lab04-continuation-validation-20261125\\val_views.npz": "e6a1de2dcf1274bdf5b64af56f505f039bbc06422082ee553d78c975ec9fa228",
+    ".local\\lab04-continuation-validation-20261125\\val_views.json": "271890f3a90dc3d1840dc06b736d3cfeabcd037b5199ee994abf0530a71326fc",
+    ".local\\lab04-reference-feat\\train_features.npz": "119ce2574bb4e937d9d33b749a5afa035523aaa66ffb593dee0fb30e76630e5b",
+    ".local\\lab04-reference-feat\\val_features.npz": "077f6f7c048e31a4eda2f627c399fdabd1b359cad28250c4ec9e33a50b585b70",
+    ".local\\lab04-reference-feat\\provenance.json": "13257ff82e358fbafcc045bb853056fccf96019c2bf7a37f71848ea3d12bfc48",
+    ".local\\lab04-reference-feat\\feat-1-shot.pth": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "outputs\\lab04\\continued.pt": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "outputs\\lab04\\continued_configuration.json": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900",
+    "outputs\\lab04\\continued_transform.npz": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+  },
+  "source_hashes": {
+    "study_literature.py": "1e170d1bb45b7434cd4d3f56ba43d3e0f16691be9f358eb26b135a84970632a6",
+    "literature_methods.py": "0d319871fca735822e6911a0ad5501727bd3dc70ba955d95336af35615731238",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "tasks_content_sha256": "4f5de68946664cfcd23f9c95547cf8036845e25a55d8c01d7706d4961e7e7aff",
+  "candidates": [
+    {
+      "id": "map_whitened",
+      "algorithm": "map",
+      "space": "whitened",
+      "task_center": false,
+      "signed_power": null
+    },
+    {
+      "id": "map_taskcenter_whitened",
+      "algorithm": "map",
+      "space": "whitened",
+      "task_center": true,
+      "signed_power": null
+    },
+    {
+      "id": "ptmap_signed_taskcenter",
+      "algorithm": "map",
+      "space": "raw",
+      "task_center": true,
+      "signed_power": 0.5
+    },
+    {
+      "id": "tim_whitened",
+      "algorithm": "tim",
+      "space": "whitened",
+      "task_center": false,
+      "signed_power": null
+    },
+    {
+      "id": "tim_taskcenter_whitened",
+      "algorithm": "tim",
+      "space": "whitened",
+      "task_center": true,
+      "signed_power": null
+    }
+  ],
+  "map_config": {
+    "inverse_temperature": 10.0,
+    "learning_rate": 0.2,
+    "steps": 20,
+    "sinkhorn_steps": 300,
+    "sinkhorn_tolerance": 1e-07
+  },
+  "tim_config": {
+    "temperature": 15.0,
+    "learning_rate": 0.0001,
+    "steps": 1000,
+    "support_weight": 0.1,
+    "marginal_weight": 1.0,
+    "conditional_weight": 0.1
+  },
+  "search_episodes": 160,
+  "confirmation_episodes": 600,
+  "diagnostic_episodes": 600,
+  "diagnostic_methods": [
+    "continued_published",
+    "student_centered_proto",
+    "teacher_centered_proto",
+    "student_centered_graph",
+    "teacher_centered_graph",
+    "student_ptmap",
+    "teacher_ptmap"
+  ],
+  "shortlist": 2,
+  "minimum_gain": 0.01,
+  "selection_rule": "Per shot: top 2 search means; select maximal confirmation paired lower 95% bound, ID as tie-break. Eligible only if both paired lower bounds >0 and both means >=1 percentage point. Never auto-test/publish.",
+  "limitations": [
+    "Validation images/classes have already been reused by earlier studies; not untouched data.",
+    "Search/confirmation image pools are disjoint, but share 16 classes; confirmation participates in selection.",
+    "Intervals are pointwise paired episode intervals, conditional on reused classes, not multiplicity-corrected or class-population intervals.",
+    "External FEAT encoder checkpoint is author-provided, not locally trained; caches are inherited and fingerprinted here.",
+    "Capacity probe jointly changes capacity, normalization and original training; it is not a capacity-only causal ablation.",
+    "TIM promotes uniform marginal entropy; MAP and published graph assume balanced queries.",
+    "Published continued transform uses 38400 train images; diagnostic matched-center heads use identical 6400 train IDs for both models."
+  ],
+  "registered_utc": "2026-11-25T07:31:56.216814+00:00"
+}

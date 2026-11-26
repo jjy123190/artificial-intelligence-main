@@ -1,0 +1,116 @@
+{
+  "generated_utc": "2026-11-25T04:50:15.340798+00:00",
+  "artifact_revision": "8cb5c4aec6188145877e4be273beac8fc861f5cfc5223ec8e024f086a19e4c88",
+  "paired_module_differences": {
+    "full/no_alignment_full/1": {
+      "mean": 1.3877787807814457e-19,
+      "ci95": 0.0002956546319796016,
+      "episodes": 600
+    },
+    "full/no_alignment_full/5": {
+      "mean": -1.8503717077085944e-19,
+      "ci95": 0.0002222759348924231,
+      "episodes": 600
+    },
+    "mean_only/transform_only/1": {
+      "mean": 0.001177777777777777,
+      "ci95": 0.0010961592638300205,
+      "episodes": 600
+    },
+    "mean_only/transform_only/5": {
+      "mean": 0.0012000000000000003,
+      "ci95": 0.0008329817322441086,
+      "episodes": 600
+    },
+    "mean_variance/mean_only/1": {
+      "mean": 0.00015555555555555526,
+      "ci95": 0.0022503378444004647,
+      "episodes": 600
+    },
+    "mean_variance/mean_only/5": {
+      "mean": -0.0010666666666666648,
+      "ci95": 0.0013078731584532993,
+      "episodes": 600
+    },
+    "full/mean_variance/1": {
+      "mean": 0.038844444444444445,
+      "ci95": 0.005293408679446455,
+      "episodes": 600
+    },
+    "full/mean_variance/5": {
+      "mean": 0.024177777777777777,
+      "ci95": 0.003113417817458779,
+      "episodes": 600
+    },
+    "full/prototype_only/1": {
+      "mean": 0.002022222222222223,
+      "ci95": 0.0028701874232956092,
+      "episodes": 600
+    },
+    "full/prototype_only/5": {
+      "mean": 0.0012222222222222233,
+      "ci95": 0.0012080213233350923,
+      "episodes": 600
+    },
+    "full/unbalanced_full/1": {
+      "mean": 0.017466666666666665,
+      "ci95": 0.004854254793166777,
+      "episodes": 600
+    },
+    "full/unbalanced_full/5": {
+      "mean": 0.012777777777777777,
+      "ci95": 0.002905967552550444,
+      "episodes": 600
+    }
+  },
+  "sources": {
+    "aligned.pt": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+    "aligned_prior.npz": "ea3cc68af1fe6fc538d8e9d2e0b34f70da9b7b135616c4226c2ea236d47a4251",
+    "baseline.pt": "e4c4a69b618e8f922a0058b147a5a92aabb160fa9cbd9a415c6bcc3ad3ffb3e3",
+    "baseline_prior.npz": "f60755a12382f4e028f1a645a55012ccb299ce8248bd6940a6fa1182c58f515b",
+    "calibration_config.json": "560c33406a685c8b5f765d94ad3add098c07112640057dbcb30e9069ef798fbb",
+    "dataset_manifest.json": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+    "demo_pool.npz": "01fba0cf2f729e384b7ea58e1e7d7d2d52c237d848b632c10c927c23aa05a740",
+    "edge_benchmark.json": "4709ef34e66af7ee7c10440d543d16c1f87ef4555e9a742a9bb58806e4848142",
+    "episodes.json": "a0d2f338d7e3f7346b9b43deaa87872c6c2db2e3b6f628b45dcee05d58b4f600",
+    "evaluation_plan.json": "a67fa4fd8d47526343fbe8b0ef4e7603b30183cb3152bc40cd8d8e5ac9a864ac",
+    "graph_configuration.json": "3dd8378b2d112ca02a7ecbe4ecd9f02747d9b962fc832960190d50c1bc270efa",
+    "graph_episodes.json": "887cb3d4dcd074da2ac879bfe8969c53e39f91087db523056e9ba87cf6c5c888",
+    "graph_lock.json": "8e3759a8f915e97e4f5a74bc2af6e7c39c1774546da9e337a756d56c23592495",
+    "graph_results.json": "635ecb65a8f44647cf908f340f0069ba3c5ad5d09169da32a637e88861168d29",
+    "graph_transform.npz": "a07d971e7c6f6ad93e4bdab59d65cac2ac8208ae56f2bba17fcac6d39a57c1b3",
+    "incremental_timing.json": "44efa7b50fc636282e71252803a0c0af77bb091cf35bd9321a89f3ae9662f8ce",
+    "maml.pt": "973953ff276361af1cebe6d84101c83ccef3d510da1f885a4581cc7b2a763410",
+    "maml_training.json": "5532153898d22c55aa63353c96b1bd7d7eca924571d7dcbba1b773306f5b95d0",
+    "multiview_configuration.json": "e9f1add62940bcbeeac4b504cf2391b94783e3a73cdefd36fe0c50b6141f8c6c",
+    "multiview_episodes.json": "070c617781b20e74a052b5c5b443a2494d7ef7a9fcf0f993657e591b43d7bc12",
+    "multiview_results.json": "4b9c81e403a4e2df352e543e09929afdf496da5a7338c8de047dc897db192cef",
+    "multiview_transform.npz": "ab3adb379bebaf4d1009a91c9a697ae6d28a8f05b09e48ff465a8fdc25dba461",
+    "protocol.json": "f2be3ca9d432435c1568d5cfa0a40899fb246fdcb3c4d6bd7e93ae3bbe630c5d",
+    "reliability.json": "ffec00717883aa8bbfc7333b507b0e3892e6f6bc37c21a6dce49137b54d92f7d",
+    "results.json": "62699c95653a492f2119137c7fc70a445077dc0192feb908650a9e01987805e8",
+    "training.json": "0a859ec48f8f6bb19bffe0e9f5c84a2d3d0be4f3377ca3d0ff322db6112badfa",
+    "training_data.json": "08380e39072f5e30c4dab13a64534b8e9f1e290319c6623a0fc37b49ccbab472",
+    "training_plan.json": "43a75b45567019a60807b46bfdb2d92ca363f69b3beb1e3306884aee2e40ff1b",
+    "v2_calibration_locked.json": "9e4b898ae068d89fb79d227fe3f264a9bb45b93bcca24b4ec77ea3e476d19ed9",
+    "v2_validation_tuning.json": "34568ea1d4fa272340749acf62b3ac254cdad6bb0f195d119a27386342da866a",
+    "validation_tuning.json": "590df3c14ccc8834b3332fb8d9c4d7779e9b2345b3907a7675d28ad13dfaac3d",
+    "warm.pt": "bd8c8a34c4805a2a672d15a53ed90f028d224e93dcd30005958edf39ac07a092",
+    "wide.pt": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+    "wideview_configuration.json": "755ddde931f900f1bad087e075526aa1daeefaec943f832e338883d280b713c0",
+    "wideview_episodes.json": "a7002734790b5beb5c0a81a2c4490496f79eb1e9aac806370a247ad09554ea75",
+    "wideview_plan.json": "9c2c50c48968a60f2cb3fc7108de5917057e0e6e6a0af0ab4df815a2cfa407f8",
+    "wideview_results.json": "f778ea5779a2352cd625904594891c0a9cca15628db568755f0429bee4fdee92",
+    "wideview_selection.json": "eee24eccc8849d64c5b664fd6b929397abbd7b9af770c26fc9f906ed7e4051bd",
+    "wideview_transform.npz": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76",
+    "wide_configuration.json": "b8e460c0052ada42390934e4a2dfef81bb55e37d6931de6c6a62242f3a8e2ed9",
+    "wide_episodes.json": "8451ac117aab5ac40a3ff5eb702e521f6663124f58531fa639bb71debbf5be30",
+    "wide_results.json": "8869b6a91d99a162e5662fd2d2a1978f1cba14ba1d3475a7a346e9ed8d37dfb7",
+    "wide_training.json": "ec92d3002f0d9137f1f6bcd0f6c711a13b81d97f493a6d5ffdfe508ae33b6828",
+    "wide_training_plan.json": "aecc41392c089f8629a1d98e5d58a22f95ae8706cd89b9f7ae2e39fea50ed167",
+    "wide_transform.npz": "891c547e266d89d0982355b2bd07294d8c99233dd28ff63a2f24d05b8d42a4a0",
+    "wide_validation.json": "9cc8e05bdcd2772788b821d2c43b995f8d03a8f8c3139a540d9c369f7ca8dafe"
+  },
+  "report_sha256": "275fff12010a00f6e2b208177673d56af1a05d51810c297eea21a64bf40b8a65",
+  "unpublished_candidates_included": false
+}

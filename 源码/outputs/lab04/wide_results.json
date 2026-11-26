@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-11-24T10:17:56.354269+00:00",
+  "candidate_checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "model": {
+    "name": "ResNet12-Metric-Wide",
+    "widths": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "parameters": 509856
+  },
+  "training": {
+    "selected_epoch": 24,
+    "epochs_completed": 24,
+    "warm_start": "Function-preserving widening from self-trained v2 baseline; no external weights"
+  },
+  "rows": [
+    {
+      "method": "wide",
+      "shots": 1,
+      "accuracy": 0.5515555555555556,
+      "ci95": 0.011381687720870748,
+      "episodes": 600,
+      "ci95_low": 0.5401738678346848,
+      "ci95_high": 0.5629372432764264,
+      "raw_accuracy": 0.4845777777777778,
+      "mean_episode_seconds": 0.022907410832704044,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.09284444444444445,
+      "paired_ci95": 0.008194487514638641,
+      "paired_vs_full": 0.03744444444444445,
+      "paired_vs_full_ci95": 0.007621598935747905,
+      "paired_vs_graph": 0.021222222222222222,
+      "paired_vs_graph_ci95": 0.006613762646552796,
+      "paired_vs_multiview": 0.006688888888888887,
+      "paired_vs_multiview_ci95": 0.006710603883976763
+    },
+    {
+      "method": "wide",
+      "shots": 5,
+      "accuracy": 0.6762222222222223,
+      "ci95": 0.007914040620667025,
+      "episodes": 600,
+      "ci95_low": 0.6683081816015553,
+      "ci95_high": 0.6841362628428893,
+      "raw_accuracy": 0.6354666666666666,
+      "mean_episode_seconds": 0.019414835169057672,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.05926666666666667,
+      "paired_ci95": 0.005010259514229358,
+      "paired_vs_full": 0.0312,
+      "paired_vs_full_ci95": 0.004326073591402959,
+      "paired_vs_graph": 0.007111111111111112,
+      "paired_vs_graph_ci95": 0.0036822468961335278,
+      "paired_vs_multiview": 0.0046,
+      "paired_vs_multiview_ci95": 0.003863133760817309
+    }
+  ],
+  "selection_lock_sha256": "b8e460c0052ada42390934e4a2dfef81bb55e37d6931de6c6a62242f3a8e2ed9",
+  "evaluation_plan": {
+    "status": "locked",
+    "selection_lock_sha256": "b8e460c0052ada42390934e4a2dfef81bb55e37d6931de6c6a62242f3a8e2ed9",
+    "seed": 20261124,
+    "episodes_per_shot": 600,
+    "pool_per_class": 600,
+    "baseline_checkpoint_sha256": "e4c4a69b618e8f922a0058b147a5a92aabb160fa9cbd9a415c6bcc3ad3ffb3e3",
+    "candidate_checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+    "validation_reference_sha256": "9cc8e05bdcd2772788b821d2c43b995f8d03a8f8c3139a540d9c369f7ca8dafe",
+    "source_sha256": {
+      "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+      "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+      "evaluate_wide.py": "3c717e90896e96274f759e31f85ab04cc6eda5c35fffe0dde6f8cfd98f906bb7"
+    }
+  },
+  "files": {
+    "wide.pt": {
+      "path": "wide.pt",
+      "sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569"
+    },
+    "wide_transform.npz": {
+      "path": "wide_transform.npz",
+      "sha256": "891c547e266d89d0982355b2bd07294d8c99233dd28ff63a2f24d05b8d42a4a0"
+    },
+    "wide_configuration.json": {
+      "path": "wide_configuration.json",
+      "sha256": "b8e460c0052ada42390934e4a2dfef81bb55e37d6931de6c6a62242f3a8e2ed9"
+    },
+    "wide_episodes.json": {
+      "path": "wide_episodes.json",
+      "sha256": "8451ac117aab5ac40a3ff5eb702e521f6663124f58531fa639bb71debbf5be30"
+    },
+    "wide_validation.json": {
+      "path": "wide_validation.json",
+      "sha256": "9cc8e05bdcd2772788b821d2c43b995f8d03a8f8c3139a540d9c369f7ca8dafe"
+    },
+    "wide_training_plan.json": {
+      "path": "wide_training_plan.json",
+      "sha256": "aecc41392c089f8629a1d98e5d58a22f95ae8706cd89b9f7ae2e39fea50ed167"
+    },
+    "wide_training.json": {
+      "path": "wide_training.json",
+      "sha256": "ec92d3002f0d9137f1f6bcd0f6c711a13b81d97f493a6d5ffdfe508ae33b6828"
+    }
+  },
+  "limitations": [
+    "Separate larger-backbone and extra-training-budget study, not a calibration-only comparison.",
+    "One training seed; fixed public benchmark; validation-based selection.",
+    "Uses jointly unlabelled balanced query batches."
+  ],
+  "publication_kind": "Separate larger-backbone/training-budget comparison; not matched v2 ablation"
+}

@@ -1,20 +1,26 @@
 {
   "1": {
+    "mean_weight": 0.1,
+    "variance_prior_strength": 4.0,
+    "neighbors": 3,
+    "prototype_weight": 0.15,
+    "prototype_steps": 4,
+    "confidence_threshold": 0.0,
+    "temperature": 0.15,
+    "variance_blend": 0.4,
+    "balanced_queries": true,
+    "normalize_prototypes": false
+  },
+  "5": {
     "mean_weight": 0.05,
     "variance_prior_strength": 4.0,
     "neighbors": 3,
-    "prototype_weight": 0.6,
-    "prototype_steps": 2,
-    "confidence_threshold": 0.25,
-    "temperature": 0.5
-  },
-  "5": {
-    "mean_weight": 0.15,
-    "variance_prior_strength": 4.0,
-    "neighbors": 3,
-    "prototype_weight": 0.1,
-    "prototype_steps": 2,
-    "confidence_threshold": 0.25,
-    "temperature": 0.5
+    "prototype_weight": 0.15,
+    "prototype_steps": 4,
+    "confidence_threshold": 0.0,
+    "temperature": 0.15,
+    "variance_blend": 0.1,
+    "balanced_queries": true,
+    "normalize_prototypes": false
   }
 }

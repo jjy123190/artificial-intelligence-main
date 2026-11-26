@@ -1,0 +1,41 @@
+{
+  "status": "locked",
+  "test_accessed": false,
+  "locked_utc": "2026-11-25T03:19:21.018259+00:00",
+  "base_weights_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "selected": {
+    "1": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.0,
+        "balanced": true
+      }
+    }
+  },
+  "selection_sha256": "eee24eccc8849d64c5b664fd6b929397abbd7b9af770c26fc9f906ed7e4051bd",
+  "plan_sha256": "9c2c50c48968a60f2cb3fc7108de5917057e0e6e6a0af0ab4df815a2cfa407f8",
+  "transform_sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76"
+}

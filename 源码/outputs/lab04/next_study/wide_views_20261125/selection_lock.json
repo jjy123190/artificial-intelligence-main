@@ -1,0 +1,9 @@
+{
+  "status": "locked",
+  "test_accessed": false,
+  "plan_sha256": "9c2c50c48968a60f2cb3fc7108de5917057e0e6e6a0af0ab4df815a2cfa407f8",
+  "selection_sha256": "eee24eccc8849d64c5b664fd6b929397abbd7b9af770c26fc9f906ed7e4051bd",
+  "transform_sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76",
+  "checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "locked_utc": "2026-11-25T03:19:21.018259+00:00"
+}

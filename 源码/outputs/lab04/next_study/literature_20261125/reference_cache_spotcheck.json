@@ -1,0 +1,49 @@
+{
+  "kind": "inherited_external_feature_cache_spotcheck",
+  "test_accessed": false,
+  "sample_rule": "8 evenly spaced positions per train/val cache; fixed before computation; no accuracy evaluated",
+  "checkpoint_sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+  "adapter_sha256": "15c2806f087b436c0af42b3e8cc9dbb340860f83f6b72058785e605f8604db15",
+  "cache_hashes": {
+    "train": "119ce2574bb4e937d9d33b749a5afa035523aaa66ffb593dee0fb30e76630e5b",
+    "val": "077f6f7c048e31a4eda2f627c399fdabd1b359cad28250c4ec9e33a50b585b70"
+  },
+  "checks": [
+    {
+      "split": "train",
+      "fixed_evenly_spaced_ids": [
+        "train/n01532829/n0153282900000006.jpg",
+        "train/n02091831/n0209183100000196.jpg",
+        "train/n02165456/n0216545600000284.jpg",
+        "train/n03047690/n0304769000000535.jpg",
+        "train/n03676483/n0367648300000665.jpg",
+        "train/n04251144/n0425114400000860.jpg",
+        "train/n04596742/n0459674200001138.jpg",
+        "train/n13133613/n1313361300001297.jpg"
+      ],
+      "max_absolute_delta": 4.76837158203125e-07,
+      "max_feature_magnitude": 2.8439536094665527,
+      "allclose_atol_5e_5_rtol_1e_5": true
+    },
+    {
+      "split": "val",
+      "fixed_evenly_spaced_ids": [
+        "val/n01855672/n0185567200000004.jpg",
+        "val/n02114548/n0211454800000394.jpg",
+        "val/n02174001/n0217400100000705.jpg",
+        "val/n02971356/n0297135600001123.jpg",
+        "val/n03417042/n0341704200000148.jpg",
+        "val/n03584254/n0358425400000590.jpg",
+        "val/n03773504/n0377350400000900.jpg",
+        "val/n09256479/n0925647900001291.jpg"
+      ],
+      "max_absolute_delta": 3.5762786865234375e-07,
+      "max_feature_magnitude": 3.447604179382324,
+      "allclose_atol_5e_5_rtol_1e_5": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Spotcheck validates only 16 cache rows, not a complete recalc or independent proof of original teacher training."
+  ]
+}

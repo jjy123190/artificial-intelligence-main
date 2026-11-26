@@ -1,0 +1,34 @@
+{
+  "artifact_revision": "8cb5c4aec6188145877e4be273beac8fc861f5cfc5223ec8e024f086a19e4c88",
+  "slide_titles": [
+    "少量标注，如何可靠识别新类别？",
+    "把表征问题和统计问题分开",
+    "同一份考题，才有配对比较",
+    "三种学习方式，不偷换决策规则",
+    "收缩统计量，但不假装知道真实分布",
+    "把均值、区间与信息条件一起报告",
+    "同一较宽权重，双视图带来小幅真实改善",
+    "模块不是越多越好，负结果必须可见",
+    "可靠性与端侧代价，不只一个平均分",
+    "从误判到证据，一条可检查的操作路径",
+    "实验可运行，不等于所有外部动作已完成",
+    "可复现，是结论可信的底线"
+  ],
+  "slides": 12,
+  "slide_sha256": "87af6b68c547c3307aa54193583a71c6d5893e0721c68d72b4db55ae4d1234a4",
+  "source_images": {
+    "ablations.png": "de3615c990e6c9d560529bcb539c5f3bb3bcc9d84c3605b16308acc27689ab7e",
+    "boundaries.png": "94fd7ba3d84379a1ba07561c18d1e60fd6c714ca6ed9e920dffbb470daa12c3f",
+    "deployment.png": "770b278d02df8b44f2341ff5d3b214bedeb5b35b5e4241163809ab1af9e61f85",
+    "error-analysis.png": "024bc779643dd461e159494043bfe333339111043302e8574c3c9b62b20f3025",
+    "features.png": "243bbe3c8a9d8d7c9fa281835ecf0d47858fcd7414925827296408debffebf50",
+    "five-shot.png": "372cd47fed01987183b81473f6b8fce6cb50cc5419eac758ef6750a254ea0c72",
+    "live-result.png": "9c08fe4ccb9b41c2a26e5f564e043e0e5c1f1f562cd0d2293e59d6f2f835f275",
+    "overview.png": "c917968aab5b4f3fb4180114a7e93b68ee4255269e5e926a2d6bbca2d64b2502",
+    "performance.png": "2ec3c1e0f8635315e674bab56673adff45062be0a33ddf48be553a8ff57788a6",
+    "reliability.png": "55c683301731fe2857c435602ef9ed69ca1518736704c1f9d03a3b82f4de5b48",
+    "requirements.png": "d7985e1840babc4f72bf23e78f775ffa211c5c745903fd503a7d0ce203dec629",
+    "setup.png": "b15751f8e96268a40bb7227c619aa8bd56a25b663a3a6beb96190f9d5231d3cd"
+  },
+  "unpublished_candidates_included": false
+}

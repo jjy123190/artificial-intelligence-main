@@ -1,0 +1,40 @@
+{
+  "status": "locked",
+  "test_accessed": false,
+  "locked_utc": "2026-11-25T06:28:16.159000+00:00",
+  "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "transform_sha256": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839",
+  "selected": {
+    "1": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.0,
+        "balanced": true
+      }
+    }
+  },
+  "selection_lock_sha256": "a468b5bd2f2425265a1ede1b7d21a24594a505734141d46cf511b1600a6927d9"
+}

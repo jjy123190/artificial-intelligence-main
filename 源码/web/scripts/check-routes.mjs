@@ -68,6 +68,26 @@ const cases = [
     ["governance", "modeling"],
   ].map(([page, moduleId]) => ["#/" + page, lab2(page, moduleId)]),
 ];
+// Retired lab-four entries have no navigation slot, but old links still work.
+assert.deepEqual(modules.lab04, [
+  "inference",
+  "protocol",
+  "evaluation",
+  "ablations",
+  "reliability",
+  "deployment",
+  "history",
+]);
+for (const retired of ["requirements", "materials"]) {
+  assert.deepEqual(parseRoute("#/labs/lab04/" + retired), {
+    page: "task",
+    labId: "lab04",
+    moduleId: "inference",
+  });
+  assert.deepEqual(parseRoute("#/labs/lab04/" + retired + "/extra"), {
+    page: "notFound",
+  });
+}
 const invalid = [
   "#/materials",
   "#/labs/lab01/deliverables",

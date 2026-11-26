@@ -1,0 +1,57 @@
+{
+  "status": "registered",
+  "seed": 20261129,
+  "episodes_per_shot": 600,
+  "test_accessed": false,
+  "candidate_training_plan_sha256": "b6185424ed116c9cca0e24c0c22a022735a58b788bfdc620dc967d9a9b01da1d",
+  "reference_weights_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "reference_configuration_sha256": "755ddde931f900f1bad087e075526aa1daeefaec943f832e338883d280b713c0",
+  "reference_transform_sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76",
+  "reference_val_cache_sha256": "b4cb73a98c160934b1ef7e7e18358bd68ad51bbfad6ba05fc159b809a7cec1ac",
+  "reference_val_stamp_sha256": "4b2f68fb9fb6604c9daed4a3a474460f126d9735cd603021df9e8b2b74f358df",
+  "fixed_configurations": {
+    "1": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "views": "mean",
+      "exponent": 0.5,
+      "residual_mix": 0.5,
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.0,
+        "balanced": true
+      }
+    }
+  },
+  "source_hashes": {
+    "validate_continuation.py": "51d63fdcab193c420ee931f526ab82ce1fad0b6008226e48653d803d67505710",
+    "train_continuation.py": "c162f9b12405fab7753f24f55f624fca1b4c538b0c46b2bfdd748befb8681d02",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "refine.py": "2f118e5f78914b7959750bdb071fe30832f82b174034f9e54b88d205d87d3c30"
+  },
+  "rule": "No hyperparameter selection. Compare selected continued checkpoint vs frozen wideview on 600 identical validation tasks/shot; test eligible only if paired lower 95% bound > 0 for both shots.",
+  "limitation": "Same repeatedly used validation classes; checkpoint selection has used a subset of these classes/images. This is validation, not independent test."
+}

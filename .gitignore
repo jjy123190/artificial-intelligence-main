@@ -21,3 +21,20 @@ node_modules/
 Thumbs.db
 .DS_Store
 *.tmp
+
+# Regenerable submission archives, local validation output and setup logs.
+**/outputs/submissions/
+**/outputs/qa/
+**/.local_prepare.log
+
+# Third-party reading caches are local; keep source metadata and original studies.
+**/outputs/lab04/next_study/literature_*/*.pdf
+**/outputs/lab04/next_study/literature_*/*.html
+**/outputs/lab04/next_study/literature_*/*.txt
+**/outputs/lab04/next_study/literature_*/*.md
+!**/outputs/lab04/next_study/literature_*/README.md
+**/outputs/lab04/next_study/requirement_accuracy_*/*.pdf
+**/outputs/lab04/next_study/requirement_accuracy_*/*.html
+**/outputs/lab04/next_study/requirement_accuracy_*/*.txt
+**/outputs/lab04/next_study/requirement_accuracy_*/*.md
+!**/outputs/lab04/next_study/requirement_accuracy_*/README.md

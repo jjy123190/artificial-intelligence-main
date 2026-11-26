@@ -1,4 +1,5 @@
 """Web integration boundaries independent of optional ML packages and weights."""
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -47,6 +48,48 @@ class LabFourApiTests(unittest.TestCase):
                 self.assertEqual(client.post("/api/labs/lab04/run", json={}).status_code, 429)
             finally:
                 service._slot.release()
+
+
+class LabFourSnapshotEvidenceTests(unittest.TestCase):
+    def test_snapshot_keeps_paired_differences_and_revision(self):
+        directory = Path(__file__).resolve().parents[1] / "outputs" / "lab04"
+        service = LabFourService(directory)
+        snapshot = service.snapshot()
+        measured = json.loads((directory / "results.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(snapshot["provenance"]["artifact_revision"]), 64)
+        for row in snapshot["comparisons"]:
+            entries = measured["rows"]
+            if row["method"] in ("graph", "multiview", "wide", "wideview", "continued"):
+                entries = json.loads((directory / f"{row['method']}_results.json").read_text(encoding="utf-8"))["rows"]
+            source = next(r for r in entries if r["method"] == row["method"] and r["shots"] == row["shot"])
+            self.assertEqual(row["paired_delta"], source["paired_delta"])
+            self.assertEqual(row["paired_ci95"], source["paired_ci95"])
+            self.assertEqual(row["episodes"], source["episodes"])
+
+    def test_invalid_metric_is_rejected_not_rendered_as_zero(self):
+        directory = Path(__file__).resolve().parents[1] / "outputs" / "lab04"
+        measured = json.loads((directory / "results.json").read_text(encoding="utf-8"))
+        measured["rows"][0]["accuracy"] = float("nan")
+        from backend.service import WebError
+        with tempfile.TemporaryDirectory() as temp:
+            (Path(temp) / "results.json").write_text(json.dumps(measured), encoding="utf-8")
+            with self.assertRaises(WebError):
+                LabFourService(Path(temp)).snapshot()
+
+
+    def test_web_projection_is_finite_and_posterior_to_prediction(self):
+        import importlib.util
+        if importlib.util.find_spec("torch") is None:
+            self.skipTest("Optional torch unavailable")
+        directory = Path(__file__).resolve().parents[1] / "outputs" / "lab04"
+        service = LabFourService(directory)
+        result = service.run({"method":"calibrated","shots":1,"seed":20261124,"calibration":"graph"})
+        self.assertTrue(result["projection"]["computed_after_prediction"])
+        self.assertTrue(result["projection"]["isotropic"])
+        self.assertEqual(result["projection"]["feature_dimensions"],64)
+        self.assertTrue(0 <= sum(result["projection"]["explained_variance"]) <= 1.000001)
+        for point in result["points"]:
+            self.assertEqual(point["before"],point["after"])
 
 
 if __name__ == "__main__":

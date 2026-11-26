@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "method": "graph",
+      "shots": 1,
+      "accuracy": 0.5303333333333333,
+      "ci95": 0.011648471539666154,
+      "episodes": 600,
+      "paired_delta": 0.07162222222222223,
+      "paired_ci95": 0.007853333862081422,
+      "paired_vs_full": 0.01622222222222222,
+      "paired_vs_full_ci95": 0.0064306298410433775,
+      "timing_scope": "not_recorded",
+      "transductive": true,
+      "balanced_queries": true
+    },
+    {
+      "method": "graph",
+      "shots": 5,
+      "accuracy": 0.6691111111111111,
+      "ci95": 0.007996925339201834,
+      "episodes": 600,
+      "paired_delta": 0.05215555555555556,
+      "paired_ci95": 0.0049725952552255115,
+      "paired_vs_full": 0.02408888888888889,
+      "paired_vs_full_ci95": 0.004214137933156995,
+      "timing_scope": "not_recorded",
+      "transductive": true,
+      "balanced_queries": true
+    }
+  ],
+  "base_weights_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "target_95_reached": false,
+  "validated_files": {
+    "graph_transform.npz": {
+      "path": "graph_transform.npz",
+      "sha256": "a07d971e7c6f6ad93e4bdab59d65cac2ac8208ae56f2bba17fcac6d39a57c1b3"
+    },
+    "graph_configuration.json": {
+      "path": "graph_configuration.json",
+      "sha256": "3dd8378b2d112ca02a7ecbe4ecd9f02747d9b962fc832960190d50c1bc270efa"
+    },
+    "graph_episodes.json": {
+      "path": "graph_episodes.json",
+      "sha256": "887cb3d4dcd074da2ac879bfe8969c53e39f91087db523056e9ba87cf6c5c888"
+    },
+    "graph_lock.json": {
+      "path": "graph_lock.json",
+      "sha256": "8e3759a8f915e97e4f5a74bc2af6e7c39c1774546da9e337a756d56c23592495"
+    }
+  },
+  "limitations": [
+    "Adds graph propagation and training-derived whitening on the same v2 encoder.",
+    "Balanced transduction assumes equal query class mass.",
+    "Not 95%; wider backbone remains a separate training candidate."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "selected": {
+    "1": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    }
+  },
+  "weights_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "validation_sha256": "36f43bb889159f1ff361767ff63079102874532c510a3d13b31a46d4f80e9cb5",
+  "episodes": 600,
+  "seed": 20261124,
+  "test_accessed": false,
+  "protocol": "same full test pool and seeded tasks as v2",
+  "code_sha256": {
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "evaluate_graph_candidate.py": "ce5e6ae9e44b376a468a363d196c03b4e716f3764f9bfe9cf27fa0990c515f92"
+  }
+}

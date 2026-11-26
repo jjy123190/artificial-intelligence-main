@@ -1,0 +1,14 @@
+{
+  "kind": "literature_research_supplement_not_model_release",
+  "test_accessed": false,
+  "published_model_changed": false,
+  "published_revision": "6b6de64782903a07d8316daf4c8475b6a530dfa38a32cf8490370ea49c670291",
+  "files": {
+    "LITERATURE_IMPROVEMENT_PLAN.md": "1b9cd802cc06b84aaf753cb194491c67e631b00a6be4bc0f14a06661baa809f0",
+    "LITERATURE_VALIDATION_RESULTS.md": "f358846b4d9036e17f43f52a9ce063fccf240b486f1209b6b4d485f4441d9d08",
+    "README.md": "57e1373da38e22faf915b0b00485def2fb40639787cfee6f8dcd89888007b5e6"
+  },
+  "actual_distillation_epochs": 0,
+  "sources_and_raw_evidence": "源码/outputs/lab04/next_study/",
+  "created_utc": "2026-11-25T08:14:57.137102+00:00"
+}

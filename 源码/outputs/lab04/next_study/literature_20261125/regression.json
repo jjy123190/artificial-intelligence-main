@@ -1,0 +1,26 @@
+{
+  "kind": "research_change_regression",
+  "status": "passed",
+  "publication_changed": false,
+  "artifact_revision": "6b6de64782903a07d8316daf4c8475b6a530dfa38a32cf8490370ea49c670291",
+  "published_continued_weights_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "project_tests": {
+    "count": 532,
+    "passed": true,
+    "seconds": 229.475
+  },
+  "lab04_specialist_tests": {
+    "count": 65,
+    "passed": true,
+    "seconds": 56.849
+  },
+  "cli_verify": {
+    "verified": true,
+    "core_episodes": 1200,
+    "extension_episodes": 6000
+  },
+  "frontend_modified": false,
+  "new_browser_acceptance_run": false,
+  "new_test_image_or_feature_evaluation": false,
+  "note": "Tests and CLI only rechecked published evidence; no new formal test/accuracy selection. Source-only additions preserve web/model revision."
+}

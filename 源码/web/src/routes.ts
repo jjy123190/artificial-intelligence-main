@@ -24,7 +24,15 @@ export type Address = {
   moduleId?: string;
 };
 export const modules: Record<LabId, string[]> = {
-  lab04: ["inference", "protocol", "evaluation"],
+  lab04: [
+    "inference",
+    "protocol",
+    "evaluation",
+    "ablations",
+    "reliability",
+    "deployment",
+    "history",
+  ],
   lab03: ["search", "optimization", "assistant", "evaluation"],
   lab01: ["representation", "industry", "demo", "limitations"],
   lab02: ["modeling", "deterministic", "uncertain", "optimization", "hybrid"],
@@ -70,6 +78,14 @@ export function parseRoute(hash: string): Address {
     if (!Object.hasOwn(modules, labId)) return { page: "notFound" };
     if (parts.length === 2) return { page: "lab", labId };
     const moduleId = parts[2];
+    // Retired website entries: old bookmarks open the workbench, not a dead page.
+    // The reports themselves remain available as local project files.
+    if (
+      labId === "lab04" &&
+      parts.length === 3 &&
+      (moduleId === "requirements" || moduleId === "materials")
+    )
+      return { page: "task", labId, moduleId: "inference" };
     if (!modules[labId].includes(moduleId)) return { page: "notFound" };
     if (parts.length === 3) return { page: "task", labId, moduleId };
     if (labId !== "lab02") return { page: "notFound" };

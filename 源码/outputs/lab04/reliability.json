@@ -1,0 +1,452 @@
+{
+  "status": "complete",
+  "scope": "Post-test diagnostics of fixed multiview predictions; not used to choose thresholds or model parameters",
+  "generated_utc": "2026-11-24T08:49:29.680164+00:00",
+  "method": "multiview",
+  "reference": "graph",
+  "source_sha256": "070c617781b20e74a052b5c5b443a2494d7ef7a9fcf0f993657e591b43d7bc12",
+  "rows": [
+    {
+      "shots": 1,
+      "episodes": 600,
+      "query_occurrences": 45000,
+      "accuracy": 0.5448666666666667,
+      "brier_score": 0.5877487798100461,
+      "negative_log_likelihood": 1.1560236419187444,
+      "expected_calibration_error_10bins": 0.04315026578571333,
+      "score_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "occurrences": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "occurrences": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "occurrences": 2745,
+          "mean_score": 0.2760023793844872,
+          "accuracy": 0.277959927140255
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "occurrences": 10272,
+          "mean_score": 0.3525094431700566,
+          "accuracy": 0.37305295950155765
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "occurrences": 10379,
+          "mean_score": 0.4491277835978762,
+          "accuracy": 0.457558531650448
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "occurrences": 9435,
+          "mean_score": 0.5500093404376191,
+          "accuracy": 0.5779544250132486
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "occurrences": 7936,
+          "mean_score": 0.6466313330013044,
+          "accuracy": 0.7408014112903226
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "occurrences": 3421,
+          "mean_score": 0.7398074951391096,
+          "accuracy": 0.8921368021046477
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "occurrences": 739,
+          "mean_score": 0.8351467086112296,
+          "accuracy": 0.9715832205683356
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "occurrences": 73,
+          "mean_score": 0.9325753118551352,
+          "accuracy": 1.0
+        }
+      ],
+      "task_accuracy_quantiles": {
+        "0.05": 0.32,
+        "0.25": 0.4533333333333333,
+        "0.5": 0.5466666666666666,
+        "0.75": 0.64,
+        "0.95": 0.76
+      },
+      "paired_delta": 0.014533333333333337,
+      "paired_bootstrap95": [
+        0.009422222222222226,
+        0.019755555555555557
+      ],
+      "episode_wins": 328,
+      "episode_ties": 56,
+      "episode_losses": 216,
+      "class_recall": [
+        {
+          "wnid": "n04522168",
+          "occurrences": 2175,
+          "correct": 805,
+          "recall": 0.3701149425287356
+        },
+        {
+          "wnid": "n03272010",
+          "occurrences": 2190,
+          "correct": 853,
+          "recall": 0.38949771689497714
+        },
+        {
+          "wnid": "n03544143",
+          "occurrences": 2175,
+          "correct": 871,
+          "recall": 0.40045977011494255
+        },
+        {
+          "wnid": "n02443484",
+          "occurrences": 2280,
+          "correct": 977,
+          "recall": 0.42850877192982456
+        },
+        {
+          "wnid": "n03775546",
+          "occurrences": 2160,
+          "correct": 980,
+          "recall": 0.4537037037037037
+        },
+        {
+          "wnid": "n03146219",
+          "occurrences": 2400,
+          "correct": 1101,
+          "recall": 0.45875
+        },
+        {
+          "wnid": "n02110063",
+          "occurrences": 2085,
+          "correct": 1012,
+          "recall": 0.4853717026378897
+        },
+        {
+          "wnid": "n02110341",
+          "occurrences": 2325,
+          "correct": 1153,
+          "recall": 0.49591397849462365
+        },
+        {
+          "wnid": "n02219486",
+          "occurrences": 2100,
+          "correct": 1048,
+          "recall": 0.4990476190476191
+        },
+        {
+          "wnid": "n03127925",
+          "occurrences": 2235,
+          "correct": 1155,
+          "recall": 0.5167785234899329
+        },
+        {
+          "wnid": "n02099601",
+          "occurrences": 2430,
+          "correct": 1331,
+          "recall": 0.5477366255144033
+        },
+        {
+          "wnid": "n07613480",
+          "occurrences": 2280,
+          "correct": 1250,
+          "recall": 0.5482456140350878
+        },
+        {
+          "wnid": "n01930112",
+          "occurrences": 2355,
+          "correct": 1299,
+          "recall": 0.5515923566878981
+        },
+        {
+          "wnid": "n01981276",
+          "occurrences": 2400,
+          "correct": 1348,
+          "recall": 0.5616666666666666
+        },
+        {
+          "wnid": "n02129165",
+          "occurrences": 2340,
+          "correct": 1336,
+          "recall": 0.5709401709401709
+        },
+        {
+          "wnid": "n02116738",
+          "occurrences": 2340,
+          "correct": 1502,
+          "recall": 0.6418803418803419
+        },
+        {
+          "wnid": "n04418357",
+          "occurrences": 1980,
+          "correct": 1368,
+          "recall": 0.6909090909090909
+        },
+        {
+          "wnid": "n02871525",
+          "occurrences": 2250,
+          "correct": 1620,
+          "recall": 0.72
+        },
+        {
+          "wnid": "n04149813",
+          "occurrences": 2190,
+          "correct": 1593,
+          "recall": 0.7273972602739726
+        },
+        {
+          "wnid": "n04146614",
+          "occurrences": 2310,
+          "correct": 1917,
+          "recall": 0.8298701298701299
+        }
+      ]
+    },
+    {
+      "shots": 5,
+      "episodes": 600,
+      "query_occurrences": 45000,
+      "accuracy": 0.6716222222222222,
+      "brier_score": 0.4950920194321394,
+      "negative_log_likelihood": 0.9835183975974484,
+      "expected_calibration_error_10bins": 0.18943141378228667,
+      "score_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "occurrences": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "occurrences": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "occurrences": 3255,
+          "mean_score": 0.2759400528956182,
+          "accuracy": 0.34715821812596004
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "occurrences": 11654,
+          "mean_score": 0.35193500186009447,
+          "accuracy": 0.46653509524626735
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "occurrences": 11016,
+          "mean_score": 0.4477107238706741,
+          "accuracy": 0.6351670297748729
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "occurrences": 9096,
+          "mean_score": 0.5491838791194364,
+          "accuracy": 0.7967238346525946
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "occurrences": 6853,
+          "mean_score": 0.6461313274299875,
+          "accuracy": 0.9276229388588939
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "occurrences": 2761,
+          "mean_score": 0.7381747883939486,
+          "accuracy": 0.9757334299166969
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "occurrences": 347,
+          "mean_score": 0.8327612942700919,
+          "accuracy": 0.9884726224783862
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "occurrences": 18,
+          "mean_score": 0.9214639205257316,
+          "accuracy": 1.0
+        }
+      ],
+      "task_accuracy_quantiles": {
+        "0.05": 0.52,
+        "0.25": 0.6,
+        "0.5": 0.68,
+        "0.75": 0.7333333333333333,
+        "0.95": 0.8139999999999994
+      },
+      "paired_delta": 0.002511111111111113,
+      "paired_bootstrap95": [
+        -0.0007111111111111101,
+        0.005889444444444448
+      ],
+      "episode_wins": 275,
+      "episode_ties": 81,
+      "episode_losses": 244,
+      "class_recall": [
+        {
+          "wnid": "n03544143",
+          "occurrences": 2565,
+          "correct": 1335,
+          "recall": 0.52046783625731
+        },
+        {
+          "wnid": "n03272010",
+          "occurrences": 2220,
+          "correct": 1194,
+          "recall": 0.5378378378378378
+        },
+        {
+          "wnid": "n04522168",
+          "occurrences": 2460,
+          "correct": 1348,
+          "recall": 0.5479674796747968
+        },
+        {
+          "wnid": "n02443484",
+          "occurrences": 2205,
+          "correct": 1212,
+          "recall": 0.5496598639455782
+        },
+        {
+          "wnid": "n03146219",
+          "occurrences": 2250,
+          "correct": 1243,
+          "recall": 0.5524444444444444
+        },
+        {
+          "wnid": "n03775546",
+          "occurrences": 2385,
+          "correct": 1436,
+          "recall": 0.6020964360587002
+        },
+        {
+          "wnid": "n02110063",
+          "occurrences": 2325,
+          "correct": 1449,
+          "recall": 0.6232258064516129
+        },
+        {
+          "wnid": "n02110341",
+          "occurrences": 2145,
+          "correct": 1375,
+          "recall": 0.6410256410256411
+        },
+        {
+          "wnid": "n02219486",
+          "occurrences": 2235,
+          "correct": 1459,
+          "recall": 0.6527964205816554
+        },
+        {
+          "wnid": "n02099601",
+          "occurrences": 2145,
+          "correct": 1428,
+          "recall": 0.6657342657342658
+        },
+        {
+          "wnid": "n03127925",
+          "occurrences": 2250,
+          "correct": 1505,
+          "recall": 0.6688888888888889
+        },
+        {
+          "wnid": "n01930112",
+          "occurrences": 2220,
+          "correct": 1545,
+          "recall": 0.6959459459459459
+        },
+        {
+          "wnid": "n01981276",
+          "occurrences": 1980,
+          "correct": 1419,
+          "recall": 0.7166666666666667
+        },
+        {
+          "wnid": "n07613480",
+          "occurrences": 1980,
+          "correct": 1422,
+          "recall": 0.7181818181818181
+        },
+        {
+          "wnid": "n02129165",
+          "occurrences": 2325,
+          "correct": 1681,
+          "recall": 0.723010752688172
+        },
+        {
+          "wnid": "n02116738",
+          "occurrences": 2400,
+          "correct": 1782,
+          "recall": 0.7425
+        },
+        {
+          "wnid": "n04418357",
+          "occurrences": 2115,
+          "correct": 1676,
+          "recall": 0.7924349881796691
+        },
+        {
+          "wnid": "n04149813",
+          "occurrences": 2340,
+          "correct": 1895,
+          "recall": 0.8098290598290598
+        },
+        {
+          "wnid": "n02871525",
+          "occurrences": 2310,
+          "correct": 1902,
+          "recall": 0.8233766233766234
+        },
+        {
+          "wnid": "n04146614",
+          "occurrences": 2145,
+          "correct": 1917,
+          "recall": 0.8937062937062937
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Query occurrences repeat across episodes; these are task-weighted metrics, not independent images.",
+    "Confidence bins, Brier and NLL diagnose scores; no probability calibration guarantee is made.",
+    "Episode bootstrap describes sampling conditional on one trained model; not training-seed variation.",
+    "Class recalls are descriptive on this test and never used to select or exclude classes."
+  ]
+}

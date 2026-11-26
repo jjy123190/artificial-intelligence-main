@@ -1,0 +1,48 @@
+{
+  "kind": "train_only_fixed16-image_change_probe",
+  "test_accessed": false,
+  "scale": 0.25,
+  "mean_cosine": 0.9955154657363892,
+  "max_logits_delta": 0.8210749626159668,
+  "ids": [
+    "train/n01532829/n0153282900000005.jpg",
+    "train/n01770081/n0177008100000350.jpg",
+    "train/n02089867/n0208986700000548.jpg",
+    "train/n02108089/n0210808900001043.jpg",
+    "train/n02120079/n0212007900000080.jpg",
+    "train/n02687172/n0268717200000428.jpg",
+    "train/n02966193/n0296619300000763.jpg",
+    "train/n03207743/n0320774300001136.jpg",
+    "train/n03476684/n0347668400000181.jpg",
+    "train/n03854065/n0385406500000496.jpg",
+    "train/n03998194/n0399819400000853.jpg",
+    "train/n04258138/n0425813800001212.jpg",
+    "train/n04443257/n0444325700000245.jpg",
+    "train/n04604644/n0460464400000640.jpg",
+    "train/n07697537/n0769753700000938.jpg",
+    "train/n13133613/n1313361300001299.jpg"
+  ],
+  "changed_layers": [
+    "encoder.0.convolutions.3",
+    "encoder.0.convolutions.6",
+    "encoder.1.convolutions.0",
+    "encoder.1.convolutions.3",
+    "encoder.1.convolutions.6",
+    "encoder.1.shortcut.0",
+    "encoder.2.convolutions.0",
+    "encoder.2.convolutions.3",
+    "encoder.2.convolutions.6",
+    "encoder.2.shortcut.0",
+    "encoder.3.convolutions.0",
+    "encoder.3.convolutions.3",
+    "encoder.3.convolutions.6",
+    "encoder.3.shortcut.0",
+    "classifier"
+  ],
+  "synthetic_full_batch64_two_view_train_seconds": [
+    1.5295539000071585,
+    1.3668061000062153,
+    1.3788615999510512
+  ],
+  "source_sha256": "c8a0f7e6ef163523ee004c4ac423a27725b7d0359de227a0e49cf367e362bf2f"
+}

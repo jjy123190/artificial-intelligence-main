@@ -1,0 +1,17 @@
+{
+  "data_root": ".local/mini-imagenet",
+  "output": ".local/lab04-v2",
+  "widths": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "epochs": 40,
+  "branch_epochs": 3,
+  "batch_size": 64,
+  "learning_rate": 0.003,
+  "threads": 4,
+  "seed": 20261124,
+  "selection": "validation classes only; never test accuracy"
+}

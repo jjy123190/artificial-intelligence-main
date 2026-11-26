@@ -16,7 +16,9 @@
     "test:wording": "node scripts/check-display-text.mjs",
     "test:wording-browser": "node scripts/check-display-browser.mjs",
     "test:browser": "node scripts/check-lab03-browser.mjs",
-    "test:workbench": "node scripts/check-workbench-browser.mjs"
+    "test:workbench": "node scripts/check-workbench-browser.mjs",
+    "test:lab04": "node scripts/check-lab04-browser.mjs",
+    "test:lab04-contract": "node scripts/check-lab04-contract.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

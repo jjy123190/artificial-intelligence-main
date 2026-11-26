@@ -1,0 +1,359 @@
+{
+  "test_accessed": false,
+  "checkpoint_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "pooling": "gap",
+          "center_strength": 0.0,
+          "accuracy": 0.5058888888888888,
+          "ci95": 0.02324365494353997,
+          "episodes": 120,
+          "ci95_low": 0.48264523394534886,
+          "ci95_high": 0.5291325438324288,
+          "confirmation": {
+            "accuracy": 0.4908444444444444,
+            "ci95": 0.013954396187087395,
+            "episodes": 300,
+            "ci95_low": 0.47689004825735704,
+            "ci95_high": 0.5047988406315318
+          }
+        },
+        {
+          "pooling": "gap",
+          "center_strength": 1.0,
+          "accuracy": 0.5044444444444445,
+          "ci95": 0.023053658099729642,
+          "episodes": 120,
+          "ci95_low": 0.4813907863447148,
+          "ci95_high": 0.5274981025441741
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 0.0,
+          "accuracy": 0.508,
+          "ci95": 0.02300395388956813,
+          "episodes": 120,
+          "ci95_low": 0.4849960461104319,
+          "ci95_high": 0.5310039538895681,
+          "confirmation": {
+            "accuracy": 0.49368888888888884,
+            "ci95": 0.014292466935106997,
+            "episodes": 300,
+            "ci95_low": 0.47939642195378185,
+            "ci95_high": 0.5079813558239958
+          }
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 1.0,
+          "accuracy": 0.5075555555555556,
+          "ci95": 0.023164173574728397,
+          "episodes": 120,
+          "ci95_low": 0.48439138198082726,
+          "ci95_high": 0.5307197291302841,
+          "confirmation": {
+            "accuracy": 0.49604444444444445,
+            "ci95": 0.014356994796978889,
+            "episodes": 300,
+            "ci95_low": 0.48168744964746557,
+            "ci95_high": 0.5104014392414233
+          }
+        },
+        {
+          "pooling": "gem",
+          "center_strength": 0.0,
+          "accuracy": 0.48777777777777775,
+          "ci95": 0.023020960926410275,
+          "episodes": 120,
+          "ci95_low": 0.4647568168513675,
+          "ci95_high": 0.510798738704188
+        },
+        {
+          "pooling": "gem",
+          "center_strength": 1.0,
+          "accuracy": 0.4857777777777778,
+          "ci95": 0.023100081028004277,
+          "episodes": 120,
+          "ci95_low": 0.46267769674977355,
+          "ci95_high": 0.5088778588057821
+        },
+        {
+          "pooling": "grid",
+          "center_strength": 0.0,
+          "accuracy": 0.49777777777777776,
+          "ci95": 0.023034979683822867,
+          "episodes": 120,
+          "ci95_low": 0.4747427980939549,
+          "ci95_high": 0.5208127574616006
+        },
+        {
+          "pooling": "grid",
+          "center_strength": 1.0,
+          "accuracy": 0.49933333333333335,
+          "ci95": 0.022726708942264497,
+          "episodes": 120,
+          "ci95_low": 0.4766066243910689,
+          "ci95_high": 0.5220600422755979
+        }
+      ],
+      "shortlist": [
+        {
+          "pooling": "moments",
+          "center_strength": 0.0,
+          "accuracy": 0.508,
+          "ci95": 0.02300395388956813,
+          "episodes": 120,
+          "ci95_low": 0.4849960461104319,
+          "ci95_high": 0.5310039538895681,
+          "confirmation": {
+            "accuracy": 0.49368888888888884,
+            "ci95": 0.014292466935106997,
+            "episodes": 300,
+            "ci95_low": 0.47939642195378185,
+            "ci95_high": 0.5079813558239958
+          }
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 1.0,
+          "accuracy": 0.5075555555555556,
+          "ci95": 0.023164173574728397,
+          "episodes": 120,
+          "ci95_low": 0.48439138198082726,
+          "ci95_high": 0.5307197291302841,
+          "confirmation": {
+            "accuracy": 0.49604444444444445,
+            "ci95": 0.014356994796978889,
+            "episodes": 300,
+            "ci95_low": 0.48168744964746557,
+            "ci95_high": 0.5104014392414233
+          }
+        },
+        {
+          "pooling": "gap",
+          "center_strength": 0.0,
+          "accuracy": 0.5058888888888888,
+          "ci95": 0.02324365494353997,
+          "episodes": 120,
+          "ci95_low": 0.48264523394534886,
+          "ci95_high": 0.5291325438324288,
+          "confirmation": {
+            "accuracy": 0.4908444444444444,
+            "ci95": 0.013954396187087395,
+            "episodes": 300,
+            "ci95_low": 0.47689004825735704,
+            "ci95_high": 0.5047988406315318
+          }
+        }
+      ],
+      "selected": {
+        "pooling": "moments",
+        "center_strength": 1.0,
+        "accuracy": 0.5075555555555556,
+        "ci95": 0.023164173574728397,
+        "episodes": 120,
+        "ci95_low": 0.48439138198082726,
+        "ci95_high": 0.5307197291302841,
+        "confirmation": {
+          "accuracy": 0.49604444444444445,
+          "ci95": 0.014356994796978889,
+          "episodes": 300,
+          "ci95_low": 0.48168744964746557,
+          "ci95_high": 0.5104014392414233
+        }
+      },
+      "config": {
+        "mean_weight": 0.05,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0,
+        "temperature": 0.15,
+        "variance_blend": 0.1,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "target_reached_on_validation": false
+    },
+    "5": {
+      "candidates": [
+        {
+          "pooling": "gap",
+          "center_strength": 0.0,
+          "accuracy": 0.6246666666666667,
+          "ci95": 0.016335053504189984,
+          "episodes": 120,
+          "ci95_low": 0.6083316131624767,
+          "ci95_high": 0.6410017201708567,
+          "confirmation": {
+            "accuracy": 0.6310222222222223,
+            "ci95": 0.01045915368744682,
+            "episodes": 300,
+            "ci95_low": 0.6205630685347754,
+            "ci95_high": 0.6414813759096691
+          }
+        },
+        {
+          "pooling": "gap",
+          "center_strength": 1.0,
+          "accuracy": 0.6266666666666667,
+          "ci95": 0.016224447515023614,
+          "episodes": 120,
+          "ci95_low": 0.6104422191516431,
+          "ci95_high": 0.6428911141816903,
+          "confirmation": {
+            "accuracy": 0.6324000000000001,
+            "ci95": 0.010466991968473022,
+            "episodes": 300,
+            "ci95_low": 0.6219330080315271,
+            "ci95_high": 0.6428669919684731
+          }
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 0.0,
+          "accuracy": 0.6245555555555556,
+          "ci95": 0.017141783798054106,
+          "episodes": 120,
+          "ci95_low": 0.6074137717575016,
+          "ci95_high": 0.6416973393536097
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 1.0,
+          "accuracy": 0.6247777777777778,
+          "ci95": 0.01712866574265073,
+          "episodes": 120,
+          "ci95_low": 0.6076491120351271,
+          "ci95_high": 0.6419064435204285,
+          "confirmation": {
+            "accuracy": 0.63,
+            "ci95": 0.010103043976175747,
+            "episodes": 300,
+            "ci95_low": 0.6198969560238242,
+            "ci95_high": 0.6401030439761758
+          }
+        },
+        {
+          "pooling": "gem",
+          "center_strength": 0.0,
+          "accuracy": 0.6041111111111112,
+          "ci95": 0.017442695487031364,
+          "episodes": 120,
+          "ci95_low": 0.5866684156240798,
+          "ci95_high": 0.6215538065981425
+        },
+        {
+          "pooling": "gem",
+          "center_strength": 1.0,
+          "accuracy": 0.6064444444444445,
+          "ci95": 0.01701292423409087,
+          "episodes": 120,
+          "ci95_low": 0.5894315202103536,
+          "ci95_high": 0.6234573686785353
+        },
+        {
+          "pooling": "grid",
+          "center_strength": 0.0,
+          "accuracy": 0.6227777777777778,
+          "ci95": 0.016092428202765033,
+          "episodes": 120,
+          "ci95_low": 0.6066853495750127,
+          "ci95_high": 0.6388702059805428
+        },
+        {
+          "pooling": "grid",
+          "center_strength": 1.0,
+          "accuracy": 0.6243333333333333,
+          "ci95": 0.01608132913788405,
+          "episodes": 120,
+          "ci95_low": 0.6082520041954492,
+          "ci95_high": 0.6404146624712174
+        }
+      ],
+      "shortlist": [
+        {
+          "pooling": "gap",
+          "center_strength": 1.0,
+          "accuracy": 0.6266666666666667,
+          "ci95": 0.016224447515023614,
+          "episodes": 120,
+          "ci95_low": 0.6104422191516431,
+          "ci95_high": 0.6428911141816903,
+          "confirmation": {
+            "accuracy": 0.6324000000000001,
+            "ci95": 0.010466991968473022,
+            "episodes": 300,
+            "ci95_low": 0.6219330080315271,
+            "ci95_high": 0.6428669919684731
+          }
+        },
+        {
+          "pooling": "moments",
+          "center_strength": 1.0,
+          "accuracy": 0.6247777777777778,
+          "ci95": 0.01712866574265073,
+          "episodes": 120,
+          "ci95_low": 0.6076491120351271,
+          "ci95_high": 0.6419064435204285,
+          "confirmation": {
+            "accuracy": 0.63,
+            "ci95": 0.010103043976175747,
+            "episodes": 300,
+            "ci95_low": 0.6198969560238242,
+            "ci95_high": 0.6401030439761758
+          }
+        },
+        {
+          "pooling": "gap",
+          "center_strength": 0.0,
+          "accuracy": 0.6246666666666667,
+          "ci95": 0.016335053504189984,
+          "episodes": 120,
+          "ci95_low": 0.6083316131624767,
+          "ci95_high": 0.6410017201708567,
+          "confirmation": {
+            "accuracy": 0.6310222222222223,
+            "ci95": 0.01045915368744682,
+            "episodes": 300,
+            "ci95_low": 0.6205630685347754,
+            "ci95_high": 0.6414813759096691
+          }
+        }
+      ],
+      "selected": {
+        "pooling": "gap",
+        "center_strength": 1.0,
+        "accuracy": 0.6266666666666667,
+        "ci95": 0.016224447515023614,
+        "episodes": 120,
+        "ci95_low": 0.6104422191516431,
+        "ci95_high": 0.6428911141816903,
+        "confirmation": {
+          "accuracy": 0.6324000000000001,
+          "ci95": 0.010466991968473022,
+          "episodes": 300,
+          "ci95_low": 0.6219330080315271,
+          "ci95_high": 0.6428669919684731
+        }
+      },
+      "config": {
+        "mean_weight": 0.05,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0,
+        "temperature": 0.15,
+        "variance_blend": 0.1,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "target_reached_on_validation": false
+    }
+  },
+  "status": "complete"
+}

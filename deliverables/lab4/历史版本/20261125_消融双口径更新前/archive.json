@@ -1,0 +1,18 @@
+{
+  "reason": "Update UI/report explanations to expose direct module-pair comparisons; previous actual recordings retained.",
+  "archived_utc": "2026-11-25T04:50:26.593269+00:00",
+  "files": {
+    "实验四_小样本分类与特征校准_当前汇报.pptx": "ab0e71bf14760e588de22dfefb1c17a1e0d8295a69661bf06fb649d118afd831",
+    "slides_evidence.json": "ca1127e44a495e8bf4cfe5450d5a3806f1b1c446e365c8b9cd6a62e2dff41622",
+    "实验四_当前页面与真实推理_Demo.mp4": "bffc11aa028595f3cd441adfa3a7852fae7fb4958ed4f8bd38a2391bcd63055f",
+    "实验四_当前页面与真实推理_Demo.srt": "2d8e3cbfae5adf519d3e29344063e69b2b796d447c7f529e4ed6c74a116d5834",
+    "实验四_当前页面与真实推理_Demo.vtt": "2b11cfd509562369876d2ca108aa397158dd4d41ce236346afdf443439c4cca0",
+    "demo_evidence.json": "ef1858d566d51334ceccf539de88f8369d86ad1e00990e506518e03f86931d35",
+    "实验四_当前版本PPT讲解.mp4": "8c6b94763fe7d72d6bafb7098ffd2e27f3d744781676281c4fd8b32b21a90e55",
+    "实验四_当前版本PPT讲解.vtt": "d75e7a3222f04bb841c179d513d569dd2f2ddb1fda70edb93236b306d46a1abe",
+    "presentation_evidence.json": "9868ede842970695db26a25085133404d5ffe51f8ec6b1afd728c8ff3eda59f5",
+    "实验四_当前Demo预览.jpg": "7122e8c6f7de58bb676c9ac6368917125a83191904eb471d28a9b91f4a73c507",
+    "实验四_当前PPT预览.jpg": "3c18377a9feaf1009c26eccd673136c3395528f68171dbc4314f28666d1e31c8",
+    "media_support_evidence.json": "37cebd7f088df168cc66e8c87ddf2fd465646c1d55575103367602da413f6a0d"
+  }
+}

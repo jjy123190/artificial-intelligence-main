@@ -1,0 +1,3574 @@
+{
+  "1": {
+    "spaces": [
+      {
+        "center_strength": 0.0,
+        "power": 1.0,
+        "accuracy": 0.4965555555555555,
+        "ci95": 0.02218607195553704,
+        "episodes": 120,
+        "ci95_low": 0.4743694836000184,
+        "ci95_high": 0.5187416275110925
+      },
+      {
+        "center_strength": 0.0,
+        "power": 0.5,
+        "accuracy": 0.474,
+        "ci95": 0.022610671627788834,
+        "episodes": 120,
+        "ci95_low": 0.45138932837221113,
+        "ci95_high": 0.4966106716277888
+      },
+      {
+        "center_strength": 0.5,
+        "power": 1.0,
+        "accuracy": 0.5047777777777778,
+        "ci95": 0.022477968699010517,
+        "episodes": 120,
+        "ci95_low": 0.48229980907876724,
+        "ci95_high": 0.5272557464767883
+      },
+      {
+        "center_strength": 0.5,
+        "power": 0.5,
+        "accuracy": 0.48933333333333334,
+        "ci95": 0.0225910977126072,
+        "episodes": 120,
+        "ci95_low": 0.46674223562072614,
+        "ci95_high": 0.5119244310459405
+      },
+      {
+        "center_strength": 1.0,
+        "power": 1.0,
+        "accuracy": 0.506,
+        "ci95": 0.022291136333560797,
+        "episodes": 120,
+        "ci95_low": 0.4837088636664392,
+        "ci95_high": 0.5282911363335608
+      },
+      {
+        "center_strength": 1.0,
+        "power": 0.5,
+        "accuracy": 0.5035555555555555,
+        "ci95": 0.02234874018697268,
+        "episodes": 120,
+        "ci95_low": 0.48120681536858284,
+        "ci95_high": 0.5259042957425282
+      }
+    ],
+    "search_episodes": 120,
+    "confirmation_episodes": 300,
+    "candidates": [
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.4896666666666667,
+        "ci95": 0.022317108612433918,
+        "episodes": 120,
+        "ci95_low": 0.4673495580542328,
+        "ci95_high": 0.5119837752791007
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5035555555555555,
+        "ci95": 0.02302334991055491,
+        "episodes": 120,
+        "ci95_low": 0.4805322056450006,
+        "ci95_high": 0.5265789054661104
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.504,
+        "ci95": 0.023530571335261593,
+        "episodes": 120,
+        "ci95_low": 0.4804694286647384,
+        "ci95_high": 0.5275305713352616
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.4925555555555555,
+        "ci95": 0.02161457409289248,
+        "episodes": 120,
+        "ci95_low": 0.47094098146266306,
+        "ci95_high": 0.514170129648448
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.506,
+        "ci95": 0.022291136333560797,
+        "episodes": 120,
+        "ci95_low": 0.4837088636664392,
+        "ci95_high": 0.5282911363335608
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5045555555555555,
+        "ci95": 0.022545314961755665,
+        "episodes": 120,
+        "ci95_low": 0.4820102405937999,
+        "ci95_high": 0.5271008705173112
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.48544444444444446,
+        "ci95": 0.02011360897353954,
+        "episodes": 120,
+        "ci95_low": 0.4653308354709049,
+        "ci95_high": 0.505558053417984
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.49033333333333334,
+        "ci95": 0.02046709041310497,
+        "episodes": 120,
+        "ci95_low": 0.4698662429202284,
+        "ci95_high": 0.5108004237464383
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.4906666666666667,
+        "ci95": 0.019673917263201623,
+        "episodes": 120,
+        "ci95_low": 0.4709927494034651,
+        "ci95_high": 0.5103405839298684
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5104444444444444,
+        "ci95": 0.022819812564110763,
+        "episodes": 120,
+        "ci95_low": 0.4876246318803336,
+        "ci95_high": 0.5332642570085552
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5092222222222222,
+        "ci95": 0.023578683749911886,
+        "episodes": 120,
+        "ci95_low": 0.48564353847231034,
+        "ci95_high": 0.5328009059721341
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5067777777777778,
+        "ci95": 0.024158160462271178,
+        "episodes": 120,
+        "ci95_low": 0.4826196173155066,
+        "ci95_high": 0.5309359382400489
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5067777777777779,
+        "ci95": 0.021793501513209055,
+        "episodes": 120,
+        "ci95_low": 0.4849842762645688,
+        "ci95_high": 0.5285712792909869
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5081111111111111,
+        "ci95": 0.021931973072361007,
+        "episodes": 120,
+        "ci95_low": 0.48617913803875007,
+        "ci95_high": 0.5300430841834721
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5042222222222221,
+        "ci95": 0.02245175647410897,
+        "episodes": 120,
+        "ci95_low": 0.48177046574811316,
+        "ci95_high": 0.5266739786963311
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.4882222222222222,
+        "ci95": 0.01995291281975486,
+        "episodes": 120,
+        "ci95_low": 0.46826930940246736,
+        "ci95_high": 0.5081751350419771
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.48922222222222217,
+        "ci95": 0.019819708302149158,
+        "episodes": 120,
+        "ci95_low": 0.46940251392007304,
+        "ci95_high": 0.5090419305243713
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.4872222222222222,
+        "ci95": 0.01947428820867576,
+        "episodes": 120,
+        "ci95_low": 0.4677479340135465,
+        "ci95_high": 0.506696510430898
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.510888888888889,
+        "ci95": 0.022836153934209215,
+        "episodes": 120,
+        "ci95_low": 0.4880527349546797,
+        "ci95_high": 0.5337250428230982,
+        "confirmation": {
+          "accuracy": 0.4822666666666667,
+          "ci95": 0.013863743376511297,
+          "episodes": 300,
+          "ci95_low": 0.46840292329015537,
+          "ci95_high": 0.496130410043178
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5096666666666666,
+        "ci95": 0.022767943753116967,
+        "episodes": 120,
+        "ci95_low": 0.48689872291354963,
+        "ci95_high": 0.5324346104197836
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5094444444444445,
+        "ci95": 0.022796143974402123,
+        "episodes": 120,
+        "ci95_low": 0.48664830047004237,
+        "ci95_high": 0.5322405884188466
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5105555555555557,
+        "ci95": 0.02275939982335947,
+        "episodes": 120,
+        "ci95_low": 0.4877961557321962,
+        "ci95_high": 0.5333149553789152
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.510888888888889,
+        "ci95": 0.022815201343527065,
+        "episodes": 120,
+        "ci95_low": 0.4880736875453619,
+        "ci95_high": 0.533704090232416,
+        "confirmation": {
+          "accuracy": 0.48351111111111106,
+          "ci95": 0.013814191789220975,
+          "episodes": 300,
+          "ci95_low": 0.46969691932189006,
+          "ci95_high": 0.49732530290033206
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5111111111111112,
+        "ci95": 0.0225820633059023,
+        "episodes": 120,
+        "ci95_low": 0.4885290478052089,
+        "ci95_high": 0.5336931744170135,
+        "confirmation": {
+          "accuracy": 0.4847555555555556,
+          "ci95": 0.013948199355359974,
+          "episodes": 300,
+          "ci95_low": 0.47080735620019565,
+          "ci95_high": 0.49870375491091556
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5081111111111111,
+        "ci95": 0.02270975356315114,
+        "episodes": 120,
+        "ci95_low": 0.48540135754795993,
+        "ci95_high": 0.5308208646742623
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5087777777777778,
+        "ci95": 0.022901011245125898,
+        "episodes": 120,
+        "ci95_low": 0.4858767665326519,
+        "ci95_high": 0.5316787890229037
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5105555555555557,
+        "ci95": 0.022708911165720984,
+        "episodes": 120,
+        "ci95_low": 0.48784664438983466,
+        "ci95_high": 0.5332644667212766
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5082222222222222,
+        "ci95": 0.02231972471282642,
+        "episodes": 120,
+        "ci95_low": 0.48590249750939585,
+        "ci95_high": 0.5305419469350486
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5087777777777779,
+        "ci95": 0.022345021673950007,
+        "episodes": 120,
+        "ci95_low": 0.48643275610382786,
+        "ci95_high": 0.5311227994517279
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5106666666666667,
+        "ci95": 0.022303469566058453,
+        "episodes": 120,
+        "ci95_low": 0.48836319710060827,
+        "ci95_high": 0.5329701362327252,
+        "confirmation": {
+          "accuracy": 0.48617777777777776,
+          "ci95": 0.01389453662090455,
+          "episodes": 300,
+          "ci95_low": 0.4722832411568732,
+          "ci95_high": 0.5000723143986823
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5021111111111111,
+        "ci95": 0.022223764051087346,
+        "episodes": 120,
+        "ci95_low": 0.47988734706002373,
+        "ci95_high": 0.5243348751621985
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5012222222222222,
+        "ci95": 0.022262466487085353,
+        "episodes": 120,
+        "ci95_low": 0.4789597557351369,
+        "ci95_high": 0.5234846887093076
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5025555555555556,
+        "ci95": 0.02242151454087041,
+        "episodes": 120,
+        "ci95_low": 0.4801340410146852,
+        "ci95_high": 0.524977070096426
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4841111111111111,
+        "ci95": 0.02187301658691535,
+        "episodes": 120,
+        "ci95_low": 0.46223809452419573,
+        "ci95_high": 0.5059841276980265
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4967777777777778,
+        "ci95": 0.02305399520981884,
+        "episodes": 120,
+        "ci95_low": 0.473723782567959,
+        "ci95_high": 0.5198317729875966
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5026666666666666,
+        "ci95": 0.023023072939590394,
+        "episodes": 120,
+        "ci95_low": 0.4796435937270762,
+        "ci95_high": 0.525689739606257
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4891111111111111,
+        "ci95": 0.021364619433632232,
+        "episodes": 120,
+        "ci95_low": 0.4677464916774789,
+        "ci95_high": 0.5104757305447434
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5047777777777778,
+        "ci95": 0.022477968699010517,
+        "episodes": 120,
+        "ci95_low": 0.48229980907876724,
+        "ci95_high": 0.5272557464767883
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5012222222222222,
+        "ci95": 0.022966700582739915,
+        "episodes": 120,
+        "ci95_low": 0.4782555216394823,
+        "ci95_high": 0.5241889228049621
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4856666666666667,
+        "ci95": 0.01986036650553571,
+        "episodes": 120,
+        "ci95_low": 0.465806300161131,
+        "ci95_high": 0.5055270331722024
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.48988888888888893,
+        "ci95": 0.02031942270693399,
+        "episodes": 120,
+        "ci95_low": 0.46956946618195494,
+        "ci95_high": 0.5102083115958229
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4895555555555556,
+        "ci95": 0.020295135720519497,
+        "episodes": 120,
+        "ci95_low": 0.4692604198350361,
+        "ci95_high": 0.5098506912760751
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.509888888888889,
+        "ci95": 0.022926057948169955,
+        "episodes": 120,
+        "ci95_low": 0.486962830940719,
+        "ci95_high": 0.5328149468370589
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5097777777777778,
+        "ci95": 0.024033588889645366,
+        "episodes": 120,
+        "ci95_low": 0.4857441888881324,
+        "ci95_high": 0.5338113666674231
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5081111111111111,
+        "ci95": 0.024308741636928703,
+        "episodes": 120,
+        "ci95_low": 0.48380236947418237,
+        "ci95_high": 0.5324198527480398
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5063333333333334,
+        "ci95": 0.02217198381360894,
+        "episodes": 120,
+        "ci95_low": 0.48416134951972445,
+        "ci95_high": 0.5285053171469424
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5075555555555555,
+        "ci95": 0.02229732167678171,
+        "episodes": 120,
+        "ci95_low": 0.4852582338787738,
+        "ci95_high": 0.5298528772323372
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.504,
+        "ci95": 0.02268405515268235,
+        "episodes": 120,
+        "ci95_low": 0.48131594484731766,
+        "ci95_high": 0.5266840551526824
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4885555555555555,
+        "ci95": 0.020451506396124794,
+        "episodes": 120,
+        "ci95_low": 0.4681040491594307,
+        "ci95_high": 0.5090070619516803
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.48888888888888893,
+        "ci95": 0.019692707400557688,
+        "episodes": 120,
+        "ci95_low": 0.46919618148833125,
+        "ci95_high": 0.5085815962894467
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.4892222222222223,
+        "ci95": 0.019402691695365817,
+        "episodes": 120,
+        "ci95_low": 0.4698195305268565,
+        "ci95_high": 0.5086249139175881
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.509,
+        "ci95": 0.022971211992234033,
+        "episodes": 120,
+        "ci95_low": 0.486028788007766,
+        "ci95_high": 0.5319712119922341
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5096666666666666,
+        "ci95": 0.02298120334511538,
+        "episodes": 120,
+        "ci95_low": 0.4866854633215512,
+        "ci95_high": 0.5326478700117819
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5096666666666666,
+        "ci95": 0.02282458873628158,
+        "episodes": 120,
+        "ci95_low": 0.48684207793038503,
+        "ci95_high": 0.5324912554029482
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5085555555555555,
+        "ci95": 0.02295170245234866,
+        "episodes": 120,
+        "ci95_low": 0.48560385310320686,
+        "ci95_high": 0.5315072580079042
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5088888888888888,
+        "ci95": 0.0230453584505588,
+        "episodes": 120,
+        "ci95_low": 0.48584353043833006,
+        "ci95_high": 0.5319342473394476
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5095555555555555,
+        "ci95": 0.02302012991728891,
+        "episodes": 120,
+        "ci95_low": 0.4865354256382666,
+        "ci95_high": 0.5325756854728444
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5103333333333333,
+        "ci95": 0.022852858576074005,
+        "episodes": 120,
+        "ci95_low": 0.4874804747572593,
+        "ci95_high": 0.5331861919094073
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5096666666666666,
+        "ci95": 0.022966631169518276,
+        "episodes": 120,
+        "ci95_low": 0.48670003549714835,
+        "ci95_high": 0.5326332978361848
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5105555555555555,
+        "ci95": 0.02284329960764021,
+        "episodes": 120,
+        "ci95_low": 0.48771225594791534,
+        "ci95_high": 0.5333988551631957
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5105555555555555,
+        "ci95": 0.02234801793430161,
+        "episodes": 120,
+        "ci95_low": 0.4882075376212539,
+        "ci95_high": 0.5329035734898572
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5107777777777778,
+        "ci95": 0.022312464948638935,
+        "episodes": 120,
+        "ci95_low": 0.48846531282913885,
+        "ci95_high": 0.5330902427264167,
+        "confirmation": {
+          "accuracy": 0.485511111111111,
+          "ci95": 0.013966721637715177,
+          "episodes": 300,
+          "ci95_low": 0.47154438947339583,
+          "ci95_high": 0.4994778327488262
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5097777777777778,
+        "ci95": 0.02239363453491571,
+        "episodes": 120,
+        "ci95_low": 0.48738414324286206,
+        "ci95_high": 0.5321714123126935
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5018888888888889,
+        "ci95": 0.022854602482026986,
+        "episodes": 120,
+        "ci95_low": 0.47903428640686196,
+        "ci95_high": 0.5247434913709159
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5018888888888888,
+        "ci95": 0.022728699251038407,
+        "episodes": 120,
+        "ci95_low": 0.4791601896378504,
+        "ci95_high": 0.5246175881399272
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5052222222222222,
+        "ci95": 0.022663375206362617,
+        "episodes": 120,
+        "ci95_low": 0.4825588470158596,
+        "ci95_high": 0.5278855974285849
+      }
+    ],
+    "shortlist": [
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5111111111111112,
+        "ci95": 0.0225820633059023,
+        "episodes": 120,
+        "ci95_low": 0.4885290478052089,
+        "ci95_high": 0.5336931744170135,
+        "confirmation": {
+          "accuracy": 0.4847555555555556,
+          "ci95": 0.013948199355359974,
+          "episodes": 300,
+          "ci95_low": 0.47080735620019565,
+          "ci95_high": 0.49870375491091556
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.510888888888889,
+        "ci95": 0.022836153934209215,
+        "episodes": 120,
+        "ci95_low": 0.4880527349546797,
+        "ci95_high": 0.5337250428230982,
+        "confirmation": {
+          "accuracy": 0.4822666666666667,
+          "ci95": 0.013863743376511297,
+          "episodes": 300,
+          "ci95_low": 0.46840292329015537,
+          "ci95_high": 0.496130410043178
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.510888888888889,
+        "ci95": 0.022815201343527065,
+        "episodes": 120,
+        "ci95_low": 0.4880736875453619,
+        "ci95_high": 0.533704090232416,
+        "confirmation": {
+          "accuracy": 0.48351111111111106,
+          "ci95": 0.013814191789220975,
+          "episodes": 300,
+          "ci95_low": 0.46969691932189006,
+          "ci95_high": 0.49732530290033206
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.5107777777777778,
+        "ci95": 0.022312464948638935,
+        "episodes": 120,
+        "ci95_low": 0.48846531282913885,
+        "ci95_high": 0.5330902427264167,
+        "confirmation": {
+          "accuracy": 0.485511111111111,
+          "ci95": 0.013966721637715177,
+          "episodes": 300,
+          "ci95_low": 0.47154438947339583,
+          "ci95_high": 0.4994778327488262
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.5106666666666667,
+        "ci95": 0.022303469566058453,
+        "episodes": 120,
+        "ci95_low": 0.48836319710060827,
+        "ci95_high": 0.5329701362327252,
+        "confirmation": {
+          "accuracy": 0.48617777777777776,
+          "ci95": 0.01389453662090455,
+          "episodes": 300,
+          "ci95_low": 0.4722832411568732,
+          "ci95_high": 0.5000723143986823
+        }
+      }
+    ],
+    "selected": {
+      "space": {
+        "center_strength": 1.0,
+        "power": 1.0
+      },
+      "config": {
+        "mean_weight": 0.1,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0.0,
+        "temperature": 0.15,
+        "variance_blend": 0.4,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "validation_accuracy": 0.48617777777777776
+    }
+  },
+  "5": {
+    "spaces": [
+      {
+        "center_strength": 0.0,
+        "power": 1.0,
+        "accuracy": 0.615,
+        "ci95": 0.018027247834542504,
+        "episodes": 120,
+        "ci95_low": 0.5969727521654575,
+        "ci95_high": 0.6330272478345425
+      },
+      {
+        "center_strength": 0.0,
+        "power": 0.5,
+        "accuracy": 0.5946666666666668,
+        "ci95": 0.018095664064965114,
+        "episodes": 120,
+        "ci95_low": 0.5765710026017017,
+        "ci95_high": 0.6127623307316319
+      },
+      {
+        "center_strength": 0.5,
+        "power": 1.0,
+        "accuracy": 0.6164444444444445,
+        "ci95": 0.01796391858563558,
+        "episodes": 120,
+        "ci95_low": 0.5984805258588088,
+        "ci95_high": 0.6344083630300801
+      },
+      {
+        "center_strength": 0.5,
+        "power": 0.5,
+        "accuracy": 0.5995555555555556,
+        "ci95": 0.018382874541212714,
+        "episodes": 120,
+        "ci95_low": 0.5811726810143429,
+        "ci95_high": 0.6179384300967683
+      },
+      {
+        "center_strength": 1.0,
+        "power": 1.0,
+        "accuracy": 0.6178888888888889,
+        "ci95": 0.01777594032988056,
+        "episodes": 120,
+        "ci95_low": 0.6001129485590083,
+        "ci95_high": 0.6356648292187695
+      },
+      {
+        "center_strength": 1.0,
+        "power": 0.5,
+        "accuracy": 0.6127777777777778,
+        "ci95": 0.01777298056190182,
+        "episodes": 120,
+        "ci95_low": 0.595004797215876,
+        "ci95_high": 0.6305507583396796
+      }
+    ],
+    "search_episodes": 120,
+    "confirmation_episodes": 300,
+    "candidates": [
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6157777777777779,
+        "ci95": 0.016897274423229157,
+        "episodes": 120,
+        "ci95_low": 0.5988805033545487,
+        "ci95_high": 0.6326750522010071
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6161111111111112,
+        "ci95": 0.017870929319489606,
+        "episodes": 120,
+        "ci95_low": 0.5982401817916215,
+        "ci95_high": 0.6339820404306008
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6115555555555557,
+        "ci95": 0.01908993239023548,
+        "episodes": 120,
+        "ci95_low": 0.5924656231653203,
+        "ci95_high": 0.6306454879457912
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6162222222222222,
+        "ci95": 0.01684113965545974,
+        "episodes": 120,
+        "ci95_low": 0.5993810825667625,
+        "ci95_high": 0.633063361877682
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6178888888888889,
+        "ci95": 0.01777594032988056,
+        "episodes": 120,
+        "ci95_low": 0.6001129485590083,
+        "ci95_high": 0.6356648292187695
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6161111111111112,
+        "ci95": 0.018419164185585892,
+        "episodes": 120,
+        "ci95_low": 0.5976919469255253,
+        "ci95_high": 0.634530275296697
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6145555555555556,
+        "ci95": 0.01675519345667234,
+        "episodes": 120,
+        "ci95_low": 0.5978003620988833,
+        "ci95_high": 0.631310749012228
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6174444444444445,
+        "ci95": 0.016891081832172486,
+        "episodes": 120,
+        "ci95_low": 0.600553362612272,
+        "ci95_high": 0.6343355262766169
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6147777777777779,
+        "ci95": 0.017486510472683115,
+        "episodes": 120,
+        "ci95_low": 0.5972912673050947,
+        "ci95_high": 0.632264288250461
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6244444444444445,
+        "ci95": 0.01833181138463887,
+        "episodes": 120,
+        "ci95_low": 0.6061126330598056,
+        "ci95_high": 0.6427762558290834,
+        "confirmation": {
+          "accuracy": 0.6241333333333333,
+          "ci95": 0.011442994921888277,
+          "episodes": 300,
+          "ci95_low": 0.612690338411445,
+          "ci95_high": 0.6355763282552216
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.624,
+        "ci95": 0.01888000443115047,
+        "episodes": 120,
+        "ci95_low": 0.6051199955688495,
+        "ci95_high": 0.6428800044311505
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6191111111111111,
+        "ci95": 0.01934328909014653,
+        "episodes": 120,
+        "ci95_low": 0.5997678220209646,
+        "ci95_high": 0.6384544002012575
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6235555555555555,
+        "ci95": 0.017787337560390852,
+        "episodes": 120,
+        "ci95_low": 0.6057682179951647,
+        "ci95_high": 0.6413428931159464
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6227777777777778,
+        "ci95": 0.018368462284066973,
+        "episodes": 120,
+        "ci95_low": 0.6044093154937108,
+        "ci95_high": 0.6411462400618447
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6172222222222222,
+        "ci95": 0.01903087290317473,
+        "episodes": 120,
+        "ci95_low": 0.5981913493190475,
+        "ci95_high": 0.636253095125397
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6175555555555555,
+        "ci95": 0.01708865644894913,
+        "episodes": 120,
+        "ci95_low": 0.6004668991066064,
+        "ci95_high": 0.6346442120045046
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.614111111111111,
+        "ci95": 0.017455029568174706,
+        "episodes": 120,
+        "ci95_low": 0.5966560815429364,
+        "ci95_high": 0.6315661406792857
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6101111111111112,
+        "ci95": 0.017010148007042623,
+        "episodes": 120,
+        "ci95_low": 0.5931009631040686,
+        "ci95_high": 0.6271212591181538
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6237777777777779,
+        "ci95": 0.018466586976696623,
+        "episodes": 120,
+        "ci95_low": 0.6053111908010812,
+        "ci95_high": 0.6422443647544746
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6242222222222222,
+        "ci95": 0.018466068999239575,
+        "episodes": 120,
+        "ci95_low": 0.6057561532229827,
+        "ci95_high": 0.6426882912214618
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6244444444444445,
+        "ci95": 0.018588297362535755,
+        "episodes": 120,
+        "ci95_low": 0.6058561470819087,
+        "ci95_high": 0.6430327418069802
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6236666666666668,
+        "ci95": 0.018381649559353366,
+        "episodes": 120,
+        "ci95_low": 0.6052850171073134,
+        "ci95_high": 0.6420483162260202
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6240000000000001,
+        "ci95": 0.018506470775554392,
+        "episodes": 120,
+        "ci95_low": 0.6054935292244458,
+        "ci95_high": 0.6425064707755545
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6245555555555556,
+        "ci95": 0.018414230138806734,
+        "episodes": 120,
+        "ci95_low": 0.6061413254167489,
+        "ci95_high": 0.6429697856943624,
+        "confirmation": {
+          "accuracy": 0.6240000000000001,
+          "ci95": 0.01140094334382888,
+          "episodes": 300,
+          "ci95_low": 0.6125990566561712,
+          "ci95_high": 0.635400943343829
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.624,
+        "ci95": 0.01801938670343017,
+        "episodes": 120,
+        "ci95_low": 0.6059806132965698,
+        "ci95_high": 0.6420193867034302
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6238888888888889,
+        "ci95": 0.017988295557154973,
+        "episodes": 120,
+        "ci95_low": 0.605900593331734,
+        "ci95_high": 0.6418771844460439
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6246666666666667,
+        "ci95": 0.01805134057991334,
+        "episodes": 120,
+        "ci95_low": 0.6066153260867534,
+        "ci95_high": 0.64271800724658,
+        "confirmation": {
+          "accuracy": 0.6236444444444444,
+          "ci95": 0.011352284881579409,
+          "episodes": 300,
+          "ci95_low": 0.6122921595628651,
+          "ci95_high": 0.6349967293260238
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6208888888888889,
+        "ci95": 0.017458967785540146,
+        "episodes": 120,
+        "ci95_low": 0.6034299211033488,
+        "ci95_high": 0.6383478566744291
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6213333333333334,
+        "ci95": 0.017526407439467012,
+        "episodes": 120,
+        "ci95_low": 0.6038069258938664,
+        "ci95_high": 0.6388597407728004
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6232222222222222,
+        "ci95": 0.017832350780254306,
+        "episodes": 120,
+        "ci95_low": 0.6053898714419679,
+        "ci95_high": 0.6410545730024766
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6065555555555555,
+        "ci95": 0.018210520617143868,
+        "episodes": 120,
+        "ci95_low": 0.5883450349384116,
+        "ci95_high": 0.6247660761726994
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6058888888888888,
+        "ci95": 0.01809935278917656,
+        "episodes": 120,
+        "ci95_low": 0.5877895360997123,
+        "ci95_high": 0.6239882416780653
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6053333333333332,
+        "ci95": 0.018193189944278158,
+        "episodes": 120,
+        "ci95_low": 0.587140143389055,
+        "ci95_high": 0.6235265232776114
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6168888888888889,
+        "ci95": 0.017138261051412893,
+        "episodes": 120,
+        "ci95_low": 0.599750627837476,
+        "ci95_high": 0.6340271499403018
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6152222222222222,
+        "ci95": 0.018066292610426422,
+        "episodes": 120,
+        "ci95_low": 0.5971559296117958,
+        "ci95_high": 0.6332885148326487
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6099999999999999,
+        "ci95": 0.01862663681743272,
+        "episodes": 120,
+        "ci95_low": 0.5913733631825672,
+        "ci95_high": 0.6286266368174326
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6154444444444445,
+        "ci95": 0.01693124022539636,
+        "episodes": 120,
+        "ci95_low": 0.5985132042190481,
+        "ci95_high": 0.6323756846698408
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6164444444444445,
+        "ci95": 0.01796391858563558,
+        "episodes": 120,
+        "ci95_low": 0.5984805258588088,
+        "ci95_high": 0.6344083630300801
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6144444444444445,
+        "ci95": 0.018472801573302142,
+        "episodes": 120,
+        "ci95_low": 0.5959716428711423,
+        "ci95_high": 0.6329172460177466
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6143333333333333,
+        "ci95": 0.016508374477419336,
+        "episodes": 120,
+        "ci95_low": 0.5978249588559139,
+        "ci95_high": 0.6308417078107527
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6154444444444445,
+        "ci95": 0.01694253526584991,
+        "episodes": 120,
+        "ci95_low": 0.5985019091785946,
+        "ci95_high": 0.6323869797102943
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": false,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6116666666666667,
+        "ci95": 0.017201849725739616,
+        "episodes": 120,
+        "ci95_low": 0.5944648169409271,
+        "ci95_high": 0.6288685163924063
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6234444444444445,
+        "ci95": 0.017900610198011337,
+        "episodes": 120,
+        "ci95_low": 0.6055438342464331,
+        "ci95_high": 0.6413450546424558
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6218888888888888,
+        "ci95": 0.0183460569197455,
+        "episodes": 120,
+        "ci95_low": 0.6035428319691434,
+        "ci95_high": 0.6402349458086343
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6143333333333333,
+        "ci95": 0.01927003738296168,
+        "episodes": 120,
+        "ci95_low": 0.5950632959503717,
+        "ci95_high": 0.6336033707162949
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6241111111111112,
+        "ci95": 0.01763765012993589,
+        "episodes": 120,
+        "ci95_low": 0.6064734609811753,
+        "ci95_high": 0.6417487612410471
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6194444444444446,
+        "ci95": 0.01852789704129139,
+        "episodes": 120,
+        "ci95_low": 0.6009165474031531,
+        "ci95_high": 0.637972341485736
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.615111111111111,
+        "ci95": 0.01913497437035017,
+        "episodes": 120,
+        "ci95_low": 0.5959761367407609,
+        "ci95_high": 0.6342460854814612
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6175555555555555,
+        "ci95": 0.017144538709240643,
+        "episodes": 120,
+        "ci95_low": 0.6004110168463149,
+        "ci95_high": 0.6347000942647961
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.4,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6107777777777776,
+        "ci95": 0.017328534043139398,
+        "episodes": 120,
+        "ci95_low": 0.5934492437346383,
+        "ci95_high": 0.628106311820917
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.8,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.6,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6094444444444443,
+        "ci95": 0.016819010062772675,
+        "episodes": 120,
+        "ci95_low": 0.5926254343816717,
+        "ci95_high": 0.626263454507217
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6216666666666666,
+        "ci95": 0.017628880542845022,
+        "episodes": 120,
+        "ci95_low": 0.6040377861238215,
+        "ci95_high": 0.6392955472095116
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6224444444444444,
+        "ci95": 0.017525270410966198,
+        "episodes": 120,
+        "ci95_low": 0.6049191740334782,
+        "ci95_high": 0.6399697148554105
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6223333333333334,
+        "ci95": 0.01747930680687314,
+        "episodes": 120,
+        "ci95_low": 0.6048540265264603,
+        "ci95_high": 0.6398126401402066
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6213333333333332,
+        "ci95": 0.017694783003297018,
+        "episodes": 120,
+        "ci95_low": 0.6036385503300362,
+        "ci95_high": 0.6390281163366301
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6231111111111112,
+        "ci95": 0.017698386388461097,
+        "episodes": 120,
+        "ci95_low": 0.6054127247226501,
+        "ci95_high": 0.6408094974995723
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6224444444444444,
+        "ci95": 0.017574322987463368,
+        "episodes": 120,
+        "ci95_low": 0.6048701214569809,
+        "ci95_high": 0.6400187674319078
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6245555555555556,
+        "ci95": 0.01736354989824922,
+        "episodes": 120,
+        "ci95_low": 0.6071920056573065,
+        "ci95_high": 0.6419191054538048,
+        "confirmation": {
+          "accuracy": 0.6188,
+          "ci95": 0.011261373781715309,
+          "episodes": 300,
+          "ci95_low": 0.6075386262182847,
+          "ci95_high": 0.6300613737817153
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6244444444444445,
+        "ci95": 0.017591595008982504,
+        "episodes": 120,
+        "ci95_low": 0.6068528494354619,
+        "ci95_high": 0.642036039453427
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6255555555555556,
+        "ci95": 0.017619439320685222,
+        "episodes": 120,
+        "ci95_low": 0.6079361162348704,
+        "ci95_high": 0.6431749948762409,
+        "confirmation": {
+          "accuracy": 0.6193333333333333,
+          "ci95": 0.011165528768348766,
+          "episodes": 300,
+          "ci95_low": 0.6081678045649845,
+          "ci95_high": 0.630498862101682
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6211111111111111,
+        "ci95": 0.01769798104425606,
+        "episodes": 120,
+        "ci95_low": 0.603413130066855,
+        "ci95_high": 0.6388090921553671
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6214444444444445,
+        "ci95": 0.017794226148981695,
+        "episodes": 120,
+        "ci95_low": 0.6036502182954627,
+        "ci95_high": 0.6392386705934262
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.4,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6204444444444445,
+        "ci95": 0.017833524100541363,
+        "episodes": 120,
+        "ci95_low": 0.6026109203439031,
+        "ci95_high": 0.6382779685449859
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6066666666666668,
+        "ci95": 0.01827868694721153,
+        "episodes": 120,
+        "ci95_low": 0.5883879797194552,
+        "ci95_high": 0.6249453536138784
+      },
+      {
+        "config": {
+          "mean_weight": 0.03,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6065555555555555,
+        "ci95": 0.018294368162451693,
+        "episodes": 120,
+        "ci95_low": 0.5882611873931038,
+        "ci95_high": 0.6248499237180072
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 1.0,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6063333333333335,
+        "ci95": 0.01840894837822511,
+        "episodes": 120,
+        "ci95_low": 0.5879243849551083,
+        "ci95_high": 0.6247422817115587
+      }
+    ],
+    "shortlist": [
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6255555555555556,
+        "ci95": 0.017619439320685222,
+        "episodes": 120,
+        "ci95_low": 0.6079361162348704,
+        "ci95_high": 0.6431749948762409,
+        "confirmation": {
+          "accuracy": 0.6193333333333333,
+          "ci95": 0.011165528768348766,
+          "episodes": 300,
+          "ci95_low": 0.6081678045649845,
+          "ci95_high": 0.630498862101682
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6246666666666667,
+        "ci95": 0.01805134057991334,
+        "episodes": 120,
+        "ci95_low": 0.6066153260867534,
+        "ci95_high": 0.64271800724658,
+        "confirmation": {
+          "accuracy": 0.6236444444444444,
+          "ci95": 0.011352284881579409,
+          "episodes": 300,
+          "ci95_low": 0.6122921595628651,
+          "ci95_high": 0.6349967293260238
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.1,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.05,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6245555555555556,
+        "ci95": 0.018414230138806734,
+        "episodes": 120,
+        "ci95_low": 0.6061413254167489,
+        "ci95_high": 0.6429697856943624,
+        "confirmation": {
+          "accuracy": 0.6240000000000001,
+          "ci95": 0.01140094334382888,
+          "episodes": 300,
+          "ci95_low": 0.6125990566561712,
+          "ci95_high": 0.635400943343829
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.0,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.3,
+          "variance_blend": 0.15,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 0.5,
+          "power": 1.0
+        },
+        "accuracy": 0.6245555555555556,
+        "ci95": 0.01736354989824922,
+        "episodes": 120,
+        "ci95_low": 0.6071920056573065,
+        "ci95_high": 0.6419191054538048,
+        "confirmation": {
+          "accuracy": 0.6188,
+          "ci95": 0.011261373781715309,
+          "episodes": 300,
+          "ci95_low": 0.6075386262182847,
+          "ci95_high": 0.6300613737817153
+        }
+      },
+      {
+        "config": {
+          "mean_weight": 0.05,
+          "variance_prior_strength": 4.0,
+          "neighbors": 3,
+          "prototype_weight": 0.15,
+          "prototype_steps": 4,
+          "confidence_threshold": 0.0,
+          "temperature": 0.15,
+          "variance_blend": 0.1,
+          "balanced_queries": true,
+          "normalize_prototypes": false
+        },
+        "space": {
+          "center_strength": 1.0,
+          "power": 1.0
+        },
+        "accuracy": 0.6244444444444445,
+        "ci95": 0.01833181138463887,
+        "episodes": 120,
+        "ci95_low": 0.6061126330598056,
+        "ci95_high": 0.6427762558290834,
+        "confirmation": {
+          "accuracy": 0.6241333333333333,
+          "ci95": 0.011442994921888277,
+          "episodes": 300,
+          "ci95_low": 0.612690338411445,
+          "ci95_high": 0.6355763282552216
+        }
+      }
+    ],
+    "selected": {
+      "space": {
+        "center_strength": 1.0,
+        "power": 1.0
+      },
+      "config": {
+        "mean_weight": 0.05,
+        "variance_prior_strength": 4.0,
+        "neighbors": 3,
+        "prototype_weight": 0.15,
+        "prototype_steps": 4,
+        "confidence_threshold": 0.0,
+        "temperature": 0.15,
+        "variance_blend": 0.1,
+        "balanced_queries": true,
+        "normalize_prototypes": false
+      },
+      "validation_accuracy": 0.6241333333333333
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "project_tests": 559,
+  "project_test_seconds": 152.114,
+  "focused_tests_including_packaging": 48,
+  "cli_publication_verify": true,
+  "artifact_revision": "6b6de64782903a07d8316daf4c8475b6a530dfa38a32cf8490370ea49c670291",
+  "published_model_changed": false,
+  "frontend_changed": false,
+  "new_test_evaluation": false,
+  "new_browser_test_claimed": false,
+  "actual_studies_completed": 3,
+  "fresh_backbone_training_completed": false,
+  "driver_or_device_settings_changed": false,
+  "recorded_utc": "2026-11-25T09:01:53.624096+00:00"
+}

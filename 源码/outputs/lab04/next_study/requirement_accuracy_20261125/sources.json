@@ -1,0 +1,146 @@
+[
+  {
+    "key": "frn_readme",
+    "url": "https://raw.githubusercontent.com/Tsingularity/FRN/main/README.md",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:08.716771+00:00",
+    "sha256": "77b50399ddd1537139a25847f67b444c70d4cbdd0e185102d0f15e8f494fc3c9",
+    "file": "frn_readme.txt"
+  },
+  {
+    "key": "frn_readme_master",
+    "url": "https://raw.githubusercontent.com/Tsingularity/FRN/master/README.md",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:07.947353+00:00",
+    "sha256": "77b50399ddd1537139a25847f67b444c70d4cbdd0e185102d0f15e8f494fc3c9",
+    "file": "frn_readme_master.txt"
+  },
+  {
+    "key": "meta_baseline_readme",
+    "url": "https://raw.githubusercontent.com/yinboc/few-shot-meta-baseline/master/README.md",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:10.251344+00:00",
+    "sha256": "cc4025439d7b871d24c2127dd1b42dc33b3436c77e76784830a54422d9ebd9c9",
+    "file": "meta_baseline_readme.txt"
+  },
+  {
+    "key": "deepbdc_readme",
+    "url": "https://raw.githubusercontent.com/Fei-Long121/DeepBDC/main/README.md",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:07.909585+00:00",
+    "sha256": "1af7f1ccca6973b5cfcb6b0a91c3ee40d1da6a7ceca08506e8ba2ddc67b3295e",
+    "file": "deepbdc_readme.txt"
+  },
+  {
+    "key": "dn4_readme",
+    "url": "https://raw.githubusercontent.com/WenbinLee/DN4/master/README.md",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:09.825744+00:00",
+    "sha256": "9af6283e9a59bbf460f77c511b98044980323d0eb10cc93dd3df2932a9ef59c7",
+    "file": "dn4_readme.txt"
+  },
+  {
+    "key": "frn_search",
+    "url": "https://arxiv.org/search/?query=Feature+Map+Reconstruction+Networks&searchtype=all&abstracts=show&order=-announced_date_first&size=25",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:10.781838+00:00",
+    "sha256": "c695fae10a5e87d5355f3406c9b7ce64559f0004a35c04d6e8440a6918597978",
+    "file": "frn_search.txt"
+  },
+  {
+    "key": "frn_paper",
+    "url": "https://arxiv.org/abs/2012.01506",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:49.200807+00:00",
+    "sha256": "8e2173facc2e741ac1ab0280bae421957839d977a4dfc19a5bf2fc963836a862",
+    "file": "frn_paper.txt"
+  },
+  {
+    "key": "frn_code",
+    "url": "https://raw.githubusercontent.com/Tsingularity/FRN/main/src/models/FRN.py",
+    "status": 404,
+    "fetched_utc": "2026-11-25T08:24:48.546113+00:00",
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+    "file": "frn_code.txt"
+  },
+  {
+    "key": "frn_tree",
+    "url": "https://api.github.com/repos/Tsingularity/FRN/git/trees/main?recursive=1",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:49.384662+00:00",
+    "sha256": "c6c3afc002c432470f3f9866f48c2a4adab9854603f785318ffe8e80e522eeec",
+    "file": "frn_tree.txt"
+  },
+  {
+    "key": "meta_baseline_model",
+    "url": "https://raw.githubusercontent.com/yinboc/few-shot-meta-baseline/master/models/meta_baseline.py",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:48.971747+00:00",
+    "sha256": "e8cf981d86aa9ac1896f3c7ac0a7f90bdf8ebb39d9795f699489b17d06773696",
+    "file": "meta_baseline_model.txt"
+  },
+  {
+    "key": "meta_baseline_paper",
+    "url": "https://arxiv.org/abs/2003.04390",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:24:49.531373+00:00",
+    "sha256": "91cde9c4f43e2fc80fc2d9edcc600def1e08dd9c74da33732c09ed92d959e4db",
+    "file": "meta_baseline_paper.txt"
+  },
+  {
+    "key": "frn_model",
+    "url": "https://raw.githubusercontent.com/Tsingularity/FRN/main/models/FRN.py",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:26:34.634991+00:00",
+    "sha256": "04f81005eb8c063c84408c579a32c2c9f0ce42d8193881d069bbea4b3daaed2c",
+    "file": "frn_model.txt"
+  },
+  {
+    "key": "net2net_paper",
+    "url": "https://arxiv.org/abs/1511.05641",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:26:34.674910+00:00",
+    "sha256": "31f4792ef4ece35e908632b8235f98df1c5c5db3f57c6e3438a9583e4bebc732",
+    "file": "net2net_paper.txt"
+  },
+  {
+    "key": "vicreg_paper",
+    "url": "https://arxiv.org/abs/2105.04906",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:26:35.011040+00:00",
+    "sha256": "845da680b47eca75343f4479e1b89af7c3ee313346a391923b474603568da50c",
+    "file": "vicreg_paper.txt"
+  },
+  {
+    "key": "meta_baseline_recipe",
+    "url": "https://raw.githubusercontent.com/yinboc/few-shot-meta-baseline/master/configs/train_meta_mini.yaml",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:26:34.558373+00:00",
+    "sha256": "07c34a8932923072b1e2964b526bbdbe356795502d25ddbc1c734025b47cc25f",
+    "file": "meta_baseline_recipe.txt"
+  },
+  {
+    "key": "deepbdc_paper",
+    "url": "https://arxiv.org/abs/2204.04567",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:44:01.459036+00:00",
+    "sha256": "89e4d085928f0316851a80e9f700ef343c619792ebcf630495fb3db390cc6442",
+    "file": "deepbdc_paper.txt"
+  },
+  {
+    "key": "frn_title_search",
+    "url": "https://arxiv.org/search/?query=%22Feature+Map+Reconstruction+Networks%22&searchtype=title&abstracts=show&order=-announced_date_first&size=25",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:48:18.942031+00:00",
+    "file": "frn_title_search.txt",
+    "sha256": "6a727b597048aaa4eb0a2ea97022e258ae4ecb2ab87302658e1fecedd5c28e3f"
+  },
+  {
+    "key": "nvidia_code43",
+    "url": "https://support.microsoft.com/en-us/windows/fix-graphics-device-problems-with-error-code-43-6f6ae1ec-0bbe-a848-142e-0c6190502842",
+    "status": 200,
+    "fetched_utc": "2026-11-25T08:49:34.813069+00:00",
+    "file": "nvidia_code43.txt",
+    "sha256": "81f3ef65efc54f2487d7f665d1c4e5bd181cc8e46b2dd3ce08aa1ff51127a2c6"
+  }
+]

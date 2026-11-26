@@ -1,0 +1,146 @@
+{
+  "status": "complete",
+  "kind": "external research reference, not self-trained course model",
+  "test_accessed": false,
+  "reference": {
+    "source": "https://github.com/Sha-Lab/FEAT",
+    "url": "https://drive.usercontent.google.com/download?id=1ixqw1l9XVxl3lh1m5VXkctw6JssahGbQ&export=download&confirm=t",
+    "bytes": 56316902,
+    "sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "kind": "external research checkpoint; not our training",
+    "declared_training": "miniImageNet train64; official train/val/test CSV IDs exactly match local lists",
+    "not_proof": "A published checkpoint cannot independently prove its entire original training process; treat as external reference."
+  },
+  "parameters": 12424320,
+  "rows": [
+    {
+      "shots": 1,
+      "centering": false,
+      "method": "nearest_prototype",
+      "accuracy": 0.6020444444444445,
+      "ci95": 0.012820776022214904,
+      "episodes": 300,
+      "ci95_low": 0.5892236684222296,
+      "ci95_high": 0.6148652204666594
+    },
+    {
+      "shots": 1,
+      "centering": false,
+      "method": "balanced_refinement",
+      "accuracy": 0.6706222222222222,
+      "ci95": 0.01412118955190359,
+      "episodes": 300,
+      "ci95_low": 0.6565010326703187,
+      "ci95_high": 0.6847434117741258
+    },
+    {
+      "shots": 1,
+      "centering": false,
+      "method": "graph_refinement",
+      "accuracy": 0.674711111111111,
+      "ci95": 0.013690065763403068,
+      "episodes": 300,
+      "ci95_low": 0.661021045347708,
+      "ci95_high": 0.6884011768745141
+    },
+    {
+      "shots": 1,
+      "centering": true,
+      "method": "nearest_prototype",
+      "accuracy": 0.616,
+      "ci95": 0.01200659254889595,
+      "episodes": 300,
+      "ci95_low": 0.6039934074511041,
+      "ci95_high": 0.6280065925488959
+    },
+    {
+      "shots": 1,
+      "centering": true,
+      "method": "balanced_refinement",
+      "accuracy": 0.7221333333333333,
+      "ci95": 0.016816402751047718,
+      "episodes": 300,
+      "ci95_low": 0.7053169305822856,
+      "ci95_high": 0.738949736084381
+    },
+    {
+      "shots": 1,
+      "centering": true,
+      "method": "graph_refinement",
+      "accuracy": 0.7225777777777777,
+      "ci95": 0.016497921755160523,
+      "episodes": 300,
+      "ci95_low": 0.7060798560226171,
+      "ci95_high": 0.7390756995329382
+    },
+    {
+      "shots": 5,
+      "centering": false,
+      "method": "nearest_prototype",
+      "accuracy": 0.7709333333333335,
+      "ci95": 0.008853124563584185,
+      "episodes": 300,
+      "ci95_low": 0.7620802087697492,
+      "ci95_high": 0.7797864578969177
+    },
+    {
+      "shots": 5,
+      "centering": false,
+      "method": "balanced_refinement",
+      "accuracy": 0.7874222222222222,
+      "ci95": 0.008562736047761987,
+      "episodes": 300,
+      "ci95_low": 0.7788594861744602,
+      "ci95_high": 0.7959849582699843
+    },
+    {
+      "shots": 5,
+      "centering": false,
+      "method": "graph_refinement",
+      "accuracy": 0.7847555555555555,
+      "ci95": 0.008848202537689956,
+      "episodes": 300,
+      "ci95_low": 0.7759073530178656,
+      "ci95_high": 0.7936037580932455
+    },
+    {
+      "shots": 5,
+      "centering": true,
+      "method": "nearest_prototype",
+      "accuracy": 0.7735555555555556,
+      "ci95": 0.008866288608315717,
+      "episodes": 300,
+      "ci95_low": 0.7646892669472398,
+      "ci95_high": 0.7824218441638713
+    },
+    {
+      "shots": 5,
+      "centering": true,
+      "method": "balanced_refinement",
+      "accuracy": 0.8065777777777778,
+      "ci95": 0.008796486982614768,
+      "episodes": 300,
+      "ci95_low": 0.797781290795163,
+      "ci95_high": 0.8153742647603927
+    },
+    {
+      "shots": 5,
+      "centering": true,
+      "method": "graph_refinement",
+      "accuracy": 0.8057333333333334,
+      "ci95": 0.008677335964516988,
+      "episodes": 300,
+      "ci95_low": 0.7970559973688164,
+      "ci95_high": 0.8144106692978504
+    }
+  ],
+  "target_reached_on_validation": {
+    "1": false,
+    "5": false
+  },
+  "limitations": [
+    "Author-declared training provenance and matching split lists, not an independent audit of original training.",
+    "640-channel external encoder is not the lightweight model required by the course.",
+    "Only validation scores are measured; none is an independent test claim."
+  ]
+}

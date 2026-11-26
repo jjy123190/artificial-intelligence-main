@@ -45,17 +45,21 @@ export function FeatureComparison({ result }: { result: EpisodeResult }) {
   const all = [...points, ...prototypes].flatMap((p) => [p.before, p.after]);
   if (!all.length)
     return <p className="lab4-empty-inline">本次推理未返回二维特征投影。</p>;
-  const extent = (axis: number) => {
-    const values = all.map((p) => p[axis]);
-    const low = Math.min(...values);
-    const high = Math.max(...values);
-    const padding = Math.max((high - low) * 0.12, 0.1);
-    return [low - padding, high + padding];
-  };
-  const [xMin, xMax] = extent(0);
-  const [yMin, yMax] = extent(1);
-  const x = (value: number) => 28 + ((value - xMin) / (xMax - xMin)) * 400;
-  const y = (value: number) => 262 - ((value - yMin) / (yMax - yMin)) * 238;
+  const xs = all.map((p) => p[0]),
+    ys = all.map((p) => p[1]);
+  const minX = Math.min(...xs),
+    maxX = Math.max(...xs),
+    minY = Math.min(...ys),
+    maxY = Math.max(...ys);
+  const centerX = (minX + maxX) / 2,
+    centerY = (minY + maxY) / 2;
+  const scale = Math.min(
+    360 / Math.max(maxX - minX, 0.05),
+    214 / Math.max(maxY - minY, 0.05),
+  );
+  // Equal pixels per coordinate unit on both axes, shared before/after plots.
+  const x = (value: number) => 228 + (value - centerX) * scale;
+  const y = (value: number) => 143 - (value - centerY) * scale;
   const color = (id: string) =>
     classColor(
       Math.max(
@@ -136,10 +140,27 @@ export function FeatureComparison({ result }: { result: EpisodeResult }) {
           </span>
         ))}
       </div>
+      {result.projection && (
+        <p className="lab4-projection-note">
+          从 {result.projection.feature_dimensions} 维投影至2维 · 前两主成分保留{" "}
+          {percent(
+            result.projection.explained_variance.reduce(
+              (sum, value) => sum + value,
+              0,
+            ),
+          )}{" "}
+          的方差信息。图中重叠不等于高维空间中无法区分。
+        </p>
+      )}
       <p className="lab4-chart-note">
         实心点为支持样本，空心点为查询样本，菱形为
         {descriptiveCenters ? "描述性类别中心" : "分类原型"}
-        。颜色按真实类别显示，仅用于结果核对，不参与推理。两图使用相同坐标范围。
+        。颜色按真实类别显示，仅用于结果核对，不参与推理。两图使用同一PCA投影与坐标范围；二维距离不是模型实际分类距离。
+        {(result.calibration === "graph" ||
+          result.calibration === "multiview" ||
+          result.calibration === "wide") &&
+          Number(result.config?.graph_weight ?? 0) > 0 &&
+          "本方法还使用近邻图传播，原型图只解释部分计算，不是全部分类边界。"}
         {adapting
           ? "MAML 使用支持集适应网络，样本的特征位置会变化；分类使用完整特征。"
           : uncalibrated
@@ -286,5 +307,107 @@ export function TrainingCurve({ rows }: { rows: LabFourSnapshot["training"] }) {
         第 {valid.at(-1)!.epoch} 轮
       </text>
     </svg>
+  );
+}
+
+export function ValidationCurve({
+  rows,
+}: {
+  rows: LabFourSnapshot["training"];
+}) {
+  const valid = rows.filter(
+    (r) => r.validation_1shot != null && r.validation_5shot != null,
+  );
+  if (!valid.length) return null;
+  const x = (index: number) =>
+    50 + (index / Math.max(valid.length - 1, 1)) * 710;
+  const y = (value: number) => 178 - value * 200;
+  const lines = [
+    {
+      key: "validation_1shot" as const,
+      label: "验证集 1-shot",
+      color: "var(--primary)",
+    },
+    {
+      key: "validation_5shot" as const,
+      label: "验证集 5-shot",
+      color: "#466e58",
+    },
+  ];
+  return (
+    <figure className="lab4-validation-chart">
+      <figcaption>
+        验证集泛化表现<span>仅用于选型，未读取测试标签</span>
+      </figcaption>
+      <svg
+        viewBox="0 0 810 225"
+        role="img"
+        aria-label={`验证集准确率曲线，共${valid.length}个训练轮次`}
+      >
+        {[0.2, 0.4, 0.6, 0.8].map((t) => (
+          <g key={t}>
+            <path
+              d={`M50 ${y(t)}H760`}
+              stroke="var(--border)"
+              strokeDasharray="3 5"
+            />
+            <text
+              x="40"
+              y={y(t) + 4}
+              textAnchor="end"
+              fill="var(--muted)"
+              fontSize="11"
+            >
+              {percent(t, 0)}
+            </text>
+          </g>
+        ))}
+        {lines.map((line) => (
+          <g key={line.key}>
+            <polyline
+              points={valid
+                .map((r, i) => `${x(i)},${y(r[line.key]!)}`)
+                .join(" ")}
+              stroke={line.color}
+              strokeWidth="2.5"
+              fill="none"
+            />
+            {valid.map((r, i) => (
+              <circle
+                key={r.epoch}
+                cx={x(i)}
+                cy={y(r[line.key]!)}
+                r="2.5"
+                fill={line.color}
+              >
+                <title>
+                  第{r.epoch}轮 {line.label}：{percent(r[line.key]!, 2)}
+                </title>
+              </circle>
+            ))}
+          </g>
+        ))}
+        <text x="50" y="201" fill="var(--muted)" fontSize="11">
+          第 {valid[0].epoch} 轮
+        </text>
+        <text
+          x="760"
+          y="201"
+          textAnchor="end"
+          fill="var(--muted)"
+          fontSize="11"
+        >
+          第 {valid.at(-1)!.epoch} 轮
+        </text>
+      </svg>
+      <div className="lab4-validation-legend">
+        {lines.map((line) => (
+          <span key={line.key}>
+            <i style={{ background: line.color }} />
+            {line.label}
+          </span>
+        ))}
+      </div>
+    </figure>
   );
 }

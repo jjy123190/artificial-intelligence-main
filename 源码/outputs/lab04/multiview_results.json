@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "study": "deterministic multi-view incremental study",
+  "completed_utc": "2026-11-24T08:18:11.615826+00:00",
+  "base_weights_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+  "rows": [
+    {
+      "method": "multiview",
+      "shots": 1,
+      "accuracy": 0.5448666666666667,
+      "ci95": 0.010998993722577228,
+      "episodes": 600,
+      "ci95_low": 0.5338676729440895,
+      "ci95_high": 0.5558656603892439,
+      "transductive": true,
+      "balanced_queries": true,
+      "decision_rule": "soft",
+      "views": "concat",
+      "mean_episode_seconds": 0.04590422166666637,
+      "timing_scope": "inference_from_cached_features",
+      "paired_delta": 0.08615555555555555,
+      "paired_ci95": 0.0078019898433050626,
+      "paired_vs_full": 0.030755555555555557,
+      "paired_vs_full_ci95": 0.006901242147114347,
+      "paired_vs_graph": 0.014533333333333337,
+      "paired_vs_graph_ci95": 0.0051650677679411635,
+      "soft_accuracy": 0.5448666666666667
+    },
+    {
+      "method": "multiview",
+      "shots": 5,
+      "accuracy": 0.6716222222222222,
+      "ci95": 0.007512000603344963,
+      "episodes": 600,
+      "ci95_low": 0.6641102216188772,
+      "ci95_high": 0.6791342228255672,
+      "transductive": true,
+      "balanced_queries": true,
+      "decision_rule": "soft",
+      "views": "concat",
+      "mean_episode_seconds": 0.04268968433510357,
+      "timing_scope": "inference_from_cached_features",
+      "paired_delta": 0.054666666666666676,
+      "paired_ci95": 0.004695395745904677,
+      "paired_vs_full": 0.026600000000000002,
+      "paired_vs_full_ci95": 0.004137094977296473,
+      "paired_vs_graph": 0.002511111111111113,
+      "paired_vs_graph_ci95": 0.0032672754666729815,
+      "soft_accuracy": 0.6716222222222222
+    }
+  ],
+  "selection": "validation selected before test access",
+  "evaluation_plan": {
+    "selection_lock_sha256": "e9f1add62940bcbeeac4b504cf2391b94783e3a73cdefd36fe0c50b6141f8c6c",
+    "checkpoint_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+    "seed": 20261124,
+    "episodes_per_shot": 600,
+    "test_images_per_class": 600,
+    "source_sha256": {
+      "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+      "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+      "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e",
+      "evaluate_multiview.py": "982e8fb6c7e9b0af04749018ff58989926baadc50bb57299c15f83294eb1e81a",
+      "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+    }
+  },
+  "files": {
+    "multiview_transform.npz": {
+      "path": "multiview_transform.npz",
+      "sha256": "ab3adb379bebaf4d1009a91c9a697ae6d28a8f05b09e48ff465a8fdc25dba461"
+    },
+    "multiview_configuration.json": {
+      "path": "multiview_configuration.json",
+      "sha256": "e9f1add62940bcbeeac4b504cf2391b94783e3a73cdefd36fe0c50b6141f8c6c"
+    },
+    "multiview_episodes.json": {
+      "path": "multiview_episodes.json",
+      "sha256": "070c617781b20e74a052b5c5b443a2494d7ef7a9fcf0f993657e591b43d7bc12"
+    }
+  },
+  "limitations": [
+    "Two-view encoding costs more than single-view inference.",
+    "Balanced capacity decisions use the declared 15-query-per-class task design, not query labels.",
+    "Assignment scores are not calibrated probability guarantees; constrained labels may not be score argmax.",
+    "Repeated development on the same public benchmark is not external validation."
+  ]
+}

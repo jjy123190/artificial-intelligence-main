@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "validation_capacity_diagnostic_numeric_amendment",
+  "test_accessed": false,
+  "original_plan_sha256": "63cb07b1484345f3942ed7dcfaf6c03c8ed286a22156967b80c8973b2e8e1e35",
+  "original_failure_sha256": "fa3993fdc872c6fb6b6475236c2b701deaf0dfa1be11aeb8b8742c567864dee8",
+  "source_sha256": "7ad0e15e7a88c108e622521549dfb005ddcb70375f1d6fc431b50c47cbf981d3",
+  "original_sources": {
+    "study_literature.py": "1e170d1bb45b7434cd4d3f56ba43d3e0f16691be9f358eb26b135a84970632a6",
+    "literature_methods.py": "0d319871fca735822e6911a0ad5501727bd3dc70ba955d95336af35615731238",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "inputs": {
+    ".local\\lab04-continuation-validation-20261125\\train_views.npz": "2f7bc59a4413f0191e9212fd60e40c52e7e573712ffae51e2f7c3448272c07b8",
+    ".local\\lab04-continuation-validation-20261125\\train_views.json": "d00fd25b5fb607f1abc40bdff08be16d972cc65793257d2fcd97cfcf32da9ab2",
+    ".local\\lab04-continuation-validation-20261125\\val_views.npz": "e6a1de2dcf1274bdf5b64af56f505f039bbc06422082ee553d78c975ec9fa228",
+    ".local\\lab04-continuation-validation-20261125\\val_views.json": "271890f3a90dc3d1840dc06b736d3cfeabcd037b5199ee994abf0530a71326fc",
+    ".local\\lab04-reference-feat\\train_features.npz": "119ce2574bb4e937d9d33b749a5afa035523aaa66ffb593dee0fb30e76630e5b",
+    ".local\\lab04-reference-feat\\val_features.npz": "077f6f7c048e31a4eda2f627c399fdabd1b359cad28250c4ec9e33a50b585b70",
+    ".local\\lab04-reference-feat\\provenance.json": "13257ff82e358fbafcc045bb853056fccf96019c2bf7a37f71848ea3d12bfc48",
+    ".local\\lab04-reference-feat\\feat-1-shot.pth": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "outputs\\lab04\\continued.pt": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "outputs\\lab04\\continued_configuration.json": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900",
+    "outputs\\lab04\\continued_transform.npz": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+  },
+  "tasks_content_sha256": "4f5de68946664cfcd23f9c95547cf8036845e25a55d8c01d7706d4961e7e7aff",
+  "reused_scores": {
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\scores\\diagnostic_1_continued_published.json": "aacfa4e04e2dc1e097e345d78cde75950a8c857fb05f932c00a41af23476fbe7",
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\scores\\diagnostic_1_student_centered_graph.json": "9daef092ac32c62ac7c594ed4bd8a439e6a1ce4cea60c9f0d03aba2803a88fd5",
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\scores\\diagnostic_1_student_centered_proto.json": "1274c2415ca181f87098b837a52176ae38d1f43ac9c4c9649a3df628c1992b24",
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\scores\\diagnostic_1_teacher_centered_graph.json": "e4f0637ad4cc986d02958fe73085e1e378a44538bf46e2d71fedad19dd057194",
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\scores\\diagnostic_1_teacher_centered_proto.json": "8381300d02d359986f913f57bcdcf42b95ab8a849a2339fe4251f2f151459975"
+  },
+  "external_reference": {
+    "source": "https://github.com/Sha-Lab/FEAT",
+    "url": "https://drive.usercontent.google.com/download?id=1ixqw1l9XVxl3lh1m5VXkctw6JssahGbQ&export=download&confirm=t",
+    "bytes": 56316902,
+    "sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "kind": "external research checkpoint; not our training",
+    "declared_training": "miniImageNet train64; official train/val/test CSV IDs exactly match local lists",
+    "not_proof": "A published checkpoint cannot independently prove its entire original training process; treat as external reference."
+  },
+  "only_change": "Sinkhorn max iterations 300 -> 1000 for both PT-MAP heads, matching upstream maxiters; strict residual guard retained.",
+  "map_config": {
+    "inverse_temperature": 10.0,
+    "learning_rate": 0.2,
+    "steps": 20,
+    "sinkhorn_steps": 1000,
+    "sinkhorn_tolerance": 1e-07
+  },
+  "on_failure": "Record numeric failure with no accuracy; never drop the failing task or loosen the residual check.",
+  "limitations": [
+    "Validation images/classes have already been reused by earlier studies; not untouched data.",
+    "Search/confirmation image pools are disjoint, but share 16 classes; confirmation participates in selection.",
+    "Intervals are pointwise paired episode intervals, conditional on reused classes, not multiplicity-corrected or class-population intervals.",
+    "External FEAT encoder checkpoint is author-provided, not locally trained; caches are inherited and fingerprinted here.",
+    "Capacity probe jointly changes capacity, normalization and original training; it is not a capacity-only causal ablation.",
+    "TIM promotes uniform marginal entropy; MAP and published graph assume balanced queries.",
+    "Published continued transform uses 38400 train images; diagnostic matched-center heads use identical 6400 train IDs for both models."
+  ],
+  "registered_utc": "2026-11-25T07:57:46.726660+00:00"
+}

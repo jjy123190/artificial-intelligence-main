@@ -1,0 +1,327 @@
+{
+  "kind": "fetched_primary_sources_and_discovery_log",
+  "test_accessed": false,
+  "successful_fetches": 30,
+  "discovery": [
+    "arXiv keyword search: transductive few-shot learning; sorted newest first",
+    "OpenAlex keyword search filtered publication date >=2023; discovery only, not relied on for performance claims",
+    "GitHub repository search: PT-MAP; author repo resolved to yhu01/PT-MAP"
+  ],
+  "primary_sources_verified": [
+    "RFS paper PDF + official ResNet12/training source",
+    "TIM paper abstract + official README, source, evaluation recipe",
+    "PT-MAP paper PDF + official README, algorithm source",
+    "FEAT CVPR paper + official README, code MIT license",
+    "Distribution Calibration paper abstract + official source",
+    "SimpleShot paper abstract + official README",
+    "UNEM CVPR2025 accepted paper page + official visual-only README"
+  ],
+  "not_claimed": [
+    "No exhaustive SOTA search or universal accuracy guarantee.",
+    "Recent 2026 search hits are discovery leads; no implementation/result claim is based on their unreviewed abstracts.",
+    "No paper accuracy is recorded as a local measured test result."
+  ],
+  "sha256_verified": true,
+  "sources": [
+    {
+      "key": "rfs_readme",
+      "url": "https://raw.githubusercontent.com/WangYueFt/rfs/master/README.md",
+      "status": 200,
+      "sha256": "75963a394539330d02e01b5fcb7ade94def11a2846c65a7f5aad76a01077a3eb",
+      "fetched_at": "2026-11-25T07:16:38.034707+00:00",
+      "raw_file": "rfs_readme.md"
+    },
+    {
+      "key": "rfs_resnet",
+      "url": "https://raw.githubusercontent.com/WangYueFt/rfs/master/models/resnet.py",
+      "status": 200,
+      "sha256": "9789b6504c72e852e5e54629d0f31f5ad091c2c6642b0bd8e7466dcf57fbea8a",
+      "fetched_at": "2026-11-25T07:16:38.365278+00:00",
+      "raw_file": "rfs_resnet.md"
+    },
+    {
+      "key": "tim_readme",
+      "url": "https://raw.githubusercontent.com/mboudiaf/TIM/master/README.md",
+      "status": 200,
+      "sha256": "077a1e91629bcb01537bb8993d97453c02757c19b38d4bf069f264b29e4956ff",
+      "fetched_at": "2026-11-25T07:16:39.391234+00:00",
+      "raw_file": "tim_readme.md"
+    },
+    {
+      "key": "rfs_paper",
+      "url": "https://arxiv.org/abs/2003.11539",
+      "status": 200,
+      "sha256": "40e7256638ce6461c91a04a8ef647eae6278ca371dab12a8af949f372ddeb5a7",
+      "fetched_at": "2026-11-25T07:16:39.144430+00:00",
+      "raw_file": "rfs_paper.html"
+    },
+    {
+      "key": "tim_paper",
+      "url": "https://arxiv.org/abs/2008.11297",
+      "status": 200,
+      "sha256": "44860ae9e808502d12594ecfbcab83052c59fbd26ee8ebe50f98506c7f5640da",
+      "fetched_at": "2026-11-25T07:16:39.317137+00:00",
+      "raw_file": "tim_paper.html"
+    },
+    {
+      "key": "ptmap_paper",
+      "url": "https://arxiv.org/abs/2006.03806",
+      "status": 200,
+      "sha256": "36345ed1287b700563abf38b24cacaefef3d7e23408eaf44fe4dafb26f639bc2",
+      "fetched_at": "2026-11-25T07:16:39.726535+00:00",
+      "raw_file": "ptmap_paper.html"
+    },
+    {
+      "key": "feat_readme",
+      "url": "https://raw.githubusercontent.com/Sha-Lab/FEAT/master/README.md",
+      "status": 200,
+      "sha256": "1b62fa8dd43faeb8f08f02697d17bebb1c42ee779044bd961315ebf5c18c061d",
+      "fetched_at": "2026-11-25T07:16:39.343806+00:00",
+      "raw_file": "feat_readme.md"
+    },
+    {
+      "key": "simpleshot_readme",
+      "url": "https://raw.githubusercontent.com/mileyan/simple_shot/master/README.md",
+      "status": 200,
+      "sha256": "4e7cd2b0a05a9e5f208c5fb33dd65d61a110fa063b29a3269a426d4d905073c8",
+      "fetched_at": "2026-11-25T07:16:40.659674+00:00",
+      "raw_file": "simpleshot_readme.md"
+    },
+    {
+      "key": "dc_paper",
+      "url": "https://arxiv.org/abs/2101.06395",
+      "status": 200,
+      "sha256": "306b0dfa7cc28c19b6f9585f6ed6601a5c806a1ecb4b618bdea85152d835ce06",
+      "fetched_at": "2026-11-25T07:16:40.943401+00:00",
+      "raw_file": "dc_paper.html"
+    },
+    {
+      "key": "tim_code",
+      "url": "https://raw.githubusercontent.com/mboudiaf/TIM/master/src/tim.py",
+      "status": 200,
+      "sha256": "47254c2c3289668e163fdbaaf7a708dc5497a0c227900f1038a49945c45e4e7f",
+      "fetched_at": "2026-11-25T07:18:18.743370+00:00",
+      "raw_file": "tim_code.txt"
+    },
+    {
+      "key": "tim_mini_recipe",
+      "url": "https://raw.githubusercontent.com/mboudiaf/TIM/master/scripts/evaluate/tim_gd/mini.sh",
+      "status": 200,
+      "sha256": "611c2ee2fc02d4f3cb95842d11031a1717a9c741e9f718f017ba49109c481589",
+      "fetched_at": "2026-11-25T07:18:18.982063+00:00",
+      "raw_file": "tim_mini_recipe.txt"
+    },
+    {
+      "key": "rfs_train",
+      "url": "https://raw.githubusercontent.com/WangYueFt/rfs/master/train_supervised.py",
+      "status": 200,
+      "sha256": "60018b506a418c2d140dcc9d67b7ab4bb2700d2b0169d99e199073e12dca1eee",
+      "fetched_at": "2026-11-25T07:18:20.226334+00:00",
+      "raw_file": "rfs_train.txt"
+    },
+    {
+      "key": "dc_official",
+      "url": "https://raw.githubusercontent.com/ShuoYang-1998/Few_Shot_Distribution_Calibration/master/README.md",
+      "status": 200,
+      "sha256": "a837ba6fbb3bc21868950963875f31a893470c8a52adce3c7df6a4fdf72a181c",
+      "fetched_at": "2026-11-25T07:18:20.941195+00:00",
+      "raw_file": "dc_official.txt"
+    },
+    {
+      "key": "ptmap_pdf",
+      "url": "https://arxiv.org/pdf/2006.03806",
+      "status": 200,
+      "sha256": "594191c8b50e8cd9b8a0866730c1d0f2327e8697180e05ecf12d346b7548aec0",
+      "fetched_at": "2026-11-25T07:18:22.025323+00:00",
+      "raw_file": "ptmap_pdf.pdf"
+    },
+    {
+      "key": "ptmap_official_retry",
+      "url": "https://raw.githubusercontent.com/yhu01/PT-MAP/master/README.md",
+      "status": 200,
+      "sha256": "ca9156fd33981b3c62bcfd476397341957fb45fc3d2e67a3b3037bad03048b66",
+      "fetched_at": "2026-11-25T07:19:16.588885+00:00",
+      "raw_file": "ptmap_official_retry.txt"
+    },
+    {
+      "key": "ptmap_tree",
+      "url": "https://api.github.com/repos/yhu01/PT-MAP/git/trees/master?recursive=1",
+      "status": 200,
+      "sha256": "a19679e2e2260b4b6447ac551a0a1006945baeb40a93ef3e82353dc3be17ed5d",
+      "fetched_at": "2026-11-25T07:19:15.924062+00:00",
+      "raw_file": "ptmap_tree.txt"
+    },
+    {
+      "key": "rfs_pdf",
+      "url": "https://arxiv.org/pdf/2003.11539",
+      "status": 200,
+      "sha256": "6950c462e273ccf332c4ae79829382bcfc3d468cab971a70665ecae0386970e1",
+      "fetched_at": "2026-11-25T07:19:19.977467+00:00",
+      "raw_file": "rfs_pdf.pdf"
+    },
+    {
+      "key": "rfs_paper",
+      "url": "https://arxiv.org/abs/2003.11539",
+      "status": 200,
+      "sha256": "40e7256638ce6461c91a04a8ef647eae6278ca371dab12a8af949f372ddeb5a7",
+      "fetched_at": "2026-11-25T07:19:16.388274+00:00",
+      "raw_file": "rfs_paper.txt"
+    },
+    {
+      "key": "feat_paper",
+      "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Ye_Few-Shot_Learning_via_Embedding_Adaptation_With_Set-to-Set_Functions_CVPR_2020_paper.html",
+      "status": 200,
+      "sha256": "a73e037b0f614309935012c5a91f6b80f6f2d0c6982f5fbdfa848ffd58674403",
+      "fetched_at": "2026-11-25T07:19:18.025554+00:00",
+      "raw_file": "feat_paper.txt"
+    },
+    {
+      "key": "dc_code",
+      "url": "https://raw.githubusercontent.com/ShuoYang-1998/Few_Shot_Distribution_Calibration/master/evaluate_DC.py",
+      "status": 200,
+      "sha256": "e976babcc09bed0bbb96135ca8af7462547980e01ee217ecc5862e1325efa2ff",
+      "fetched_at": "2026-11-25T07:19:17.560548+00:00",
+      "raw_file": "dc_code.txt"
+    },
+    {
+      "key": "ptmap_code",
+      "url": "https://raw.githubusercontent.com/yhu01/PT-MAP/master/test_standard.py",
+      "status": 200,
+      "sha256": "1a5bbc73fb1d7beb76a29121adcb3ba7cb0da94f7852ed80ae5dde176486840c",
+      "raw_file": "ptmap_code.txt",
+      "fetched_at": "2026-11-25T07:19:49.704212+00:00"
+    },
+    {
+      "key": "latest_search",
+      "url": "https://arxiv.org/search/?query=transductive+few-shot+learning&searchtype=all&abstracts=show&order=-announced_date_first&size=25",
+      "status": 200,
+      "sha256": "4a61ad49527e2e96da31450019895afcd12b04622c977aa642b0655549b344f4",
+      "raw_file": "latest_search.html",
+      "fetched_at": "2026-11-25T07:26:51.008178+00:00"
+    },
+    {
+      "key": "github_ptmap_search",
+      "url": "https://github.com/search?q=PT-MAP&type=repositories",
+      "status": 200,
+      "sha256": "c4c6fce29b91509eb40346b6f4fb827651ca4c55a91ceb4c0b7881c2e59ffea3",
+      "raw_file": "github_ptmap_search.html",
+      "fetched_at": "2026-11-25T07:26:47.776959+00:00"
+    },
+    {
+      "key": "openalex_recent_search",
+      "url": "https://api.openalex.org/works?search=transductive%20few%20shot%20learning&filter=from_publication_date:2023-01-01&per-page=10",
+      "status": 200,
+      "sha256": "f10b76f95853d7da1c40151a864fb33a3e5e9773544c174da25c8a1463ea4a9f",
+      "raw_file": "openalex_recent_search.html",
+      "fetched_at": "2026-11-25T07:26:47.811649+00:00"
+    },
+    {
+      "key": "unem_paper",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_UNEM_UNrolled_Generalized_EM_for_Transductive_Few-Shot_Learning_CVPR_2025_paper.html",
+      "status": 200,
+      "sha256": "082e3fc2928b06490b93b9604191582461eeac72662fbe8a266d08373f0afe96",
+      "raw_file": "unem_paper.html",
+      "fetched_at": "2026-11-25T07:33:33.420212+00:00"
+    },
+    {
+      "key": "unem_arxiv",
+      "url": "https://arxiv.org/abs/2412.16739",
+      "status": 200,
+      "sha256": "acd95698bee12b7af650bd63fd5ca6dc4e9cb86a7c707ae69afa84e370437b78",
+      "raw_file": "unem_arxiv.html",
+      "fetched_at": "2026-11-25T07:33:33.265334+00:00"
+    },
+    {
+      "key": "tim_license",
+      "url": "https://raw.githubusercontent.com/mboudiaf/TIM/master/LICENSE",
+      "status": 200,
+      "sha256": "199a32727b7b9e055b1039e830d51368ddef0589e3328132feea899f28d72426",
+      "raw_file": "tim_license.txt",
+      "fetched_at": "2026-11-25T07:33:33.600542+00:00"
+    },
+    {
+      "key": "feat_license",
+      "url": "https://raw.githubusercontent.com/Sha-Lab/FEAT/master/LICENSE",
+      "status": 200,
+      "sha256": "6eb65cf37e318990f6bcec30ae41a16e4abd9152c0d71ad10259558443154629",
+      "raw_file": "feat_license.txt",
+      "fetched_at": "2026-11-25T07:33:34.135433+00:00"
+    },
+    {
+      "key": "unem_readme",
+      "url": "https://raw.githubusercontent.com/ZhouLong0/UNEM-Transductive/main/README.md",
+      "status": 200,
+      "sha256": "43be3c27cca6f79ca128a9cec30c372044bff568264643add391866ee61218a0",
+      "raw_file": "unem_readme.txt",
+      "fetched_at": "2026-11-25T07:34:00.054162+00:00"
+    },
+    {
+      "key": "unem_gaussian_readme",
+      "url": "https://raw.githubusercontent.com/ZhouLong0/UNEM-Transductive/main/UNEM_Gaussian/README.md",
+      "status": 200,
+      "raw_file": "unem_gaussian_readme.txt",
+      "sha256": "759f4e0c96f1e33eea1b98cedf5193f0d276f0cacac79da1ccf789196be3a53a",
+      "fetched_at": "2026-11-25T07:35:38.582540+00:00"
+    }
+  ],
+  "failed_fetches_preserved": [
+    {
+      "key": "rfs_tian_readme",
+      "url": "https://raw.githubusercontent.com/yonglongtian/RFS/master/README.md",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "fetched_at": "2026-11-25T07:16:37.991516+00:00",
+      "raw_file": "rfs_tian_readme.md"
+    },
+    {
+      "key": "ptmap_readme",
+      "url": "https://raw.githubusercontent.com/yqing-zhou/PT-MAP/master/README.md",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "fetched_at": "2026-11-25T07:16:38.213470+00:00",
+      "raw_file": "ptmap_readme.md"
+    },
+    {
+      "key": "ptmap_readme_alt",
+      "url": "https://raw.githubusercontent.com/yuqing-zhou/PT-MAP/master/README.md",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "fetched_at": "2026-11-25T07:16:38.165683+00:00",
+      "raw_file": "ptmap_readme_alt.md"
+    },
+    {
+      "key": "ptmap_official",
+      "url": "https://raw.githubusercontent.com/yhu01/PT-MAP/master/README.md",
+      "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /yhu01/PT-MAP/master/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    {
+      "key": "ptmap_official2",
+      "url": "https://raw.githubusercontent.com/yuqinghu/PT-MAP/master/README.md",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "fetched_at": "2026-11-25T07:18:19.033711+00:00",
+      "raw_file": "ptmap_official2.txt"
+    },
+    {
+      "key": "rfs_pdf",
+      "url": "https://arxiv.org/pdf/2003.11539",
+      "error": "HTTPSConnectionPool(host='arxiv.org', port=443): Max retries exceeded with url: /pdf/2003.11539 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    {
+      "key": "cvpr2025_unem",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Martin_UNEM_UNrolled_Generalized_EM_for_Transductive_Few-Shot_Learning_CVPR_2025_paper.html",
+      "status": 404,
+      "sha256": "acfe0f3f33fe732b049039f089d2f6632fd3c90d359efed1c7f4b3e243ae7ec7",
+      "raw_file": "cvpr2025_unem.html",
+      "fetched_at": "2026-11-25T07:26:49.521727+00:00"
+    },
+    {
+      "key": "rfs_license",
+      "url": "https://raw.githubusercontent.com/WangYueFt/rfs/master/LICENSE",
+      "status": 404,
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "raw_file": "rfs_license.txt",
+      "fetched_at": "2026-11-25T07:33:33.492649+00:00"
+    }
+  ]
+}

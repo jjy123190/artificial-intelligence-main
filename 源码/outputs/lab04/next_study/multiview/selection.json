@@ -1,0 +1,1382 @@
+{
+  "status": "complete",
+  "plan": {
+    "seed": 20261126,
+    "views": [
+      "original",
+      "mean",
+      "concat"
+    ],
+    "exponents": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "strength": 1.0,
+    "assignments": [
+      "soft",
+      "balanced_capacity"
+    ],
+    "search_episodes": 120,
+    "confirmation_episodes": 300,
+    "graph_config": {
+      "neighbors": 5,
+      "alpha": 0.95,
+      "power": 3.0,
+      "temperature": 0.1,
+      "prototype_weight": 0.8,
+      "prototype_steps": 8,
+      "graph_weight": 0.5,
+      "balanced": true
+    },
+    "checkpoint_sha256": "e455835d5042406cea5b261eb5514ca3d0d2d2a5adab1d532b1e8b54eef6de8c",
+    "test_accessed": false
+  },
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.49955555555555553,
+          "ci95": 0.026726735656231078,
+          "episodes": 120,
+          "ci95_low": 0.47282881989932446,
+          "ci95_high": 0.5262822912117866
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.4983333333333334,
+          "ci95": 0.025556092179645804,
+          "episodes": 120,
+          "ci95_low": 0.4727772411536876,
+          "ci95_high": 0.5238894255129792
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5074444444444444,
+          "ci95": 0.02659284144778906,
+          "episodes": 120,
+          "ci95_low": 0.4808516029966553,
+          "ci95_high": 0.5340372858922334,
+          "confirmation": {
+            "accuracy": 0.5125333333333334,
+            "ci95": 0.016583798019113676,
+            "episodes": 300,
+            "ci95_low": 0.4959495353142197,
+            "ci95_high": 0.5291171313524471
+          }
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5045555555555555,
+          "ci95": 0.026590503369178425,
+          "episodes": 120,
+          "ci95_low": 0.4779650521863771,
+          "ci95_high": 0.531146058924734
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.49777777777777776,
+          "ci95": 0.024833375999729394,
+          "episodes": 120,
+          "ci95_low": 0.47294440177804836,
+          "ci95_high": 0.5226111537775071
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.49233333333333335,
+          "ci95": 0.024726896190322225,
+          "episodes": 120,
+          "ci95_low": 0.46760643714301114,
+          "ci95_high": 0.5170602295236556
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5106666666666667,
+          "ci95": 0.027601182381291493,
+          "episodes": 120,
+          "ci95_low": 0.4830654842853752,
+          "ci95_high": 0.5382678490479582,
+          "confirmation": {
+            "accuracy": 0.5086222222222222,
+            "ci95": 0.016377205022368377,
+            "episodes": 300,
+            "ci95_low": 0.4922450171998538,
+            "ci95_high": 0.5249994272445906
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5063333333333333,
+          "ci95": 0.02764249899633764,
+          "episodes": 120,
+          "ci95_low": 0.47869083433699566,
+          "ci95_high": 0.5339758323296709
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5141111111111111,
+          "ci95": 0.02739978898296154,
+          "episodes": 120,
+          "ci95_low": 0.48671132212814955,
+          "ci95_high": 0.5415109000940727,
+          "confirmation": {
+            "accuracy": 0.5190666666666667,
+            "ci95": 0.016110975331126095,
+            "episodes": 300,
+            "ci95_low": 0.5029556913355406,
+            "ci95_high": 0.5351776419977927
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5157777777777778,
+          "ci95": 0.02768661869227577,
+          "episodes": 120,
+          "ci95_low": 0.488091159085502,
+          "ci95_high": 0.5434643964700535,
+          "confirmation": {
+            "accuracy": 0.5164000000000001,
+            "ci95": 0.0160236896474563,
+            "episodes": 300,
+            "ci95_low": 0.5003763103525438,
+            "ci95_high": 0.5324236896474563
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5104444444444444,
+          "ci95": 0.026075041742788498,
+          "episodes": 120,
+          "ci95_low": 0.48436940270165585,
+          "ci95_high": 0.5365194861872329
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5071111111111111,
+          "ci95": 0.026467802986203534,
+          "episodes": 120,
+          "ci95_low": 0.4806433081249075,
+          "ci95_high": 0.5335789140973146
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.51,
+          "ci95": 0.027351666098141564,
+          "episodes": 120,
+          "ci95_low": 0.48264833390185846,
+          "ci95_high": 0.5373516660981416
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5077777777777778,
+          "ci95": 0.02703745399744143,
+          "episodes": 120,
+          "ci95_low": 0.4807403237803363,
+          "ci95_high": 0.5348152317752192
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5135555555555555,
+          "ci95": 0.027174019545727957,
+          "episodes": 120,
+          "ci95_low": 0.4863815360098276,
+          "ci95_high": 0.5407295751012835,
+          "confirmation": {
+            "accuracy": 0.5219555555555555,
+            "ci95": 0.01606080768100152,
+            "episodes": 300,
+            "ci95_low": 0.505894747874554,
+            "ci95_high": 0.538016363236557
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5127777777777778,
+          "ci95": 0.027140405152951866,
+          "episodes": 120,
+          "ci95_low": 0.4856373726248259,
+          "ci95_high": 0.5399181829307297,
+          "confirmation": {
+            "accuracy": 0.5172444444444445,
+            "ci95": 0.01595942842575456,
+            "episodes": 300,
+            "ci95_low": 0.5012850160186899,
+            "ci95_high": 0.5332038728701991
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.504,
+          "ci95": 0.024685155692173402,
+          "episodes": 120,
+          "ci95_low": 0.4793148443078266,
+          "ci95_high": 0.5286851556921734
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.49766666666666665,
+          "ci95": 0.024840749359835542,
+          "episodes": 120,
+          "ci95_low": 0.4728259173068311,
+          "ci95_high": 0.5225074160265022
+        }
+      ],
+      "shortlist": [
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5157777777777778,
+          "ci95": 0.02768661869227577,
+          "episodes": 120,
+          "ci95_low": 0.488091159085502,
+          "ci95_high": 0.5434643964700535,
+          "confirmation": {
+            "accuracy": 0.5164000000000001,
+            "ci95": 0.0160236896474563,
+            "episodes": 300,
+            "ci95_low": 0.5003763103525438,
+            "ci95_high": 0.5324236896474563
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5141111111111111,
+          "ci95": 0.02739978898296154,
+          "episodes": 120,
+          "ci95_low": 0.48671132212814955,
+          "ci95_high": 0.5415109000940727,
+          "confirmation": {
+            "accuracy": 0.5190666666666667,
+            "ci95": 0.016110975331126095,
+            "episodes": 300,
+            "ci95_low": 0.5029556913355406,
+            "ci95_high": 0.5351776419977927
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5135555555555555,
+          "ci95": 0.027174019545727957,
+          "episodes": 120,
+          "ci95_low": 0.4863815360098276,
+          "ci95_high": 0.5407295751012835,
+          "confirmation": {
+            "accuracy": 0.5219555555555555,
+            "ci95": 0.01606080768100152,
+            "episodes": 300,
+            "ci95_low": 0.505894747874554,
+            "ci95_high": 0.538016363236557
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5127777777777778,
+          "ci95": 0.027140405152951866,
+          "episodes": 120,
+          "ci95_low": 0.4856373726248259,
+          "ci95_high": 0.5399181829307297,
+          "confirmation": {
+            "accuracy": 0.5172444444444445,
+            "ci95": 0.01595942842575456,
+            "episodes": 300,
+            "ci95_low": 0.5012850160186899,
+            "ci95_high": 0.5332038728701991
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5106666666666667,
+          "ci95": 0.027601182381291493,
+          "episodes": 120,
+          "ci95_low": 0.4830654842853752,
+          "ci95_high": 0.5382678490479582,
+          "confirmation": {
+            "accuracy": 0.5086222222222222,
+            "ci95": 0.016377205022368377,
+            "episodes": 300,
+            "ci95_low": 0.4922450171998538,
+            "ci95_high": 0.5249994272445906
+          }
+        }
+      ],
+      "selected": {
+        "views": "concat",
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5
+        },
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.5135555555555555,
+        "ci95": 0.027174019545727957,
+        "episodes": 120,
+        "ci95_low": 0.4863815360098276,
+        "ci95_high": 0.5407295751012835,
+        "confirmation": {
+          "accuracy": 0.5219555555555555,
+          "ci95": 0.01606080768100152,
+          "episodes": 300,
+          "ci95_low": 0.505894747874554,
+          "ci95_high": 0.538016363236557
+        }
+      },
+      "graph_reference": {
+        "views": "original",
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5
+        },
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.5074444444444444,
+        "ci95": 0.02659284144778906,
+        "episodes": 120,
+        "ci95_low": 0.4808516029966553,
+        "ci95_high": 0.5340372858922334,
+        "confirmation": {
+          "accuracy": 0.5125333333333334,
+          "ci95": 0.016583798019113676,
+          "episodes": 300,
+          "ci95_low": 0.4959495353142197,
+          "ci95_high": 0.5291171313524471
+        }
+      }
+    },
+    "5": {
+      "candidates": [
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6253333333333333,
+          "ci95": 0.019895824197034482,
+          "episodes": 120,
+          "ci95_low": 0.6054375091362988,
+          "ci95_high": 0.6452291575303678
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6213333333333334,
+          "ci95": 0.019702581231644305,
+          "episodes": 120,
+          "ci95_low": 0.6016307521016891,
+          "ci95_high": 0.6410359145649777
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6363333333333333,
+          "ci95": 0.02037458119916565,
+          "episodes": 120,
+          "ci95_low": 0.6159587521341676,
+          "ci95_high": 0.656707914532499,
+          "confirmation": {
+            "accuracy": 0.6507111111111111,
+            "ci95": 0.011966383818903224,
+            "episodes": 300,
+            "ci95_low": 0.6387447272922079,
+            "ci95_high": 0.6626774949300144
+          }
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.634888888888889,
+          "ci95": 0.020673366037635747,
+          "episodes": 120,
+          "ci95_low": 0.6142155228512532,
+          "ci95_high": 0.6555622549265246
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6289999999999999,
+          "ci95": 0.020059242888811408,
+          "episodes": 120,
+          "ci95_low": 0.6089407571111884,
+          "ci95_high": 0.6490592428888113
+        },
+        {
+          "views": "original",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6236666666666667,
+          "ci95": 0.02006115017652848,
+          "episodes": 120,
+          "ci95_low": 0.6036055164901383,
+          "ci95_high": 0.6437278168431951
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6315555555555555,
+          "ci95": 0.020479870188404862,
+          "episodes": 120,
+          "ci95_low": 0.6110756853671506,
+          "ci95_high": 0.6520354257439605
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6281111111111112,
+          "ci95": 0.019659802738538044,
+          "episodes": 120,
+          "ci95_low": 0.6084513083725731,
+          "ci95_high": 0.6477709138496492
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6444444444444445,
+          "ci95": 0.020553066374634835,
+          "episodes": 120,
+          "ci95_low": 0.6238913780698097,
+          "ci95_high": 0.6649975108190793,
+          "confirmation": {
+            "accuracy": 0.6568888888888889,
+            "ci95": 0.012094625084533319,
+            "episodes": 300,
+            "ci95_low": 0.6447942638043556,
+            "ci95_high": 0.6689835139734222
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6417777777777778,
+          "ci95": 0.02023554633947959,
+          "episodes": 120,
+          "ci95_low": 0.6215422314382982,
+          "ci95_high": 0.6620133241172573,
+          "confirmation": {
+            "accuracy": 0.6530666666666667,
+            "ci95": 0.012268137488607054,
+            "episodes": 300,
+            "ci95_low": 0.6407985291780597,
+            "ci95_high": 0.6653348041552737
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6401111111111111,
+          "ci95": 0.01999914993109942,
+          "episodes": 120,
+          "ci95_low": 0.6201119611800117,
+          "ci95_high": 0.6601102610422105,
+          "confirmation": {
+            "accuracy": 0.6479999999999999,
+            "ci95": 0.011507959354395348,
+            "episodes": 300,
+            "ci95_low": 0.6364920406456046,
+            "ci95_high": 0.6595079593543952
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6354444444444444,
+          "ci95": 0.019153866658938097,
+          "episodes": 120,
+          "ci95_low": 0.6162905777855062,
+          "ci95_high": 0.6545983111033825
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6324444444444446,
+          "ci95": 0.020369347954535898,
+          "episodes": 120,
+          "ci95_low": 0.6120750964899087,
+          "ci95_high": 0.6528137923989805
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6295555555555555,
+          "ci95": 0.019842347765602883,
+          "episodes": 120,
+          "ci95_low": 0.6097132077899526,
+          "ci95_high": 0.6493979033211584
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.647888888888889,
+          "ci95": 0.02037113816893275,
+          "episodes": 120,
+          "ci95_low": 0.6275177507199562,
+          "ci95_high": 0.6682600270578217,
+          "confirmation": {
+            "accuracy": 0.6574666666666666,
+            "ci95": 0.0117573841097383,
+            "episodes": 300,
+            "ci95_low": 0.6457092825569284,
+            "ci95_high": 0.6692240507764049
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.642888888888889,
+          "ci95": 0.020043789157875663,
+          "episodes": 120,
+          "ci95_low": 0.6228450997310133,
+          "ci95_high": 0.6629326780467646,
+          "confirmation": {
+            "accuracy": 0.6530222222222222,
+            "ci95": 0.012013197296313415,
+            "episodes": 300,
+            "ci95_low": 0.6410090249259087,
+            "ci95_high": 0.6650354195185356
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6265555555555555,
+          "ci95": 0.01960547926317302,
+          "episodes": 120,
+          "ci95_low": 0.6069500762923825,
+          "ci95_high": 0.6461610348187286
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6216666666666666,
+          "ci95": 0.020167196125497222,
+          "episodes": 120,
+          "ci95_low": 0.6014994705411694,
+          "ci95_high": 0.6418338627921638
+        }
+      ],
+      "shortlist": [
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.647888888888889,
+          "ci95": 0.02037113816893275,
+          "episodes": 120,
+          "ci95_low": 0.6275177507199562,
+          "ci95_high": 0.6682600270578217,
+          "confirmation": {
+            "accuracy": 0.6574666666666666,
+            "ci95": 0.0117573841097383,
+            "episodes": 300,
+            "ci95_low": 0.6457092825569284,
+            "ci95_high": 0.6692240507764049
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6444444444444445,
+          "ci95": 0.020553066374634835,
+          "episodes": 120,
+          "ci95_low": 0.6238913780698097,
+          "ci95_high": 0.6649975108190793,
+          "confirmation": {
+            "accuracy": 0.6568888888888889,
+            "ci95": 0.012094625084533319,
+            "episodes": 300,
+            "ci95_low": 0.6447942638043556,
+            "ci95_high": 0.6689835139734222
+          }
+        },
+        {
+          "views": "concat",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.642888888888889,
+          "ci95": 0.020043789157875663,
+          "episodes": 120,
+          "ci95_low": 0.6228450997310133,
+          "ci95_high": 0.6629326780467646,
+          "confirmation": {
+            "accuracy": 0.6530222222222222,
+            "ci95": 0.012013197296313415,
+            "episodes": 300,
+            "ci95_low": 0.6410090249259087,
+            "ci95_high": 0.6650354195185356
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5
+          },
+          "assignment": "balanced_capacity",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6417777777777778,
+          "ci95": 0.02023554633947959,
+          "episodes": 120,
+          "ci95_low": 0.6215422314382982,
+          "ci95_high": 0.6620133241172573,
+          "confirmation": {
+            "accuracy": 0.6530666666666667,
+            "ci95": 0.012268137488607054,
+            "episodes": 300,
+            "ci95_low": 0.6407985291780597,
+            "ci95_high": 0.6653348041552737
+          }
+        },
+        {
+          "views": "mean",
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75
+          },
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6401111111111111,
+          "ci95": 0.01999914993109942,
+          "episodes": 120,
+          "ci95_low": 0.6201119611800117,
+          "ci95_high": 0.6601102610422105,
+          "confirmation": {
+            "accuracy": 0.6479999999999999,
+            "ci95": 0.011507959354395348,
+            "episodes": 300,
+            "ci95_low": 0.6364920406456046,
+            "ci95_high": 0.6595079593543952
+          }
+        }
+      ],
+      "selected": {
+        "views": "concat",
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5
+        },
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.647888888888889,
+        "ci95": 0.02037113816893275,
+        "episodes": 120,
+        "ci95_low": 0.6275177507199562,
+        "ci95_high": 0.6682600270578217,
+        "confirmation": {
+          "accuracy": 0.6574666666666666,
+          "ci95": 0.0117573841097383,
+          "episodes": 300,
+          "ci95_low": 0.6457092825569284,
+          "ci95_high": 0.6692240507764049
+        }
+      },
+      "graph_reference": {
+        "views": "original",
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5
+        },
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.6363333333333333,
+        "ci95": 0.02037458119916565,
+        "episodes": 120,
+        "ci95_low": 0.6159587521341676,
+        "ci95_high": 0.656707914532499,
+        "confirmation": {
+          "accuracy": 0.6507111111111111,
+          "ci95": 0.011966383818903224,
+          "episodes": 300,
+          "ci95_low": 0.6387447272922079,
+          "ci95_high": 0.6626774949300144
+        }
+      }
+    }
+  },
+  "completed_utc": "2026-11-24T08:10:13.393118+00:00"
+}

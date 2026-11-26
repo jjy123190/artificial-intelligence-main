@@ -1,0 +1,17 @@
+{
+  "kind": "validation_only_report",
+  "test_accessed": false,
+  "published_model_changed": false,
+  "input_hashes": {
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\selection.json": "e957a55da4844cd708710984a3a51a0785e39fba9faf1989be1d3b44bfe67d74",
+    "outputs\\lab04\\next_study\\teacher_geometry_20261125\\selection.json": "cf3f5212cc8507d05e2030af8a338f2798bfe75d59a3299fd3486813e865b6b2",
+    "outputs\\lab04\\next_study\\literature_diagnostic_20261125\\diagnostic.json": "18edf94573b286f45463cea771666822fe2d0f1649ed3fb50d841bc3ee77da6d",
+    "outputs\\lab04\\next_study\\literature_inference_20261125\\audit.json": "54ac5c62a1e9c1b613349fde67b99351144316fcc0a035db0c5bdde7d5bd5d9f",
+    "outputs\\lab04\\next_study\\teacher_geometry_20261125\\audit.json": "b2629499bb563903f0792cbe77a0a8d6e5694eadb0d073f9aebcb02c072cd2c4",
+    "outputs\\lab04\\next_study\\literature_diagnostic_20261125\\audit.json": "2a6478c47028d54707a5d7f9d6603addbc67f50a1e2715c81b05d89299c9b1a1"
+  },
+  "markdown_sha256": "f358846b4d9036e17f43f52a9ce063fccf240b486f1209b6b4d485f4441d9d08",
+  "generator_sha256": "c0919eccb6382613dc06e8b764e4440a675476579c0a4323f95960c7cf487d9b",
+  "external_teacher_disclosed": true,
+  "actual_distillation_training_completed": false
+}

@@ -27,7 +27,7 @@ class CourseTests(unittest.TestCase):
     def test_catalog_has_requirement_entries_and_code_positions(self):
         value=self.client.get('/api/course').json()
         self.assertEqual([l['id'] for l in value['labs']],['lab01','lab02','lab03','lab04'])
-        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5,4,3])
+        self.assertEqual([len(l['modules']) for l in value['labs']],[4,5,4,7])
         for lab in value['labs']:
             self.assertTrue((ROOT/lab['code']).is_dir())
             self.assertTrue(all(m['requirement'] and m['description'] for m in lab['modules']))
@@ -38,7 +38,7 @@ class CourseTests(unittest.TestCase):
             'lab01':['representation','industry','demo','limitations'],
             'lab02':['modeling','deterministic','uncertain','optimization','hybrid'],
             'lab03':['search','optimization','assistant','evaluation'],
-            'lab04':['inference','protocol','evaluation'],
+            'lab04':['inference','protocol','evaluation','ablations','reliability','deployment','history'],
         }
         for lab in value['labs']:
             self.assertEqual([module['id'] for module in lab['modules']],expected[lab['id']])
@@ -237,7 +237,7 @@ class CourseTests(unittest.TestCase):
         for lab, files in FILES.items():
             for _, relative, _ in files.values():
                 self.assertTrue(relative.startswith('deliverables/'+submission_folders[lab]+'/'))
-                self.assertIn(Path(relative).suffix,{'.docx','.pptx','.mp4','.md'})
+                self.assertIn(Path(relative).suffix,{'.docx','.pptx','.mp4','.md','.pdf','.vtt','.jpg'})
 
     def test_submission_groups_follow_the_two_platforms(self):
         self.assertEqual(FILES['lab02']['report'][1], 'deliverables/lab2/第33组_人工智能推理实验报告.docx')
@@ -262,6 +262,47 @@ class CourseTests(unittest.TestCase):
             with patch('backend.course.ROOT',source):
                 self.assertEqual(len(catalog()['labs']),4)
                 with self.assertRaises(FileNotFoundError):file_path('lab03','report')
+
+    def test_current_lab04_materials_are_distinct_from_v1_and_remain_safe(self):
+        identifiers={'current-report-pdf','current-report-word','current-slides','current-demo-video','current-presentation-video'}
+        self.assertTrue(identifiers.issubset(FILES['lab04']))
+        for name in identifiers:
+            self.assertIn('/当前版本/',FILES['lab04'][name][1])
+        self.assertEqual(FILES['lab04']['report'][1],'deliverables/lab4/第33组_实验四_实验报告.docx')
+        with tempfile.TemporaryDirectory(prefix='lab04_current_materials_') as directory:
+            root=Path(directory);source=root/'源码';source.mkdir()
+            expected=root/FILES['lab04']['current-report-pdf'][1]
+            expected.parent.mkdir(parents=True);expected.write_bytes(b'%PDF current fixture')
+            with patch('backend.course.ROOT',source):
+                data=next(l for l in catalog()['labs'] if l['id']=='lab04')
+                current=next(f for f in data['files'] if f['id']=='current-report-pdf')
+                self.assertTrue(current['available'])
+                self.assertFalse(next(f for f in data['files'] if f['id']=='report')['available'])
+                response=self.client.get('/api/course/files/lab04/current-report-pdf')
+                self.assertEqual(response.status_code,200)
+                self.assertEqual(response.content,expected.read_bytes())
+                self.assertEqual(self.client.get('/api/course/files/lab04/current-not-allowed').status_code,404)
+
+    def test_lab04_report_pages_and_supplements_have_distinct_safe_entries(self):
+        lab=next(row for row in catalog()['labs'] if row['id']=='lab04')
+        ids=[m['id'] for m in lab['modules']]
+        self.assertEqual(len(ids),len(set(ids)))
+        self.assertTrue({'evaluation','ablations','reliability','deployment','history'}.issubset(ids))
+        self.assertTrue({'requirements','materials'}.isdisjoint(ids))
+        with tempfile.TemporaryDirectory(prefix='lab04_supplement_fixture_') as directory:
+            root=Path(directory);source=root/'源码';source.mkdir()
+            expected=root/FILES['lab04']['supplement-wide'][1]
+            expected.parent.mkdir(parents=True);expected.write_bytes(b'%PDF-1.4 fixture')
+            with patch('backend.course.ROOT',source):
+                files=next(row for row in catalog()['labs'] if row['id']=='lab04')['files']
+                supplement=next(file for file in files if file['id']=='supplement-wide')
+                self.assertTrue(supplement['available'])
+                self.assertEqual(file_path('lab04','supplement-wide'),expected.resolve())
+                self.assertFalse(next(file for file in files if file['id']=='report')['available'])
+                response=self.client.get('/api/course/files/lab04/supplement-wide')
+                self.assertEqual(response.status_code,200)
+                self.assertEqual(response.content,b'%PDF-1.4 fixture')
+                self.assertTrue(response.headers['content-type'].startswith('application/pdf'))
 
     def test_sibling_material_resolution_rejects_path_escape(self):
         with tempfile.TemporaryDirectory(prefix='equity_material_guard_') as directory:

@@ -1,0 +1,8 @@
+{
+  "status": "locked",
+  "selection_sha256": "cf4f1dd4b4bcaef24f7a15d2fa5a7929120d5f4bd703d630faf17f5b517cbd62",
+  "plan_sha256": "7fc62893bf3b74aee8d3672c5782ee5d09b37ae26abfada4503188b610133a26",
+  "transform_sha256": "2feb875c0641c0bab23b4c523117b1b3c3a3adea4e25acbe83fa0e625ec401d8",
+  "locked_utc": "2026-11-25T03:04:16.014680+00:00",
+  "test_accessed": false
+}

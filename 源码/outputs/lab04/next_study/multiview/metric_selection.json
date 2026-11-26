@@ -1,0 +1,1117 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "plan": {
+    "seed": 20261126,
+    "source_lock_sha256": "e01838382b38d65829d5ad896f22c0a82e620031620ad81be210b6732d1d3613",
+    "exponents": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "residual_mix": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "search_episodes": 120,
+    "confirmation_episodes": 300,
+    "test_accessed": false
+  },
+  "shots": {
+    "1": {
+      "candidates": [
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.51,
+          "ci95": 0.027351666098141564,
+          "episodes": 120,
+          "ci95_low": 0.48264833390185846,
+          "ci95_high": 0.5373516660981416
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5101111111111112,
+          "ci95": 0.026952259296596916,
+          "episodes": 120,
+          "ci95_low": 0.4831588518145143,
+          "ci95_high": 0.5370633704077081
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5113333333333333,
+          "ci95": 0.026695790370944477,
+          "episodes": 120,
+          "ci95_low": 0.4846375429623888,
+          "ci95_high": 0.5380291237042778
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5135555555555555,
+          "ci95": 0.027174019545727957,
+          "episodes": 120,
+          "ci95_low": 0.4863815360098276,
+          "ci95_high": 0.5407295751012835,
+          "confirmation": {
+            "accuracy": 0.5219555555555555,
+            "ci95": 0.01606080768100152,
+            "episodes": 300,
+            "ci95_low": 0.505894747874554,
+            "ci95_high": 0.538016363236557
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.522,
+          "ci95": 0.02715934909266521,
+          "episodes": 120,
+          "ci95_low": 0.4948406509073348,
+          "ci95_high": 0.5491593490926653,
+          "confirmation": {
+            "accuracy": 0.5241777777777777,
+            "ci95": 0.016258458058532446,
+            "episodes": 300,
+            "ci95_low": 0.5079193197192453,
+            "ci95_high": 0.5404362358363102
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5241111111111112,
+          "ci95": 0.0269935725532327,
+          "episodes": 120,
+          "ci95_low": 0.4971175385578785,
+          "ci95_high": 0.5511046836643438,
+          "confirmation": {
+            "accuracy": 0.5253333333333334,
+            "ci95": 0.016361030993388058,
+            "episodes": 300,
+            "ci95_low": 0.5089723023399454,
+            "ci95_high": 0.5416943643267215
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.504,
+          "ci95": 0.024685155692173402,
+          "episodes": 120,
+          "ci95_low": 0.4793148443078266,
+          "ci95_high": 0.5286851556921734
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5195555555555555,
+          "ci95": 0.025125544166130092,
+          "episodes": 120,
+          "ci95_low": 0.49443001138942544,
+          "ci95_high": 0.5446810997216857,
+          "confirmation": {
+            "accuracy": 0.5165777777777779,
+            "ci95": 0.015800742089246127,
+            "episodes": 300,
+            "ci95_low": 0.5007770356885318,
+            "ci95_high": 0.532378519867024
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5317777777777778,
+          "ci95": 0.025531978712281883,
+          "episodes": 120,
+          "ci95_low": 0.5062457990654959,
+          "ci95_high": 0.5573097564900596,
+          "confirmation": {
+            "accuracy": 0.5280444444444444,
+            "ci95": 0.016275132452005396,
+            "episodes": 300,
+            "ci95_low": 0.511769311992439,
+            "ci95_high": 0.5443195768964498
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.4305555555555556,
+          "ci95": 0.02026733931345623,
+          "episodes": 120,
+          "ci95_low": 0.4102882162420993,
+          "ci95_high": 0.45082289486901184
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.4611111111111111,
+          "ci95": 0.02072742884352341,
+          "episodes": 120,
+          "ci95_low": 0.4403836822675877,
+          "ci95_high": 0.4818385399546345
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.49200000000000005,
+          "ci95": 0.021952906299374273,
+          "episodes": 120,
+          "ci95_low": 0.47004709370062575,
+          "ci95_high": 0.5139529062993743
+        }
+      ],
+      "shortlist": [
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5317777777777778,
+          "ci95": 0.025531978712281883,
+          "episodes": 120,
+          "ci95_low": 0.5062457990654959,
+          "ci95_high": 0.5573097564900596,
+          "confirmation": {
+            "accuracy": 0.5280444444444444,
+            "ci95": 0.016275132452005396,
+            "episodes": 300,
+            "ci95_low": 0.511769311992439,
+            "ci95_high": 0.5443195768964498
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5241111111111112,
+          "ci95": 0.0269935725532327,
+          "episodes": 120,
+          "ci95_low": 0.4971175385578785,
+          "ci95_high": 0.5511046836643438,
+          "confirmation": {
+            "accuracy": 0.5253333333333334,
+            "ci95": 0.016361030993388058,
+            "episodes": 300,
+            "ci95_low": 0.5089723023399454,
+            "ci95_high": 0.5416943643267215
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.522,
+          "ci95": 0.02715934909266521,
+          "episodes": 120,
+          "ci95_low": 0.4948406509073348,
+          "ci95_high": 0.5491593490926653,
+          "confirmation": {
+            "accuracy": 0.5241777777777777,
+            "ci95": 0.016258458058532446,
+            "episodes": 300,
+            "ci95_low": 0.5079193197192453,
+            "ci95_high": 0.5404362358363102
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5195555555555555,
+          "ci95": 0.025125544166130092,
+          "episodes": 120,
+          "ci95_low": 0.49443001138942544,
+          "ci95_high": 0.5446810997216857,
+          "confirmation": {
+            "accuracy": 0.5165777777777779,
+            "ci95": 0.015800742089246127,
+            "episodes": 300,
+            "ci95_low": 0.5007770356885318,
+            "ci95_high": 0.532378519867024
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5135555555555555,
+          "ci95": 0.027174019545727957,
+          "episodes": 120,
+          "ci95_low": 0.4863815360098276,
+          "ci95_high": 0.5407295751012835,
+          "confirmation": {
+            "accuracy": 0.5219555555555555,
+            "ci95": 0.01606080768100152,
+            "episodes": 300,
+            "ci95_low": 0.505894747874554,
+            "ci95_high": 0.538016363236557
+          }
+        }
+      ],
+      "selected": {
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.75,
+          "residual_mix": 1.0
+        },
+        "views": "concat",
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.5317777777777778,
+        "ci95": 0.025531978712281883,
+        "episodes": 120,
+        "ci95_low": 0.5062457990654959,
+        "ci95_high": 0.5573097564900596,
+        "confirmation": {
+          "accuracy": 0.5280444444444444,
+          "ci95": 0.016275132452005396,
+          "episodes": 300,
+          "ci95_low": 0.511769311992439,
+          "ci95_high": 0.5443195768964498
+        }
+      },
+      "previous": {
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5,
+          "residual_mix": 0.0
+        },
+        "views": "concat",
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.5135555555555555,
+        "ci95": 0.027174019545727957,
+        "episodes": 120,
+        "ci95_low": 0.4863815360098276,
+        "ci95_high": 0.5407295751012835,
+        "confirmation": {
+          "accuracy": 0.5219555555555555,
+          "ci95": 0.01606080768100152,
+          "episodes": 300,
+          "ci95_low": 0.505894747874554,
+          "ci95_high": 0.538016363236557
+        }
+      }
+    },
+    "5": {
+      "candidates": [
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6324444444444446,
+          "ci95": 0.020369347954535898,
+          "episodes": 120,
+          "ci95_low": 0.6120750964899087,
+          "ci95_high": 0.6528137923989805
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6317777777777778,
+          "ci95": 0.020224316834707826,
+          "episodes": 120,
+          "ci95_low": 0.61155346094307,
+          "ci95_high": 0.6520020946124856
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.25,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6337777777777779,
+          "ci95": 0.020036032958222483,
+          "episodes": 120,
+          "ci95_low": 0.6137417448195555,
+          "ci95_high": 0.6538138107360003
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.647888888888889,
+          "ci95": 0.02037113816893275,
+          "episodes": 120,
+          "ci95_low": 0.6275177507199562,
+          "ci95_high": 0.6682600270578217,
+          "confirmation": {
+            "accuracy": 0.6574666666666666,
+            "ci95": 0.0117573841097383,
+            "episodes": 300,
+            "ci95_low": 0.6457092825569284,
+            "ci95_high": 0.6692240507764049
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6487777777777777,
+          "ci95": 0.01964933949599587,
+          "episodes": 120,
+          "ci95_low": 0.6291284382817818,
+          "ci95_high": 0.6684271172737736,
+          "confirmation": {
+            "accuracy": 0.6605333333333333,
+            "ci95": 0.011749076094050665,
+            "episodes": 300,
+            "ci95_low": 0.6487842572392827,
+            "ci95_high": 0.6722824094273839
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6512222222222221,
+          "ci95": 0.01951133613102932,
+          "episodes": 120,
+          "ci95_low": 0.6317108860911929,
+          "ci95_high": 0.6707335583532514,
+          "confirmation": {
+            "accuracy": 0.6625777777777778,
+            "ci95": 0.011742356286981049,
+            "episodes": 300,
+            "ci95_low": 0.6508354214907968,
+            "ci95_high": 0.6743201340647589
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6265555555555555,
+          "ci95": 0.01960547926317302,
+          "episodes": 120,
+          "ci95_low": 0.6069500762923825,
+          "ci95_high": 0.6461610348187286
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6392222222222222,
+          "ci95": 0.019832975570270625,
+          "episodes": 120,
+          "ci95_low": 0.6193892466519516,
+          "ci95_high": 0.6590551977924929,
+          "confirmation": {
+            "accuracy": 0.6523555555555555,
+            "ci95": 0.011137582672589276,
+            "episodes": 300,
+            "ci95_low": 0.6412179728829662,
+            "ci95_high": 0.6634931382281447
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.649888888888889,
+          "ci95": 0.01940688157414336,
+          "episodes": 120,
+          "ci95_low": 0.6304820073147456,
+          "ci95_high": 0.6692957704630323,
+          "confirmation": {
+            "accuracy": 0.6630666666666667,
+            "ci95": 0.010946148928127402,
+            "episodes": 300,
+            "ci95_low": 0.6521205177385393,
+            "ci95_high": 0.6740128155947941
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5482222222222222,
+          "ci95": 0.01844067028084069,
+          "episodes": 120,
+          "ci95_low": 0.5297815519413814,
+          "ci95_high": 0.5666628925030629
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.5793333333333334,
+          "ci95": 0.01939296316913181,
+          "episodes": 120,
+          "ci95_low": 0.5599403701642015,
+          "ci95_high": 0.5987262965024652
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 1.0,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6063333333333333,
+          "ci95": 0.01888598802792297,
+          "episodes": 120,
+          "ci95_low": 0.5874473453054103,
+          "ci95_high": 0.6252193213612562
+        }
+      ],
+      "shortlist": [
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6512222222222221,
+          "ci95": 0.01951133613102932,
+          "episodes": 120,
+          "ci95_low": 0.6317108860911929,
+          "ci95_high": 0.6707335583532514,
+          "confirmation": {
+            "accuracy": 0.6625777777777778,
+            "ci95": 0.011742356286981049,
+            "episodes": 300,
+            "ci95_low": 0.6508354214907968,
+            "ci95_high": 0.6743201340647589
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 1.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.649888888888889,
+          "ci95": 0.01940688157414336,
+          "episodes": 120,
+          "ci95_low": 0.6304820073147456,
+          "ci95_high": 0.6692957704630323,
+          "confirmation": {
+            "accuracy": 0.6630666666666667,
+            "ci95": 0.010946148928127402,
+            "episodes": 300,
+            "ci95_low": 0.6521205177385393,
+            "ci95_high": 0.6740128155947941
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6487777777777777,
+          "ci95": 0.01964933949599587,
+          "episodes": 120,
+          "ci95_low": 0.6291284382817818,
+          "ci95_high": 0.6684271172737736,
+          "confirmation": {
+            "accuracy": 0.6605333333333333,
+            "ci95": 0.011749076094050665,
+            "episodes": 300,
+            "ci95_low": 0.6487842572392827,
+            "ci95_high": 0.6722824094273839
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.5,
+            "residual_mix": 0.0
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.647888888888889,
+          "ci95": 0.02037113816893275,
+          "episodes": 120,
+          "ci95_low": 0.6275177507199562,
+          "ci95_high": 0.6682600270578217,
+          "confirmation": {
+            "accuracy": 0.6574666666666666,
+            "ci95": 0.0117573841097383,
+            "episodes": 300,
+            "ci95_low": 0.6457092825569284,
+            "ci95_high": 0.6692240507764049
+          }
+        },
+        {
+          "space": {
+            "strength": 1.0,
+            "exponent": 0.75,
+            "residual_mix": 0.5
+          },
+          "views": "concat",
+          "assignment": "soft",
+          "config": {
+            "neighbors": 5,
+            "alpha": 0.95,
+            "power": 3.0,
+            "temperature": 0.1,
+            "prototype_weight": 0.8,
+            "prototype_steps": 8,
+            "graph_weight": 0.5,
+            "balanced": true
+          },
+          "accuracy": 0.6392222222222222,
+          "ci95": 0.019832975570270625,
+          "episodes": 120,
+          "ci95_low": 0.6193892466519516,
+          "ci95_high": 0.6590551977924929,
+          "confirmation": {
+            "accuracy": 0.6523555555555555,
+            "ci95": 0.011137582672589276,
+            "episodes": 300,
+            "ci95_low": 0.6412179728829662,
+            "ci95_high": 0.6634931382281447
+          }
+        }
+      ],
+      "selected": {
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.75,
+          "residual_mix": 1.0
+        },
+        "views": "concat",
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.649888888888889,
+        "ci95": 0.01940688157414336,
+        "episodes": 120,
+        "ci95_low": 0.6304820073147456,
+        "ci95_high": 0.6692957704630323,
+        "confirmation": {
+          "accuracy": 0.6630666666666667,
+          "ci95": 0.010946148928127402,
+          "episodes": 300,
+          "ci95_low": 0.6521205177385393,
+          "ci95_high": 0.6740128155947941
+        }
+      },
+      "previous": {
+        "space": {
+          "strength": 1.0,
+          "exponent": 0.5,
+          "residual_mix": 0.0
+        },
+        "views": "concat",
+        "assignment": "soft",
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        },
+        "accuracy": 0.647888888888889,
+        "ci95": 0.02037113816893275,
+        "episodes": 120,
+        "ci95_low": 0.6275177507199562,
+        "ci95_high": 0.6682600270578217,
+        "confirmation": {
+          "accuracy": 0.6574666666666666,
+          "ci95": 0.0117573841097383,
+          "episodes": 300,
+          "ci95_low": 0.6457092825569284,
+          "ci95_high": 0.6692240507764049
+        }
+      }
+    }
+  },
+  "completed_utc": "2026-11-24T08:13:53.297004+00:00"
+}

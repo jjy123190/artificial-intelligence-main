@@ -1,3 +1,9 @@
 # Experiment manifests hash exact source and dataset bytes.
 # Preserve those bytes on every platform; do not normalize line endings.
 * -text
+
+# Accept native CRLF without rewriting hash-bound reports or source files.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Some generated PDFs contain no NUL byte; always treat them as binary.
+*.pdf binary

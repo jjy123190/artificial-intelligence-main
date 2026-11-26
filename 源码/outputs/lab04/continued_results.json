@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-11-25T06:34:01.099220+00:00",
+  "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "model": {
+    "name": "ResNet12-Metric-Continued",
+    "widths": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "parameters": 509856
+  },
+  "training": {
+    "additional_epochs": 16,
+    "selected_additional_epoch": 12,
+    "original_wide_epochs": 24,
+    "same_capacity": true
+  },
+  "rows": [
+    {
+      "method": "continued",
+      "shots": 1,
+      "accuracy": 0.5647333333333334,
+      "ci95": 0.01180265290420221,
+      "episodes": 600,
+      "ci95_low": 0.5529306804291312,
+      "ci95_high": 0.5765359862375357,
+      "mean_episode_seconds": 0.024045469998382033,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.10602222222222221,
+      "paired_ci95": 0.008769840206761354,
+      "paired_vs_full": 0.05062222222222223,
+      "paired_vs_full_ci95": 0.008214406200761278,
+      "paired_vs_graph": 0.0344,
+      "paired_vs_graph_ci95": 0.007802360248847249,
+      "paired_vs_multiview": 0.019866666666666664,
+      "paired_vs_multiview_ci95": 0.007436979535795512,
+      "paired_vs_wide": 0.013177777777777778,
+      "paired_vs_wide_ci95": 0.00519583933682178,
+      "paired_vs_wideview": 0.006444444444444445,
+      "paired_vs_wideview_ci95": 0.0031270413889265235
+    },
+    {
+      "method": "continued",
+      "shots": 5,
+      "accuracy": 0.6881333333333334,
+      "ci95": 0.007797314727035945,
+      "episodes": 600,
+      "ci95_low": 0.6803360186062974,
+      "ci95_high": 0.6959306480603693,
+      "mean_episode_seconds": 0.021218463170613783,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.07117777777777777,
+      "paired_ci95": 0.00495728587954906,
+      "paired_vs_full": 0.043111111111111114,
+      "paired_vs_full_ci95": 0.004287841661812968,
+      "paired_vs_graph": 0.01902222222222222,
+      "paired_vs_graph_ci95": 0.004167707595434556,
+      "paired_vs_multiview": 0.016511111111111105,
+      "paired_vs_multiview_ci95": 0.003890419516105498,
+      "paired_vs_wide": 0.011911111111111105,
+      "paired_vs_wide_ci95": 0.002745657489057697,
+      "paired_vs_wideview": 0.003866666666666663,
+      "paired_vs_wideview_ci95": 0.0017390599384753372
+    }
+  ],
+  "evaluation_plan": {
+    "status": "locked",
+    "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "selection_lock_sha256": "a468b5bd2f2425265a1ede1b7d21a24594a505734141d46cf511b1600a6927d9",
+    "validation_sha256": "98ff456f4150c877d741617b578fa13309d5faffd56b24e9aefd2667e400ddac",
+    "validation_plan_sha256": "faaa3b952c73c2b1896e314e8e4ce57aa85e1559a86377efb77be51b79344580",
+    "training_plan_sha256": "b6185424ed116c9cca0e24c0c22a022735a58b788bfdc620dc967d9a9b01da1d",
+    "training_sha256": "4ab08fe2d71ed69b4d175be3c078a65b0ebe726276ae3f46bcff0e0e2c620031",
+    "transform_sha256": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839",
+    "seed": 20261124,
+    "episodes_per_shot": 600,
+    "queries_per_class": 15,
+    "test_pool_sha256": "4e9472e7298b12d184922e1f8da85b8d35492956409952cd7c85fb612c2f7e8f",
+    "reference_files": {
+      "results.json": "62699c95653a492f2119137c7fc70a445077dc0192feb908650a9e01987805e8",
+      "episodes.json": "a0d2f338d7e3f7346b9b43deaa87872c6c2db2e3b6f628b45dcee05d58b4f600",
+      "graph_episodes.json": "887cb3d4dcd074da2ac879bfe8969c53e39f91087db523056e9ba87cf6c5c888",
+      "multiview_episodes.json": "070c617781b20e74a052b5c5b443a2494d7ef7a9fcf0f993657e591b43d7bc12",
+      "wide_episodes.json": "8451ac117aab5ac40a3ff5eb702e521f6663124f58531fa639bb71debbf5be30",
+      "wideview_episodes.json": "a7002734790b5beb5c0a81a2c4490496f79eb1e9aac806370a247ad09554ea75",
+      "wideview_results.json": "f778ea5779a2352cd625904594891c0a9cca15628db568755f0429bee4fdee92"
+    },
+    "sources": {
+      "evaluate_continuation.py": "b3144675bfd36a838bf4c746166256587b4cc31a210980b8100a55e05cc95637",
+      "continuation_audit.py": "ff30c510e2ab0ee154bfe6bde035938bb7d4df50c8685cb8cb8ff5c19b58ab67",
+      "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+      "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+      "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+      "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac"
+    },
+    "selected_configurations": {
+      "1": {
+        "views": "mean",
+        "exponent": 0.5,
+        "residual_mix": 0.5,
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.5,
+          "balanced": true
+        }
+      },
+      "5": {
+        "views": "mean",
+        "exponent": 0.5,
+        "residual_mix": 0.5,
+        "config": {
+          "neighbors": 5,
+          "alpha": 0.95,
+          "power": 3.0,
+          "temperature": 0.1,
+          "prototype_weight": 0.8,
+          "prototype_steps": 8,
+          "graph_weight": 0.0,
+          "balanced": true
+        }
+      }
+    },
+    "test_selection": "Original fixed paired tasks; all retained; no hyperparameter changes permitted"
+  },
+  "files": {
+    "continued.pt": {
+      "path": "continued.pt",
+      "sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9"
+    },
+    "continued_transform.npz": {
+      "path": "continued_transform.npz",
+      "sha256": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+    },
+    "continued_training.json": {
+      "path": "continued_training.json",
+      "sha256": "4ab08fe2d71ed69b4d175be3c078a65b0ebe726276ae3f46bcff0e0e2c620031"
+    },
+    "continued_training_plan.json": {
+      "path": "continued_training_plan.json",
+      "sha256": "b6185424ed116c9cca0e24c0c22a022735a58b788bfdc620dc967d9a9b01da1d"
+    },
+    "continued_initial_validation.json": {
+      "path": "continued_initial_validation.json",
+      "sha256": "3ba24a81fbf3621dab6d0934164678561ae6c5c06219c37bbe27bf222f7dc070"
+    },
+    "continued_validation.json": {
+      "path": "continued_validation.json",
+      "sha256": "98ff456f4150c877d741617b578fa13309d5faffd56b24e9aefd2667e400ddac"
+    },
+    "continued_validation_plan.json": {
+      "path": "continued_validation_plan.json",
+      "sha256": "faaa3b952c73c2b1896e314e8e4ce57aa85e1559a86377efb77be51b79344580"
+    },
+    "continued_validation_tasks.jsonl": {
+      "path": "continued_validation_tasks.jsonl",
+      "sha256": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f"
+    },
+    "continued_checkpoint_lock.json": {
+      "path": "continued_checkpoint_lock.json",
+      "sha256": "5abb6c001bb6b4417ac4c2437683d61b698ee65b225d5228345cb9fd1dd03986"
+    },
+    "continued_selection_lock.json": {
+      "path": "continued_selection_lock.json",
+      "sha256": "a468b5bd2f2425265a1ede1b7d21a24594a505734141d46cf511b1600a6927d9"
+    },
+    "continued_configuration.json": {
+      "path": "continued_configuration.json",
+      "sha256": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900"
+    },
+    "continued_episodes.json": {
+      "path": "continued_episodes.json",
+      "sha256": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+    }
+  },
+  "scope": "Same-capacity continued training from wide.pt; additional 16-epoch budget; frozen wideview downstream settings; not training-budget matched.",
+  "limitations": [
+    "Single training seed and reused public benchmark/validation classes.",
+    "Balanced transductive query protocol.",
+    "Additional training budget; no isolated algorithm-only attribution."
+  ]
+}

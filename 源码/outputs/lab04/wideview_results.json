@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-11-25T03:23:06.279585+00:00",
+  "rows": [
+    {
+      "method": "wideview",
+      "shots": 1,
+      "accuracy": 0.558288888888889,
+      "ci95": 0.011690686805591804,
+      "episodes": 600,
+      "ci95_low": 0.5465982020832971,
+      "ci95_high": 0.5699795756944808,
+      "mean_episode_seconds": 0.02043038499929632,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.09957777777777777,
+      "paired_ci95": 0.008653776485900232,
+      "paired_vs_full": 0.04417777777777778,
+      "paired_vs_full_ci95": 0.00797423103041755,
+      "paired_vs_graph": 0.027955555555555556,
+      "paired_vs_graph_ci95": 0.0074011793034351545,
+      "paired_vs_multiview": 0.013422222222222219,
+      "paired_vs_multiview_ci95": 0.006953143109478498,
+      "paired_vs_wide": 0.006733333333333332,
+      "paired_vs_wide_ci95": 0.004939557323376073
+    },
+    {
+      "method": "wideview",
+      "shots": 5,
+      "accuracy": 0.6842666666666668,
+      "ci95": 0.007824054618852404,
+      "episodes": 600,
+      "ci95_low": 0.6764426120478144,
+      "ci95_high": 0.6920907212855192,
+      "mean_episode_seconds": 0.018375976830914926,
+      "timing_scope": "inference_from_cached_features",
+      "transductive": true,
+      "balanced_queries": true,
+      "paired_delta": 0.06731111111111111,
+      "paired_ci95": 0.005027942861088793,
+      "paired_vs_full": 0.03924444444444444,
+      "paired_vs_full_ci95": 0.0043461085157568665,
+      "paired_vs_graph": 0.015155555555555556,
+      "paired_vs_graph_ci95": 0.004010642496417906,
+      "paired_vs_multiview": 0.012644444444444443,
+      "paired_vs_multiview_ci95": 0.003840393784126332,
+      "paired_vs_wide": 0.008044444444444444,
+      "paired_vs_wide_ci95": 0.0025580657370385565
+    }
+  ],
+  "base_weights_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "selection_lock_sha256": "0c2628d94d628fe7e542d0b841f2232738d9e03eac9586f60b4176bc3a07638a",
+  "evaluation_plan": {
+    "status": "locked",
+    "selection_lock_sha256": "0c2628d94d628fe7e542d0b841f2232738d9e03eac9586f60b4176bc3a07638a",
+    "selection_sha256": "eee24eccc8849d64c5b664fd6b929397abbd7b9af770c26fc9f906ed7e4051bd",
+    "transform_sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76",
+    "checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+    "seed": 20261124,
+    "episodes_per_shot": 600,
+    "query_per_class": 15,
+    "test_pool_sha256": "4e9472e7298b12d184922e1f8da85b8d35492956409952cd7c85fb612c2f7e8f",
+    "reference_files": {
+      "results.json": "62699c95653a492f2119137c7fc70a445077dc0192feb908650a9e01987805e8",
+      "episodes.json": "a0d2f338d7e3f7346b9b43deaa87872c6c2db2e3b6f628b45dcee05d58b4f600",
+      "graph_episodes.json": "887cb3d4dcd074da2ac879bfe8969c53e39f91087db523056e9ba87cf6c5c888",
+      "multiview_episodes.json": "070c617781b20e74a052b5c5b443a2494d7ef7a9fcf0f993657e591b43d7bc12",
+      "wide_episodes.json": "8451ac117aab5ac40a3ff5eb702e521f6663124f58531fa639bb71debbf5be30",
+      "wide_results.json": "8869b6a91d99a162e5662fd2d2a1978f1cba14ba1d3475a7a346e9ed8d37dfb7"
+    },
+    "source_hashes": {
+      "evaluate_wide_views.py": "2664fcd8026cf0b410ed6b2c569ab5e5758ec0d2bd999b14cecde33345d99f4d",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+      "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+      "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+      "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+      "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8"
+    }
+  },
+  "files": {
+    "wideview_episodes.json": {
+      "path": "wideview_episodes.json",
+      "sha256": "a7002734790b5beb5c0a81a2c4490496f79eb1e9aac806370a247ad09554ea75"
+    },
+    "wideview_configuration.json": {
+      "path": "wideview_configuration.json",
+      "sha256": "755ddde931f900f1bad087e075526aa1daeefaec943f832e338883d280b713c0"
+    },
+    "wideview_transform.npz": {
+      "path": "wideview_transform.npz",
+      "sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76"
+    },
+    "wideview_selection.json": {
+      "path": "wideview_selection.json",
+      "sha256": "eee24eccc8849d64c5b664fd6b929397abbd7b9af770c26fc9f906ed7e4051bd"
+    },
+    "wideview_plan.json": {
+      "path": "wideview_plan.json",
+      "sha256": "9c2c50c48968a60f2cb3fc7108de5917057e0e6e6a0af0ab4df815a2cfa407f8"
+    }
+  },
+  "scope": "Frozen same-wide-backbone multiview/residual-transform study. No additional training; two encodings per image; balanced transductive protocol.",
+  "limitations": [
+    "Same repeatedly used public benchmark, one training seed.",
+    "Selected on reused validation classes; confirmation is selection, not independent test.",
+    "Extra encoding cost; not a cost-matched comparison."
+  ]
+}

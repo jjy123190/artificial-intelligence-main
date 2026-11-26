@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "kind": "external_teacher_geometry_validation_only",
+  "test_accessed": false,
+  "inputs": {
+    ".local\\lab04-continuation-validation-20261125\\train_views.npz": "2f7bc59a4413f0191e9212fd60e40c52e7e573712ffae51e2f7c3448272c07b8",
+    ".local\\lab04-continuation-validation-20261125\\train_views.json": "d00fd25b5fb607f1abc40bdff08be16d972cc65793257d2fcd97cfcf32da9ab2",
+    ".local\\lab04-continuation-validation-20261125\\val_views.npz": "e6a1de2dcf1274bdf5b64af56f505f039bbc06422082ee553d78c975ec9fa228",
+    ".local\\lab04-continuation-validation-20261125\\val_views.json": "271890f3a90dc3d1840dc06b736d3cfeabcd037b5199ee994abf0530a71326fc",
+    ".local\\lab04-reference-feat\\train_features.npz": "119ce2574bb4e937d9d33b749a5afa035523aaa66ffb593dee0fb30e76630e5b",
+    ".local\\lab04-reference-feat\\val_features.npz": "077f6f7c048e31a4eda2f627c399fdabd1b359cad28250c4ec9e33a50b585b70",
+    ".local\\lab04-reference-feat\\provenance.json": "13257ff82e358fbafcc045bb853056fccf96019c2bf7a37f71848ea3d12bfc48",
+    ".local\\lab04-reference-feat\\feat-1-shot.pth": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "outputs\\lab04\\continued.pt": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "outputs\\lab04\\continued_configuration.json": "b49e97600a2c77d0304d649d286d6c073dbd623a8fb279b1b57e30966fb17900",
+    "outputs\\lab04\\continued_transform.npz": "423b3e87ae19c17c3336d8fca10e3918695b9fea5e4a692f9be571345f03a839"
+  },
+  "external_reference": {
+    "source": "https://github.com/Sha-Lab/FEAT",
+    "url": "https://drive.usercontent.google.com/download?id=1ixqw1l9XVxl3lh1m5VXkctw6JssahGbQ&export=download&confirm=t",
+    "bytes": 56316902,
+    "sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "kind": "external research checkpoint; not our training",
+    "declared_training": "miniImageNet train64; official train/val/test CSV IDs exactly match local lists",
+    "not_proof": "A published checkpoint cannot independently prove its entire original training process; treat as external reference."
+  },
+  "candidates": [
+    {
+      "id": "ridge0.01_mix0.5",
+      "ridge_ratio": 0.01,
+      "mix": 0.5
+    },
+    {
+      "id": "ridge0.01_mix1",
+      "ridge_ratio": 0.01,
+      "mix": 1.0
+    },
+    {
+      "id": "ridge0.1_mix0.5",
+      "ridge_ratio": 0.1,
+      "mix": 0.5
+    },
+    {
+      "id": "ridge0.1_mix1",
+      "ridge_ratio": 0.1,
+      "mix": 1.0
+    },
+    {
+      "id": "ridge1_mix0.5",
+      "ridge_ratio": 1.0,
+      "mix": 0.5
+    },
+    {
+      "id": "ridge1_mix1",
+      "ridge_ratio": 1.0,
+      "mix": 1.0
+    }
+  ],
+  "tasks_content_sha256": "4f5de68946664cfcd23f9c95547cf8036845e25a55d8c01d7706d4961e7e7aff",
+  "source_hashes": {
+    "study_teacher_geometry.py": "b7c2f9b9ef7fde955a5cd0058364c5f0367ccff2d1c9a4224552aa72c3e347c5",
+    "teacher_geometry.py": "bec4845831e52d6ba5978d805055c748a6a2407de701dc7c224bd24b5b2707e0",
+    "study_literature.py": "1e170d1bb45b7434cd4d3f56ba43d3e0f16691be9f358eb26b135a84970632a6",
+    "literature_methods.py": "0d319871fca735822e6911a0ad5501727bd3dc70ba955d95336af35615731238",
+    "graph_calibration.py": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737",
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "fit": "6400 paired base-train images only; no teacher val/query features in fitting or prediction",
+  "selection": "160 search tasks/shot, top 2; 600 confirmation tasks/shot, largest paired lower95 bound; ties by ID",
+  "gate": "Both shot paired lower95>0 and both mean gains>=.01; never auto-test or publish",
+  "limitations": [
+    "External teacher lineage; not comparable as no-external-training improvement.",
+    "Inspired by RFS representation distillation, NOT the RFS method or evidence of neural student distillation.",
+    "Teacher trained by author; complete original training cannot be independently verified.",
+    "Validation classes/images are reused, and confirmation participates in selection.",
+    "No change to image encoder; linear geometry cannot recover missing semantic information."
+  ],
+  "registered_utc": "2026-11-25T07:38:51.462335+00:00"
+}

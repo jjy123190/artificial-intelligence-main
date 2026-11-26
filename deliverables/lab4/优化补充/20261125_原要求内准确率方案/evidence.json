@@ -1,0 +1,19 @@
+{
+  "kind": "requirements_preserving_accuracy_research",
+  "published_model_changed": false,
+  "new_test_evaluation": false,
+  "completed_studies": [
+    "12epoch_linear_and_residual_calibration",
+    "5candidate_local_reconstruction",
+    "2epoch_paired_CNN_mechanism_pilot"
+  ],
+  "fresh_backbone_training_completed": false,
+  "system_driver_changed": false,
+  "gpu_state": "physicalRTX4050, WindowsCode43, currently unusable",
+  "files": {
+    "fresh_training_recipe.json": "57b6cd07086280494d8fcf31e7d688f0c6762eb480b9d51e3ee77ca4231d83b3",
+    "README.md": "62969e0c6d531dbcbb00de047452458055182fe8fbccf44158c21ab948a17746",
+    "REQUIREMENT_ACCURACY_PLAN.md": "914823b9dfc71071b3e8f929b50eaf02393ba5eb5f8b429d771f02763836da66"
+  },
+  "created_utc": "2026-11-25T08:58:05.495017+00:00"
+}

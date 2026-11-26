@@ -1,0 +1,43 @@
+{
+  "status": "locked",
+  "locked_utc": "2026-11-24T10:16:10.169859+00:00",
+  "test_accessed": false,
+  "checkpoint_sha256": "f7871fd157c586976420c3d0373cd597da472a7446f83c0a6d580712fb9a1569",
+  "training_plan_sha256": "aecc41392c089f8629a1d98e5d58a22f95ae8706cd89b9f7ae2e39fea50ed167",
+  "selection_sha256": "9cc8e05bdcd2772788b821d2c43b995f8d03a8f8c3139a540d9c369f7ca8dafe",
+  "selected": {
+    "1": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.5,
+        "balanced": true
+      }
+    },
+    "5": {
+      "space": {
+        "strength": 1.0,
+        "exponent": 0.5
+      },
+      "config": {
+        "neighbors": 5,
+        "alpha": 0.95,
+        "power": 3.0,
+        "temperature": 0.1,
+        "prototype_weight": 0.8,
+        "prototype_steps": 8,
+        "graph_weight": 0.0,
+        "balanced": true
+      }
+    }
+  },
+  "plan": "24-epoch wider backbone, validation-only checkpoint and classifier selection; no test feedback"
+}

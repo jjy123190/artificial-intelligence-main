@@ -1,0 +1,41 @@
+{
+  "seed": 20261124,
+  "episodes": 600,
+  "pool_per_class": 600,
+  "lock_sha256": "9e4b898ae068d89fb79d227fe3f264a9bb45b93bcca24b4ec77ea3e476d19ed9",
+  "maml_sha256": "973953ff276361af1cebe6d84101c83ccef3d510da1f885a4581cc7b2a763410",
+  "adaptation": {
+    "1": {
+      "steps": 5,
+      "learning_rate": 0.025
+    },
+    "5": {
+      "steps": 5,
+      "learning_rate": 0.05
+    }
+  },
+  "old_results_sha256": "c3e6e5b472bcb5fdf8b6b25dfafaf34f9450a142dafa30bbfa11235c1b73bb08",
+  "source_sha256": {
+    "calibration.py": "df7670ce2f69049863c09e1b7059ce89f1ff2be8e4973278fd05dde68d7f17ac",
+    "feature_space.py": "35867691ecc30e112f29f0c1f93946d00d2443530bd1881f1228252f5f1d0aa2",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "evaluate_v2.py": "71a534d0d1329f173d1653ffcc95a8c54eedfabb64c41a8f4aa3025072da64cf"
+  },
+  "method_names": [
+    "baseline",
+    "alignment_only",
+    "mean_only",
+    "variance_only",
+    "prototype_only",
+    "mean_variance",
+    "full",
+    "no_alignment_full",
+    "transform_only",
+    "no_transform_full",
+    "unbalanced_full",
+    "original_baseline",
+    "original_full",
+    "maml"
+  ]
+}

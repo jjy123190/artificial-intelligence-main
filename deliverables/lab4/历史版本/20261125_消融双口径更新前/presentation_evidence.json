@@ -1,0 +1,117 @@
+{
+  "artifact_revision": "8cb5c4aec6188145877e4be273beac8fc861f5cfc5223ec8e024f086a19e4c88",
+  "voice_kind": "Local Windows standard synthetic Mandarin voice; not cloned",
+  "slides_sha256": "ab0e71bf14760e588de22dfefb1c17a1e0d8295a69661bf06fb649d118afd831",
+  "duration_seconds": 325.1219047619048,
+  "slides": [
+    {
+      "slide": 1,
+      "narration": "本次实验研究少量标注条件下的新类别识别。我们使用轻量残差网络、二阶元学习和特征统计校准，连接可实际运行的网页平台。本汇报只包含已经完成并独立核验的发布结果，不把正在训练的候选当作正式成绩。",
+      "start_seconds": 0.0,
+      "duration_seconds": 22.26235827664399,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "80b400ced0d235e98e6aee221755ffbe0bd2a48d01b30cb19195cc677d5ebddc",
+      "audio_sha256": "7622481c32c66f20d8219e03d5cddee9745f555e5cb1286de3c4f65a27732ae7"
+    },
+    {
+      "slide": 2,
+      "narration": "小样本问题既有表征偏移，也有统计量不稳定。基础类别的判别方向未必适合新类，一张支持图片也无法直接估计方差。医疗和工业缺陷是应用动机，但本实验只在迷你图像基准验证，不声称已经完成实际业务部署。",
+      "start_seconds": 22.26235827664399,
+      "duration_seconds": 21.96548752834467,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "f0ea89d2a6d74d9c04cd56994f0b344ceac45106b1dda38acea82dddd084b53b",
+      "audio_sha256": "f3564c92b54a2131faf7c1cd646755f34f22871befc03a2614c7021a7c1cdd5c"
+    },
+    {
+      "slide": 3,
+      "narration": "数据分为六十四个训练类、十六个验证类和二十个测试类，类别互不重叠。每类六百张图像。任务有五个类别，每类给一张或五张有标签支持图片，另有十五张查询图片。每种设置评估六百个相同配对任务，查询标签只在预测后评分。",
+      "start_seconds": 44.22784580498866,
+      "duration_seconds": 24.71265306122449,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "607a7a2229a163c8816841366a95db8dfd4c59627fc3ae3e4142b78d752196ab",
+      "audio_sha256": "92ca5feef627ab956a9b3cd45822fae7972b9b4a6fd6d381930f8ebeefec4a5d"
+    },
+    {
+      "slide": 4,
+      "narration": "监督基线冻结编码器，以支持集均值分类。MAML使用全网络真实二阶梯度，共四千个元训练任务，测试只用支持标签进行五步适应。统计校准与基线共享初始化、样本、增强和交叉熵训练步数，区别是分布对齐正则及后续推理方法。不同训练预算和归纳、转导信息条件都单独说明。",
+      "start_seconds": 68.94049886621315,
+      "duration_seconds": 30.36394557823129,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "8573ee1b51f2bb804b6bd253bcd0373dc49d3fa12dc490b640324da992375b44",
+      "audio_sha256": "a3c2ee29bbdf1a1482bcf581bfd00cc40fd9871f27c7a85121009d776d1a6eb0"
+    },
+    {
+      "slide": 5,
+      "narration": "校准先借用基础训练类的均值方差，对少量支持集估计做收缩，再用无标签查询的软分配更新原型。均衡分配利用本协议每类查询数量相等的先验，不读取隐藏标签。统计先验可能与新类不匹配，原型更新也可能被错误分配带偏，因此不能预设所有模块必然有效。",
+      "start_seconds": 99.30444444444444,
+      "duration_seconds": 27.248253968253966,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "697f933f6bb6e7145384a0abaa9ce8c0b62d8d16e3ee0027f5f25a54dfc46c6a",
+      "audio_sha256": "b7f544447acd82a885f79f15f0096e86a73bbce5f88b2a268181372ab81521dd"
+    },
+    {
+      "slide": 6,
+      "narration": "在同一组测试任务上，轻量基线的一样本和五样本准确率分别为45.87%和61.70%。完整校准为51.41%和64.50%。MAML在当前预算下仍低于基线。更宽模型与额外训练带来的收益不应全部归为校准算法。",
+      "start_seconds": 126.5526984126984,
+      "duration_seconds": 25.48068027210884,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "2307df487e4da6f79cea8d21783c8fc535b26f7b7b08588f9704eab9a17a8f02",
+      "audio_sha256": "98050362235d50b215ea04284b455af224d108d30556b8e843c586e97e79237f"
+    },
+    {
+      "slide": 7,
+      "narration": "最新已发布的较宽双视图策略达到55.83%和68.43%。它复用较宽模型原来的权重，没有新增训练。相对较宽单视图，配对差分别增加0.67和0.80个百分点，两个百分之九十五区间都高于零。每图需要编码原图和翻转图两次，五样本配置明确关闭图传播。",
+      "start_seconds": 152.03337868480725,
+      "duration_seconds": 29.30349206349206,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "1a7a4e2f292c07f25615dbb175ea36b5d4de628feba3de812c8ae0dcbcd08448",
+      "audio_sha256": "fecff3a5bcc487ed0679e486cc8f392f503c92bd7c703161669bdba839fe0fc9"
+    },
+    {
+      "slide": 8,
+      "narration": "消融结果表明，模块不是越多越好。完整方案去掉训练对齐后，两种设置的均值没有下降；仅原型更新已接近完整组合。网页显示相对基线的配对差，整合报告另列指定模块之间的直接配对差，二者参考对象不同，不能混用显著性。验证没有通过改善门槛的候选也完整保留。",
+      "start_seconds": 181.3368707482993,
+      "duration_seconds": 28.440272108843537,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "b853ea7fa705495024897a69649c7ef6fb52a763986ecdc99b930ea98e8cf464",
+      "audio_sha256": "d7c5161c19c2783636825950c62ef4e60b56aa75370f5392820bf5af6b44c851"
+    },
+    {
+      "slide": 9,
+      "narration": "平均准确率不说明每个任务都稳定。轻量双视图的一样本任务中间百分之九十落在百分之三十二到七十六左右，五样本约为五十二到八十一点四。这不是均值置信区间。较宽双视图计算耗时接近单视图两倍。计时均在本机中央处理器上重新编码，不冒称手机或开发板实测。",
+      "start_seconds": 209.77714285714285,
+      "duration_seconds": 28.164263038548754,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "c2c6d59f28ca4d81bf8462c3290f21377ebdead1cac5c6b38b62004e5c689926",
+      "audio_sha256": "6538073622197a0a1d7655669ca7e3bea1db20e6b7eb394726dc7f43dbbdfad4"
+    },
+    {
+      "slide": 10,
+      "narration": "网站把现场推理、性能、消融、可靠性、端侧耗时和历史来源分开显示。用户可以检查误判、五类分数、真实样本和模型指纹。异常接口数据会被拒绝，而不是让页面白屏；取消等待保留已完成记录，不把服务器计算谎称为已经强制终止。配套演示录制了真实浏览器交互和实际预测。",
+      "start_seconds": 237.94140589569162,
+      "duration_seconds": 30.35065759637188,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "552d7ac24f722ca81b8dcd4afce83ded4571ad10b3f42dcfbca66e34622bf11f",
+      "audio_sha256": "96d13e7deca0caa14039c8f7da8401a1c6991420cc3ffe1785e2708d384ddff3"
+    },
+    {
+      "slide": 11,
+      "narration": "课程技术要求已对应代码和实验记录，但本地项目不能证明所有外部操作完成。组员关联、项目创建和管理员提交需要在课程平台实际核对。如果老师指定手机、ARM或开发板，需要补该设备测试。单训练种子、重复使用公开基准和均衡查询先验的限制都必须保留。",
+      "start_seconds": 268.2920634920635,
+      "duration_seconds": 27.710204081632654,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "8d89e9e8cc6e84ee0476f43ba128d4d813889713b87cea5562d82d6e08cc4088",
+      "audio_sha256": "4fc74f63467972b3832aa7db7a3e9cdb1204b0743b57019484599955d9c0c7dc"
+    },
+    {
+      "slide": 12,
+      "narration": "核验命令会从逐任务记录重算结果，检查选择锁、权重、样本和预测。当前报告、可编辑幻灯片、真实演示和源代码对应同一个发布版本。人工智能辅助了实现和文档整理，但准确率来自实际模型运行。本实验不保证零误判或理论最优，后续优先独立数据与多训练种子验证。",
+      "start_seconds": 296.00226757369614,
+      "duration_seconds": 29.119637188208618,
+      "voice": "Microsoft Huihui Desktop - Chinese (Simplified)",
+      "image_sha256": "5e226432b5b0f86c0d8cfd26fb088d5d5c1562b86f510050b5177f3a6e18fb41",
+      "audio_sha256": "41c340564d1670039f7a44dd6f45259eef70c8100b98ff568a315fa732efc38a"
+    }
+  ],
+  "video_sha256": "8c6b94763fe7d72d6bafb7098ffd2e27f3d744781676281c4fd8b32b21a90e55"
+}

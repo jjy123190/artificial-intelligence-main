@@ -1,0 +1,26 @@
+{
+  "status": "verified",
+  "success_count": 17,
+  "successful_keys": [
+    "frn_readme",
+    "frn_readme_master",
+    "meta_baseline_readme",
+    "deepbdc_readme",
+    "dn4_readme",
+    "frn_search",
+    "frn_paper",
+    "frn_tree",
+    "meta_baseline_model",
+    "meta_baseline_paper",
+    "frn_model",
+    "net2net_paper",
+    "vicreg_paper",
+    "meta_baseline_recipe",
+    "deepbdc_paper",
+    "frn_title_search",
+    "nvidia_code43"
+  ],
+  "reading_cache_only": true,
+  "not_claimed": "No paper score transferred to our models; retrieved official source was read, not executed.",
+  "irrelevant_discovery": "First broad FRN search returned unrelated recent hits, not used for claims; exact title search identified2012.01506."
+}

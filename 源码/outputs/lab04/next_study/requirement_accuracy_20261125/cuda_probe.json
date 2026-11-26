@@ -1,0 +1,19 @@
+{
+  "kind": "read_only_cuda_driver_probe",
+  "test_accessed": false,
+  "driver_version_result": 0,
+  "cuda_driver_version": 13050,
+  "cuInit": 100,
+  "error": "no CUDA-capable device is detected",
+  "physical_adapter": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "windows_status": "Error",
+  "config_manager_error_code": 43,
+  "driver_version_windows": "32.0.16.2101",
+  "nvidia_smi": "failed: insufficient permissions",
+  "torch_installed": "2.10.0+cpu",
+  "torch_cuda_available": false,
+  "system_settings_changed": false,
+  "drivers_changed": false,
+  "checked_utc": "2026-11-25T08:44:35.266044+00:00",
+  "interpretation": "Physical NVIDIA GPU exists but is not usable in current OS/driver state. Installing CUDA torch alone is not demonstrated to fix Code43."
+}

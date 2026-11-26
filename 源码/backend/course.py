@@ -22,7 +22,11 @@ LABS["lab03"]={"id":"lab03","number":"03","name":"多跳路径搜索与智能优
 LABS["lab04"]={"id":"lab04","number":"04","name":"小样本学习与特征校准","summary":"在mini-ImageNet上比较ResNet12、MAML与特征校准，观察支持样本、特征分布和原型更新。","code":"experiments/lab04/","entry":"#/labs/lab04","modules":[
  {"id":"inference","title":"现场小样本推理","requirement":"轻量ResNet12；5-way 1-shot与5-shot分类及端侧演示。","description":"运行真实模型，查看支持样本、查询预测及校准前后的特征。","kind":"模型演示"},
  {"id":"protocol","title":"方法与实验协议","requirement":"分析特征漂移；交叉熵与分布对齐；比较Baseline、MAML和校准方案。","description":"解释均值方差收缩、原型自适应、类别隔离和未标注查询集的使用。","kind":"方法实现"},
- {"id":"evaluation","title":"对比与消融实验","requirement":"mini-ImageNet验证、消融、局限与后续研究方向。","description":"读取同任务实测准确率、95%置信区间、消融和计算开销。","kind":"实验验证"}]}
+ {"id":"evaluation","title":"性能对比","requirement":"Baseline、MAML和校准的共同任务比较。","description":"读取同任务准确率、95%区间及配对改善，点击图表选择方法。","kind":"实验验证"},
+ {"id":"ablations","title":"模块消融","requirement":"比较不同校准策略并如实保留负结果。","description":"独立查看逐模块消融、配对区间和验证锁定参数。","kind":"因果边界"},
+ {"id":"reliability","title":"可靠性诊断","requirement":"分析任务波动、局限性与类别分数的边界。","description":"可视化任务分位、配对胜平负与分数可靠性。","kind":"结果诊断"},
+ {"id":"deployment","title":"端侧性能","requirement":"本机CPU部署及统一计时的计算代价。","description":"比较真实编码和分类的中位数/P95，不混排缓存耗时。","kind":"部署实测"},
+ {"id":"history","title":"历史与来源","requirement":"保留旧结果、适用限制和可复现信息。","description":"核对旧权重复测、负结果及完整来源指纹。","kind":"证据追溯"}]}
 # 正式报告/源码使用第33组；实验三演示材料保留另一平台的第4组文件名。
 FILES={
  "lab01":{
@@ -44,6 +48,18 @@ FILES["lab03"]={
  "presentation-video":("实验三PPT演讲视频","deliverables/lab3/第4组_实验三_PPT演讲.mp4","video")}
 
 FILES["lab04"]={
+ "current-report-pdf":("当前整合报告 PDF（完整方法与实测）","deliverables/lab4/当前版本/实验四_小样本分类与特征校准_当前整合报告.pdf","report"),
+ "current-report-word":("当前整合报告 Word（可编辑）","deliverables/lab4/当前版本/实验四_小样本分类与特征校准_当前整合报告.docx","report"),
+ "current-slides":("当前版本汇报 PPT（12页）","deliverables/lab4/当前版本/实验四_小样本分类与特征校准_当前汇报.pptx","slides"),
+ "current-demo-poster":("当前Demo预览图","deliverables/lab4/当前版本/实验四_当前Demo预览.jpg","preview"),
+ "current-presentation-poster":("当前PPT预览图","deliverables/lab4/当前版本/实验四_当前PPT预览.jpg","preview"),
+ "current-demo-captions":("当前Demo中文字幕","deliverables/lab4/当前版本/实验四_当前页面与真实推理_Demo.vtt","captions"),
+ "current-presentation-captions":("当前PPT讲解中文字幕","deliverables/lab4/当前版本/实验四_当前版本PPT讲解.vtt","captions"),
+ "current-demo-video":("当前页面与真实推理 Demo（无旁白）","deliverables/lab4/当前版本/实验四_当前页面与真实推理_Demo.mp4","video"),
+ "current-presentation-video":("当前版本 PPT 讲解（标准合成语音）","deliverables/lab4/当前版本/实验四_当前版本PPT讲解.mp4","video"),
+ "supplement-wideview":("较宽双视图与分页面最新记录","deliverables/lab4/优化补充/实验四_双视图宽骨干与分页面说明.pdf","report"),
+ "supplement-wide":("较宽模型与质量补充报告","deliverables/lab4/优化补充/实验四_较宽模型与最终质量记录.pdf","report"),
+ "supplement-v2":("特征校准优化补充报告","deliverables/lab4/优化补充/实验四_优化补充报告.pdf","report"),
  "report":("实验四课程报告","deliverables/lab4/第33组_实验四_实验报告.docx","report"),
  "slides":("实验四汇报PPT","deliverables/lab4/小样本学习与特征校准.pptx","slides"),
  "demo-video":("实验四模型演示","deliverables/lab4/实验四_Demo.mp4","video"),

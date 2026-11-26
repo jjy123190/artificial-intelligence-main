@@ -1,0 +1,213 @@
+{
+  "status": "complete",
+  "test_accessed": false,
+  "plan_sha256": "7e453688484d49d29c377be3c0a1903e38e0002c39324d280f1dafc8583dd9a0",
+  "shots": {
+    "1": {
+      "methods": {
+        "continued_published": {
+          "accuracy": 0.5534222222222221,
+          "ci95": 0.012133276110381641,
+          "episodes": 600,
+          "ci95_low": 0.5412889461118405,
+          "ci95_high": 0.5655554983326038
+        },
+        "student_centered_proto": {
+          "accuracy": 0.4893333333333334,
+          "ci95": 0.008125885116617207,
+          "episodes": 600,
+          "ci95_low": 0.4812074482167162,
+          "ci95_high": 0.4974592184499506
+        },
+        "teacher_centered_proto": {
+          "accuracy": 0.6178444444444445,
+          "ci95": 0.00845304308264155,
+          "episodes": 600,
+          "ci95_low": 0.609391401361803,
+          "ci95_high": 0.626297487527086
+        },
+        "student_centered_graph": {
+          "accuracy": 0.5377777777777777,
+          "ci95": 0.012061282717618717,
+          "episodes": 600,
+          "ci95_low": 0.5257164950601589,
+          "ci95_high": 0.5498390604953964
+        },
+        "teacher_centered_graph": {
+          "accuracy": 0.7208,
+          "ci95": 0.012128409627237585,
+          "episodes": 600,
+          "ci95_low": 0.7086715903727624,
+          "ci95_high": 0.7329284096272376
+        },
+        "student_ptmap": {
+          "accuracy": 0.5181777777777778,
+          "ci95": 0.011600261183100506,
+          "episodes": 600,
+          "ci95_low": 0.5065775165946773,
+          "ci95_high": 0.5297780389608784
+        },
+        "teacher_ptmap": {
+          "accuracy": 0.7082444444444446,
+          "ci95": 0.01179534221187224,
+          "episodes": 600,
+          "ci95_low": 0.6964491022325723,
+          "ci95_high": 0.7200397866563168
+        }
+      },
+      "matched_head_pairs": {
+        "centered_proto": {
+          "mean": 0.1285111111111111,
+          "ci95": 0.006981037634540681,
+          "low": 0.12153007347657042,
+          "high": 0.1354921487456518,
+          "wins": 555,
+          "ties": 14,
+          "losses": 31
+        },
+        "centered_graph": {
+          "mean": 0.18302222222222223,
+          "ci95": 0.01224095663407474,
+          "low": 0.1707812655881475,
+          "high": 0.19526317885629696,
+          "wins": 543,
+          "ties": 8,
+          "losses": 49
+        },
+        "ptmap": {
+          "mean": 0.19006666666666666,
+          "ci95": 0.010890123644330604,
+          "low": 0.17917654302233604,
+          "high": 0.20095679031099728,
+          "wins": 561,
+          "ties": 10,
+          "losses": 29
+        }
+      },
+      "teacher_vs_published": {
+        "mean": 0.16737777777777776,
+        "ci95": 0.011794350990018385,
+        "low": 0.15558342678775938,
+        "high": 0.17917212876779615,
+        "wins": 530,
+        "ties": 16,
+        "losses": 54
+      }
+    },
+    "5": {
+      "methods": {
+        "continued_published": {
+          "accuracy": 0.6870444444444445,
+          "ci95": 0.007785214873862246,
+          "episodes": 600,
+          "ci95_low": 0.6792592295705822,
+          "ci95_high": 0.6948296593183068
+        },
+        "student_centered_proto": {
+          "accuracy": 0.6462666666666667,
+          "ci95": 0.007042143845398326,
+          "episodes": 600,
+          "ci95_low": 0.6392245228212683,
+          "ci95_high": 0.653308810512065
+        },
+        "teacher_centered_proto": {
+          "accuracy": 0.7791555555555556,
+          "ci95": 0.005912705919257213,
+          "episodes": 600,
+          "ci95_low": 0.7732428496362984,
+          "ci95_high": 0.7850682614748128
+        },
+        "student_centered_graph": {
+          "accuracy": 0.6643333333333333,
+          "ci95": 0.008249888928612692,
+          "episodes": 600,
+          "ci95_low": 0.6560834444047207,
+          "ci95_high": 0.672583222261946
+        },
+        "teacher_centered_graph": {
+          "accuracy": 0.8146,
+          "ci95": 0.006307972722823494,
+          "episodes": 600,
+          "ci95_low": 0.8082920272771765,
+          "ci95_high": 0.8209079727228235
+        },
+        "student_ptmap": {
+          "accuracy": 0.6518222222222223,
+          "ci95": 0.008239709629283845,
+          "episodes": 600,
+          "ci95_low": 0.6435825125929384,
+          "ci95_high": 0.6600619318515062
+        },
+        "teacher_ptmap": {
+          "accuracy": 0.8145777777777777,
+          "ci95": 0.006279166292809599,
+          "episodes": 600,
+          "ci95_low": 0.8082986114849682,
+          "ci95_high": 0.8208569440705873
+        }
+      },
+      "matched_head_pairs": {
+        "centered_proto": {
+          "mean": 0.13288888888888886,
+          "ci95": 0.00526241653649166,
+          "low": 0.1276264723523972,
+          "high": 0.1381513054253805,
+          "wins": 583,
+          "ties": 8,
+          "losses": 9
+        },
+        "centered_graph": {
+          "mean": 0.15026666666666666,
+          "ci95": 0.006358780404214606,
+          "low": 0.14390788626245204,
+          "high": 0.15662544707088127,
+          "wins": 585,
+          "ties": 4,
+          "losses": 11
+        },
+        "ptmap": {
+          "mean": 0.16275555555555557,
+          "ci95": 0.006454600480111824,
+          "low": 0.15630095507544375,
+          "high": 0.1692101560356674,
+          "wins": 586,
+          "ties": 7,
+          "losses": 7
+        }
+      },
+      "teacher_vs_published": {
+        "mean": 0.12755555555555556,
+        "ci95": 0.006055247713572936,
+        "low": 0.12150030784198262,
+        "high": 0.1336108032691285,
+        "wins": 574,
+        "ties": 5,
+        "losses": 21
+      }
+    }
+  },
+  "student_parameters": 509856,
+  "external_encoder_parameters": 12424320,
+  "external_checkpoint": {
+    "source": "https://github.com/Sha-Lab/FEAT",
+    "url": "https://drive.usercontent.google.com/download?id=1ixqw1l9XVxl3lh1m5VXkctw6JssahGbQ&export=download&confirm=t",
+    "bytes": 56316902,
+    "sha256": "60b78143149fb891f1b4d187fe24f03fb431d12d4c853752bf7dac5f90460a41",
+    "kind": "external research checkpoint; not our training",
+    "declared_training": "miniImageNet train64; official train/val/test CSV IDs exactly match local lists",
+    "not_proof": "A published checkpoint cannot independently prove its entire original training process; treat as external reference."
+  },
+  "paired_val_images": 3200,
+  "paired_train_center_images": 6400,
+  "scope": "validation only; NOT a published local-model result",
+  "amendment": "Sinkhorn max iterations 300 -> 1000 for both PT-MAP heads, matching upstream maxiters; strict residual guard retained.",
+  "limitations": [
+    "Validation images/classes have already been reused by earlier studies; not untouched data.",
+    "Search/confirmation image pools are disjoint, but share 16 classes; confirmation participates in selection.",
+    "Intervals are pointwise paired episode intervals, conditional on reused classes, not multiplicity-corrected or class-population intervals.",
+    "External FEAT encoder checkpoint is author-provided, not locally trained; caches are inherited and fingerprinted here.",
+    "Capacity probe jointly changes capacity, normalization and original training; it is not a capacity-only causal ablation.",
+    "TIM promotes uniform marginal entropy; MAP and published graph assume balanced queries.",
+    "Published continued transform uses 38400 train images; diagnostic matched-center heads use identical 6400 train IDs for both models."
+  ]
+}

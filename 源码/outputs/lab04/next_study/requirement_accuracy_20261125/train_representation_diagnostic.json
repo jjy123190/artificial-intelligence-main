@@ -1,0 +1,24 @@
+{
+  "test_accessed": false,
+  "kind": "train_only_representation_diagnostic",
+  "checkpoint_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "clean_train_classification_accuracy": 0.6379947916666666,
+  "clean_train_class_accuracy_min_median_max": [
+    0.26666666666666666,
+    0.6391666666666667,
+    0.9116666666666666
+  ],
+  "raw_embedding_dim": 128,
+  "pca_dim_95pct": 43,
+  "entropy_effective_rank": 29.614334587366784,
+  "top5_variance_fractions": [
+    0.12561340099978913,
+    0.10578200203763959,
+    0.08690977787589402,
+    0.07181532879465209,
+    0.05516323124202114
+  ],
+  "mean_adjacent_duplicated_channel_correlation": 0.994735404865054,
+  "minimum_adjacent_duplicated_channel_correlation": 0.9001207814470658,
+  "caveat": "Train-only diagnostics; neither proof of optimization failure nor predicted validation gain."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "kind": "channel_diversity_pilot",
+  "plan_sha256": "3e399c6d5b746917aeca93899cdcb19f73594e0637044fab979fdcfbacdf4d05",
+  "raw_method_episode_predictions_recomputed": 2000,
+  "test_accessed": false,
+  "external_weights": false,
+  "not_publishable": true,
+  "files": {
+    "control\\epoch1_validation.json": "21908290c1703791218d7682fdb94eaf9f42ad105fd7b18a79f03ad72073ae40",
+    "control\\epoch2_validation.json": "6e6d1c5c0cafcf26a4050f3562174765b4d9aa926441e86cad3c7989095fde96",
+    "control\\training.json": "c7fa3dd33abca02299e70ac6c26adfe09e03a44ec5c18e59d1f655b504d06491",
+    "diversity\\epoch1_validation.json": "fd0ac1777fa0a1eeed63072e2dabac0ce0fce36bc01b8545523b96c3395fe683",
+    "diversity\\epoch2_validation.json": "ea7f26d9ee49b25439affe959cbebe7a28687fb3e2407b47c4e2caa8693e1b2f",
+    "diversity\\training.json": "f8b1143f433857d212d34069ae8e648f21e5c01e286c9b9c44b932f5a3545e99",
+    "initial.json": "d3bd2af422e4871c3c55bd17c424f174d6f45abe9ed24c52c0613d5ec86c37d4",
+    "plan.json": "3e399c6d5b746917aeca93899cdcb19f73594e0637044fab979fdcfbacdf4d05",
+    "result.json": "f7b00a4b824f7bc8ba190ca020d9e917951ff824bc2cfcd2b204536fcd669ad9",
+    "tasks.json": "caf5c08653276fb9705efced565ed8b9f400db6716389e4b1fe8a0ab9be2fffd"
+  }
+}

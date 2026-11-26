@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "test_accessed": false,
+  "plan_sha256": "7e453688484d49d29c377be3c0a1903e38e0002c39324d280f1dafc8583dd9a0",
+  "score_files": 14,
+  "numeric_failures": 0,
+  "episode_predictions": 8400,
+  "summary_and_pairs_recomputed": true,
+  "files": {
+    "diagnostic.json": "18edf94573b286f45463cea771666822fe2d0f1649ed3fb50d841bc3ee77da6d",
+    "plan.json": "7e453688484d49d29c377be3c0a1903e38e0002c39324d280f1dafc8583dd9a0",
+    "tasks.json": "ecc53354f2240b04578d0db1a3496300f57d6010b5d3c27a4a44b998fcbdbc63",
+    "scores\\diagnostic_1_continued_published.json": "d31a98e7c33999db27416dd621e2d19c9068632567cb553b060e382d8811329a",
+    "scores\\diagnostic_1_student_centered_graph.json": "0aafbbe2b219eddb885a55505e86865582661aa439f2ce997d98876f5c7e5313",
+    "scores\\diagnostic_1_student_centered_proto.json": "ae4934e76db812fb3f939ca372071e99fa31d1285d2eadc9e8796b498ecc3214",
+    "scores\\diagnostic_1_student_ptmap.json": "243245cda655bb96d34cc77074691fc41e76884386c689a3d1710c920c49839b",
+    "scores\\diagnostic_1_teacher_centered_graph.json": "21a69b126357b8adf88ea6a3f564432765ea4d876ea2dca18894a7332f9c075b",
+    "scores\\diagnostic_1_teacher_centered_proto.json": "09b1bb7ea16f9bddbfbb74f4f28a6b56019e482dcbeb02cc0ba9852d7ce657fa",
+    "scores\\diagnostic_1_teacher_ptmap.json": "253eb62feb3c445c541a0af86e7e909e8d7c051e84b55485c597106d64bfdbac",
+    "scores\\diagnostic_5_continued_published.json": "e113e6a31d95e256ff6877ff3dff6273d84fa1a275a7f2102f5c940bb6d4e453",
+    "scores\\diagnostic_5_student_centered_graph.json": "5c6d50e45f19c80a7bc06e90505265b626b625970a14f6eebb2b02a8244f712b",
+    "scores\\diagnostic_5_student_centered_proto.json": "ab9cc6fac467af9a025c8274272d1d9046e24c4516ea6bdaf8b3db128b0e6407",
+    "scores\\diagnostic_5_student_ptmap.json": "78cd21c9366cf9c476f0ca5e97b518edd9693b27ccf534f333c7ce81443a6ab3",
+    "scores\\diagnostic_5_teacher_centered_graph.json": "e6ff0b46b82722b52ef22ce3026b5bd7253adbafd2334ed7e2fcb71da1f5ecaf",
+    "scores\\diagnostic_5_teacher_centered_proto.json": "684d5f20b263645951e63a5a014f3658dea557051ff8a15f2c4514a79f23ea26",
+    "scores\\diagnostic_5_teacher_ptmap.json": "b04e8d3c9962628f62b800dd19f66ed367a41678b726ed79e858c1ac95a05843"
+  }
+}

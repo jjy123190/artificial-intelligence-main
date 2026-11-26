@@ -185,6 +185,14 @@ export type CourseModule = {
   kind: string;
 };
 export type CourseLab = {
+  files?: {
+    id: string;
+    label: string;
+    kind: string;
+    available: boolean;
+    bytes: number;
+    href: string;
+  }[];
   id: LabId;
   number: string;
   name: string;
