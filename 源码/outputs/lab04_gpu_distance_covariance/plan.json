@@ -1,0 +1,61 @@
+{
+  "track": "distance_covariance",
+  "external_pretraining": false,
+  "weights": {
+    "parent": 0.0,
+    "quarter": 0.25,
+    "half": 0.5
+  },
+  "selection": "One weight for both shots. Maximize combined validation correct; favor lower weight on ties.",
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "parent_lock_sha256": "7b906c1484e7c607483e3efd0f44705c47b547dc4b0fc3c183281c7612f0dc86",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "training": {
+    "steps": 700,
+    "episodes_per_step": 8,
+    "alternating_shots": [
+      1,
+      5
+    ],
+    "queries_per_class": 15,
+    "seed": 40719,
+    "projection_channels": 48,
+    "dimension": 192,
+    "learning_rate": 0.0007,
+    "alignment_weight": 0.25,
+    "feature_maps": "5x5, original and flip"
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "assignment_solver": "scipy",
+  "sources": {
+    "distance_covariance.py": "be6049599924d12a9c35120a4d738a451bde6bf24b6a6bf64b22ea4b50545486",
+    "distance_covariance_study.py": "8de7fb484f3f94e9d4fe8f243fb85c0a2761155bfe6d6618bbeb617339b47b27",
+    "episode_metric_study.py": "bf06e12ff1d7d717276aa1fcf48b6e2bcc272b54e14ffc8a28c673c3690373c7",
+    "train_episode_metric.py": "bdbcfc4ae556fd72a51e80013ef18a8749f86f68d6d6fea4f9fc77a58c9b8c38",
+    "prototype_restarts.py": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c",
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "self_distill_study.py": "fa0610ad81e4fc8393079a99f673896eab8644785b1268b0bb007cab34f36717"
+  }
+}

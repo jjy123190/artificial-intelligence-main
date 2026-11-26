@@ -1,0 +1,22 @@
+{
+  "seed": 20261126,
+  "steps": 1500,
+  "spatial_weight_candidates": [
+    0.0,
+    0.5
+  ],
+  "batch_size": 96,
+  "device": "cuda",
+  "torch": "2.7.1+cu118",
+  "numpy": "1.24.3",
+  "cuda_runtime": "11.8",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "backbone_sha256": "5a52e2fbf48f3125913814821db15df5f084b44028fbc894962e409aae813dfd",
+  "previous_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+  "train_selection_sha256": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "source_sha256": {
+    "train_gpu_metric.py": "15e98de8468eadec413858d525c2cb6cd26c8fd81ae8e164731b96d7bc438246",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+  },
+  "test_rule": "Select by mean 1/5-shot validation accuracy among candidates gaining >=1pp and positive paired 95% lower bounds at both shots. Test only the locked candidate."
+}

@@ -1,0 +1,78 @@
+{
+  "track": "dino",
+  "external_pretraining": true,
+  "val": {
+    "1": {
+      "accuracy": 0.9915333333333335,
+      "ci95": 0.0017453452069147563,
+      "episodes": 600,
+      "ci95_low": 0.9897879881264188,
+      "ci95_high": 0.9932786785402482,
+      "correct": 44619,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.3579111111111111,
+        "ci95": 0.012409631905104933,
+        "wins": 599,
+        "ties": 0,
+        "losses": 1
+      }
+    },
+    "5": {
+      "accuracy": 0.993688888888889,
+      "ci95": 0.000974328476252666,
+      "episodes": 600,
+      "ci95_low": 0.9927145604126363,
+      "ci95_high": 0.9946632173651416,
+      "correct": 44716,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.24733333333333335,
+        "ci95": 0.006884277205312443,
+        "wins": 600,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.9955111111111112,
+      "ci95": 0.0008452707560318756,
+      "episodes": 600,
+      "ci95_low": 0.9946658403550793,
+      "ci95_high": 0.9963563818671431,
+      "correct": 44798,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.36073333333333335,
+        "ci95": 0.011424003776567198,
+        "wins": 600,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.9953111111111113,
+      "ci95": 0.0008164592848667289,
+      "episodes": 600,
+      "ci95_low": 0.9944946518262445,
+      "ci95_high": 0.996127570395978,
+      "correct": 44789,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.25242222222222227,
+        "ci95": 0.0074793074331538645,
+        "wins": 600,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  },
+  "files": {
+    "plan.json": "b3183b26f875503fd1df2ff59a8d6b07748255a6cdac2945455b274e7e4d719c",
+    "validation_lock.json": "6e6de72fb98d21e8f14dd2b4d4345f1d1e98e893c620f58965f5106937d0ab2e",
+    "val_predictions.json": "c9accaa8a37f89605057f23e87d55a431d77a9e7713d0dc9cabc85a555a1764a",
+    "test_predictions.json": "9dd4967759152a20ea1b089ea9dfbfc2175af559f4aa0d45cf420d40e42beca0"
+  }
+}

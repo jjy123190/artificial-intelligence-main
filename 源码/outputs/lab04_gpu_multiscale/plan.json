@@ -1,0 +1,83 @@
+{
+  "track": "multiscale",
+  "external_pretraining": false,
+  "candidates": [
+    [
+      "center",
+      0.0
+    ],
+    [
+      "center",
+      0.25
+    ],
+    [
+      "center",
+      0.5
+    ],
+    [
+      "multiscale",
+      0.0
+    ],
+    [
+      "multiscale",
+      0.25
+    ],
+    [
+      "multiscale",
+      0.5
+    ],
+    [
+      "corners",
+      0.0
+    ],
+    [
+      "corners",
+      0.25
+    ],
+    [
+      "corners",
+      0.5
+    ]
+  ],
+  "selection": "For each shot choose the most correct validation queries. Ties favor earlier candidates.",
+  "previous_results_sha256": "fc877885226da22d4a14ddc27199cbc06f38cfcf8cf269aadc2eead8d2bbe915",
+  "training_plan": {
+    "model_sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "external_pretraining": false,
+    "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+    "steps": 2000,
+    "seed": 20261129,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "torch": "2.7.1+cu118",
+    "source_sha256": {
+      "train_local_metric.py": "1c7578336458cb34577a8b66ea87e4d203e0fc60c3d3b844a1033fe2cb0732ba",
+      "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+    }
+  },
+  "training": {
+    "images": 38400,
+    "classes": 64,
+    "descriptor_dimension": 3504,
+    "loss_first_last": [
+      1.6651718616485596,
+      0.5152060985565186
+    ],
+    "steps": 2000,
+    "files": {
+      "local_metric.pt": "6469299700683e5a6157275414cc8c7bd22e5306c1bde92a5aa7015aafa1f6c9",
+      "training_plan.json": "ac7ce67bb80730d42b43884099618dabe47114fa0db02b1ad92221ed20cbb3ba"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "files": {
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "train_local_metric.py": "1c7578336458cb34577a8b66ea87e4d203e0fc60c3d3b844a1033fe2cb0732ba",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+  },
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "episodes": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  }
+}

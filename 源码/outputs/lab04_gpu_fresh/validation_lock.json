@@ -1,0 +1,80 @@
+{
+  "test_eligible": true,
+  "validation": {
+    "1": {
+      "candidate": {
+        "accuracy": 0.6336222222222222,
+        "ci95": 0.012397563049994868,
+        "episodes": 600,
+        "ci95_low": 0.6212246591722274,
+        "ci95_high": 0.646019785272217
+      },
+      "continued": {
+        "accuracy": 0.5614888888888888,
+        "ci95": 0.012160148509063728,
+        "episodes": 600,
+        "ci95_low": 0.549328740379825,
+        "ci95_high": 0.5736490373979526
+      },
+      "paired": {
+        "mean": 0.07213333333333334,
+        "ci95": 0.010094996853201454,
+        "wins": 436,
+        "ties": 26,
+        "losses": 138
+      }
+    },
+    "5": {
+      "candidate": {
+        "accuracy": 0.7463555555555555,
+        "ci95": 0.007007276926266838,
+        "episodes": 600,
+        "ci95_low": 0.7393482786292888,
+        "ci95_high": 0.7533628324818223
+      },
+      "continued": {
+        "accuracy": 0.6919777777777778,
+        "ci95": 0.007887700356773083,
+        "episodes": 600,
+        "ci95_low": 0.6840900774210047,
+        "ci95_high": 0.6998654781345509
+      },
+      "paired": {
+        "mean": 0.054377777777777775,
+        "ci95": 0.0052710730850716835,
+        "wins": 464,
+        "ties": 42,
+        "losses": 94
+      }
+    }
+  },
+  "spatial_weight": 0.5,
+  "configs": {
+    "1": {
+      "neighbors": 5,
+      "alpha": 0.95,
+      "power": 3.0,
+      "temperature": 0.1,
+      "prototype_weight": 0.8,
+      "prototype_steps": 8,
+      "graph_weight": 0.5,
+      "balanced": true
+    },
+    "5": {
+      "neighbors": 5,
+      "alpha": 0.95,
+      "power": 3.0,
+      "temperature": 0.1,
+      "prototype_weight": 0.8,
+      "prototype_steps": 8,
+      "graph_weight": 0.0,
+      "balanced": true
+    }
+  },
+  "plan_sha256": "e2aecd35539b6bec7c301e4211c7372e9b16f24f319d1af106fa0bf764de5d92",
+  "inference_files": {
+    "fresh.pt": "5a52e2fbf48f3125913814821db15df5f084b44028fbc894962e409aae813dfd",
+    "base_transform.npz": "ac10c1e604ea114a2b87d0c214948239a6340134a8b4bd07027d455df0475724",
+    "spatial_metric.pt": "70c68195bf23f25b908223c4d663177f55576a2349bcf7686b409c0ae349fcf2"
+  }
+}

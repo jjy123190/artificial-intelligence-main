@@ -1,0 +1,80 @@
+{
+  "plan_sha256": "7a0091c5916a94fdcac96cf5cde52a65a53e9c9bd9692e2f9a554635934cb5d8",
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15336,
+      "blurred": 7849,
+      "lr": 0.00016,
+      "loss": 3.6229585774739586,
+      "region_ce": 3.9492606608072918,
+      "region_updates": 150,
+      "seconds": 35.82
+    },
+    {
+      "epoch": 2,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15453,
+      "blurred": 7638,
+      "lr": 0.00014710864712030896,
+      "loss": 3.5486543782552085,
+      "region_ce": 3.5917256673177085,
+      "region_updates": 150,
+      "seconds": 34.27
+    },
+    {
+      "epoch": 3,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15327,
+      "blurred": 7688,
+      "lr": 0.00011335864712030895,
+      "loss": 3.4751969401041665,
+      "region_ce": 3.3445088704427084,
+      "region_updates": 150,
+      "seconds": 34.17
+    },
+    {
+      "epoch": 4,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15432,
+      "blurred": 7684,
+      "lr": 7.164135287969106e-05,
+      "loss": 3.433900146484375,
+      "region_ce": 3.2007759602864585,
+      "region_updates": 150,
+      "seconds": 34.11
+    },
+    {
+      "epoch": 5,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15485,
+      "blurred": 7722,
+      "lr": 3.789135287969106e-05,
+      "loss": 3.4354488118489583,
+      "region_ce": 3.1438397216796874,
+      "region_updates": 150,
+      "seconds": 34.19
+    },
+    {
+      "epoch": 6,
+      "updates": 300,
+      "images": 38400,
+      "rotated": 15584,
+      "blurred": 7664,
+      "lr": 2.5e-05,
+      "loss": 3.427083740234375,
+      "region_ce": 3.117547810872396,
+      "region_updates": 150,
+      "seconds": 34.15
+    }
+  ],
+  "files": {
+    "medium.pt": "753d9b19c1635515d96c022b747cb7263f160b9d15b02522325c21d808bd7a0c"
+  }
+}

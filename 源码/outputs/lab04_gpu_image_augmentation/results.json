@@ -1,0 +1,85 @@
+{
+  "track": "image_augmentation",
+  "external_pretraining": false,
+  "winner": "augmented",
+  "val": {
+    "1": {
+      "accuracy": 0.7663333333333333,
+      "ci95": 0.011628633952779717,
+      "episodes": 600,
+      "ci95_low": 0.7547046993805536,
+      "ci95_high": 0.777961967286113,
+      "correct": 34485,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0005999999999999998,
+        "ci95": 0.006198912638775607,
+        "wins": 212,
+        "ties": 173,
+        "losses": 215
+      }
+    },
+    "5": {
+      "accuracy": 0.8356888888888888,
+      "ci95": 0.005912654497473737,
+      "episodes": 600,
+      "ci95_low": 0.8297762343914151,
+      "ci95_high": 0.8416015433863625,
+      "correct": 37606,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0013777777777777746,
+        "ci95": 0.002162787869680426,
+        "wins": 235,
+        "ties": 171,
+        "losses": 194
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7393555555555555,
+      "ci95": 0.012148507151495375,
+      "episodes": 600,
+      "ci95_low": 0.7272070484040601,
+      "ci95_high": 0.751504062707051,
+      "correct": 33271,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": -0.006200000000000001,
+        "ci95": 0.005728191765815314,
+        "wins": 212,
+        "ties": 143,
+        "losses": 245
+      }
+    },
+    "5": {
+      "accuracy": 0.8218000000000001,
+      "ci95": 0.006352322943514856,
+      "episodes": 600,
+      "ci95_low": 0.8154476770564852,
+      "ci95_high": 0.8281523229435149,
+      "correct": 36981,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0012888888888888893,
+        "ci95": 0.002720355601173926,
+        "wins": 229,
+        "ties": 158,
+        "losses": 213
+      }
+    }
+  },
+  "files": {
+    "val_parent.npz": "04cef7b1219c4afde0380f9ed0b986c4e5519b7acb4068fec6a79ef235fb4995",
+    "val_control.npz": "e87d6122f8229a09c2a16d8063ba643cdbe47525fd81d8e657997b89a3d88939",
+    "val_augmented.npz": "2744fbc57de9657fa6f849818c8a5b8d4567d7a5323fb638d2c1c7a93178aea2",
+    "medium.pt": "f7de5e48417cd0097289b51bd7921af2710f35d48a97d6fdca627ec3445ad218",
+    "spatial_metric.pt": "1a57643c377bce11fd607fb4619a5236f5e0c101c15cd4cd237df033fef2cc43",
+    "base_transform.npz": "192395b5cb6720b64ded234965d7c8289217881e49358eef4e41ae295361ffd7",
+    "plan.json": "2b7c4639accdc6f168e11b179b9423ffb440ee49b07b155c3dd6cdcd12c53cdc",
+    "test_predictions.json": "c2686e686f204773e7745ec8e2f05be34cf33a496ef79f2959c17c6585d3f6d6",
+    "training.json": "e548edf2f3163f6d054aa415fefb21a05fa2a3e5ab019d17092e0e097e6c0e1f",
+    "validation_lock.json": "6ce8ae030e930ec8a712cb24f7fd89bc81b8f2c7976c25d13d06641195aab990"
+  }
+}

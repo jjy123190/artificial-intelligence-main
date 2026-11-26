@@ -1,0 +1,307 @@
+{
+  "winner": "augmented_kernel",
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "kernel": {
+    "weight": 0.2,
+    "temperature": 0.2,
+    "grid": 3
+  },
+  "plan_sha256": "a209a376f4f65007866c75d26ecc4c86f31eb506f690e979c646833a3062714f",
+  "validation_files": {
+    "val_augmented.npz": "2744fbc57de9657fa6f849818c8a5b8d4567d7a5323fb638d2c1c7a93178aea2",
+    "val_rotation_views.npz": "04cef7b1219c4afde0380f9ed0b986c4e5519b7acb4068fec6a79ef235fb4995",
+    "val_regional.npz": "08414116ef8294d314023b7f07a3b97162622d72dfff076974f8a8260d71bfc1",
+    "val_augmented_kernel.npz": "a060dfc96ceb32336d1a7d7552921fc3947594a82112d4e751c09e5be7c40056",
+    "val_regional_kernel.npz": "b57a2f8078aaca8507c6c52a44bf7b705a99774f396419ff5179a3934cf7ecef"
+  },
+  "inference_files": {
+    "medium.pt": "f7de5e48417cd0097289b51bd7921af2710f35d48a97d6fdca627ec3445ad218",
+    "spatial_metric.pt": "1a57643c377bce11fd607fb4619a5236f5e0c101c15cd4cd237df033fef2cc43",
+    "base_transform.npz": "192395b5cb6720b64ded234965d7c8289217881e49358eef4e41ae295361ffd7"
+  },
+  "candidates": {
+    "augmented": {
+      "1": {
+        "accuracy": 0.7663333333333333,
+        "ci95": 0.011628633952779717,
+        "episodes": 600,
+        "ci95_low": 0.7547046993805536,
+        "ci95_high": 0.777961967286113,
+        "correct": 34485,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "wins": 0,
+          "ties": 600,
+          "losses": 0
+        }
+      },
+      "5": {
+        "accuracy": 0.8356888888888888,
+        "ci95": 0.005912654497473737,
+        "episodes": 600,
+        "ci95_low": 0.8297762343914151,
+        "ci95_high": 0.8416015433863625,
+        "correct": 37606,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "wins": 0,
+          "ties": 600,
+          "losses": 0
+        }
+      }
+    },
+    "rotation_views": {
+      "1": {
+        "accuracy": 0.7657333333333334,
+        "ci95": 0.011817429696864138,
+        "episodes": 600,
+        "ci95_low": 0.7539159036364692,
+        "ci95_high": 0.7775507630301975,
+        "correct": 34458,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.0005999999999999998,
+          "ci95": 0.006198912638775607,
+          "wins": 215,
+          "ties": 173,
+          "losses": 212
+        }
+      },
+      "5": {
+        "accuracy": 0.8343111111111111,
+        "ci95": 0.005900670666973441,
+        "episodes": 600,
+        "ci95_low": 0.8284104404441377,
+        "ci95_high": 0.8402117817780845,
+        "correct": 37544,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.0013777777777777746,
+          "ci95": 0.002162787869680426,
+          "wins": 194,
+          "ties": 171,
+          "losses": 235
+        }
+      }
+    },
+    "regional": {
+      "1": {
+        "accuracy": 0.7637555555555555,
+        "ci95": 0.0118675206234919,
+        "episodes": 600,
+        "ci95_low": 0.7518880349320636,
+        "ci95_high": 0.7756230761790475,
+        "correct": 34369,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.0025777777777777782,
+          "ci95": 0.0036250989631955595,
+          "wins": 117,
+          "ties": 363,
+          "losses": 120
+        }
+      },
+      "5": {
+        "accuracy": 0.8347777777777778,
+        "ci95": 0.006024671202391969,
+        "episodes": 600,
+        "ci95_low": 0.8287531065753859,
+        "ci95_high": 0.8408024489801698,
+        "correct": 37565,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.0009111111111111105,
+          "ci95": 0.001069733376122883,
+          "wins": 83,
+          "ties": 423,
+          "losses": 94
+        }
+      }
+    },
+    "augmented_kernel": {
+      "1": {
+        "accuracy": 0.7689555555555555,
+        "ci95": 0.011414945817728712,
+        "episodes": 600,
+        "ci95_low": 0.7575406097378268,
+        "ci95_high": 0.7803705013732842,
+        "correct": 34603,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0026222222222222224,
+          "ci95": 0.0051291926374568576,
+          "wins": 160,
+          "ties": 286,
+          "losses": 154
+        }
+      },
+      "5": {
+        "accuracy": 0.8360000000000001,
+        "ci95": 0.005967155959954237,
+        "episodes": 600,
+        "ci95_low": 0.8300328440400458,
+        "ci95_high": 0.8419671559599543,
+        "correct": 37620,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0003111111111111107,
+          "ci95": 0.0014895889865852523,
+          "wins": 139,
+          "ties": 335,
+          "losses": 126
+        }
+      }
+    },
+    "regional_kernel": {
+      "1": {
+        "accuracy": 0.7693333333333334,
+        "ci95": 0.011248567915335812,
+        "episodes": 600,
+        "ci95_low": 0.7580847654179976,
+        "ci95_high": 0.7805819012486692,
+        "correct": 34620,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0030000000000000005,
+          "ci95": 0.005208205664619649,
+          "wins": 167,
+          "ties": 267,
+          "losses": 166
+        }
+      },
+      "5": {
+        "accuracy": 0.8352222222222222,
+        "ci95": 0.005926247225259891,
+        "episodes": 600,
+        "ci95_low": 0.8292959749969623,
+        "ci95_high": 0.8411484694474821,
+        "correct": 37585,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.00046666666666666764,
+          "ci95": 0.0015499754844749184,
+          "wins": 135,
+          "ties": 329,
+          "losses": 136
+        }
+      }
+    }
+  },
+  "validation": {
+    "1": {
+      "accuracy": 0.7689555555555555,
+      "ci95": 0.011414945817728712,
+      "episodes": 600,
+      "ci95_low": 0.7575406097378268,
+      "ci95_high": 0.7803705013732842,
+      "correct": 34603,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.0026222222222222224,
+        "ci95": 0.0051291926374568576,
+        "wins": 160,
+        "ties": 286,
+        "losses": 154
+      }
+    },
+    "5": {
+      "accuracy": 0.8360000000000001,
+      "ci95": 0.005967155959954237,
+      "episodes": 600,
+      "ci95_low": 0.8300328440400458,
+      "ci95_high": 0.8419671559599543,
+      "correct": 37620,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.0003111111111111107,
+        "ci95": 0.0014895889865852523,
+        "wins": 139,
+        "ties": 335,
+        "losses": 126
+      }
+    }
+  },
+  "validation_paired": {
+    "regional_minus_augmented": {
+      "1": {
+        "mean": -0.0025777777777777782,
+        "ci95": 0.0036250989631955595,
+        "wins": 117,
+        "ties": 363,
+        "losses": 120
+      },
+      "5": {
+        "mean": -0.0009111111111111105,
+        "ci95": 0.001069733376122883,
+        "wins": 83,
+        "ties": 423,
+        "losses": 94
+      }
+    },
+    "regional_kernel_minus_augmented_kernel": {
+      "1": {
+        "mean": 0.0003777777777777772,
+        "ci95": 0.0040157858809397266,
+        "wins": 105,
+        "ties": 383,
+        "losses": 112
+      },
+      "5": {
+        "mean": -0.0007777777777777784,
+        "ci95": 0.0010897611049466818,
+        "wins": 82,
+        "ties": 416,
+        "losses": 102
+      }
+    },
+    "regional_kernel_minus_regional": {
+      "1": {
+        "mean": 0.005577777777777778,
+        "ci95": 0.005274799400046591,
+        "wins": 169,
+        "ties": 292,
+        "losses": 139
+      },
+      "5": {
+        "mean": 0.00044444444444444284,
+        "ci95": 0.0014944668918495717,
+        "wins": 137,
+        "ties": 331,
+        "losses": 132
+      }
+    },
+    "augmented_kernel_minus_augmented": {
+      "1": {
+        "mean": 0.0026222222222222224,
+        "ci95": 0.0051291926374568576,
+        "wins": 160,
+        "ties": 286,
+        "losses": 154
+      },
+      "5": {
+        "mean": 0.0003111111111111107,
+        "ci95": 0.0014895889865852523,
+        "wins": 139,
+        "ties": 335,
+        "losses": 126
+      }
+    }
+  }
+}

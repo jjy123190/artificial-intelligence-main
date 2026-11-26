@@ -1,0 +1,89 @@
+{
+  "track": "task_subspace",
+  "external_pretraining": false,
+  "winner": {
+    "1": "parent",
+    "5": "parent"
+  },
+  "val": {
+    "1": {
+      "accuracy": 0.7657333333333334,
+      "ci95": 0.011817429696864138,
+      "episodes": 600,
+      "ci95_low": 0.7539159036364692,
+      "ci95_high": 0.7775507630301975,
+      "correct": 34458,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8343111111111111,
+      "ci95": 0.005900670666973441,
+      "episodes": 600,
+      "ci95_low": 0.8284104404441377,
+      "ci95_high": 0.8402117817780845,
+      "correct": 37544,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7455555555555555,
+      "ci95": 0.01195164170972754,
+      "episodes": 600,
+      "ci95_low": 0.733603913845828,
+      "ci95_high": 0.757507197265283,
+      "correct": 33550,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8205111111111111,
+      "ci95": 0.006370254197960332,
+      "episodes": 600,
+      "ci95_low": 0.8141408569131507,
+      "ci95_high": 0.8268813653090714,
+      "correct": 36923,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "files": {
+    "fixed_val_1.npz": "5a7bd1fb4670005940367cf1e29b4d01b3ea863c7fc9d3491dbfc986fafdc4ca",
+    "fixed_val_5.npz": "9634542872c0917869d03b5bf5a0610f2bb8a2cc435de092af4e186954583ed0",
+    "confirmation_1.npz": "30899ab16ff112d6642921c803a2244deba0f5fca9bc9665602e4f8a11c14acd",
+    "confirmation_5.npz": "1a0cbba50af90ba39dfbe4c5a7e09d844100339c3fb910f5e372b482db411441",
+    "shortlist.json": "8720fc771c12de3368692c8ec0a1b63bf475930664a9c1c7380cd8cde05de56c",
+    "medium.pt": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8",
+    "spatial_metric.pt": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a",
+    "base_transform.npz": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4",
+    "plan.json": "ea3702b901e54c4778c3dfdc2ef4d216196779fb16ec889c0593460a332c8cd1",
+    "validation_lock.json": "cea535f694619070e9ea6aa5043d535ea5a2bf15121a4a35291d263d5d307d12",
+    "test_predictions.json": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc"
+  }
+}

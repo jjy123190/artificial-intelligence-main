@@ -1,0 +1,24 @@
+{
+  "widths": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "seed": 20261206,
+  "epochs": 32,
+  "meta_epochs": 4,
+  "images": 38400,
+  "batch": 128,
+  "paired_views_per_batch": 32,
+  "train_selection_sha256": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "external_weights": false,
+  "precision": "torch.bfloat16",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "code_sha256": {
+    "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "track": "episode_metric",
+  "external_pretraining": false,
+  "winner": "parent",
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "val": {
+    "1": {
+      "accuracy": 0.7657333333333334,
+      "ci95": 0.011817429696864138,
+      "episodes": 600,
+      "ci95_low": 0.7539159036364692,
+      "ci95_high": 0.7775507630301975,
+      "correct": 34458,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8343111111111111,
+      "ci95": 0.005900670666973441,
+      "episodes": 600,
+      "ci95_low": 0.8284104404441377,
+      "ci95_high": 0.8402117817780845,
+      "correct": 37544,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7455555555555555,
+      "ci95": 0.01195164170972754,
+      "episodes": 600,
+      "ci95_low": 0.733603913845828,
+      "ci95_high": 0.757507197265283,
+      "correct": 33550,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8205111111111111,
+      "ci95": 0.006370254197960332,
+      "episodes": 600,
+      "ci95_low": 0.8141408569131507,
+      "ci95_high": 0.8268813653090714,
+      "correct": 36923,
+      "queries": 45000,
+      "paired_vs_rotation_views": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "files": {
+    "test_predictions.json": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc",
+    "val_parent.json": "f40a732d22025cbdda7876b0740ce02b2fda7be8ee9c65898b4041b564777660",
+    "val_support.json": "b4941f7aa899b3bbb68d7bf557168446ff61a91ce72f888d2f2d2e532e167ea7",
+    "val_refined.json": "f0fc58d4b0a4dbe1300758bf045a13c5ac242aadda1112552b40166ea8be5643",
+    "val_crop_covariance.json": "0aac247628d02952c60e07d7c64906b014aa629768b60191eed7c5803cc6bb8a",
+    "support.pt": "48c782efac0ad14f9c087289c47323a5cc74497d2a932ccd0868394802e2a4d5",
+    "refined.pt": "960320383f3342997becc68d21c2a93347369d9743d80112903a321c5f317840",
+    "crop_covariance.pt": "7385e6c2e12b2d2abb6880e7f5cc904c4a8f1b3ac5bf2fb31c0f6826ddcae701",
+    "medium.pt": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8",
+    "spatial_metric.pt": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a",
+    "base_transform.npz": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4",
+    "plan.json": "6afbe51efeaa16099570502044d63929a29f2eaa47908151e17f8f3104b45006",
+    "training.json": "33d08059015b4674269f5bc3b935cbb72b2dce82e034a2023a674308779fbac1",
+    "validation_lock.json": "19f2be0e00dbfede80e52dc1a57840138b941132cc61ae398fe7d3e093b363b0"
+  }
+}

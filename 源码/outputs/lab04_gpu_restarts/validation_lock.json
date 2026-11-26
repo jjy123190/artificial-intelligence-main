@@ -1,0 +1,160 @@
+{
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "candidates": {
+    "1": {
+      "single": {
+        "accuracy": 0.7496444444444443,
+        "ci95": 0.011549966934418204,
+        "episodes": 600,
+        "ci95_low": 0.7380944775100261,
+        "ci95_high": 0.7611944113788626,
+        "queries": 45000,
+        "correct": 33734,
+        "paired_vs_rotation": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "wins": 0,
+          "ties": 600,
+          "losses": 0
+        }
+      },
+      "best": {
+        "accuracy": 0.7558666666666667,
+        "ci95": 0.011482501275859473,
+        "episodes": 600,
+        "ci95_low": 0.7443841653908072,
+        "ci95_high": 0.7673491679425262,
+        "queries": 45000,
+        "correct": 34014,
+        "paired_vs_rotation": {
+          "mean": 0.006222222222222223,
+          "ci95": 0.004982714672953633,
+          "wins": 85,
+          "ties": 457,
+          "losses": 58
+        }
+      },
+      "average": {
+        "accuracy": 0.7524666666666667,
+        "ci95": 0.011528179096121116,
+        "episodes": 600,
+        "ci95_low": 0.7409384875705456,
+        "ci95_high": 0.7639948457627879,
+        "queries": 45000,
+        "correct": 33861,
+        "paired_vs_rotation": {
+          "mean": 0.002822222222222222,
+          "ci95": 0.0048397055297259885,
+          "wins": 116,
+          "ties": 384,
+          "losses": 100
+        }
+      }
+    },
+    "5": {
+      "single": {
+        "accuracy": 0.8294,
+        "ci95": 0.006173724672165635,
+        "episodes": 600,
+        "ci95_low": 0.8232262753278344,
+        "ci95_high": 0.8355737246721656,
+        "queries": 45000,
+        "correct": 37323,
+        "paired_vs_rotation": {
+          "mean": 0.0012888888888888902,
+          "ci95": 0.0023581537694114894,
+          "wins": 221,
+          "ties": 174,
+          "losses": 205
+        }
+      },
+      "best": {
+        "accuracy": 0.8293333333333334,
+        "ci95": 0.006193732141316139,
+        "episodes": 600,
+        "ci95_low": 0.8231396011920172,
+        "ci95_high": 0.8355270654746495,
+        "queries": 45000,
+        "correct": 37320,
+        "paired_vs_rotation": {
+          "mean": 0.0012222222222222237,
+          "ci95": 0.0023716389289301625,
+          "wins": 220,
+          "ties": 175,
+          "losses": 205
+        }
+      },
+      "average": {
+        "accuracy": 0.8295555555555556,
+        "ci95": 0.006144112588452257,
+        "episodes": 600,
+        "ci95_low": 0.8234114429671033,
+        "ci95_high": 0.8356996681440079,
+        "queries": 45000,
+        "correct": 37330,
+        "paired_vs_rotation": {
+          "mean": 0.0014444444444444463,
+          "ci95": 0.0024097915980587897,
+          "wins": 223,
+          "ties": 173,
+          "losses": 204
+        }
+      }
+    }
+  },
+  "validation": {
+    "1": {
+      "accuracy": 0.7558666666666667,
+      "ci95": 0.011482501275859473,
+      "episodes": 600,
+      "ci95_low": 0.7443841653908072,
+      "ci95_high": 0.7673491679425262,
+      "queries": 45000,
+      "correct": 34014,
+      "paired_vs_rotation": {
+        "mean": 0.006222222222222223,
+        "ci95": 0.004982714672953633,
+        "wins": 85,
+        "ties": 457,
+        "losses": 58
+      }
+    },
+    "5": {
+      "accuracy": 0.8295555555555556,
+      "ci95": 0.006144112588452257,
+      "episodes": 600,
+      "ci95_low": 0.8234114429671033,
+      "ci95_high": 0.8356996681440079,
+      "queries": 45000,
+      "correct": 37330,
+      "paired_vs_rotation": {
+        "mean": 0.0014444444444444463,
+        "ci95": 0.0024097915980587897,
+        "wins": 223,
+        "ties": 173,
+        "losses": 204
+      }
+    }
+  },
+  "inference_files": {
+    "medium.pt": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "spatial_metric.pt": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de",
+    "base_transform.npz": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475",
+    "local_metric.pt": "6469299700683e5a6157275414cc8c7bd22e5306c1bde92a5aa7015aafa1f6c9"
+  },
+  "plan_sha256": "1760eaff5bcb26d0a3381196aa6b67158935eada7cad5ac992be97364ce4470b",
+  "val_predictions_sha256": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3"
+}

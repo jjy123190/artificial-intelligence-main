@@ -1,0 +1,18 @@
+{
+  "shot": 5,
+  "ways": 5,
+  "queries_per_class": 15,
+  "episodes": 600,
+  "validation_seed": 840517,
+  "weight": 0.25,
+  "selection": "Use quarter only if its paired 95% lower bound exceeds zero on fresh validation episodes.",
+  "scope": "Exploratory follow-up on same 16 validation classes. Original two-shot decision is separate.",
+  "source_lock_sha256": "a3feb820ee76f03e22c57af6bda631953afefe50031029d9461f93d359150870",
+  "source_code_sha256": "dbcbbdf602a0f92b2420f12be77d5c597d616b37233417621f388e2bc4daa001",
+  "head_sha256": "9459cfec1c697f233ef218da513ae39d0efda85497d9b4f9b08e08577b48d7f8",
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  }
+}

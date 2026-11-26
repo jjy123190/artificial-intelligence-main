@@ -1,0 +1,65 @@
+{
+  "track": "episode_metric",
+  "external_pretraining": false,
+  "candidates": [
+    "parent",
+    "support",
+    "refined",
+    "crop_covariance"
+  ],
+  "selection": "Maximize total correct on both validation shots; first candidate wins ties.",
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "parent_sha256": "7b906c1484e7c607483e3efd0f44705c47b547dc4b0fc3c183281c7612f0dc86",
+  "training": {
+    "seed": 40719,
+    "steps": 1200,
+    "batch_tasks": 8,
+    "hidden": 64,
+    "shots": [
+      1,
+      5
+    ],
+    "ways": 5,
+    "queries_per_class": 15,
+    "residual_inference_blend": 0.5,
+    "refinement_steps": 3,
+    "balance_steps": 4,
+    "mean_std_alignment_weight": 0.25,
+    "identity_penalty": 0.2,
+    "crop_covariance_ridge": "mean eigenvalue"
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "assignment_solver": "scipy",
+  "source_sha256": {
+    "episode_metric_study.py": "bf06e12ff1d7d717276aa1fcf48b6e2bcc272b54e14ffc8a28c673c3690373c7",
+    "train_episode_metric.py": "bdbcfc4ae556fd72a51e80013ef18a8749f86f68d6d6fea4f9fc77a58c9b8c38",
+    "learned_calibration.py": "7467a78c87381f499e5126b72251f9a821f2ae9f7e08f96f6c0c3b52267dc370",
+    "prototype_restarts.py": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c",
+    "self_distill_study.py": "fa0610ad81e4fc8393079a99f673896eab8644785b1268b0bb007cab34f36717",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e"
+  }
+}

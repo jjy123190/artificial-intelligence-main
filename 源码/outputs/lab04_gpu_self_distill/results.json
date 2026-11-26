@@ -1,0 +1,99 @@
+{
+  "track": "self_distill",
+  "winner": "parent",
+  "external_pretraining": false,
+  "val": {
+    "1": {
+      "accuracy": 0.7558666666666667,
+      "ci95": 0.011482501275859473,
+      "episodes": 600,
+      "ci95_low": 0.7443841653908072,
+      "ci95_high": 0.7673491679425262,
+      "correct": 34014,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8295555555555556,
+      "ci95": 0.006144112588452257,
+      "episodes": 600,
+      "ci95_low": 0.8234114429671033,
+      "ci95_high": 0.8356996681440079,
+      "correct": 37330,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7412444444444445,
+      "ci95": 0.012280292667458443,
+      "episodes": 600,
+      "ci95_low": 0.728964151776986,
+      "ci95_high": 0.7535247371119029,
+      "correct": 33356,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8214,
+      "ci95": 0.006341292936000272,
+      "episodes": 600,
+      "ci95_low": 0.8150587070639997,
+      "ci95_high": 0.8277412929360003,
+      "correct": 36963,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "files": {
+    "medium.pt": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "spatial_metric.pt": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de",
+    "base_transform.npz": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475",
+    "val_parent.json": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3",
+    "val_control.json": "ac7e87e26f020ce108534ba0046951f859c33a745af48ff43b1428c3be81d49f",
+    "val_distill.json": "c28721b3eaf5dbf64a03dceedb41cb792a7191ddcfccc733d78f0bf2d9772e4e",
+    "training.json": "3f1a9b2d8eb8cdd7d953b262fcf0fdf610e8aa9d5ffc1d2c20f417554142dd91",
+    "plan.json": "4d655ecad235eeef86f6777ab81204afcf6c22a0e543f14f60f79b6f44fc3e62",
+    "validation_lock.json": "5e9ae979cbecbc68518a1a7551af9b11de57b281eac8422274739d986ededb52",
+    "test_predictions.json": "2d9e13a71101b2242a0e25ed9f94dd5a8d5bb1e6b50115c9cf4c2fa494e3f580"
+  }
+}

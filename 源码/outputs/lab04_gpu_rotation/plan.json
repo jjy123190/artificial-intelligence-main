@@ -1,0 +1,77 @@
+{
+  "track": "rotation",
+  "external_pretraining": false,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "previous_sha256": "5e4beae0db8441fa553f3f353c6a2dc5c8e6e2dd75fda04f0a09c978cfcf3900",
+  "training": {
+    "seed": 20261128,
+    "epochs": 30,
+    "parent_sha256": "e874ffb80186daec4c7401b8ca7e1ba78fbba7d23a4677d4c043c9038d1da238",
+    "parent_training": {
+      "source": {
+        "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+        "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+        "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+        "accuracy90_data.py": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58"
+      },
+      "seed": 20261127,
+      "epochs": 40,
+      "batch": 128,
+      "widths": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "external_weights": false,
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "torch": "2.7.1+cu118",
+      "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb"
+    },
+    "external_weights": false,
+    "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+    "widths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "input_size": 84,
+    "batch": 128,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "dtype": "torch.bfloat16",
+    "torch": "2.7.1+cu118",
+    "source": {
+      "train_resnet_rotation.py": "9372096bd8bc7e79ed838991a05492e01c48dbd580e1659afb7b84ad08f64cdf",
+      "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+      "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4"
+    }
+  },
+  "torch": "2.7.1+cu118",
+  "feature_batch_size": 32,
+  "assignment_solver": "scipy",
+  "continued_sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+  "eval_source_sha256": {
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "multiview.py": "4477f705a6af1f6040f9200b67c29c32823e120c6985fed40ac7bf6b2165cfe8",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76"
+  },
+  "views": [
+    "full",
+    "full_center"
+  ],
+  "decisions": [
+    "prototype",
+    "diffusion",
+    "spectral"
+  ],
+  "diagnostic": "Validation only: full view and support-only cosine prototypes for both backbones.",
+  "selection": "For each backbone and shot maximize the number of correct validation predictions. Choose one backbone by the total across both equal-size shot groups. Ties favor the earlier configuration.",
+  "archives": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  }
+}

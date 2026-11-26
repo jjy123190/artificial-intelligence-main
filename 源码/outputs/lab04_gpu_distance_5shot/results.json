@@ -1,0 +1,25 @@
+{
+  "winner": "parent",
+  "validation": {
+    "accuracy": 0.8372444444444445,
+    "ci95": 0.005983116665191101,
+    "episodes": 600,
+    "ci95_low": 0.8312613277792533,
+    "ci95_high": 0.8432275611096356,
+    "correct": 37676,
+    "queries": 45000,
+    "paired_vs_rotation_views": {
+      "mean": 0.001222222222222222,
+      "ci95": 0.002164704593195869,
+      "wins": 212,
+      "ties": 182,
+      "losses": 206
+    }
+  },
+  "test_5shot_quarter": null,
+  "files": {
+    "plan.json": "58bc115a8cd1339677482dbc85f6193a79351714c6950d8d663fdd2d3586d69c",
+    "confirmation_episodes.npz": "c81d8be831390a8f9783e7012c3bfc6d9a55e43951f8f5496158ee135e1c18d7",
+    "confirmation.json": "715ac7930c91bdb1994bcc0b4f6ad2615a1cdacd816dc9654bfa710f5ff50a9c"
+  }
+}

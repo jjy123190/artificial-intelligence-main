@@ -1,0 +1,107 @@
+{
+  "plan_sha256": "6afbe51efeaa16099570502044d63929a29f2eaa47908151e17f8f3104b45006",
+  "features": {
+    "plan": {
+      "parent_files": {
+        "medium.pt": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8",
+        "spatial_metric.pt": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a",
+        "base_transform.npz": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4"
+      },
+      "dataset_manifest": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+      "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+      "views": [
+        "original with flip",
+        "70px center crop with flip"
+      ]
+    },
+    "files": {
+      "orig.npy": "2475f030296db977d25345d3f1b9230ddf8c39b93794c7414ae0072cffd069aa",
+      "crop.npy": "74b6eb3012cf2dd956d131ec5b72bfc117e223fbca8a2657d467575223c6cb3a",
+      "labels.npy": "33dcd0f421981e1b50b73cc66f3ee46d95210cc678174d9bf2cfa95a4d27d8dd"
+    }
+  },
+  "history": {
+    "support": [
+      {
+        "step": 200,
+        "cross_entropy": 0.34391582012176514,
+        "alignment": 0.01173284649848938,
+        "drift": 0.00595164205878973
+      },
+      {
+        "step": 400,
+        "cross_entropy": 0.3307100534439087,
+        "alignment": 0.006069530732929707,
+        "drift": 0.013181990012526512
+      },
+      {
+        "step": 600,
+        "cross_entropy": 0.3288871645927429,
+        "alignment": 0.004793787375092506,
+        "drift": 0.017345568165183067
+      },
+      {
+        "step": 800,
+        "cross_entropy": 0.3274531364440918,
+        "alignment": 0.004383604973554611,
+        "drift": 0.019616855308413506
+      },
+      {
+        "step": 1000,
+        "cross_entropy": 0.3282739222049713,
+        "alignment": 0.0042606838978827,
+        "drift": 0.020879508927464485
+      },
+      {
+        "step": 1200,
+        "cross_entropy": 0.32023659348487854,
+        "alignment": 0.004213876556605101,
+        "drift": 0.0211794450879097
+      }
+    ],
+    "refined": [
+      {
+        "step": 200,
+        "cross_entropy": 0.25303712487220764,
+        "alignment": 0.0073770517483353615,
+        "drift": 0.01679617166519165
+      },
+      {
+        "step": 400,
+        "cross_entropy": 0.24670474231243134,
+        "alignment": 0.004261238966137171,
+        "drift": 0.02172880806028843
+      },
+      {
+        "step": 600,
+        "cross_entropy": 0.24647362530231476,
+        "alignment": 0.0037172483280301094,
+        "drift": 0.023656489327549934
+      },
+      {
+        "step": 800,
+        "cross_entropy": 0.2466362714767456,
+        "alignment": 0.0035657056141644716,
+        "drift": 0.025993403047323227
+      },
+      {
+        "step": 1000,
+        "cross_entropy": 0.24648860096931458,
+        "alignment": 0.0034801068250089884,
+        "drift": 0.024261372163891792
+      },
+      {
+        "step": 1200,
+        "cross_entropy": 0.2440078854560852,
+        "alignment": 0.003469285788014531,
+        "drift": 0.024378087371587753
+      }
+    ]
+  },
+  "parameters_per_residual_head": 57408,
+  "files": {
+    "support.pt": "48c782efac0ad14f9c087289c47323a5cc74497d2a932ccd0868394802e2a4d5",
+    "refined.pt": "960320383f3342997becc68d21c2a93347369d9743d80112903a321c5f317840",
+    "crop_covariance.pt": "7385e6c2e12b2d2abb6880e7f5cc904c4a8f1b3ac5bf2fb31c0f6826ddcae701"
+  }
+}

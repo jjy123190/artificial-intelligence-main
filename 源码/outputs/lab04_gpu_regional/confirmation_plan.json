@@ -1,0 +1,12 @@
+{
+  "split": "val",
+  "episodes_per_shot": 600,
+  "seeds": {
+    "1": 18110901,
+    "5": 18110905
+  },
+  "study_plan_sha256": "a209a376f4f65007866c75d26ecc4c86f31eb506f690e979c646833a3062714f",
+  "control": "augmented",
+  "selection": "Descriptive replication on the same 16 validation classes. Keep the existing winner.",
+  "source_sha256": "30946cb296b2f2bbb2b22b395a2e95a9bb3ac72b12b0f25d844e889810b6a7ae"
+}

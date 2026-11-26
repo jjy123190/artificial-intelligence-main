@@ -488,6 +488,10 @@
       "bytes": 153,
       "sha256": "65465133d379a5c799f720dbc0a3610b0c46f058c24e81d7f9281919cdd26682"
     },
+    "experiments/lab04/accuracy90_data.py": {
+      "bytes": 2119,
+      "sha256": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58"
+    },
     "experiments/lab04/after_continuation.py": {
       "bytes": 1664,
       "sha256": "6bad7c831dc8882f81b26a2ae51818f5f53ebe1de9dc01d9f29f57cb86055eef"
@@ -520,6 +524,14 @@
       "bytes": 2136,
       "sha256": "d3af264e0a8192c1256bb7c30432fd557995efb05351cde3940ec65533085fe7"
     },
+    "experiments/lab04/confirm_distance_5shot.py": {
+      "bytes": 6005,
+      "sha256": "dbcbbdf602a0f92b2420f12be77d5c597d616b37233417621f388e2bc4daa001"
+    },
+    "experiments/lab04/confirm_regional.py": {
+      "bytes": 4777,
+      "sha256": "b018397221d167c7e9a42770485c52bd771a2fb4d7363fcd6dfc198699e65cc2"
+    },
     "experiments/lab04/continuation_audit.py": {
       "bytes": 9475,
       "sha256": "ff30c510e2ab0ee154bfe6bde035938bb7d4df50c8685cb8cb8ff5c19b58ab67"
@@ -540,9 +552,25 @@
       "bytes": 6109,
       "sha256": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
     },
+    "experiments/lab04/distance_covariance.py": {
+      "bytes": 6999,
+      "sha256": "be6049599924d12a9c35120a4d738a451bde6bf24b6a6bf64b22ea4b50545486"
+    },
+    "experiments/lab04/distance_covariance_study.py": {
+      "bytes": 9571,
+      "sha256": "8de7fb484f3f94e9d4fe8f243fb85c0a2761155bfe6d6618bbeb617339b47b27"
+    },
+    "experiments/lab04/episode_metric_study.py": {
+      "bytes": 12074,
+      "sha256": "bf06e12ff1d7d717276aa1fcf48b6e2bcc272b54e14ffc8a28c673c3690373c7"
+    },
     "experiments/lab04/evaluate_continuation.py": {
       "bytes": 10947,
       "sha256": "b3144675bfd36a838bf4c746166256587b4cc31a210980b8100a55e05cc95637"
+    },
+    "experiments/lab04/evaluate_gpu_tracks.py": {
+      "bytes": 15530,
+      "sha256": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76"
     },
     "experiments/lab04/evaluate_graph_candidate.py": {
       "bytes": 4857,
@@ -584,6 +612,14 @@
       "bytes": 2374,
       "sha256": "57b6cd07086280494d8fcf31e7d688f0c6762eb480b9d51e3ee77ca4231d83b3"
     },
+    "experiments/lab04/gpu_metric.py": {
+      "bytes": 7254,
+      "sha256": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+    },
+    "experiments/lab04/GPU_TRAINING.md": {
+      "bytes": 41203,
+      "sha256": "f0fc984dd875d80a27bbd88c1ddc4d0c8de360776a4a3b299e51856092797931"
+    },
     "experiments/lab04/graph_calibration.py": {
       "bytes": 4322,
       "sha256": "0abcc6321f1b229bd53477b015c4e2b8d9b6e3f647e5d989f4b62ae4be66c737"
@@ -591,6 +627,10 @@
     "experiments/lab04/graph_extension.py": {
       "bytes": 5144,
       "sha256": "102bf90fa0e6fedaf0adb2c745699b054288f776fdc5fee3c16532a700b3ef3a"
+    },
+    "experiments/lab04/image_augmentation_study.py": {
+      "bytes": 7906,
+      "sha256": "cffaa40d4c5b681fcab75980b8d11c4652614c75307d9edb34f9a948076b7ad3"
     },
     "experiments/lab04/improve.py": {
       "bytes": 8152,
@@ -633,8 +673,8 @@
       "sha256": "812fe2995721bd4d3f6d1e010d9e01ee79f4917baaf37d94b5117eac3c1f286c"
     },
     "experiments/lab04/main.py": {
-      "bytes": 3431,
-      "sha256": "7f3d4836e8aa2e53c51569756aa69a9b7b685b8da83c83edc5ddedb07c88ec07"
+      "bytes": 7134,
+      "sha256": "3a83f991c838184b422c23622069ba7ff56ee10a766fe26ad3ac2c805d1823a2"
     },
     "experiments/lab04/metric_training.py": {
       "bytes": 4713,
@@ -647,6 +687,10 @@
     "experiments/lab04/module_contrasts.py": {
       "bytes": 3412,
       "sha256": "81deb24a4731f194c2414dffa7e43be69bd12ee52e8fe96db5bb1dbb25cc1cb9"
+    },
+    "experiments/lab04/multiscale_study.py": {
+      "bytes": 11617,
+      "sha256": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e"
     },
     "experiments/lab04/multiview.py": {
       "bytes": 5634,
@@ -680,6 +724,10 @@
       "bytes": 5351,
       "sha256": "ab14b0673b2cd02bbace5d711594f3a19b44e2df880bbd7cc094fb346dfb4c9e"
     },
+    "experiments/lab04/prototype_restarts.py": {
+      "bytes": 12445,
+      "sha256": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611"
+    },
     "experiments/lab04/publish.py": {
       "bytes": 3980,
       "sha256": "919f8138ad033e7212612f15a648ad332e5d26a96ad97b9bb75f5a321d50c8a8"
@@ -693,8 +741,8 @@
       "sha256": "d600b70c5481b6af4cdc6cda82506146b65e08e60e00ea7a21359de67da4f218"
     },
     "experiments/lab04/README.md": {
-      "bytes": 23130,
-      "sha256": "23982de27156c77839cf496119dd3bb65c99b80a76d3296dd3210118e950145e"
+      "bytes": 29117,
+      "sha256": "587e7c6dabf4e5037a00d8201dc91cbc36af03918267410855a1721c828ce49b"
     },
     "experiments/lab04/reference_model.py": {
       "bytes": 2950,
@@ -703,6 +751,14 @@
     "experiments/lab04/refine.py": {
       "bytes": 17421,
       "sha256": "2f118e5f78914b7959750bdb071fe30832f82b174034f9e54b88d205d87d3c30"
+    },
+    "experiments/lab04/regional_kernel.py": {
+      "bytes": 4280,
+      "sha256": "fcceecb397a2659585c30e0e21b4520f29cac89f14763e95fd606b2a775e9a10"
+    },
+    "experiments/lab04/regional_study.py": {
+      "bytes": 10642,
+      "sha256": "30e7ad6b9b477fd2a602b865ee59ebcfe27bd0c0937ace5af78df748769b1f5d"
     },
     "experiments/lab04/reliability.py": {
       "bytes": 4773,
@@ -724,6 +780,14 @@
       "bytes": 8646,
       "sha256": "1d3604cce5865f050f9af95b988e12c714fbddebcc477afa714398a3ed10703c"
     },
+    "experiments/lab04/rotation_study.py": {
+      "bytes": 15990,
+      "sha256": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba"
+    },
+    "experiments/lab04/rotation_views_study.py": {
+      "bytes": 8495,
+      "sha256": "c95a9f1d57795092d4e1b1b6bae6da85104456e290434ad28e75b61ddf100d81"
+    },
     "experiments/lab04/search_graph.py": {
       "bytes": 6000,
       "sha256": "2f782096bc7158a32abc88e57ad9347c39a6dac00b06d7826ce0fc8eb1b714f2"
@@ -735,6 +799,10 @@
     "experiments/lab04/selection_audit.py": {
       "bytes": 5672,
       "sha256": "dd82a768d6ba0081bd928744fb853bea89c02e6302143624bd5ce5c7fe6dbd4d"
+    },
+    "experiments/lab04/self_distill_study.py": {
+      "bytes": 9603,
+      "sha256": "fa0610ad81e4fc8393079a99f673896eab8644785b1268b0bb007cab34f36717"
     },
     "experiments/lab04/study_cached_refinement.py": {
       "bytes": 10501,
@@ -775,6 +843,14 @@
     "experiments/lab04/TARGET95.md": {
       "bytes": 2968,
       "sha256": "a6b008984270e21c0b660bc1a3668dbbafe0de369b548b076690b43eec965d7d"
+    },
+    "experiments/lab04/task_subspace.py": {
+      "bytes": 4916,
+      "sha256": "f9abd65e15e41d2b478c46327e55d4ba01491829127906c9664f5346e3044f4d"
+    },
+    "experiments/lab04/task_subspace_study.py": {
+      "bytes": 9672,
+      "sha256": "8857f4cf63afd1012fe4660bb4c2f8cb4cda90fbac343a5078a37c3672f9f74b"
     },
     "experiments/lab04/teacher_geometry.py": {
       "bytes": 3330,
@@ -832,9 +908,49 @@
       "bytes": 9844,
       "sha256": "c162f9b12405fab7753f24f55f624fca1b4c538b0c46b2bfdd748befb8681d02"
     },
+    "experiments/lab04/train_episode_metric.py": {
+      "bytes": 6279,
+      "sha256": "bdbcfc4ae556fd72a51e80013ef18a8749f86f68d6d6fea4f9fc77a58c9b8c38"
+    },
     "experiments/lab04/train_feature_distillation.py": {
       "bytes": 17573,
       "sha256": "42c882ac96fd214b61ea3f6c66d6b0758381e5a77c599cad3c77435829f94d98"
+    },
+    "experiments/lab04/train_gpu_backbone.py": {
+      "bytes": 8960,
+      "sha256": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1"
+    },
+    "experiments/lab04/train_gpu_metric.py": {
+      "bytes": 13103,
+      "sha256": "15e98de8468eadec413858d525c2cb6cd26c8fd81ae8e164731b96d7bc438246"
+    },
+    "experiments/lab04/train_image_augmentation.py": {
+      "bytes": 9879,
+      "sha256": "35a11a89c2a65049b79fd716a35f79dc9c5332c09ff99eceb132a4149f8f286b"
+    },
+    "experiments/lab04/train_local_metric.py": {
+      "bytes": 5972,
+      "sha256": "1c7578336458cb34577a8b66ea87e4d203e0fc60c3d3b844a1033fe2cb0732ba"
+    },
+    "experiments/lab04/train_medium_gpu.py": {
+      "bytes": 5668,
+      "sha256": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a"
+    },
+    "experiments/lab04/train_regional.py": {
+      "bytes": 9087,
+      "sha256": "4db54b16c84dd453d089db6d60faaac056bb074063d6c153a89db58c0a4236fa"
+    },
+    "experiments/lab04/train_resnet_rotation.py": {
+      "bytes": 7717,
+      "sha256": "9372096bd8bc7e79ed838991a05492e01c48dbd580e1659afb7b84ad08f64cdf"
+    },
+    "experiments/lab04/train_rotation_views.py": {
+      "bytes": 10452,
+      "sha256": "1adb758f53ba4607a661aaa0e0991abf8641608789a7d44d6aac7b7408ed3b47"
+    },
+    "experiments/lab04/train_self_distill.py": {
+      "bytes": 9943,
+      "sha256": "abbab72638327623d90bac4a9e94f12573c29a39af24ff8a5888e76c7107dfa3"
     },
     "experiments/lab04/train_v3.py": {
       "bytes": 7436,
@@ -2884,9 +3000,569 @@
       "bytes": 228298,
       "sha256": "0bcae6e47d7c952647054869d92021a5b0029ffd09cffda7ab1cd352d011fb76"
     },
+    "outputs/lab04_gpu_dino/plan.json": {
+      "bytes": 1456,
+      "sha256": "b3183b26f875503fd1df2ff59a8d6b07748255a6cdac2945455b274e7e4d719c"
+    },
+    "outputs/lab04_gpu_dino/results.json": {
+      "bytes": 2193,
+      "sha256": "621bfe5d0e3224a59a8bae65ea1ed1179ae1f0bdd8f53b3324abe5819dfa5002"
+    },
+    "outputs/lab04_gpu_dino/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "9dd4967759152a20ea1b089ea9dfbfc2175af559f4aa0d45cf420d40e42beca0"
+    },
+    "outputs/lab04_gpu_dino/val_predictions.json": {
+      "bytes": 916833,
+      "sha256": "c9accaa8a37f89605057f23e87d55a431d77a9e7713d0dc9cabc85a555a1764a"
+    },
+    "outputs/lab04_gpu_dino/validation_lock.json": {
+      "bytes": 1883,
+      "sha256": "6e6de72fb98d21e8f14dd2b4d4345f1d1e98e893c620f58965f5106937d0ab2e"
+    },
+    "outputs/lab04_gpu_distance_5shot/confirmation.json": {
+      "bytes": 1092,
+      "sha256": "715ac7930c91bdb1994bcc0b4f6ad2615a1cdacd816dc9654bfa710f5ff50a9c"
+    },
+    "outputs/lab04_gpu_distance_5shot/confirmation_episodes.npz": {
+      "bytes": 223116,
+      "sha256": "c81d8be831390a8f9783e7012c3bfc6d9a55e43951f8f5496158ee135e1c18d7"
+    },
+    "outputs/lab04_gpu_distance_5shot/plan.json": {
+      "bytes": 951,
+      "sha256": "58bc115a8cd1339677482dbc85f6193a79351714c6950d8d663fdd2d3586d69c"
+    },
+    "outputs/lab04_gpu_distance_5shot/results.json": {
+      "bytes": 775,
+      "sha256": "93318773abd20c7713c84776c5d7df0bc9b3dcc1a98a4e87712563efd41c6da4"
+    },
+    "outputs/lab04_gpu_distance_covariance/base_transform.npz": {
+      "bytes": 491435,
+      "sha256": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4"
+    },
+    "outputs/lab04_gpu_distance_covariance/distance_head.pt": {
+      "bytes": 956511,
+      "sha256": "9459cfec1c697f233ef218da513ae39d0efda85497d9b4f9b08e08577b48d7f8"
+    },
+    "outputs/lab04_gpu_distance_covariance/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8"
+    },
+    "outputs/lab04_gpu_distance_covariance/plan.json": {
+      "bytes": 2399,
+      "sha256": "f3172fb5282eda8004cfadded167fdfb467a30c40e9f0d428f42d765a4a6a7ab"
+    },
+    "outputs/lab04_gpu_distance_covariance/results.json": {
+      "bytes": 2963,
+      "sha256": "822797e542731fd71fcbe5e8a839af932a0c583a22e58adcc9c1d3c69e13cda0"
+    },
+    "outputs/lab04_gpu_distance_covariance/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a"
+    },
+    "outputs/lab04_gpu_distance_covariance/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc"
+    },
+    "outputs/lab04_gpu_distance_covariance/training.json": {
+      "bytes": 1727,
+      "sha256": "ab29728c9402d9c18673730c3756876b8c2a060dd2378f2cb0866bbc7966515e"
+    },
+    "outputs/lab04_gpu_distance_covariance/val_half.json": {
+      "bytes": 916833,
+      "sha256": "e14d51f48fcd5a975f156c90212413f1788f0dd38f0423278a174a376a726b71"
+    },
+    "outputs/lab04_gpu_distance_covariance/val_parent.json": {
+      "bytes": 916833,
+      "sha256": "f40a732d22025cbdda7876b0740ce02b2fda7be8ee9c65898b4041b564777660"
+    },
+    "outputs/lab04_gpu_distance_covariance/val_quarter.json": {
+      "bytes": 916833,
+      "sha256": "6ba1d9779657d83910683775cb386dec19514ea7c47d79198331fe89f4441ef3"
+    },
+    "outputs/lab04_gpu_distance_covariance/validation_lock.json": {
+      "bytes": 4685,
+      "sha256": "a3feb820ee76f03e22c57af6bda631953afefe50031029d9461f93d359150870"
+    },
+    "outputs/lab04_gpu_episode_metric/base_transform.npz": {
+      "bytes": 491435,
+      "sha256": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4"
+    },
+    "outputs/lab04_gpu_episode_metric/crop_covariance.pt": {
+      "bytes": 804449,
+      "sha256": "7385e6c2e12b2d2abb6880e7f5cc904c4a8f1b3ac5bf2fb31c0f6826ddcae701"
+    },
+    "outputs/lab04_gpu_episode_metric/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8"
+    },
+    "outputs/lab04_gpu_episode_metric/plan.json": {
+      "bytes": 2452,
+      "sha256": "6afbe51efeaa16099570502044d63929a29f2eaa47908151e17f8f3104b45006"
+    },
+    "outputs/lab04_gpu_episode_metric/refined.pt": {
+      "bytes": 231777,
+      "sha256": "960320383f3342997becc68d21c2a93347369d9743d80112903a321c5f317840"
+    },
+    "outputs/lab04_gpu_episode_metric/results.json": {
+      "bytes": 3220,
+      "sha256": "7e00faeda0ebf6c927e23f49a2db2733e8232d427a4b5e05846b01837e280af4"
+    },
+    "outputs/lab04_gpu_episode_metric/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a"
+    },
+    "outputs/lab04_gpu_episode_metric/support.pt": {
+      "bytes": 231777,
+      "sha256": "48c782efac0ad14f9c087289c47323a5cc74497d2a932ccd0868394802e2a4d5"
+    },
+    "outputs/lab04_gpu_episode_metric/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc"
+    },
+    "outputs/lab04_gpu_episode_metric/training.json": {
+      "bytes": 3467,
+      "sha256": "33d08059015b4674269f5bc3b935cbb72b2dce82e034a2023a674308779fbac1"
+    },
+    "outputs/lab04_gpu_episode_metric/val_crop_covariance.json": {
+      "bytes": 916833,
+      "sha256": "0aac247628d02952c60e07d7c64906b014aa629768b60191eed7c5803cc6bb8a"
+    },
+    "outputs/lab04_gpu_episode_metric/val_parent.json": {
+      "bytes": 916833,
+      "sha256": "f40a732d22025cbdda7876b0740ce02b2fda7be8ee9c65898b4041b564777660"
+    },
+    "outputs/lab04_gpu_episode_metric/val_refined.json": {
+      "bytes": 916833,
+      "sha256": "f0fc58d4b0a4dbe1300758bf045a13c5ac242aadda1112552b40166ea8be5643"
+    },
+    "outputs/lab04_gpu_episode_metric/val_support.json": {
+      "bytes": 916833,
+      "sha256": "b4941f7aa899b3bbb68d7bf557168446ff61a91ce72f888d2f2d2e532e167ea7"
+    },
+    "outputs/lab04_gpu_episode_metric/validation_lock.json": {
+      "bytes": 7576,
+      "sha256": "19f2be0e00dbfede80e52dc1a57840138b941132cc61ae398fe7d3e093b363b0"
+    },
+    "outputs/lab04_gpu_fresh/backbone_plan.json": {
+      "bytes": 718,
+      "sha256": "95d533efe92862684273e9fca828ade70b08b672abe452297e0b047daa122a63"
+    },
+    "outputs/lab04_gpu_fresh/backbone_training.json": {
+      "bytes": 7135,
+      "sha256": "abf533e578dedd3c873679ef2dc111460c06bc46c8c2e5708850cebdf1cab3d9"
+    },
+    "outputs/lab04_gpu_fresh/base_transform.npz": {
+      "bytes": 113802,
+      "sha256": "ac10c1e604ea114a2b87d0c214948239a6340134a8b4bd07027d455df0475724"
+    },
+    "outputs/lab04_gpu_fresh/fresh.pt": {
+      "bytes": 2056197,
+      "sha256": "5a52e2fbf48f3125913814821db15df5f084b44028fbc894962e409aae813dfd"
+    },
+    "outputs/lab04_gpu_fresh/plan.json": {
+      "bytes": 935,
+      "sha256": "e2aecd35539b6bec7c301e4211c7372e9b16f24f319d1af106fa0bf764de5d92"
+    },
+    "outputs/lab04_gpu_fresh/results.json": {
+      "bytes": 7661,
+      "sha256": "87e45937a4a884262a82c3bfcc6551f8ad626dd6685465c211ff163f9635f0ae"
+    },
+    "outputs/lab04_gpu_fresh/spatial_metric.pt": {
+      "bytes": 1578849,
+      "sha256": "70c68195bf23f25b908223c4d663177f55576a2349bcf7686b409c0ae349fcf2"
+    },
+    "outputs/lab04_gpu_fresh/test_predictions.json": {
+      "bytes": 1052182,
+      "sha256": "35bade9c01146d97704c4bb286ee2225a7c95e7adb2ac90fe377427b2b57cc3e"
+    },
+    "outputs/lab04_gpu_fresh/val_predictions.json": {
+      "bytes": 1052183,
+      "sha256": "d70ecf99129c228dab7fabee189113e5bff6518e4373d3147429d888c0510321"
+    },
+    "outputs/lab04_gpu_fresh/validation_lock.json": {
+      "bytes": 2202,
+      "sha256": "25f9716afe83d076b608a67edf110035535d307a8ce68a1ad7dbba1cbc30015d"
+    },
+    "outputs/lab04_gpu_image_augmentation/augmentation_preview.png": {
+      "bytes": 118244,
+      "sha256": "c1578d70c7816cb7213c166340793afa2b7022ef67e02e889ae9088bd1e5ff42"
+    },
+    "outputs/lab04_gpu_image_augmentation/base_transform.npz": {
+      "bytes": 491433,
+      "sha256": "192395b5cb6720b64ded234965d7c8289217881e49358eef4e41ae295361ffd7"
+    },
+    "outputs/lab04_gpu_image_augmentation/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "f7de5e48417cd0097289b51bd7921af2710f35d48a97d6fdca627ec3445ad218"
+    },
+    "outputs/lab04_gpu_image_augmentation/plan.json": {
+      "bytes": 3140,
+      "sha256": "2b7c4639accdc6f168e11b179b9423ffb440ee49b07b155c3dd6cdcd12c53cdc"
+    },
+    "outputs/lab04_gpu_image_augmentation/results.json": {
+      "bytes": 2836,
+      "sha256": "0b888c5b570750480984663bc00f4082b580c8d3d82c41c7d9048e125110e847"
+    },
+    "outputs/lab04_gpu_image_augmentation/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "1a57643c377bce11fd607fb4619a5236f5e0c101c15cd4cd237df033fef2cc43"
+    },
+    "outputs/lab04_gpu_image_augmentation/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "c2686e686f204773e7745ec8e2f05be34cf33a496ef79f2959c17c6585d3f6d6"
+    },
+    "outputs/lab04_gpu_image_augmentation/training.json": {
+      "bytes": 3382,
+      "sha256": "e548edf2f3163f6d054aa415fefb21a05fa2a3e5ab019d17092e0e097e6c0e1f"
+    },
+    "outputs/lab04_gpu_image_augmentation/val_augmented.npz": {
+      "bytes": 51616,
+      "sha256": "2744fbc57de9657fa6f849818c8a5b8d4567d7a5323fb638d2c1c7a93178aea2"
+    },
+    "outputs/lab04_gpu_image_augmentation/val_control.npz": {
+      "bytes": 51540,
+      "sha256": "e87d6122f8229a09c2a16d8063ba643cdbe47525fd81d8e657997b89a3d88939"
+    },
+    "outputs/lab04_gpu_image_augmentation/val_parent.npz": {
+      "bytes": 44983,
+      "sha256": "04cef7b1219c4afde0380f9ed0b986c4e5519b7acb4068fec6a79ef235fb4995"
+    },
+    "outputs/lab04_gpu_image_augmentation/validation_lock.json": {
+      "bytes": 5021,
+      "sha256": "6ce8ae030e930ec8a712cb24f7fd89bc81b8f2c7976c25d13d06641195aab990"
+    },
+    "outputs/lab04_gpu_medium/base_transform.npz": {
+      "bytes": 491522,
+      "sha256": "f9cd43876a0e5e69257cb7235d5cf2c4479e8af2a35f23cb582c5236c8909ebd"
+    },
+    "outputs/lab04_gpu_medium/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "e874ffb80186daec4c7401b8ca7e1ba78fbba7d23a4677d4c043c9038d1da238"
+    },
+    "outputs/lab04_gpu_medium/plan.json": {
+      "bytes": 2027,
+      "sha256": "4989fbd3ae5168374d38fbf2468f4def61baa4c24ab06c2b054e7a28be537c2c"
+    },
+    "outputs/lab04_gpu_medium/results.json": {
+      "bytes": 2554,
+      "sha256": "5e4beae0db8441fa553f3f353c6a2dc5c8e6e2dd75fda04f0a09c978cfcf3900"
+    },
+    "outputs/lab04_gpu_medium/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "7e24bc560e53cf44d23ce769a1b3259bdc651edeff68c8bc0710dd221ad3fb53"
+    },
+    "outputs/lab04_gpu_medium/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "5f5d141dbaced1ffc1226714bb4adad42cc0677ee9c74b84ab83639cfde0e7a8"
+    },
+    "outputs/lab04_gpu_medium/training.json": {
+      "bytes": 5843,
+      "sha256": "f1c0cef351c4f9c74b384c98a72f6e64c344349ff7fac2903c9418f042fa5a10"
+    },
+    "outputs/lab04_gpu_medium/val_predictions.json": {
+      "bytes": 916833,
+      "sha256": "af79d61fc0e1ebbad1868759005c5cdfedd766aa68fa9fcf0529a99a68edb23b"
+    },
+    "outputs/lab04_gpu_medium/validation_lock.json": {
+      "bytes": 2163,
+      "sha256": "676064503d3f455701936b0f36f43c59cda56f9ea6a1ce15c2074b7e19619570"
+    },
+    "outputs/lab04_gpu_multiscale/base_transform.npz": {
+      "bytes": 491418,
+      "sha256": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475"
+    },
+    "outputs/lab04_gpu_multiscale/local_metric.pt": {
+      "bytes": 2721385,
+      "sha256": "6469299700683e5a6157275414cc8c7bd22e5306c1bde92a5aa7015aafa1f6c9"
+    },
+    "outputs/lab04_gpu_multiscale/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27"
+    },
+    "outputs/lab04_gpu_multiscale/plan.json": {
+      "bytes": 2475,
+      "sha256": "83da1941f5b9e10f54c3c362689c658ec14aaed8a221d65310b18377d309de2f"
+    },
+    "outputs/lab04_gpu_multiscale/results.json": {
+      "bytes": 2630,
+      "sha256": "a68dabf98ee83c5a0fccf6d00c3574e8f5bd9e3b296156940171c02d7a14ed4b"
+    },
+    "outputs/lab04_gpu_multiscale/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de"
+    },
+    "outputs/lab04_gpu_multiscale/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "95adb7c94bde9cccf2a987d118ff223e364cb573b3ea5ce5b3ef8fdc6c8b985f"
+    },
+    "outputs/lab04_gpu_multiscale/val_predictions.json": {
+      "bytes": 916833,
+      "sha256": "1515cd39159b42b1d8f5a8a042aa12acd72bda770921c893b453accbb1d35319"
+    },
+    "outputs/lab04_gpu_multiscale/validation_lock.json": {
+      "bytes": 11109,
+      "sha256": "30ab11d0f055e4caef01c8c8e47250d356b98d84cd873b89e931162a6682e416"
+    },
+    "outputs/lab04_gpu_regional/base_transform.npz": {
+      "bytes": 491433,
+      "sha256": "192395b5cb6720b64ded234965d7c8289217881e49358eef4e41ae295361ffd7"
+    },
+    "outputs/lab04_gpu_regional/confirmation.json": {
+      "bytes": 1687,
+      "sha256": "a59a42d3ebecc0fd1e9ef21f823a647faae41a6e5e70487731b1ac621194253f"
+    },
+    "outputs/lab04_gpu_regional/confirmation_plan.json": {
+      "bytes": 421,
+      "sha256": "7fc88017efe45c7185f1caddf2983d4354220b2cd20068357b1c27a897f68f97"
+    },
+    "outputs/lab04_gpu_regional/confirmation_predictions.npz": {
+      "bytes": 418326,
+      "sha256": "d70f6fbdabb183c8bba0ec5542bb3dd29b6d515f649fa07a5bd25bbbb6ee444a"
+    },
+    "outputs/lab04_gpu_regional/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "f7de5e48417cd0097289b51bd7921af2710f35d48a97d6fdca627ec3445ad218"
+    },
+    "outputs/lab04_gpu_regional/plan.json": {
+      "bytes": 4077,
+      "sha256": "a209a376f4f65007866c75d26ecc4c86f31eb506f690e979c646833a3062714f"
+    },
+    "outputs/lab04_gpu_regional/results.json": {
+      "bytes": 3412,
+      "sha256": "58c58fc5904cacf7c9539a3eac439d5ea1cfe8a59fd6e3c6b8ebb63f3f704527"
+    },
+    "outputs/lab04_gpu_regional/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "1a57643c377bce11fd607fb4619a5236f5e0c101c15cd4cd237df033fef2cc43"
+    },
+    "outputs/lab04_gpu_regional/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "73a8b6298caf84f9cb20fa5143fafc97051991546787afe821e15a471998dccb"
+    },
+    "outputs/lab04_gpu_regional/training.json": {
+      "bytes": 1956,
+      "sha256": "705ceab6e5380334747dfb429f3f9aee4b7883548242fe3624fe5911e8d3b62c"
+    },
+    "outputs/lab04_gpu_regional/val_augmented.npz": {
+      "bytes": 51616,
+      "sha256": "2744fbc57de9657fa6f849818c8a5b8d4567d7a5323fb638d2c1c7a93178aea2"
+    },
+    "outputs/lab04_gpu_regional/val_augmented_kernel.npz": {
+      "bytes": 51600,
+      "sha256": "a060dfc96ceb32336d1a7d7552921fc3947594a82112d4e751c09e5be7c40056"
+    },
+    "outputs/lab04_gpu_regional/val_regional.npz": {
+      "bytes": 51612,
+      "sha256": "08414116ef8294d314023b7f07a3b97162622d72dfff076974f8a8260d71bfc1"
+    },
+    "outputs/lab04_gpu_regional/val_regional_kernel.npz": {
+      "bytes": 51565,
+      "sha256": "b57a2f8078aaca8507c6c52a44bf7b705a99774f396419ff5179a3934cf7ecef"
+    },
+    "outputs/lab04_gpu_regional/val_rotation_views.npz": {
+      "bytes": 44983,
+      "sha256": "04cef7b1219c4afde0380f9ed0b986c4e5519b7acb4068fec6a79ef235fb4995"
+    },
+    "outputs/lab04_gpu_regional/validation_lock.json": {
+      "bytes": 8475,
+      "sha256": "eed684373145ca05e5626bb13fcdc4bf8ca1cead80557828234373eb59e70a09"
+    },
+    "outputs/lab04_gpu_restarts/plan.json": {
+      "bytes": 864,
+      "sha256": "1760eaff5bcb26d0a3381196aa6b67158935eada7cad5ac992be97364ce4470b"
+    },
+    "outputs/lab04_gpu_restarts/results.json": {
+      "bytes": 2393,
+      "sha256": "7074a3c040b0f1b848feba08a72cbc2d804f3466f806ab311bdc90efadadb280"
+    },
+    "outputs/lab04_gpu_restarts/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "2d9e13a71101b2242a0e25ed9f94dd5a8d5bb1e6b50115c9cf4c2fa494e3f580"
+    },
+    "outputs/lab04_gpu_restarts/val_predictions.json": {
+      "bytes": 916833,
+      "sha256": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3"
+    },
+    "outputs/lab04_gpu_restarts/validation_lock.json": {
+      "bytes": 4492,
+      "sha256": "6d0faf6b4cd77007b54c72150472097c59bc5b2328f352d98c7a95dbdca1d6dc"
+    },
+    "outputs/lab04_gpu_rotation/base_transform.npz": {
+      "bytes": 491418,
+      "sha256": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475"
+    },
+    "outputs/lab04_gpu_rotation/continuation_training.json": {
+      "bytes": 2493,
+      "sha256": "a64cef01122089ba5ae28b8f5ef0d1c5517a18b0ee981e87ffdf2f76d24c9b63"
+    },
+    "outputs/lab04_gpu_rotation/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27"
+    },
+    "outputs/lab04_gpu_rotation/plan.json": {
+      "bytes": 3257,
+      "sha256": "5b46b4499d137441bef81dd5cd15762c92e78be8c4d4d61fd3a6b6bece93d80c"
+    },
+    "outputs/lab04_gpu_rotation/results.json": {
+      "bytes": 2846,
+      "sha256": "fc877885226da22d4a14ddc27199cbc06f38cfcf8cf269aadc2eead8d2bbe915"
+    },
+    "outputs/lab04_gpu_rotation/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de"
+    },
+    "outputs/lab04_gpu_rotation/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "bee1f15a38d514aeb304ca82ee08b306025782e56704a814a5e3673738bb9995"
+    },
+    "outputs/lab04_gpu_rotation/val_predictions.json": {
+      "bytes": 916833,
+      "sha256": "317204969b4350153023ed3db508efe42f83c6b790604b4352a2404f9914daf8"
+    },
+    "outputs/lab04_gpu_rotation/validation_lock.json": {
+      "bytes": 14900,
+      "sha256": "2afcebc2217c4deae22c5684f496ec0adba8e12d30284d057440081a25847d85"
+    },
+    "outputs/lab04_gpu_rotation_views/base_transform.npz": {
+      "bytes": 491435,
+      "sha256": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4"
+    },
+    "outputs/lab04_gpu_rotation_views/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8"
+    },
+    "outputs/lab04_gpu_rotation_views/plan.json": {
+      "bytes": 3405,
+      "sha256": "90c8ab4b891aaa9597638ed85e665525c6cb3c8f87533aa66991a6e168568d06"
+    },
+    "outputs/lab04_gpu_rotation_views/results.json": {
+      "bytes": 2974,
+      "sha256": "1b3f3f39515b7efbfee1e4a5a1acc6c52cd7c7acd9c8c57d7748cb54af040302"
+    },
+    "outputs/lab04_gpu_rotation_views/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a"
+    },
+    "outputs/lab04_gpu_rotation_views/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc"
+    },
+    "outputs/lab04_gpu_rotation_views/training.json": {
+      "bytes": 8593,
+      "sha256": "3dc838c443747beb94373b8e4526772c3e21c61eaf4859fea0ae6193b85f67fa"
+    },
+    "outputs/lab04_gpu_rotation_views/val_average.json": {
+      "bytes": 916833,
+      "sha256": "3b41575c3cb7ecb3792a75591344d48eed19107e36a964e4bef88c64025bdca5"
+    },
+    "outputs/lab04_gpu_rotation_views/val_last.json": {
+      "bytes": 916833,
+      "sha256": "f40a732d22025cbdda7876b0740ce02b2fda7be8ee9c65898b4041b564777660"
+    },
+    "outputs/lab04_gpu_rotation_views/val_parent.json": {
+      "bytes": 916833,
+      "sha256": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3"
+    },
+    "outputs/lab04_gpu_rotation_views/validation_lock.json": {
+      "bytes": 6317,
+      "sha256": "7b906c1484e7c607483e3efd0f44705c47b547dc4b0fc3c183281c7612f0dc86"
+    },
+    "outputs/lab04_gpu_self_distill/base_transform.npz": {
+      "bytes": 491418,
+      "sha256": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475"
+    },
+    "outputs/lab04_gpu_self_distill/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27"
+    },
+    "outputs/lab04_gpu_self_distill/plan.json": {
+      "bytes": 3413,
+      "sha256": "4d655ecad235eeef86f6777ab81204afcf6c22a0e543f14f60f79b6f44fc3e62"
+    },
+    "outputs/lab04_gpu_self_distill/results.json": {
+      "bytes": 2814,
+      "sha256": "fc8c76ee5159c2f210cf7ff7218be2ce59b034c8c9d597bb86b9b6dc8aae0fb9"
+    },
+    "outputs/lab04_gpu_self_distill/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de"
+    },
+    "outputs/lab04_gpu_self_distill/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "2d9e13a71101b2242a0e25ed9f94dd5a8d5bb1e6b50115c9cf4c2fa494e3f580"
+    },
+    "outputs/lab04_gpu_self_distill/training.json": {
+      "bytes": 13017,
+      "sha256": "3f1a9b2d8eb8cdd7d953b262fcf0fdf610e8aa9d5ffc1d2c20f417554142dd91"
+    },
+    "outputs/lab04_gpu_self_distill/val_control.json": {
+      "bytes": 916833,
+      "sha256": "ac7e87e26f020ce108534ba0046951f859c33a745af48ff43b1428c3be81d49f"
+    },
+    "outputs/lab04_gpu_self_distill/val_distill.json": {
+      "bytes": 916833,
+      "sha256": "c28721b3eaf5dbf64a03dceedb41cb792a7191ddcfccc733d78f0bf2d9772e4e"
+    },
+    "outputs/lab04_gpu_self_distill/val_parent.json": {
+      "bytes": 916833,
+      "sha256": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3"
+    },
+    "outputs/lab04_gpu_self_distill/validation_lock.json": {
+      "bytes": 6370,
+      "sha256": "5e9ae979cbecbc68518a1a7551af9b11de57b281eac8422274739d986ededb52"
+    },
+    "outputs/lab04_gpu_task_subspace/base_transform.npz": {
+      "bytes": 491435,
+      "sha256": "60939d4609cd521bb6e407de43de10b9f7eb52216f1bbb3ba4fee285d34cf1c4"
+    },
+    "outputs/lab04_gpu_task_subspace/confirmation_1.npz": {
+      "bytes": 169009,
+      "sha256": "30899ab16ff112d6642921c803a2244deba0f5fca9bc9665602e4f8a11c14acd"
+    },
+    "outputs/lab04_gpu_task_subspace/confirmation_5.npz": {
+      "bytes": 197438,
+      "sha256": "1a0cbba50af90ba39dfbe4c5a7e09d844100339c3fb910f5e372b482db411441"
+    },
+    "outputs/lab04_gpu_task_subspace/fixed_val_1.npz": {
+      "bytes": 128804,
+      "sha256": "5a7bd1fb4670005940367cf1e29b4d01b3ea863c7fc9d3491dbfc986fafdc4ca"
+    },
+    "outputs/lab04_gpu_task_subspace/fixed_val_5.npz": {
+      "bytes": 129053,
+      "sha256": "9634542872c0917869d03b5bf5a0610f2bb8a2cc435de092af4e186954583ed0"
+    },
+    "outputs/lab04_gpu_task_subspace/medium.pt": {
+      "bytes": 8118157,
+      "sha256": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8"
+    },
+    "outputs/lab04_gpu_task_subspace/plan.json": {
+      "bytes": 2739,
+      "sha256": "ea3702b901e54c4778c3dfdc2ef4d216196779fb16ec889c0593460a332c8cd1"
+    },
+    "outputs/lab04_gpu_task_subspace/results.json": {
+      "bytes": 2806,
+      "sha256": "5bede6a0a07b25556d8ec26a4b028da6a19520b956d2d94287f906b8c6689867"
+    },
+    "outputs/lab04_gpu_task_subspace/shortlist.json": {
+      "bytes": 5149,
+      "sha256": "8720fc771c12de3368692c8ec0a1b63bf475930664a9c1c7380cd8cde05de56c"
+    },
+    "outputs/lab04_gpu_task_subspace/spatial_metric.pt": {
+      "bytes": 1926752,
+      "sha256": "af8fc2ae483f83053270f44d5f724080d9991869285817030682662b9e90c34a"
+    },
+    "outputs/lab04_gpu_task_subspace/test_predictions.json": {
+      "bytes": 916833,
+      "sha256": "d22aa5abeb6792f52caa83e6e77aba8b31b1bb977fccdd2b4bc4f7281bceb0cc"
+    },
+    "outputs/lab04_gpu_task_subspace/validation_lock.json": {
+      "bytes": 2996,
+      "sha256": "cea535f694619070e9ea6aa5043d535ea5a2bf15121a4a35291d263d5d307d12"
+    },
     "README.md": {
-      "bytes": 9657,
-      "sha256": "7dc2d8fdcf7003436201e41d41138b972e9abd7838d6842eb3ab6d59b8af9be9"
+      "bytes": 9884,
+      "sha256": "60ad54d1d2019f34657c920722b9139931ff4a92b696aeeae50a400a1b3e874e"
     },
     "requirements-lab01.txt": {
       "bytes": 58,

@@ -1,14 +1,51 @@
 # 实验四：小样本 ResNet12 特征校准
 
+## 课程自训结果
+
+最终汇报采用**增强模型＋图像局部匹配**（`regional`）。RTX 4050 Laptop GPU 上的 ResNet12 只用 mini-ImageNet 的 64 个基础类、共 38,400 张图训练。实验先按 16 个验证类里两种 shot 的正确数之和选择一套模型，再在 20 个测试类上评估。局部匹配复用增强组的骨干与投影权重，推理时将全局图像相似度与 3×3 区域的匹配分数按 80% 和 20% 融合。[推理代码](regional_kernel.py) · [验证选择记录](../../outputs/lab04_gpu_regional/validation_lock.json)
+
+| 自训方案与测试记录 | 1-shot（正确数 / 45,000） | 5-shot（正确数 / 45,000） | 两项等权平均 |
+| --- | ---: | ---: | ---: |
+| [第六轮旋转辅助训练](../../outputs/lab04_gpu_rotation_views/results.json) | **74.56%**（33,550） | 82.05%（36,923） | 78.30% |
+| [小角度旋转＋高斯模糊](../../outputs/lab04_gpu_image_augmentation/results.json) | 73.94%（33,271） | 82.18%（36,981） | 78.06% |
+| [增强模型＋图像局部匹配](../../outputs/lab04_gpu_regional/results.json) | 74.37%（33,467） | **82.64%**（37,189） | **78.51%** |
+
+每种 shot 固定 600 个五分类任务。推理联合使用同任务的无标签查询图，并利用每类 15 张查询图的均衡设定。相对同权重增强组，局部匹配在固定测试上分别多答对 196 和 208 次。5-shot 配对差为 +0.46 个百分点（95% 区间 +0.29 至 +0.64）。在同一批验证类重新抽取 600 个任务后，5-shot 配对差为 +0.10 个百分点（−0.08 至 +0.27）。各轮使用同一批公开测试任务，区间反映单个训练种子下的任务波动。[局部匹配对照](GPU_TRAINING.md#局部监督与区域匹配) · [复核记录](../../outputs/lab04_gpu_regional/confirmation.json)
+
+在 `源码` 目录、装好 PyTorch 的环境中运行。前两条命令分别读取整组任务的归档成绩、用演示图像运行单个任务。后两条命令可查看 1-shot 最佳对照与增强消融。CPU 推理可使用 `--device cpu`。[环境安装](../../README.md#实验四推理环境)
+
+```powershell
+python main.py lab04 results --track regional
+python main.py lab04 demo --track regional --shots 5 --device cuda
+python main.py lab04 results --track rotation_views
+python main.py lab04 results --track image_augmentation
+```
+
+## 各轮试验记录
+
+**训练图像增强。** 同预算续训 6 轮，加入 ±12° 以内的随机旋转及轻度高斯模糊，5-shot 验证准确率从对照组的 83.28% 升至 83.57%。验证选中的增强模型在固定测试上为 **1-shot 73.94%、5-shot 82.18%**。5-shot 答对 36,981 次，比第四轮多尺度方案多 1 次。运行 `python main.py lab04 results --track image_augmentation` 可查看本次结果。[增强示例、对照与命令](GPU_TRAINING.md#训练图像增强对照) · [测试结果](../../outputs/lab04_gpu_image_augmentation/results.json)
+
+文献方法试验固定第六轮权重，比较了任务内 PCA、支持标签传播以及两者的组合。四种新配置在两种 shot 的固定验证任务上均低于原配置。验证选回第六轮后，重放测试的 90,000 项预测与该轮归档逐项一致。可在源码目录执行 `python main.py lab04 results --track task_subspace` 查看成绩。[验证对照](../../outputs/lab04_gpu_task_subspace/shortlist.json)
+
+第七轮在本机 RTX 4050 上比较了两种少样本度量训练、按裁剪差异校准和通道距离池化。空间特征占 25% 时，5-shot 在固定验证任务上从 83.43% 升至 83.56%，在同一验证类上重新抽取 600 个任务，结果为 83.60% → 83.72%。两次提升的配对 95% 区间均跨零。固定验证任务的 1-shot 从 76.57% 降到 76.34%。该轮选择第六轮权重，固定测试准确率为 **1-shot 74.56%、5-shot 82.05%**。用 `--track distance_covariance` 查看该轮选择并运行模型。[训练与复跑命令](GPU_TRAINING.md#第七轮特征度量与空间池化) · [5-shot 复核结果](../../outputs/lab04_gpu_distance_5shot/confirmation.json)
+
+第六轮在本机 RTX 4050 上用四个旋转方向的类别预测继续训练轻量 ResNet12。按验证集选择第 24 轮权重后，固定测试任务上为 **1-shot 74.56%、5-shot 82.05%**，相对上一轮分别 +0.43、−0.09 个百分点。两项配对 95% 区间均跨零。用 `--track rotation_views` 查看成绩和运行模型。[训练与复跑命令](GPU_TRAINING.md#第六轮旋转辅助训练) · [固定测试结果](../../outputs/lab04_gpu_rotation_views/results.json)
+
+第五轮按验证集选出的课程自训 ResNet12 在固定测试任务上为 **1-shot 74.12%、5-shot 82.14%**。该轮在同一台 RTX 4050 上比较了等步数的普通续训和自蒸馏。两者在固定验证任务上分别得到 74.88% / 82.14% 和 75.24% / 82.51%，上一轮权重为 75.59% / 82.96%，因此保留上一轮模型。使用 `--track self_distill` 可查看该轮选择及运行导出模型。[训练对照与复跑命令](GPU_TRAINING.md#第五轮训练对照) · [验证选型](../../outputs/lab04_gpu_self_distill/validation_lock.json)
+
+2026-11-26，本机 RTX 4050 Laptop GPU 上的自训 ResNet12 在 mini-ImageNet 固定测试任务上达到 **1-shot 73.75%、5-shot 82.13%**。沿用 64 个基础类，从上轮权重续训 30 轮，在相同的五分类任务上分别提高 **2.89、2.19 个百分点**。验证选中的推理方式融合原图、中心裁剪及其翻转，再按每类 15 张查询图的均衡设定更新原型并分配标签。课程主结果采用自训权重。复跑命令与外部预训练参考见[笔记本 GPU 训练记录](GPU_TRAINING.md)。[验证对照](../../outputs/lab04_gpu_rotation/validation_lock.json) · [固定测试成绩](../../outputs/lab04_gpu_rotation/results.json)
+
+后续固定同一自训骨干，单独选择裁剪视图得到 73.75% / 82.18%，再按验证集选择原型初始化方法得到 **74.12% / 82.14%**。最终方案相对上一轮测试提升 0.38 / 0.01 个百分点，两项配对 95% 区间均跨零。命令行使用 `--track restarts` 可运行该方案。[第四轮配置与对照](../../outputs/lab04_gpu_restarts/validation_lock.json) · [逐任务测试汇总](../../outputs/lab04_gpu_restarts/results.json)
+
 保留课程要求的 **mini-ImageNet / 轻量 ResNet12 / Baseline、二阶 MAML、特征校准对比**。当前网站使用 v2；v1 的权重、逐任务记录及负结果完整保存在 `outputs/lab04/history/v1/`，原版报告/PPT/视频也保留原样。
 
 ## 原要求内的新提分路线（2026-11-25）
 
 最新[约束核对与优先方案](REQUIREMENT_ACCURACY_PLAN.md)：重新核对原始课程要求，优先“不引入外部权重的独立初始化轻量ResNet12＋两阶段训练＋原校准”。发现当前扩宽复制通道相关均值0.995、未增强train准确率63.80%；只是诊断，不虚称已找到唯一原因。
 
-本轮实际完成两种学习型校准各12轮、5种局部重建组合、两分支同预算CNN小试验，均没有证明实用改善，全部负结果保留。正式模型56.47%/68.81%未更改。
+11 月 25 日完成两种学习型校准各 12 轮、5 种局部重建组合及两分支同预算 CNN 小试验。候选方案均未达到该轮发布标准，当天发布的 `continued` 模型成绩为 56.47% / 68.81%。
 
-**纠正算力说明：机器有RTX4050 Laptop，但Windows报Code43，CUDA驱动当前检测不到可用设备；既有PyTorch也是CPU版。不是物理上无显卡。** 本轮只读检查，未改动系统驱动/设备。优先恢复GPU或使用可用训练机，再完整训练独立初始化0.51M/2.02M骨干；最终CPU端侧部署不变。
+11 月 25 日的 Code 43 和 CPU 版 PyTorch 是原实验机器的记录。以上各轮本机 GPU 训练已在当前笔记本的 RTX 4050 Laptop GPU 上完成，使用 PyTorch 2.7.1+cu118。
 
 ## 联网调研与新一轮准确率方案（2026-11-25）
 
@@ -237,4 +274,4 @@ rtk proxy python -B -X utf8 -m experiments.lab04.continued_audit --artifacts out
 
 ## 当前页面精简（2026-11-26）
 
-网站顶部只保留现场推理、方法与协议、对比与消融；要求与交付/报告与演示入口及首页对应快捷链接已移除。推理步骤保留，去掉其下模型指纹与范围说明；方法页去掉平台衔接段落；延迟表去掉底部重复说明。报告/PPT/视频不删除，后台核验及导出来源信息保留。用户已要求先改UI、暂不训练，现有正式模型不变。
+网页提供“现场推理”“方法与协议”“对比与消融”三个入口。报告、PPT 和视频记录网页发布时的模型，可在仓库的课程材料目录查看。最新自训模型通过本页开头的 `--track regional` 命令演示。

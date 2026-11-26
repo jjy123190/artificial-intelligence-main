@@ -1,0 +1,70 @@
+{
+  "track": "self_distill",
+  "external_pretraining": false,
+  "training": {
+    "parent_sha256": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "external_weights": false,
+    "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+    "seed": 20261130,
+    "epochs": 16,
+    "updates_per_epoch": 300,
+    "batch_size": 128,
+    "branches": [
+      "control",
+      "distill"
+    ],
+    "distill_temperature": 3.0,
+    "distill_weight": 0.7,
+    "optimizer": "AdamW",
+    "dtype": "torch.bfloat16",
+    "torch": "2.7.1+cu118",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "source": {
+      "train_self_distill.py": "abbab72638327623d90bac4a9e94f12573c29a39af24ff8a5888e76c7107dfa3",
+      "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+      "train_resnet_rotation.py": "9372096bd8bc7e79ed838991a05492e01c48dbd580e1659afb7b84ad08f64cdf",
+      "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+      "accuracy90_data.py": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58",
+      "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+    },
+    "selection": "Last epoch of each branch. Maximize total correct validation queries across both shots using fixed restarts inference. Ties favor parent, control, then distill."
+  },
+  "selection": "Last epoch of each branch. Maximize total correct validation queries across both shots using fixed restarts inference. Ties favor parent, control, then distill.",
+  "frozen_views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "frozen_rules": {
+    "1": "best",
+    "5": "average"
+  },
+  "parent_lock_sha256": "6d0faf6b4cd77007b54c72150472097c59bc5b2328f352d98c7a95dbdca1d6dc",
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "assignment_solver": "scipy",
+  "eval_source_sha256": {
+    "self_distill_study.py": "fa0610ad81e4fc8393079a99f673896eab8644785b1268b0bb007cab34f36717",
+    "prototype_restarts.py": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e",
+    "study_cached_refinement.py": "a9eea34aa0a8a070e7c8f5126f387ba483843673abdb5473910348c6568481fd"
+  },
+  "trained_sha256": {
+    "control": "b29203b9a3fb7d09ce7bb4916004e1882e4c2da2af7cdabb31772fd503c4ebcc",
+    "distill": "7e70734a0e2c414ba973c339f480c25721992abb5294acfbb236ac6b1ecc4ccb"
+  }
+}

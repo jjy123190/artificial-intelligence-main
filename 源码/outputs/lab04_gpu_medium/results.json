@@ -1,0 +1,82 @@
+{
+  "track": "medium",
+  "external_pretraining": false,
+  "val": {
+    "1": {
+      "accuracy": 0.7096666666666667,
+      "ci95": 0.012202354346785956,
+      "episodes": 600,
+      "ci95_low": 0.6974643123198807,
+      "ci95_high": 0.7218690210134526,
+      "correct": 31935,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.07604444444444444,
+        "ci95": 0.01136413199954367,
+        "wins": 446,
+        "ties": 19,
+        "losses": 135
+      }
+    },
+    "5": {
+      "accuracy": 0.8043777777777777,
+      "ci95": 0.006442510539858214,
+      "episodes": 600,
+      "ci95_low": 0.7979352672379195,
+      "ci95_high": 0.810820288317636,
+      "correct": 36197,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.05802222222222222,
+        "ci95": 0.005244958229676942,
+        "wins": 480,
+        "ties": 27,
+        "losses": 93
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7086222222222222,
+      "ci95": 0.011300571397851041,
+      "episodes": 600,
+      "ci95_low": 0.6973216508243711,
+      "ci95_high": 0.7199227936200732,
+      "correct": 31888,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.07384444444444443,
+        "ci95": 0.010253377504273463,
+        "wins": 433,
+        "ties": 22,
+        "losses": 145
+      }
+    },
+    "5": {
+      "accuracy": 0.7994,
+      "ci95": 0.006586241610163996,
+      "episodes": 600,
+      "ci95_low": 0.792813758389836,
+      "ci95_high": 0.805986241610164,
+      "correct": 35973,
+      "queries": 45000,
+      "paired_vs_fresh": {
+        "mean": 0.05651111111111111,
+        "ci95": 0.005409773479891054,
+        "wins": 470,
+        "ties": 32,
+        "losses": 98
+      }
+    }
+  },
+  "files": {
+    "plan.json": "4989fbd3ae5168374d38fbf2468f4def61baa4c24ab06c2b054e7a28be537c2c",
+    "validation_lock.json": "676064503d3f455701936b0f36f43c59cda56f9ea6a1ce15c2074b7e19619570",
+    "val_predictions.json": "af79d61fc0e1ebbad1868759005c5cdfedd766aa68fa9fcf0529a99a68edb23b",
+    "test_predictions.json": "5f5d141dbaced1ffc1226714bb4adad42cc0677ee9c74b84ab83639cfde0e7a8",
+    "medium.pt": "e874ffb80186daec4c7401b8ca7e1ba78fbba7d23a4677d4c043c9038d1da238",
+    "spatial_metric.pt": "7e24bc560e53cf44d23ce769a1b3259bdc651edeff68c8bc0710dd221ad3fb53",
+    "base_transform.npz": "f9cd43876a0e5e69257cb7235d5cf2c4479e8af2a35f23cb582c5236c8909ebd",
+    "training.json": "f1c0cef351c4f9c74b384c98a72f6e64c344349ff7fac2903c9418f042fa5a10"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "track": "rotation",
+  "external_pretraining": false,
+  "selected": {
+    "backbone": "rotation",
+    "shots": {
+      "1": {
+        "view": "full_center",
+        "decision": "diffusion"
+      },
+      "5": {
+        "view": "full_center",
+        "decision": "diffusion"
+      }
+    }
+  },
+  "val": {
+    "1": {
+      "accuracy": 0.7496444444444443,
+      "ci95": 0.011549966934418204,
+      "episodes": 600,
+      "ci95_low": 0.7380944775100261,
+      "ci95_high": 0.7611944113788626,
+      "correct": 33734,
+      "queries": 45000,
+      "paired_vs_medium": {
+        "mean": 0.03997777777777778,
+        "ci95": 0.008876384853861845,
+        "wins": 394,
+        "ties": 53,
+        "losses": 153
+      }
+    },
+    "5": {
+      "accuracy": 0.8281111111111111,
+      "ci95": 0.006197406291777029,
+      "episodes": 600,
+      "ci95_low": 0.8219137048193341,
+      "ci95_high": 0.8343085174028881,
+      "correct": 37265,
+      "queries": 45000,
+      "paired_vs_medium": {
+        "mean": 0.023733333333333335,
+        "ci95": 0.0035217720884060714,
+        "wins": 388,
+        "ties": 73,
+        "losses": 139
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7374888888888889,
+      "ci95": 0.01182929553719775,
+      "episodes": 600,
+      "ci95_low": 0.7256595933516911,
+      "ci95_high": 0.7493181844260867,
+      "correct": 33187,
+      "queries": 45000,
+      "paired_vs_medium": {
+        "mean": 0.028866666666666665,
+        "ci95": 0.007847106369363274,
+        "wins": 378,
+        "ties": 53,
+        "losses": 169
+      }
+    },
+    "5": {
+      "accuracy": 0.8212666666666667,
+      "ci95": 0.006022719537455419,
+      "episodes": 600,
+      "ci95_low": 0.8152439471292113,
+      "ci95_high": 0.8272893862041221,
+      "correct": 36957,
+      "queries": 45000,
+      "paired_vs_medium": {
+        "mean": 0.02186666666666667,
+        "ci95": 0.0037260848349331306,
+        "wins": 367,
+        "ties": 74,
+        "losses": 159
+      }
+    }
+  },
+  "files": {
+    "medium.pt": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "spatial_metric.pt": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de",
+    "base_transform.npz": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475",
+    "plan.json": "5b46b4499d137441bef81dd5cd15762c92e78be8c4d4d61fd3a6b6bece93d80c",
+    "validation_lock.json": "2afcebc2217c4deae22c5684f496ec0adba8e12d30284d057440081a25847d85",
+    "val_predictions.json": "317204969b4350153023ed3db508efe42f83c6b790604b4352a2404f9914daf8",
+    "test_predictions.json": "bee1f15a38d514aeb304ca82ee08b306025782e56704a814a5e3673738bb9995",
+    "continuation_training.json": "a64cef01122089ba5ae28b8f5ef0d1c5517a18b0ee981e87ffdf2f76d24c9b63"
+  }
+}

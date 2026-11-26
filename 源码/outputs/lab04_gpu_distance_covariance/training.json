@@ -1,0 +1,55 @@
+{
+  "plan_sha256": "f3172fb5282eda8004cfadded167fdfb467a30c40e9f0d428f42d765a4a6a7ab",
+  "maps": {
+    "plan": {
+      "backbone": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8",
+      "manifest": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+      "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+      "format": "train archive order; original and horizontal flip; NCHW float16 on disk"
+    },
+    "files": {
+      "maps_original.npy": "504f29277b6c8e24b53dbfebbc974673f0357ce22355e12914ec7ab748a3f9d9",
+      "maps_flipped.npy": "c5f791cb610ebc0198dd27a7e666aa4452476afea0c5d5d47474599707890920",
+      "labels.npy": "33dcd0f421981e1b50b73cc66f3ee46d95210cc678174d9bf2cfa95a4d27d8dd"
+    }
+  },
+  "history": [
+    {
+      "step": 100,
+      "ce": 0.4868486821651459,
+      "view_alignment": 0.0006272988393902779
+    },
+    {
+      "step": 200,
+      "ce": 0.3589312732219696,
+      "view_alignment": 0.0005680685280822217
+    },
+    {
+      "step": 300,
+      "ce": 0.32082682847976685,
+      "view_alignment": 0.0005367526318877935
+    },
+    {
+      "step": 400,
+      "ce": 0.30643925070762634,
+      "view_alignment": 0.0005423076800070703
+    },
+    {
+      "step": 500,
+      "ce": 0.2957659065723419,
+      "view_alignment": 0.0005436890642158687
+    },
+    {
+      "step": 600,
+      "ce": 0.29472145438194275,
+      "view_alignment": 0.0005410878802649677
+    },
+    {
+      "step": 700,
+      "ce": 0.28871574997901917,
+      "view_alignment": 0.0005644158809445798
+    }
+  ],
+  "parameters": 238176,
+  "head_sha256": "9459cfec1c697f233ef218da513ae39d0efda85497d9b4f9b08e08577b48d7f8"
+}

@@ -1,0 +1,242 @@
+{
+  "plan": {
+    "seed": 20261126,
+    "steps": 1500,
+    "spatial_weight_candidates": [
+      0.0,
+      0.5
+    ],
+    "batch_size": 96,
+    "device": "cuda",
+    "torch": "2.7.1+cu118",
+    "numpy": "1.24.3",
+    "cuda_runtime": "11.8",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "backbone_sha256": "5a52e2fbf48f3125913814821db15df5f084b44028fbc894962e409aae813dfd",
+    "previous_sha256": "2ab0fc2a50453cd1819f23eb2ce5daee093a64861ba592d68c79b0c4d363c1f9",
+    "train_selection_sha256": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+    "source_sha256": {
+      "train_gpu_metric.py": "15e98de8468eadec413858d525c2cb6cd26c8fd81ae8e164731b96d7bc438246",
+      "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+    },
+    "test_rule": "Select by mean 1/5-shot validation accuracy among candidates gaining >=1pp and positive paired 95% lower bounds at both shots. Test only the locked candidate."
+  },
+  "head_sha256": "70c68195bf23f25b908223c4d663177f55576a2349bcf7686b409c0ae349fcf2",
+  "first_last_train_loss": [
+    2.639214038848877,
+    0.9356262683868408
+  ],
+  "clean_base_train_diagnostic": {
+    "clean_train_classification_accuracy": 0.6048958333333333,
+    "mean_adjacent_channel_correlation": -0.06610106589101447
+  },
+  "fit_seconds": 52.729769900000065,
+  "test_evaluated": true,
+  "val_candidates": {
+    "0.0": {
+      "1": {
+        "candidate": {
+          "accuracy": 0.6110444444444444,
+          "ci95": 0.012462657239401506,
+          "episodes": 600,
+          "ci95_low": 0.5985817872050428,
+          "ci95_high": 0.6235071016838459
+        },
+        "continued": {
+          "accuracy": 0.5614888888888888,
+          "ci95": 0.012160148509063728,
+          "episodes": 600,
+          "ci95_low": 0.549328740379825,
+          "ci95_high": 0.5736490373979526
+        },
+        "paired": {
+          "mean": 0.049555555555555554,
+          "ci95": 0.010016260157803176,
+          "wins": 388,
+          "ties": 36,
+          "losses": 176
+        }
+      },
+      "5": {
+        "candidate": {
+          "accuracy": 0.7301111111111112,
+          "ci95": 0.007457904600441567,
+          "episodes": 600,
+          "ci95_low": 0.7226532065106696,
+          "ci95_high": 0.7375690157115528
+        },
+        "continued": {
+          "accuracy": 0.6919777777777778,
+          "ci95": 0.007887700356773083,
+          "episodes": 600,
+          "ci95_low": 0.6840900774210047,
+          "ci95_high": 0.6998654781345509
+        },
+        "paired": {
+          "mean": 0.03813333333333333,
+          "ci95": 0.0053400056381913506,
+          "wins": 413,
+          "ties": 40,
+          "losses": 147
+        }
+      }
+    },
+    "0.5": {
+      "1": {
+        "candidate": {
+          "accuracy": 0.6336222222222222,
+          "ci95": 0.012397563049994868,
+          "episodes": 600,
+          "ci95_low": 0.6212246591722274,
+          "ci95_high": 0.646019785272217
+        },
+        "continued": {
+          "accuracy": 0.5614888888888888,
+          "ci95": 0.012160148509063728,
+          "episodes": 600,
+          "ci95_low": 0.549328740379825,
+          "ci95_high": 0.5736490373979526
+        },
+        "paired": {
+          "mean": 0.07213333333333334,
+          "ci95": 0.010094996853201454,
+          "wins": 436,
+          "ties": 26,
+          "losses": 138
+        }
+      },
+      "5": {
+        "candidate": {
+          "accuracy": 0.7463555555555555,
+          "ci95": 0.007007276926266838,
+          "episodes": 600,
+          "ci95_low": 0.7393482786292888,
+          "ci95_high": 0.7533628324818223
+        },
+        "continued": {
+          "accuracy": 0.6919777777777778,
+          "ci95": 0.007887700356773083,
+          "episodes": 600,
+          "ci95_low": 0.6840900774210047,
+          "ci95_high": 0.6998654781345509
+        },
+        "paired": {
+          "mean": 0.054377777777777775,
+          "ci95": 0.0052710730850716835,
+          "wins": 464,
+          "ties": 42,
+          "losses": 94
+        }
+      }
+    }
+  },
+  "val": {
+    "1": {
+      "candidate": {
+        "accuracy": 0.6336222222222222,
+        "ci95": 0.012397563049994868,
+        "episodes": 600,
+        "ci95_low": 0.6212246591722274,
+        "ci95_high": 0.646019785272217
+      },
+      "continued": {
+        "accuracy": 0.5614888888888888,
+        "ci95": 0.012160148509063728,
+        "episodes": 600,
+        "ci95_low": 0.549328740379825,
+        "ci95_high": 0.5736490373979526
+      },
+      "paired": {
+        "mean": 0.07213333333333334,
+        "ci95": 0.010094996853201454,
+        "wins": 436,
+        "ties": 26,
+        "losses": 138
+      }
+    },
+    "5": {
+      "candidate": {
+        "accuracy": 0.7463555555555555,
+        "ci95": 0.007007276926266838,
+        "episodes": 600,
+        "ci95_low": 0.7393482786292888,
+        "ci95_high": 0.7533628324818223
+      },
+      "continued": {
+        "accuracy": 0.6919777777777778,
+        "ci95": 0.007887700356773083,
+        "episodes": 600,
+        "ci95_low": 0.6840900774210047,
+        "ci95_high": 0.6998654781345509
+      },
+      "paired": {
+        "mean": 0.054377777777777775,
+        "ci95": 0.0052710730850716835,
+        "wins": 464,
+        "ties": 42,
+        "losses": 94
+      }
+    }
+  },
+  "spatial_weight": 0.5,
+  "test": {
+    "1": {
+      "candidate": {
+        "accuracy": 0.6347777777777778,
+        "ci95": 0.011461184281517144,
+        "episodes": 600,
+        "ci95_low": 0.6233165934962607,
+        "ci95_high": 0.6462389620592949
+      },
+      "continued": {
+        "accuracy": 0.5647333333333334,
+        "ci95": 0.01180265290420221,
+        "episodes": 600,
+        "ci95_low": 0.5529306804291312,
+        "ci95_high": 0.5765359862375357
+      },
+      "paired": {
+        "mean": 0.07004444444444444,
+        "ci95": 0.010714343292365076,
+        "wins": 421,
+        "ties": 20,
+        "losses": 159
+      }
+    },
+    "5": {
+      "candidate": {
+        "accuracy": 0.7428888888888889,
+        "ci95": 0.007549310334795469,
+        "episodes": 600,
+        "ci95_low": 0.7353395785540935,
+        "ci95_high": 0.7504381992236844
+      },
+      "continued": {
+        "accuracy": 0.6881333333333334,
+        "ci95": 0.007797314727035945,
+        "episodes": 600,
+        "ci95_low": 0.6803360186062974,
+        "ci95_high": 0.6959306480603693
+      },
+      "paired": {
+        "mean": 0.05475555555555555,
+        "ci95": 0.005367501544129543,
+        "wins": 470,
+        "ties": 35,
+        "losses": 95
+      }
+    }
+  },
+  "total_seconds": 425.2535296000001,
+  "files": {
+    "plan.json": "e2aecd35539b6bec7c301e4211c7372e9b16f24f319d1af106fa0bf764de5d92",
+    "backbone_plan.json": "95d533efe92862684273e9fca828ade70b08b672abe452297e0b047daa122a63",
+    "backbone_training.json": "abf533e578dedd3c873679ef2dc111460c06bc46c8c2e5708850cebdf1cab3d9",
+    "fresh.pt": "5a52e2fbf48f3125913814821db15df5f084b44028fbc894962e409aae813dfd",
+    "spatial_metric.pt": "70c68195bf23f25b908223c4d663177f55576a2349bcf7686b409c0ae349fcf2",
+    "base_transform.npz": "ac10c1e604ea114a2b87d0c214948239a6340134a8b4bd07027d455df0475724",
+    "validation_lock.json": "25f9716afe83d076b608a67edf110035535d307a8ce68a1ad7dbba1cbc30015d",
+    "val_predictions.json": "d70ecf99129c228dab7fabee189113e5bff6518e4373d3147429d888c0510321",
+    "test_predictions.json": "35bade9c01146d97704c4bb286ee2225a7c95e7adb2ac90fe377427b2b57cc3e"
+  }
+}

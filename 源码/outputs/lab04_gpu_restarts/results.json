@@ -1,0 +1,92 @@
+{
+  "track": "restarts",
+  "external_pretraining": false,
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "val": {
+    "1": {
+      "accuracy": 0.7558666666666667,
+      "ci95": 0.011482501275859473,
+      "episodes": 600,
+      "ci95_low": 0.7443841653908072,
+      "ci95_high": 0.7673491679425262,
+      "queries": 45000,
+      "correct": 34014,
+      "paired_vs_rotation": {
+        "mean": 0.006222222222222223,
+        "ci95": 0.004982714672953633,
+        "wins": 85,
+        "ties": 457,
+        "losses": 58
+      }
+    },
+    "5": {
+      "accuracy": 0.8295555555555556,
+      "ci95": 0.006144112588452257,
+      "episodes": 600,
+      "ci95_low": 0.8234114429671033,
+      "ci95_high": 0.8356996681440079,
+      "queries": 45000,
+      "correct": 37330,
+      "paired_vs_rotation": {
+        "mean": 0.0014444444444444463,
+        "ci95": 0.0024097915980587897,
+        "wins": 223,
+        "ties": 173,
+        "losses": 204
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7412444444444445,
+      "ci95": 0.012280292667458443,
+      "episodes": 600,
+      "ci95_low": 0.728964151776986,
+      "ci95_high": 0.7535247371119029,
+      "queries": 45000,
+      "correct": 33356,
+      "paired_vs_rotation": {
+        "mean": 0.0037555555555555563,
+        "ci95": 0.00479261109384096,
+        "wins": 81,
+        "ties": 439,
+        "losses": 80
+      }
+    },
+    "5": {
+      "accuracy": 0.8214,
+      "ci95": 0.006341292936000272,
+      "episodes": 600,
+      "ci95_low": 0.8150587070639997,
+      "ci95_high": 0.8277412929360003,
+      "queries": 45000,
+      "correct": 36963,
+      "paired_vs_rotation": {
+        "mean": 0.00013333333333332827,
+        "ci95": 0.002597996622115841,
+        "wins": 236,
+        "ties": 151,
+        "losses": 213
+      }
+    }
+  },
+  "files": {
+    "plan.json": "1760eaff5bcb26d0a3381196aa6b67158935eada7cad5ac992be97364ce4470b",
+    "validation_lock.json": "6d0faf6b4cd77007b54c72150472097c59bc5b2328f352d98c7a95dbdca1d6dc",
+    "val_predictions.json": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3",
+    "test_predictions.json": "2d9e13a71101b2242a0e25ed9f94dd5a8d5bb1e6b50115c9cf4c2fa494e3f580"
+  }
+}

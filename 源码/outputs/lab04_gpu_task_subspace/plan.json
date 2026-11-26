@@ -1,0 +1,78 @@
+{
+  "track": "task_subspace",
+  "external_pretraining": false,
+  "papers": {
+    "TAFSSL": "https://arxiv.org/abs/2003.06670",
+    "iLPC": "https://openaccess.thecvf.com/content/ICCV2021/html/Lazarou_Iterative_Label_Cleaning_for_Transductive_and_Semi-Supervised_Few-Shot_Learning_ICCV_2021_paper.html"
+  },
+  "configs": {
+    "parent": [
+      0.0,
+      0.0
+    ],
+    "pca_half": [
+      0.5,
+      0.0
+    ],
+    "pca_only": [
+      1.0,
+      0.0
+    ],
+    "propagation": [
+      0.0,
+      0.2
+    ],
+    "pca_propagation": [
+      0.5,
+      0.2
+    ]
+  },
+  "component_order": [
+    "pca_weight",
+    "graph_weight"
+  ],
+  "rank": 7,
+  "neighbors": 7,
+  "propagation_alpha": 0.8,
+  "similarity_power": 3,
+  "selection": "Per shot, highest correct count on 600 fixed validation episodes; first candidate wins ties. Enable that candidate only when the paired 95% lower bound exceeds zero on 600 fresh validation episodes.",
+  "confirmation_seeds": {
+    "1": 516247,
+    "5": 516251
+  },
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "rules": {
+    "1": "best",
+    "5": "average"
+  },
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "parent_lock_sha256": "7b906c1484e7c607483e3efd0f44705c47b547dc4b0fc3c183281c7612f0dc86",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "assignment_solver": "scipy",
+  "source_sha256": {
+    "task_subspace.py": "f9abd65e15e41d2b478c46327e55d4ba01491829127906c9664f5346e3044f4d",
+    "task_subspace_study.py": "8857f4cf63afd1012fe4660bb4c2f8cb4cda90fbac343a5078a37c3672f9f74b",
+    "prototype_restarts.py": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c",
+    "episode_metric_study.py": "bf06e12ff1d7d717276aa1fcf48b6e2bcc272b54e14ffc8a28c673c3690373c7",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "self_distill_study.py": "fa0610ad81e4fc8393079a99f673896eab8644785b1268b0bb007cab34f36717",
+    "supervised_whitening.py": "ccc12414dedcbc75708908b27a20f3fd233caefe45911d3d69af077ce144a31e"
+  }
+}

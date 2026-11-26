@@ -1,0 +1,233 @@
+{
+  "winner": "parent",
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "candidates": {
+    "parent": {
+      "1": {
+        "accuracy": 0.7558666666666667,
+        "ci95": 0.011482501275859473,
+        "episodes": 600,
+        "ci95_low": 0.7443841653908072,
+        "ci95_high": 0.7673491679425262,
+        "correct": 34014,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "wins": 0,
+          "ties": 600,
+          "losses": 0
+        }
+      },
+      "5": {
+        "accuracy": 0.8295555555555556,
+        "ci95": 0.006144112588452257,
+        "episodes": 600,
+        "ci95_low": 0.8234114429671033,
+        "ci95_high": 0.8356996681440079,
+        "correct": 37330,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": 0.0,
+          "ci95": 0.0,
+          "wins": 0,
+          "ties": 600,
+          "losses": 0
+        }
+      }
+    },
+    "control": {
+      "1": {
+        "accuracy": 0.7487777777777778,
+        "ci95": 0.011879408546316306,
+        "episodes": 600,
+        "ci95_low": 0.7368983692314615,
+        "ci95_high": 0.7606571863240941,
+        "correct": 33695,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": -0.0070888888888888885,
+          "ci95": 0.007269450238104522,
+          "wins": 204,
+          "ties": 118,
+          "losses": 278
+        }
+      },
+      "5": {
+        "accuracy": 0.8214222222222222,
+        "ci95": 0.006252539069577041,
+        "episodes": 600,
+        "ci95_low": 0.8151696831526452,
+        "ci95_high": 0.8276747612917992,
+        "correct": 36964,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": -0.008133333333333334,
+          "ci95": 0.002512777018415581,
+          "wins": 162,
+          "ties": 140,
+          "losses": 298
+        }
+      }
+    },
+    "distill": {
+      "1": {
+        "accuracy": 0.7524222222222222,
+        "ci95": 0.011611755449115793,
+        "episodes": 600,
+        "ci95_low": 0.7408104667731065,
+        "ci95_high": 0.764033977671338,
+        "correct": 33859,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": -0.0034444444444444457,
+          "ci95": 0.006616060791821671,
+          "wins": 212,
+          "ties": 137,
+          "losses": 251
+        }
+      },
+      "5": {
+        "accuracy": 0.8250888888888889,
+        "ci95": 0.00620730836451477,
+        "episodes": 600,
+        "ci95_low": 0.8188815805243741,
+        "ci95_high": 0.8312961972534036,
+        "correct": 37129,
+        "queries": 45000,
+        "paired_vs_restarts": {
+          "mean": -0.004466666666666667,
+          "ci95": 0.0023914695224835684,
+          "wins": 173,
+          "ties": 164,
+          "losses": 263
+        }
+      }
+    }
+  },
+  "validation": {
+    "1": {
+      "accuracy": 0.7558666666666667,
+      "ci95": 0.011482501275859473,
+      "episodes": 600,
+      "ci95_low": 0.7443841653908072,
+      "ci95_high": 0.7673491679425262,
+      "correct": 34014,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    },
+    "5": {
+      "accuracy": 0.8295555555555556,
+      "ci95": 0.006144112588452257,
+      "episodes": 600,
+      "ci95_low": 0.8234114429671033,
+      "ci95_high": 0.8356996681440079,
+      "correct": 37330,
+      "queries": 45000,
+      "paired_vs_restarts": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "wins": 0,
+        "ties": 600,
+        "losses": 0
+      }
+    }
+  },
+  "validation_distill_minus_control": {
+    "1": {
+      "mean": 0.0036444444444444428,
+      "ci95": 0.006465307866862201,
+      "wins": 228,
+      "ties": 170,
+      "losses": 202
+    },
+    "5": {
+      "mean": 0.003666666666666668,
+      "ci95": 0.0021785593107034955,
+      "wins": 227,
+      "ties": 211,
+      "losses": 162
+    }
+  },
+  "support_only_validation": {
+    "parent": {
+      "1": {
+        "accuracy": 0.5997111111111111,
+        "ci95": 0.008203703022895612,
+        "episodes": 600,
+        "ci95_low": 0.5915074080882154,
+        "ci95_high": 0.6079148141340067
+      },
+      "5": {
+        "accuracy": 0.7696444444444445,
+        "ci95": 0.006373080719078731,
+        "episodes": 600,
+        "ci95_low": 0.7632713637253657,
+        "ci95_high": 0.7760175251635232
+      }
+    },
+    "control": {
+      "1": {
+        "accuracy": 0.6002222222222222,
+        "ci95": 0.00835508205796358,
+        "episodes": 600,
+        "ci95_low": 0.5918671401642587,
+        "ci95_high": 0.6085773042801857
+      },
+      "5": {
+        "accuracy": 0.7653333333333334,
+        "ci95": 0.006440988635843194,
+        "episodes": 600,
+        "ci95_low": 0.7588923446974902,
+        "ci95_high": 0.7717743219691766
+      }
+    },
+    "distill": {
+      "1": {
+        "accuracy": 0.6032666666666667,
+        "ci95": 0.008277065376920622,
+        "episodes": 600,
+        "ci95_low": 0.5949896012897461,
+        "ci95_high": 0.6115437320435874
+      },
+      "5": {
+        "accuracy": 0.7706000000000001,
+        "ci95": 0.006454513875992422,
+        "episodes": 600,
+        "ci95_low": 0.7641454861240077,
+        "ci95_high": 0.7770545138759924
+      }
+    }
+  },
+  "plan_sha256": "4d655ecad235eeef86f6777ab81204afcf6c22a0e543f14f60f79b6f44fc3e62",
+  "validation_files": {
+    "val_parent.json": "1bc37a8d71a60018edd687ede86f2efda6f173a090495328ad8019dee1521bc3",
+    "val_control.json": "ac7e87e26f020ce108534ba0046951f859c33a745af48ff43b1428c3be81d49f",
+    "val_distill.json": "c28721b3eaf5dbf64a03dceedb41cb792a7191ddcfccc733d78f0bf2d9772e4e",
+    "training.json": "3f1a9b2d8eb8cdd7d953b262fcf0fdf610e8aa9d5ffc1d2c20f417554142dd91"
+  },
+  "inference_files": {
+    "medium.pt": "a7017ab424f303cbbd8ea4107c96c69be20891b2b8910ab5bf96bcba7ffdae27",
+    "spatial_metric.pt": "f9da4f7b41419098e99f77a8a28a29470e380d1a0f9bb889c5630e43d78352de",
+    "base_transform.npz": "e47412ef4b3e16f1ac12212488c080151915e0bf5bdad690b496b9fd9b26e475"
+  }
+}

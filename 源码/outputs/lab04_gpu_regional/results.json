@@ -1,0 +1,101 @@
+{
+  "track": "regional",
+  "winner": "augmented_kernel",
+  "external_pretraining": false,
+  "val": {
+    "1": {
+      "accuracy": 0.7689555555555555,
+      "ci95": 0.011414945817728712,
+      "episodes": 600,
+      "ci95_low": 0.7575406097378268,
+      "ci95_high": 0.7803705013732842,
+      "correct": 34603,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.0026222222222222224,
+        "ci95": 0.0051291926374568576,
+        "wins": 160,
+        "ties": 286,
+        "losses": 154
+      }
+    },
+    "5": {
+      "accuracy": 0.8360000000000001,
+      "ci95": 0.005967155959954237,
+      "episodes": 600,
+      "ci95_low": 0.8300328440400458,
+      "ci95_high": 0.8419671559599543,
+      "correct": 37620,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.0003111111111111107,
+        "ci95": 0.0014895889865852523,
+        "wins": 139,
+        "ties": 335,
+        "losses": 126
+      }
+    }
+  },
+  "test": {
+    "1": {
+      "accuracy": 0.7437111111111111,
+      "ci95": 0.012247501630924956,
+      "episodes": 600,
+      "ci95_low": 0.7314636094801862,
+      "ci95_high": 0.755958612742036,
+      "correct": 33467,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.004355555555555557,
+        "ci95": 0.005165588940191947,
+        "wins": 203,
+        "ties": 250,
+        "losses": 147
+      },
+      "paired_vs_rotation_views": {
+        "mean": -0.0018444444444444435,
+        "ci95": 0.006606943946975271,
+        "wins": 228,
+        "ties": 146,
+        "losses": 226
+      }
+    },
+    "5": {
+      "accuracy": 0.8264222222222223,
+      "ci95": 0.006284615021257517,
+      "episodes": 600,
+      "ci95_low": 0.8201376072009647,
+      "ci95_high": 0.8327068372434798,
+      "correct": 37189,
+      "queries": 45000,
+      "paired_vs_augmented": {
+        "mean": 0.004622222222222222,
+        "ci95": 0.0017447072612921859,
+        "wins": 189,
+        "ties": 308,
+        "losses": 103
+      },
+      "paired_vs_rotation_views": {
+        "mean": 0.005911111111111112,
+        "ci95": 0.0025708405349221257,
+        "wins": 262,
+        "ties": 157,
+        "losses": 181
+      }
+    }
+  },
+  "files": {
+    "val_augmented.npz": "2744fbc57de9657fa6f849818c8a5b8d4567d7a5323fb638d2c1c7a93178aea2",
+    "val_rotation_views.npz": "04cef7b1219c4afde0380f9ed0b986c4e5519b7acb4068fec6a79ef235fb4995",
+    "val_regional.npz": "08414116ef8294d314023b7f07a3b97162622d72dfff076974f8a8260d71bfc1",
+    "val_augmented_kernel.npz": "a060dfc96ceb32336d1a7d7552921fc3947594a82112d4e751c09e5be7c40056",
+    "val_regional_kernel.npz": "b57a2f8078aaca8507c6c52a44bf7b705a99774f396419ff5179a3934cf7ecef",
+    "medium.pt": "f7de5e48417cd0097289b51bd7921af2710f35d48a97d6fdca627ec3445ad218",
+    "spatial_metric.pt": "1a57643c377bce11fd607fb4619a5236f5e0c101c15cd4cd237df033fef2cc43",
+    "base_transform.npz": "192395b5cb6720b64ded234965d7c8289217881e49358eef4e41ae295361ffd7",
+    "plan.json": "a209a376f4f65007866c75d26ecc4c86f31eb506f690e979c646833a3062714f",
+    "test_predictions.json": "73a8b6298caf84f9cb20fa5143fafc97051991546787afe821e15a471998dccb",
+    "training.json": "705ceab6e5380334747dfb429f3f9aee4b7883548242fe3624fe5911e8d3b62c",
+    "validation_lock.json": "eed684373145ca05e5626bb13fcdc4bf8ca1cead80557828234373eb59e70a09"
+  }
+}

@@ -5,12 +5,27 @@
 
 实验一至三围绕企业股权与关联关系，完成知识表示与知识增强、确定性与不确定性推理、多跳路径搜索与智能优化。实验四按课程指定题目新增 mini-ImageNet 小样本图像分类与特征校准。四个实验共用网站入口和基础组件，各自保留方法、结果与可视化；图像分类指标不代表股权业务效果。
 
-## 当前状态（2026-11-26）
+## 实验四自训 ResNet12（2026-11-26）
 
-- 实验四正式自训最优结果为 **56.47% / 68.81%**（5-way 1-shot / 5-shot，每种600个配对任务），模型与原始评测证据保留。
-- 网站顶部只保留“现场推理”“方法与协议”“对比与消融”；已移除“要求与交付”“报告与演示”入口、推理页指纹说明及两处冗余说明。报告、PPT、视频仍在 `deliverables/lab4/当前版本/`，旧网址进入推理工作台。
-- 按用户要求暂停后续训练；研究方案、已完成的小试验和负结果保留，未把候选验证分数作为正式成绩。
-- 仓库包含源码、已构建网页、自训发布权重、原始实验记录及课程材料；完整数据集、外部下载权重、本地环境/缓存、第三方阅读快照和重复生成的提交ZIP不上传。提交包可由 `源码/scripts/package_lab04_delivery.py` 本地生成。
+本次自训的主结果和命令行演示采用**增强模型＋图像局部匹配**。在笔记本 RTX 4050 上，ResNet12 只使用 mini-ImageNet 的 64 个基础类（38,400 张图）训练。按 16 个验证类上两种 shot 的正确总数选定配置，再用同一套权重在 20 个测试类上评估。[实验四方法与复现](源码/experiments/lab04/README.md) · [验证选择记录](源码/outputs/lab04_gpu_regional/validation_lock.json)
+
+| 自训方案 | 5-way 1-shot | 5-way 5-shot | 两项等权平均 |
+| --- | ---: | ---: | ---: |
+| 第六轮旋转辅助训练 | **74.56%** | 82.05% | 78.30% |
+| 小角度旋转＋高斯模糊 | 73.94% | 82.18% | 78.06% |
+| 增强模型＋图像局部匹配 | 74.37% | **82.64%** | **78.51%** |
+
+每种 shot 各有 600 个固定五分类任务、45,000 次查询，三组方案逐任务配对。后两行使用相同权重，加入局部匹配后，5-shot 多答对 208 次。推理利用同一任务内的无标签查询图和每类 15 张查询图的均衡设定。结果来自一个训练种子，同一批公开测试任务已用于多轮对照。[配对结果与新验证任务复核](源码/experiments/lab04/GPU_TRAINING.md#局部监督与区域匹配)
+
+从仓库根目录执行以下命令可查看主结果并用随仓库提供的图片运行一次 GPU 推理。演示只需要已发布的权重和样例。CPU 演示可将最后一行的 `cuda` 换成 `cpu`。[Python 与 PyTorch 安装说明](源码/README.md#实验四推理环境)
+
+```powershell
+cd 源码
+python main.py lab04 results --track regional
+python main.py lab04 demo --track regional --shots 5 --device cuda
+```
+
+网页、整合报告、PPT 和视频记录此前的 `continued` 方案（56.47% / 68.81%）。DINOv2 的成绩单列为外部预训练参考。[课程材料索引](deliverables/README.md) · [各轮 GPU 实验与外部参考](源码/experiments/lab04/GPU_TRAINING.md)
 
 ## 文件目录
 
@@ -50,7 +65,7 @@ artificial-intelligence-main/
 | 实验三 | BFS、A*、MCTS、GA启发优化、路径价值学习与LLM辅助搜索 | `源码/experiments/lab03/` |
 | 实验四 | 轻量ResNet12、二阶MAML、均值方差校准、原型更新与配对消融 | `源码/experiments/lab04/` |
 
-实验四当前为v2：轻量64维ResNet12、验证集选型和完整测试池，每种shot评估600个配对任务。完整校准1-shot/5-shot为51.41%/64.50%，相对同版Baseline提高5.54/2.81个百分点，配对区间均高于零。新界面支持同任务对照、误判分析和结果导出；原版负结果与权重完整保留，不将增加训练预算的收益全部归于校准。方法、适用边界及复现见 [实验四说明](源码/experiments/lab04/README.md)。
+实验四的 v2 网页使用轻量 64 维 ResNet12，支持同任务对照、误判分析和结果导出。完整校准的 1-shot / 5-shot 为 51.41% / 64.50%，相对同版 Baseline 提高 5.54 / 2.81 个百分点，两项配对区间均高于零。[实验四说明](源码/experiments/lab04/README.md)
 
 后续增量方案已接入：白化＋图传播53.03%/66.91%；双视图稳健校准54.49%/67.16%（同样600任务/shot）。双视图相对图传播的1-shot改善有配对区间支持，5-shot区间跨零，不能确认改善。双视图增加编码耗时；较宽自训骨干研究已完成：55.16%/67.62%（509,856参数、额外24轮训练）；相对双视图1-shot区间跨零、5-shot区间高于零，独立标注而非冒充同预算校准。
 
@@ -62,8 +77,8 @@ artificial-intelligence-main/
 
 ## 实验四准确率研究更新（2026-11-25）
 
-当前已发布自训最优仍为56.47%/68.81%，旧v2/v1和所有材料保留。最新[联网调研与改进方案](源码/experiments/lab04/LITERATURE_IMPROVEMENT_PLAN.md)及[真实验证/负结果](源码/experiments/lab04/LITERATURE_VALIDATION_RESULTS.md)已补充：从推断微调转向表示训练和明确标注来源的教师蒸馏。外部官方encoder的验证成绩不作为本地轻量模型成绩；新训练代码已测试并登记，真实长训练尚未执行。
+11 月 25 日发布的自训结果为 56.47% / 68.81%。当时的研究记录包括冻结特征的验证对照，以及表示训练和教师蒸馏的候选方案。[联网调研与改进方案](源码/experiments/lab04/LITERATURE_IMPROVEMENT_PLAN.md) · [验证与负结果](源码/experiments/lab04/LITERATURE_VALIDATION_RESULTS.md)
 
 ## 原要求内提分方案与GPU状态勘误
 
-最新[实验四方案](源码/experiments/lab04/REQUIREMENT_ACCURACY_PLAN.md)优先无外部权重的独立初始化轻量ResNet12及两阶段训练；新小试验未证明增益，原正式成绩不变。硬件核查发现RTX4050 Laptop处于WindowsCode43、CUDA初始化失败；此前“无GPU”应理解为当前不可用。没有自动改驱动或启动长训练。
+11 月 25 日的方案提出独立初始化轻量 ResNet12 和两阶段训练。当天记录的 Windows Code 43 来自原实验机器。上表的自训在另一台 RTX 4050 Laptop GPU 笔记本上完成，使用 PyTorch 2.7.1+cu118。[原实验方案](源码/experiments/lab04/REQUIREMENT_ACCURACY_PLAN.md) · [GPU 训练记录](源码/experiments/lab04/GPU_TRAINING.md)

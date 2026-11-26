@@ -1,0 +1,42 @@
+{
+  "track": "dino",
+  "rules": [
+    {
+      "name": "cosine",
+      "temperature": 0.1,
+      "updates": 0,
+      "support_weight": 1.0
+    },
+    {
+      "name": "balanced",
+      "temperature": 0.08,
+      "updates": 12,
+      "support_weight": 3.0
+    },
+    {
+      "name": "balanced_sharp",
+      "temperature": 0.035,
+      "updates": 20,
+      "support_weight": 3.0
+    }
+  ],
+  "selection": "Highest validation accuracy separately for each shot; ties use first rule.",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "seed": 20261127,
+  "batch_size": 32,
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "implementation_sha256": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+  "model_id": "facebook/dinov2-base",
+  "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "files": {
+    "config.json": "f7ff4cfa73d2f70647dbf6950541ad25d73082d54c2e7e9bded160c7656b2a70",
+    "model.safetensors": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841"
+  },
+  "external_pretraining": true,
+  "representation": "224px, normalized CLS + mean patch, no fine-tuning"
+}

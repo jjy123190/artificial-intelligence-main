@@ -101,21 +101,22 @@ python -B -X utf8 -m experiments.lab03.verification
 
 修改源码或重新生成结果后，文件校验清单不再代表修改后的版本。运行时产生的 `.venv`、`.state`、`outputs/runtime` 和缓存属于本机状态，不属于清单中的交付原件。
 
-## 6. 实验四依赖与范围
+## 实验四推理环境
 
-网站基础安装保留原有轻量依赖。实验四现场推理和重训练另安装：
+从本目录运行命令。GPU 自训与演示已在 Python 3.10、PyTorch 2.7.1+cu118、RTX 4050 Laptop GPU（6 GB）上验证。先在所用 Python 环境中安装与显卡驱动匹配的 CUDA 版 PyTorch，再安装实验依赖。SciPy 提供归档评测使用的均衡分配求解器。[PyTorch 安装指引](https://pytorch.org/get-started/locally/)
 
 ```powershell
-python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r experiments/lab04/requirements.txt
+python -m pip install -r experiments/lab04/requirements.txt scipy
+python main.py lab04 results --track regional
+python main.py lab04 demo --track regional --shots 5 --device cuda
 ```
 
-实验四随代码携带约0.7 MB的三个权重和14 MB演示池，不需要下载大模型或配置API key。CPU窄ResNet12为50,352参数，完整二阶MAML使用500个元训练任务，不能直接对比标准宽度模型的论文成绩。校准方法使用无标签查询集更新原型，属于转导推理；所有查询标签只进入最后的评分。完整数据下载、训练复现、真实指标和限制见 [实验四说明](experiments/lab04/README.md)。
+使用 CPU 时可先执行 `python -m pip install torch --index-url https://download.pytorch.org/whl/cpu` 安装 CPU 版 PyTorch，再在演示命令中使用 `--device cpu`。仓库提供推理权重、校准参数及样例图，完整 mini-ImageNet 数据集用于重训。主模型 1-shot / 5-shot 为 **74.37% / 82.64%**，可用 `--track rotation_views` 和 `--track image_augmentation` 查看另外两组对照。[三组自训结果](experiments/lab04/README.md#课程自训结果) · [训练与评估命令](experiments/lab04/GPU_TRAINING.md)
 
 
 ## 实验四 v2 更新
 
-`#/labs/lab04` 已升级为独立实验入口；`#/labs/lab04/inference` 可进行同任务三方法真实对照、误判分析和记录导出。当前完整校准1-shot/5-shot为51.41%/64.50%（各600个配对任务），所有分数由逐任务记录重算核验。
+`#/labs/lab04` 是独立实验入口，`#/labs/lab04/inference` 可进行同任务三方法真实对照、误判分析和记录导出。v2 完整校准的 1-shot / 5-shot 为 51.41% / 64.50%（各 600 个配对任务），分数由逐任务记录重算核验。
 
 v1原始权重、结果与演示池保存在 `outputs/lab04/history/v1`，旧报告/PPT/视频明确属于历史版。完整方法、限制、验证选型和复现命令见 `experiments/lab04/README.md`。直接入口可双击 `experiments/lab04/打开网站.cmd`。
 
@@ -148,7 +149,7 @@ python -m scripts.package_project --experiment lab04
 打开`#/labs/lab04/evaluation`查看可交互准确率图；课程要求与适用边界见本地文档。完整审查见`experiments/lab04/REQUIREMENTS_AUDIT.md`。课程平台关联组员和提交动作需人工确认，不能由源码宣称已代办。
 
 
-### 当前最高已发布方案：同容量续训双视图
+### 网页版最高准确率方案（同容量续训双视图）
 
 新增`continued`：**56.47% / 68.81%**，每种shot600个原配对任务。保持509,856参数，从旧较宽模型追加16轮训练并验证选第12轮，不改变双视图分类配置。相对旧较宽双视图+0.64/+0.39个百分点，配对区间均高于零；增加训练预算单独披露，旧权重与结果保留。
 
@@ -156,4 +157,4 @@ python -m scripts.package_project --experiment lab04
 
 ## 当前UI（2026-11-26）
 
-实验四顶部为“现场推理 / 方法与协议 / 对比与消融”，移除了“要求与交付 / 报告与演示”入口及首页快捷链接；旧链接进入推理工作台。推理页模型指纹/范围尾注、协议页“与原平台的衔接”、延迟表底部重复说明已去除，数据核验与导出记录中的来源信息仍保留。训练暂不继续，正式权重与分数不变。
+实验四网页顶部为“现场推理 / 方法与协议 / 对比与消融”，旧的材料链接进入推理工作台。课程材料可从仓库根目录的 `deliverables/lab4/当前版本/` 直接访问，网页支持核验数据及导出推理记录。

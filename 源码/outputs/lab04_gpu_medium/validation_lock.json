@@ -1,0 +1,72 @@
+{
+  "selected": {
+    "1": "balanced",
+    "5": "balanced"
+  },
+  "candidates": {
+    "1": {
+      "cosine": {
+        "accuracy": 0.5721777777777778,
+        "ci95": 0.008257586458493763,
+        "episodes": 600,
+        "ci95_low": 0.5639201913192841,
+        "ci95_high": 0.5804353642362715,
+        "correct": 25748,
+        "queries": 45000
+      },
+      "balanced": {
+        "accuracy": 0.7096666666666667,
+        "ci95": 0.012202354346785956,
+        "episodes": 600,
+        "ci95_low": 0.6974643123198807,
+        "ci95_high": 0.7218690210134526,
+        "correct": 31935,
+        "queries": 45000
+      },
+      "balanced_sharp": {
+        "accuracy": 0.6991111111111111,
+        "ci95": 0.011945399518527945,
+        "episodes": 600,
+        "ci95_low": 0.6871657115925832,
+        "ci95_high": 0.711056510629639,
+        "correct": 31460,
+        "queries": 45000
+      }
+    },
+    "5": {
+      "cosine": {
+        "accuracy": 0.7469111111111111,
+        "ci95": 0.006468778810753914,
+        "episodes": 600,
+        "ci95_low": 0.7404423323003572,
+        "ci95_high": 0.753379889921865,
+        "correct": 33611,
+        "queries": 45000
+      },
+      "balanced": {
+        "accuracy": 0.8043777777777777,
+        "ci95": 0.006442510539858214,
+        "episodes": 600,
+        "ci95_low": 0.7979352672379195,
+        "ci95_high": 0.810820288317636,
+        "correct": 36197,
+        "queries": 45000
+      },
+      "balanced_sharp": {
+        "accuracy": 0.8021777777777778,
+        "ci95": 0.006539945971546267,
+        "episodes": 600,
+        "ci95_low": 0.7956378318062315,
+        "ci95_high": 0.808717723749324,
+        "correct": 36098,
+        "queries": 45000
+      }
+    }
+  },
+  "plan_sha256": "4989fbd3ae5168374d38fbf2468f4def61baa4c24ab06c2b054e7a28be537c2c",
+  "inference_files": {
+    "medium.pt": "e874ffb80186daec4c7401b8ca7e1ba78fbba7d23a4677d4c043c9038d1da238",
+    "spatial_metric.pt": "7e24bc560e53cf44d23ce769a1b3259bdc651edeff68c8bc0710dd221ad3fb53",
+    "base_transform.npz": "f9cd43876a0e5e69257cb7235d5cf2c4479e8af2a35f23cb582c5236c8909ebd"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "plan_sha256": "58bc115a8cd1339677482dbc85f6193a79351714c6950d8d663fdd2d3586d69c",
+  "winner": "parent",
+  "parent": {
+    "accuracy": 0.8360222222222222,
+    "ci95": 0.006048381377320465,
+    "episodes": 600,
+    "ci95_low": 0.8299738408449018,
+    "ci95_high": 0.8420706035995427,
+    "correct": 37621,
+    "queries": 45000,
+    "paired_vs_rotation_views": {
+      "mean": 0.0,
+      "ci95": 0.0,
+      "wins": 0,
+      "ties": 600,
+      "losses": 0
+    }
+  },
+  "quarter": {
+    "accuracy": 0.8372444444444445,
+    "ci95": 0.005983116665191101,
+    "episodes": 600,
+    "ci95_low": 0.8312613277792533,
+    "ci95_high": 0.8432275611096356,
+    "correct": 37676,
+    "queries": 45000,
+    "paired_vs_rotation_views": {
+      "mean": 0.001222222222222222,
+      "ci95": 0.002164704593195869,
+      "wins": 212,
+      "ties": 182,
+      "losses": 206
+    }
+  },
+  "archive_ordered_ids_sha256": "c154e0af0a9c180868c048a57f96b1040800ab1121185f7dad267a2e0e0cf368",
+  "episodes_sha256": "c81d8be831390a8f9783e7012c3bfc6d9a55e43951f8f5496158ee135e1c18d7"
+}

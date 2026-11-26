@@ -1,0 +1,27 @@
+{
+  "rules": [
+    "single",
+    "best",
+    "average"
+  ],
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selection": "Maximum correct validation queries per shot; first rule wins ties.",
+  "source_sha256": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+  "parent_lock_sha256": "30ab11d0f055e4caef01c8c8e47250d356b98d84cd873b89e931162a6682e416",
+  "rotation_result_sha256": "fc877885226da22d4a14ddc27199cbc06f38cfcf8cf269aadc2eead8d2bbe915",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "external_pretraining": false
+}

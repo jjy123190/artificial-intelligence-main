@@ -1,0 +1,58 @@
+{
+  "track": "medium",
+  "rules": [
+    {
+      "name": "cosine",
+      "temperature": 0.1,
+      "updates": 0,
+      "support_weight": 1.0
+    },
+    {
+      "name": "balanced",
+      "temperature": 0.08,
+      "updates": 12,
+      "support_weight": 3.0
+    },
+    {
+      "name": "balanced_sharp",
+      "temperature": 0.035,
+      "updates": 20,
+      "support_weight": 3.0
+    }
+  ],
+  "selection": "Highest validation accuracy separately for each shot; ties use first rule.",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "seed": 20261127,
+  "batch_size": 32,
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "implementation_sha256": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+  "external_pretraining": false,
+  "backbone_sha256": "e874ffb80186daec4c7401b8ca7e1ba78fbba7d23a4677d4c043c9038d1da238",
+  "training_plan": {
+    "source": {
+      "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+      "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+      "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+      "accuracy90_data.py": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58"
+    },
+    "seed": 20261127,
+    "epochs": 40,
+    "batch": 128,
+    "widths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "external_weights": false,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "torch": "2.7.1+cu118",
+    "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb"
+  },
+  "representation": "84px, two views, 50% supervised whitening + 50% spatial metric"
+}

@@ -1,0 +1,94 @@
+{
+  "track": "regional",
+  "external_pretraining": false,
+  "candidates_in_tie_order": [
+    "augmented",
+    "rotation_views",
+    "regional",
+    "augmented_kernel",
+    "regional_kernel"
+  ],
+  "training": {
+    "matched_training": {
+      "branches": [
+        "control",
+        "augmented"
+      ],
+      "epochs": 6,
+      "batch": 128,
+      "seed": 20261209,
+      "lr_max": 0.00016,
+      "lr_min": 2.5e-05,
+      "augmentation": {
+        "rotation_probability": 0.4,
+        "degrees": 12.0,
+        "blur_probability": 0.2,
+        "sigma": 0.8
+      },
+      "external_weights": false,
+      "train_ids": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+      "parent_sha256": "379407f55f64f0b85be923526586d77642f2d458eb3d5cc3b90084064020aad8",
+      "rotation_state_sha256": "c88e4ed92f9beed4729c13d3365005edbade5dabefe27215fee8b97690a98379",
+      "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "precision": "torch.bfloat16",
+      "torch": "2.7.1+cu118",
+      "source_sha256": {
+        "train_image_augmentation.py": "35a11a89c2a65049b79fd716a35f79dc9c5332c09ff99eceb132a4149f8f286b",
+        "train_rotation_views.py": "1adb758f53ba4607a661aaa0e0991abf8641608789a7d44d6aac7b7408ed3b47",
+        "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+        "train_resnet_rotation.py": "9372096bd8bc7e79ed838991a05492e01c48dbd580e1659afb7b84ad08f64cdf",
+        "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a"
+      },
+      "selection": "Highest sum of 1-shot and 5-shot fixed validation correct counts; ties favor parent, control, augmented."
+    },
+    "matched_plan_sha256": "2b7c4639accdc6f168e11b179b9423ffb440ee49b07b155c3dd6cdcd12c53cdc",
+    "source_sha256": "4db54b16c84dd453d089db6d60faaac056bb074063d6c153a89db58c0a4236fa",
+    "auxiliary_weight": 0.35,
+    "head_lr_multiple": 8,
+    "regions": "Block 3, 3x3 adaptive average pooling, 6 lowest patch CEs per unmixed image",
+    "selection": "One backbone and readout for both shots. Maximize summed fixed validation correct. Tie order: augmented, rotation_views, regional, augmented_kernel, regional_kernel.",
+    "kernel": {
+      "weight": 0.2,
+      "temperature": 0.2,
+      "grid": 3
+    }
+  },
+  "selection": "One backbone and readout for both shots. Maximize summed fixed validation correct. Tie order: augmented, rotation_views, regional, augmented_kernel, regional_kernel.",
+  "kernel": {
+    "weight": 0.2,
+    "temperature": 0.2,
+    "grid": 3
+  },
+  "views": {
+    "1": [
+      "center",
+      0.0
+    ],
+    "5": [
+      "corners",
+      0.0
+    ]
+  },
+  "selected": {
+    "1": "best",
+    "5": "average"
+  },
+  "branch_sha256": "753d9b19c1635515d96c022b747cb7263f160b9d15b02522325c21d808bd7a0c",
+  "training_record_sha256": "705ceab6e5380334747dfb429f3f9aee4b7883548242fe3624fe5911e8d3b62c",
+  "episode_files": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "dataset_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "assignment_solver": "scipy",
+  "source_sha256": {
+    "regional_study.py": "30e7ad6b9b477fd2a602b865ee59ebcfe27bd0c0937ace5af78df748769b1f5d",
+    "regional_kernel.py": "fcceecb397a2659585c30e0e21b4520f29cac89f14763e95fd606b2a775e9a10",
+    "prototype_restarts.py": "9941174c69cd15135b30c6679621b4d0f5de9cb0897aa215cb71fdb66f90a611",
+    "multiscale_study.py": "dd6efe0ee36b08fd9acb03f812d0f580f967affc29a0e8dc4f32e7f74083d90e",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "rotation_study.py": "df57bcf2f245f197d58d07d02292e64b41e202d1ec18be4f4f79ed5d68df22ba",
+    "gpu_metric.py": "bba365d33e772caaab79e1088a99378d38fb8e85ad635b20280188d6a3b33d1c"
+  }
+}

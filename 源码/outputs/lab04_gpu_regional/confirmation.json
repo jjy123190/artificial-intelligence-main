@@ -1,0 +1,51 @@
+{
+  "plan_sha256": "7fc88017efe45c7185f1caddf2983d4354220b2cd20068357b1c27a897f68f97",
+  "validation_lock_sha256": "eed684373145ca05e5626bb13fcdc4bf8ca1cead80557828234373eb59e70a09",
+  "winner": "augmented_kernel",
+  "control_sha256": "6ce8ae030e930ec8a712cb24f7fd89bc81b8f2c7976c25d13d06641195aab990",
+  "execution_source_sha256": "b018397221d167c7e9a42770485c52bd771a2fb4d7363fcd6dfc198699e65cc2",
+  "scores": {
+    "1": {
+      "winner": {
+        "accuracy": 0.7647777777777778,
+        "ci95": 0.012021722055982077,
+        "episodes": 600,
+        "ci95_low": 0.7527560557217957,
+        "ci95_high": 0.7767994998337598,
+        "correct": 34415,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": -0.0008888888888888877,
+          "ci95": 0.005281520110298544,
+          "wins": 143,
+          "ties": 309,
+          "losses": 148
+        }
+      },
+      "augmented_correct": 34455
+    },
+    "5": {
+      "winner": {
+        "accuracy": 0.8388,
+        "ci95": 0.005987048352445924,
+        "episodes": 600,
+        "ci95_low": 0.8328129516475541,
+        "ci95_high": 0.8447870483524459,
+        "correct": 37746,
+        "queries": 45000,
+        "paired_vs_augmented": {
+          "mean": 0.0009555555555555547,
+          "ci95": 0.0017095130035690246,
+          "wins": 162,
+          "ties": 291,
+          "losses": 147
+        }
+      },
+      "augmented_correct": 37703
+    }
+  },
+  "files": {
+    "confirmation_predictions.npz": "d70f6fbdabb183c8bba0ec5542bb3dd29b6d515f649fa07a5bd25bbbb6ee444a"
+  },
+  "split_order_sha256": "c154e0af0a9c180868c048a57f96b1040800ab1121185f7dad267a2e0e0cf368"
+}
