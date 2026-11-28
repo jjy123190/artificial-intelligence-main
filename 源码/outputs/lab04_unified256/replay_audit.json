@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "methods": 12,
+  "tasks_per_shot": 600,
+  "episodes_rescored": 14400,
+  "query_predictions_rescored": 1080000,
+  "validation_rule": 0,
+  "meta_epoch": 6,
+  "replay_predictions_match": true,
+  "test_correct_by_method": {
+    "baseline": [
+      25362,
+      32929
+    ],
+    "full": [
+      30462,
+      35016
+    ],
+    "full_flip": [
+      30539,
+      35224
+    ],
+    "full_flip_local": [
+      30774,
+      35478
+    ],
+    "full_local": [
+      30743,
+      35257
+    ],
+    "maml": [
+      22436,
+      28289
+    ],
+    "maml_no_adapt": [
+      8779,
+      9049
+    ],
+    "no_alignment": [
+      30446,
+      35010
+    ],
+    "no_balance": [
+      29647,
+      34485
+    ],
+    "no_mean": [
+      30436,
+      34988
+    ],
+    "no_update": [
+      26218,
+      33782
+    ],
+    "no_variance": [
+      30412,
+      34985
+    ]
+  }
+}

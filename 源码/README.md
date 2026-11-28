@@ -103,6 +103,8 @@ python -B -X utf8 -m experiments.lab03.verification
 
 ## 实验四推理环境
 
+11 月 28 日补跑的**统一 256 维对照**不依赖网页。用 `python -m experiments.lab04.unified256_audit` 从归档预测复算所有方法；用已发布权重从图像重放或从头重训，见[完整方法、成绩与命令](experiments/lab04/UNIFIED256.md)。下面的 `regional` 命令仍用于先前那一轮的演示。
+
 从本目录运行命令。GPU 自训与演示已在 Python 3.10、PyTorch 2.7.1+cu118、RTX 4050 Laptop GPU（6 GB）上验证。先在所用 Python 环境中安装与显卡驱动匹配的 CUDA 版 PyTorch，再安装实验依赖。SciPy 提供归档评测使用的均衡分配求解器。[PyTorch 安装指引](https://pytorch.org/get-started/locally/)
 
 ```powershell
@@ -111,7 +113,7 @@ python main.py lab04 results --track regional
 python main.py lab04 demo --track regional --shots 5 --device cuda
 ```
 
-使用 CPU 时可先执行 `python -m pip install torch --index-url https://download.pytorch.org/whl/cpu` 安装 CPU 版 PyTorch，再在演示命令中使用 `--device cpu`。仓库提供推理权重、校准参数及样例图，完整 mini-ImageNet 数据集用于重训。主模型 1-shot / 5-shot 为 **74.37% / 82.64%**，可用 `--track rotation_views` 和 `--track image_augmentation` 查看另外两组对照。[三组自训结果](experiments/lab04/README.md#课程自训结果) · [训练与评估命令](experiments/lab04/GPU_TRAINING.md)
+使用 CPU 时可先执行 `python -m pip install torch --index-url https://download.pytorch.org/whl/cpu` 安装 CPU 版 PyTorch，再在演示命令中使用 `--device cpu`。仓库提供推理权重、校准参数及样例图，完整 mini-ImageNet 数据集用于重训。历史局部匹配模型 1-shot / 5-shot 为 **74.37% / 82.64%**，可用 `--track rotation_views` 和 `--track image_augmentation` 查看另外两组对照。[三组自训结果](experiments/lab04/README.md#课程自训结果) · [训练与评估命令](experiments/lab04/GPU_TRAINING.md)
 
 
 ## 实验四 v2 更新

@@ -1,0 +1,175 @@
+{
+  "seed": 20261128,
+  "channels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "normalization": "BatchNorm2d",
+  "embedding": "global average pooling -> 256",
+  "external_weights": false,
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "cuda": "11.8",
+  "cudnn": 90100,
+  "train_ids_sha256": "6f3a9ac179221e52caf05a91371dc8e134bee6023981eb5d5df2f182892319eb",
+  "train_images": 38400,
+  "classes": 64,
+  "source_sha256": {
+    "unified256_train.py": "490c83b076f0b97815e5c29e5d73b2d5a630139fe3dfc4b31ca38aedd1b24a08",
+    "accuracy90_data.py": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+    "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+    "train_gpu_metric.py": "15e98de8468eadec413858d525c2cb6cd26c8fd81ae8e164731b96d7bc438246",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205"
+  },
+  "supervised": {
+    "init": "seeded PyTorch defaults; shared CE warmup, fork model AND AdamW",
+    "shared_epochs": 8,
+    "epochs_total_per_arm": 20,
+    "batch": 128,
+    "extra_views": 32,
+    "sampler": "all 38400 once/epoch; 16 classes x 8",
+    "augment": "independent training_view for 128 images and 32 paired images",
+    "schedule": [
+      {
+        "epoch": 1,
+        "pixels": 48,
+        "lr": 0.0007899999999999999
+      },
+      {
+        "epoch": 2,
+        "pixels": 48,
+        "lr": 0.0015701119449669735
+      },
+      {
+        "epoch": 3,
+        "pixels": 48,
+        "lr": 0.00154071750023296
+      },
+      {
+        "epoch": 4,
+        "pixels": 48,
+        "lr": 0.0014926184696247044
+      },
+      {
+        "epoch": 5,
+        "pixels": 48,
+        "lr": 0.0014271268693123852
+      },
+      {
+        "epoch": 6,
+        "pixels": 48,
+        "lr": 0.0013460291394286623
+      },
+      {
+        "epoch": 7,
+        "pixels": 48,
+        "lr": 0.0012515374146387594
+      },
+      {
+        "epoch": 8,
+        "pixels": 48,
+        "lr": 0.0011462291828734027
+      },
+      {
+        "epoch": 9,
+        "pixels": 64,
+        "lr": 0.0010329769781770794
+      },
+      {
+        "epoch": 10,
+        "pixels": 64,
+        "lr": 0.000914870025467441
+      },
+      {
+        "epoch": 11,
+        "pixels": 64,
+        "lr": 0.0007951299745325591
+      },
+      {
+        "epoch": 12,
+        "pixels": 64,
+        "lr": 0.0006770230218229207
+      },
+      {
+        "epoch": 13,
+        "pixels": 64,
+        "lr": 0.0005637708171265973
+      },
+      {
+        "epoch": 14,
+        "pixels": 64,
+        "lr": 0.0004584625853612406
+      },
+      {
+        "epoch": 15,
+        "pixels": 64,
+        "lr": 0.00036397086057133785
+      },
+      {
+        "epoch": 16,
+        "pixels": 64,
+        "lr": 0.0002828731306876147
+      },
+      {
+        "epoch": 17,
+        "pixels": 80,
+        "lr": 0.0002173815303752955
+      },
+      {
+        "epoch": 18,
+        "pixels": 80,
+        "lr": 0.00016928249976703988
+      },
+      {
+        "epoch": 19,
+        "pixels": 80,
+        "lr": 0.0001398880550330263
+      },
+      {
+        "epoch": 20,
+        "pixels": 80,
+        "lr": 0.00013
+      }
+    ],
+    "optimizer": "AdamW, betas .9/.999, weight_decay .025, fused",
+    "precision": "bf16 autocast; fp32 CE, moments and parameters",
+    "ce_label_smoothing": 0.05,
+    "alignment_weights": {
+      "ce": 0.0,
+      "da": 0.75
+    },
+    "alignment": "mean+diagonal variance MSE on L2 pooled features x sqrt(256)",
+    "checkpoint_rule": "fixed final epoch in both arms; no per-arm selection"
+  },
+  "maml": {
+    "init": "final CE encoder+BN buffers; fresh 5-way linear head N(0,.01), zero bias",
+    "epochs": 6,
+    "train_tasks_per_epoch": 64,
+    "samples": "alternating 5-way 1/5-shot; five disjoint queries/class, base classes only",
+    "outer_tasks_per_update": 2,
+    "inner_steps": 1,
+    "inner_lr": 0.06,
+    "inner_parameters": "ALL; exact second order create_graph=True",
+    "training_pixels": 64,
+    "precision": "fp32, TF32 permitted",
+    "bn": "eval for support AND query; affine weights still adapted",
+    "optimizer": "AdamW, weight_decay .01, clip norm 5",
+    "outer_lr_by_epoch": [
+      0.00017999999999999998,
+      0.0001661537320921837,
+      0.0001299037320921837,
+      8.509626790781632e-05,
+      4.884626790781631e-05,
+      3.5e-05
+    ],
+    "candidates": [
+      3,
+      6
+    ],
+    "validation_rule": "max correct across first 60 released validation tasks per shot; tie earlier"
+  }
+}

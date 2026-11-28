@@ -1,0 +1,485 @@
+{
+  "split": "test",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu118",
+  "numpy": "1.24.3",
+  "selection_lock_sha256": "df9df834378e66b58a9d20fc599843a58acf9d94a0dc3c96930004221e4014a8",
+  "methods": {
+    "baseline": {
+      "1": {
+        "accuracy": 0.5636,
+        "ci95": 0.0076461554732947705,
+        "episodes": 600,
+        "ci95_low": 0.5559538445267053,
+        "ci95_high": 0.5712461554732947,
+        "correct": 25362,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7317555555555555,
+        "ci95": 0.0066372293789757715,
+        "episodes": 600,
+        "ci95_low": 0.7251183261765797,
+        "ci95_high": 0.7383927849345313,
+        "correct": 32929,
+        "queries": 45000
+      }
+    },
+    "full": {
+      "1": {
+        "accuracy": 0.6769333333333333,
+        "ci95": 0.011518020339393205,
+        "episodes": 600,
+        "ci95_low": 0.6654153129939401,
+        "ci95_high": 0.6884513536727265,
+        "correct": 30462,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7781333333333333,
+        "ci95": 0.006894171221134232,
+        "episodes": 600,
+        "ci95_low": 0.7712391621121991,
+        "ci95_high": 0.7850275045544676,
+        "correct": 35016,
+        "queries": 45000
+      }
+    },
+    "no_alignment": {
+      "1": {
+        "accuracy": 0.6765777777777778,
+        "ci95": 0.011454344272991412,
+        "episodes": 600,
+        "ci95_low": 0.6651234335047864,
+        "ci95_high": 0.6880321220507692,
+        "correct": 30446,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7780000000000001,
+        "ci95": 0.006857173102075905,
+        "episodes": 600,
+        "ci95_low": 0.7711428268979242,
+        "ci95_high": 0.784857173102076,
+        "correct": 35010,
+        "queries": 45000
+      }
+    },
+    "no_mean": {
+      "1": {
+        "accuracy": 0.6763555555555556,
+        "ci95": 0.011635621647696418,
+        "episodes": 600,
+        "ci95_low": 0.6647199339078592,
+        "ci95_high": 0.687991177203252,
+        "correct": 30436,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7775111111111112,
+        "ci95": 0.006874967846086668,
+        "episodes": 600,
+        "ci95_low": 0.7706361432650245,
+        "ci95_high": 0.7843860789571978,
+        "correct": 34988,
+        "queries": 45000
+      }
+    },
+    "no_variance": {
+      "1": {
+        "accuracy": 0.6758222222222222,
+        "ci95": 0.011612728711442416,
+        "episodes": 600,
+        "ci95_low": 0.6642094935107798,
+        "ci95_high": 0.6874349509336646,
+        "correct": 30412,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7774444444444445,
+        "ci95": 0.006936724023342253,
+        "episodes": 600,
+        "ci95_low": 0.7705077204211023,
+        "ci95_high": 0.7843811684677867,
+        "correct": 34985,
+        "queries": 45000
+      }
+    },
+    "no_update": {
+      "1": {
+        "accuracy": 0.5826222222222222,
+        "ci95": 0.008166333582275635,
+        "episodes": 600,
+        "ci95_low": 0.5744558886399466,
+        "ci95_high": 0.5907885558044977,
+        "correct": 26218,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7507111111111111,
+        "ci95": 0.006818028224494945,
+        "episodes": 600,
+        "ci95_low": 0.7438930828866162,
+        "ci95_high": 0.7575291393356061,
+        "correct": 33782,
+        "queries": 45000
+      }
+    },
+    "no_balance": {
+      "1": {
+        "accuracy": 0.6588222222222222,
+        "ci95": 0.010535478756298415,
+        "episodes": 600,
+        "ci95_low": 0.6482867434659237,
+        "ci95_high": 0.6693577009785207,
+        "correct": 29647,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7663333333333333,
+        "ci95": 0.0068075450773999475,
+        "episodes": 600,
+        "ci95_low": 0.7595257882559333,
+        "ci95_high": 0.7731408784107333,
+        "correct": 34485,
+        "queries": 45000
+      }
+    },
+    "full_flip": {
+      "1": {
+        "accuracy": 0.6786444444444445,
+        "ci95": 0.011691798555159958,
+        "episodes": 600,
+        "ci95_low": 0.6669526458892845,
+        "ci95_high": 0.6903362429996045,
+        "correct": 30539,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7827555555555556,
+        "ci95": 0.006890605459770404,
+        "episodes": 600,
+        "ci95_low": 0.7758649500957853,
+        "ci95_high": 0.789646161015326,
+        "correct": 35224,
+        "queries": 45000
+      }
+    },
+    "full_local": {
+      "1": {
+        "accuracy": 0.6831777777777778,
+        "ci95": 0.010784120725072548,
+        "episodes": 600,
+        "ci95_low": 0.6723936570527053,
+        "ci95_high": 0.6939618985028503,
+        "correct": 30743,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7834888888888889,
+        "ci95": 0.006543856480430505,
+        "episodes": 600,
+        "ci95_low": 0.7769450324084584,
+        "ci95_high": 0.7900327453693194,
+        "correct": 35257,
+        "queries": 45000
+      }
+    },
+    "full_flip_local": {
+      "1": {
+        "accuracy": 0.6838666666666666,
+        "ci95": 0.010926841005376048,
+        "episodes": 600,
+        "ci95_low": 0.6729398256612906,
+        "ci95_high": 0.6947935076720426,
+        "correct": 30774,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.7884,
+        "ci95": 0.006750956533914084,
+        "episodes": 600,
+        "ci95_low": 0.7816490434660859,
+        "ci95_high": 0.7951509565339141,
+        "correct": 35478,
+        "queries": 45000
+      }
+    },
+    "maml": {
+      "1": {
+        "accuracy": 0.49857777777777773,
+        "ci95": 0.007765376615225944,
+        "episodes": 600,
+        "ci95_low": 0.49081240116255176,
+        "ci95_high": 0.5063431543930037,
+        "correct": 22436,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.6286444444444445,
+        "ci95": 0.007543262414482743,
+        "episodes": 600,
+        "ci95_low": 0.6211011820299617,
+        "ci95_high": 0.6361877068589272,
+        "correct": 28289,
+        "queries": 45000
+      }
+    },
+    "maml_no_adapt": {
+      "1": {
+        "accuracy": 0.1950888888888889,
+        "ci95": 0.0052588521847017206,
+        "episodes": 600,
+        "ci95_low": 0.1898300367041872,
+        "ci95_high": 0.2003477410735906,
+        "correct": 8779,
+        "queries": 45000
+      },
+      "5": {
+        "accuracy": 0.2010888888888889,
+        "ci95": 0.0051443976762924944,
+        "episodes": 600,
+        "ci95_low": 0.1959444912125964,
+        "ci95_high": 0.2062332865651814,
+        "correct": 9049,
+        "queries": 45000
+      }
+    }
+  },
+  "paired": {
+    "full_minus_baseline": {
+      "1": {
+        "mean": 0.11333333333333333,
+        "ci95": 0.007689244935427178,
+        "wins": 527,
+        "ties": 15,
+        "losses": 58
+      },
+      "5": {
+        "mean": 0.04637777777777778,
+        "ci95": 0.003582956526151382,
+        "wins": 496,
+        "ties": 45,
+        "losses": 59
+      }
+    },
+    "full_minus_maml": {
+      "1": {
+        "mean": 0.17835555555555554,
+        "ci95": 0.00978799471092931,
+        "wins": 554,
+        "ties": 8,
+        "losses": 38
+      },
+      "5": {
+        "mean": 0.1494888888888889,
+        "ci95": 0.006263310490609473,
+        "wins": 587,
+        "ties": 7,
+        "losses": 6
+      }
+    },
+    "maml_minus_maml_no_adapt": {
+      "1": {
+        "mean": 0.30348888888888886,
+        "ci95": 0.009187132573277704,
+        "wins": 599,
+        "ties": 1,
+        "losses": 0
+      },
+      "5": {
+        "mean": 0.4275555555555555,
+        "ci95": 0.008946787802037686,
+        "wins": 600,
+        "ties": 0,
+        "losses": 0
+      }
+    },
+    "full_minus_no_alignment": {
+      "1": {
+        "mean": 0.0003555555555555563,
+        "ci95": 0.0017575555270594588,
+        "wins": 177,
+        "ties": 266,
+        "losses": 157
+      },
+      "5": {
+        "mean": 0.00013333333333333253,
+        "ci95": 0.0011079033132729787,
+        "wins": 168,
+        "ties": 268,
+        "losses": 164
+      }
+    },
+    "full_minus_no_mean": {
+      "1": {
+        "mean": 0.0005777777777777784,
+        "ci95": 0.0013982561145641204,
+        "wins": 110,
+        "ties": 396,
+        "losses": 94
+      },
+      "5": {
+        "mean": 0.0006222222222222218,
+        "ci95": 0.0009274869784196365,
+        "wins": 126,
+        "ties": 371,
+        "losses": 103
+      }
+    },
+    "full_minus_no_variance": {
+      "1": {
+        "mean": 0.0011111111111111102,
+        "ci95": 0.0015776613666393141,
+        "wins": 162,
+        "ties": 294,
+        "losses": 144
+      },
+      "5": {
+        "mean": 0.0006888888888888891,
+        "ci95": 0.0010492872418873449,
+        "wins": 154,
+        "ties": 317,
+        "losses": 129
+      }
+    },
+    "full_minus_no_update": {
+      "1": {
+        "mean": 0.09431111111111111,
+        "ci95": 0.007120676488563036,
+        "wins": 501,
+        "ties": 26,
+        "losses": 73
+      },
+      "5": {
+        "mean": 0.027422222222222223,
+        "ci95": 0.0029910755376600395,
+        "wins": 424,
+        "ties": 66,
+        "losses": 110
+      }
+    },
+    "full_minus_no_balance": {
+      "1": {
+        "mean": 0.018111111111111113,
+        "ci95": 0.005561334995681408,
+        "wins": 345,
+        "ties": 50,
+        "losses": 205
+      },
+      "5": {
+        "mean": 0.011799999999999998,
+        "ci95": 0.002700962187309955,
+        "wins": 321,
+        "ties": 108,
+        "losses": 171
+      }
+    },
+    "full_flip_minus_full": {
+      "1": {
+        "mean": 0.001711111111111114,
+        "ci95": 0.004230687020329831,
+        "wins": 266,
+        "ties": 117,
+        "losses": 217
+      },
+      "5": {
+        "mean": 0.004622222222222222,
+        "ci95": 0.0020841729361348533,
+        "wins": 272,
+        "ties": 154,
+        "losses": 174
+      }
+    },
+    "full_local_minus_full": {
+      "1": {
+        "mean": 0.0062444444444444466,
+        "ci95": 0.005664497985936253,
+        "wins": 274,
+        "ties": 55,
+        "losses": 271
+      },
+      "5": {
+        "mean": 0.005355555555555554,
+        "ci95": 0.0024760037769429527,
+        "wins": 283,
+        "ties": 107,
+        "losses": 210
+      }
+    },
+    "full_flip_local_minus_full": {
+      "1": {
+        "mean": 0.006933333333333334,
+        "ci95": 0.006357211304273271,
+        "wins": 293,
+        "ties": 50,
+        "losses": 257
+      },
+      "5": {
+        "mean": 0.010266666666666667,
+        "ci95": 0.002817082306079004,
+        "wins": 324,
+        "ties": 110,
+        "losses": 166
+      }
+    },
+    "full_flip_local_minus_full_flip": {
+      "1": {
+        "mean": 0.00522222222222222,
+        "ci95": 0.005775055857572498,
+        "wins": 272,
+        "ties": 68,
+        "losses": 260
+      },
+      "5": {
+        "mean": 0.005644444444444444,
+        "ci95": 0.0024576218392425354,
+        "wins": 278,
+        "ties": 129,
+        "losses": 193
+      }
+    },
+    "full_flip_local_minus_full_local": {
+      "1": {
+        "mean": 0.0006888888888888869,
+        "ci95": 0.004674181375014881,
+        "wins": 260,
+        "ties": 97,
+        "losses": 243
+      },
+      "5": {
+        "mean": 0.004911111111111112,
+        "ci95": 0.002150454317639454,
+        "wins": 265,
+        "ties": 160,
+        "losses": 175
+      }
+    }
+  },
+  "files": {
+    "test_baseline_1shot.jsonl": "7d41de9789f538d69c9d36196b7306935acf07a3ef434116f553147776083b7b",
+    "test_full_1shot.jsonl": "bdc1042546dab3936b9d90ecd65e1a0db378657fbe059f0e286cfcc3b01eb517",
+    "test_no_alignment_1shot.jsonl": "b33d01aada32a1a6d733b384f352324b5921d9138c4c464a6cb241e1f658c62d",
+    "test_no_mean_1shot.jsonl": "c3112326582637512888d39088cac201fe7bd67888a8ad761f7df79c8e4f7bea",
+    "test_no_variance_1shot.jsonl": "bb70b53e91575cf887dba3097961a3ae7a20be5c005f6b7b828c5d7324ce9def",
+    "test_no_update_1shot.jsonl": "a087b941ae5c801ea24180c4a182039e6583580134a4b071238de3d576a96190",
+    "test_no_balance_1shot.jsonl": "6215056542ee5cdeb7f68851d09d7f63f5373f1266ae7b2a2795fa123be43ec5",
+    "test_full_flip_1shot.jsonl": "405ca89814629bbf798e0c14fd8e87d079425c21d26457ef5b6026309377782b",
+    "test_full_local_1shot.jsonl": "c212b8556fd69f286ef4a8989c5f6a5f808924cfe266ce17b115b7a1e72091fe",
+    "test_full_flip_local_1shot.jsonl": "5c213e353118966a53c5cf151e1546d450c9937a8d7af000c7f9e1e01a4c9d35",
+    "test_maml_1shot.jsonl": "cc06ec84c3e054f352c23947eba6c3c442c5d669a65e572bed7620a634dd8da4",
+    "test_maml_no_adapt_1shot.jsonl": "14ff46cac0457b376ebc316397ada95c92b1280bf4e92ad324dd005a2409945f",
+    "test_baseline_5shot.jsonl": "09cafcf276bde5cf8589b68172314010a5041655e72b295a2b18d1ec49167072",
+    "test_full_5shot.jsonl": "a7bdacff75251c4378a62d5359a6e465f4e6aa18c3b28827fbed9ca92377b82f",
+    "test_no_alignment_5shot.jsonl": "7219df86f0de91e5fef0032f62d693b99072255dde61ac059ec8d0b7a1c9a95d",
+    "test_no_mean_5shot.jsonl": "69129a0223cafbaba4934f635fb0e87513ad64f14b52a961885c3b13272e7156",
+    "test_no_variance_5shot.jsonl": "86f2a754f80481bafe7cfb2c1f810d6e89ebf56777c9ceb5e684c0f55460fb15",
+    "test_no_update_5shot.jsonl": "4639d867eba6dd410e5489e275e7c29fcd85b3e0c77977dc3c963f1ddd28fecc",
+    "test_no_balance_5shot.jsonl": "4c75837a2650a343fce0db170d8dacbe0c38f016f57046f5dce54ca9a3bb0de1",
+    "test_full_flip_5shot.jsonl": "ceed3564f6d314769ca7a9e353188e17cee845d331dff56f43f582933ff628d4",
+    "test_full_local_5shot.jsonl": "e2dea6653cba4166c801d8367b13ee3bb244dea454d4408f1aa03269d1f70330",
+    "test_full_flip_local_5shot.jsonl": "dbe271995583273617394feb0171aef81b3713fd179c4cb27de134d593042843",
+    "test_maml_5shot.jsonl": "cedbf6bba14288ac3a841829132dcdc3218543594068e9a74b44e59c0ffd990f",
+    "test_maml_no_adapt_5shot.jsonl": "2e49c47a667f3c559ffa5ab6e3d1ebc4d04970b6adcbc68133d339db9fb63a31"
+  }
+}

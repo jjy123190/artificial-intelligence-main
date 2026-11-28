@@ -1,0 +1,65 @@
+{
+  "ce_sha256": "858d2a43741dc3069ba78cfc5b240eccf5d9b37a3dcd13721c6e2ea9c4fdb795",
+  "epochs": [
+    {
+      "epoch": 1,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 0.00017999999999999998,
+      "query_ce": 1.1583836078643799,
+      "query_accuracy": 0.571875,
+      "outer_grad_norm_preclip": 12.545500755310059,
+      "seconds": 8.13
+    },
+    {
+      "epoch": 2,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 0.0001661537320921837,
+      "query_ce": 1.0269949436187744,
+      "query_accuracy": 0.616875,
+      "outer_grad_norm_preclip": 17.358503341674805,
+      "seconds": 6.7
+    },
+    {
+      "epoch": 3,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 0.0001299037320921837,
+      "query_ce": 0.9157120585441589,
+      "query_accuracy": 0.660625,
+      "outer_grad_norm_preclip": 22.023021697998047,
+      "seconds": 6.68
+    },
+    {
+      "epoch": 4,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 8.509626790781632e-05,
+      "query_ce": 0.9097647666931152,
+      "query_accuracy": 0.67375,
+      "outer_grad_norm_preclip": 25.380970001220703,
+      "seconds": 6.88
+    },
+    {
+      "epoch": 5,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 4.884626790781631e-05,
+      "query_ce": 0.8730416893959045,
+      "query_accuracy": 0.6825,
+      "outer_grad_norm_preclip": 21.190677642822266,
+      "seconds": 6.71
+    },
+    {
+      "epoch": 6,
+      "tasks": 64,
+      "outer_steps": 32,
+      "outer_lr": 3.5e-05,
+      "query_ce": 0.8715422749519348,
+      "query_accuracy": 0.69125,
+      "outer_grad_norm_preclip": 20.08165168762207,
+      "seconds": 6.81
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "methods": {
+    "baseline": {
+      "encoder": "ce",
+      "mean": false,
+      "variance": false,
+      "update": false,
+      "balance": false,
+      "flip": false,
+      "local": false
+    },
+    "full": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": false,
+      "local": false
+    },
+    "no_alignment": {
+      "encoder": "ce",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": false,
+      "local": false
+    },
+    "no_mean": {
+      "encoder": "da",
+      "mean": false,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": false,
+      "local": false
+    },
+    "no_variance": {
+      "encoder": "da",
+      "mean": true,
+      "variance": false,
+      "update": true,
+      "balance": true,
+      "flip": false,
+      "local": false
+    },
+    "no_update": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": false,
+      "balance": true,
+      "flip": false,
+      "local": false
+    },
+    "no_balance": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": false,
+      "flip": false,
+      "local": false
+    },
+    "full_flip": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": true,
+      "local": false
+    },
+    "full_local": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": false,
+      "local": true
+    },
+    "full_flip_local": {
+      "encoder": "da",
+      "mean": true,
+      "variance": true,
+      "update": true,
+      "balance": true,
+      "flip": true,
+      "local": true
+    }
+  },
+  "rules": [
+    {
+      "mean_weight": 0.1,
+      "variance_blend": 0.2,
+      "temperature": 0.12
+    },
+    {
+      "mean_weight": 0.15,
+      "variance_blend": 0.35,
+      "temperature": 0.085
+    },
+    {
+      "mean_weight": 0.2,
+      "variance_blend": 0.5,
+      "temperature": 0.065
+    }
+  ],
+  "neighbors": 3,
+  "prior_dof": 4.0,
+  "prototype_steps": 8,
+  "query_weight": 0.5,
+  "sinkhorn_steps": 40,
+  "local": {
+    "stage": 3,
+    "grid": [
+      3,
+      3
+    ],
+    "weight": 0.15,
+    "scale_floor": 0.03
+  },
+  "maml": {
+    "inner_steps": 1,
+    "inner_lr": 0.06,
+    "normalization": "frozen BN stats"
+  },
+  "pixels": "84x84 original RGB, /255 then mean [.485,.456,.406], std [.229,.224,.225]",
+  "precision": "float32, channels_last; TF32 permitted",
+  "centering": "L2-normalize raw GAP, subtract training feature mean, L2-normalize again",
+  "main_methods": [
+    "baseline",
+    "maml",
+    "full"
+  ],
+  "val_tasks_per_shot_calibration": 600,
+  "val_tasks_per_shot_meta_checkpoint": 60,
+  "rule_selection": "max combined validation correct, same choice both shots; tie first",
+  "testing": "all 600 released episodes/shot; 5-way, 15 queries/class; no test selection",
+  "metric_baseline": "CE encoder, train-centered unit features, support-only cosine prototype",
+  "maml_reference": "same chosen MAML weights with no inner update",
+  "extensions": "2x2 horizontal flip and local patch matching; NOT inputs to the formal full method",
+  "episode_sha256": {
+    "continued_validation_tasks.jsonl": "26414c9bc96ca22fd56895b84848fe47e49a237bc8f62557622265f8cb83eb0f",
+    "continued_episodes.json": "57b1e0a8acc60e074c7a6657ce12db18807317032804670c95a82b172ef5a15f"
+  },
+  "data_manifest_sha256": "a95fe353837945839a15c2248de76220c9c82ec2ce6e7e3d040353eb5951603c",
+  "source_sha256": {
+    "unified256_train.py": "490c83b076f0b97815e5c29e5d73b2d5a630139fe3dfc4b31ca38aedd1b24a08",
+    "unified256_methods.py": "71e6b9a5681a63c4f3cf0e8ed2f1353d4d15d99b4ad55af19390e5cef2511a36",
+    "unified256_eval.py": "bada723ae87cfce2bba486c80fabd24716be392be543842fa5b333266e1fcc2b",
+    "evaluate_gpu_tracks.py": "16066066af3d8417bfce0b21f91b00e1dbedb49c456906f20854e5a841269a76",
+    "experiment.py": "deb6ee01818fb55771f35f62f8051c7c0dae0feab07087a21e5ecc20eb903ea7",
+    "study_cached_refinement.py": "a9eea34aa0a8a070e7c8f5126f387ba483843673abdb5473910348c6568481fd",
+    "train_gpu_metric.py": "15e98de8468eadec413858d525c2cb6cd26c8fd81ae8e164731b96d7bc438246",
+    "models.py": "39344d7900088e0ec3dd9c61c505a8b2cae36f9df6f248d60a40afc7047807d4",
+    "data.py": "601e0c98b450824fdceff7fda51c09ae6ac3782862560546d13543d73fda4205",
+    "train_medium_gpu.py": "2f5471ff4db116a6b80b47935593dbb0d79370f347351a6c6a05b28c49396c4a",
+    "train_gpu_backbone.py": "e13504254defa13ac443d2d4c69ccdbf35560c28b6a74d17876e4420a09987b1",
+    "accuracy90_data.py": "70d6e2442653894f468ba47336d482543f72959e7a037be5950ba03b83e93b58"
+  }
+}
